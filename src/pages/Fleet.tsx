@@ -96,17 +96,17 @@ const Fleet = () => {
         </section>
 
         {/* Fleet Features */}
-        <section className="py-12 bg-accent">
+        <section className="py-8 sm:py-12 bg-accent">
           <div className="container mx-auto px-4">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
               {features.map((feature, index) => (
-                <div key={index} className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-lg bg-primary flex items-center justify-center flex-shrink-0">
-                    <feature.icon className="h-6 w-6 text-primary-foreground" />
+                <div key={index} className="flex flex-col sm:flex-row items-center sm:items-center gap-2 sm:gap-3 text-center sm:text-left">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-primary flex items-center justify-center flex-shrink-0">
+                    <feature.icon className="h-5 w-5 sm:h-6 sm:w-6 text-primary-foreground" />
                   </div>
                   <div>
-                    <div className="font-semibold text-foreground">{feature.title}</div>
-                    <div className="text-sm text-muted-foreground">{feature.description}</div>
+                    <div className="text-sm sm:text-base font-semibold text-foreground">{feature.title}</div>
+                    <div className="text-xs sm:text-sm text-muted-foreground hidden sm:block">{feature.description}</div>
                   </div>
                 </div>
               ))}
