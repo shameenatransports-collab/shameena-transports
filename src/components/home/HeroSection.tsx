@@ -44,7 +44,7 @@ export function HeroSection() {
               <Button
                 size="lg"
                 variant="outline"
-                className="w-full sm:w-auto gap-2 text-sm sm:text-base font-semibold border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
+                className="w-full sm:w-auto gap-2 text-sm sm:text-base font-semibold border-primary-foreground/30 text-primary-foreground hover:bg-transparent"
               >
                 <MessageCircle className="h-4 w-4 sm:h-5 sm:w-5" />
                 WhatsApp Us
