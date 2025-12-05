@@ -40,25 +40,25 @@ export function ProcessSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8">
           {steps.map((item, index) => (
             <div key={index} className="relative text-center">
               {/* Connector Line */}
               {index < steps.length - 1 && (
-                <div className="hidden lg:block absolute top-12 left-[60%] w-[80%] h-0.5 bg-border" />
+                <div className="hidden lg:block absolute top-10 sm:top-12 left-[60%] w-[80%] h-0.5 bg-border" />
               )}
 
               <div className="relative">
-                <div className="w-24 h-24 mx-auto rounded-full bg-primary flex items-center justify-center mb-4">
-                  <item.icon className="h-10 w-10 text-primary-foreground" />
+                <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 mx-auto rounded-full bg-primary flex items-center justify-center mb-3 sm:mb-4">
+                  <item.icon className="h-7 w-7 sm:h-8 sm:w-8 md:h-10 md:w-10 text-primary-foreground" />
                 </div>
-                <span className="absolute top-0 right-1/2 translate-x-12 -translate-y-2 w-8 h-8 rounded-full bg-accent text-accent-foreground text-sm font-bold flex items-center justify-center">
+                <span className="absolute top-0 right-1/2 translate-x-8 sm:translate-x-10 md:translate-x-12 -translate-y-1 sm:-translate-y-2 w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 rounded-full bg-accent text-accent-foreground text-xs sm:text-sm font-bold flex items-center justify-center">
                   {item.step}
                 </span>
               </div>
 
-              <h3 className="text-lg font-semibold text-foreground mb-2">{item.title}</h3>
-              <p className="text-muted-foreground text-sm">{item.description}</p>
+              <h3 className="text-sm sm:text-base md:text-lg font-semibold text-foreground mb-1 sm:mb-2">{item.title}</h3>
+              <p className="text-muted-foreground text-xs sm:text-sm">{item.description}</p>
             </div>
           ))}
         </div>
