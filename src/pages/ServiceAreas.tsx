@@ -212,7 +212,7 @@ const ServiceAreas = () => {
             </div>
 
             <div className="text-center mt-8">
-              <a href="tel:+919876543210">
+              <a href="tel:+919047721209">
                 <Button variant="default" size="lg" className="gap-2">
                   <Phone className="h-5 w-5" />
                   Call for Route Availability

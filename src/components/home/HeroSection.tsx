@@ -29,14 +29,14 @@ export function HeroSection() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href="tel:+919876543210">
+            <a href="tel:+919047721209">
               <Button size="lg" variant="secondary" className="w-full sm:w-auto gap-2 text-base font-semibold">
                 <Phone className="h-5 w-5" />
-                Call: +91 98765 43210
+                Call: +91 90477 21209
               </Button>
             </a>
             <a
-              href="https://wa.me/919876543210?text=Hi%2C%20I%20need%20lorry%20transport%20service"
+              href="https://wa.me/919047721209?text=Hi%2C%20I%20need%20lorry%20transport%20service"
               target="_blank"
               rel="noopener noreferrer"
             >

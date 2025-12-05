@@ -24,7 +24,7 @@ const faqs = [
   },
   {
     question: "How do I book a lorry for transport?",
-    answer: "Simply call us at +91 98765 43210 or WhatsApp us with your pickup location, destination, type of goods, and approximate weight. We'll provide you with a quote and arrange the transport.",
+    answer: "Simply call us at +91 90477 21209 or WhatsApp us with your pickup location, destination, type of goods, and approximate weight. We'll provide you with a quote and arrange the transport.",
   },
   {
     question: "What are your operating hours?",
