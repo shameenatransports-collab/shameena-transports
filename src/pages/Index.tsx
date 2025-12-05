@@ -8,6 +8,7 @@ import { WhyChooseUs } from "@/components/home/WhyChooseUs";
 import { ServiceAreasPreview } from "@/components/home/ServiceAreasPreview";
 import { FAQSection } from "@/components/home/FAQSection";
 import { CTASection } from "@/components/home/CTASection";
+import { AnimatedSection } from "@/components/ui/animated-section";
 
 const Index = () => {
   const jsonLd = {
@@ -64,13 +65,27 @@ const Index = () => {
       </Helmet>
       <Layout>
         <HeroSection />
-        <TrustBadges />
-        <ServicesPreview />
-        <ProcessSection />
-        <WhyChooseUs />
-        <ServiceAreasPreview />
-        <FAQSection />
-        <CTASection />
+        <AnimatedSection>
+          <TrustBadges />
+        </AnimatedSection>
+        <AnimatedSection delay={100}>
+          <ServicesPreview />
+        </AnimatedSection>
+        <AnimatedSection delay={100}>
+          <ProcessSection />
+        </AnimatedSection>
+        <AnimatedSection delay={100}>
+          <WhyChooseUs />
+        </AnimatedSection>
+        <AnimatedSection delay={100}>
+          <ServiceAreasPreview />
+        </AnimatedSection>
+        <AnimatedSection delay={100}>
+          <FAQSection />
+        </AnimatedSection>
+        <AnimatedSection delay={100}>
+          <CTASection />
+        </AnimatedSection>
       </Layout>
     </>
   );
