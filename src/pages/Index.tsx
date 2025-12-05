@@ -30,7 +30,7 @@ const Index = () => {
       "longitude": "76.9558"
     },
     "url": "https://www.shameena.com",
-    "telephone": "+919876543210",
+    "telephone": "+919047721209",
     "priceRange": "$$",
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
@@ -52,7 +52,7 @@ const Index = () => {
     <>
       <Helmet>
         <title>No.1 Lorry Service in Coimbatore | Goods Transport Tamil Nadu - Shameena Transports</title>
-        <meta name="description" content="Shameena Transports - No.1 Lorry Service in Coimbatore & Tamil Nadu. Fast, Safe & Reliable Goods Transport. Full Load, Part Load, Interstate. Call +91 98765 43210" />
+        <meta name="description" content="Shameena Transports - No.1 Lorry Service in Coimbatore & Tamil Nadu. Fast, Safe & Reliable Goods Transport. Full Load, Part Load, Interstate. Call +91 90477 21209" />
         <meta name="keywords" content="lorry service coimbatore, goods transport tamil nadu, truck transport coimbatore, lorry booking tamil nadu, textile transport tiruppur" />
         <link rel="canonical" href="https://www.shameena.com" />
         <meta property="og:title" content="No.1 Lorry Service in Coimbatore | Shameena Transports" />

@@ -47,7 +47,7 @@ export function Header() {
           </nav>
 
           <div className="flex items-center gap-3">
-            <a href="tel:+919876543210" className="hidden md:flex">
+            <a href="tel:+919047721209" className="hidden md:flex">
               <Button variant="default" size="sm" className="gap-2">
                 <Phone className="h-4 w-4" />
                 Call Now
@@ -83,7 +83,7 @@ export function Header() {
                   {link.name}
                 </Link>
               ))}
-              <a href="tel:+919876543210" className="px-4 py-2">
+              <a href="tel:+919047721209" className="px-4 py-2">
                 <Button variant="default" size="sm" className="w-full gap-2">
                   <Phone className="h-4 w-4" />
                   Call Now

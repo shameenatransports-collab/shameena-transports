@@ -12,14 +12,14 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    details: ["+91 98765 43210", "+91 98765 43211"],
-    action: "tel:+919876543210",
+    details: ["+91 90477 21209"],
+    action: "tel:+919047721209",
   },
   {
     icon: MessageCircle,
     title: "WhatsApp",
-    details: ["+91 98765 43210"],
-    action: "https://wa.me/919876543210",
+    details: ["+91 90477 21209"],
+    action: "https://wa.me/919047721209",
   },
   {
     icon: Mail,
@@ -80,7 +80,7 @@ const Contact = () => {
     <>
       <Helmet>
         <title>Contact Us | Lorry Booking Coimbatore - Shameena Transports</title>
-        <meta name="description" content="Contact Shameena Transports for lorry booking in Coimbatore. Call +91 98765 43210 or WhatsApp for instant quotes. 24/7 goods transport service in Tamil Nadu." />
+        <meta name="description" content="Contact Shameena Transports for lorry booking in Coimbatore. Call +91 90477 21209 or WhatsApp for instant quotes. 24/7 goods transport service in Tamil Nadu." />
         <link rel="canonical" href="https://www.shameena.com/contact" />
       </Helmet>
       <Layout>
@@ -276,14 +276,14 @@ const Contact = () => {
                 <div className="mt-6 p-6 bg-primary rounded-lg text-primary-foreground">
                   <h3 className="font-semibold text-lg mb-4">Need Immediate Assistance?</h3>
                   <div className="flex flex-col sm:flex-row gap-3">
-                    <a href="tel:+919876543210" className="flex-1">
+                  <a href="tel:+919047721209" className="flex-1">
                       <Button variant="secondary" size="lg" className="w-full gap-2">
                         <Phone className="h-5 w-5" />
                         Call Now
                       </Button>
                     </a>
                     <a
-                      href="https://wa.me/919876543210?text=Hi%2C%20I%20need%20lorry%20transport%20service"
+                      href="https://wa.me/919047721209?text=Hi%2C%20I%20need%20lorry%20transport%20service"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex-1"
