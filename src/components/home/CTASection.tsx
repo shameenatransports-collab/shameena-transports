@@ -26,7 +26,7 @@ export function CTASection() {
             <Button
               size="lg"
               variant="outline"
-              className="w-full sm:w-auto gap-2 text-base font-semibold border-accent-foreground/30 text-accent-foreground hover:bg-accent-foreground/10"
+              className="w-full sm:w-auto gap-2 text-base font-semibold border-accent-foreground/30 text-accent-foreground hover:bg-transparent"
             >
               <MessageCircle className="h-5 w-5" />
               Get Quote on WhatsApp
