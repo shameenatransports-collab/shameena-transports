@@ -2,15 +2,12 @@ import { Link } from "react-router-dom";
 import { Phone, MessageCircle, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroBg from "@/assets/hero-bg.jpg";
-
 export function HeroSection() {
-  return (
-    <section className="relative min-h-[90vh] flex items-center pb-28 sm:pb-24">
+  return <section className="relative min-h-[90vh] flex items-center pb-28 sm:pb-24">
       {/* Background Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroBg})` }}
-      >
+      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+      backgroundImage: `url(${heroBg})`
+    }}>
         <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/80 to-primary/60" />
       </div>
 
@@ -35,17 +32,8 @@ export function HeroSection() {
                 Call: +91 90477 21209
               </Button>
             </a>
-            <a
-              href="https://wa.me/919047721209?text=Hi%2C%20I%20need%20lorry%20transport%20service"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full sm:w-auto"
-            >
-              <Button
-                size="lg"
-                variant="outline"
-                className="w-full sm:w-auto gap-2 text-sm sm:text-base font-semibold border-primary-foreground/30 text-primary-foreground bg-transparent hover:bg-transparent hover:text-primary-foreground"
-              >
+            <a href="https://wa.me/919047721209?text=Hi%2C%20I%20need%20lorry%20transport%20service" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+              <Button size="lg" variant="outline" className="w-full sm:w-auto gap-2 text-sm sm:text-base font-semibold border-primary-foreground/30 text-primary-foreground bg-transparent hover:bg-transparent hover:text-primary-foreground">
                 <MessageCircle className="h-4 w-4 sm:h-5 sm:w-5" />
                 WhatsApp Us
               </Button>
@@ -69,7 +57,7 @@ export function HeroSection() {
               <div className="text-[10px] sm:text-xs md:text-sm text-muted-foreground">Years Heritage</div>
             </div>
             <div className="text-center">
-              <div className="text-lg sm:text-2xl md:text-3xl font-bold text-accent">50+</div>
+              <div className="text-lg sm:text-2xl md:text-3xl font-bold text-accent">12+</div>
               <div className="text-[10px] sm:text-xs md:text-sm text-muted-foreground">Lorries</div>
             </div>
             <div className="text-center">
@@ -83,6 +71,5 @@ export function HeroSection() {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 }
