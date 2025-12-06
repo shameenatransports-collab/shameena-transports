@@ -17,15 +17,15 @@ export function HeroSection() {
       <div className="container mx-auto px-4 relative z-10 pt-16 sm:pt-0">
         <div className="max-w-3xl">
           <span className="inline-block px-3 py-1.5 sm:px-4 sm:py-2 bg-accent text-accent-foreground text-xs sm:text-sm font-semibold rounded-full mb-4 sm:mb-6 animate-fade-in">
-            🚚 Trusted by 500+ Businesses in Tamil Nadu
+            🚚 Since 1982 – 43 Years of Heritage in Logistics
           </span>
 
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-primary-foreground leading-tight mb-4 sm:mb-6">
-            No.1 Lorry Service in Coimbatore & Tamil Nadu
+            Most Reliable Lorry Service in Coimbatore & Tamil Nadu
           </h1>
 
           <p className="text-base sm:text-lg md:text-xl text-primary-foreground/90 mb-6 sm:mb-8 max-w-2xl">
-            Fast, Safe & Reliable Goods Transport. Full Load, Part Load, Interstate – We deliver your cargo on time, every time.
+            Customer satisfaction is our priority. Fast, Safe & Reliable Goods Transport with <span className="font-semibold text-secondary">Return Loads Available at Lower Rates</span>. Full Load, Part Load, Interstate – We deliver on time, every time.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
@@ -65,8 +65,8 @@ export function HeroSection() {
         <div className="container mx-auto px-4 py-3 sm:py-4">
           <div className="grid grid-cols-4 gap-2 sm:gap-4 md:gap-8">
             <div className="text-center">
-              <div className="text-lg sm:text-2xl md:text-3xl font-bold text-accent">15+</div>
-              <div className="text-[10px] sm:text-xs md:text-sm text-muted-foreground">Years Exp.</div>
+              <div className="text-lg sm:text-2xl md:text-3xl font-bold text-accent">43+</div>
+              <div className="text-[10px] sm:text-xs md:text-sm text-muted-foreground">Years Heritage</div>
             </div>
             <div className="text-center">
               <div className="text-lg sm:text-2xl md:text-3xl font-bold text-accent">50+</div>
