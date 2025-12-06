@@ -7,20 +7,6 @@ import fleetBg from "@/assets/fleet-bg.jpg";
 
 const fleetData = [
   {
-    type: "20ft Container Trucks",
-    capacity: "7-9 Tons",
-    count: "15+",
-    ideal: "Medium cargo, textile bales, packaged goods",
-    features: ["Enclosed container", "Weather protected", "Ideal for city deliveries"],
-  },
-  {
-    type: "24ft Container Trucks",
-    capacity: "12-15 Tons",
-    count: "12+",
-    ideal: "Large shipments, industrial cargo",
-    features: ["High capacity", "Long-haul capable", "Multi-state permits"],
-  },
-  {
     type: "Multi-Axle Trailers",
     capacity: "20-25 Tons",
     count: "8+",
@@ -33,13 +19,6 @@ const fleetData = [
     count: "10+",
     ideal: "Construction materials, bulk goods",
     features: ["Easy loading/unloading", "Sand & gravel", "Steel & TMT bars"],
-  },
-  {
-    type: "Mini Trucks",
-    capacity: "1-3 Tons",
-    count: "8+",
-    ideal: "Small loads, last-mile delivery",
-    features: ["City accessible", "Quick delivery", "Cost-effective"],
   },
 ];
 
