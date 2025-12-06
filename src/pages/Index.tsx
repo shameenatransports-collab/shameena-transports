@@ -57,7 +57,7 @@ const Index = () => {
       "https://www.shameena.com/logo.png",
       "https://www.shameena.com/fleet.jpg"
     ],
-    "description": "Shameena Transports - Since 1982, 43 years of heritage in logistics and transportation. Tamil Nadu's most reliable lorry service provider. Customer satisfaction is our priority. Return loads available at cheaper rates. Full load, part load, and interstate transport services across Coimbatore, Chennai, Tiruppur, Erode, Salem, Madurai, Trichy. 50+ lorries, 10000+ successful deliveries.",
+    "description": "Shameena Transports - Since 1982, 43 years of heritage in logistics and transportation. Tamil Nadu's most reliable lorry service provider. Customer satisfaction is our priority. Return loads available at cheaper rates. Full load, part load, and interstate transport services across Coimbatore, Chennai, Tiruppur, Erode, Salem, Madurai, Trichy. 12+ lorries, 10000+ successful deliveries.",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "123, Transport Nagar, Avinashi Road",
