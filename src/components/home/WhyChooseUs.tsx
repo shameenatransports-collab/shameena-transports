@@ -1,4 +1,4 @@
-import { Shield, Clock, MapPin, Headphones, Award, TrendingUp } from "lucide-react";
+import { Shield, Clock, MapPin, Headphones, Award, TrendingUp, RotateCcw } from "lucide-react";
 
 const features = [
   {
@@ -17,9 +17,9 @@ const features = [
     description: "Real-time tracking for all shipments",
   },
   {
-    icon: Headphones,
-    title: "24/7 Support",
-    description: "Round-the-clock customer assistance",
+    icon: RotateCcw,
+    title: "Return Loads Available",
+    description: "Get cheaper rates on return transport – save more on every trip",
   },
   {
     icon: Award,
