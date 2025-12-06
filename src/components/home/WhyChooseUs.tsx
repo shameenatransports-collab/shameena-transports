@@ -23,8 +23,8 @@ const features = [
   },
   {
     icon: Award,
-    title: "15+ Years Experience",
-    description: "Trusted by 500+ businesses since 2005",
+    title: "43+ Years Experience",
+    description: "Trusted by 500+ businesses since 1982",
   },
   {
     icon: TrendingUp,
