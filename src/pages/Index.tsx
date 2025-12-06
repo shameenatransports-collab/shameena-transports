@@ -18,12 +18,13 @@ const Index = () => {
     "name": "Shameena Transports",
     "url": "https://www.shameena.com",
     "logo": "https://www.shameena.com/logo.png",
-    "description": "Tamil Nadu's Most Trusted Lorry Service and Goods Transport Company",
-    "foundingDate": "2010",
+    "description": "Since 1982 - 43 Years of Heritage in Logistics. Tamil Nadu's Most Reliable Lorry Service. Customer Satisfaction is Our Priority. Return Loads Available at Cheaper Rates.",
+    "foundingDate": "1982",
     "founder": {
       "@type": "Person",
       "name": "Shameena Transports"
     },
+    "slogan": "43 Years of Heritage in Logistics and Transportation",
     "contactPoint": [
       {
         "@type": "ContactPoint",
@@ -50,13 +51,13 @@ const Index = () => {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "@id": "https://www.shameena.com/#localbusiness",
-    "name": "Shameena Transports - Lorry Service Tamil Nadu",
-    "alternateName": ["Shameena Transport", "Shameena Logistics", "Shameena Trucking"],
+    "name": "Shameena Transports - Most Reliable Lorry Service Tamil Nadu",
+    "alternateName": ["Shameena Transport", "Shameena Logistics", "Shameena Trucking", "Shameena Transport Coimbatore"],
     "image": [
       "https://www.shameena.com/logo.png",
       "https://www.shameena.com/fleet.jpg"
     ],
-    "description": "Shameena Transports is Tamil Nadu's No.1 Lorry Service provider. We offer reliable goods transport, full load, part load, and interstate transport services across Coimbatore, Chennai, Tiruppur, Erode, Salem, Madurai, Trichy, and all major cities in Tamil Nadu. 15+ years of experience, 50+ lorries, 10000+ successful deliveries.",
+    "description": "Shameena Transports - Since 1982, 43 years of heritage in logistics and transportation. Tamil Nadu's most reliable lorry service provider. Customer satisfaction is our priority. Return loads available at cheaper rates. Full load, part load, and interstate transport services across Coimbatore, Chennai, Tiruppur, Erode, Salem, Madurai, Trichy. 50+ lorries, 10000+ successful deliveries.",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "123, Transport Nagar, Avinashi Road",
@@ -76,6 +77,7 @@ const Index = () => {
     "priceRange": "$$",
     "currenciesAccepted": "INR",
     "paymentAccepted": "Cash, UPI, Bank Transfer",
+    "foundingDate": "1982",
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
@@ -106,6 +108,7 @@ const Index = () => {
       "itemListElement": [
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Full Truck Load Transport"}},
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Part Load Transport"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Return Load Transport - Cheaper Rates"}},
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Interstate Goods Transport"}},
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Local Lorry Service"}},
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Textile Transport"}},
@@ -194,18 +197,18 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Shameena Transports | No.1 Lorry Service & Goods Transport in Tamil Nadu</title>
-        <meta name="description" content="Shameena Transports - Tamil Nadu's Most Trusted Lorry Service. Best Goods Transport in Coimbatore, Chennai, Tiruppur, Erode, Salem, Madurai. Full Load, Part Load, Interstate Transport. 24/7 Service. Call +91 90477 21209" />
-        <meta name="keywords" content="transport in tamil nadu, lorry service tamil nadu, goods transport tamil nadu, shameena transports, lorry service coimbatore, truck transport coimbatore, textile transport tiruppur, chennai goods transport, madurai lorry service, full truck load, part load transport, interstate transport" />
+        <title>Shameena Transports | Since 1982 - Most Reliable Lorry Service in Tamil Nadu</title>
+        <meta name="description" content="Shameena Transports - Since 1982, 43 years of heritage in logistics. Most Reliable Lorry Service in Coimbatore & Tamil Nadu. Customer satisfaction priority. Return loads at cheaper rates. Full Load, Part Load, Interstate. Call +91 90477 21209" />
+        <meta name="keywords" content="transport in tamil nadu, lorry service tamil nadu, goods transport tamil nadu, shameena transports, lorry service coimbatore, truck transport coimbatore, return load transport, cheaper transport rates, reliable lorry service, 43 years transport company, textile transport tiruppur, chennai goods transport, madurai lorry service, full truck load, part load transport, interstate transport, since 1982 transport" />
         <link rel="canonical" href="https://www.shameena.com" />
-        <meta property="og:title" content="Shameena Transports | No.1 Lorry Service in Tamil Nadu" />
-        <meta property="og:description" content="Tamil Nadu's Most Trusted Transport Service. Fast, Safe & Reliable Goods Transport. Coimbatore, Chennai, Tiruppur, Erode, Salem, Madurai. 24/7 Service." />
+        <meta property="og:title" content="Shameena Transports | Since 1982 - Most Reliable Lorry Service in Tamil Nadu" />
+        <meta property="og:description" content="43 Years of Heritage in Logistics. Most Reliable Transport Service. Return Loads at Cheaper Rates. Coimbatore, Chennai, Tiruppur, Erode, Salem, Madurai. 24/7 Service." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.shameena.com" />
         <meta property="og:image" content="https://www.shameena.com/og-image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Shameena Transports | No.1 Lorry Service in Tamil Nadu" />
-        <meta name="twitter:description" content="Tamil Nadu's Most Trusted Goods Transport. 24/7 Service." />
+        <meta name="twitter:title" content="Shameena Transports | Since 1982 - Most Reliable Lorry Service" />
+        <meta name="twitter:description" content="43 Years of Heritage. Return Loads at Cheaper Rates. 24/7 Service." />
         <script type="application/ld+json">{JSON.stringify(organizationSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(localBusinessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(serviceSchema)}</script>
