@@ -153,7 +153,7 @@ const About = () => {
                 <div className="text-primary-foreground/80 mt-2">Years Experience</div>
               </div>
               <div>
-                <div className="text-4xl md:text-5xl font-bold text-secondary">50+</div>
+                <div className="text-4xl md:text-5xl font-bold text-secondary">12+</div>
                 <div className="text-primary-foreground/80 mt-2">Lorries in Fleet</div>
               </div>
               <div>

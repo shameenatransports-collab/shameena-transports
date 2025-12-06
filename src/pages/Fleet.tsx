@@ -50,7 +50,7 @@ const Fleet = () => {
     <>
       <Helmet>
         <title>Our Fleet | GPS Enabled Lorries & Trucks - Shameena Transports Coimbatore</title>
-        <meta name="description" content="50+ modern GPS-enabled lorries and trucks. 20ft, 24ft containers, multi-axle trailers. Well-maintained, insured fleet for goods transport in Tamil Nadu." />
+        <meta name="description" content="12+ modern GPS-enabled lorries and trucks. Multi-axle trailers, open body lorries. Well-maintained, insured fleet for goods transport in Tamil Nadu." />
         <link rel="canonical" href="https://www.shameena.com/fleet" />
       </Helmet>
       <Layout>
@@ -68,7 +68,7 @@ const Fleet = () => {
                 Our Modern Fleet
               </h1>
               <p className="text-lg text-primary-foreground/90">
-                50+ GPS-enabled, well-maintained lorries ready to transport your goods across Tamil Nadu
+                12+ GPS-enabled, well-maintained lorries ready to transport your goods across Tamil Nadu
               </p>
             </div>
           </div>
@@ -139,7 +139,7 @@ const Fleet = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-8">Fleet at a Glance</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               <div>
-                <div className="text-4xl md:text-5xl font-bold text-secondary">50+</div>
+                <div className="text-4xl md:text-5xl font-bold text-secondary">12+</div>
                 <div className="text-primary-foreground/80 mt-2">Total Vehicles</div>
               </div>
               <div>
