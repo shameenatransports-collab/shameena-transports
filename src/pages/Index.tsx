@@ -20,10 +20,6 @@ const Index = () => {
     "logo": "https://www.shameena.com/logo.png",
     "description": "Since 1982 - 43 Years of Heritage in Logistics. Tamil Nadu's Most Reliable Lorry Service. Customer Satisfaction is Our Priority. Return Loads Available at Cheaper Rates.",
     "foundingDate": "1982",
-    "founder": {
-      "@type": "Person",
-      "name": "Shameena Transports"
-    },
     "slogan": "43 Years of Heritage in Logistics and Transportation",
     "contactPoint": [
       {
@@ -41,10 +37,6 @@ const Index = () => {
         "availableLanguage": ["English", "Tamil"]
       }
     ],
-    "sameAs": [
-      "https://www.facebook.com/shameena",
-      "https://www.instagram.com/shameena"
-    ]
   };
 
   const localBusinessSchema = {
@@ -83,13 +75,6 @@ const Index = () => {
       "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
       "opens": "00:00",
       "closes": "23:59"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.8",
-      "reviewCount": "500",
-      "bestRating": "5",
-      "worstRating": "1"
     },
     "areaServed": [
       {"@type": "City", "name": "Coimbatore", "containedInPlace": {"@type": "State", "name": "Tamil Nadu"}},

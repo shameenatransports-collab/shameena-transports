@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Linkedin } from "lucide-react";
+import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const serviceLinks = [
@@ -33,19 +33,8 @@ export function Footer() {
               </div>
             </div>
             <p className="text-sm opacity-90">
-              No.1 Lorry Service in Coimbatore & Tamil Nadu. Fast, Safe & Reliable Goods Transport since 2005.
+              Most Reliable Lorry Service in Coimbatore & Tamil Nadu. Fast, Safe & Reliable Goods Transport since 1982.
             </p>
-            <div className="flex gap-4">
-              <a href="#" className="hover:text-secondary transition-colors" aria-label="Facebook">
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a href="#" className="hover:text-secondary transition-colors" aria-label="Instagram">
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a href="#" className="hover:text-secondary transition-colors" aria-label="LinkedIn">
-                <Linkedin className="h-5 w-5" />
-              </a>
-            </div>
           </div>
 
           {/* Services */}
