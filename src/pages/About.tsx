@@ -42,7 +42,7 @@ const About = () => {
     <>
       <Helmet>
         <title>About Us | Shameena Transports - Trusted Lorry Service Since 2005</title>
-        <meta name="description" content="Learn about Shameena Transports - 15+ years of trusted lorry service in Coimbatore & Tamil Nadu. Our mission, values, and commitment to safe goods transport." />
+        <meta name="description" content="Learn about Shameena Transports - 43+ years of trusted lorry service in Coimbatore & Tamil Nadu since 1982. Our mission, values, and commitment to safe goods transport." />
         <link rel="canonical" href="https://www.shameena.com/about" />
       </Helmet>
       <Layout>
@@ -70,10 +70,10 @@ const About = () => {
                 </h2>
                 <div className="space-y-4 text-muted-foreground">
                   <p>
-                    Founded in 2005, Shameena Transports started with just two lorries and a vision to provide reliable goods transport services in Coimbatore. Today, we have grown into one of the most trusted logistics partners in Tamil Nadu.
+                    Founded in 1982, Shameena Transports started with just two lorries and a vision to provide reliable goods transport services in Coimbatore. Today, we have grown into one of the most trusted logistics partners in Tamil Nadu with over 43 years of experience.
                   </p>
                   <p>
-                    Our founder, with over 20 years of experience in the transport industry, understood the challenges businesses face with unreliable logistics. This drove us to build a company focused on punctuality, safety, and customer satisfaction.
+                    Our founder, with decades of experience in the transport industry, understood the challenges businesses face with unreliable logistics. This drove us to build a company focused on punctuality, safety, and customer satisfaction.
                   </p>
                   <p>
                     From textile mills in Tiruppur to factories in Chennai, construction sites in Salem to warehouses in Madurai – we have served thousands of clients across diverse industries. Our commitment to excellence has made us the preferred choice for goods transport in Tamil Nadu.
@@ -87,7 +87,7 @@ const About = () => {
                   className="rounded-lg shadow-xl"
                 />
                 <div className="absolute -bottom-6 -left-6 bg-accent text-accent-foreground p-6 rounded-lg shadow-lg">
-                  <div className="text-4xl font-bold">15+</div>
+                  <div className="text-4xl font-bold">43+</div>
                   <div className="text-sm">Years of Excellence</div>
                 </div>
               </div>
@@ -149,7 +149,7 @@ const About = () => {
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
               <div>
-                <div className="text-4xl md:text-5xl font-bold text-secondary">15+</div>
+              <div className="text-4xl md:text-5xl font-bold text-secondary">43+</div>
                 <div className="text-primary-foreground/80 mt-2">Years Experience</div>
               </div>
               <div>
