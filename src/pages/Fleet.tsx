@@ -9,14 +9,14 @@ const fleetData = [
   {
     type: "Multi-Axle Trailers",
     capacity: "20-25 Tons",
-    count: "8+",
+    count: "6",
     ideal: "Heavy machinery, ODC cargo",
     features: ["Heavy load specialists", "Industrial equipment", "Construction materials"],
   },
   {
     type: "Open Body Lorries",
     capacity: "10-20 Tons",
-    count: "10+",
+    count: "6",
     ideal: "Construction materials, bulk goods",
     features: ["Easy loading/unloading", "Sand & gravel", "Steel & TMT bars"],
   },

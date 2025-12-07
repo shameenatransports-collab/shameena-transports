@@ -41,7 +41,7 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>About Us | Shameena Transports - Trusted Lorry Service Since 2005</title>
+        <title>About Us | Shameena Transports - Trusted Lorry Service Since 1982</title>
         <meta name="description" content="Learn about Shameena Transports - 43+ years of trusted lorry service in Coimbatore & Tamil Nadu since 1982. Our mission, values, and commitment to safe goods transport." />
         <link rel="canonical" href="https://www.shameena.com/about" />
       </Helmet>
@@ -54,7 +54,7 @@ const About = () => {
                 About Shameena Transports
               </h1>
               <p className="text-lg text-primary-foreground/90">
-                Trusted by hundreds of businesses across Tamil Nadu since 2005
+                Trusted by hundreds of businesses across Tamil Nadu since 1982
               </p>
             </div>
           </div>
