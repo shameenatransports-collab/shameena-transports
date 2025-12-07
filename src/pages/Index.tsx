@@ -52,10 +52,10 @@ const Index = () => {
     "description": "Shameena Transports - Since 1982, 43 years of heritage in logistics and transportation. Tamil Nadu's most reliable lorry service provider. Customer satisfaction is our priority. Return loads available at cheaper rates. Full load, part load, and interstate transport services across Coimbatore, Chennai, Tiruppur, Erode, Salem, Madurai, Trichy. 12+ lorries, 10000+ successful deliveries.",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "123, Transport Nagar, Avinashi Road",
+      "streetAddress": "No.302/2A7, VK Road, Peelamedu",
       "addressLocality": "Coimbatore",
       "addressRegion": "Tamil Nadu",
-      "postalCode": "641018",
+      "postalCode": "641004",
       "addressCountry": "IN"
     },
     "geo": {
@@ -64,8 +64,7 @@ const Index = () => {
       "longitude": "76.9558"
     },
     "url": "https://www.shameena.com",
-    "telephone": "+91-90477-21209",
-    "email": "info@shameena.com",
+    "telephone": "+91-94430-33055",
     "priceRange": "$$",
     "currenciesAccepted": "INR",
     "paymentAccepted": "Cash, UPI, Bank Transfer",

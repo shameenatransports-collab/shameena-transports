@@ -12,20 +12,20 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    details: ["+91 90477 21209"],
-    action: "tel:+919047721209",
+    details: ["+91 94430 33055", "+91 90477 21209"],
+    action: "tel:+919443033055",
   },
   {
     icon: MessageCircle,
     title: "WhatsApp",
-    details: ["+91 90477 21209"],
-    action: "https://wa.me/919047721209",
+    details: ["+91 94430 33055"],
+    action: "https://wa.me/919443033055",
   },
   {
-    icon: Mail,
-    title: "Email",
-    details: ["info@shameena.com", "bookings@shameena.com"],
-    action: "mailto:info@shameena.com",
+    icon: MapPin,
+    title: "Address",
+    details: ["No.302/2A7, VK Road, Peelamedu, Coimbatore - 641004"],
+    action: null,
   },
   {
     icon: Clock,
@@ -260,12 +260,12 @@ const Contact = () => {
                       <MapPin className="h-6 w-6 text-accent flex-shrink-0 mt-1" />
                       <div>
                         <h3 className="font-semibold text-foreground mb-1">
-                          Shameena Transports Head Office
+                          Shameena Transporting Agents
                         </h3>
                         <p className="text-muted-foreground text-sm">
-                          123, Transport Nagar, Avinashi Road,<br />
-                          Near CODISSIA Trade Fair Complex,<br />
-                          Coimbatore - 641018, Tamil Nadu
+                          No.302/2A7, VK Road, Peelamedu,<br />
+                          Coimbatore - 641004, Tamil Nadu<br />
+                          GST: 33AHTPA8379E1Z3
                         </p>
                       </div>
                     </div>
@@ -276,14 +276,14 @@ const Contact = () => {
                 <div className="mt-6 p-6 bg-primary rounded-lg text-primary-foreground">
                   <h3 className="font-semibold text-lg mb-4">Need Immediate Assistance?</h3>
                   <div className="flex flex-col sm:flex-row gap-3">
-                  <a href="tel:+919047721209" className="flex-1">
+                  <a href="tel:+919443033055" className="flex-1">
                       <Button variant="secondary" size="lg" className="w-full gap-2">
                         <Phone className="h-5 w-5" />
                         Call Now
                       </Button>
                     </a>
                     <a
-                      href="https://wa.me/919047721209?text=Hi%2C%20I%20need%20lorry%20transport%20service"
+                      href="https://wa.me/919443033055?text=Hi%2C%20I%20need%20lorry%20transport%20service"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex-1"

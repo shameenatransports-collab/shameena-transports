@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, MapPin, Clock } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const serviceLinks = [
@@ -78,20 +78,15 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 mt-0.5 flex-shrink-0" />
                 <span className="text-sm opacity-90">
-                  123, Transport Nagar, Avinashi Road, Coimbatore - 641018, Tamil Nadu
+                  No.302/2A7, VK Road, Peelamedu, Coimbatore - 641004, Tamil Nadu
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 flex-shrink-0" />
-                <a href="tel:+919047721209" className="text-sm opacity-90 hover:text-secondary">
-                  +91 90477 21209
-                </a>
-              </li>
-              <li className="flex items-center gap-3">
-                <Mail className="h-5 w-5 flex-shrink-0" />
-                <a href="mailto:info@shameena.com" className="text-sm opacity-90 hover:text-secondary">
-                  info@shameena.com
-                </a>
+                <div className="text-sm opacity-90">
+                  <a href="tel:+919443033055" className="hover:text-secondary block">+91 94430 33055</a>
+                  <a href="tel:+919047721209" className="hover:text-secondary block">+91 90477 21209</a>
+                </div>
               </li>
               <li className="flex items-center gap-3">
                 <Clock className="h-5 w-5 flex-shrink-0" />
