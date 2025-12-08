@@ -12,14 +12,14 @@ export function CTASection() {
           Get instant quotes for your goods transport needs. Available 24/7 for bookings!
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="tel:+919047721209">
+          <a href="tel:+919443033055">
             <Button size="lg" variant="default" className="w-full sm:w-auto gap-2 text-base font-semibold">
               <Phone className="h-5 w-5" />
-              Call: +91 90477 21209
+              Call: +91 94430 33055
             </Button>
           </a>
           <a
-            href="https://wa.me/919047721209?text=Hi%2C%20I%20need%20a%20quote%20for%20lorry%20transport"
+            href="https://wa.me/919443033055?text=Hi%2C%20I%20need%20a%20quote%20for%20lorry%20transport"
             target="_blank"
             rel="noopener noreferrer"
           >
