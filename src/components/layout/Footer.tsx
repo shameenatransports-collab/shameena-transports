@@ -1,26 +1,40 @@
 import { Link } from "react-router-dom";
 import { Phone, MapPin, Clock } from "lucide-react";
 import logo from "@/assets/sta-logo.png";
-
-const serviceLinks = [
-  { name: "Full Load Transport", href: "/services#full-load" },
-  { name: "Part Load Transport", href: "/services#part-load" },
-  { name: "Interstate Transport", href: "/services#interstate" },
-  { name: "Textile Cargo", href: "/services#textile" },
-  { name: "Construction Material", href: "/services#construction" },
-];
-
-const areaLinks = [
-  { name: "Coimbatore", href: "/service-areas#coimbatore" },
-  { name: "Tiruppur", href: "/service-areas#tiruppur" },
-  { name: "Chennai", href: "/service-areas#chennai" },
-  { name: "Salem", href: "/service-areas#salem" },
-  { name: "Madurai", href: "/service-areas#madurai" },
-];
-
+const serviceLinks = [{
+  name: "Full Load Transport",
+  href: "/services#full-load"
+}, {
+  name: "Part Load Transport",
+  href: "/services#part-load"
+}, {
+  name: "Interstate Transport",
+  href: "/services#interstate"
+}, {
+  name: "Textile Cargo",
+  href: "/services#textile"
+}, {
+  name: "Construction Material",
+  href: "/services#construction"
+}];
+const areaLinks = [{
+  name: "Coimbatore",
+  href: "/service-areas#coimbatore"
+}, {
+  name: "Tiruppur",
+  href: "/service-areas#tiruppur"
+}, {
+  name: "Chennai",
+  href: "/service-areas#chennai"
+}, {
+  name: "Salem",
+  href: "/service-areas#salem"
+}, {
+  name: "Madurai",
+  href: "/service-areas#madurai"
+}];
 export function Footer() {
-  return (
-    <footer className="bg-primary text-primary-foreground">
+  return <footer className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Company Info */}
@@ -29,7 +43,7 @@ export function Footer() {
               <img src={logo} alt="Shameena Transports" className="h-10 w-auto bg-card rounded p-1" />
               <div>
                 <span className="font-bold text-lg">Shameena</span>
-                <span className="font-semibold text-lg text-secondary"> Transports</span>
+                <span className="font-semibold text-lg text-secondary"> Transporting Agents</span>
               </div>
             </div>
             <p className="text-sm opacity-90">
@@ -41,16 +55,11 @@ export function Footer() {
           <div>
             <h3 className="font-semibold text-lg mb-4">Our Services</h3>
             <ul className="space-y-2">
-              {serviceLinks.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    to={link.href}
-                    className="text-sm opacity-90 hover:opacity-100 hover:text-secondary transition-colors"
-                  >
+              {serviceLinks.map(link => <li key={link.href}>
+                  <Link to={link.href} className="text-sm opacity-90 hover:opacity-100 hover:text-secondary transition-colors">
                     {link.name}
                   </Link>
-                </li>
-              ))}
+                </li>)}
             </ul>
           </div>
 
@@ -58,16 +67,11 @@ export function Footer() {
           <div>
             <h3 className="font-semibold text-lg mb-4">Service Areas</h3>
             <ul className="space-y-2">
-              {areaLinks.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    to={link.href}
-                    className="text-sm opacity-90 hover:opacity-100 hover:text-secondary transition-colors"
-                  >
+              {areaLinks.map(link => <li key={link.href}>
+                  <Link to={link.href} className="text-sm opacity-90 hover:opacity-100 hover:text-secondary transition-colors">
                     {link.name}
                   </Link>
-                </li>
-              ))}
+                </li>)}
             </ul>
           </div>
 
@@ -113,6 +117,5 @@ export function Footer() {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 }
