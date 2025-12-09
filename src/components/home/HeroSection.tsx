@@ -21,8 +21,7 @@ export function HeroSection() {
             Most Reliable Lorry Service in Coimbatore & Tamil Nadu
           </h1>
 
-          <p className="text-base sm:text-lg md:text-xl text-primary-foreground/90 mb-6 sm:mb-8 max-w-2xl">
-            Customer satisfaction is our priority. Fast, Safe & Reliable Goods Transport with <span className="font-semibold text-secondary">Return Loads Available at Lower Rates</span>. Full Load, Part Load, Interstate – We deliver on time, every time.
+          <p className="text-base sm:text-lg md:text-xl text-primary-foreground/90 mb-6 sm:mb-8 max-w-2xl">Customer satisfaction is our priority. Fast, Safe & Reliable Goods Transport with Return Loads Available at Lower Rates.<span className="font-semibold text-secondary">Return Loads Available at Lower Rates</span>. Full Load, Part Load, Interstate – We deliver on time, every time.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
