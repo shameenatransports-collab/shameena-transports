@@ -3,6 +3,7 @@ import { Layout } from "@/components/layout/Layout";
 import { Shield, Clock, Users, Award, Target, Heart } from "lucide-react";
 import { CTASection } from "@/components/home/CTASection";
 import fleetBg from "@/assets/fleet-bg.jpg";
+import logo from "@/assets/sta-logo.png";
 
 const values = [
   {
@@ -49,13 +50,20 @@ const About = () => {
         {/* Hero Section */}
         <section className="relative py-20 md:py-28 bg-primary">
           <div className="container mx-auto px-4">
-            <div className="max-w-3xl">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-6">
-                About Shameena Transports
-              </h1>
-              <p className="text-lg text-primary-foreground/90">
-                Trusted by hundreds of businesses across Tamil Nadu since 1982
-              </p>
+            <div className="max-w-3xl flex items-center gap-6">
+              <img 
+                src={logo} 
+                alt="Shameena Transports Logo" 
+                className="h-24 md:h-32 w-auto bg-card rounded-lg p-2 shadow-lg"
+              />
+              <div>
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-4">
+                  About Shameena Transports
+                </h1>
+                <p className="text-lg text-primary-foreground/90">
+                  Trusted by hundreds of businesses across Tamil Nadu since 1982
+                </p>
+              </div>
             </div>
           </div>
         </section>

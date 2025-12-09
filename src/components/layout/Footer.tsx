@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Phone, MapPin, Clock } from "lucide-react";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/sta-logo.png";
 
 const serviceLinks = [
   { name: "Full Load Transport", href: "/services#full-load" },
