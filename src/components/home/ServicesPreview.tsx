@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Truck, Package, MapPin, Factory, Building2, Warehouse, ArrowRight } from "lucide-react";
+import { Truck, Package, Factory, Building2, Warehouse, ArrowRight } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
@@ -7,17 +7,12 @@ const services = [
   {
     icon: Truck,
     title: "Full Load Transport",
-    description: "Complete truck booking for large shipments across Tamil Nadu and interstate routes.",
+    description: "Complete truck booking for large shipments across Tamil Nadu.",
   },
   {
     icon: Package,
     title: "Part Load Transport",
     description: "Cost-effective shared transport for smaller cargo requirements.",
-  },
-  {
-    icon: MapPin,
-    title: "Interstate Transport",
-    description: "Pan-India goods movement with real-time GPS tracking.",
   },
   {
     icon: Factory,

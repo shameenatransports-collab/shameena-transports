@@ -8,7 +8,7 @@ import {
 const faqs = [
   {
     question: "What areas do you provide lorry service in Tamil Nadu?",
-    answer: "We provide lorry transport services across all major cities in Tamil Nadu including Coimbatore, Tiruppur, Erode, Salem, Chennai, Madurai, Trichy, Karur, and all districts. We also offer interstate transport to Karnataka, Kerala, and Andhra Pradesh.",
+    answer: "We provide lorry transport services across all major cities in Tamil Nadu including Coimbatore, Tiruppur, Erode, Salem, Chennai, Madurai, Trichy, Karur, and all districts.",
   },
   {
     question: "What types of goods can you transport?",

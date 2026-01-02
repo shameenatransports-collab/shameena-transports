@@ -91,7 +91,7 @@ const ServiceAreas = () => {
     <>
       <Helmet>
         <title>Service Areas | Lorry Transport in Coimbatore, Chennai, Madurai - All Tamil Nadu</title>
-        <meta name="description" content="Lorry transport services across Tamil Nadu - Coimbatore, Tiruppur, Chennai, Salem, Madurai, Trichy, Erode, Karur. Interstate routes to Karnataka, Kerala, AP." />
+        <meta name="description" content="Lorry transport services across Tamil Nadu - Coimbatore, Tiruppur, Chennai, Salem, Madurai, Trichy, Erode, Karur. Complete coverage across all districts." />
         <link rel="canonical" href="https://www.shameena.com/service-areas" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
@@ -178,46 +178,6 @@ const ServiceAreas = () => {
                   {area}
                 </span>
               ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Interstate Routes */}
-        <section className="py-16 md:py-24 bg-background">
-          <div className="container mx-auto px-4">
-            <div className="text-center max-w-2xl mx-auto mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                Interstate Transport Routes
-              </h2>
-              <p className="text-muted-foreground text-lg">
-                Beyond Tamil Nadu – we connect you to major cities across South India
-              </p>
-            </div>
-
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {[
-                { state: "Karnataka", cities: "Bangalore, Mysore, Mangalore" },
-                { state: "Kerala", cities: "Kochi, Trivandrum, Kozhikode" },
-                { state: "Andhra Pradesh", cities: "Vijayawada, Visakhapatnam, Tirupati" },
-                { state: "Telangana", cities: "Hyderabad, Warangal, Nizamabad" },
-              ].map((route, index) => (
-                <div
-                  key={index}
-                  className="p-6 rounded-lg bg-primary text-primary-foreground text-center"
-                >
-                  <div className="text-xl font-bold mb-2">{route.state}</div>
-                  <div className="text-sm text-primary-foreground/80">{route.cities}</div>
-                </div>
-              ))}
-            </div>
-
-            <div className="text-center mt-8">
-              <a href="tel:+919047721209">
-                <Button variant="default" size="lg" className="gap-2">
-                  <Phone className="h-5 w-5" />
-                  Call for Route Availability
-                </Button>
-              </a>
             </div>
           </div>
         </section>

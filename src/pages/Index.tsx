@@ -49,7 +49,7 @@ const Index = () => {
       "https://www.shameena.com/logo.png",
       "https://www.shameena.com/fleet.jpg"
     ],
-    "description": "Shameena Transports - Since 1982, 43 years of heritage in logistics and transportation. Tamil Nadu's most reliable lorry service provider. Customer satisfaction is our priority. Return loads available at cheaper rates. Full load, part load, and interstate transport services across Coimbatore, Chennai, Tiruppur, Erode, Salem, Madurai, Trichy. 12+ lorries, 10000+ successful deliveries.",
+    "description": "Shameena Transports - Since 1982, 43 years of heritage in logistics and transportation. Tamil Nadu's most reliable lorry service provider. Customer satisfaction is our priority. Return loads available at cheaper rates. Full load and part load transport services across Coimbatore, Chennai, Tiruppur, Erode, Salem, Madurai, Trichy. 12+ lorries, 10000+ successful deliveries.",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "No.302/2A7, VK Road, Peelamedu",
@@ -93,7 +93,6 @@ const Index = () => {
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Full Truck Load Transport"}},
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Part Load Transport"}},
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Return Load Transport - Cheaper Rates"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Interstate Goods Transport"}},
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Local Lorry Service"}},
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Textile Transport"}},
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Industrial Cargo Transport"}}
@@ -148,7 +147,7 @@ const Index = () => {
         "name": "What areas does Shameena Transports serve in Tamil Nadu?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Shameena Transports provides lorry and goods transport services across all major cities in Tamil Nadu including Coimbatore, Chennai, Tiruppur, Erode, Salem, Madurai, Trichy, Karur, and more. We also offer interstate transport to Karnataka, Kerala, and Andhra Pradesh."
+          "text": "Shameena Transports provides lorry and goods transport services across all major cities in Tamil Nadu including Coimbatore, Chennai, Tiruppur, Erode, Salem, Madurai, Trichy, Karur, and all districts."
         }
       },
       {
@@ -182,8 +181,8 @@ const Index = () => {
     <>
       <Helmet>
         <title>Shameena Transports | Since 1982 - Most Reliable Lorry Service in Tamil Nadu</title>
-        <meta name="description" content="Shameena Transports - Since 1982, 43 years of heritage in logistics. Most Reliable Lorry Service in Coimbatore & Tamil Nadu. Customer satisfaction priority. Return loads at cheaper rates. Full Load, Part Load, Interstate. Call +91 90477 21209" />
-        <meta name="keywords" content="transport in tamil nadu, lorry service tamil nadu, goods transport tamil nadu, shameena transports, lorry service coimbatore, truck transport coimbatore, return load transport, cheaper transport rates, reliable lorry service, 43 years transport company, textile transport tiruppur, chennai goods transport, madurai lorry service, full truck load, part load transport, interstate transport, since 1982 transport" />
+        <meta name="description" content="Shameena Transports - Since 1982, 43 years of heritage in logistics. Most Reliable Lorry Service in Coimbatore & Tamil Nadu. Customer satisfaction priority. Return loads at cheaper rates. Full Load, Part Load. Call +91 90477 21209" />
+        <meta name="keywords" content="transport in tamil nadu, lorry service tamil nadu, goods transport tamil nadu, shameena transports, lorry service coimbatore, truck transport coimbatore, return load transport, cheaper transport rates, reliable lorry service, 43 years transport company, textile transport tiruppur, chennai goods transport, madurai lorry service, full truck load, part load transport, since 1982 transport" />
         <link rel="canonical" href="https://www.shameena.com" />
         <meta property="og:title" content="Shameena Transports | Since 1982 - Most Reliable Lorry Service in Tamil Nadu" />
         <meta property="og:description" content="43 Years of Heritage in Logistics. Most Reliable Transport Service. Return Loads at Cheaper Rates. Coimbatore, Chennai, Tiruppur, Erode, Salem, Madurai. 24/7 Service." />
