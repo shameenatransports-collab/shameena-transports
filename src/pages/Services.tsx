@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { Layout } from "@/components/layout/Layout";
-import { Truck, Package, MapPin, Factory, Building2, Warehouse, CheckCircle } from "lucide-react";
+import { Truck, Package, Factory, Building2, Warehouse, CheckCircle } from "lucide-react";
 import { CTASection } from "@/components/home/CTASection";
 
 const services = [
@@ -28,19 +28,6 @@ const services = [
       "Regular scheduled departures",
       "Ideal for SMEs and regular dispatches",
       "Consolidated loads for major routes",
-    ],
-  },
-  {
-    id: "interstate",
-    icon: MapPin,
-    title: "Interstate Goods Transport",
-    description: "Pan-India logistics coverage",
-    features: [
-      "Tamil Nadu to all major Indian states",
-      "Kerala, Karnataka, AP, Telangana routes",
-      "North India and Mumbai connections",
-      "All permits and documentation handled",
-      "GPS tracking throughout journey",
     ],
   },
   {
@@ -115,7 +102,7 @@ const Services = () => {
     <>
       <Helmet>
         <title>Lorry Transport Services in Coimbatore | Full Load, Part Load - Shameena Transports</title>
-        <meta name="description" content="Professional lorry transport services in Coimbatore & Tamil Nadu. Full Load, Part Load, Interstate, Textile, Construction Material Transport. Call for instant quotes!" />
+        <meta name="description" content="Professional lorry transport services in Coimbatore & Tamil Nadu. Full Load, Part Load, Textile, Construction Material Transport. Call for instant quotes!" />
         <link rel="canonical" href="https://www.shameena.com/services" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
