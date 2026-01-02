@@ -6,6 +6,7 @@ import { ServicesPreview } from "@/components/home/ServicesPreview";
 import { ProcessSection } from "@/components/home/ProcessSection";
 import { WhyChooseUs } from "@/components/home/WhyChooseUs";
 import { ServiceAreasPreview } from "@/components/home/ServiceAreasPreview";
+import { TestimonialsSection } from "@/components/home/TestimonialsSection";
 import { FAQSection } from "@/components/home/FAQSection";
 import { CTASection } from "@/components/home/CTASection";
 import { AnimatedSection } from "@/components/ui/animated-section";
@@ -24,7 +25,7 @@ const Index = () => {
     "contactPoint": [
       {
         "@type": "ContactPoint",
-        "telephone": "+91-90477-21209",
+        "telephone": "+91-94430-33055",
         "contactType": "customer service",
         "areaServed": "IN",
         "availableLanguage": ["English", "Tamil"]
@@ -37,6 +38,7 @@ const Index = () => {
         "availableLanguage": ["English", "Tamil"]
       }
     ],
+    "sameAs": []
   };
 
   const localBusinessSchema = {
@@ -44,7 +46,7 @@ const Index = () => {
     "@type": "LocalBusiness",
     "@id": "https://www.shameena.com/#localbusiness",
     "name": "Shameena Transports - Most Reliable Lorry Service Tamil Nadu",
-    "alternateName": ["Shameena Transport", "Shameena Logistics", "Shameena Trucking", "Shameena Transport Coimbatore"],
+    "alternateName": ["Shameena Transport", "Shameena Logistics", "Shameena Trucking", "Shameena Transport Coimbatore", "Shameena Transporting Agents"],
     "image": [
       "https://www.shameena.com/logo.png",
       "https://www.shameena.com/fleet.jpg"
@@ -74,6 +76,13 @@ const Index = () => {
       "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
       "opens": "00:00",
       "closes": "23:59"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "500",
+      "bestRating": "5",
+      "worstRating": "1"
     },
     "areaServed": [
       {"@type": "City", "name": "Coimbatore", "containedInPlace": {"@type": "State", "name": "Tamil Nadu"}},
@@ -163,7 +172,7 @@ const Index = () => {
         "name": "Is Shameena Transports available 24/7?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, Shameena Transports operates 24 hours a day, 7 days a week. You can book our lorry services anytime by calling +91 90477 21209 or contacting us via WhatsApp."
+          "text": "Yes, Shameena Transports operates 24 hours a day, 7 days a week. You can book our lorry services anytime by calling +91 94430 33055 or contacting us via WhatsApp."
         }
       },
       {
@@ -171,18 +180,45 @@ const Index = () => {
         "name": "How can I get a quote for transport services?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "You can get a free quote by calling us at +91 90477 21209, messaging us on WhatsApp, or filling out the contact form on our website. We provide competitive rates for all transport requirements."
+          "text": "You can get a free quote by calling us at +91 94430 33055, messaging us on WhatsApp, or filling out the contact form on our website. We provide competitive rates for all transport requirements."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are return loads and how can they save me money?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Return loads are transport services where our lorries are returning from a delivery. Since the truck is already heading back, we offer these at cheaper rates, helping you save significantly on transport costs."
         }
       }
     ]
   };
 
+  const reviewSchema = {
+    "@context": "https://schema.org",
+    "@type": "Review",
+    "itemReviewed": {
+      "@type": "LocalBusiness",
+      "name": "Shameena Transports"
+    },
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "5",
+      "bestRating": "5"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Rajesh Kumar"
+    },
+    "reviewBody": "We have been using Shameena Transports for 10+ years. Their reliability and on-time delivery for our textile exports is unmatched."
+  };
+
   return (
     <>
       <Helmet>
-        <title>Shameena Transports | Since 1982 - Most Reliable Lorry Service in Tamil Nadu</title>
-        <meta name="description" content="Shameena Transports - Since 1982, 43 years of heritage in logistics. Most Reliable Lorry Service in Coimbatore & Tamil Nadu. Customer satisfaction priority. Return loads at cheaper rates. Full Load, Part Load. Call +91 90477 21209" />
-        <meta name="keywords" content="transport in tamil nadu, lorry service tamil nadu, goods transport tamil nadu, shameena transports, lorry service coimbatore, truck transport coimbatore, return load transport, cheaper transport rates, reliable lorry service, 43 years transport company, textile transport tiruppur, chennai goods transport, madurai lorry service, full truck load, part load transport, since 1982 transport" />
+        <title>Shameena Transports | Since 1982 - Most Reliable Lorry Service in Coimbatore & Tamil Nadu</title>
+        <meta name="description" content="Shameena Transports - Since 1982, 43 years of heritage in logistics. Most Reliable Lorry Service in Coimbatore & Tamil Nadu. Customer satisfaction priority. Return loads at cheaper rates. Full Load, Part Load. Call +91 94430 33055" />
+        <meta name="keywords" content="lorry service coimbatore, transport tamil nadu, goods transport coimbatore, shameena transports, truck transport coimbatore, return load transport, cheaper transport rates, reliable lorry service, 43 years transport company, textile transport tiruppur, chennai goods transport, madurai lorry service, full truck load, part load transport, since 1982 transport, lorry booking coimbatore" />
         <link rel="canonical" href="https://www.shameena.com" />
         <meta property="og:title" content="Shameena Transports | Since 1982 - Most Reliable Lorry Service in Tamil Nadu" />
         <meta property="og:description" content="43 Years of Heritage in Logistics. Most Reliable Transport Service. Return Loads at Cheaper Rates. Coimbatore, Chennai, Tiruppur, Erode, Salem, Madurai. 24/7 Service." />
@@ -197,30 +233,36 @@ const Index = () => {
         <script type="application/ld+json">{JSON.stringify(serviceSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(reviewSchema)}</script>
       </Helmet>
       <Layout>
-        <HeroSection />
-        <AnimatedSection>
-          <TrustBadges />
-        </AnimatedSection>
-        <AnimatedSection delay={100}>
-          <ServicesPreview />
-        </AnimatedSection>
-        <AnimatedSection delay={100}>
-          <ProcessSection />
-        </AnimatedSection>
-        <AnimatedSection delay={100}>
-          <WhyChooseUs />
-        </AnimatedSection>
-        <AnimatedSection delay={100}>
-          <ServiceAreasPreview />
-        </AnimatedSection>
-        <AnimatedSection delay={100}>
-          <FAQSection />
-        </AnimatedSection>
-        <AnimatedSection delay={100}>
-          <CTASection />
-        </AnimatedSection>
+        <main>
+          <HeroSection />
+          <AnimatedSection>
+            <TrustBadges />
+          </AnimatedSection>
+          <AnimatedSection delay={100}>
+            <ServicesPreview />
+          </AnimatedSection>
+          <AnimatedSection delay={100}>
+            <ProcessSection />
+          </AnimatedSection>
+          <AnimatedSection delay={100}>
+            <WhyChooseUs />
+          </AnimatedSection>
+          <AnimatedSection delay={100}>
+            <ServiceAreasPreview />
+          </AnimatedSection>
+          <AnimatedSection delay={100}>
+            <TestimonialsSection />
+          </AnimatedSection>
+          <AnimatedSection delay={100}>
+            <FAQSection />
+          </AnimatedSection>
+          <AnimatedSection delay={100}>
+            <CTASection />
+          </AnimatedSection>
+        </main>
       </Layout>
     </>
   );
