@@ -15,8 +15,8 @@ const faqs = [
     answer: "We transport all types of commercial goods including textile bales, industrial machinery, construction materials (cement, steel, sand), agricultural products, FMCG goods, furniture, and factory equipment. We do not transport hazardous or illegal materials.",
   },
   {
-    question: "Do you offer GPS tracking for shipments?",
-    answer: "Yes, all our lorries are equipped with GPS tracking. You can get real-time updates on your shipment location through WhatsApp or a direct call to our support team.",
+    question: "How can I track my shipment?",
+    answer: "You can get updates on your shipment status through WhatsApp or a direct call to our support team. We keep you informed at every step of the delivery process.",
   },
   {
     question: "What is the difference between full load and part load?",

@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { Layout } from "@/components/layout/Layout";
-import { Truck, MapPin, Shield, Gauge } from "lucide-react";
+import { Truck, Shield, Gauge, Users } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { CTASection } from "@/components/home/CTASection";
 import fleetBg from "@/assets/fleet-bg.jpg";
@@ -24,11 +24,6 @@ const fleetData = [
 
 const features = [
   {
-    icon: MapPin,
-    title: "GPS Enabled",
-    description: "Real-time tracking on all vehicles",
-  },
-  {
     icon: Shield,
     title: "Fully Insured",
     description: "Complete cargo protection coverage",
@@ -43,14 +38,19 @@ const features = [
     title: "Modern Fleet",
     description: "Vehicles less than 5 years old",
   },
+  {
+    icon: Users,
+    title: "Experienced Drivers",
+    description: "Professional and trained drivers",
+  },
 ];
 
 const Fleet = () => {
   return (
     <>
       <Helmet>
-        <title>Our Fleet | GPS Enabled Lorries & Trucks - Shameena Transports Coimbatore</title>
-        <meta name="description" content="12+ modern GPS-enabled lorries and trucks. Multi-axle trailers, open body lorries. Well-maintained, insured fleet for goods transport in Tamil Nadu." />
+        <title>Our Fleet | Modern Lorries & Trucks - Shameena Transports Coimbatore</title>
+        <meta name="description" content="12+ modern lorries and trucks. Multi-axle trailers, open body lorries. Well-maintained, insured fleet for goods transport in Tamil Nadu." />
         <link rel="canonical" href="https://www.shameena.com/fleet" />
       </Helmet>
       <Layout>
@@ -68,7 +68,7 @@ const Fleet = () => {
                 Our Modern Fleet
               </h1>
               <p className="text-lg text-primary-foreground/90">
-                12+ GPS-enabled, well-maintained lorries ready to transport your goods across Tamil Nadu
+                12+ well-maintained lorries ready to transport your goods across Tamil Nadu
               </p>
             </div>
           </div>
@@ -144,11 +144,11 @@ const Fleet = () => {
               </div>
               <div>
                 <div className="text-4xl md:text-5xl font-bold text-secondary">100%</div>
-                <div className="text-primary-foreground/80 mt-2">GPS Enabled</div>
+                <div className="text-primary-foreground/80 mt-2">Insured</div>
               </div>
               <div>
-                <div className="text-4xl md:text-5xl font-bold text-secondary">100%</div>
-                <div className="text-primary-foreground/80 mt-2">Insured</div>
+                <div className="text-4xl md:text-5xl font-bold text-secondary">43+</div>
+                <div className="text-primary-foreground/80 mt-2">Years Experience</div>
               </div>
               <div>
                 <div className="text-4xl md:text-5xl font-bold text-secondary">24/7</div>
