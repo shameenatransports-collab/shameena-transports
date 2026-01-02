@@ -1,4 +1,4 @@
-import { Shield, Clock, MapPin, Headphones, Award, TrendingUp, RotateCcw } from "lucide-react";
+import { Shield, Clock, Headphones, Award, TrendingUp, RotateCcw } from "lucide-react";
 
 const features = [
   {
@@ -10,11 +10,6 @@ const features = [
     icon: Clock,
     title: "On-Time Delivery",
     description: "98% on-time delivery record across Tamil Nadu",
-  },
-  {
-    icon: MapPin,
-    title: "GPS Tracking",
-    description: "Real-time tracking for all shipments",
   },
   {
     icon: RotateCcw,
@@ -30,6 +25,11 @@ const features = [
     icon: TrendingUp,
     title: "Competitive Rates",
     description: "Best-in-market pricing with no hidden charges",
+  },
+  {
+    icon: Headphones,
+    title: "24/7 Support",
+    description: "Always available to assist with your transport needs",
   },
 ];
 
