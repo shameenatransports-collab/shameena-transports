@@ -3,6 +3,7 @@ import { Layout } from "@/components/layout/Layout";
 import { Truck, Shield, Gauge, Users } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { CTASection } from "@/components/home/CTASection";
+import { BackgroundPicture } from "@/components/ui/picture";
 import fleetBg from "@/assets/fleet-bg.jpg";
 
 const fleetData = [
@@ -55,18 +56,12 @@ const Fleet = () => {
       </Helmet>
       <Layout>
         {/* Hero Section */}
-        <section className="relative py-20 md:py-28">
-          {/* Background with lazy loading */}
-          <div className="absolute inset-0 bg-primary">
-            <img 
-              src={fleetBg} 
-              alt="" 
-              loading="lazy"
-              decoding="async"
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-primary/90" />
-          </div>
+        <BackgroundPicture
+          src={fleetBg}
+          alt="Shameena Transports Fleet"
+          className="py-20 md:py-28"
+          overlayClassName="bg-primary/90"
+        >
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-3xl">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-6">
@@ -77,7 +72,7 @@ const Fleet = () => {
               </p>
             </div>
           </div>
-        </section>
+        </BackgroundPicture>
 
         {/* Fleet Features */}
         <section className="py-8 sm:py-12 bg-accent">

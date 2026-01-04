@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import { Layout } from "@/components/layout/Layout";
 import { Shield, Clock, Users, Award, Target, Heart } from "lucide-react";
 import { CTASection } from "@/components/home/CTASection";
+import { Picture } from "@/components/ui/picture";
 import fleetBg from "@/assets/fleet-bg.jpg";
 import logo from "@/assets/sta-logo.png";
 
@@ -55,6 +56,7 @@ const About = () => {
                 src={logo} 
                 alt="Shameena Transports Logo" 
                 className="h-24 md:h-32 w-auto bg-card rounded-lg p-2 shadow-lg"
+                loading="eager"
               />
               <div>
                 <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-4">
@@ -89,12 +91,11 @@ const About = () => {
                 </div>
               </div>
               <div className="relative">
-                <img
+                <Picture
                   src={fleetBg}
                   alt="Shameena Transports Fleet"
-                  loading="lazy"
-                  decoding="async"
-                  className="rounded-lg shadow-xl"
+                  className="rounded-lg shadow-xl aspect-[4/3]"
+                  imgClassName="rounded-lg"
                 />
                 <div className="absolute -bottom-6 -left-6 bg-accent text-accent-foreground p-6 rounded-lg shadow-lg">
                   <div className="text-4xl font-bold">43+</div>
