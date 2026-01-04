@@ -56,10 +56,15 @@ const Fleet = () => {
       <Layout>
         {/* Hero Section */}
         <section className="relative py-20 md:py-28">
-          <div
-            className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url(${fleetBg})` }}
-          >
+          {/* Background with lazy loading */}
+          <div className="absolute inset-0 bg-primary">
+            <img 
+              src={fleetBg} 
+              alt="" 
+              loading="lazy"
+              decoding="async"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
             <div className="absolute inset-0 bg-primary/90" />
           </div>
           <div className="container mx-auto px-4 relative z-10">

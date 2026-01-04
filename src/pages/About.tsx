@@ -92,6 +92,8 @@ const About = () => {
                 <img
                   src={fleetBg}
                   alt="Shameena Transports Fleet"
+                  loading="lazy"
+                  decoding="async"
                   className="rounded-lg shadow-xl"
                 />
                 <div className="absolute -bottom-6 -left-6 bg-accent text-accent-foreground p-6 rounded-lg shadow-lg">
