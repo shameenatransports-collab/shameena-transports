@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Phone, MessageCircle, ArrowRight, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useEffect, useState } from "react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const highlights = [
@@ -10,14 +11,25 @@ const highlights = [
 ];
 
 export function HeroSection() {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  useEffect(() => {
+    const img = new Image();
+    img.src = heroBg;
+    img.onload = () => setImageLoaded(true);
+  }, []);
+
   return (
     <section className="relative min-h-[90vh] flex items-center pb-28 sm:pb-24" aria-label="Hero section">
-      {/* Background Image */}
-      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
-        backgroundImage: `url(${heroBg})`
-      }}>
+      {/* Background Image with eager loading for LCP */}
+      <div 
+        className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-300 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
+        style={{ backgroundImage: `url(${heroBg})` }}
+      >
         <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/85 to-primary/70" />
       </div>
+      {/* Fallback gradient while loading */}
+      <div className="absolute inset-0 bg-primary" />
 
       <div className="container mx-auto px-4 relative z-10 pt-16 sm:pt-0">
         <div className="max-w-3xl">
