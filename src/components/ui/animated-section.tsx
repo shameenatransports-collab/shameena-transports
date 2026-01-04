@@ -16,10 +16,8 @@ export const AnimatedSection = forwardRef<HTMLElement, AnimatedSectionProps>(
       <section
         ref={ref}
         className={cn(
-          "transition-all duration-700 ease-out",
-          isVisible
-            ? "opacity-100 translate-y-0"
-            : "opacity-0 translate-y-8",
+          "transition-opacity duration-500 ease-out will-change-[opacity]",
+          isVisible ? "opacity-100" : "opacity-0",
           className
         )}
         style={{ transitionDelay: `${delay}ms` }}
