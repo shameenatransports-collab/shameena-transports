@@ -68,24 +68,24 @@ export function HeroSection() {
         </div>
 
         {/* Stats Bar */}
-        <aside className="absolute bottom-0 left-0 right-0 bg-card/95 backdrop-blur-sm border-t border-border z-20 pointer-events-none">
-          <div className="container mx-auto px-4 py-2 sm:py-3 md:py-4">
-            <div className="grid grid-cols-4 gap-2 sm:gap-4 md:gap-8">
+        <aside className="absolute bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 bg-card/95 backdrop-blur-sm border border-border rounded-xl z-20 pointer-events-none shadow-lg">
+          <div className="px-4 sm:px-6 md:px-8 py-2 sm:py-3">
+            <div className="flex items-center gap-4 sm:gap-6 md:gap-8">
               <div className="text-center">
-                <div className="text-lg sm:text-2xl md:text-3xl font-bold text-accent">43+</div>
-                <div className="text-[10px] sm:text-xs md:text-sm text-muted-foreground">Years Heritage</div>
+                <div className="text-base sm:text-xl md:text-2xl font-bold text-accent">43+</div>
+                <div className="text-[9px] sm:text-xs text-muted-foreground">Years</div>
               </div>
               <div className="text-center">
-                <div className="text-lg sm:text-2xl md:text-3xl font-bold text-accent">12+</div>
-                <div className="text-[10px] sm:text-xs md:text-sm text-muted-foreground">Lorries</div>
+                <div className="text-base sm:text-xl md:text-2xl font-bold text-accent">12+</div>
+                <div className="text-[9px] sm:text-xs text-muted-foreground">Lorries</div>
               </div>
               <div className="text-center">
-                <div className="text-lg sm:text-2xl md:text-3xl font-bold text-accent">10K+</div>
-                <div className="text-[10px] sm:text-xs md:text-sm text-muted-foreground">Deliveries</div>
+                <div className="text-base sm:text-xl md:text-2xl font-bold text-accent">10K+</div>
+                <div className="text-[9px] sm:text-xs text-muted-foreground">Deliveries</div>
               </div>
               <div className="text-center">
-                <div className="text-lg sm:text-2xl md:text-3xl font-bold text-accent">24/7</div>
-                <div className="text-[10px] sm:text-xs md:text-sm text-muted-foreground">Support</div>
+                <div className="text-base sm:text-xl md:text-2xl font-bold text-accent">24/7</div>
+                <div className="text-[9px] sm:text-xs text-muted-foreground">Support</div>
               </div>
             </div>
           </div>
