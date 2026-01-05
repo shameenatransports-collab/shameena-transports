@@ -15,11 +15,11 @@ export function HeroSection() {
     <BackgroundPicture
       src={heroBg}
       alt="Shameena Transports Fleet"
-      className="min-h-[90vh] flex items-center pb-32 sm:pb-28 md:pb-24"
+      className="min-h-[90vh] flex items-center"
       overlayClassName="bg-gradient-to-r from-primary/95 via-primary/85 to-primary/70"
       priority
     >
-      <section className="relative z-10 w-full" aria-label="Hero section">
+      <section className="relative z-10 w-full pb-28 sm:pb-32" aria-label="Hero section">
         <div className="container mx-auto px-4 pt-16 sm:pt-0">
           <div className="max-w-3xl">
             <span className="inline-block px-3 py-1.5 sm:px-4 sm:py-2 bg-accent text-accent-foreground text-xs sm:text-sm font-semibold rounded-full mb-4 sm:mb-6 animate-fade-in">
@@ -44,7 +44,7 @@ export function HeroSection() {
               ))}
             </ul>
 
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-4 sm:mt-6 mb-8 sm:mb-12 md:mb-16">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <a href="tel:+919443033055" className="w-full sm:w-auto" aria-label="Call us at +91 94430 33055">
                 <Button size="lg" variant="secondary" className="w-full sm:w-auto gap-2 text-sm sm:text-base font-semibold">
                   <Phone className="h-4 w-4 sm:h-5 sm:w-5" />
@@ -67,29 +67,31 @@ export function HeroSection() {
           </div>
         </div>
 
-        {/* Stats Bar */}
-        <aside className="absolute bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 bg-card/95 backdrop-blur-sm border border-border rounded-xl z-20 pointer-events-none shadow-lg">
-          <div className="px-4 sm:px-6 md:px-8 py-2 sm:py-3">
-            <div className="flex items-center gap-4 sm:gap-6 md:gap-8">
-              <div className="text-center">
-                <div className="text-base sm:text-xl md:text-2xl font-bold text-accent">43+</div>
-                <div className="text-[9px] sm:text-xs text-muted-foreground">Years</div>
-              </div>
-              <div className="text-center">
-                <div className="text-base sm:text-xl md:text-2xl font-bold text-accent">12+</div>
-                <div className="text-[9px] sm:text-xs text-muted-foreground">Lorries</div>
-              </div>
-              <div className="text-center">
-                <div className="text-base sm:text-xl md:text-2xl font-bold text-accent">10K+</div>
-                <div className="text-[9px] sm:text-xs text-muted-foreground">Deliveries</div>
-              </div>
-              <div className="text-center">
-                <div className="text-base sm:text-xl md:text-2xl font-bold text-accent">24/7</div>
-                <div className="text-[9px] sm:text-xs text-muted-foreground">Support</div>
+        {/* Stats Bar - positioned at very bottom, centered */}
+        <div className="absolute bottom-4 sm:bottom-6 left-0 right-0 flex justify-center pointer-events-none z-20">
+          <aside className="bg-card/95 backdrop-blur-sm border border-border rounded-xl shadow-lg">
+            <div className="px-4 sm:px-6 md:px-8 py-2 sm:py-3">
+              <div className="flex items-center gap-4 sm:gap-6 md:gap-8">
+                <div className="text-center">
+                  <div className="text-base sm:text-xl md:text-2xl font-bold text-accent">43+</div>
+                  <div className="text-[9px] sm:text-xs text-muted-foreground">Years</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-base sm:text-xl md:text-2xl font-bold text-accent">12+</div>
+                  <div className="text-[9px] sm:text-xs text-muted-foreground">Lorries</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-base sm:text-xl md:text-2xl font-bold text-accent">10K+</div>
+                  <div className="text-[9px] sm:text-xs text-muted-foreground">Deliveries</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-base sm:text-xl md:text-2xl font-bold text-accent">24/7</div>
+                  <div className="text-[9px] sm:text-xs text-muted-foreground">Support</div>
+                </div>
               </div>
             </div>
-          </div>
-        </aside>
+          </aside>
+        </div>
       </section>
     </BackgroundPicture>
   );
