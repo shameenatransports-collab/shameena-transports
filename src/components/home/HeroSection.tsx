@@ -15,7 +15,7 @@ export function HeroSection() {
     <BackgroundPicture
       src={heroBg}
       alt="Shameena Transports Fleet"
-      className="min-h-[90vh] flex items-center pb-28 sm:pb-24"
+      className="min-h-[90vh] flex items-center pb-32 sm:pb-28 md:pb-24"
       overlayClassName="bg-gradient-to-r from-primary/95 via-primary/85 to-primary/70"
       priority
     >
@@ -68,8 +68,8 @@ export function HeroSection() {
         </div>
 
         {/* Stats Bar */}
-        <aside className="absolute bottom-0 left-0 right-0 bg-card/95 backdrop-blur-sm border-t border-border z-20">
-          <div className="container mx-auto px-4 py-3 sm:py-4">
+        <aside className="absolute bottom-0 left-0 right-0 bg-card/95 backdrop-blur-sm border-t border-border z-20 pointer-events-none">
+          <div className="container mx-auto px-4 py-2 sm:py-3 md:py-4">
             <div className="grid grid-cols-4 gap-2 sm:gap-4 md:gap-8">
               <div className="text-center">
                 <div className="text-lg sm:text-2xl md:text-3xl font-bold text-accent">43+</div>
