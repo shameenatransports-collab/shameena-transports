@@ -44,7 +44,7 @@ export function HeroSection() {
               ))}
             </ul>
 
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-4 sm:mt-6 mb-8 sm:mb-12 md:mb-16">
               <a href="tel:+919443033055" className="w-full sm:w-auto" aria-label="Call us at +91 94430 33055">
                 <Button size="lg" variant="secondary" className="w-full sm:w-auto gap-2 text-sm sm:text-base font-semibold">
                   <Phone className="h-4 w-4 sm:h-5 sm:w-5" />
