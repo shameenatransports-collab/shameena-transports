@@ -5,11 +5,6 @@ import { Button } from "@/components/ui/button";
 
 const services = [
   {
-    icon: Truck,
-    title: "Full Load Transport",
-    description: "Complete truck booking for large shipments across Tamil Nadu.",
-  },
-  {
     icon: Factory,
     title: "Textile & Industrial Cargo",
     description: "Specialized handling for textile bales and industrial equipment.",
