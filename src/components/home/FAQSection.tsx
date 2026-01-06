@@ -7,24 +7,28 @@ import {
 
 const faqs = [
   {
+    question: "What is Full Load transport and when should I use it?",
+    answer: "Full Load means booking an entire lorry exclusively for your cargo. You get a dedicated truck, complete control over timing, and faster delivery with no intermediate stops. Best for large shipments (5-25 tons) or when you need guaranteed delivery times.",
+  },
+  {
+    question: "What is Return Load and how can it save me money?",
+    answer: "Return Load transport is available when our trucks are returning from a delivery on specific routes. Since the truck is already heading back, we offer significantly cheaper rates - often 30-40% less than full load. Contact us to check availability for your route.",
+  },
+  {
+    question: "How do I check if Return Load is available for my route?",
+    answer: "Call us at +91 94430 33055 or WhatsApp with your pickup and delivery locations. We'll check current truck schedules and let you know if return load is available. Popular routes include Coimbatore-Chennai, Tiruppur-Bangalore, Salem-Madurai.",
+  },
+  {
     question: "What areas do you provide lorry service in Tamil Nadu?",
-    answer: "We provide lorry transport services across all major cities in Tamil Nadu including Coimbatore, Tiruppur, Erode, Salem, Chennai, Madurai, Trichy, Karur, and all districts.",
+    answer: "We provide Full Load and Return Load services across all major cities in Tamil Nadu including Coimbatore, Tiruppur, Erode, Salem, Chennai, Madurai, Trichy, Karur, and all districts. We also serve inter-state routes.",
   },
   {
     question: "What types of goods can you transport?",
-    answer: "We transport all types of commercial goods including textile bales, industrial machinery, construction materials (cement, steel, sand), agricultural products, FMCG goods, furniture, and factory equipment. We do not transport hazardous or illegal materials.",
-  },
-  {
-    question: "How can I track my shipment?",
-    answer: "You can get updates on your shipment status through WhatsApp or a direct call to our support team. We keep you informed at every step of the delivery process.",
+    answer: "We transport all types of commercial goods including textile bales, industrial machinery, construction materials (cement, steel, sand), agricultural products, FMCG goods, and factory equipment. Both Full Load and Return Load available for most cargo types.",
   },
   {
     question: "How do I book a lorry for transport?",
-    answer: "Simply call us at +91 90477 21209 or WhatsApp us with your pickup location, destination, type of goods, and approximate weight. We'll provide you with a quote and arrange the transport.",
-  },
-  {
-    question: "What are your operating hours?",
-    answer: "Our booking office operates from 8 AM to 10 PM. However, our transport services and customer support are available 24/7 for ongoing shipments.",
+    answer: "Call us at +91 94430 33055 or WhatsApp with your pickup location, destination, type of goods, and approximate weight. We'll provide quotes for both Full Load and Return Load (if available) so you can choose the best option.",
   },
 ];
 
@@ -34,10 +38,10 @@ export function FAQSection() {
       <div className="container mx-auto px-4">
         <div className="text-center max-w-2xl mx-auto mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Frequently Asked Questions
+            Full Load & Return Load FAQs
           </h2>
           <p className="text-muted-foreground text-lg">
-            Common questions about our lorry transport services in Tamil Nadu
+            Common questions about our Full Load and Return Load transport services in Tamil Nadu
           </p>
         </div>
 

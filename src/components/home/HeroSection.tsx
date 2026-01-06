@@ -5,9 +5,9 @@ import { BackgroundPicture } from "@/components/ui/picture";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const highlights = [
-  "Return Loads at Cheaper Rates",
-  "24/7 Service Available",
-  "Fully Insured Transport",
+  "Full Load – Dedicated Trucks",
+  "Return Load on Available Routes",
+  "24/7 Service | Since 1982",
 ];
 
 export function HeroSection() {
@@ -27,11 +27,11 @@ export function HeroSection() {
             </span>
 
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-primary-foreground leading-tight mb-4 sm:mb-6">
-              Most Reliable Lorry Service in Coimbatore & Tamil Nadu
+              Full Load & Return Load Lorry Service in Tamil Nadu
             </h1>
 
             <p className="text-base sm:text-lg md:text-xl text-primary-foreground/90 mb-4 sm:mb-6 max-w-2xl">
-              Customer satisfaction is our priority. Fast, Safe & Reliable Goods Transport across Tamil Nadu. Full Load – We deliver on time, every time.
+              <strong>Full Load</strong> – Dedicated trucks for your cargo. <strong>Return Load</strong> – Available on specific routes at cheaper rates. Fast, Safe & Reliable transport since 1982.
             </p>
 
             {/* Highlights */}
