@@ -1,34 +1,52 @@
 import { Link } from "react-router-dom";
 import { Phone, MapPin, Clock } from "lucide-react";
 import logo from "@/assets/sta-logo.png";
-const serviceLinks = [{
-  name: "Full Load Transport",
-  href: "/services#full-load"
-}, {
-  name: "Textile Cargo",
-  href: "/services#textile"
-}, {
-  name: "Construction Material",
-  href: "/services#construction"
-}];
-const areaLinks = [{
-  name: "Coimbatore",
-  href: "/service-areas#coimbatore"
-}, {
-  name: "Tiruppur",
-  href: "/service-areas#tiruppur"
-}, {
-  name: "Chennai",
-  href: "/service-areas#chennai"
-}, {
-  name: "Salem",
-  href: "/service-areas#salem"
-}, {
-  name: "Madurai",
-  href: "/service-areas#madurai"
-}];
+
+const serviceLinks = [
+  {
+    name: "Full Load Transport",
+    href: "/services#full-load"
+  },
+  {
+    name: "Return Load Transport",
+    href: "/services#return-load"
+  },
+  {
+    name: "Textile Cargo",
+    href: "/services#textile"
+  },
+  {
+    name: "Construction Material",
+    href: "/services#construction"
+  }
+];
+
+const areaLinks = [
+  {
+    name: "Coimbatore",
+    href: "/service-areas#coimbatore"
+  },
+  {
+    name: "Tiruppur",
+    href: "/service-areas#tiruppur"
+  },
+  {
+    name: "Chennai",
+    href: "/service-areas#chennai"
+  },
+  {
+    name: "Salem",
+    href: "/service-areas#salem"
+  },
+  {
+    name: "Madurai",
+    href: "/service-areas#madurai"
+  }
+];
+
 export function Footer() {
-  return <footer className="bg-primary text-primary-foreground">
+  return (
+    <footer className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Company Info */}
@@ -41,7 +59,7 @@ export function Footer() {
               </div>
             </div>
             <p className="text-sm opacity-90">
-              Most Reliable Lorry Service in Coimbatore & Tamil Nadu. Fast, Safe & Reliable Goods Transport since 1982.
+              Full Load & Return Load transport specialists since 1982. Fast, Safe & Reliable goods transport across Tamil Nadu.
             </p>
           </div>
 
@@ -49,11 +67,13 @@ export function Footer() {
           <div>
             <h3 className="font-semibold text-lg mb-4">Our Services</h3>
             <ul className="space-y-2">
-              {serviceLinks.map(link => <li key={link.href}>
+              {serviceLinks.map(link => (
+                <li key={link.href}>
                   <Link to={link.href} className="text-sm opacity-90 hover:opacity-100 hover:text-secondary transition-colors">
                     {link.name}
                   </Link>
-                </li>)}
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -61,11 +81,13 @@ export function Footer() {
           <div>
             <h3 className="font-semibold text-lg mb-4">Service Areas</h3>
             <ul className="space-y-2">
-              {areaLinks.map(link => <li key={link.href}>
+              {areaLinks.map(link => (
+                <li key={link.href}>
                   <Link to={link.href} className="text-sm opacity-90 hover:opacity-100 hover:text-secondary transition-colors">
                     {link.name}
                   </Link>
-                </li>)}
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -111,5 +133,6 @@ export function Footer() {
           </div>
         </div>
       </div>
-    </footer>;
+    </footer>
+  );
 }

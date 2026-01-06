@@ -1,18 +1,22 @@
 import { Link } from "react-router-dom";
-import { Truck, Package, Factory, Building2, Warehouse, ArrowRight } from "lucide-react";
+import { Truck, Package, Factory, Building2, Warehouse, ArrowRight, Clock } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 
 const services = [
   {
     icon: Truck,
     title: "Full Load Transport",
-    description: "Complete truck booking for large shipments across Tamil Nadu.",
+    description: "Dedicated truck for your exclusive cargo across Tamil Nadu. Complete control, faster delivery.",
+    isPrimary: true,
   },
   {
     icon: Package,
     title: "Return Load Transport",
-    description: "Cost-effective transport on available return routes.",
+    description: "Cost-effective transport when trucks return on available routes. Subject to route availability.",
+    isPrimary: true,
+    badge: "Route Availability",
   },
   {
     icon: Factory,
@@ -37,15 +41,42 @@ export function ServicesPreview() {
       <div className="container mx-auto px-4">
         <div className="text-center max-w-2xl mx-auto mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Our Transport Services
+            Full Load & Return Load Transport Services
           </h2>
           <p className="text-muted-foreground text-lg">
-            Comprehensive logistics solutions for all your goods transport needs in Tamil Nadu
+            Tamil Nadu's trusted logistics partner since 1982. Full Load for dedicated transport, Return Load for cost savings on available routes.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {services.map((service, index) => (
+        {/* Primary Services - Full Load & Return Load */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+          {services.filter(s => s.isPrimary).map((service, index) => (
+            <Card
+              key={index}
+              className="group hover:shadow-xl transition-all duration-300 border-2 border-accent/30 hover:border-accent bg-gradient-to-br from-accent/5 to-transparent"
+            >
+              <CardContent className="p-6 md:p-8">
+                <div className="flex items-start justify-between mb-4">
+                  <div className="w-14 h-14 rounded-lg bg-accent flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <service.icon className="h-7 w-7 text-accent-foreground" />
+                  </div>
+                  {service.badge && (
+                    <Badge variant="secondary" className="gap-1 text-xs">
+                      <Clock className="h-3 w-3" />
+                      {service.badge}
+                    </Badge>
+                  )}
+                </div>
+                <h3 className="text-xl font-bold text-foreground mb-3">{service.title}</h3>
+                <p className="text-muted-foreground">{service.description}</p>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+
+        {/* Secondary Services */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {services.filter(s => !s.isPrimary).map((service, index) => (
             <Card
               key={index}
               className="group hover:shadow-lg transition-all duration-300 border-border hover:border-accent"

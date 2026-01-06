@@ -19,9 +19,9 @@ const Index = () => {
     "name": "Shameena Transports",
     "url": "https://www.shameena.com",
     "logo": "https://www.shameena.com/logo.png",
-    "description": "Since 1982 - 43 Years of Heritage in Logistics. Tamil Nadu's Most Reliable Lorry Service. Customer Satisfaction is Our Priority. Return Loads Available at Cheaper Rates.",
+    "description": "Since 1982 - 43 Years of Heritage in Logistics. Tamil Nadu's trusted Full Load & Return Load lorry transport service. Return Loads available on specific routes at cheaper rates.",
     "foundingDate": "1982",
-    "slogan": "43 Years of Heritage in Logistics and Transportation",
+    "slogan": "Full Load & Return Load Transport - 43 Years of Heritage",
     "contactPoint": [
       {
         "@type": "ContactPoint",
@@ -45,13 +45,13 @@ const Index = () => {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "@id": "https://www.shameena.com/#localbusiness",
-    "name": "Shameena Transports - Most Reliable Lorry Service Tamil Nadu",
+    "name": "Shameena Transports - Full Load & Return Load Transport Tamil Nadu",
     "alternateName": ["Shameena Transport", "Shameena Logistics", "Shameena Trucking", "Shameena Transport Coimbatore", "Shameena Transporting Agents"],
     "image": [
       "https://www.shameena.com/logo.png",
       "https://www.shameena.com/fleet.jpg"
     ],
-    "description": "Shameena Transports - Since 1982, 43 years of heritage in logistics and transportation. Tamil Nadu's most reliable lorry service provider. Customer satisfaction is our priority. Return loads available at cheaper rates. Full load and part load transport services across Coimbatore, Chennai, Tiruppur, Erode, Salem, Madurai, Trichy. 12+ lorries, 10000+ successful deliveries.",
+    "description": "Shameena Transports - Since 1982, 43 years of heritage in Full Load & Return Load transport. Full Load for dedicated truck service. Return Load available on specific transportation routes at cheaper rates. Serving Coimbatore, Chennai, Tiruppur, Erode, Salem, Madurai, Trichy. 12+ lorries, 10000+ successful deliveries.",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "No.302/2A7, VK Road, Peelamedu",
@@ -99,12 +99,11 @@ const Index = () => {
       "@type": "OfferCatalog",
       "name": "Transport Services",
       "itemListElement": [
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Full Truck Load Transport"}},
-        
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Return Load Transport - Cheaper Rates"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Local Lorry Service"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Textile Transport"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Industrial Cargo Transport"}}
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Full Load Lorry Transport", "description": "Dedicated truck for your exclusive cargo"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Return Load Transport", "description": "Cost-effective transport on available return routes"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Textile & Industrial Cargo Transport"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Construction Material Transport"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Factory & Warehouse Shifting"}}
       ]
     }
   };
@@ -113,7 +112,7 @@ const Index = () => {
     "@context": "https://schema.org",
     "@type": "Service",
     "@id": "https://www.shameena.com/#service",
-    "name": "Lorry Transport Service in Tamil Nadu",
+    "name": "Full Load & Return Load Lorry Transport Tamil Nadu",
     "serviceType": "Goods Transport",
     "provider": {
       "@type": "LocalBusiness",
@@ -123,7 +122,7 @@ const Index = () => {
       "@type": "State",
       "name": "Tamil Nadu"
     },
-    "description": "Professional lorry and goods transport service covering all major cities in Tamil Nadu including Coimbatore, Chennai, Tiruppur, Erode, Salem, Madurai, Trichy, and Karur.",
+    "description": "Professional Full Load dedicated lorry transport and Return Load services on available routes. Covering Coimbatore, Chennai, Tiruppur, Erode, Salem, Madurai, Trichy, and Karur.",
     "offers": {
       "@type": "Offer",
       "availability": "https://schema.org/InStock",
@@ -153,18 +152,34 @@ const Index = () => {
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "What areas does Shameena Transports serve in Tamil Nadu?",
+        "name": "What is Full Load transport service?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Shameena Transports provides lorry and goods transport services across all major cities in Tamil Nadu including Coimbatore, Chennai, Tiruppur, Erode, Salem, Madurai, Trichy, Karur, and all districts."
+          "text": "Full Load transport means booking an entire lorry exclusively for your cargo. You get a dedicated truck, complete control over pickup and delivery timing, and faster transit with no intermediate stops. Ideal for large shipments of 5-25 tons."
         }
       },
       {
         "@type": "Question",
-        "name": "What types of goods can Shameena Transports carry?",
+        "name": "What is Return Load transport and how does it save money?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "We transport all types of goods including textiles, manufacturing materials, construction materials, FMCG products, industrial cargo, machinery, and household goods. Our fleet includes various truck sizes to accommodate different cargo requirements."
+          "text": "Return Load transport is available when our trucks are returning from a delivery on specific routes. Since the truck is already heading back, we offer significantly cheaper rates. Availability depends on current schedules - contact us to check if return load is available for your route."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I check Return Load availability for my route?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Call us at +91 94430 33055 or WhatsApp to check current return load availability. Popular return routes include Coimbatore-Chennai, Tiruppur-Bangalore, and more. Booking in advance improves your chances of getting a return load."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What areas does Shameena Transports serve?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We provide Full Load and Return Load transport across Tamil Nadu including Coimbatore, Chennai, Tiruppur, Erode, Salem, Madurai, Trichy, Karur, and all districts. We also serve inter-state routes."
         }
       },
       {
@@ -172,23 +187,7 @@ const Index = () => {
         "name": "Is Shameena Transports available 24/7?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, Shameena Transports operates 24 hours a day, 7 days a week. You can book our lorry services anytime by calling +91 94430 33055 or contacting us via WhatsApp."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How can I get a quote for transport services?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "You can get a free quote by calling us at +91 94430 33055, messaging us on WhatsApp, or filling out the contact form on our website. We provide competitive rates for all transport requirements."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What are return loads and how can they save me money?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Return loads are transport services where our lorries are returning from a delivery. Since the truck is already heading back, we offer these at cheaper rates, helping you save significantly on transport costs."
+          "text": "Yes, Shameena Transports operates 24 hours a day, 7 days a week. You can book Full Load or check Return Load availability anytime by calling +91 94430 33055 or contacting us via WhatsApp."
         }
       }
     ]
@@ -210,24 +209,24 @@ const Index = () => {
       "@type": "Person",
       "name": "Rajesh Kumar"
     },
-    "reviewBody": "We have been using Shameena Transports for 10+ years. Their reliability and on-time delivery for our textile exports is unmatched."
+    "reviewBody": "Excellent Full Load service for our textile exports. We also use their Return Load when available - great savings! Reliable service for 10+ years."
   };
 
   return (
     <>
       <Helmet>
-        <title>Shameena Transports | Since 1982 - Most Reliable Lorry Service in Coimbatore & Tamil Nadu</title>
-        <meta name="description" content="Shameena Transports - Since 1982, 43 years of heritage in logistics. Most Reliable Lorry Service in Coimbatore & Tamil Nadu. Customer satisfaction priority. Return loads at cheaper rates. Full Load. Call +91 94430 33055" />
-        <meta name="keywords" content="lorry service coimbatore, transport tamil nadu, goods transport coimbatore, shameena transports, truck transport coimbatore, return load transport, cheaper transport rates, reliable lorry service, 43 years transport company, textile transport tiruppur, chennai goods transport, madurai lorry service, full truck load, since 1982 transport, lorry booking coimbatore" />
+        <title>Full Load & Return Load Lorry Service Tamil Nadu | Shameena Transports Since 1982</title>
+        <meta name="description" content="Shameena Transports - Since 1982. Full Load dedicated truck transport & Return Load on available routes at cheaper rates. Tamil Nadu's trusted logistics. Coimbatore, Chennai, Tiruppur. Call +91 94430 33055" />
+        <meta name="keywords" content="full load lorry service tamil nadu, return load transport coimbatore, full truck load booking, return load availability routes, dedicated truck transport, goods transport tamil nadu, lorry service coimbatore, return load chennai tiruppur, textile transport, industrial cargo, since 1982 transport, 24/7 lorry service" />
         <link rel="canonical" href="https://www.shameena.com" />
-        <meta property="og:title" content="Shameena Transports | Since 1982 - Most Reliable Lorry Service in Tamil Nadu" />
-        <meta property="og:description" content="43 Years of Heritage in Logistics. Most Reliable Transport Service. Return Loads at Cheaper Rates. Coimbatore, Chennai, Tiruppur, Erode, Salem, Madurai. 24/7 Service." />
+        <meta property="og:title" content="Full Load & Return Load Transport Tamil Nadu | Shameena Transports Since 1982" />
+        <meta property="og:description" content="43 Years of Heritage. Full Load dedicated trucks. Return Load on available routes at cheaper rates. Coimbatore, Chennai, Tiruppur. 24/7 Service." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.shameena.com" />
         <meta property="og:image" content="https://www.shameena.com/og-image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Shameena Transports | Since 1982 - Most Reliable Lorry Service" />
-        <meta name="twitter:description" content="43 Years of Heritage. Return Loads at Cheaper Rates. 24/7 Service." />
+        <meta name="twitter:title" content="Full Load & Return Load Transport | Shameena Transports Since 1982" />
+        <meta name="twitter:description" content="43 Years of Heritage. Full Load & Return Load transport Tamil Nadu. 24/7 Service." />
         <script type="application/ld+json">{JSON.stringify(organizationSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(localBusinessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(serviceSchema)}</script>
