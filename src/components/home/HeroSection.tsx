@@ -31,7 +31,7 @@ export function HeroSection() {
             </h1>
 
             <p className="text-base sm:text-lg md:text-xl text-primary-foreground/90 mb-4 sm:mb-6 max-w-2xl">
-              Customer satisfaction is our priority. Fast, Safe & Reliable Goods Transport across Tamil Nadu. Full Load, Part Load – We deliver on time, every time.
+              Customer satisfaction is our priority. Fast, Safe & Reliable Goods Transport across Tamil Nadu. Full Load – We deliver on time, every time.
             </p>
 
             {/* Highlights */}

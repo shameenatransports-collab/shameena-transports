@@ -18,19 +18,6 @@ const services = [
     ],
   },
   {
-    id: "part-load",
-    icon: Package,
-    title: "Part Load Transport",
-    description: "Cost-effective shared transport solution",
-    features: [
-      "Share truck space with other shipments",
-      "Economical for smaller cargo (100kg - 3 tons)",
-      "Regular scheduled departures",
-      "Ideal for SMEs and regular dispatches",
-      "Consolidated loads for major routes",
-    ],
-  },
-  {
     id: "textile",
     icon: Factory,
     title: "Textile & Industrial Cargo",
@@ -101,8 +88,8 @@ const Services = () => {
   return (
     <>
       <Helmet>
-        <title>Lorry Transport Services in Coimbatore | Full Load, Part Load - Shameena Transports</title>
-        <meta name="description" content="Professional lorry transport services in Coimbatore & Tamil Nadu. Full Load, Part Load, Textile, Construction Material Transport. Call for instant quotes!" />
+        <title>Lorry Transport Services in Coimbatore | Full Load - Shameena Transports</title>
+        <meta name="description" content="Professional lorry transport services in Coimbatore & Tamil Nadu. Full Load, Textile, Construction Material Transport. Call for instant quotes!" />
         <link rel="canonical" href="https://www.shameena.com/services" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>

@@ -10,11 +10,6 @@ const services = [
     description: "Complete truck booking for large shipments across Tamil Nadu.",
   },
   {
-    icon: Package,
-    title: "Part Load Transport",
-    description: "Cost-effective shared transport for smaller cargo requirements.",
-  },
-  {
     icon: Factory,
     title: "Textile & Industrial Cargo",
     description: "Specialized handling for textile bales and industrial equipment.",

@@ -100,7 +100,7 @@ const Index = () => {
       "name": "Transport Services",
       "itemListElement": [
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Full Truck Load Transport"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Part Load Transport"}},
+        
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Return Load Transport - Cheaper Rates"}},
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Local Lorry Service"}},
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Textile Transport"}},
@@ -217,8 +217,8 @@ const Index = () => {
     <>
       <Helmet>
         <title>Shameena Transports | Since 1982 - Most Reliable Lorry Service in Coimbatore & Tamil Nadu</title>
-        <meta name="description" content="Shameena Transports - Since 1982, 43 years of heritage in logistics. Most Reliable Lorry Service in Coimbatore & Tamil Nadu. Customer satisfaction priority. Return loads at cheaper rates. Full Load, Part Load. Call +91 94430 33055" />
-        <meta name="keywords" content="lorry service coimbatore, transport tamil nadu, goods transport coimbatore, shameena transports, truck transport coimbatore, return load transport, cheaper transport rates, reliable lorry service, 43 years transport company, textile transport tiruppur, chennai goods transport, madurai lorry service, full truck load, part load transport, since 1982 transport, lorry booking coimbatore" />
+        <meta name="description" content="Shameena Transports - Since 1982, 43 years of heritage in logistics. Most Reliable Lorry Service in Coimbatore & Tamil Nadu. Customer satisfaction priority. Return loads at cheaper rates. Full Load. Call +91 94430 33055" />
+        <meta name="keywords" content="lorry service coimbatore, transport tamil nadu, goods transport coimbatore, shameena transports, truck transport coimbatore, return load transport, cheaper transport rates, reliable lorry service, 43 years transport company, textile transport tiruppur, chennai goods transport, madurai lorry service, full truck load, since 1982 transport, lorry booking coimbatore" />
         <link rel="canonical" href="https://www.shameena.com" />
         <meta property="og:title" content="Shameena Transports | Since 1982 - Most Reliable Lorry Service in Tamil Nadu" />
         <meta property="og:description" content="43 Years of Heritage in Logistics. Most Reliable Transport Service. Return Loads at Cheaper Rates. Coimbatore, Chennai, Tiruppur, Erode, Salem, Madurai. 24/7 Service." />
