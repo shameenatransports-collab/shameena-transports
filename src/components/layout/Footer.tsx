@@ -5,9 +5,6 @@ const serviceLinks = [{
   name: "Full Load Transport",
   href: "/services#full-load"
 }, {
-  name: "Part Load Transport",
-  href: "/services#part-load"
-}, {
   name: "Textile Cargo",
   href: "/services#textile"
 }, {

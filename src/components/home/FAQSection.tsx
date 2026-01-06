@@ -19,10 +19,6 @@ const faqs = [
     answer: "You can get updates on your shipment status through WhatsApp or a direct call to our support team. We keep you informed at every step of the delivery process.",
   },
   {
-    question: "What is the difference between full load and part load?",
-    answer: "Full load means you book the entire lorry exclusively for your cargo. Part load is a shared transport option where multiple clients' goods are transported together, making it more economical for smaller shipments.",
-  },
-  {
     question: "How do I book a lorry for transport?",
     answer: "Simply call us at +91 90477 21209 or WhatsApp us with your pickup location, destination, type of goods, and approximate weight. We'll provide you with a quote and arrange the transport.",
   },
