@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { Layout } from "@/components/layout/Layout";
 import { Phone, Mail, MapPin, Clock, MessageCircle, Send } from "lucide-react";
@@ -7,7 +7,12 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
-
+import {
+  trackContactFormStart,
+  trackContactFormSubmit,
+  trackPhoneClick,
+  trackWhatsAppClick,
+} from "@/lib/analytics";
 const contactInfo = [
   {
     icon: Phone,
@@ -48,12 +53,21 @@ const Contact = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
+  const [formStarted, setFormStarted] = useState(false);
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
 
     // Simulate form submission
     await new Promise((resolve) => setTimeout(resolve, 1000));
+
+    // Track successful submission
+    trackContactFormSubmit({
+      source_city: formData.pickup,
+      destination_city: formData.destination,
+      service_type: formData.goods,
+    });
 
     toast({
       title: "Enquiry Submitted!",
@@ -70,10 +84,24 @@ const Contact = () => {
       message: "",
     });
     setIsSubmitting(false);
+    setFormStarted(false);
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    // Track form start on first interaction
+    if (!formStarted) {
+      setFormStarted(true);
+      trackContactFormStart();
+    }
     setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handlePhoneClick = (phone: string) => {
+    trackPhoneClick(phone, "contact_page");
+  };
+
+  const handleWhatsAppClick = () => {
+    trackWhatsAppClick("contact_page");
   };
 
   return (
@@ -276,7 +304,11 @@ const Contact = () => {
                 <div className="mt-6 p-6 bg-primary rounded-lg text-primary-foreground">
                   <h3 className="font-semibold text-lg mb-4">Need Immediate Assistance?</h3>
                   <div className="flex flex-col sm:flex-row gap-3">
-                  <a href="tel:+919443033055" className="flex-1">
+                  <a 
+                    href="tel:+919443033055" 
+                    className="flex-1"
+                    onClick={() => handlePhoneClick("+919443033055")}
+                  >
                       <Button variant="secondary" size="lg" className="w-full gap-2">
                         <Phone className="h-5 w-5" />
                         Call Now
@@ -287,6 +319,7 @@ const Contact = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex-1"
+                      onClick={handleWhatsAppClick}
                     >
                       <Button
                         variant="outline"

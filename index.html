@@ -58,6 +58,32 @@
 
     <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+    
+    <!-- Google Analytics 4 with Consent Mode v2 -->
+    <script>
+      // Initialize dataLayer and gtag
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      
+      // Set default consent to denied (GDPR compliant)
+      gtag('consent', 'default', {
+        'analytics_storage': 'denied',
+        'ad_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied',
+        'wait_for_update': 500
+      });
+      
+      // Store measurement ID for later use
+      window.GA_MEASUREMENT_ID = 'G-XXXXXXXXXX'; // Replace with your GA4 Measurement ID
+      
+      gtag('js', new Date());
+      gtag('config', window.GA_MEASUREMENT_ID, {
+        send_page_view: false, // We'll track manually for SPA
+        cookie_flags: 'SameSite=None;Secure'
+      });
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
   </head>
 
   <body>
