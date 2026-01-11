@@ -3,6 +3,12 @@ import { Layout } from "@/components/layout/Layout";
 import { Truck, Package, Factory, Building2, Warehouse, CheckCircle, Clock, AlertCircle } from "lucide-react";
 import { CTASection } from "@/components/home/CTASection";
 import { Badge } from "@/components/ui/badge";
+import {
+  localBusinessSchema,
+  fullLoadServiceSchema,
+  returnLoadServiceSchema,
+  createBreadcrumbSchema,
+} from "@/lib/structured-data";
 
 const services = [
   {
@@ -78,31 +84,30 @@ const services = [
 ];
 
 const Services = () => {
-  const jsonLd = {
+  const breadcrumbSchema = createBreadcrumbSchema([
+    { name: "Home", url: "https://www.shameena.com" },
+    { name: "Services", url: "https://www.shameena.com/services" },
+  ]);
+
+  const serviceListSchema = {
     "@context": "https://schema.org",
-    "@type": "Service",
-    "serviceType": "Full Load & Return Load Lorry Transport",
-    "provider": {
-      "@type": "LocalBusiness",
-      "name": "Shameena Transports",
-      "foundingDate": "1982"
-    },
-    "areaServed": {
-      "@type": "State",
-      "name": "Tamil Nadu"
-    },
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Transport Services",
-      "itemListElement": services.map(service => ({
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": service.title,
-          "description": service.description
+    "@type": "ItemList",
+    "name": "Shameena Transports Services",
+    "description": "Full Load and Return Load transport services in Tamil Nadu",
+    "itemListElement": services.map((service, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "item": {
+        "@type": "Service",
+        "@id": `https://www.shameena.com/services#${service.id}`,
+        "name": service.title,
+        "description": service.description,
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Shameena Transports"
         }
-      }))
-    }
+      }
+    }))
   };
 
   return (
@@ -114,7 +119,13 @@ const Services = () => {
         <link rel="canonical" href="https://www.shameena.com/services" />
         <meta property="og:title" content="Full Load & Return Load Transport Services | Shameena Transports" />
         <meta property="og:description" content="Dedicated Full Load transport & Return Load on available routes. Tamil Nadu's trusted logistics since 1982." />
-        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+        <meta property="og:url" content="https://www.shameena.com/services" />
+        <meta property="og:type" content="website" />
+        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(localBusinessSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(fullLoadServiceSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(returnLoadServiceSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(serviceListSchema)}</script>
       </Helmet>
       <Layout>
         {/* Hero Section */}
