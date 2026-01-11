@@ -13,6 +13,7 @@ import {
   trackPhoneClick,
   trackWhatsAppClick,
 } from "@/lib/analytics";
+import { localBusinessSchema, createBreadcrumbSchema } from "@/lib/structured-data";
 const contactInfo = [
   {
     icon: Phone,
@@ -104,12 +105,22 @@ const Contact = () => {
     trackWhatsAppClick("contact_page");
   };
 
+  const breadcrumbSchema = createBreadcrumbSchema([
+    { name: "Home", url: "https://www.shameena.com" },
+    { name: "Contact", url: "https://www.shameena.com/contact" },
+  ]);
+
   return (
     <>
       <Helmet>
         <title>Contact Us | Lorry Booking Coimbatore - Shameena Transports</title>
         <meta name="description" content="Contact Shameena Transports for lorry booking in Coimbatore. Call +91 90477 21209 or WhatsApp for instant quotes. 24/7 goods transport service in Tamil Nadu." />
         <link rel="canonical" href="https://www.shameena.com/contact" />
+        <meta property="og:title" content="Contact Shameena Transports | Get a Quote" />
+        <meta property="og:description" content="Call +91 94430 33055 or WhatsApp for instant lorry booking quotes. 24/7 service in Tamil Nadu." />
+        <meta property="og:url" content="https://www.shameena.com/contact" />
+        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(localBusinessSchema)}</script>
       </Helmet>
       <Layout>
         {/* Hero Section */}

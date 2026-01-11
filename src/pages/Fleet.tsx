@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { CTASection } from "@/components/home/CTASection";
 import { BackgroundPicture } from "@/components/ui/picture";
 import fleetBg from "@/assets/fleet-bg.jpg";
+import { localBusinessSchema, createBreadcrumbSchema, fleetSchema } from "@/lib/structured-data";
 
 const fleetData = [
   {
@@ -47,12 +48,23 @@ const features = [
 ];
 
 const Fleet = () => {
+  const breadcrumbSchema = createBreadcrumbSchema([
+    { name: "Home", url: "https://www.shameena.com" },
+    { name: "Fleet", url: "https://www.shameena.com/fleet" },
+  ]);
+
   return (
     <>
       <Helmet>
         <title>Our Fleet | Modern Lorries & Trucks - Shameena Transports Coimbatore</title>
         <meta name="description" content="12+ modern lorries and trucks. Multi-axle trailers, open body lorries. Well-maintained, insured fleet for goods transport in Tamil Nadu." />
         <link rel="canonical" href="https://www.shameena.com/fleet" />
+        <meta property="og:title" content="Our Fleet | Shameena Transports" />
+        <meta property="og:description" content="12+ modern, insured lorries for Full Load and Return Load transport in Tamil Nadu." />
+        <meta property="og:url" content="https://www.shameena.com/fleet" />
+        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(localBusinessSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(fleetSchema)}</script>
       </Helmet>
       <Layout>
         {/* Hero Section */}

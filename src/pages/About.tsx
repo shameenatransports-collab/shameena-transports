@@ -5,6 +5,7 @@ import { CTASection } from "@/components/home/CTASection";
 import { Picture } from "@/components/ui/picture";
 import fleetBg from "@/assets/fleet-bg.jpg";
 import logo from "@/assets/sta-logo.png";
+import { organizationSchema, localBusinessSchema, createBreadcrumbSchema } from "@/lib/structured-data";
 
 const values = [
   {
@@ -40,12 +41,23 @@ const values = [
 ];
 
 const About = () => {
+  const breadcrumbSchema = createBreadcrumbSchema([
+    { name: "Home", url: "https://www.shameena.com" },
+    { name: "About Us", url: "https://www.shameena.com/about" },
+  ]);
+
   return (
     <>
       <Helmet>
         <title>About Us | Shameena Transports - Trusted Lorry Service Since 1982</title>
         <meta name="description" content="Learn about Shameena Transports - 43+ years of trusted lorry service in Coimbatore & Tamil Nadu since 1982. Our mission, values, and commitment to safe goods transport." />
         <link rel="canonical" href="https://www.shameena.com/about" />
+        <meta property="og:title" content="About Shameena Transports | Since 1982" />
+        <meta property="og:description" content="43+ years of trusted lorry service in Tamil Nadu. Our mission, values, and commitment to excellence." />
+        <meta property="og:url" content="https://www.shameena.com/about" />
+        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(organizationSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(localBusinessSchema)}</script>
       </Helmet>
       <Layout>
         {/* Hero Section */}
