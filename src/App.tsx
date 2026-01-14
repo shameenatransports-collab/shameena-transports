@@ -16,6 +16,7 @@ const About = lazy(() => import("./pages/About"));
 const Services = lazy(() => import("./pages/Services"));
 const Fleet = lazy(() => import("./pages/Fleet"));
 const ServiceAreas = lazy(() => import("./pages/ServiceAreas"));
+const ReturnLoads = lazy(() => import("./pages/ReturnLoads"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Privacy = lazy(() => import("./pages/Privacy"));
 const Terms = lazy(() => import("./pages/Terms"));
@@ -49,6 +50,7 @@ const App = () => (
                 <Route path="/about" element={<About />} />
                 <Route path="/services" element={<Services />} />
                 <Route path="/fleet" element={<Fleet />} />
+                <Route path="/return-loads" element={<ReturnLoads />} />
                 <Route path="/service-areas" element={<ServiceAreas />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/privacy" element={<Privacy />} />

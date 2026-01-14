@@ -6,7 +6,7 @@ import heroBg from "@/assets/hero-bg.jpg";
 
 const highlights = [
   "Full Load – Dedicated Trucks",
-  "Return Load on Available Routes",
+  "Complete Control & Faster Delivery",
   "24/7 Service | Since 1982",
 ];
 
@@ -27,11 +27,11 @@ export function HeroSection() {
             </span>
 
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-primary-foreground leading-tight mb-4 sm:mb-6">
-              Full Load & Return Load Lorry Service in Tamil Nadu
+              Full Load Lorry Service in Tamil Nadu
             </h1>
 
             <p className="text-base sm:text-lg md:text-xl text-primary-foreground/90 mb-4 sm:mb-6 max-w-2xl">
-              <strong>Full Load</strong> – Dedicated trucks for your cargo. <strong>Return Load</strong> – Available on specific routes at cheaper rates. Fast, Safe & Reliable transport since 1982.
+              <strong>Full Load</strong> – Book a dedicated truck exclusively for your cargo. Complete control over timing, faster delivery with no intermediate stops. Fast, Safe & Reliable transport since 1982.
             </p>
 
             {/* Highlights */}

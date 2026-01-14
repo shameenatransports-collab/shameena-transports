@@ -8,15 +8,8 @@ const services = [
   {
     icon: Truck,
     title: "Full Load Transport",
-    description: "Dedicated truck for your exclusive cargo across Tamil Nadu. Complete control, faster delivery.",
+    description: "Dedicated truck for your exclusive cargo across Tamil Nadu. Complete control, faster delivery with no intermediate stops.",
     isPrimary: true,
-  },
-  {
-    icon: Package,
-    title: "Return Load Transport",
-    description: "Cost-effective transport when trucks return on available routes. Subject to route availability.",
-    isPrimary: true,
-    badge: "Route Availability",
   },
   {
     icon: Factory,
@@ -41,15 +34,15 @@ export function ServicesPreview() {
       <div className="container mx-auto px-4">
         <div className="text-center max-w-2xl mx-auto mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Full Load & Return Load Transport Services
+            Full Load Transport Services
           </h2>
           <p className="text-muted-foreground text-lg">
-            Tamil Nadu's trusted logistics partner since 1982. Full Load for dedicated transport, Return Load for cost savings on available routes.
+            Tamil Nadu's trusted logistics partner since 1982. Full Load for dedicated transport with complete control over your shipment.
           </p>
         </div>
 
-        {/* Primary Services - Full Load & Return Load */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+        {/* Primary Service - Full Load */}
+        <div className="max-w-2xl mx-auto mb-8">
           {services.filter(s => s.isPrimary).map((service, index) => (
             <Card
               key={index}
@@ -60,12 +53,6 @@ export function ServicesPreview() {
                   <div className="w-14 h-14 rounded-lg bg-accent flex items-center justify-center group-hover:scale-110 transition-transform">
                     <service.icon className="h-7 w-7 text-accent-foreground" />
                   </div>
-                  {service.badge && (
-                    <Badge variant="secondary" className="gap-1 text-xs">
-                      <Clock className="h-3 w-3" />
-                      {service.badge}
-                    </Badge>
-                  )}
                 </div>
                 <h3 className="text-xl font-bold text-foreground mb-3">{service.title}</h3>
                 <p className="text-muted-foreground">{service.description}</p>

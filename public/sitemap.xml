@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://www.shameena.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://www.shameena.com/about</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.shameena.com/services</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.shameena.com/return-loads</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.shameena.com/fleet</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.shameena.com/service-areas</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.shameena.com/contact</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.shameena.com/privacy</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://www.shameena.com/terms</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+</urlset>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
     <loc>https://www.shameena.com/</loc>

@@ -8,8 +8,8 @@ const serviceLinks = [
     href: "/services#full-load"
   },
   {
-    name: "Return Load Transport",
-    href: "/services#return-load"
+    name: "Return Loads",
+    href: "/return-loads"
   },
   {
     name: "Textile Cargo",
@@ -59,7 +59,7 @@ export function Footer() {
               </div>
             </div>
             <p className="text-sm opacity-90">
-              Full Load & Return Load transport specialists since 1982. Fast, Safe & Reliable goods transport across Tamil Nadu.
+              Full Load transport specialists since 1982. Fast, Safe & Reliable goods transport across Tamil Nadu.
             </p>
           </div>
 
