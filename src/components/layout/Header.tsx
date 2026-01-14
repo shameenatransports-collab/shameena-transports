@@ -13,6 +13,9 @@ const navLinks = [{
   name: "Services",
   href: "/services"
 }, {
+  name: "Return Loads",
+  href: "/return-loads"
+}, {
   name: "Fleet",
   href: "/fleet"
 }, {

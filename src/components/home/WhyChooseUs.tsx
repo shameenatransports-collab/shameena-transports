@@ -13,8 +13,8 @@ const features = [
   },
   {
     icon: RotateCcw,
-    title: "Return Loads Available",
-    description: "Get cheaper rates on return transport – save more on every trip",
+    title: "Flexible Scheduling",
+    description: "Book transport on your schedule with flexible pickup and delivery times",
   },
   {
     icon: Award,
