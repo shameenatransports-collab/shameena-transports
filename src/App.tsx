@@ -5,14 +5,15 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
-import { LoadingScreen } from "@/components/ui/loading-screen";
 import { AnalyticsProvider } from "@/components/analytics/AnalyticsProvider";
 
-// Eager load Index for fastest initial render
 import Index from "./pages/Index";
 
-// Lazy load other pages for code splitting
 const About = lazy(() => import("./pages/About"));
+const Transportation = lazy(() => import("./pages/Transportation"));
+const Trading = lazy(() => import("./pages/Trading"));
+const FinancialServices = lazy(() => import("./pages/FinancialServices"));
+const RealEstate = lazy(() => import("./pages/RealEstate"));
 const Services = lazy(() => import("./pages/Services"));
 const Fleet = lazy(() => import("./pages/Fleet"));
 const ServiceAreas = lazy(() => import("./pages/ServiceAreas"));
@@ -24,7 +25,6 @@ const NotFound = lazy(() => import("./pages/NotFound"));
 
 const queryClient = new QueryClient();
 
-// Minimal loading fallback for lazy routes
 function PageLoader() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-background">
@@ -48,6 +48,10 @@ const App = () => (
               <Routes>
                 <Route path="/" element={<Index />} />
                 <Route path="/about" element={<About />} />
+                <Route path="/transportation" element={<Transportation />} />
+                <Route path="/trading" element={<Trading />} />
+                <Route path="/financial-services" element={<FinancialServices />} />
+                <Route path="/real-estate" element={<RealEstate />} />
                 <Route path="/services" element={<Services />} />
                 <Route path="/fleet" element={<Fleet />} />
                 <Route path="/return-loads" element={<ReturnLoads />} />

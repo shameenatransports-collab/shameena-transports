@@ -1,96 +1,106 @@
 import { Link } from "react-router-dom";
-import { Phone, MessageCircle, ArrowRight, CheckCircle } from "lucide-react";
+import { Phone, MessageCircle, ArrowRight, Truck, Package, Calculator, Home } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 import { BackgroundPicture } from "@/components/ui/picture";
 import heroBg from "@/assets/hero-bg.jpg";
 
-const highlights = [
-  "Full Load – Dedicated Trucks",
-  "Complete Control & Faster Delivery",
-  "24/7 Service | Since 1982",
+const verticals = [
+  {
+    icon: Truck,
+    title: "Transportation",
+    description: "Full Load lorry services across Tamil Nadu since 1982",
+    href: "/transportation",
+    color: "bg-blue-500/10 text-blue-600 dark:text-blue-400"
+  },
+  {
+    icon: Package,
+    title: "Trading",
+    description: "Iron & steel materials - TMT, rods, coils, beams",
+    href: "/trading",
+    color: "bg-orange-500/10 text-orange-600 dark:text-orange-400"
+  },
+  {
+    icon: Calculator,
+    title: "Financial Services",
+    description: "GST, taxation, accounting for all businesses",
+    href: "/financial-services",
+    color: "bg-green-500/10 text-green-600 dark:text-green-400"
+  },
+  {
+    icon: Home,
+    title: "Real Estate",
+    description: "Land, construction & properties in Coimbatore",
+    href: "/real-estate",
+    color: "bg-purple-500/10 text-purple-600 dark:text-purple-400"
+  }
 ];
 
 export function HeroSection() {
   return (
     <BackgroundPicture
       src={heroBg}
-      alt="Shameena Transports Fleet"
-      className="min-h-[90vh] flex items-center"
-      overlayClassName="bg-gradient-to-r from-primary/95 via-primary/85 to-primary/70"
+      alt="STA Enterprises"
+      className="min-h-[95vh] flex items-center"
+      overlayClassName="bg-gradient-to-b from-primary/95 via-primary/90 to-primary/95"
       priority
     >
-      <section className="relative z-10 w-full pb-28 sm:pb-32" aria-label="Hero section">
-        <div className="container mx-auto px-4 pt-16 sm:pt-0">
-          <div className="max-w-3xl">
-            <span className="inline-block px-3 py-1.5 sm:px-4 sm:py-2 bg-accent text-accent-foreground text-xs sm:text-sm font-semibold rounded-full mb-4 sm:mb-6 animate-fade-in">
-              🚚 Since 1982 – 43 Years of Heritage in Logistics
+      <section className="relative z-10 w-full py-16 md:py-24" aria-label="Hero section">
+        <div className="container mx-auto px-4">
+          {/* Main Hero Content */}
+          <div className="text-center max-w-4xl mx-auto mb-12 md:mb-16">
+            <span className="inline-block px-4 py-2 bg-accent text-accent-foreground text-sm font-semibold rounded-full mb-6 animate-fade-in">
+              Lowest Commission in Indian Market
             </span>
 
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-primary-foreground leading-tight mb-4 sm:mb-6">
-              Full Load Lorry Service in Tamil Nadu
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-primary-foreground leading-tight mb-6">
+              STA Enterprises
             </h1>
 
-            <p className="text-base sm:text-lg md:text-xl text-primary-foreground/90 mb-4 sm:mb-6 max-w-2xl">
-              <strong>Full Load</strong> – Book a dedicated truck exclusively for your cargo. Complete control over timing, faster delivery with no intermediate stops. Fast, Safe & Reliable transport since 1982.
+            <p className="text-lg md:text-xl lg:text-2xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto">
+              Your trusted partner for <strong>Transportation</strong>, <strong>Trading</strong>, <strong>Financial Services</strong> & <strong>Real Estate</strong>. 
+              Serving businesses since 1982.
             </p>
 
-            {/* Highlights */}
-            <ul className="flex flex-wrap gap-3 sm:gap-4 mb-6 sm:mb-8">
-              {highlights.map((highlight, index) => (
-                <li key={index} className="flex items-center gap-2 text-primary-foreground/90 text-sm sm:text-base">
-                  <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-secondary flex-shrink-0" />
-                  <span className="font-medium">{highlight}</span>
-                </li>
-              ))}
-            </ul>
-
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-              <a href="tel:+919443033055" className="w-full sm:w-auto" aria-label="Call us at +91 94430 33055">
-                <Button size="lg" variant="secondary" className="w-full sm:w-auto gap-2 text-sm sm:text-base font-semibold">
-                  <Phone className="h-4 w-4 sm:h-5 sm:w-5" />
-                  Call: +91 94430 33055
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="tel:+919443033055" aria-label="Call us">
+                <Button size="lg" variant="secondary" className="w-full sm:w-auto gap-2 font-semibold">
+                  <Phone className="h-5 w-5" />
+                  +91 94430 33055
                 </Button>
               </a>
-              <a href="https://wa.me/919443033055?text=Hi%2C%20I%20need%20lorry%20transport%20service" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto" aria-label="Contact us on WhatsApp">
-                <Button size="lg" variant="outline" className="w-full sm:w-auto gap-2 text-sm sm:text-base font-semibold border-primary-foreground/30 text-primary-foreground bg-transparent hover:bg-primary-foreground/10 hover:text-primary-foreground">
-                  <MessageCircle className="h-4 w-4 sm:h-5 sm:w-5" />
+              <a href="https://wa.me/919443033055?text=Hi%2C%20I%20need%20information%20about%20STA%20Enterprises%20services" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" variant="outline" className="w-full sm:w-auto gap-2 font-semibold border-primary-foreground/30 text-primary-foreground bg-transparent hover:bg-primary-foreground/10">
+                  <MessageCircle className="h-5 w-5" />
                   WhatsApp Us
                 </Button>
               </a>
             </div>
-
-            <nav className="mt-6 sm:mt-8 hidden sm:flex items-center gap-2 text-primary-foreground/80" aria-label="Quick links">
-              <Link to="/services" className="flex items-center gap-1 hover:text-secondary transition-colors">
-                Explore Our Services <ArrowRight className="h-4 w-4" />
-              </Link>
-            </nav>
           </div>
-        </div>
 
-        {/* Stats Bar - positioned at very bottom, centered */}
-        <div className="absolute bottom-4 sm:bottom-6 left-0 right-0 flex justify-center pointer-events-none z-20">
-          <aside className="bg-card/95 backdrop-blur-sm border border-border rounded-xl shadow-lg">
-            <div className="px-4 sm:px-6 md:px-8 py-2 sm:py-3">
-              <div className="flex items-center gap-4 sm:gap-6 md:gap-8">
-                <div className="text-center">
-                  <div className="text-base sm:text-xl md:text-2xl font-bold text-accent">43+</div>
-                  <div className="text-[9px] sm:text-xs text-muted-foreground">Years</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-base sm:text-xl md:text-2xl font-bold text-accent">12+</div>
-                  <div className="text-[9px] sm:text-xs text-muted-foreground">Lorries</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-base sm:text-xl md:text-2xl font-bold text-accent">10K+</div>
-                  <div className="text-[9px] sm:text-xs text-muted-foreground">Deliveries</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-base sm:text-xl md:text-2xl font-bold text-accent">24/7</div>
-                  <div className="text-[9px] sm:text-xs text-muted-foreground">Support</div>
-                </div>
-              </div>
-            </div>
-          </aside>
+          {/* Business Verticals Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 max-w-6xl mx-auto">
+            {verticals.map((vertical, index) => (
+              <Link key={index} to={vertical.href} className="group">
+                <Card className="h-full bg-card/95 backdrop-blur-sm border-border hover:border-accent transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                  <CardContent className="p-6">
+                    <div className={`w-12 h-12 rounded-xl ${vertical.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
+                      <vertical.icon className="h-6 w-6" />
+                    </div>
+                    <h2 className="text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors">
+                      {vertical.title}
+                    </h2>
+                    <p className="text-sm text-muted-foreground mb-3">
+                      {vertical.description}
+                    </p>
+                    <span className="inline-flex items-center text-sm font-medium text-accent opacity-0 group-hover:opacity-100 transition-opacity">
+                      Learn more <ArrowRight className="h-4 w-4 ml-1" />
+                    </span>
+                  </CardContent>
+                </Card>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
     </BackgroundPicture>
