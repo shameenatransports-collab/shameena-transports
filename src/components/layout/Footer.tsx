@@ -1,47 +1,19 @@
 import { Link } from "react-router-dom";
-import { Phone, MapPin, Clock } from "lucide-react";
+import { Phone, MapPin, Clock, Truck, Package, Calculator, Home } from "lucide-react";
 import logo from "@/assets/sta-logo.png";
 
 const serviceLinks = [
-  {
-    name: "Full Load Transport",
-    href: "/services#full-load"
-  },
-  {
-    name: "Return Loads",
-    href: "/return-loads"
-  },
-  {
-    name: "Textile Cargo",
-    href: "/services#textile"
-  },
-  {
-    name: "Construction Material",
-    href: "/services#construction"
-  }
+  { name: "Transportation", href: "/transportation", icon: Truck },
+  { name: "Trading", href: "/trading", icon: Package },
+  { name: "Financial Services", href: "/financial-services", icon: Calculator },
+  { name: "Real Estate", href: "/real-estate", icon: Home },
 ];
 
-const areaLinks = [
-  {
-    name: "Coimbatore",
-    href: "/service-areas#coimbatore"
-  },
-  {
-    name: "Tiruppur",
-    href: "/service-areas#tiruppur"
-  },
-  {
-    name: "Chennai",
-    href: "/service-areas#chennai"
-  },
-  {
-    name: "Salem",
-    href: "/service-areas#salem"
-  },
-  {
-    name: "Madurai",
-    href: "/service-areas#madurai"
-  }
+const quickLinks = [
+  { name: "About Us", href: "/about" },
+  { name: "Contact", href: "/contact" },
+  { name: "Privacy Policy", href: "/privacy" },
+  { name: "Terms of Service", href: "/terms" },
 ];
 
 export function Footer() {
@@ -52,24 +24,29 @@ export function Footer() {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <img src={logo} alt="Shameena Transports" className="h-10 w-auto bg-card rounded p-1" />
+              <img src={logo} alt="STA Enterprises" className="h-10 w-auto bg-card rounded p-1" />
               <div>
-                <span className="font-bold text-lg">Shameena</span>
-                <span className="font-semibold text-lg text-secondary"> Transporting Agents</span>
+                <span className="font-bold text-lg">STA</span>
+                <span className="font-semibold text-lg text-secondary"> Enterprises</span>
               </div>
             </div>
             <p className="text-sm opacity-90">
-              Full Load transport specialists since 1982. Fast, Safe & Reliable goods transport across Tamil Nadu.
+              Your trusted partner for Transportation, Trading, Financial Services & Real Estate. 
+              Lowest commission rates since 1982.
             </p>
           </div>
 
-          {/* Services */}
+          {/* Our Services */}
           <div>
             <h3 className="font-semibold text-lg mb-4">Our Services</h3>
             <ul className="space-y-2">
-              {serviceLinks.map(link => (
+              {serviceLinks.map((link) => (
                 <li key={link.href}>
-                  <Link to={link.href} className="text-sm opacity-90 hover:opacity-100 hover:text-secondary transition-colors">
+                  <Link
+                    to={link.href}
+                    className="text-sm opacity-90 hover:opacity-100 hover:text-secondary transition-colors flex items-center gap-2"
+                  >
+                    <link.icon className="h-4 w-4" />
                     {link.name}
                   </Link>
                 </li>
@@ -77,13 +54,16 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Service Areas */}
+          {/* Quick Links */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Service Areas</h3>
+            <h3 className="font-semibold text-lg mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              {areaLinks.map(link => (
+              {quickLinks.map((link) => (
                 <li key={link.href}>
-                  <Link to={link.href} className="text-sm opacity-90 hover:opacity-100 hover:text-secondary transition-colors">
+                  <Link
+                    to={link.href}
+                    className="text-sm opacity-90 hover:opacity-100 hover:text-secondary transition-colors"
+                  >
                     {link.name}
                   </Link>
                 </li>
@@ -104,13 +84,17 @@ export function Footer() {
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 flex-shrink-0" />
                 <div className="text-sm opacity-90">
-                  <a href="tel:+919443033055" className="hover:text-secondary block">+91 94430 33055</a>
-                  <a href="tel:+919047721209" className="hover:text-secondary block">+91 90477 21209</a>
+                  <a href="tel:+919443033055" className="hover:text-secondary block">
+                    +91 94430 33055
+                  </a>
+                  <a href="tel:+919047721209" className="hover:text-secondary block">
+                    +91 90477 21209
+                  </a>
                 </div>
               </li>
               <li className="flex items-center gap-3">
                 <Clock className="h-5 w-5 flex-shrink-0" />
-                <span className="text-sm opacity-90">24/7 Available</span>
+                <span className="text-sm opacity-90">Mon - Sat: 9 AM - 7 PM</span>
               </li>
             </ul>
           </div>
@@ -120,7 +104,7 @@ export function Footer() {
         <div className="mt-12 pt-8 border-t border-primary-foreground/20">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm opacity-80">
-              © {new Date().getFullYear()} Shameena Transports. All rights reserved.
+              © {new Date().getFullYear()} STA Enterprises. All rights reserved.
             </p>
             <div className="flex gap-6">
               <Link to="/privacy" className="text-sm opacity-80 hover:opacity-100">
