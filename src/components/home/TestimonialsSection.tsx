@@ -7,7 +7,7 @@ const testimonials = [
     company: "Tiruppur Textile Exports",
     industry: "Textile Industry",
     rating: 5,
-    text: "We have been using Shameena Transports for 10+ years. Their reliability and on-time delivery for our textile exports is unmatched. Highly recommended!",
+    text: "We have been using STA Corporate Solutions for 10+ years. Their reliability and on-time delivery for our textile exports is unmatched. Highly recommended!",
   },
   {
     name: "Suresh Constructions",

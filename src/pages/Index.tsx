@@ -12,10 +12,10 @@ const Index = () => {
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "STA Enterprises",
-    "url": "https://www.staenterprises.com",
-    "logo": "https://www.staenterprises.com/logo.png",
-    "description": "STA Enterprises - Transportation, Trading, Financial Services & Real Estate. Lowest commission rates since 1982.",
+    "name": "STA Corporate Solutions",
+    "url": "https://www.stacorporate.com",
+    "logo": "https://www.stacorporate.com/logo.png",
+    "description": "STA Corporate Solutions - Transportation, Trading, Financial Services & Real Estate. Lowest commission rates since 1982.",
     "foundingDate": "1982",
     "contactPoint": {
       "@type": "ContactPoint",
@@ -29,8 +29,8 @@ const Index = () => {
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "STA Enterprises",
-    "image": "https://www.staenterprises.com/logo.png",
+    "name": "STA Corporate Solutions",
+    "image": "https://www.stacorporate.com/logo.png",
     "description": "Your trusted partner for Transportation, Trading, Financial Services & Real Estate in Coimbatore.",
     "address": {
       "@type": "PostalAddress",
@@ -53,11 +53,11 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>STA Enterprises | Transportation, Trading, Financial Services & Real Estate</title>
-        <meta name="description" content="STA Enterprises - Your trusted partner for Transportation, Trading, Financial Services & Real Estate. Lowest commission in India. Coimbatore. Since 1982." />
-        <meta name="keywords" content="STA Enterprises, transportation coimbatore, iron steel trading, financial services, real estate coimbatore, GST filing, TMT rods, lorry service" />
-        <link rel="canonical" href="https://www.staenterprises.com" />
-        <meta property="og:title" content="STA Enterprises | Business Solutions Since 1982" />
+        <title>STA Corporate Solutions | Transportation, Trading, Financial Services & Real Estate</title>
+        <meta name="description" content="STA Corporate Solutions - Your trusted partner for Transportation, Trading, Financial Services & Real Estate. Lowest commission in India. Coimbatore. Since 1982." />
+        <meta name="keywords" content="STA Corporate Solutions, transportation coimbatore, iron steel trading, financial services, real estate coimbatore, GST filing, TMT rods, lorry service" />
+        <link rel="canonical" href="https://www.stacorporate.com" />
+        <meta property="og:title" content="STA Corporate Solutions | Business Solutions Since 1982" />
         <meta property="og:description" content="Transportation, Trading, Financial Services & Real Estate. Lowest commission rates in India." />
         <script type="application/ld+json">{JSON.stringify(organizationSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(localBusinessSchema)}</script>

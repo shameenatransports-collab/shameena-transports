@@ -13,17 +13,21 @@ export function usePageTracking() {
   useEffect(() => {
     // Map routes to readable titles
     const pageTitles: Record<string, string> = {
-      "/": "Home - Shameena Transports",
-      "/services": "Services - Full Load & Return Load Transport",
+      "/": "Home - STA Corporate Solutions",
+      "/services": "Services - Business Solutions",
       "/service-areas": "Service Areas - Tamil Nadu Coverage",
       "/fleet": "Our Fleet - Modern Transport Vehicles",
       "/about": "About Us - Since 1982",
       "/contact": "Contact Us - Get Quote",
+      "/transportation": "Transportation Services",
+      "/trading": "Iron & Steel Trading",
+      "/financial-services": "Financial Services",
+      "/real-estate": "Real Estate Services",
     };
 
     const pageTitle =
       pageTitles[location.pathname] ||
-      `Shameena Transports - ${location.pathname}`;
+      `STA Corporate Solutions - ${location.pathname}`;
 
     trackPageView(location.pathname, pageTitle);
   }, [location.pathname]);

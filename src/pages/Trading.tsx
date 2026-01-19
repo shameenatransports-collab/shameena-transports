@@ -94,18 +94,18 @@ const Trading = () => {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.staenterprises.com" },
-      { "@type": "ListItem", "position": 2, "name": "Trading", "item": "https://www.staenterprises.com/trading" }
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.stacorporate.com" },
+      { "@type": "ListItem", "position": 2, "name": "Trading", "item": "https://www.stacorporate.com/trading" }
     ]
   };
 
   return (
     <>
       <Helmet>
-        <title>Iron & Steel Trading | TMT Rods, Wire Coils | STA Enterprises</title>
-        <meta name="description" content="STA Enterprises - Your trusted iron and steel trading partner. TMT bars, wire rod coils, angles, beams, rounds. ISO certified quality. Lowest commission in India." />
-        <link rel="canonical" href="https://www.staenterprises.com/trading" />
-        <meta property="og:title" content="Iron & Steel Trading | STA Enterprises" />
+        <title>Iron & Steel Trading | TMT Rods, Wire Coils | STA Corporate Solutions</title>
+        <meta name="description" content="STA Corporate Solutions - Your trusted iron and steel trading partner. TMT bars, wire rod coils, angles, beams, rounds. ISO certified quality. Lowest commission in India." />
+        <link rel="canonical" href="https://www.stacorporate.com/trading" />
+        <meta property="og:title" content="Iron & Steel Trading | STA Corporate Solutions" />
         <meta property="og:description" content="Premium quality iron and steel materials. TMT rods, wire coils, beams, angles. ISO certified. Lowest commission rates." />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
@@ -200,7 +200,7 @@ const Trading = () => {
               <div className="max-w-4xl mx-auto">
                 <div className="text-center mb-12">
                   <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                    Why Choose STA Enterprises for Trading?
+                    Why Choose STA Corporate Solutions for Trading?
                   </h2>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

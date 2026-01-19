@@ -70,8 +70,8 @@ const Transportation = () => {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.staenterprises.com" },
-      { "@type": "ListItem", "position": 2, "name": "Transportation", "item": "https://www.staenterprises.com/transportation" }
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.stacorporate.com" },
+      { "@type": "ListItem", "position": 2, "name": "Transportation", "item": "https://www.stacorporate.com/transportation" }
     ]
   };
 
@@ -81,7 +81,7 @@ const Transportation = () => {
     "name": "Full Load Transport Tamil Nadu",
     "provider": {
       "@type": "LocalBusiness",
-      "name": "STA Enterprises"
+      "name": "STA Corporate Solutions"
     },
     "areaServed": { "@type": "State", "name": "Tamil Nadu" },
     "description": "Full Load dedicated lorry transport across Tamil Nadu since 1982."
@@ -90,10 +90,10 @@ const Transportation = () => {
   return (
     <>
       <Helmet>
-        <title>Transportation Services | Full Load Lorry Tamil Nadu | STA Enterprises</title>
-        <meta name="description" content="STA Enterprises Transportation - Full Load lorry service across Tamil Nadu since 1982. Coimbatore, Chennai, Tiruppur, Salem, Madurai. 24/7 service." />
-        <link rel="canonical" href="https://www.staenterprises.com/transportation" />
-        <meta property="og:title" content="Transportation Services | STA Enterprises" />
+        <title>Transportation Services | Full Load Lorry Tamil Nadu | STA Corporate Solutions</title>
+        <meta name="description" content="STA Corporate Solutions Transportation - Full Load lorry service across Tamil Nadu since 1982. Coimbatore, Chennai, Tiruppur, Salem, Madurai. 24/7 service." />
+        <link rel="canonical" href="https://www.stacorporate.com/transportation" />
+        <meta property="og:title" content="Transportation Services | STA Corporate Solutions" />
         <meta property="og:description" content="Full Load transport across Tamil Nadu. 43+ years experience. 24/7 service." />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(serviceSchema)}</script>
@@ -230,7 +230,7 @@ const Transportation = () => {
               <div className="max-w-4xl mx-auto">
                 <div className="text-center mb-12">
                   <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                    Why Choose STA Enterprises for Transport?
+                    Why Choose STA Corporate Solutions for Transport?
                   </h2>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

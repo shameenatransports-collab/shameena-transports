@@ -39,10 +39,10 @@ export function WhyChooseUs() {
       <div className="container mx-auto px-4">
         <div className="text-center max-w-2xl mx-auto mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Why Choose Shameena Transports?
+            Why Choose STA Corporate Solutions?
           </h2>
           <p className="text-primary-foreground/80 text-lg">
-            We are committed to providing the best lorry service in Coimbatore and all of Tamil Nadu
+            We are committed to providing exceptional services with the lowest commission rates in India
           </p>
         </div>
 

@@ -42,19 +42,19 @@ const values = [
 
 const About = () => {
   const breadcrumbSchema = createBreadcrumbSchema([
-    { name: "Home", url: "https://www.shameena.com" },
-    { name: "About Us", url: "https://www.shameena.com/about" },
+    { name: "Home", url: "https://www.stacorporate.com" },
+    { name: "About Us", url: "https://www.stacorporate.com/about" },
   ]);
 
   return (
     <>
       <Helmet>
-        <title>About Us | Shameena Transports - Trusted Lorry Service Since 1982</title>
-        <meta name="description" content="Learn about Shameena Transports - 43+ years of trusted lorry service in Coimbatore & Tamil Nadu since 1982. Our mission, values, and commitment to safe goods transport." />
-        <link rel="canonical" href="https://www.shameena.com/about" />
-        <meta property="og:title" content="About Shameena Transports | Since 1982" />
-        <meta property="og:description" content="43+ years of trusted lorry service in Tamil Nadu. Our mission, values, and commitment to excellence." />
-        <meta property="og:url" content="https://www.shameena.com/about" />
+        <title>About Us | STA Corporate Solutions - Business Solutions Since 1982</title>
+        <meta name="description" content="Learn about STA Corporate Solutions - 43+ years of trusted business services in Coimbatore & Tamil Nadu since 1982. Transportation, Trading, Financial Services & Real Estate." />
+        <link rel="canonical" href="https://www.stacorporate.com/about" />
+        <meta property="og:title" content="About STA Corporate Solutions | Since 1982" />
+        <meta property="og:description" content="43+ years of trusted business services in Tamil Nadu. Our mission, values, and commitment to excellence." />
+        <meta property="og:url" content="https://www.stacorporate.com/about" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(organizationSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(localBusinessSchema)}</script>
@@ -66,13 +66,13 @@ const About = () => {
             <div className="max-w-3xl flex items-center gap-6">
               <img 
                 src={logo} 
-                alt="Shameena Transports Logo" 
+                alt="STA Corporate Solutions Logo" 
                 className="h-24 md:h-32 w-auto bg-card rounded-lg p-2 shadow-lg"
                 loading="eager"
               />
               <div>
                 <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-4">
-                  About Shameena Transports
+                  About STA Corporate Solutions
                 </h1>
                 <p className="text-lg text-primary-foreground/90">
                   Trusted by hundreds of businesses across Tamil Nadu since 1982
@@ -92,20 +92,20 @@ const About = () => {
                 </h2>
                 <div className="space-y-4 text-muted-foreground">
                   <p>
-                    Founded in 1982, Shameena Transports started with just two lorries and a vision to provide reliable goods transport services in Coimbatore. Today, we have grown into one of the most trusted logistics partners in Tamil Nadu with over 43 years of experience.
+                    Founded in 1982, STA Corporate Solutions started as a transport company with just two lorries and a vision to provide reliable services. Today, we have grown into a diversified business solutions provider with four verticals - Transportation, Trading, Financial Services & Real Estate.
                   </p>
                   <p>
-                    Our founder, with decades of experience in the transport industry, understood the challenges businesses face with unreliable logistics. This drove us to build a company focused on punctuality, safety, and customer satisfaction.
+                    Our founders understood the challenges businesses face with unreliable services and high commissions. This drove us to build a company focused on offering the lowest commission rates in India while maintaining excellence.
                   </p>
                   <p>
-                    From textile mills in Tiruppur to factories in Chennai, construction sites in Salem to warehouses in Madurai – we have served thousands of clients across diverse industries. Our commitment to excellence has made us the preferred choice for goods transport in Tamil Nadu.
+                    From textile mills in Tiruppur to factories in Chennai, construction sites in Salem to businesses across India – we have served thousands of clients across diverse industries. Our commitment to excellence has made us the preferred choice for complete business solutions.
                   </p>
                 </div>
               </div>
               <div className="relative">
                 <Picture
                   src={fleetBg}
-                  alt="Shameena Transports Fleet"
+                  alt="STA Corporate Solutions Operations"
                   className="rounded-lg shadow-xl aspect-[4/3]"
                   imgClassName="rounded-lg"
                 />

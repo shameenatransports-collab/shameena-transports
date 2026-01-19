@@ -40,7 +40,7 @@ export function HeroSection() {
   return (
     <BackgroundPicture
       src={heroBg}
-      alt="STA Enterprises"
+      alt="STA Corporate Solutions"
       className="min-h-[95vh] flex items-center"
       overlayClassName="bg-gradient-to-b from-primary/95 via-primary/90 to-primary/95"
       priority
@@ -54,7 +54,7 @@ export function HeroSection() {
             </span>
 
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-primary-foreground leading-tight mb-6">
-              STA Enterprises
+              STA Corporate Solutions
             </h1>
 
             <p className="text-lg md:text-xl lg:text-2xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto">
@@ -69,7 +69,7 @@ export function HeroSection() {
                   +91 94430 33055
                 </Button>
               </a>
-              <a href="https://wa.me/919443033055?text=Hi%2C%20I%20need%20information%20about%20STA%20Enterprises%20services" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/919443033055?text=Hi%2C%20I%20need%20information%20about%20STA%20Corporate%20Solutions%20services" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" variant="outline" className="w-full sm:w-auto gap-2 font-semibold border-primary-foreground/30 text-primary-foreground bg-transparent hover:bg-primary-foreground/10">
                   <MessageCircle className="h-5 w-5" />
                   WhatsApp Us
