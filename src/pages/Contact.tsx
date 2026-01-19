@@ -106,19 +106,19 @@ const Contact = () => {
   };
 
   const breadcrumbSchema = createBreadcrumbSchema([
-    { name: "Home", url: "https://www.shameena.com" },
-    { name: "Contact", url: "https://www.shameena.com/contact" },
+    { name: "Home", url: "https://www.stacorporate.com" },
+    { name: "Contact", url: "https://www.stacorporate.com/contact" },
   ]);
 
   return (
     <>
       <Helmet>
-        <title>Contact Us | Lorry Booking Coimbatore - Shameena Transports</title>
-        <meta name="description" content="Contact Shameena Transports for lorry booking in Coimbatore. Call +91 90477 21209 or WhatsApp for instant quotes. 24/7 goods transport service in Tamil Nadu." />
-        <link rel="canonical" href="https://www.shameena.com/contact" />
-        <meta property="og:title" content="Contact Shameena Transports | Get a Quote" />
-        <meta property="og:description" content="Call +91 94430 33055 or WhatsApp for instant lorry booking quotes. 24/7 service in Tamil Nadu." />
-        <meta property="og:url" content="https://www.shameena.com/contact" />
+        <title>Contact Us | Business Enquiries - STA Corporate Solutions</title>
+        <meta name="description" content="Contact STA Corporate Solutions for business enquiries. Call +91 94430 33055 or WhatsApp for instant quotes. Transportation, Trading, Financial Services & Real Estate." />
+        <link rel="canonical" href="https://www.stacorporate.com/contact" />
+        <meta property="og:title" content="Contact STA Corporate Solutions | Get a Quote" />
+        <meta property="og:description" content="Call +91 94430 33055 or WhatsApp for instant quotes. Complete business solutions." />
+        <meta property="og:url" content="https://www.stacorporate.com/contact" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(localBusinessSchema)}</script>
       </Helmet>
@@ -172,10 +172,10 @@ const Contact = () => {
             <div className="grid lg:grid-cols-2 gap-12">
               {/* Enquiry Form */}
               <div>
-                <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
-                  Send Transport Enquiry
-                </h2>
-                <Card className="border-border">
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+                Send Enquiry
+              </h2>
+              <Card className="border-border">
                   <CardContent className="p-6">
                     <form onSubmit={handleSubmit} className="space-y-4">
                       <div className="grid sm:grid-cols-2 gap-4">
@@ -291,7 +291,7 @@ const Contact = () => {
                       allowFullScreen
                       loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"
-                      title="Shameena Transports Location"
+                      title="STA Corporate Solutions Location"
                     />
                   </div>
                   <CardContent className="p-6">
@@ -299,7 +299,7 @@ const Contact = () => {
                       <MapPin className="h-6 w-6 text-accent flex-shrink-0 mt-1" />
                       <div>
                         <h3 className="font-semibold text-foreground mb-1">
-                          Shameena Transporting Agents
+                          STA Corporate Solutions
                         </h3>
                         <p className="text-muted-foreground text-sm">
                           No.302/2A7, VK Road, Peelamedu,<br />

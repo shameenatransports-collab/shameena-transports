@@ -26,7 +26,7 @@ export function LoadingScreen({ onLoadComplete }: LoadingScreenProps) {
         <div className="relative">
           <img
             src={logo}
-            alt="Shameena Transports"
+            alt="STA Corporate Solutions"
             className="h-24 md:h-32 w-auto bg-card rounded-lg p-3 shadow-2xl animate-pulse"
           />
           {/* Glow effect */}
@@ -36,10 +36,10 @@ export function LoadingScreen({ onLoadComplete }: LoadingScreenProps) {
         {/* Company name */}
         <div className="text-center">
           <h1 className="text-2xl md:text-3xl font-bold text-primary-foreground">
-            Shameena Transports
+            STA Corporate Solutions
           </h1>
           <p className="text-sm text-primary-foreground/80 mt-1">
-            Reliable Logistics Since 1982
+            Complete Business Solutions Since 1982
           </p>
         </div>
 

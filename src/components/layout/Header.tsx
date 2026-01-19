@@ -33,10 +33,10 @@ export function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           <Link to="/" className="flex items-center gap-2">
-            <img src={logo} alt="STA Enterprises Logo" className="h-10 md:h-12 w-auto" />
+            <img src={logo} alt="STA Corporate Solutions Logo" className="h-10 md:h-12 w-auto" />
             <div className="hidden sm:block">
               <span className="font-bold text-lg text-primary">STA</span>
-              <span className="font-semibold text-lg text-secondary"> Enterprises</span>
+              <span className="font-semibold text-lg text-secondary"> Corporate Solutions</span>
             </div>
           </Link>
 

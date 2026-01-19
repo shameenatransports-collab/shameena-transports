@@ -94,18 +94,18 @@ const FinancialServices = () => {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.staenterprises.com" },
-      { "@type": "ListItem", "position": 2, "name": "Financial Services", "item": "https://www.staenterprises.com/financial-services" }
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.stacorporate.com" },
+      { "@type": "ListItem", "position": 2, "name": "Financial Services", "item": "https://www.stacorporate.com/financial-services" }
     ]
   };
 
   return (
     <>
       <Helmet>
-        <title>Financial Services | GST Filing, Tax Services | STA Enterprises</title>
-        <meta name="description" content="STA Enterprises Financial Services - GST filing, personal taxation, foreign taxation, business accounting. Lowest commission rates. Coimbatore." />
-        <link rel="canonical" href="https://www.staenterprises.com/financial-services" />
-        <meta property="og:title" content="Financial Services | STA Enterprises" />
+        <title>Financial Services | GST Filing, Tax Services | STA Corporate Solutions</title>
+        <meta name="description" content="STA Corporate Solutions Financial Services - GST filing, personal taxation, foreign taxation, business accounting. Lowest commission rates. Coimbatore." />
+        <link rel="canonical" href="https://www.stacorporate.com/financial-services" />
+        <meta property="og:title" content="Financial Services | STA Corporate Solutions" />
         <meta property="og:description" content="Complete financial services - GST, taxation, accounting for individuals and businesses." />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
@@ -220,7 +220,7 @@ const FinancialServices = () => {
               <div className="max-w-4xl mx-auto">
                 <div className="text-center mb-12">
                   <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                    Why STA Enterprises for Financial Services?
+                    Why STA Corporate Solutions for Financial Services?
                   </h2>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

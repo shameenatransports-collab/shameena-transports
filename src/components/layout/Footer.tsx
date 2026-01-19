@@ -24,10 +24,10 @@ export function Footer() {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <img src={logo} alt="STA Enterprises" className="h-10 w-auto bg-card rounded p-1" />
+              <img src={logo} alt="STA Corporate Solutions" className="h-10 w-auto bg-card rounded p-1" />
               <div>
                 <span className="font-bold text-lg">STA</span>
-                <span className="font-semibold text-lg text-secondary"> Enterprises</span>
+                <span className="font-semibold text-lg text-secondary"> Corporate Solutions</span>
               </div>
             </div>
             <p className="text-sm opacity-90">
@@ -104,7 +104,7 @@ export function Footer() {
         <div className="mt-12 pt-8 border-t border-primary-foreground/20">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm opacity-80">
-              © {new Date().getFullYear()} STA Enterprises. All rights reserved.
+              © {new Date().getFullYear()} STA Corporate Solutions. All rights reserved.
             </p>
             <div className="flex gap-6">
               <Link to="/privacy" className="text-sm opacity-80 hover:opacity-100">

@@ -28,7 +28,7 @@ const faqs = [
   },
   {
     question: "Is your transport service available 24/7?",
-    answer: "Yes, Shameena Transports operates 24 hours a day, 7 days a week. You can book Full Load transport anytime by calling +91 94430 33055 or contacting us via WhatsApp.",
+    answer: "Yes, STA Corporate Solutions operates 24 hours a day, 7 days a week. You can book Full Load transport anytime by calling +91 94430 33055 or contacting us via WhatsApp.",
   },
 ];
 

@@ -99,18 +99,18 @@ const RealEstate = () => {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.staenterprises.com" },
-      { "@type": "ListItem", "position": 2, "name": "Real Estate", "item": "https://www.staenterprises.com/real-estate" }
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.stacorporate.com" },
+      { "@type": "ListItem", "position": 2, "name": "Real Estate", "item": "https://www.stacorporate.com/real-estate" }
     ]
   };
 
   return (
     <>
       <Helmet>
-        <title>Real Estate Coimbatore | Land, Construction, Properties | STA Enterprises</title>
-        <meta name="description" content="STA Enterprises Real Estate - Land sales, construction, ready to move properties in Coimbatore. Verified properties, lowest commission, complete legal support." />
-        <link rel="canonical" href="https://www.staenterprises.com/real-estate" />
-        <meta property="og:title" content="Real Estate Coimbatore | STA Enterprises" />
+        <title>Real Estate Coimbatore | Land, Construction, Properties | STA Corporate Solutions</title>
+        <meta name="description" content="STA Corporate Solutions Real Estate - Land sales, construction, ready to move properties in Coimbatore. Verified properties, lowest commission, complete legal support." />
+        <link rel="canonical" href="https://www.stacorporate.com/real-estate" />
+        <meta property="og:title" content="Real Estate Coimbatore | STA Corporate Solutions" />
         <meta property="og:description" content="Land, construction, and ready properties in Coimbatore. Verified titles, lowest commission." />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
@@ -226,7 +226,7 @@ const RealEstate = () => {
               <div className="max-w-4xl mx-auto">
                 <div className="text-center mb-12">
                   <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                    Why STA Enterprises for Real Estate?
+                    Why STA Corporate Solutions for Real Estate?
                   </h2>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
