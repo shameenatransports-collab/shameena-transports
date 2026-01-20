@@ -17,7 +17,7 @@ interface ConsentPreferences {
   marketing: boolean;
 }
 
-const CONSENT_KEY = "shameena_cookie_consent";
+const CONSENT_KEY = "sta_corporate_cookie_consent";
 
 export function CookieConsent() {
   const [open, setOpen] = useState(false);

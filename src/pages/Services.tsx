@@ -85,26 +85,26 @@ const services = [
 
 const Services = () => {
   const breadcrumbSchema = createBreadcrumbSchema([
-    { name: "Home", url: "https://www.shameena.com" },
-    { name: "Services", url: "https://www.shameena.com/services" },
+    { name: "Home", url: "https://www.stacorporate.com" },
+    { name: "Transportation Services", url: "https://www.stacorporate.com/services" },
   ]);
 
   const serviceListSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    "name": "Shameena Transports Services",
+    "name": "STA Corporate Solutions Transport Services",
     "description": "Full Load and Return Load transport services in Tamil Nadu",
     "itemListElement": services.map((service, index) => ({
       "@type": "ListItem",
       "position": index + 1,
       "item": {
         "@type": "Service",
-        "@id": `https://www.shameena.com/services#${service.id}`,
+        "@id": `https://www.stacorporate.com/services#${service.id}`,
         "name": service.title,
         "description": service.description,
         "provider": {
           "@type": "LocalBusiness",
-          "name": "Shameena Transports"
+          "name": "STA Corporate Solutions"
         }
       }
     }))
@@ -113,13 +113,13 @@ const Services = () => {
   return (
     <>
       <Helmet>
-        <title>Full Load & Return Load Lorry Transport Services | Shameena Transports Tamil Nadu</title>
+        <title>Full Load & Return Load Lorry Transport Services | STA Corporate Solutions Tamil Nadu</title>
         <meta name="description" content="Full Load dedicated truck transport & Return Load on available routes in Tamil Nadu. Textile, Construction Material Transport. Coimbatore, Chennai, Tiruppur. Since 1982. Call for quotes!" />
         <meta name="keywords" content="full load lorry service, return load transport tamil nadu, dedicated truck booking, return load availability, lorry transport coimbatore, goods transport chennai, textile transport tiruppur" />
-        <link rel="canonical" href="https://www.shameena.com/services" />
-        <meta property="og:title" content="Full Load & Return Load Transport Services | Shameena Transports" />
+        <link rel="canonical" href="https://www.stacorporate.com/services" />
+        <meta property="og:title" content="Full Load & Return Load Transport Services | STA Corporate Solutions" />
         <meta property="og:description" content="Dedicated Full Load transport & Return Load on available routes. Tamil Nadu's trusted logistics since 1982." />
-        <meta property="og:url" content="https://www.shameena.com/services" />
+        <meta property="og:url" content="https://www.stacorporate.com/services" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(localBusinessSchema)}</script>

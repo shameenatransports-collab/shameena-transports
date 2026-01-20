@@ -110,8 +110,8 @@ const faqs = [
 ];
 
 const breadcrumbItems = [
-  { name: "Home", url: "https://www.shameena.com" },
-  { name: "Return Loads", url: "https://www.shameena.com/return-loads" },
+  { name: "Home", url: "https://www.stacorporate.com" },
+  { name: "Return Loads", url: "https://www.stacorporate.com/return-loads" },
 ];
 
 const returnLoadFaqSchema = {
@@ -133,7 +133,7 @@ const ReturnLoads = () => {
   return (
     <>
       <Helmet>
-        <title>Return Load Transport Tamil Nadu | Save 30-40% | Shameena Transports</title>
+        <title>Return Load Transport Tamil Nadu | Save 30-40% | STA Corporate Solutions</title>
         <meta
           name="description"
           content="Return Load transport in Tamil Nadu - Save 30-40% on transport costs. Available on popular routes: Coimbatore-Chennai, Tiruppur-Bangalore, Salem-Madurai. Call +91 94430 33055 to check availability."
@@ -142,17 +142,17 @@ const ReturnLoads = () => {
           name="keywords"
           content="return load transport tamil nadu, return load lorry coimbatore, cheap transport chennai, return load availability, part load transport, return lorry booking, discounted transport rates, return truck coimbatore chennai, return load tiruppur bangalore"
         />
-        <link rel="canonical" href="https://www.shameena.com/return-loads" />
-        <meta property="og:title" content="Return Load Transport Tamil Nadu | Save 30-40% | Shameena Transports" />
+        <link rel="canonical" href="https://www.stacorporate.com/return-loads" />
+        <meta property="og:title" content="Return Load Transport Tamil Nadu | Save 30-40% | STA Corporate Solutions" />
         <meta
           property="og:description"
           content="Save 30-40% with Return Load transport. Popular routes: Coimbatore-Chennai, Tiruppur-Bangalore. Check availability now!"
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.shameena.com/return-loads" />
-        <meta property="og:image" content="https://www.shameena.com/og-image.jpg" />
+        <meta property="og:url" content="https://www.stacorporate.com/return-loads" />
+        <meta property="og:image" content="https://www.stacorporate.com/og-image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Return Load Transport | Save 30-40% | Shameena Transports" />
+        <meta name="twitter:title" content="Return Load Transport | Save 30-40% | STA Corporate Solutions" />
         <meta name="twitter:description" content="Discounted Return Load transport on popular Tamil Nadu routes. Call to check availability." />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(returnLoadServiceSchema)}</script>
@@ -390,9 +390,9 @@ const ReturnLoads = () => {
                       <AccordionItem
                         key={index}
                         value={`item-${index}`}
-                        className="bg-card rounded-lg border border-border px-6"
+                        className="bg-card border border-border rounded-lg px-6"
                       >
-                        <AccordionTrigger className="text-left font-semibold text-foreground hover:text-accent">
+                        <AccordionTrigger className="text-left font-medium text-foreground hover:no-underline">
                           {faq.question}
                         </AccordionTrigger>
                         <AccordionContent className="text-muted-foreground">
@@ -409,41 +409,42 @@ const ReturnLoads = () => {
           {/* CTA */}
           <AnimatedSection delay={100}>
             <section className="py-16 md:py-24 bg-accent">
-              <div className="container mx-auto px-4">
-                <div className="max-w-3xl mx-auto text-center text-accent-foreground">
-                  <h2 className="text-2xl md:text-3xl font-bold mb-4">
-                    Check Return Load Availability Now
-                  </h2>
-                  <p className="text-lg opacity-90 mb-8">
-                    Contact us with your route details and we'll check if return load is available.
-                    Save 30-40% on your next shipment!
-                  </p>
-                  <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="tel:+919443033055">
-                      <Button size="lg" variant="secondary" className="w-full sm:w-auto gap-2">
-                        <Phone className="h-5 w-5" />
-                        Call: +91 94430 33055
-                      </Button>
-                    </a>
-                    <a
-                      href="https://wa.me/919443033055?text=Hi%2C%20I%20want%20to%20check%20Return%20Load%20availability%20from%20[YOUR%20LOCATION]%20to%20[DESTINATION]"
-                      target="_blank"
-                      rel="noopener noreferrer"
+              <div className="container mx-auto px-4 text-center">
+                <h2 className="text-2xl md:text-3xl font-bold text-accent-foreground mb-4">
+                  Ready to Save on Transport?
+                </h2>
+                <p className="text-accent-foreground/80 mb-8 max-w-xl mx-auto">
+                  Contact us now to check Return Load availability for your route. 
+                  Our team is ready to help you save up to 40% on transport costs.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <a href="tel:+919443033055">
+                    <Button size="lg" variant="secondary" className="w-full sm:w-auto gap-2">
+                      <Phone className="h-5 w-5" />
+                      Call Now: +91 94430 33055
+                    </Button>
+                  </a>
+                  <a
+                    href="https://wa.me/919443033055?text=Hi%2C%20I%20want%20to%20check%20Return%20Load%20availability"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button
+                      size="lg"
+                      variant="outline"
+                      className="w-full sm:w-auto gap-2 border-accent-foreground/30 text-accent-foreground hover:bg-accent-foreground/10"
                     >
-                      <Button
-                        size="lg"
-                        variant="outline"
-                        className="w-full sm:w-auto gap-2 border-accent-foreground/30 text-accent-foreground bg-transparent hover:bg-accent-foreground/10"
-                      >
-                        <MessageCircle className="h-5 w-5" />
-                        WhatsApp Us
-                      </Button>
-                    </a>
-                  </div>
-                  <p className="mt-6 text-sm opacity-80">
-                    Need dedicated transport? <Link to="/services" className="underline hover:no-underline">Explore Full Load Services →</Link>
-                  </p>
+                      <MessageCircle className="h-5 w-5" />
+                      WhatsApp Us
+                    </Button>
+                  </a>
                 </div>
+                <p className="mt-8 text-accent-foreground/70">
+                  Need a dedicated truck? Check our{" "}
+                  <Link to="/transportation" className="font-medium underline hover:no-underline">
+                    Full Load Transport Services
+                  </Link>
+                </p>
               </div>
             </section>
           </AnimatedSection>
