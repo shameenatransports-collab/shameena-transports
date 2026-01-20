@@ -9,17 +9,17 @@ const Privacy = () => {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.shameena.com" },
-      { "@type": "ListItem", "position": 2, "name": "Privacy Policy", "item": "https://www.shameena.com/privacy" }
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.stacorporate.com" },
+      { "@type": "ListItem", "position": 2, "name": "Privacy Policy", "item": "https://www.stacorporate.com/privacy" }
     ]
   };
 
   return (
     <>
       <Helmet>
-        <title>Privacy Policy | Shameena Transports - Data Protection & Cookie Usage</title>
-        <meta name="description" content="Privacy Policy for Shameena Transports. Learn how we collect, use, and protect your personal data. GDPR compliant cookie usage and data handling practices." />
-        <link rel="canonical" href="https://www.shameena.com/privacy" />
+        <title>Privacy Policy | STA Corporate Solutions - Data Protection & Cookie Usage</title>
+        <meta name="description" content="Privacy Policy for STA Corporate Solutions. Learn how we collect, use, and protect your personal data. GDPR compliant cookie usage and data handling practices." />
+        <link rel="canonical" href="https://www.stacorporate.com/privacy" />
         <meta name="robots" content="index, follow" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
@@ -48,9 +48,9 @@ const Privacy = () => {
                 <CardContent className="p-6 md:p-8">
                   <h2 className="text-2xl font-bold text-foreground mb-4">Introduction</h2>
                   <p className="text-muted-foreground leading-relaxed">
-                    Shameena Transports ("we", "our", or "us") is committed to protecting your privacy. 
+                    STA Corporate Solutions ("we", "our", or "us") is committed to protecting your privacy. 
                     This Privacy Policy explains how we collect, use, disclose, and safeguard your information 
-                    when you visit our website www.shameena.com or use our transport services.
+                    when you visit our website www.stacorporate.com or use our services.
                   </p>
                   <p className="text-muted-foreground leading-relaxed mt-4">
                     We comply with the Information Technology Act, 2000, and follow GDPR principles 
@@ -70,8 +70,8 @@ const Privacy = () => {
                   </p>
                   <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4">
                     <li>Name and contact details (phone number, email address)</li>
-                    <li>Pickup and delivery locations</li>
-                    <li>Type of goods for transport</li>
+                    <li>Service-specific information (pickup/delivery locations, property details, etc.)</li>
+                    <li>Type of service required</li>
                     <li>Business name (if applicable)</li>
                     <li>Communication preferences</li>
                   </ul>
@@ -142,9 +142,9 @@ const Privacy = () => {
                 <CardContent className="p-6 md:p-8">
                   <h2 className="text-2xl font-bold text-foreground mb-4">How We Use Your Information</h2>
                   <ul className="list-disc list-inside text-muted-foreground space-y-3 ml-4">
-                    <li>To provide and manage transport services you request</li>
+                    <li>To provide and manage the services you request</li>
                     <li>To respond to your enquiries and provide quotes</li>
-                    <li>To communicate about your shipments and deliveries</li>
+                    <li>To communicate about your services and transactions</li>
                     <li>To improve our website and customer experience</li>
                     <li>To analyze website usage and optimize performance</li>
                     <li>To send promotional communications (with your consent)</li>
@@ -162,7 +162,7 @@ const Privacy = () => {
                   </p>
                   <ul className="list-disc list-inside text-muted-foreground space-y-3 ml-4">
                     <li><strong>Google Analytics:</strong> For website analytics (anonymized data)</li>
-                    <li><strong>Service Partners:</strong> Drivers and logistics partners to fulfill your transport request</li>
+                    <li><strong>Service Partners:</strong> To fulfill your service requests</li>
                     <li><strong>Legal Requirements:</strong> When required by law or to protect our rights</li>
                   </ul>
                 </CardContent>
@@ -207,7 +207,7 @@ const Privacy = () => {
                   <h2 className="text-2xl font-bold text-foreground mb-4">Data Retention</h2>
                   <p className="text-muted-foreground leading-relaxed">
                     We retain personal data only as long as necessary for the purposes outlined in this policy, 
-                    or as required by law. Transport records are retained for 7 years for legal and accounting purposes. 
+                    or as required by law. Business records are retained for 7 years for legal and accounting purposes. 
                     Analytics data is retained for 26 months.
                   </p>
                 </CardContent>
@@ -221,7 +221,7 @@ const Privacy = () => {
                     For privacy-related questions or to exercise your rights, contact us:
                   </p>
                   <div className="bg-muted p-4 rounded-lg">
-                    <p className="font-semibold text-foreground">Shameena Transporting Agents</p>
+                    <p className="font-semibold text-foreground">STA Corporate Solutions</p>
                     <p className="text-muted-foreground">No.302/2A7, VK Road, Peelamedu</p>
                     <p className="text-muted-foreground">Coimbatore - 641004, Tamil Nadu</p>
                     <p className="text-muted-foreground mt-2">Phone: +91 94430 33055</p>

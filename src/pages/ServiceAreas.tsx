@@ -69,7 +69,7 @@ const ServiceAreas = () => {
     "name": "Lorry Transport Service",
     "provider": {
       "@type": "LocalBusiness",
-      "name": "Shameena Transports",
+      "name": "STA Corporate Solutions",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Coimbatore",
@@ -90,9 +90,9 @@ const ServiceAreas = () => {
   return (
     <>
       <Helmet>
-        <title>Service Areas | Lorry Transport in Coimbatore, Chennai, Madurai - All Tamil Nadu</title>
+        <title>Service Areas | Lorry Transport in Coimbatore, Chennai, Madurai - All Tamil Nadu | STA Corporate Solutions</title>
         <meta name="description" content="Lorry transport services across Tamil Nadu - Coimbatore, Tiruppur, Chennai, Salem, Madurai, Trichy, Erode, Karur. Complete coverage across all districts." />
-        <link rel="canonical" href="https://www.shameena.com/service-areas" />
+        <link rel="canonical" href="https://www.stacorporate.com/service-areas" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
       <Layout>
