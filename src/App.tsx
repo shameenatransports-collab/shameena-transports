@@ -11,9 +11,8 @@ import Index from "./pages/Index";
 
 const About = lazy(() => import("./pages/About"));
 const Transportation = lazy(() => import("./pages/Transportation"));
-const Trading = lazy(() => import("./pages/Trading"));
 const FinancialServices = lazy(() => import("./pages/FinancialServices"));
-const RealEstate = lazy(() => import("./pages/RealEstate"));
+const LegalServices = lazy(() => import("./pages/LegalServices"));
 const Services = lazy(() => import("./pages/Services"));
 const Fleet = lazy(() => import("./pages/Fleet"));
 const ServiceAreas = lazy(() => import("./pages/ServiceAreas"));
@@ -49,9 +48,8 @@ const App = () => (
                 <Route path="/" element={<Index />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/transportation" element={<Transportation />} />
-                <Route path="/trading" element={<Trading />} />
                 <Route path="/financial-services" element={<FinancialServices />} />
-                <Route path="/real-estate" element={<RealEstate />} />
+                <Route path="/legal-services" element={<LegalServices />} />
                 <Route path="/services" element={<Services />} />
                 <Route path="/fleet" element={<Fleet />} />
                 <Route path="/return-loads" element={<ReturnLoads />} />

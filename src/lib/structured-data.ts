@@ -8,7 +8,7 @@ export const organizationSchema = {
   "legalName": "STA Corporate Solutions",
   "url": "https://www.stacorporate.com",
   "logo": "https://www.stacorporate.com/logo.png",
-  "description": "Since 1982 - 43 Years of Excellence. Complete business solutions including Transportation, Trading, Financial Services & Real Estate.",
+  "description": "Since 1982 - 43 Years of Excellence. Complete business solutions including Transportation, Loan Services & Legal Services.",
   "foundingDate": "1982",
   "slogan": "Complete Business Solutions - Lowest Commission Since 1982",
   "address": {
@@ -41,10 +41,10 @@ export const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "@id": "https://www.stacorporate.com/#localbusiness",
-  "name": "STA Corporate Solutions - Transportation, Trading, Financial Services & Real Estate",
+  "name": "STA Corporate Solutions - Transportation, Loan Services & Legal Services",
   "alternateName": ["STA Corporate", "STA Solutions", "STA Business Solutions"],
   "image": ["https://www.stacorporate.com/logo.png"],
-  "description": "Since 1982, 43 years of excellence in Transportation, Trading, Financial Services & Real Estate. Lowest commission rates in India.",
+  "description": "Since 1982, 43 years of excellence in Transportation, Loan Services & Legal Services. Lowest commission rates in India.",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "No.302/2A7, VK Road, Peelamedu",
@@ -109,19 +109,39 @@ export const transportServiceSchema = {
   }
 };
 
-export const tradingServiceSchema = {
+export const financialServiceSchema = {
   "@context": "https://schema.org",
-  "@type": "Service",
-  "@id": "https://www.stacorporate.com/trading#service",
-  "name": "Iron & Steel Trading",
-  "serviceType": "Metal Trading",
+  "@type": "FinancialService",
+  "@id": "https://www.stacorporate.com/financial-services#service",
+  "name": "Loan & Funding Services",
+  "serviceType": "Loan Assistance",
   "provider": {
     "@type": "LocalBusiness",
     "name": "STA Corporate Solutions",
     "@id": "https://www.stacorporate.com/#localbusiness"
   },
-  "areaServed": { "@type": "Country", "name": "India" },
-  "description": "ISO certified iron and steel materials - TMT rods, wire coils, angles, beams at lowest commission rates.",
+  "areaServed": { "@type": "State", "name": "Tamil Nadu" },
+  "description": "Government scheme loans, MSME funding, Mudra loans, and private bank financing with lowest processing fees.",
+  "offers": {
+    "@type": "Offer",
+    "availability": "https://schema.org/InStock",
+    "priceCurrency": "INR"
+  }
+};
+
+export const legalServiceSchema = {
+  "@context": "https://schema.org",
+  "@type": "LegalService",
+  "@id": "https://www.stacorporate.com/legal-services#service",
+  "name": "Legal Services Tamil Nadu",
+  "serviceType": "Legal Assistance",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "STA Corporate Solutions",
+    "@id": "https://www.stacorporate.com/#localbusiness"
+  },
+  "areaServed": { "@type": "State", "name": "Tamil Nadu" },
+  "description": "Comprehensive legal services for individuals, businesses, and corporates. Property documentation, company formation, litigation support.",
   "offers": {
     "@type": "Offer",
     "availability": "https://schema.org/InStock",
@@ -146,7 +166,7 @@ export const websiteSchema = {
   "@id": "https://www.stacorporate.com/#website",
   "url": "https://www.stacorporate.com",
   "name": "STA Corporate Solutions",
-  "description": "Complete Business Solutions - Transportation, Trading, Financial Services & Real Estate",
+  "description": "Complete Business Solutions - Transportation, Loan Services & Legal Services",
   "publisher": {
     "@id": "https://www.stacorporate.com/#organization"
   },

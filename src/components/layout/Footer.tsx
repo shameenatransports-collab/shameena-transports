@@ -1,12 +1,11 @@
 import { Link } from "react-router-dom";
-import { Phone, MapPin, Clock, Truck, Package, Calculator, Home } from "lucide-react";
+import { Phone, MapPin, Clock, Truck, Banknote, Scale } from "lucide-react";
 import logo from "@/assets/sta-logo.png";
 
 const serviceLinks = [
   { name: "Transportation", href: "/transportation", icon: Truck },
-  { name: "Trading", href: "/trading", icon: Package },
-  { name: "Financial Services", href: "/financial-services", icon: Calculator },
-  { name: "Real Estate", href: "/real-estate", icon: Home },
+  { name: "Financial Services", href: "/financial-services", icon: Banknote },
+  { name: "Legal Services", href: "/legal-services", icon: Scale },
 ];
 
 const quickLinks = [
@@ -31,7 +30,7 @@ export function Footer() {
               </div>
             </div>
             <p className="text-sm opacity-90">
-              Your trusted partner for Transportation, Trading, Financial Services & Real Estate. 
+              Your trusted partner for Transportation, Loan Services & Legal Services. 
               Lowest commission rates since 1982.
             </p>
           </div>
