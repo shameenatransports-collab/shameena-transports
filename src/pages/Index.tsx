@@ -15,7 +15,7 @@ const Index = () => {
     "name": "STA Corporate Solutions",
     "url": "https://www.stacorporate.com",
     "logo": "https://www.stacorporate.com/logo.png",
-    "description": "STA Corporate Solutions - Transportation, Trading, Financial Services & Real Estate. Lowest commission rates since 1982.",
+    "description": "STA Corporate Solutions - Transportation, Loan Services & Legal Services. Lowest commission rates since 1982.",
     "foundingDate": "1982",
     "contactPoint": {
       "@type": "ContactPoint",
@@ -31,7 +31,7 @@ const Index = () => {
     "@type": "LocalBusiness",
     "name": "STA Corporate Solutions",
     "image": "https://www.stacorporate.com/logo.png",
-    "description": "Your trusted partner for Transportation, Trading, Financial Services & Real Estate in Coimbatore.",
+    "description": "Your trusted partner for Transportation, Loan Services & Legal Services in Coimbatore.",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "No.302/2A7, VK Road, Peelamedu",
@@ -54,11 +54,11 @@ const Index = () => {
     <>
       <Helmet>
         <title>STA Corporate Solutions | Transportation, Trading, Financial Services & Real Estate</title>
-        <meta name="description" content="STA Corporate Solutions - Your trusted partner for Transportation, Trading, Financial Services & Real Estate. Lowest commission in India. Coimbatore. Since 1982." />
-        <meta name="keywords" content="STA Corporate Solutions, transportation coimbatore, iron steel trading, financial services, real estate coimbatore, GST filing, TMT rods, lorry service" />
+        <meta name="description" content="STA Corporate Solutions - Your trusted partner for Transportation, Loan Services & Legal Services. Lowest commission in India. Coimbatore. Since 1982." />
+        <meta name="keywords" content="STA Corporate Solutions, transportation coimbatore, loan services, legal services, msme loan, mudra loan, company registration, lorry service" />
         <link rel="canonical" href="https://www.stacorporate.com" />
         <meta property="og:title" content="STA Corporate Solutions | Business Solutions Since 1982" />
-        <meta property="og:description" content="Transportation, Trading, Financial Services & Real Estate. Lowest commission rates in India." />
+        <meta property="og:description" content="Transportation, Loan Services & Legal Services. Lowest commission rates in India." />
         <script type="application/ld+json">{JSON.stringify(organizationSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(localBusinessSchema)}</script>
       </Helmet>

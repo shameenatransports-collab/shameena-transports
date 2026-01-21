@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Truck, Package, Calculator, Home, ArrowRight } from "lucide-react";
+import { Truck, Banknote, Scale, ArrowRight } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -14,28 +14,20 @@ const verticals = [
     badge: "Since 1982"
   },
   {
-    icon: Package,
-    title: "Trading",
-    description: "Iron and steel raw materials - TMT rods, wire rod coils, angles, beams. ISO certified quality from top mills.",
-    features: ["TMT Bars", "Wire Rod Coils", "Angles & Beams", "Mill Certificates"],
-    href: "/trading",
-    badge: "ISO Grade"
-  },
-  {
-    icon: Calculator,
+    icon: Banknote,
     title: "Financial Services",
-    description: "Complete financial solutions including GST filing, tax planning, and accounting for individuals and businesses.",
-    features: ["GST Filing", "Income Tax", "Business Accounting", "Foreign Taxation"],
+    description: "Government scheme loans, MSME funding, Mudra loans, and private bank financing for all needs.",
+    features: ["MSME Loans", "Mudra Scheme", "Home Loans", "Business Loans"],
     href: "/financial-services",
-    badge: "Expert Team"
+    badge: "Govt Schemes"
   },
   {
-    icon: Home,
-    title: "Real Estate",
-    description: "Land sales, construction services, and ready-to-move properties in Coimbatore and surrounding areas.",
-    features: ["Land Sales", "Construction", "Ready Properties", "Legal Support"],
-    href: "/real-estate",
-    badge: "Coimbatore"
+    icon: Scale,
+    title: "Legal Services",
+    description: "Comprehensive legal solutions for individuals, businesses, and corporates across Tamil Nadu.",
+    features: ["Property Docs", "Company Formation", "Litigation", "Contracts"],
+    href: "/legal-services",
+    badge: "All 38 Districts"
   }
 ];
 
@@ -49,7 +41,7 @@ export function ServicesPreview() {
             Complete Business Solutions
           </h2>
           <p className="text-muted-foreground text-lg">
-            Four integrated business verticals serving individuals and enterprises with the lowest commission rates in the Indian market.
+            Three integrated business verticals serving individuals and enterprises with the lowest commission rates in the Indian market.
           </p>
         </div>
 

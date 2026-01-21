@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Phone, MessageCircle, ArrowRight, Truck, Package, Calculator, Home } from "lucide-react";
+import { Phone, MessageCircle, ArrowRight, Truck, Banknote, Scale } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { BackgroundPicture } from "@/components/ui/picture";
@@ -14,24 +14,17 @@ const verticals = [
     color: "bg-blue-500/10 text-blue-600 dark:text-blue-400"
   },
   {
-    icon: Package,
-    title: "Trading",
-    description: "Iron & steel materials - TMT, rods, coils, beams",
-    href: "/trading",
-    color: "bg-orange-500/10 text-orange-600 dark:text-orange-400"
-  },
-  {
-    icon: Calculator,
+    icon: Banknote,
     title: "Financial Services",
-    description: "GST, taxation, accounting for all businesses",
+    description: "Government schemes & bank loans for all needs",
     href: "/financial-services",
     color: "bg-green-500/10 text-green-600 dark:text-green-400"
   },
   {
-    icon: Home,
-    title: "Real Estate",
-    description: "Land, construction & properties in Coimbatore",
-    href: "/real-estate",
+    icon: Scale,
+    title: "Legal Services",
+    description: "Personal, business & corporate legal solutions",
+    href: "/legal-services",
     color: "bg-purple-500/10 text-purple-600 dark:text-purple-400"
   }
 ];
@@ -58,7 +51,7 @@ export function HeroSection() {
             </h1>
 
             <p className="text-lg md:text-xl lg:text-2xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto">
-              Your trusted partner for <strong>Transportation</strong>, <strong>Trading</strong>, <strong>Financial Services</strong> & <strong>Real Estate</strong>. 
+              Your trusted partner for <strong>Transportation</strong>, <strong>Loan Services</strong> & <strong>Legal Services</strong>. 
               Serving businesses since 1982.
             </p>
 
@@ -79,7 +72,7 @@ export function HeroSection() {
           </div>
 
           {/* Business Verticals Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6 max-w-4xl mx-auto">
             {verticals.map((vertical, index) => (
               <Link key={index} to={vertical.href} className="group">
                 <Card className="h-full bg-card/95 backdrop-blur-sm border-border hover:border-accent transition-all duration-300 hover:shadow-xl hover:-translate-y-1">

@@ -12,9 +12,8 @@ import logo from "@/assets/sta-logo.png";
 
 const serviceLinks = [
   { name: "Transportation", href: "/transportation" },
-  { name: "Trading", href: "/trading" },
   { name: "Financial Services", href: "/financial-services" },
-  { name: "Real Estate", href: "/real-estate" },
+  { name: "Legal Services", href: "/legal-services" },
 ];
 
 const navLinks = [
