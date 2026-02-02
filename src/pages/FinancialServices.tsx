@@ -4,6 +4,7 @@ import { CTASection } from "@/components/home/CTASection";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { AnimatedSection } from "@/components/ui/animated-section";
 import { 
   Phone, 
   CheckCircle,
@@ -18,7 +19,9 @@ import {
   TrendingUp,
   Banknote,
   IndianRupee,
-  BadgePercent
+  BadgePercent,
+  Star,
+  Sparkles
 } from "lucide-react";
 
 const governmentSchemes = [
@@ -151,6 +154,17 @@ const specialSchemes = [
   }
 ];
 
+const whyChooseUs = [
+  "Lowest processing fees in the market",
+  "Direct bank tie-ups for faster approval",
+  "Expert guidance on scheme eligibility",
+  "Complete documentation support",
+  "Higher loan sanction rates",
+  "Subsidy claim assistance",
+  "Post-disbursement support",
+  "43+ years of trusted service"
+];
+
 const FinancialServices = () => {
   const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -211,23 +225,28 @@ const FinancialServices = () => {
       <Layout>
         <main>
           {/* Hero Section */}
-          <section className="relative py-20 md:py-28 bg-gradient-to-br from-primary via-primary/95 to-primary/90">
-            <div className="container mx-auto px-4">
-              <div className="max-w-4xl mx-auto text-center">
-                <Badge className="mb-4 bg-accent text-accent-foreground">
-                  <IndianRupee className="h-4 w-4 mr-1" />
-                  Lowest Processing Fees
+          <section className="relative min-h-[80vh] flex items-center bg-gradient-to-br from-primary via-primary/95 to-accent/90">
+            <div className="absolute inset-0 opacity-10">
+              <div className="absolute inset-0" style={{
+                backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+              }} />
+            </div>
+            <div className="container mx-auto px-4 relative z-10 py-20">
+              <div className="max-w-3xl">
+                <Badge className="mb-6 bg-secondary text-secondary-foreground text-sm px-4 py-2">
+                  <IndianRupee className="h-4 w-4 mr-2" />
+                  Lowest Processing Fees in Tamil Nadu
                 </Badge>
-                <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6 leading-tight">
                   Loan & Funding Services
                 </h1>
-                <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
-                  Access <strong>Government Schemes</strong> and <strong>Private Bank Loans</strong>. 
+                <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 leading-relaxed">
+                  Access <strong className="text-secondary">Government Schemes</strong> and <strong className="text-secondary">Private Bank Loans</strong>. 
                   MSME, Mudra, PMAY, Business, Home & Vehicle Loans with expert assistance.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <div className="flex flex-col sm:flex-row gap-4">
                   <a href="tel:+919443033055">
-                    <Button size="lg" variant="secondary" className="gap-2">
+                    <Button size="lg" variant="secondary" className="gap-2 text-lg px-8 py-6">
                       <Phone className="h-5 w-5" />
                       Loan Enquiry: +91 94430 33055
                     </Button>
@@ -235,31 +254,50 @@ const FinancialServices = () => {
                 </div>
               </div>
             </div>
+            
+            {/* Stats */}
+            <div className="absolute bottom-8 left-0 right-0 z-10">
+              <div className="container mx-auto px-4">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                  {[
+                    { value: "₹500Cr+", label: "Loans Facilitated" },
+                    { value: "5000+", label: "Happy Clients" },
+                    { value: "50+", label: "Bank Partners" },
+                    { value: "95%", label: "Approval Rate" }
+                  ].map((stat, index) => (
+                    <div key={index} className="text-center p-4 bg-primary-foreground/10 backdrop-blur-sm rounded-xl">
+                      <div className="text-2xl md:text-3xl font-bold text-secondary">{stat.value}</div>
+                      <div className="text-sm text-primary-foreground/80">{stat.label}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
           </section>
 
           {/* Government Schemes */}
-          <section className="py-16 md:py-24 bg-background">
+          <AnimatedSection className="py-20 md:py-28 bg-background">
             <div className="container mx-auto px-4">
-              <div className="text-center max-w-2xl mx-auto mb-12">
+              <div className="text-center max-w-3xl mx-auto mb-16">
                 <Badge variant="outline" className="mb-4">
                   <Landmark className="h-4 w-4 mr-2" />
                   Government Schemes
                 </Badge>
-                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
                   Government Funded Loans
                 </h2>
-                <p className="text-muted-foreground text-lg">
+                <p className="text-lg text-muted-foreground">
                   Access subsidized loans with low interest rates through central and state government schemes
                 </p>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {governmentSchemes.map((scheme, index) => (
-                  <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-border hover:border-accent">
-                    <CardHeader className="pb-4">
+                  <Card key={index} className="group hover:shadow-2xl transition-all duration-500 border-border hover:border-accent overflow-hidden">
+                    <CardHeader className="pb-4 bg-gradient-to-br from-accent/5 to-transparent">
                       <div className="flex items-start gap-4">
-                        <div className="w-14 h-14 rounded-lg bg-accent/10 flex items-center justify-center group-hover:bg-accent transition-colors">
-                          <scheme.icon className="h-7 w-7 text-accent group-hover:text-accent-foreground" />
+                        <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-accent to-accent/70 flex items-center justify-center group-hover:scale-110 transition-transform duration-500 shadow-lg">
+                          <scheme.icon className="h-8 w-8 text-accent-foreground" />
                         </div>
                         <div>
                           <CardTitle className="text-xl text-foreground">{scheme.title}</CardTitle>
@@ -268,9 +306,9 @@ const FinancialServices = () => {
                       </div>
                     </CardHeader>
                     <CardContent>
-                      <ul className="space-y-2">
+                      <ul className="space-y-3">
                         {scheme.schemes.map((item, idx) => (
-                          <li key={idx} className="flex items-start gap-2 text-sm text-foreground">
+                          <li key={idx} className="flex items-start gap-3 text-sm text-foreground">
                             <CheckCircle className="h-4 w-4 text-accent flex-shrink-0 mt-0.5" />
                             {item}
                           </li>
@@ -281,31 +319,31 @@ const FinancialServices = () => {
                 ))}
               </div>
             </div>
-          </section>
+          </AnimatedSection>
 
           {/* Private Bank Loans */}
-          <section className="py-16 md:py-24 bg-muted">
+          <AnimatedSection className="py-20 md:py-28 bg-muted">
             <div className="container mx-auto px-4">
-              <div className="text-center max-w-2xl mx-auto mb-12">
+              <div className="text-center max-w-3xl mx-auto mb-16">
                 <Badge variant="outline" className="mb-4">
                   <Banknote className="h-4 w-4 mr-2" />
                   Private Banks
                 </Badge>
-                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
                   Private Bank Loans
                 </h2>
-                <p className="text-muted-foreground text-lg">
+                <p className="text-lg text-muted-foreground">
                   Quick approval loans from leading private and public sector banks
                 </p>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {privateBankLoans.map((loan, index) => (
-                  <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-border hover:border-accent">
+                  <Card key={index} className="group hover:shadow-2xl transition-all duration-500 border-border hover:border-accent overflow-hidden">
                     <CardHeader className="pb-4">
                       <div className="flex items-start gap-4">
-                        <div className="w-14 h-14 rounded-lg bg-primary flex items-center justify-center">
-                          <loan.icon className="h-7 w-7 text-primary-foreground" />
+                        <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center group-hover:scale-110 transition-transform duration-500 shadow-lg">
+                          <loan.icon className="h-8 w-8 text-primary-foreground" />
                         </div>
                         <div className="flex-1">
                           <CardTitle className="text-xl text-foreground">{loan.title}</CardTitle>
@@ -334,30 +372,34 @@ const FinancialServices = () => {
                 ))}
               </div>
             </div>
-          </section>
+          </AnimatedSection>
 
           {/* Agriculture Loans */}
-          <section className="py-16 md:py-24 bg-background">
+          <AnimatedSection className="py-20 md:py-28 bg-background">
             <div className="container mx-auto px-4">
-              <div className="text-center max-w-2xl mx-auto mb-12">
-                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              <div className="text-center max-w-3xl mx-auto mb-16">
+                <Badge variant="outline" className="mb-4">
+                  <Sparkles className="h-4 w-4 mr-2" />
+                  Agriculture Sector
+                </Badge>
+                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
                   Agriculture & Allied Sector Loans
                 </h2>
-                <p className="text-muted-foreground text-lg">
+                <p className="text-lg text-muted-foreground">
                   Special financing for farmers, dairy, fisheries, and agri-businesses
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
                 {agricultureLoans.map((loan, index) => (
-                  <Card key={index} className="group hover:shadow-lg transition-all duration-300">
+                  <Card key={index} className="group hover:shadow-xl transition-all duration-500 hover:border-accent">
                     <CardContent className="p-6">
                       <div className="flex items-start gap-4">
-                        <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
-                          <TrendingUp className="h-5 w-5 text-accent" />
+                        <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center flex-shrink-0 group-hover:bg-accent transition-colors">
+                          <TrendingUp className="h-6 w-6 text-accent group-hover:text-accent-foreground transition-colors" />
                         </div>
                         <div>
-                          <h3 className="font-semibold text-foreground mb-1">{loan.name}</h3>
+                          <h3 className="font-bold text-foreground mb-1">{loan.name}</h3>
                           <p className="text-sm text-muted-foreground">{loan.description}</p>
                         </div>
                       </div>
@@ -366,32 +408,32 @@ const FinancialServices = () => {
                 ))}
               </div>
             </div>
-          </section>
+          </AnimatedSection>
 
           {/* Special Category Schemes */}
-          <section className="py-16 md:py-24 bg-muted">
+          <AnimatedSection className="py-20 md:py-28 bg-muted">
             <div className="container mx-auto px-4">
-              <div className="text-center max-w-2xl mx-auto mb-12">
+              <div className="text-center max-w-3xl mx-auto mb-16">
                 <Badge variant="outline" className="mb-4">
                   <BadgePercent className="h-4 w-4 mr-2" />
                   Special Categories
                 </Badge>
-                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
                   Special Category Loan Schemes
                 </h2>
-                <p className="text-muted-foreground text-lg">
+                <p className="text-lg text-muted-foreground">
                   Priority sector lending with special benefits
                 </p>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
                 {specialSchemes.map((category, index) => (
-                  <Card key={index} className="group hover:shadow-lg transition-all duration-300">
-                    <CardContent className="p-6">
-                      <h3 className="text-lg font-bold text-foreground mb-4">{category.title}</h3>
-                      <ul className="space-y-2">
+                  <Card key={index} className="group hover:shadow-xl transition-all duration-500 hover:border-accent">
+                    <CardContent className="p-8">
+                      <h3 className="text-xl font-bold text-foreground mb-6 text-center">{category.title}</h3>
+                      <ul className="space-y-3">
                         {category.schemes.map((scheme, idx) => (
-                          <li key={idx} className="flex items-center gap-2 text-sm text-foreground">
+                          <li key={idx} className="flex items-center gap-3 text-sm text-foreground">
                             <CheckCircle className="h-4 w-4 text-accent flex-shrink-0" />
                             {scheme}
                           </li>
@@ -402,37 +444,34 @@ const FinancialServices = () => {
                 ))}
               </div>
             </div>
-          </section>
+          </AnimatedSection>
 
           {/* Why Choose Us */}
-          <section className="py-16 bg-background">
+          <AnimatedSection className="py-20 md:py-28 bg-background">
             <div className="container mx-auto px-4">
-              <div className="max-w-4xl mx-auto">
-                <div className="text-center mb-12">
+              <div className="max-w-5xl mx-auto">
+                <div className="text-center mb-16">
+                  <Badge variant="outline" className="mb-4">
+                    <Star className="h-4 w-4 mr-2" />
+                    Why Us
+                  </Badge>
                   <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
                     Why STA Corporate Solutions for Loan Services?
                   </h2>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  {[
-                    "Lowest processing fees in the market",
-                    "Direct bank tie-ups for faster approval",
-                    "Expert guidance on scheme eligibility",
-                    "Complete documentation support",
-                    "Higher loan sanction rates",
-                    "Subsidy claim assistance",
-                    "Post-disbursement support",
-                    "43+ years of trusted service"
-                  ].map((item, index) => (
-                    <div key={index} className="flex items-center gap-3 p-4 bg-muted rounded-lg">
-                      <Shield className="h-5 w-5 text-accent flex-shrink-0" />
-                      <span className="text-foreground">{item}</span>
+                  {whyChooseUs.map((item, index) => (
+                    <div key={index} className="group flex items-center gap-4 p-6 bg-muted rounded-xl hover:shadow-lg hover:bg-accent/5 transition-all duration-300">
+                      <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center group-hover:bg-accent transition-colors">
+                        <CheckCircle className="h-6 w-6 text-accent group-hover:text-accent-foreground transition-colors" />
+                      </div>
+                      <span className="text-lg text-foreground font-medium">{item}</span>
                     </div>
                   ))}
                 </div>
               </div>
             </div>
-          </section>
+          </AnimatedSection>
 
           <CTASection />
         </main>

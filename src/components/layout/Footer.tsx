@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
-import { Phone, MapPin, Clock, Truck, Banknote, Scale } from "lucide-react";
+import { Phone, MapPin, Clock, Truck, Banknote, Scale, Building2 } from "lucide-react";
 import logo from "@/assets/sta-logo.png";
 
 const serviceLinks = [
   { name: "Transportation", href: "/transportation", icon: Truck },
   { name: "Financial Services", href: "/financial-services", icon: Banknote },
   { name: "Legal Services", href: "/legal-services", icon: Scale },
+  { name: "Dubai Real Estate", href: "/dubai-real-estate", icon: Building2 },
 ];
 
 const quickLinks = [
