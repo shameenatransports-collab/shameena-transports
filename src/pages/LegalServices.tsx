@@ -4,6 +4,7 @@ import { CTASection } from "@/components/home/CTASection";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { AnimatedSection } from "@/components/ui/animated-section";
 import { 
   Phone, 
   CheckCircle,
@@ -18,7 +19,9 @@ import {
   Briefcase,
   Car,
   Heart,
-  HandshakeIcon
+  HandshakeIcon,
+  Star,
+  MapPin
 } from "lucide-react";
 
 const personalServices = [
@@ -194,6 +197,17 @@ const tamilNaduCourts = [
   "Rent Control Tribunals"
 ];
 
+const whyChooseUs = [
+  "Expert lawyers with 25+ years experience",
+  "Pan Tamil Nadu presence - 38 districts",
+  "Competitive and transparent fees",
+  "Quick turnaround on documentation",
+  "Regular case status updates",
+  "Multilingual support (Tamil & English)",
+  "Weekend consultations available",
+  "43+ years of trusted service"
+];
+
 const LegalServices = () => {
   const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -258,22 +272,28 @@ const LegalServices = () => {
       <Layout>
         <main>
           {/* Hero Section */}
-          <section className="relative py-20 md:py-28 bg-gradient-to-br from-primary via-primary/95 to-primary/90">
-            <div className="container mx-auto px-4">
-              <div className="max-w-4xl mx-auto text-center">
-                <Badge className="mb-4 bg-accent text-accent-foreground">
+          <section className="relative min-h-[80vh] flex items-center bg-gradient-to-br from-primary via-primary/95 to-accent/90">
+            <div className="absolute inset-0 opacity-10">
+              <div className="absolute inset-0" style={{
+                backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M54.627 0l.83.828-1.415 1.415L51.8 0h2.827zM5.373 0l-.83.828L5.96 2.243 8.2 0H5.374zM48.97 0l3.657 3.657-1.414 1.414L46.143 0h2.828zM11.03 0L7.372 3.657 8.787 5.07 13.857 0H11.03zm32.284 0L49.8 6.485 48.384 7.9l-7.9-7.9h2.83zM16.686 0L10.2 6.485 11.616 7.9l7.9-7.9h-2.83zM22.344 0L13.858 8.485 15.272 9.9l9.9-9.9h-2.828zM32 0l-3.657 3.657 1.414 1.414L searching 0H32zM0 5.373l.828-.83 1.415 1.415L0 8.2V5.374zm0 5.656l.828-.829 5.07 5.07-1.414 1.415L0 11.03zm0 5.656l.828-.828 8.485 8.485-1.414 1.414L0 13.857v2.828zm0 5.657l.828-.828 11.9 11.9-1.414 1.414L0 22.344v2.828z' fill='%23ffffff' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E")`,
+              }} />
+            </div>
+            <div className="container mx-auto px-4 relative z-10 py-20">
+              <div className="max-w-3xl">
+                <Badge className="mb-6 bg-secondary text-secondary-foreground text-sm px-4 py-2">
+                  <Scale className="h-4 w-4 mr-2" />
                   Trusted Legal Partners in Tamil Nadu
                 </Badge>
-                <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6 leading-tight">
                   Legal Services
                 </h1>
-                <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
-                  Comprehensive legal solutions for <strong>individuals</strong>, <strong>businesses</strong>, and <strong>corporates</strong>. 
+                <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 leading-relaxed">
+                  Comprehensive legal solutions for <strong className="text-secondary">individuals</strong>, <strong className="text-secondary">businesses</strong>, and <strong className="text-secondary">corporates</strong>. 
                   Expert lawyers across Tamil Nadu with presence in all 38 districts.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <div className="flex flex-col sm:flex-row gap-4">
                   <a href="tel:+919443033055">
-                    <Button size="lg" variant="secondary" className="gap-2">
+                    <Button size="lg" variant="secondary" className="gap-2 text-lg px-8 py-6">
                       <Phone className="h-5 w-5" />
                       Legal Consultation: +91 94430 33055
                     </Button>
@@ -281,30 +301,49 @@ const LegalServices = () => {
                 </div>
               </div>
             </div>
+            
+            {/* Stats */}
+            <div className="absolute bottom-8 left-0 right-0 z-10">
+              <div className="container mx-auto px-4">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                  {[
+                    { value: "38", label: "Districts Covered" },
+                    { value: "10K+", label: "Cases Handled" },
+                    { value: "25+", label: "Years Experience" },
+                    { value: "98%", label: "Success Rate" }
+                  ].map((stat, index) => (
+                    <div key={index} className="text-center p-4 bg-primary-foreground/10 backdrop-blur-sm rounded-xl">
+                      <div className="text-2xl md:text-3xl font-bold text-secondary">{stat.value}</div>
+                      <div className="text-sm text-primary-foreground/80">{stat.label}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
           </section>
 
           {/* Personal Legal Services */}
-          <section className="py-16 md:py-24 bg-background">
+          <AnimatedSection className="py-20 md:py-28 bg-background">
             <div className="container mx-auto px-4">
-              <div className="text-center max-w-2xl mx-auto mb-12">
+              <div className="text-center max-w-3xl mx-auto mb-16">
                 <Badge variant="outline" className="mb-4">
                   <User className="h-4 w-4 mr-2" />
                   For Individuals
                 </Badge>
-                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
                   Personal Legal Services
                 </h2>
-                <p className="text-muted-foreground text-lg">
+                <p className="text-lg text-muted-foreground">
                   Expert legal assistance for all your personal matters
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {personalServices.map((service, index) => (
-                  <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-border hover:border-accent">
+                  <Card key={index} className="group hover:shadow-2xl transition-all duration-500 border-border hover:border-accent overflow-hidden">
                     <CardHeader className="pb-4">
-                      <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4 group-hover:bg-accent transition-colors">
-                        <service.icon className="h-6 w-6 text-accent group-hover:text-accent-foreground" />
+                      <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-accent/10 to-accent/5 flex items-center justify-center mb-4 group-hover:from-accent group-hover:to-accent/70 transition-all duration-500">
+                        <service.icon className="h-7 w-7 text-accent group-hover:text-accent-foreground transition-colors" />
                       </div>
                       <CardTitle className="text-lg text-foreground">{service.title}</CardTitle>
                       <p className="text-sm text-muted-foreground">{service.description}</p>
@@ -323,30 +362,30 @@ const LegalServices = () => {
                 ))}
               </div>
             </div>
-          </section>
+          </AnimatedSection>
 
           {/* Business Legal Services */}
-          <section className="py-16 md:py-24 bg-muted">
+          <AnimatedSection className="py-20 md:py-28 bg-muted">
             <div className="container mx-auto px-4">
-              <div className="text-center max-w-2xl mx-auto mb-12">
+              <div className="text-center max-w-3xl mx-auto mb-16">
                 <Badge variant="outline" className="mb-4">
                   <Briefcase className="h-4 w-4 mr-2" />
                   For Businesses
                 </Badge>
-                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
                   Business Legal Services
                 </h2>
-                <p className="text-muted-foreground text-lg">
+                <p className="text-lg text-muted-foreground">
                   Complete legal support for startups, SMEs, and enterprises
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {businessServices.map((service, index) => (
-                  <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-border hover:border-accent">
+                  <Card key={index} className="group hover:shadow-2xl transition-all duration-500 border-border hover:border-accent overflow-hidden">
                     <CardHeader className="pb-4">
-                      <div className="w-12 h-12 rounded-lg bg-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                        <service.icon className="h-6 w-6 text-primary-foreground" />
+                      <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-500 shadow-lg">
+                        <service.icon className="h-7 w-7 text-primary-foreground" />
                       </div>
                       <CardTitle className="text-lg text-foreground">{service.title}</CardTitle>
                       <p className="text-sm text-muted-foreground">{service.description}</p>
@@ -365,30 +404,30 @@ const LegalServices = () => {
                 ))}
               </div>
             </div>
-          </section>
+          </AnimatedSection>
 
           {/* Corporate Legal Services */}
-          <section className="py-16 md:py-24 bg-background">
+          <AnimatedSection className="py-20 md:py-28 bg-background">
             <div className="container mx-auto px-4">
-              <div className="text-center max-w-2xl mx-auto mb-12">
+              <div className="text-center max-w-3xl mx-auto mb-16">
                 <Badge variant="outline" className="mb-4">
                   <Factory className="h-4 w-4 mr-2" />
                   For Corporates
                 </Badge>
-                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
                   Corporate Legal Services
                 </h2>
-                <p className="text-muted-foreground text-lg">
+                <p className="text-lg text-muted-foreground">
                   Enterprise-grade legal solutions for large organizations
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {corporateServices.map((service, index) => (
-                  <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-border hover:border-accent">
+                  <Card key={index} className="group hover:shadow-2xl transition-all duration-500 border-border hover:border-accent overflow-hidden">
                     <CardHeader className="pb-4">
-                      <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4 group-hover:bg-accent transition-colors">
-                        <service.icon className="h-6 w-6 text-accent group-hover:text-accent-foreground" />
+                      <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-accent/10 to-accent/5 flex items-center justify-center mb-4 group-hover:from-accent group-hover:to-accent/70 transition-all duration-500">
+                        <service.icon className="h-7 w-7 text-accent group-hover:text-accent-foreground transition-colors" />
                       </div>
                       <CardTitle className="text-lg text-foreground">{service.title}</CardTitle>
                       <p className="text-sm text-muted-foreground">{service.description}</p>
@@ -407,30 +446,30 @@ const LegalServices = () => {
                 ))}
               </div>
             </div>
-          </section>
+          </AnimatedSection>
 
           {/* Additional Services */}
-          <section className="py-16 md:py-24 bg-muted">
+          <AnimatedSection className="py-20 md:py-28 bg-muted">
             <div className="container mx-auto px-4">
-              <div className="text-center max-w-2xl mx-auto mb-12">
-                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              <div className="text-center max-w-3xl mx-auto mb-16">
+                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
                   Additional Legal Services
                 </h2>
-                <p className="text-muted-foreground text-lg">
+                <p className="text-lg text-muted-foreground">
                   Quick turnaround services for common legal needs
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
                 {additionalServices.map((service, index) => (
-                  <Card key={index} className="group hover:shadow-lg transition-all duration-300">
+                  <Card key={index} className="group hover:shadow-xl transition-all duration-500 hover:border-accent">
                     <CardContent className="p-6">
                       <div className="flex items-start gap-4">
-                        <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
-                          <Scale className="h-5 w-5 text-accent" />
+                        <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center flex-shrink-0 group-hover:bg-accent transition-colors">
+                          <Scale className="h-6 w-6 text-accent group-hover:text-accent-foreground transition-colors" />
                         </div>
                         <div>
-                          <h3 className="font-semibold text-foreground mb-1">{service.name}</h3>
+                          <h3 className="font-bold text-foreground mb-1">{service.name}</h3>
                           <p className="text-sm text-muted-foreground">{service.description}</p>
                         </div>
                       </div>
@@ -439,63 +478,59 @@ const LegalServices = () => {
                 ))}
               </div>
             </div>
-          </section>
+          </AnimatedSection>
 
           {/* Tamil Nadu Coverage */}
-          <section className="py-16 bg-background">
+          <AnimatedSection className="py-20 md:py-28 bg-background">
             <div className="container mx-auto px-4">
-              <div className="max-w-4xl mx-auto">
-                <div className="text-center mb-12">
-                  <Badge variant="outline" className="mb-4">Tamil Nadu Coverage</Badge>
-                  <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              <div className="max-w-5xl mx-auto">
+                <div className="text-center mb-16">
+                  <Badge variant="outline" className="mb-4">
+                    <MapPin className="h-4 w-4 mr-2" />
+                    Tamil Nadu Coverage
+                  </Badge>
+                  <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
                     Court Representation Across Tamil Nadu
                   </h2>
-                  <p className="text-muted-foreground text-lg">
-                    Our legal network covers all courts and tribunals in Tamil Nadu
-                  </p>
                 </div>
-                
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div className="flex flex-wrap justify-center gap-4">
                   {tamilNaduCourts.map((court, index) => (
-                    <div key={index} className="flex items-center gap-2 p-3 bg-muted rounded-lg">
-                      <Gavel className="h-4 w-4 text-accent flex-shrink-0" />
-                      <span className="text-sm text-foreground">{court}</span>
+                    <div key={index} className="group flex items-center gap-2 px-6 py-3 bg-muted rounded-full border border-border hover:border-accent hover:shadow-lg transition-all duration-300 cursor-pointer">
+                      <Gavel className="h-4 w-4 text-accent group-hover:scale-110 transition-transform" />
+                      <span className="text-foreground font-medium">{court}</span>
                     </div>
                   ))}
                 </div>
               </div>
             </div>
-          </section>
+          </AnimatedSection>
 
           {/* Why Choose Us */}
-          <section className="py-16 bg-muted">
+          <AnimatedSection className="py-20 md:py-28 bg-muted">
             <div className="container mx-auto px-4">
-              <div className="max-w-4xl mx-auto">
-                <div className="text-center mb-12">
+              <div className="max-w-5xl mx-auto">
+                <div className="text-center mb-16">
+                  <Badge variant="outline" className="mb-4">
+                    <Star className="h-4 w-4 mr-2" />
+                    Why Us
+                  </Badge>
                   <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
                     Why STA Corporate Solutions for Legal Services?
                   </h2>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  {[
-                    "Experienced advocates with 20+ years practice",
-                    "Lowest legal fees in Tamil Nadu",
-                    "Pan-Tamil Nadu coverage - all 38 districts",
-                    "Quick document processing",
-                    "Complete confidentiality guaranteed",
-                    "Digital documentation support",
-                    "Regular case status updates",
-                    "Single point of contact for all legal needs"
-                  ].map((item, index) => (
-                    <div key={index} className="flex items-center gap-3 p-4 bg-background rounded-lg">
-                      <Shield className="h-5 w-5 text-accent flex-shrink-0" />
-                      <span className="text-foreground">{item}</span>
+                  {whyChooseUs.map((item, index) => (
+                    <div key={index} className="group flex items-center gap-4 p-6 bg-background rounded-xl hover:shadow-lg hover:bg-accent/5 transition-all duration-300">
+                      <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center group-hover:bg-accent transition-colors">
+                        <CheckCircle className="h-6 w-6 text-accent group-hover:text-accent-foreground transition-colors" />
+                      </div>
+                      <span className="text-lg text-foreground font-medium">{item}</span>
                     </div>
                   ))}
                 </div>
               </div>
             </div>
-          </section>
+          </AnimatedSection>
 
           <CTASection />
         </main>

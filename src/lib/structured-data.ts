@@ -41,10 +41,10 @@ export const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "@id": "https://www.stacorporate.com/#localbusiness",
-  "name": "STA Corporate Solutions - Transportation, Loan Services & Legal Services",
+  "name": "STA Corporate Solutions - Transportation, Loan Services, Legal Services & Dubai Real Estate",
   "alternateName": ["STA Corporate", "STA Solutions", "STA Business Solutions"],
   "image": ["https://www.stacorporate.com/logo.png"],
-  "description": "Since 1982, 43 years of excellence in Transportation, Loan Services & Legal Services. Lowest commission rates in India.",
+  "description": "Since 1982, 43 years of excellence in Transportation, Loan Services, Legal Services & Dubai Real Estate. Lowest commission rates in India.",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "No.302/2A7, VK Road, Peelamedu",
@@ -85,7 +85,33 @@ export const localBusinessSchema = {
     { "@type": "City", "name": "Salem" },
     { "@type": "City", "name": "Madurai" },
     { "@type": "City", "name": "Trichy" },
-    { "@type": "State", "name": "Tamil Nadu" }
+    { "@type": "State", "name": "Tamil Nadu" },
+    { "@type": "City", "name": "Dubai" }
+  ]
+};
+
+export const dubaiRealEstateSchema = {
+  "@context": "https://schema.org",
+  "@type": "RealEstateAgent",
+  "@id": "https://www.stacorporate.com/dubai-real-estate#service",
+  "name": "STA Corporate Solutions - Dubai Real Estate",
+  "description": "Premium Dubai real estate services - luxury villas, apartments, penthouses, and off-plan investments for Indian investors.",
+  "url": "https://www.stacorporate.com/dubai-real-estate",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "STA Corporate Solutions",
+    "@id": "https://www.stacorporate.com/#localbusiness"
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Dubai" },
+    { "@type": "Country", "name": "United Arab Emirates" }
+  ],
+  "serviceType": [
+    "Luxury Property Sales",
+    "Off-Plan Investments",
+    "Property Management",
+    "Investment Advisory",
+    "Golden Visa Assistance"
   ]
 };
 
