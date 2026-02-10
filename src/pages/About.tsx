@@ -92,13 +92,13 @@ const About = () => {
                 </h2>
                 <div className="space-y-4 text-muted-foreground">
                   <p>
-                    Founded in 1982, STA Corporate Solutions started as a transport company with just two lorries and a vision to provide reliable services. Today, we have grown into a diversified business solutions provider with four verticals - Transportation, Trading, Financial Services & Real Estate.
+                    Founded in 1982, STA Corporate Solutions started as a transport company with just two lorries and a vision to provide reliable services. Today, we have grown into a diversified business solutions provider with four verticals — <strong className="text-foreground">Transportation</strong>, <strong className="text-foreground">Financial Services</strong>, <strong className="text-foreground">Legal Services</strong> & <strong className="text-foreground">Dubai Real Estate</strong>.
                   </p>
                   <p>
                     Our founders understood the challenges businesses face with unreliable services and high commissions. This drove us to build a company focused on offering the lowest commission rates in India while maintaining excellence.
                   </p>
                   <p>
-                    From textile mills in Tiruppur to factories in Chennai, construction sites in Salem to businesses across India – we have served thousands of clients across diverse industries. Our commitment to excellence has made us the preferred choice for complete business solutions.
+                    From textile mills in Tiruppur to factories in Chennai, construction sites in Salem to luxury property investments in Dubai – we have served thousands of clients across diverse industries and geographies. Our commitment to excellence has made us the preferred choice for complete business solutions.
                   </p>
                 </div>
               </div>
@@ -125,13 +125,13 @@ const About = () => {
               <div className="bg-card p-8 rounded-lg border border-border">
                 <h3 className="text-2xl font-bold text-foreground mb-4">Our Mission</h3>
                 <p className="text-muted-foreground">
-                  To provide fast, safe, and affordable goods transport services that help businesses grow. We aim to be the most reliable logistics partner in Tamil Nadu, ensuring every shipment reaches its destination on time and in perfect condition.
+                  To provide comprehensive business solutions — from transport logistics and financial services to legal support and international real estate investments — that help businesses and individuals grow. We aim to be the most trusted multi-vertical partner in India.
                 </p>
               </div>
               <div className="bg-card p-8 rounded-lg border border-border">
                 <h3 className="text-2xl font-bold text-foreground mb-4">Our Vision</h3>
                 <p className="text-muted-foreground">
-                  To become South India's most trusted transport company by 2030. We envision a future where businesses can focus on growth while we handle their logistics with cutting-edge technology, sustainable practices, and unwavering reliability.
+                  To become India's most trusted corporate solutions company by 2030. We envision a future where businesses and individuals can access transportation, financing, legal services, and global real estate investments — all through a single, reliable partner.
                 </p>
               </div>
             </div>
