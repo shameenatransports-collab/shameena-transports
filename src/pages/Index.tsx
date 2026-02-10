@@ -58,7 +58,9 @@ const Index = () => {
         <meta name="keywords" content="STA Corporate Solutions, transportation coimbatore, loan services, legal services, msme loan, mudra loan, company registration, lorry service" />
         <link rel="canonical" href="https://www.stacorporate.com" />
         <meta property="og:title" content="STA Corporate Solutions | Business Solutions Since 1982" />
-        <meta property="og:description" content="Transportation, Loan Services & Legal Services. Lowest commission rates in India." />
+        <meta property="og:description" content="Transportation, Loan Services, Legal Services & Dubai Real Estate. Lowest commission rates in India." />
+        <meta property="og:image" content="https://www.stacorporate.com/og-image.jpg" />
+        <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify(organizationSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(localBusinessSchema)}</script>
       </Helmet>
