@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Phone, MessageCircle, ArrowRight, Truck, Banknote, Scale } from "lucide-react";
+import { Phone, MessageCircle, ArrowRight, Truck, Banknote, Scale, Building2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { BackgroundPicture } from "@/components/ui/picture";
@@ -26,6 +26,13 @@ const verticals = [
     description: "Personal, business & corporate legal solutions",
     href: "/legal-services",
     color: "bg-purple-500/10 text-purple-600 dark:text-purple-400"
+  },
+  {
+    icon: Building2,
+    title: "Dubai Real Estate",
+    description: "Luxury property investments with high ROI",
+    href: "/dubai-real-estate",
+    color: "bg-amber-500/10 text-amber-600 dark:text-amber-400"
   }
 ];
 
@@ -72,7 +79,7 @@ export function HeroSection() {
           </div>
 
           {/* Business Verticals Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 max-w-5xl mx-auto">
             {verticals.map((vertical, index) => (
               <Link key={index} to={vertical.href} className="group">
                 <Card className="h-full bg-card/95 backdrop-blur-sm border-border hover:border-accent transition-all duration-300 hover:shadow-xl hover:-translate-y-1">

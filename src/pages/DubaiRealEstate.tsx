@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { AnimatedSection } from "@/components/ui/animated-section";
+import { DubaiContactForm } from "@/components/dubai/ContactForm";
 import { 
   Phone, 
   CheckCircle,
@@ -436,34 +437,39 @@ const DubaiRealEstate = () => {
             </div>
           </AnimatedSection>
 
-          {/* CTA Section */}
-          <section className="py-20 bg-gradient-to-br from-primary via-primary/95 to-accent/90">
+          {/* Contact Form Section */}
+          <AnimatedSection className="py-20 md:py-28 bg-muted">
             <div className="container mx-auto px-4">
-              <div className="max-w-4xl mx-auto text-center">
-                <h2 className="text-3xl md:text-5xl font-bold text-primary-foreground mb-6">
-                  Start Your Dubai Investment Journey Today
-                </h2>
-                <p className="text-xl text-primary-foreground/90 mb-8">
-                  Book a free consultation with our Dubai real estate experts. 
-                  We'll help you find the perfect property matching your investment goals.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <a href="tel:+919443033055">
-                    <Button size="lg" variant="secondary" className="gap-2 text-lg px-8 py-6">
-                      <Phone className="h-5 w-5" />
-                      Call: +91 94430 33055
-                    </Button>
-                  </a>
-                  <a href="tel:+919047721209">
-                    <Button size="lg" variant="outline" className="gap-2 text-lg px-8 py-6 bg-primary-foreground/10 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/20">
-                      <Phone className="h-5 w-5" />
-                      +91 90477 21209
-                    </Button>
-                  </a>
+              <div className="grid lg:grid-cols-2 gap-12 items-start">
+                <div>
+                  <Badge variant="outline" className="mb-4">Get Started</Badge>
+                  <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
+                    Start Your Dubai Investment Journey
+                  </h2>
+                  <p className="text-lg text-muted-foreground mb-8">
+                    Book a free consultation with our Dubai real estate experts. 
+                    We'll help you find the perfect property matching your investment goals.
+                  </p>
+                  <div className="space-y-4">
+                    {[
+                      "Free property consultation",
+                      "Curated property shortlist within 48 hours",
+                      "Virtual tours available",
+                      "No hidden fees or charges"
+                    ].map((item, index) => (
+                      <div key={index} className="flex items-center gap-3">
+                        <CheckCircle className="h-5 w-5 text-accent" />
+                        <span className="text-foreground">{item}</span>
+                      </div>
+                    ))}
+                  </div>
                 </div>
+                <DubaiContactForm />
               </div>
             </div>
-          </section>
+          </AnimatedSection>
+
+          <CTASection />
         </main>
       </Layout>
     </>

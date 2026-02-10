@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Truck, Banknote, Scale, ArrowRight } from "lucide-react";
+import { Truck, Banknote, Scale, Building2, ArrowRight } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -28,6 +28,14 @@ const verticals = [
     features: ["Property Docs", "Company Formation", "Litigation", "Contracts"],
     href: "/legal-services",
     badge: "All 38 Districts"
+  },
+  {
+    icon: Building2,
+    title: "Dubai Real Estate",
+    description: "Premium villas, apartments & penthouses in Dubai. 100% freehold, Golden Visa eligible investments.",
+    features: ["Luxury Villas", "Apartments", "Golden Visa", "High ROI"],
+    href: "/dubai-real-estate",
+    badge: "Tax-Free"
   }
 ];
 
@@ -41,7 +49,7 @@ export function ServicesPreview() {
             Complete Business Solutions
           </h2>
           <p className="text-muted-foreground text-lg">
-            Three integrated business verticals serving individuals and enterprises with the lowest commission rates in the Indian market.
+            Four integrated business verticals serving individuals and enterprises with the lowest commission rates in the Indian market.
           </p>
         </div>
 
