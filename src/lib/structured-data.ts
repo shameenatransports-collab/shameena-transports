@@ -41,10 +41,10 @@ export const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "@id": "https://www.stacorporate.com/#localbusiness",
-  "name": "STA Corporate Solutions - Transportation, Loan Services, Legal Services & Dubai Real Estate",
+  "name": "STA Corporate Solutions - Transportation, Loan Services, Legal Services & Overseas Real Estate",
   "alternateName": ["STA Corporate", "STA Solutions", "STA Business Solutions"],
   "image": ["https://www.stacorporate.com/logo.png"],
-  "description": "Since 1982, 43 years of excellence in Transportation, Loan Services, Legal Services & Dubai Real Estate. Lowest commission rates in India.",
+  "description": "Since 1982, 43 years of excellence in Transportation, Loan Services, Legal Services & Overseas Real Estate (UAE, UK, Europe). Lowest commission rates in India.",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "No.302/2A7, VK Road, Peelamedu",
@@ -90,28 +90,34 @@ export const localBusinessSchema = {
   ]
 };
 
-export const dubaiRealEstateSchema = {
+export const overseasRealEstateSchema = {
   "@context": "https://schema.org",
   "@type": "RealEstateAgent",
-  "@id": "https://www.stacorporate.com/dubai-real-estate#service",
-  "name": "STA Corporate Solutions - Dubai Real Estate",
-  "description": "Premium Dubai real estate services - luxury villas, apartments, penthouses, and off-plan investments for Indian investors.",
-  "url": "https://www.stacorporate.com/dubai-real-estate",
+  "@id": "https://www.stacorporate.com/overseas-real-estate#service",
+  "name": "STA Corporate Solutions - Overseas Real Estate & Visa Services",
+  "description": "Premium overseas real estate services for Indian investors — luxury properties in UAE, UK, Portugal, Greece, Spain, Estonia with Golden Visa & residency assistance.",
+  "url": "https://www.stacorporate.com/overseas-real-estate",
   "provider": {
     "@type": "LocalBusiness",
     "name": "STA Corporate Solutions",
     "@id": "https://www.stacorporate.com/#localbusiness"
   },
   "areaServed": [
-    { "@type": "City", "name": "Dubai" },
-    { "@type": "Country", "name": "United Arab Emirates" }
+    { "@type": "Country", "name": "United Arab Emirates" },
+    { "@type": "Country", "name": "United Kingdom" },
+    { "@type": "Country", "name": "Portugal" },
+    { "@type": "Country", "name": "Greece" },
+    { "@type": "Country", "name": "Spain" },
+    { "@type": "Country", "name": "Estonia" }
   ],
   "serviceType": [
-    "Luxury Property Sales",
+    "Overseas Property Sales",
+    "Luxury Villa Sales",
     "Off-Plan Investments",
+    "Golden Visa Assistance",
+    "Investor Visa Services",
     "Property Management",
-    "Investment Advisory",
-    "Golden Visa Assistance"
+    "Investment Advisory"
   ]
 };
 
