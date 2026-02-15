@@ -29,9 +29,9 @@ const verticals = [
   },
   {
     icon: Building2,
-    title: "Dubai Real Estate",
-    description: "Luxury property investments with high ROI",
-    href: "/dubai-real-estate",
+    title: "Overseas Real Estate",
+    description: "Global property & visa services — UAE, UK, Europe",
+    href: "/overseas-real-estate",
     color: "bg-amber-500/10 text-amber-600 dark:text-amber-400"
   }
 ];

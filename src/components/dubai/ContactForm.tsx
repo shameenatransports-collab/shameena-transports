@@ -14,10 +14,21 @@ const formSchema = z.object({
   name: z.string().trim().min(1, "Name is required").max(100),
   email: z.string().trim().email("Invalid email").max(255),
   phone: z.string().trim().min(10, "Phone number required").max(15),
+  country: z.string().min(1, "Select a country"),
   propertyType: z.string().min(1, "Select a property type"),
   budget: z.string().min(1, "Select a budget range"),
+  visaAssistance: z.string().optional(),
   message: z.string().trim().max(1000).optional(),
 });
+
+const countryOptions = [
+  "UAE (Dubai & Abu Dhabi)",
+  "United Kingdom",
+  "Portugal",
+  "Greece",
+  "Spain",
+  "Estonia",
+];
 
 const propertyOptions = [
   "Luxury Villa",
@@ -25,14 +36,22 @@ const propertyOptions = [
   "Penthouse",
   "Off-Plan Project",
   "Commercial Property",
+  "Holiday Home / Airbnb",
 ];
 
 const budgetOptions = [
-  "AED 500K - 1M",
-  "AED 1M - 2M",
-  "AED 2M - 5M",
-  "AED 5M - 10M",
-  "AED 10M+",
+  "₹50 Lakhs - ₹1 Crore",
+  "₹1 Crore - ₹3 Crore",
+  "₹3 Crore - ₹5 Crore",
+  "₹5 Crore - ₹10 Crore",
+  "₹10 Crore+",
+];
+
+const visaOptions = [
+  "Yes — Golden Visa / Residency",
+  "Yes — Investor / Business Visa",
+  "Not sure — need guidance",
+  "No — property only",
 ];
 
 export function DubaiContactForm() {
@@ -40,8 +59,10 @@ export function DubaiContactForm() {
     name: "",
     email: "",
     phone: "",
+    country: "",
     propertyType: "",
     budget: "",
+    visaAssistance: "",
     message: "",
   });
   const [errors, setErrors] = useState<Record<string, string>>({});
@@ -77,7 +98,7 @@ export function DubaiContactForm() {
           </div>
           <h3 className="text-2xl font-bold text-foreground mb-3">Thank You!</h3>
           <p className="text-muted-foreground mb-6">
-            Our Dubai real estate expert will contact you within 24 hours.
+            Our overseas real estate expert will contact you within 24 hours with personalised options.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="tel:+919443033055">
@@ -86,7 +107,7 @@ export function DubaiContactForm() {
               </Button>
             </a>
             <a
-              href={`https://wa.me/919443033055?text=${encodeURIComponent("Hi, I'm interested in Dubai real estate investment.")}`}
+              href={`https://wa.me/919443033055?text=${encodeURIComponent("Hi, I'm interested in overseas real estate investment.")}`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -105,10 +126,10 @@ export function DubaiContactForm() {
       <CardContent className="p-8 md:p-12">
         <Badge variant="outline" className="mb-4">Free Consultation</Badge>
         <h3 className="text-2xl font-bold text-foreground mb-2">
-          Enquire About Dubai Properties
+          Enquire About Overseas Properties
         </h3>
         <p className="text-muted-foreground mb-8">
-          Fill in your details and our expert will guide you through the best options.
+          Tell us your preferences — our expert will curate the best options for you.
         </p>
 
         <form onSubmit={handleSubmit} className="space-y-5">
@@ -136,16 +157,32 @@ export function DubaiContactForm() {
             </div>
           </div>
 
-          <div className="space-y-2">
-            <Label htmlFor="phone">Phone Number *</Label>
-            <Input
-              id="phone"
-              type="tel"
-              placeholder="+91 XXXXX XXXXX"
-              value={formData.phone}
-              onChange={(e) => updateField("phone", e.target.value)}
-            />
-            {errors.phone && <p className="text-sm text-destructive">{errors.phone}</p>}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div className="space-y-2">
+              <Label htmlFor="phone">Phone Number *</Label>
+              <Input
+                id="phone"
+                type="tel"
+                placeholder="+91 XXXXX XXXXX"
+                value={formData.phone}
+                onChange={(e) => updateField("phone", e.target.value)}
+              />
+              {errors.phone && <p className="text-sm text-destructive">{errors.phone}</p>}
+            </div>
+            <div className="space-y-2">
+              <Label>Preferred Country *</Label>
+              <Select onValueChange={(v) => updateField("country", v)}>
+                <SelectTrigger>
+                  <SelectValue placeholder="Select country" />
+                </SelectTrigger>
+                <SelectContent>
+                  {countryOptions.map((opt) => (
+                    <SelectItem key={opt} value={opt}>{opt}</SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+              {errors.country && <p className="text-sm text-destructive">{errors.country}</p>}
+            </div>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
@@ -180,10 +217,24 @@ export function DubaiContactForm() {
           </div>
 
           <div className="space-y-2">
+            <Label>Visa / Residency Assistance</Label>
+            <Select onValueChange={(v) => updateField("visaAssistance", v)}>
+              <SelectTrigger>
+                <SelectValue placeholder="Do you need visa help?" />
+              </SelectTrigger>
+              <SelectContent>
+                {visaOptions.map((opt) => (
+                  <SelectItem key={opt} value={opt}>{opt}</SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+          </div>
+
+          <div className="space-y-2">
             <Label htmlFor="message">Additional Requirements</Label>
             <Textarea
               id="message"
-              placeholder="Any specific location, size, or feature preferences..."
+              placeholder="Any specific country preference, visa needs, or property features..."
               value={formData.message}
               onChange={(e) => updateField("message", e.target.value)}
               rows={3}

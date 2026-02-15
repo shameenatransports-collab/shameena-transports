@@ -6,7 +6,7 @@ const serviceLinks = [
   { name: "Transportation", href: "/transportation", icon: Truck },
   { name: "Financial Services", href: "/financial-services", icon: Banknote },
   { name: "Legal Services", href: "/legal-services", icon: Scale },
-  { name: "Dubai Real Estate", href: "/dubai-real-estate", icon: Building2 },
+  { name: "Overseas Real Estate", href: "/overseas-real-estate", icon: Building2 },
 ];
 
 const quickLinks = [

@@ -31,11 +31,11 @@ const verticals = [
   },
   {
     icon: Building2,
-    title: "Dubai Real Estate",
-    description: "Premium villas, apartments & penthouses in Dubai. 100% freehold, Golden Visa eligible investments.",
-    features: ["Luxury Villas", "Apartments", "Golden Visa", "High ROI"],
-    href: "/dubai-real-estate",
-    badge: "Tax-Free"
+    title: "Overseas Real Estate",
+    description: "Premium properties in UAE, UK & Europe with Golden Visa & residency assistance for Indian investors.",
+    features: ["UAE & UK", "Golden Visa", "EU Residency", "High ROI"],
+    href: "/overseas-real-estate",
+    badge: "Visa Included"
   }
 ];
 

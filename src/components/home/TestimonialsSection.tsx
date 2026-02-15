@@ -9,7 +9,7 @@ const categories = [
   { id: "transportation", label: "Transportation", icon: Truck },
   { id: "financial", label: "Financial Services", icon: Banknote },
   { id: "legal", label: "Legal Services", icon: Scale },
-  { id: "dubai", label: "Dubai Real Estate", icon: Building2 },
+  { id: "dubai", label: "Overseas Real Estate", icon: Building2 },
 ];
 
 const testimonials = [
@@ -81,21 +81,28 @@ const testimonials = [
     company: "NRI Investor, Kerala",
     category: "dubai",
     rating: 5,
-    text: "Purchased a 2-bedroom apartment in Dubai Marina through STA. They handled everything from property selection to documentation. Now I have my Golden Visa too!",
+    text: "Purchased a 2-bedroom apartment in Dubai Marina through STA. They handled everything from property selection to Golden Visa documentation. Seamless experience!",
   },
   {
     name: "Sanjay & Deepa Patel",
     company: "Business Owners, Mumbai",
     category: "dubai",
     rating: 5,
-    text: "STA found us the perfect off-plan villa in Dubai Hills. Their knowledge of the Dubai market and developer relationships got us an amazing deal.",
+    text: "STA helped us invest in a villa in Portugal and guided us through the Golden Visa process. Now we have EU residency! Their global reach is impressive.",
   },
   {
     name: "Ramesh Iyer",
     company: "IT Professional, Bengaluru",
     category: "dubai",
     rating: 5,
-    text: "Invested in a Downtown Dubai apartment for rental income. STA's team manages the property too. Getting 7% annual returns — exactly as they promised!",
+    text: "Invested in a London apartment through STA for rental income and my children's education. They managed the UK legal process and visa guidance perfectly.",
+  },
+  {
+    name: "Priya Krishnan",
+    company: "Doctor, Coimbatore",
+    category: "dubai",
+    rating: 5,
+    text: "Bought a holiday home in Greece through STA. The Golden Visa process was handled end-to-end. Now my family has EU residency and a beautiful vacation property!",
   },
 ];
 
