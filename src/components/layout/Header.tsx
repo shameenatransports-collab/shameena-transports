@@ -14,13 +14,14 @@ const serviceLinks = [
   { name: "Transportation", href: "/transportation" },
   { name: "Financial Services", href: "/financial-services" },
   { name: "Legal Services", href: "/legal-services" },
-  { name: "Overseas Real Estate", href: "/overseas-real-estate" },
 ];
 
 const navLinks = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
   { name: "Services", href: "/services", hasDropdown: true },
+  { name: "Fleet", href: "/fleet" },
+  { name: "Service Areas", href: "/service-areas" },
   { name: "Contact", href: "/contact" },
 ];
 
@@ -41,7 +42,7 @@ export function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-6">
+          <nav className="hidden lg:flex items-center gap-5">
             <Link
               to="/"
               className={`text-sm font-medium transition-colors hover:text-accent ${
@@ -76,6 +77,22 @@ export function Header() {
             </DropdownMenu>
 
             <Link
+              to="/fleet"
+              className={`text-sm font-medium transition-colors hover:text-accent ${
+                location.pathname === "/fleet" ? "text-accent" : "text-foreground"
+              }`}
+            >
+              Fleet
+            </Link>
+            <Link
+              to="/service-areas"
+              className={`text-sm font-medium transition-colors hover:text-accent ${
+                location.pathname === "/service-areas" ? "text-accent" : "text-foreground"
+              }`}
+            >
+              Service Areas
+            </Link>
+            <Link
               to="/contact"
               className={`text-sm font-medium transition-colors hover:text-accent ${
                 location.pathname === "/contact" ? "text-accent" : "text-foreground"
@@ -108,55 +125,29 @@ export function Header() {
         {isOpen && (
           <nav className="lg:hidden py-4 border-t border-border">
             <div className="flex flex-col gap-2">
-              <Link
-                to="/"
-                onClick={() => setIsOpen(false)}
-                className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${
-                  location.pathname === "/" ? "bg-accent text-accent-foreground" : "text-foreground hover:bg-muted"
-                }`}
-              >
+              <Link to="/" onClick={() => setIsOpen(false)} className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${location.pathname === "/" ? "bg-accent text-accent-foreground" : "text-foreground hover:bg-muted"}`}>
                 Home
               </Link>
-              <Link
-                to="/about"
-                onClick={() => setIsOpen(false)}
-                className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${
-                  location.pathname === "/about" ? "bg-accent text-accent-foreground" : "text-foreground hover:bg-muted"
-                }`}
-              >
+              <Link to="/about" onClick={() => setIsOpen(false)} className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${location.pathname === "/about" ? "bg-accent text-accent-foreground" : "text-foreground hover:bg-muted"}`}>
                 About
               </Link>
 
-              {/* Services Section */}
               <div className="px-4 py-2">
-                <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">
-                  Services
-                </span>
+                <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Services</span>
               </div>
               {serviceLinks.map((link) => (
-                <Link
-                  key={link.href}
-                  to={link.href}
-                  onClick={() => setIsOpen(false)}
-                  className={`px-6 py-2 text-sm font-medium rounded-md transition-colors ${
-                    location.pathname === link.href
-                      ? "bg-accent text-accent-foreground"
-                      : "text-foreground hover:bg-muted"
-                  }`}
-                >
+                <Link key={link.href} to={link.href} onClick={() => setIsOpen(false)} className={`px-6 py-2 text-sm font-medium rounded-md transition-colors ${location.pathname === link.href ? "bg-accent text-accent-foreground" : "text-foreground hover:bg-muted"}`}>
                   {link.name}
                 </Link>
               ))}
 
-              <Link
-                to="/contact"
-                onClick={() => setIsOpen(false)}
-                className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${
-                  location.pathname === "/contact"
-                    ? "bg-accent text-accent-foreground"
-                    : "text-foreground hover:bg-muted"
-                }`}
-              >
+              <Link to="/fleet" onClick={() => setIsOpen(false)} className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${location.pathname === "/fleet" ? "bg-accent text-accent-foreground" : "text-foreground hover:bg-muted"}`}>
+                Fleet
+              </Link>
+              <Link to="/service-areas" onClick={() => setIsOpen(false)} className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${location.pathname === "/service-areas" ? "bg-accent text-accent-foreground" : "text-foreground hover:bg-muted"}`}>
+                Service Areas
+              </Link>
+              <Link to="/contact" onClick={() => setIsOpen(false)} className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${location.pathname === "/contact" ? "bg-accent text-accent-foreground" : "text-foreground hover:bg-muted"}`}>
                 Contact
               </Link>
 

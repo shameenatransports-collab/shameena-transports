@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Truck, Banknote, Scale, Building2, ArrowRight } from "lucide-react";
+import { Truck, Banknote, Scale, ArrowRight } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -8,7 +8,7 @@ const verticals = [
   {
     icon: Truck,
     title: "Transportation",
-    description: "Full Load lorry transport across Tamil Nadu. 43+ years of trusted service with our own fleet of 12+ lorries.",
+    description: "Full Load lorry transport across Tamil Nadu. 43+ years of trusted service with our own fleet of 12+ lorries. Coimbatore, Tiruppur, Chennai, Salem, Madurai routes.",
     features: ["Full Load Transport", "Return Loads", "Factory Shifting", "24/7 Service"],
     href: "/transportation",
     badge: "Since 1982"
@@ -16,7 +16,7 @@ const verticals = [
   {
     icon: Banknote,
     title: "Financial Services",
-    description: "Government scheme loans, MSME funding, Mudra loans, and private bank financing for all needs.",
+    description: "Government scheme loans — MSME, Mudra, PMAY, Startup India. Private bank loans — business, home, vehicle, personal. Lowest processing fees in Coimbatore.",
     features: ["MSME Loans", "Mudra Scheme", "Home Loans", "Business Loans"],
     href: "/financial-services",
     badge: "Govt Schemes"
@@ -24,18 +24,10 @@ const verticals = [
   {
     icon: Scale,
     title: "Legal Services",
-    description: "Comprehensive legal solutions for individuals, businesses, and corporates across Tamil Nadu.",
+    description: "Comprehensive legal solutions for individuals, businesses, and corporates. Property documentation, company registration, litigation, IP — across all 38 districts of Tamil Nadu.",
     features: ["Property Docs", "Company Formation", "Litigation", "Contracts"],
     href: "/legal-services",
     badge: "All 38 Districts"
-  },
-  {
-    icon: Building2,
-    title: "Overseas Real Estate",
-    description: "Premium properties in UAE, UK & Europe with Golden Visa & residency assistance for Indian investors.",
-    features: ["UAE & UK", "Golden Visa", "EU Residency", "High ROI"],
-    href: "/overseas-real-estate",
-    badge: "Visa Included"
   }
 ];
 
@@ -46,14 +38,14 @@ export function ServicesPreview() {
         <div className="text-center max-w-3xl mx-auto mb-12">
           <Badge variant="outline" className="mb-4">Our Business Verticals</Badge>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Complete Business Solutions
+            Complete Business Solutions in Coimbatore & Tamil Nadu
           </h2>
           <p className="text-muted-foreground text-lg">
-            Four integrated business verticals serving individuals and enterprises with the lowest commission rates in the Indian market.
+            Three integrated business verticals serving individuals and enterprises with the lowest commission rates in the Indian market.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
           {verticals.map((vertical, index) => (
             <Card
               key={index}
@@ -72,7 +64,7 @@ export function ServicesPreview() {
                 <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-accent transition-colors">
                   {vertical.title}
                 </h3>
-                <p className="text-muted-foreground mb-4">
+                <p className="text-muted-foreground mb-4 text-sm">
                   {vertical.description}
                 </p>
                 

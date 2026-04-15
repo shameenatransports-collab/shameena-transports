@@ -1,13 +1,12 @@
-# Robots.txt for STA Corporate Solutions
+# Robots.txt for STA Corporate Solutions — Coimbatore, Tamil Nadu
 
 # Allow all crawlers
 User-agent: *
 Allow: /
 Crawl-delay: 2
 
-# Disallow admin or private paths (if any)
+# Disallow admin or private paths
 Disallow: /api/
-Disallow: /_next/
 Disallow: /private/
 
 # Sitemap

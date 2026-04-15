@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 export function CTASection() {
   return (
     <section className="py-16 md:py-20 bg-accent relative overflow-hidden" aria-label="Contact us">
-      {/* Background decoration */}
       <div className="absolute inset-0 opacity-5" aria-hidden="true">
         <div className="absolute top-1/2 left-1/4 -translate-y-1/2">
           <Truck className="w-48 h-48 md:w-64 md:h-64" />
@@ -16,13 +15,13 @@ export function CTASection() {
       
       <div className="container mx-auto px-4 text-center relative z-10">
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-accent-foreground mb-4">
-          Need Reliable Lorry Transport in Tamil Nadu?
+          Need Transport, Loans, or Legal Help in Coimbatore?
         </h2>
         <p className="text-accent-foreground/90 text-lg mb-4 max-w-2xl mx-auto">
-          Get instant quotes for your goods transport needs. Available 24/7 for bookings!
+          Get instant quotes for lorry transport, loan assistance, or legal consultation. Available 24/7!
         </p>
         <p className="text-accent-foreground/80 text-sm mb-8 max-w-xl mx-auto">
-          Serving Coimbatore, Chennai, Tiruppur, Salem, Madurai & all Tamil Nadu districts
+          Serving Coimbatore, Tiruppur, Chennai, Salem, Madurai, Erode, Trichy & all Tamil Nadu districts
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a href="tel:+919443033055" aria-label="Call us at +91 94430 33055">
@@ -32,7 +31,7 @@ export function CTASection() {
             </Button>
           </a>
           <a
-            href="https://wa.me/919443033055?text=Hi%2C%20I%20need%20a%20quote%20for%20lorry%20transport"
+            href="https://wa.me/919443033055?text=Hi%2C%20I%20need%20a%20quote%20for%20STA%20Corporate%20Solutions%20services"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Get a quote on WhatsApp"

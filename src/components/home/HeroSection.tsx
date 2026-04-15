@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Phone, MessageCircle, ArrowRight, Truck, Banknote, Scale, Building2 } from "lucide-react";
+import { Phone, MessageCircle, ArrowRight, Truck, Banknote, Scale } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { BackgroundPicture } from "@/components/ui/picture";
@@ -9,30 +9,23 @@ const verticals = [
   {
     icon: Truck,
     title: "Transportation",
-    description: "Full Load lorry services across Tamil Nadu since 1982",
+    description: "Full Load & Return Load lorry services across Tamil Nadu since 1982",
     href: "/transportation",
     color: "bg-blue-500/10 text-blue-600 dark:text-blue-400"
   },
   {
     icon: Banknote,
     title: "Financial Services",
-    description: "Government schemes & bank loans for all needs",
+    description: "MSME, Mudra, Home, Vehicle & Business Loans — Govt schemes & banks",
     href: "/financial-services",
     color: "bg-green-500/10 text-green-600 dark:text-green-400"
   },
   {
     icon: Scale,
     title: "Legal Services",
-    description: "Personal, business & corporate legal solutions",
+    description: "Property, Company, Litigation & IP — All 38 districts of Tamil Nadu",
     href: "/legal-services",
     color: "bg-purple-500/10 text-purple-600 dark:text-purple-400"
-  },
-  {
-    icon: Building2,
-    title: "Overseas Real Estate",
-    description: "Global property & visa services — UAE, UK, Europe",
-    href: "/overseas-real-estate",
-    color: "bg-amber-500/10 text-amber-600 dark:text-amber-400"
   }
 ];
 
@@ -40,7 +33,7 @@ export function HeroSection() {
   return (
     <BackgroundPicture
       src={heroBg}
-      alt="STA Corporate Solutions"
+      alt="STA Corporate Solutions Coimbatore"
       className="min-h-[95vh] flex items-center"
       overlayClassName="bg-gradient-to-b from-primary/95 via-primary/90 to-primary/95"
       priority
@@ -50,16 +43,18 @@ export function HeroSection() {
           {/* Main Hero Content */}
           <div className="text-center max-w-4xl mx-auto mb-12 md:mb-16">
             <span className="inline-block px-4 py-2 bg-accent text-accent-foreground text-sm font-semibold rounded-full mb-6 animate-fade-in">
-              Lowest Commission in Indian Market
+              Coimbatore's Most Trusted Business Partner Since 1982
             </span>
 
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-primary-foreground leading-tight mb-6">
               STA Corporate Solutions
             </h1>
 
-            <p className="text-lg md:text-xl lg:text-2xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto">
-              Your trusted partner for <strong>Transportation</strong>, <strong>Loan Services</strong> & <strong>Legal Services</strong>. 
-              Serving businesses since 1982.
+            <p className="text-lg md:text-xl lg:text-2xl text-primary-foreground/90 mb-4 max-w-3xl mx-auto">
+              Your trusted partner for <strong>Transportation</strong>, <strong>Loan Services</strong> & <strong>Legal Services</strong> in Coimbatore & Tamil Nadu.
+            </p>
+            <p className="text-base md:text-lg text-primary-foreground/70 mb-8 max-w-2xl mx-auto">
+              43+ years · Lowest commission · Serving all 38 districts of Tamil Nadu
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -79,7 +74,7 @@ export function HeroSection() {
           </div>
 
           {/* Business Verticals Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6 max-w-4xl mx-auto">
             {verticals.map((vertical, index) => (
               <Link key={index} to={vertical.href} className="group">
                 <Card className="h-full bg-card/95 backdrop-blur-sm border-border hover:border-accent transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
