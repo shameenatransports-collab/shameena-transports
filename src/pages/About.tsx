@@ -26,7 +26,7 @@ const values = [
   {
     icon: Award,
     title: "Excellence",
-    description: "Maintaining the highest standards in logistics and transport services.",
+    description: "Maintaining the highest standards in logistics, finance, and legal services.",
   },
   {
     icon: Target,
@@ -49,11 +49,11 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>About Us | STA Corporate Solutions - Business Solutions Since 1982</title>
-        <meta name="description" content="Learn about STA Corporate Solutions - 43+ years of trusted business services in Coimbatore & Tamil Nadu since 1982. Transportation, Trading, Financial Services & Real Estate." />
+        <title>About STA Corporate Solutions Coimbatore | Business Solutions Since 1982</title>
+        <meta name="description" content="About STA Corporate Solutions — 43+ years of trusted business services in Coimbatore & Tamil Nadu since 1982. Transportation, Financial Services & Legal Services." />
         <link rel="canonical" href="https://www.stacorporate.com/about" />
-        <meta property="og:title" content="About STA Corporate Solutions | Since 1982" />
-        <meta property="og:description" content="43+ years of trusted business services in Tamil Nadu. Our mission, values, and commitment to excellence." />
+        <meta property="og:title" content="About STA Corporate Solutions | Since 1982 — Coimbatore" />
+        <meta property="og:description" content="43+ years of trusted business services in Coimbatore & Tamil Nadu. Transport, Loans & Legal — our story." />
         <meta property="og:url" content="https://www.stacorporate.com/about" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(organizationSchema)}</script>
@@ -75,7 +75,7 @@ const About = () => {
                   About STA Corporate Solutions
                 </h1>
                 <p className="text-lg text-primary-foreground/90">
-                  Trusted by hundreds of businesses across Tamil Nadu since 1982
+                  Coimbatore's trusted business partner since 1982 — serving 500+ businesses across Tamil Nadu
                 </p>
               </div>
             </div>
@@ -92,20 +92,20 @@ const About = () => {
                 </h2>
                 <div className="space-y-4 text-muted-foreground">
                   <p>
-                    Founded in 1982, STA Corporate Solutions started as a transport company with just two lorries and a vision to provide reliable services. Today, we have grown into a diversified business solutions provider with four verticals — <strong className="text-foreground">Transportation</strong>, <strong className="text-foreground">Financial Services</strong>, <strong className="text-foreground">Legal Services</strong> & <strong className="text-foreground">Overseas Real Estate</strong> (UAE, UK & Europe).
+                    Founded in 1982 in Coimbatore, STA Corporate Solutions started as a transport company with just two lorries and a vision to provide reliable services. Today, we have grown into a diversified business solutions provider with three verticals — <strong className="text-foreground">Transportation</strong>, <strong className="text-foreground">Financial Services</strong> & <strong className="text-foreground">Legal Services</strong>.
                   </p>
                   <p>
                     Our founders understood the challenges businesses face with unreliable services and high commissions. This drove us to build a company focused on offering the lowest commission rates in India while maintaining excellence.
                   </p>
                   <p>
-                    From textile mills in Tiruppur to factories in Chennai, construction sites in Salem to luxury property investments in Dubai, London, and Europe – we have served thousands of clients across diverse industries and geographies. Our commitment to excellence has made us the preferred choice for complete business solutions.
+                    From textile mills in Tiruppur to factories in Chennai, construction sites in Salem to MSME entrepreneurs in Erode — we have served thousands of clients across diverse industries. Our commitment to excellence has made us Coimbatore's preferred choice for complete business solutions.
                   </p>
                 </div>
               </div>
               <div className="relative">
                 <Picture
                   src={fleetBg}
-                  alt="STA Corporate Solutions Operations"
+                  alt="STA Corporate Solutions Operations in Coimbatore"
                   className="rounded-lg shadow-xl aspect-[4/3]"
                   imgClassName="rounded-lg"
                 />
@@ -125,13 +125,13 @@ const About = () => {
               <div className="bg-card p-8 rounded-lg border border-border">
                 <h3 className="text-2xl font-bold text-foreground mb-4">Our Mission</h3>
                 <p className="text-muted-foreground">
-                  To provide comprehensive business solutions — from transport logistics and financial services to legal support and overseas real estate investments with visa assistance — that help businesses and individuals grow. We aim to be the most trusted multi-vertical partner in India.
+                  To provide comprehensive business solutions — from transport logistics and financial services to legal support — that help businesses and individuals grow across Tamil Nadu. We aim to be Coimbatore's most trusted multi-vertical partner.
                 </p>
               </div>
               <div className="bg-card p-8 rounded-lg border border-border">
                 <h3 className="text-2xl font-bold text-foreground mb-4">Our Vision</h3>
                 <p className="text-muted-foreground">
-                  To become India's most trusted corporate solutions company by 2030. We envision a future where businesses and individuals can access transportation, financing, legal services, and overseas property investments with visa & residency — all through a single, reliable partner.
+                  To become Tamil Nadu's most trusted corporate solutions company by 2030. We envision a future where businesses and individuals can access transportation, financing, and legal services — all through a single, reliable partner in Coimbatore.
                 </p>
               </div>
             </div>
@@ -146,7 +146,7 @@ const About = () => {
                 Our Core Values
               </h2>
               <p className="text-muted-foreground text-lg">
-                The principles that guide everything we do
+                The principles that guide everything we do at STA Corporate Solutions
               </p>
             </div>
 
@@ -172,7 +172,7 @@ const About = () => {
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
               <div>
-              <div className="text-4xl md:text-5xl font-bold text-secondary">43+</div>
+                <div className="text-4xl md:text-5xl font-bold text-secondary">43+</div>
                 <div className="text-primary-foreground/80 mt-2">Years Experience</div>
               </div>
               <div>

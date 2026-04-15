@@ -3,7 +3,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import { AnalyticsProvider } from "@/components/analytics/AnalyticsProvider";
 
@@ -13,7 +13,6 @@ const About = lazy(() => import("./pages/About"));
 const Transportation = lazy(() => import("./pages/Transportation"));
 const FinancialServices = lazy(() => import("./pages/FinancialServices"));
 const LegalServices = lazy(() => import("./pages/LegalServices"));
-const DubaiRealEstate = lazy(() => import("./pages/DubaiRealEstate"));
 const Services = lazy(() => import("./pages/Services"));
 const Fleet = lazy(() => import("./pages/Fleet"));
 const ServiceAreas = lazy(() => import("./pages/ServiceAreas"));
@@ -51,8 +50,6 @@ const App = () => (
                 <Route path="/transportation" element={<Transportation />} />
                 <Route path="/financial-services" element={<FinancialServices />} />
                 <Route path="/legal-services" element={<LegalServices />} />
-                <Route path="/overseas-real-estate" element={<DubaiRealEstate />} />
-                <Route path="/dubai-real-estate" element={<DubaiRealEstate />} />
                 <Route path="/services" element={<Services />} />
                 <Route path="/fleet" element={<Fleet />} />
                 <Route path="/return-loads" element={<ReturnLoads />} />
@@ -60,6 +57,9 @@ const App = () => (
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/privacy" element={<Privacy />} />
                 <Route path="/terms" element={<Terms />} />
+                {/* Redirect old real estate routes */}
+                <Route path="/overseas-real-estate" element={<Navigate to="/" replace />} />
+                <Route path="/dubai-real-estate" element={<Navigate to="/" replace />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </Suspense>

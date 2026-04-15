@@ -1,35 +1,35 @@
-import { Shield, Clock, Headphones, Award, TrendingUp, RotateCcw } from "lucide-react";
+import { Shield, Clock, Headphones, Award, TrendingUp, RotateCcw, MapPin, Banknote } from "lucide-react";
 
 const features = [
   {
     icon: Shield,
     title: "Safe & Secure",
-    description: "Fully insured cargo with damage protection coverage",
+    description: "Fully insured cargo transport with damage protection coverage across Tamil Nadu",
   },
   {
     icon: Clock,
     title: "On-Time Delivery",
-    description: "98% on-time delivery record across Tamil Nadu",
+    description: "98% on-time delivery record. Reliable service from Coimbatore to all Tamil Nadu cities",
   },
   {
-    icon: RotateCcw,
-    title: "Flexible Scheduling",
-    description: "Book transport on your schedule with flexible pickup and delivery times",
+    icon: Banknote,
+    title: "Lowest Commission",
+    description: "Best-in-market pricing for transport, loans, and legal services. No hidden charges",
   },
   {
     icon: Award,
     title: "43+ Years Experience",
-    description: "Trusted by 500+ businesses since 1982",
+    description: "Trusted by 500+ businesses in Coimbatore & Tamil Nadu since 1982",
   },
   {
-    icon: TrendingUp,
-    title: "Competitive Rates",
-    description: "Best-in-market pricing with no hidden charges",
+    icon: MapPin,
+    title: "Pan Tamil Nadu Coverage",
+    description: "All 38 districts covered — Coimbatore, Tiruppur, Chennai, Salem, Madurai & more",
   },
   {
     icon: Headphones,
     title: "24/7 Support",
-    description: "Always available to assist with your transport needs",
+    description: "Always available for transport bookings, loan queries, and legal consultations",
   },
 ];
 
@@ -39,10 +39,10 @@ export function WhyChooseUs() {
       <div className="container mx-auto px-4">
         <div className="text-center max-w-2xl mx-auto mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Why Choose STA Corporate Solutions?
+            Why Coimbatore & Tamil Nadu Trust STA Corporate Solutions
           </h2>
           <p className="text-primary-foreground/80 text-lg">
-            We are committed to providing exceptional services with the lowest commission rates in India
+            The lowest commission rates in the Indian market with 43+ years of proven excellence
           </p>
         </div>
 

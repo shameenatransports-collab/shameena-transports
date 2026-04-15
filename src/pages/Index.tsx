@@ -8,62 +8,28 @@ import { FAQSection } from "@/components/home/FAQSection";
 import { TestimonialsSection } from "@/components/home/TestimonialsSection";
 import { CTASection } from "@/components/home/CTASection";
 import { AnimatedSection } from "@/components/ui/animated-section";
+import { organizationSchema, localBusinessSchema, websiteSchema } from "@/lib/structured-data";
 
 const Index = () => {
-  const organizationSchema = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "STA Corporate Solutions",
-    "url": "https://www.stacorporate.com",
-    "logo": "https://www.stacorporate.com/logo.png",
-    "description": "STA Corporate Solutions - Transportation, Loan Services & Legal Services. Lowest commission rates since 1982.",
-    "foundingDate": "1982",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+91-94430-33055",
-      "contactType": "customer service",
-      "areaServed": "IN",
-      "availableLanguage": ["English", "Tamil"]
-    }
-  };
-
-  const localBusinessSchema = {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "STA Corporate Solutions",
-    "image": "https://www.stacorporate.com/logo.png",
-    "description": "Your trusted partner for Transportation, Loan Services & Legal Services in Coimbatore.",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "No.302/2A7, VK Road, Peelamedu",
-      "addressLocality": "Coimbatore",
-      "addressRegion": "Tamil Nadu",
-      "postalCode": "641004",
-      "addressCountry": "IN"
-    },
-    "telephone": "+91-94430-33055",
-    "priceRange": "$$",
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-      "opens": "09:00",
-      "closes": "19:00"
-    }
-  };
-
   return (
     <>
       <Helmet>
-        <title>STA Corporate Solutions | Transportation, Trading, Financial Services & Real Estate</title>
-        <meta name="description" content="STA Corporate Solutions - Your trusted partner for Transportation, Loan Services & Legal Services. Lowest commission in India. Coimbatore. Since 1982." />
-        <meta name="keywords" content="STA Corporate Solutions, transportation coimbatore, loan services, legal services, msme loan, mudra loan, company registration, lorry service" />
+        <title>STA Corporate Solutions Coimbatore | Transport, Loans & Legal Services Since 1982</title>
+        <meta name="description" content="STA Corporate Solutions Coimbatore — Lorry Transport (Full Load & Return Load), Loan Services (MSME, Mudra, Home, Business), Legal Services (Property, Company, Litigation). Lowest commission since 1982. Call +91 94430 33055." />
+        <meta name="keywords" content="STA Corporate Solutions, lorry transport coimbatore, MSME loan coimbatore, mudra loan tamil nadu, legal services coimbatore, full load transport, return load, business loan, home loan, company registration, property lawyer coimbatore, transport service tamil nadu" />
         <link rel="canonical" href="https://www.stacorporate.com" />
-        <meta property="og:title" content="STA Corporate Solutions | Business Solutions Since 1982" />
-        <meta property="og:description" content="Transportation, Loan Services, Legal Services & Overseas Real Estate with Visa. Lowest commission rates in India." />
+        <meta property="og:title" content="STA Corporate Solutions | Transport, Loans & Legal — Coimbatore" />
+        <meta property="og:description" content="43+ years trusted service. Lorry Transport, Loan Services & Legal Services in Coimbatore & Tamil Nadu. Lowest commission rates." />
         <meta property="og:image" content="https://www.stacorporate.com/og-image.jpg" />
         <meta property="og:type" content="website" />
+        <meta property="og:locale" content="en_IN" />
+        <meta name="geo.region" content="IN-TN" />
+        <meta name="geo.placename" content="Coimbatore" />
+        <meta name="geo.position" content="11.0168;76.9558" />
+        <meta name="ICBM" content="11.0168, 76.9558" />
         <script type="application/ld+json">{JSON.stringify(organizationSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(localBusinessSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(websiteSchema)}</script>
       </Helmet>
       <Layout>
         <main>

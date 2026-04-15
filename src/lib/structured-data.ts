@@ -1,4 +1,5 @@
 // Centralized JSON-LD Schema definitions for SEO
+// Optimized for local search dominance in Coimbatore & Tamil Nadu
 
 export const organizationSchema = {
   "@context": "https://schema.org",
@@ -8,9 +9,9 @@ export const organizationSchema = {
   "legalName": "STA Corporate Solutions",
   "url": "https://www.stacorporate.com",
   "logo": "https://www.stacorporate.com/logo.png",
-  "description": "Since 1982 - 43 Years of Excellence. Complete business solutions including Transportation, Loan Services & Legal Services.",
+  "description": "Since 1982 — 43+ years of excellence. Complete business solutions including Transportation, Loan Services & Legal Services in Coimbatore & Tamil Nadu.",
   "foundingDate": "1982",
-  "slogan": "Complete Business Solutions - Lowest Commission Since 1982",
+  "slogan": "Lowest Commission Since 1982 — Transport, Loans & Legal Services",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "No.302/2A7, VK Road, Peelamedu",
@@ -34,17 +35,18 @@ export const organizationSchema = {
       "areaServed": "IN",
       "availableLanguage": ["English", "Tamil"]
     }
-  ]
+  ],
+  "sameAs": []
 };
 
 export const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "@id": "https://www.stacorporate.com/#localbusiness",
-  "name": "STA Corporate Solutions - Transportation, Loan Services, Legal Services & Overseas Real Estate",
-  "alternateName": ["STA Corporate", "STA Solutions", "STA Business Solutions"],
+  "name": "STA Corporate Solutions — Transportation, Loan Services & Legal Services Coimbatore",
+  "alternateName": ["STA Corporate", "STA Solutions", "STA Coimbatore", "STA Corporate Solutions Coimbatore"],
   "image": ["https://www.stacorporate.com/logo.png"],
-  "description": "Since 1982, 43 years of excellence in Transportation, Loan Services, Legal Services & Overseas Real Estate (UAE, UK, Europe). Lowest commission rates in India.",
+  "description": "Since 1982, 43+ years of excellence in Transportation (Full Load & Return Load), Loan Services (MSME, Mudra, Home, Business), and Legal Services (Property, Company, Litigation) in Coimbatore & Tamil Nadu. Lowest commission rates.",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "No.302/2A7, VK Road, Peelamedu",
@@ -79,61 +81,75 @@ export const localBusinessSchema = {
   },
   "areaServed": [
     { "@type": "City", "name": "Coimbatore" },
-    { "@type": "City", "name": "Chennai" },
     { "@type": "City", "name": "Tiruppur" },
     { "@type": "City", "name": "Erode" },
     { "@type": "City", "name": "Salem" },
+    { "@type": "City", "name": "Chennai" },
     { "@type": "City", "name": "Madurai" },
     { "@type": "City", "name": "Trichy" },
-    { "@type": "State", "name": "Tamil Nadu" },
-    { "@type": "City", "name": "Dubai" }
-  ]
-};
-
-export const overseasRealEstateSchema = {
-  "@context": "https://schema.org",
-  "@type": "RealEstateAgent",
-  "@id": "https://www.stacorporate.com/overseas-real-estate#service",
-  "name": "STA Corporate Solutions - Overseas Real Estate & Visa Services",
-  "description": "Premium overseas real estate services for Indian investors — luxury properties in UAE, UK, Portugal, Greece, Spain, Estonia with Golden Visa & residency assistance.",
-  "url": "https://www.stacorporate.com/overseas-real-estate",
-  "provider": {
-    "@type": "LocalBusiness",
-    "name": "STA Corporate Solutions",
-    "@id": "https://www.stacorporate.com/#localbusiness"
-  },
-  "areaServed": [
-    { "@type": "Country", "name": "United Arab Emirates" },
-    { "@type": "Country", "name": "United Kingdom" },
-    { "@type": "Country", "name": "Portugal" },
-    { "@type": "Country", "name": "Greece" },
-    { "@type": "Country", "name": "Spain" },
-    { "@type": "Country", "name": "Estonia" }
+    { "@type": "City", "name": "Karur" },
+    { "@type": "City", "name": "Namakkal" },
+    { "@type": "City", "name": "Dindigul" },
+    { "@type": "State", "name": "Tamil Nadu" }
   ],
-  "serviceType": [
-    "Overseas Property Sales",
-    "Luxury Villa Sales",
-    "Off-Plan Investments",
-    "Golden Visa Assistance",
-    "Investor Visa Services",
-    "Property Management",
-    "Investment Advisory"
-  ]
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "STA Corporate Solutions Services",
+    "itemListElement": [
+      {
+        "@type": "OfferCatalog",
+        "name": "Transportation Services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Full Load Lorry Transport" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Return Load Transport" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Factory Shifting" } }
+        ]
+      },
+      {
+        "@type": "OfferCatalog",
+        "name": "Financial Services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "MSME Loans" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mudra Loans" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Home Loans" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Business Loans" } }
+        ]
+      },
+      {
+        "@type": "OfferCatalog",
+        "name": "Legal Services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Property Documentation" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Company Registration" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Litigation Support" } }
+        ]
+      }
+    ]
+  }
 };
 
 export const transportServiceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
   "@id": "https://www.stacorporate.com/transportation#service",
-  "name": "Full Load Transport Service",
+  "name": "Full Load Lorry Transport Service Coimbatore",
   "serviceType": "Full Truck Load Transport",
   "provider": {
     "@type": "LocalBusiness",
     "name": "STA Corporate Solutions",
     "@id": "https://www.stacorporate.com/#localbusiness"
   },
-  "areaServed": { "@type": "State", "name": "Tamil Nadu" },
-  "description": "Dedicated truck booking for exclusive cargo transport across Tamil Nadu since 1982.",
+  "areaServed": [
+    { "@type": "City", "name": "Coimbatore" },
+    { "@type": "City", "name": "Tiruppur" },
+    { "@type": "City", "name": "Erode" },
+    { "@type": "City", "name": "Salem" },
+    { "@type": "City", "name": "Chennai" },
+    { "@type": "City", "name": "Madurai" },
+    { "@type": "City", "name": "Trichy" },
+    { "@type": "State", "name": "Tamil Nadu" }
+  ],
+  "description": "Dedicated full load lorry transport across Tamil Nadu since 1982. 12+ own lorries, 24/7 service, lowest rates from Coimbatore.",
   "offers": {
     "@type": "Offer",
     "availability": "https://schema.org/InStock",
@@ -145,15 +161,22 @@ export const financialServiceSchema = {
   "@context": "https://schema.org",
   "@type": "FinancialService",
   "@id": "https://www.stacorporate.com/financial-services#service",
-  "name": "Loan & Funding Services",
+  "name": "Loan Services Coimbatore — MSME, Mudra, Business & Home Loans",
   "serviceType": "Loan Assistance",
   "provider": {
     "@type": "LocalBusiness",
     "name": "STA Corporate Solutions",
     "@id": "https://www.stacorporate.com/#localbusiness"
   },
-  "areaServed": { "@type": "State", "name": "Tamil Nadu" },
-  "description": "Government scheme loans, MSME funding, Mudra loans, and private bank financing with lowest processing fees.",
+  "areaServed": [
+    { "@type": "City", "name": "Coimbatore" },
+    { "@type": "City", "name": "Tiruppur" },
+    { "@type": "City", "name": "Erode" },
+    { "@type": "City", "name": "Salem" },
+    { "@type": "City", "name": "Chennai" },
+    { "@type": "State", "name": "Tamil Nadu" }
+  ],
+  "description": "Government scheme loans (MSME, Mudra, PMAY) and private bank loans (business, home, vehicle, personal) with lowest processing fees in Coimbatore, Tamil Nadu.",
   "offers": {
     "@type": "Offer",
     "availability": "https://schema.org/InStock",
@@ -165,15 +188,24 @@ export const legalServiceSchema = {
   "@context": "https://schema.org",
   "@type": "LegalService",
   "@id": "https://www.stacorporate.com/legal-services#service",
-  "name": "Legal Services Tamil Nadu",
+  "name": "Legal Services Coimbatore & Tamil Nadu — Property, Business, Corporate Law",
   "serviceType": "Legal Assistance",
   "provider": {
     "@type": "LocalBusiness",
     "name": "STA Corporate Solutions",
     "@id": "https://www.stacorporate.com/#localbusiness"
   },
-  "areaServed": { "@type": "State", "name": "Tamil Nadu" },
-  "description": "Comprehensive legal services for individuals, businesses, and corporates. Property documentation, company formation, litigation support.",
+  "areaServed": [
+    { "@type": "City", "name": "Coimbatore" },
+    { "@type": "City", "name": "Chennai" },
+    { "@type": "City", "name": "Tiruppur" },
+    { "@type": "City", "name": "Erode" },
+    { "@type": "City", "name": "Salem" },
+    { "@type": "City", "name": "Madurai" },
+    { "@type": "City", "name": "Trichy" },
+    { "@type": "State", "name": "Tamil Nadu" }
+  ],
+  "description": "Comprehensive legal services for individuals, businesses, and corporates. Property documentation, company formation, litigation, IP — all 38 districts of Tamil Nadu.",
   "offers": {
     "@type": "Offer",
     "availability": "https://schema.org/InStock",
@@ -198,7 +230,7 @@ export const websiteSchema = {
   "@id": "https://www.stacorporate.com/#website",
   "url": "https://www.stacorporate.com",
   "name": "STA Corporate Solutions",
-  "description": "Complete Business Solutions - Transportation, Loan Services & Legal Services",
+  "description": "Transportation, Loan Services & Legal Services in Coimbatore & Tamil Nadu — Since 1982",
   "publisher": {
     "@id": "https://www.stacorporate.com/#organization"
   },
@@ -218,7 +250,7 @@ export const returnLoadServiceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
   "@id": "https://www.stacorporate.com/return-loads#service",
-  "name": "Return Load Transport",
+  "name": "Return Load Transport Coimbatore Tamil Nadu",
   "serviceType": "Part Load Return Transport",
   "provider": {
     "@type": "LocalBusiness",
@@ -226,7 +258,7 @@ export const returnLoadServiceSchema = {
     "@id": "https://www.stacorporate.com/#localbusiness"
   },
   "areaServed": { "@type": "State", "name": "Tamil Nadu" },
-  "description": "Cost-effective transport on available return routes. Save up to 40% on select routes.",
+  "description": "Cost-effective return load transport on available routes from Coimbatore. Save up to 40% on select Tamil Nadu routes.",
   "offers": {
     "@type": "Offer",
     "availability": "https://schema.org/LimitedAvailability",
@@ -238,11 +270,10 @@ export const fleetSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
   "@id": "https://www.stacorporate.com/fleet#vehicles",
-  "name": "STA Corporate Solutions Fleet",
-  "description": "Our fleet of 12+ modern lorries for transport services",
+  "name": "STA Corporate Solutions Fleet — Coimbatore",
+  "description": "Our fleet of 12+ modern lorries for transport services across Tamil Nadu",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "item": { "@type": "Vehicle", "name": "Light Commercial Vehicle", "description": "1-3 Ton capacity" } },
-    { "@type": "ListItem", "position": 2, "item": { "@type": "Vehicle", "name": "Medium Truck", "description": "5-10 Ton capacity" } },
-    { "@type": "ListItem", "position": 3, "item": { "@type": "Vehicle", "name": "Heavy Truck", "description": "15-25 Ton capacity" } }
+    { "@type": "ListItem", "position": 1, "item": { "@type": "Vehicle", "name": "Multi-Axle Trailer", "description": "20-25 Ton capacity — heavy machinery & ODC cargo" } },
+    { "@type": "ListItem", "position": 2, "item": { "@type": "Vehicle", "name": "Open Body Lorry", "description": "10-20 Ton capacity — construction materials & bulk goods" } }
   ]
 };
