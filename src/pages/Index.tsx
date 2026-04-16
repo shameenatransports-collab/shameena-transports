@@ -5,7 +5,6 @@ import { TrustBadges } from "@/components/home/TrustBadges";
 import { ServicesPreview } from "@/components/home/ServicesPreview";
 import { WhyChooseUs } from "@/components/home/WhyChooseUs";
 import { FAQSection } from "@/components/home/FAQSection";
-import { TestimonialsSection } from "@/components/home/TestimonialsSection";
 import { CTASection } from "@/components/home/CTASection";
 import { AnimatedSection } from "@/components/ui/animated-section";
 import { organizationSchema, localBusinessSchema, websiteSchema } from "@/lib/structured-data";
@@ -42,9 +41,6 @@ const Index = () => {
           </AnimatedSection>
           <AnimatedSection delay={100}>
             <WhyChooseUs />
-          </AnimatedSection>
-          <AnimatedSection delay={100}>
-            <TestimonialsSection />
           </AnimatedSection>
           <AnimatedSection delay={100}>
             <FAQSection />
