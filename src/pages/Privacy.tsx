@@ -53,8 +53,15 @@ const Privacy = () => {
                     when you visit our website www.stacorporate.com or use our services.
                   </p>
                   <p className="text-muted-foreground leading-relaxed mt-4">
-                    We comply with the Information Technology Act, 2000, and follow GDPR principles 
-                    for data protection and privacy.
+                    We comply with the following Indian data protection laws:
+                  </p>
+                  <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4 mt-2">
+                    <li><strong>Digital Personal Data Protection (DPDP) Act, 2023</strong> — India's comprehensive data privacy legislation</li>
+                    <li><strong>Information Technology Act, 2000</strong> — and IT (Reasonable Security Practices) Rules, 2011</li>
+                    <li><strong>Consumer Protection Act, 2019</strong> — for fair trade practices</li>
+                  </ul>
+                  <p className="text-muted-foreground leading-relaxed mt-4 text-sm">
+                    This website and all services are intended exclusively for users in India. We do not knowingly collect data from users outside India.
                   </p>
                 </CardContent>
               </Card>
