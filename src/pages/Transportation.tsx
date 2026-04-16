@@ -23,6 +23,7 @@ import {
   Route
 } from "lucide-react";
 import fleetBg from "@/assets/fleet-bg.jpg";
+import { GetQuoteModal } from "@/components/transportation/GetQuoteModal";
 
 const services = [
   {
@@ -143,10 +144,11 @@ const Transportation = () => {
                   and safe delivery with our own fleet.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
+                  <GetQuoteModal />
                   <a href="tel:+919443033055">
                     <Button size="lg" variant="secondary" className="gap-2 text-lg px-8 py-6">
                       <Phone className="h-5 w-5" />
-                      Book Now: +91 94430 33055
+                      Call: +91 94430 33055
                     </Button>
                   </a>
                 </div>
