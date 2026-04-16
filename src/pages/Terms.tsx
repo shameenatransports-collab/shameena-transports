@@ -15,8 +15,8 @@ const Terms = () => {
   return (
     <>
       <Helmet>
-        <title>Terms of Service | STA Corporate Solutions - Terms & Conditions</title>
-        <meta name="description" content="Terms of Service for STA Corporate Solutions. Read our terms, conditions, liability, and policies for Transportation, Trading, Financial Services, and Real Estate." />
+        <title>Terms of Service | STA Corporate Solutions — Transport, Loans & Legal</title>
+        <meta name="description" content="Terms of Service for STA Corporate Solutions Coimbatore. Terms, conditions, liability & policies for Transportation, Loan Services & Legal Services in Tamil Nadu." />
         <link rel="canonical" href="https://www.stacorporate.com/terms" />
         <meta name="robots" content="index, follow" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
@@ -58,14 +58,16 @@ const Terms = () => {
                 <CardContent className="p-6 md:p-8">
                   <h2 className="text-2xl font-bold text-foreground mb-4">Our Services</h2>
                   <p className="text-muted-foreground leading-relaxed mb-4">
-                    STA Corporate Solutions provides the following business services:
+                    STA Corporate Solutions provides the following business services across Tamil Nadu, India:
                   </p>
                   <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4">
                     <li><strong>Transportation Services:</strong> Full Load and Return Load lorry transport across Tamil Nadu</li>
-                    <li><strong>Trading:</strong> ISO grade iron and steel materials including TMT rods, angles, beams, and wire rod coils</li>
-                    <li><strong>Financial Services:</strong> GST filing, taxation, and accounting for individuals and businesses</li>
-                    <li><strong>Real Estate:</strong> Land, construction, and property services in Coimbatore region</li>
+                    <li><strong>Financial Services:</strong> MSME Loans, Mudra Loans, Home Loans, Business Loans — lowest commission in Coimbatore</li>
+                    <li><strong>Legal Services:</strong> Property documentation, company registration, GST filing, litigation support</li>
                   </ul>
+                  <p className="text-muted-foreground leading-relaxed mt-4 text-sm">
+                    All services are governed by Indian law and are available exclusively within India.
+                  </p>
                 </CardContent>
               </Card>
 
@@ -164,7 +166,16 @@ const Terms = () => {
               {/* Disputes */}
               <Card>
                 <CardContent className="p-6 md:p-8">
-                  <h2 className="text-2xl font-bold text-foreground mb-4">Dispute Resolution</h2>
+                  <h2 className="text-2xl font-bold text-foreground mb-4">Governing Law & Dispute Resolution</h2>
+                  <p className="text-muted-foreground leading-relaxed mb-4">
+                    These Terms are governed by and construed in accordance with the laws of India, including but not limited to:
+                  </p>
+                  <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4 mb-4">
+                    <li>The Indian Contract Act, 1872</li>
+                    <li>The Information Technology Act, 2000</li>
+                    <li>The Consumer Protection Act, 2019</li>
+                    <li>The Digital Personal Data Protection (DPDP) Act, 2023</li>
+                  </ul>
                   <p className="text-muted-foreground leading-relaxed">
                     Any disputes arising from these terms shall be resolved through mutual negotiation. 
                     If unresolved, disputes shall be subject to the exclusive jurisdiction of courts in 

@@ -72,13 +72,6 @@ export const localBusinessSchema = {
     "opens": "09:00",
     "closes": "19:00"
   },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.8",
-    "reviewCount": "500",
-    "bestRating": "5",
-    "worstRating": "1"
-  },
   "areaServed": [
     { "@type": "City", "name": "Coimbatore" },
     { "@type": "City", "name": "Tiruppur" },
