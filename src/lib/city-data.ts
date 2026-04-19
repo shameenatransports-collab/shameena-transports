@@ -1,7 +1,15 @@
 // Localized SEO data for Tamil Nadu city landing pages
-// Used by src/pages/CityLanding.tsx for /coimbatore, /chennai, /tiruppur, /madurai
+// Used by src/pages/CityLanding.tsx
 
-export type CitySlug = "coimbatore" | "chennai" | "tiruppur" | "madurai";
+export type CitySlug =
+  | "coimbatore"
+  | "chennai"
+  | "tiruppur"
+  | "madurai"
+  | "erode"
+  | "salem"
+  | "trichy"
+  | "tirunelveli";
 
 export interface CityData {
   slug: CitySlug;
