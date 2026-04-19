@@ -1,7 +1,15 @@
 // Localized SEO data for Tamil Nadu city landing pages
-// Used by src/pages/CityLanding.tsx for /coimbatore, /chennai, /tiruppur, /madurai
+// Used by src/pages/CityLanding.tsx
 
-export type CitySlug = "coimbatore" | "chennai" | "tiruppur" | "madurai";
+export type CitySlug =
+  | "coimbatore"
+  | "chennai"
+  | "tiruppur"
+  | "madurai"
+  | "erode"
+  | "salem"
+  | "trichy"
+  | "tirunelveli";
 
 export interface CityData {
   slug: CitySlug;
@@ -292,6 +300,267 @@ export const CITY_DATA: Record<CitySlug, CityData> = {
       },
     ],
   },
+
+  erode: {
+    slug: "erode",
+    name: "Erode",
+    nameTamil: "ஈரோடு",
+    region: "Tamil Nadu",
+    postalCode: "638001",
+    geo: { lat: "11.3410", lng: "77.7172" },
+    tagline: "Powering the Turmeric City & Textile Hub Since 1982",
+    metaTitle: "Lorry Transport, Loans & Legal Services in Erode | STA Corporate Solutions",
+    metaDescription:
+      "Daily Coimbatore–Erode lorry service, MSME & textile loans, GST & legal support for Erode handloom and turmeric trade. 43 years trusted. Call 94430 33055.",
+    heroIntro:
+      "Erode — turmeric city, handloom hub, and gateway to the Kongu belt. Just 100 km from our Coimbatore HQ, STA serves Erode's textile clusters, turmeric mandis, and SME factories every single day.",
+    about:
+      "From the handloom looms of Chennimalai to the turmeric mandis of Perundurai, Erode's economy thrives on trade and textile manufacturing. STA has been a silent partner to Erode businesses for over four decades — moving cargo, arranging finance, and handling legal compliance.",
+    transport: {
+      headline: "Daily Lorry Service Connecting Erode with Tamil Nadu",
+      description:
+        "Multiple round trips daily between Erode, Coimbatore, and Tiruppur. Specialised handling for textiles, turmeric, and processed foods.",
+      routes: [
+        "Erode → Coimbatore (multiple trips/day)",
+        "Erode → Tiruppur → Karur",
+        "Erode → Chennai (overnight)",
+        "Erode → Salem → Bangalore",
+        "Perundurai SIPCOT → Chennai Port",
+      ],
+      industries: ["Handloom & Powerloom", "Turmeric & Spices", "Readymade Garments", "Processed Foods", "Engineering"],
+    },
+    financial: {
+      headline: "MSME, Mudra & Trade Loans for Erode Businesses",
+      description:
+        "Loan facilitation for Erode's traders, weavers, and SMEs through nationalised banks and Tamil Nadu co-operative banks.",
+      highlights: [
+        "MSME & Mudra loans for Perundurai SIPCOT units",
+        "Working capital for turmeric and textile traders",
+        "Home loans across Erode, Bhavani, Gobichettipalayam",
+        "Vehicle loans for transporters & traders",
+      ],
+    },
+    legal: {
+      headline: "Property, GST & Business Legal Services in Erode",
+      description:
+        "End-to-end legal support coordinated from Coimbatore for Erode district residents and businesses.",
+      highlights: [
+        "Property documentation across Erode district",
+        "GST registration & filing for textile traders",
+        "Company registration & MSME compliance",
+        "Civil & commercial litigation",
+      ],
+    },
+    landmarks: ["Perundurai", "Bhavani", "Chennimalai", "Gobichettipalayam", "Sathyamangalam", "Brough Road"],
+    faqs: [
+      {
+        q: "How quickly can you arrange a lorry from Erode to Coimbatore?",
+        a: "Typically within 2–3 hours. With multiple lorries running this corridor daily, Erode–Coimbatore is one of our fastest pickup routes.",
+      },
+      {
+        q: "Do you handle loans for Perundurai SIPCOT units?",
+        a: "Yes — we have facilitated MSME, Mudra, and term loans for dozens of Perundurai SIPCOT units over the past 20+ years.",
+      },
+    ],
+  },
+
+  salem: {
+    slug: "salem",
+    name: "Salem",
+    nameTamil: "சேலம்",
+    region: "Tamil Nadu",
+    postalCode: "636001",
+    geo: { lat: "11.6643", lng: "78.1460" },
+    tagline: "Steel City's Trusted Transport, Finance & Legal Partner Since 1982",
+    metaTitle: "Lorry Transport, Loans & Legal Services in Salem | STA Corporate Solutions",
+    metaDescription:
+      "Coimbatore–Salem lorry transport, MSME & steel-trade finance, legal services for Salem's industrial belt. 43 years of Tamil Nadu trust. Call 94430 33055.",
+    heroIntro:
+      "Salem — Tamil Nadu's steel city and gateway to the Kongu plateau. STA's lorries link Salem's SAIL plant, magnesite belt, and sago industries to markets across South India.",
+    about:
+      "Home to SAIL Salem Steel Plant, the magnesite mines of Yercaud belt, and a thriving sago and silver-jewellery trade — Salem's economy is uniquely diverse. STA has supported Salem's industrial belt with reliable transport, banking access, and legal services since 1982.",
+    transport: {
+      headline: "Coimbatore ↔ Salem & Salem ↔ Bangalore Lorry Service",
+      description:
+        "Daily full-load services covering Salem, Namakkal, and Dharmapuri. Specialised in steel coils, magnesite, sago, and engineering goods.",
+      routes: [
+        "Coimbatore → Salem (daily)",
+        "Salem → Bangalore & Hosur",
+        "Salem → Chennai (overnight)",
+        "Salem → Namakkal → Karur",
+        "Salem → Dharmapuri → Krishnagiri",
+      ],
+      industries: ["Steel & Stainless Steel", "Magnesite & Mining", "Sago Manufacturing", "Silver Jewellery", "Poultry & Egg Trade"],
+    },
+    financial: {
+      headline: "Industrial & MSME Loans for Salem Enterprises",
+      description:
+        "Loan facilitation for Salem's steel traders, sago manufacturers, and SMEs — leveraging our 43-year banking network.",
+      highlights: [
+        "Working capital for steel & magnesite traders",
+        "MSME loans for sago and food-processing units",
+        "Home loans across Salem, Yercaud, Suramangalam",
+        "Equipment finance for industrial units",
+      ],
+    },
+    legal: {
+      headline: "Property, Mining & Industrial Legal Services in Salem",
+      description:
+        "Legal support for Salem residents, traders, and industrial units — coordinated from our Coimbatore HQ.",
+      highlights: [
+        "Property documentation across Salem district",
+        "Mining lease & TNPCB compliance",
+        "Company registration & GST",
+        "Industrial & labour law compliance",
+      ],
+    },
+    landmarks: ["Suramangalam", "Hasthampatti", "Yercaud Road", "Five Roads", "Fairlands", "Ammapet"],
+    faqs: [
+      {
+        q: "Do you transport steel coils from Salem?",
+        a: "Yes. We regularly move steel coils, plates, and engineering cargo from Salem to Bangalore, Chennai, and across Tamil Nadu using our flatbed and trailer fleet.",
+      },
+      {
+        q: "Can you arrange working capital for a Salem sago unit?",
+        a: "Yes — we facilitate cash-credit and working capital limits for Salem sago, food-processing, and trading units through nationalised banks.",
+      },
+    ],
+  },
+
+  trichy: {
+    slug: "trichy",
+    name: "Trichy",
+    nameTamil: "திருச்சி",
+    region: "Tamil Nadu",
+    postalCode: "620001",
+    geo: { lat: "10.7905", lng: "78.7047" },
+    tagline: "Serving Central Tamil Nadu's Engineering & Trade Hub Since 1982",
+    metaTitle: "Lorry Transport, Loans & Legal Services in Trichy | STA Corporate Solutions",
+    metaDescription:
+      "Coimbatore–Trichy lorry service, BHEL-belt finance, and legal services for Tiruchirappalli businesses. 43 years across Tamil Nadu. Call 94430 33055.",
+    heroIntro:
+      "Tiruchirappalli — central Tamil Nadu's engineering and education hub, home to BHEL, OFT, and the Cauvery delta trade. STA connects Trichy to Coimbatore, Chennai, and beyond.",
+    about:
+      "From BHEL and Ordnance Factory Tiruchirappalli to the temple-economy of Srirangam and the agri-trade of the Cauvery delta — Trichy is a strategic hub. STA serves Trichy's engineering vendors, traders, and residents with transport, finance, and legal services since 1982.",
+    transport: {
+      headline: "Coimbatore ↔ Trichy & Central TN Lorry Service",
+      description:
+        "Regular full-load and return-load services connecting Trichy with Coimbatore, Chennai, Madurai, and Tanjore.",
+      routes: [
+        "Coimbatore → Trichy (daily)",
+        "Trichy → Chennai (overnight)",
+        "Trichy → Madurai → Tirunelveli",
+        "Trichy → Karur → Erode",
+        "Trichy → Tanjore → Kumbakonam",
+      ],
+      industries: ["BHEL Engineering Vendors", "Ordnance & Defence Suppliers", "Cauvery Agri-Trade", "Cement & Construction", "Education & Logistics"],
+    },
+    financial: {
+      headline: "Vendor & MSME Loans for Trichy Businesses",
+      description:
+        "Loan facilitation for BHEL vendors, OFT suppliers, and Trichy SMEs through nationalised banks and TN co-operative banks.",
+      highlights: [
+        "Vendor finance for BHEL & OFT suppliers",
+        "MSME & Mudra loans for Trichy traders",
+        "Home loans across Srirangam, Thillai Nagar, Cantonment",
+        "Agri & allied loans for Cauvery delta",
+      ],
+    },
+    legal: {
+      headline: "Property, Vendor & Civil Legal Services in Trichy",
+      description:
+        "Legal support coordinated from Coimbatore with on-ground partner advocates across Trichy district.",
+      highlights: [
+        "Property documentation across Trichy district",
+        "Vendor agreement & contract drafting (BHEL/OFT)",
+        "Company registration & GST",
+        "Civil & commercial litigation",
+      ],
+    },
+    landmarks: ["Srirangam", "Thillai Nagar", "Cantonment", "Woraiyur", "K.K. Nagar", "Crawford"],
+    faqs: [
+      {
+        q: "Do you transport heavy engineering cargo from Trichy?",
+        a: "Yes. We regularly move BHEL and OFT vendor cargo, including ODC (over-dimensional consignments) on multi-axle trailers, with proper permits.",
+      },
+      {
+        q: "Can you arrange vendor finance for BHEL/OFT suppliers?",
+        a: "Yes — we have long-standing relationships with banks that specialise in PSU vendor finance and bill discounting.",
+      },
+    ],
+  },
+
+  tirunelveli: {
+    slug: "tirunelveli",
+    name: "Tirunelveli",
+    nameTamil: "திருநெல்வேலி",
+    region: "Tamil Nadu",
+    postalCode: "627001",
+    geo: { lat: "8.7139", lng: "77.7567" },
+    tagline: "Connecting Southern Tamil Nadu to Coimbatore Since 1982",
+    metaTitle: "Lorry Transport, Loans & Legal Services in Tirunelveli | STA Corporate Solutions",
+    metaDescription:
+      "Coimbatore–Tirunelveli lorry transport, MSME loans, and legal services for Tirunelveli, Tuticorin, and Kanyakumari belt. 43 years of trust. Call 94430 33055.",
+    heroIntro:
+      "Tirunelveli — gateway to southern Tamil Nadu, halwa city, and hub for the Tuticorin port hinterland. STA's lorries connect this region to Coimbatore, Chennai, and beyond.",
+    about:
+      "From the temple economy of Nellaiappar to the cement, salt, and wind-energy trade of the southern districts — Tirunelveli anchors a vibrant region. STA has served Tirunelveli, Tuticorin, and the southern belt with transport, finance, and legal solutions for over four decades.",
+    transport: {
+      headline: "Coimbatore ↔ Tirunelveli Long-Haul Lorry Service",
+      description:
+        "Full-load services connecting Tirunelveli with Coimbatore (NH-44), Chennai, and Tuticorin Port. Subject to route availability for return loads.",
+      routes: [
+        "Coimbatore → Tirunelveli (daily)",
+        "Tirunelveli → Tuticorin Port",
+        "Tirunelveli → Chennai (long-haul)",
+        "Tirunelveli → Madurai → Trichy",
+        "Tirunelveli → Kanyakumari & Nagercoil",
+      ],
+      industries: ["Cement & Construction", "Salt & Marine Trade", "Wind Energy Components", "Halwa & Food Processing", "Agri-Produce"],
+    },
+    financial: {
+      headline: "MSME, Agri & Trade Loans for Tirunelveli Region",
+      description:
+        "Loan facilitation for Tirunelveli, Tuticorin, and Kanyakumari businesses through nationalised banks, RRBs, and co-operative banks.",
+      highlights: [
+        "MSME & Mudra loans for southern TN traders",
+        "Working capital for cement & wind-energy vendors",
+        "Home loans across Palayamkottai & Tirunelveli town",
+        "Agri & marine-trade finance",
+      ],
+    },
+    legal: {
+      headline: "Property, Agri & Marine Legal Services in Tirunelveli",
+      description:
+        "Legal support coordinated from Coimbatore for Tirunelveli, Tuticorin, and the southern districts.",
+      highlights: [
+        "Property documentation across southern TN",
+        "Agri land & pattadhari documentation",
+        "Marine, port & customs legal support",
+        "Civil & commercial litigation",
+      ],
+    },
+    landmarks: ["Palayamkottai", "Melapalayam", "Vannarpettai", "Thatchanallur", "Pettai", "South Bypass"],
+    faqs: [
+      {
+        q: "How long does Coimbatore to Tirunelveli lorry transport take?",
+        a: "Standard transit is 10–12 hours via NH-44. We typically deliver next-day for full-load bookings made before evening.",
+      },
+      {
+        q: "Do you handle Tuticorin Port export cargo?",
+        a: "Yes. We move container-ready and bulk export cargo from Tirunelveli, Tuticorin, and surrounding districts to Tuticorin Port with full documentation support.",
+      },
+    ],
+  },
 };
 
-export const CITY_SLUGS: CitySlug[] = ["coimbatore", "chennai", "tiruppur", "madurai"];
+export const CITY_SLUGS: CitySlug[] = [
+  "coimbatore",
+  "chennai",
+  "tiruppur",
+  "madurai",
+  "erode",
+  "salem",
+  "trichy",
+  "tirunelveli",
+];
