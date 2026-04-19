@@ -20,6 +20,7 @@ const ReturnLoads = lazy(() => import("./pages/ReturnLoads"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Privacy = lazy(() => import("./pages/Privacy"));
 const Terms = lazy(() => import("./pages/Terms"));
+const CityLanding = lazy(() => import("./pages/CityLanding"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 const queryClient = new QueryClient();
@@ -57,6 +58,11 @@ const App = () => (
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/privacy" element={<Privacy />} />
                 <Route path="/terms" element={<Terms />} />
+                {/* City landing pages — Tamil Nadu local SEO */}
+                <Route path="/coimbatore" element={<CityLanding />} />
+                <Route path="/chennai" element={<CityLanding />} />
+                <Route path="/tiruppur" element={<CityLanding />} />
+                <Route path="/madurai" element={<CityLanding />} />
                 {/* Redirect old real estate routes */}
                 <Route path="/overseas-real-estate" element={<Navigate to="/" replace />} />
                 <Route path="/dubai-real-estate" element={<Navigate to="/" replace />} />
