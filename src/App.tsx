@@ -63,6 +63,10 @@ const App = () => (
                 <Route path="/chennai" element={<CityLanding />} />
                 <Route path="/tiruppur" element={<CityLanding />} />
                 <Route path="/madurai" element={<CityLanding />} />
+                <Route path="/erode" element={<CityLanding />} />
+                <Route path="/salem" element={<CityLanding />} />
+                <Route path="/trichy" element={<CityLanding />} />
+                <Route path="/tirunelveli" element={<CityLanding />} />
                 {/* Redirect old real estate routes */}
                 <Route path="/overseas-real-estate" element={<Navigate to="/" replace />} />
                 <Route path="/dubai-real-estate" element={<Navigate to="/" replace />} />
