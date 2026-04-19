@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import { useParams, Link, Navigate } from "react-router-dom";
+import { useLocation, Link, Navigate } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -10,8 +10,8 @@ import { CITY_DATA, type CitySlug } from "@/lib/city-data";
 import { createBreadcrumbSchema } from "@/lib/structured-data";
 
 const CityLanding = () => {
-  const { city } = useParams<{ city: string }>();
-  const slug = city as CitySlug;
+  const { pathname } = useLocation();
+  const slug = pathname.replace(/^\/+/, "").split("/")[0] as CitySlug;
   const data = slug ? CITY_DATA[slug] : undefined;
 
   if (!data) return <Navigate to="/" replace />;
