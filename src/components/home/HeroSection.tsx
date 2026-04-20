@@ -1,103 +1,163 @@
 import { Link } from "react-router-dom";
-import { Phone, MessageCircle, ArrowRight, Truck, Banknote, Scale } from "lucide-react";
+import { motion, useReducedMotion } from "framer-motion";
+import { Phone, MessageCircle, ArrowUpRight, Truck, Banknote, Scale } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { BackgroundPicture } from "@/components/ui/picture";
+import { Parallax } from "@/components/ui/parallax";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const verticals = [
-  {
-    icon: Truck,
-    title: "Transportation",
-    description: "Full Load & Return Load lorry services across Tamil Nadu since 1982",
-    href: "/transportation",
-    color: "bg-blue-500/10 text-blue-600 dark:text-blue-400"
-  },
-  {
-    icon: Banknote,
-    title: "Financial Services",
-    description: "MSME, Mudra, Home, Vehicle & Business Loans — Govt schemes & banks",
-    href: "/financial-services",
-    color: "bg-green-500/10 text-green-600 dark:text-green-400"
-  },
-  {
-    icon: Scale,
-    title: "Legal Services",
-    description: "Property, Company, Litigation & IP — All 38 districts of Tamil Nadu",
-    href: "/legal-services",
-    color: "bg-purple-500/10 text-purple-600 dark:text-purple-400"
-  }
+  { icon: Truck, title: "Transportation", href: "/transportation", desc: "Full Load lorry across Tamil Nadu" },
+  { icon: Banknote, title: "Financial Services", href: "/financial-services", desc: "MSME · Mudra · Home · Business" },
+  { icon: Scale, title: "Legal Services", href: "/legal-services", desc: "All 38 districts of Tamil Nadu" },
 ];
 
+const easeApple = [0.22, 1, 0.36, 1] as const;
+
 export function HeroSection() {
+  const reduced = useReducedMotion();
+
   return (
-    <BackgroundPicture
-      src={heroBg}
-      alt="STA Corporate Solutions Coimbatore"
-      className="min-h-[95vh] flex items-center"
-      overlayClassName="bg-gradient-to-b from-primary/95 via-primary/90 to-primary/95"
-      priority
+    <section
+      className="relative isolate min-h-[100svh] flex items-center overflow-hidden"
+      aria-label="Hero"
     >
-      <section className="relative z-10 w-full py-16 md:py-24" aria-label="Hero section">
-        <div className="container mx-auto px-4">
-          {/* Main Hero Content */}
-          <div className="text-center max-w-4xl mx-auto mb-12 md:mb-16">
-            <span className="inline-block px-4 py-2 bg-accent text-accent-foreground text-sm font-semibold rounded-full mb-6 animate-fade-in">
-              Coimbatore's Most Trusted Business Partner Since 1982
+      {/* Parallax background */}
+      <Parallax className="absolute inset-0 -z-10" distance={80} scaleTo={1.12}>
+        <img
+          src={heroBg}
+          alt=""
+          className="w-full h-[120%] object-cover"
+          loading="eager"
+          fetchPriority="high"
+        />
+      </Parallax>
+
+      {/* Cinematic overlay */}
+      <div
+        aria-hidden
+        className="absolute inset-0 -z-10 bg-gradient-to-b from-primary/85 via-primary/80 to-primary/95"
+      />
+      <div
+        aria-hidden
+        className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,_hsl(var(--primary-glow)/0.25),_transparent_60%)]"
+      />
+
+      <div className="container mx-auto px-4 pt-32 pb-20 md:pt-40 md:pb-28 relative">
+        <div className="max-w-5xl mx-auto text-center">
+          {/* Eyebrow */}
+          <motion.div
+            initial={{ opacity: 0, y: reduced ? 0 : 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, ease: easeApple, delay: 0.1 }}
+            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-strong text-[11px] font-semibold tracking-[0.18em] uppercase text-primary-foreground/90 mb-8"
+          >
+            <span className="h-1.5 w-1.5 rounded-full bg-secondary" />
+            Trusted Since 1982 · Coimbatore
+          </motion.div>
+
+          {/* Display headline */}
+          <motion.h1
+            initial={{ opacity: 0, y: reduced ? 0 : 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, ease: easeApple, delay: 0.2 }}
+            className="text-display-2xl text-primary-foreground mb-6"
+          >
+            Built on trust.
+            <br />
+            <span className="bg-gradient-to-r from-secondary via-secondary to-primary-foreground bg-clip-text text-transparent">
+              Driven for decades.
             </span>
+          </motion.h1>
 
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-primary-foreground leading-tight mb-6">
-              STA Corporate Solutions
-            </h1>
+          {/* Sub */}
+          <motion.p
+            initial={{ opacity: 0, y: reduced ? 0 : 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, ease: easeApple, delay: 0.35 }}
+            className="text-headline text-primary-foreground/85 max-w-2xl mx-auto mb-3"
+          >
+            Transportation, Financial & Legal Services for businesses across
+            Coimbatore and Tamil Nadu.
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, ease: easeApple, delay: 0.5 }}
+            className="text-sm md:text-base text-primary-foreground/60 mb-12 tracking-tight"
+          >
+            43+ years · Lowest commission · 38 districts
+          </motion.p>
 
-            <p className="text-lg md:text-xl lg:text-2xl text-primary-foreground/90 mb-4 max-w-3xl mx-auto">
-              Your trusted partner for <strong>Transportation</strong>, <strong>Loan Services</strong> & <strong>Legal Services</strong> in Coimbatore & Tamil Nadu.
-            </p>
-            <p className="text-base md:text-lg text-primary-foreground/70 mb-8 max-w-2xl mx-auto">
-              43+ years · Lowest commission · Serving all 38 districts of Tamil Nadu
-            </p>
+          {/* CTAs */}
+          <motion.div
+            initial={{ opacity: 0, y: reduced ? 0 : 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: easeApple, delay: 0.6 }}
+            className="flex flex-col sm:flex-row gap-3 justify-center mb-20"
+          >
+            <a href="tel:+919443033055">
+              <Button
+                size="lg"
+                className="rounded-full px-7 h-12 text-[14px] font-medium gap-2 bg-secondary hover:bg-secondary/90 text-secondary-foreground shadow-xl ease-apple"
+              >
+                <Phone className="h-4 w-4" />
+                +91 94430 33055
+              </Button>
+            </a>
+            <a
+              href="https://wa.me/919443033055?text=Hi%2C%20I%20need%20information%20about%20STA%20Corporate%20Solutions%20services"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                size="lg"
+                variant="outline"
+                className="rounded-full px-7 h-12 text-[14px] font-medium gap-2 glass-subtle border-primary-foreground/25 text-primary-foreground hover:bg-primary-foreground/10 ease-apple"
+              >
+                <MessageCircle className="h-4 w-4" />
+                WhatsApp Us
+              </Button>
+            </a>
+          </motion.div>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:+919443033055" aria-label="Call us">
-                <Button size="lg" variant="secondary" className="w-full sm:w-auto gap-2 font-semibold">
-                  <Phone className="h-5 w-5" />
-                  +91 94430 33055
-                </Button>
-              </a>
-              <a href="https://wa.me/919443033055?text=Hi%2C%20I%20need%20information%20about%20STA%20Corporate%20Solutions%20services" target="_blank" rel="noopener noreferrer">
-                <Button size="lg" variant="outline" className="w-full sm:w-auto gap-2 font-semibold border-primary-foreground/30 text-primary-foreground bg-transparent hover:bg-primary-foreground/10">
-                  <MessageCircle className="h-5 w-5" />
-                  WhatsApp Us
-                </Button>
-              </a>
-            </div>
-          </div>
-
-          {/* Business Verticals Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6 max-w-4xl mx-auto">
-            {verticals.map((vertical, index) => (
-              <Link key={index} to={vertical.href} className="group">
-                <Card className="h-full bg-card/95 backdrop-blur-sm border-border hover:border-accent transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                  <CardContent className="p-6">
-                    <div className={`w-12 h-12 rounded-xl ${vertical.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
-                      <vertical.icon className="h-6 w-6" />
-                    </div>
-                    <h2 className="text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors">
-                      {vertical.title}
-                    </h2>
-                    <p className="text-sm text-muted-foreground mb-3">
-                      {vertical.description}
-                    </p>
-                    <span className="inline-flex items-center text-sm font-medium text-accent opacity-0 group-hover:opacity-100 transition-opacity">
-                      Learn more <ArrowRight className="h-4 w-4 ml-1" />
-                    </span>
-                  </CardContent>
-                </Card>
+          {/* Verticals — glass row */}
+          <motion.div
+            initial={{ opacity: 0, y: reduced ? 0 : 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: easeApple, delay: 0.8 }}
+            className="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-4xl mx-auto"
+          >
+            {verticals.map((v) => (
+              <Link
+                key={v.title}
+                to={v.href}
+                className="group glass rounded-2xl p-5 text-left hover-lift focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary"
+              >
+                <div className="flex items-start justify-between mb-3">
+                  <div className="w-10 h-10 rounded-xl bg-secondary/15 backdrop-blur-sm flex items-center justify-center">
+                    <v.icon className="h-4.5 w-4.5 text-secondary" strokeWidth={2} />
+                  </div>
+                  <ArrowUpRight className="h-4 w-4 text-primary-foreground/40 group-hover:text-primary-foreground transition-colors duration-500 ease-apple" />
+                </div>
+                <h3 className="text-[15px] font-semibold text-primary-foreground tracking-tight mb-1">
+                  {v.title}
+                </h3>
+                <p className="text-[12.5px] text-primary-foreground/60">{v.desc}</p>
               </Link>
             ))}
-          </div>
+          </motion.div>
         </div>
-      </section>
-    </BackgroundPicture>
+      </div>
+
+      {/* Scroll cue */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.4, duration: 1 }}
+        className="absolute bottom-6 left-1/2 -translate-x-1/2 text-primary-foreground/40 text-[10px] tracking-[0.3em] uppercase"
+      >
+        Scroll
+      </motion.div>
+    </section>
   );
 }

@@ -1,51 +1,70 @@
-import { Phone, MessageCircle, Truck } from "lucide-react";
+import { Phone, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { ScrollReveal } from "@/components/ui/scroll-reveal";
 
 export function CTASection() {
   return (
-    <section className="py-16 md:py-20 bg-accent relative overflow-hidden" aria-label="Contact us">
-      <div className="absolute inset-0 opacity-5" aria-hidden="true">
-        <div className="absolute top-1/2 left-1/4 -translate-y-1/2">
-          <Truck className="w-48 h-48 md:w-64 md:h-64" />
-        </div>
-        <div className="absolute top-1/2 right-1/4 -translate-y-1/2">
-          <Truck className="w-48 h-48 md:w-64 md:h-64 scale-x-[-1]" />
-        </div>
-      </div>
-      
-      <div className="container mx-auto px-4 text-center relative z-10">
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-accent-foreground mb-4">
-          Need Transport, Loans, or Legal Help in Coimbatore?
-        </h2>
-        <p className="text-accent-foreground/90 text-lg mb-4 max-w-2xl mx-auto">
-          Get instant quotes for lorry transport, loan assistance, or legal consultation. Available 24/7!
-        </p>
-        <p className="text-accent-foreground/80 text-sm mb-8 max-w-xl mx-auto">
-          Serving Coimbatore, Tiruppur, Chennai, Salem, Madurai, Erode, Trichy & all Tamil Nadu districts
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="tel:+919443033055" aria-label="Call us at +91 94430 33055">
-            <Button size="lg" variant="default" className="w-full sm:w-auto gap-2 text-base font-semibold">
-              <Phone className="h-5 w-5" />
-              Call: +91 94430 33055
-            </Button>
-          </a>
-          <a
-            href="https://wa.me/919443033055?text=Hi%2C%20I%20need%20a%20quote%20for%20STA%20Corporate%20Solutions%20services"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Get a quote on WhatsApp"
-          >
-            <Button
-              size="lg"
-              variant="outline"
-              className="w-full sm:w-auto gap-2 text-base font-semibold border-accent-foreground/30 text-accent-foreground bg-transparent hover:bg-accent-foreground/10 hover:text-accent-foreground"
-            >
-              <MessageCircle className="h-5 w-5" />
-              Get Quote on WhatsApp
-            </Button>
-          </a>
-        </div>
+    <section
+      className="relative py-section overflow-hidden bg-foreground text-background"
+      aria-label="Contact us"
+    >
+      {/* Ambient gradient */}
+      <div
+        aria-hidden
+        className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_hsl(var(--primary-glow)/0.25),_transparent_70%)]"
+      />
+      <div
+        aria-hidden
+        className="absolute -bottom-40 right-1/4 h-[500px] w-[500px] rounded-full opacity-15 blur-3xl"
+        style={{ background: "hsl(var(--secondary))" }}
+      />
+
+      <div className="container mx-auto px-4 relative">
+        <ScrollReveal>
+          <div className="max-w-4xl mx-auto text-center">
+            <p className="text-eyebrow text-secondary mb-6">Ready when you are</p>
+            <h2 className="text-display-2xl mb-8">
+              Let's start
+              <br />
+              the conversation.
+            </h2>
+            <p className="text-headline text-background/70 max-w-2xl mx-auto mb-12">
+              Transport, loans, or legal — call or WhatsApp for an instant quote. Available 24/7
+              across Coimbatore and all of Tamil Nadu.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+              <a href="tel:+919443033055" aria-label="Call us at +91 94430 33055">
+                <Button
+                  size="lg"
+                  className="rounded-full px-7 h-12 gap-2 bg-secondary hover:bg-secondary/90 text-secondary-foreground font-medium text-[14px] shadow-xl ease-apple"
+                >
+                  <Phone className="h-4 w-4" />
+                  +91 94430 33055
+                </Button>
+              </a>
+              <a
+                href="https://wa.me/919443033055?text=Hi%2C%20I%20need%20a%20quote%20for%20STA%20Corporate%20Solutions%20services"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Get a quote on WhatsApp"
+              >
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="rounded-full px-7 h-12 gap-2 glass-subtle border-background/25 text-background hover:bg-background/10 font-medium text-[14px] ease-apple"
+                >
+                  <MessageCircle className="h-4 w-4" />
+                  WhatsApp Us
+                </Button>
+              </a>
+            </div>
+
+            <p className="text-xs text-background/50 mt-10 tracking-tight">
+              Coimbatore · Tiruppur · Chennai · Salem · Madurai · Erode · Trichy · all 38 districts
+            </p>
+          </div>
+        </ScrollReveal>
       </div>
     </section>
   );
