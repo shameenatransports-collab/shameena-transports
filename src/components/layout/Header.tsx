@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -8,6 +8,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { cn } from "@/lib/utils";
 import logo from "@/assets/sta-logo.png";
 
 const serviceLinks = [
@@ -19,7 +20,6 @@ const serviceLinks = [
 const navLinks = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
-  { name: "Services", href: "/services", hasDropdown: true },
   { name: "Fleet", href: "/fleet" },
   { name: "Service Areas", href: "/service-areas" },
   { name: "Contact", href: "/contact" },
@@ -27,48 +27,63 @@ const navLinks = [
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
 
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 8);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  // Close mobile menu on route change
+  useEffect(() => setIsOpen(false), [location.pathname]);
+
+  const linkBase =
+    "text-[13px] font-medium tracking-tight text-foreground/80 transition-colors duration-300 ease-apple hover:text-foreground";
+  const activeCls = "text-foreground";
+
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-md border-b border-border shadow-sm">
+    <header
+      className={cn(
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-apple",
+        scrolled
+          ? "glass-strong border-b border-border/40"
+          : "bg-background/0 backdrop-blur-0 border-b border-transparent"
+      )}
+    >
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16 md:h-20">
-          <Link to="/" className="flex items-center gap-2">
-            <img src={logo} alt="STA Corporate Solutions Logo" className="h-10 md:h-12 w-auto" />
-            <div className="hidden sm:block">
-              <span className="font-bold text-lg text-primary">STA</span>
-              <span className="font-semibold text-lg text-secondary"> Corporate Solutions</span>
+        <div className="flex items-center justify-between h-16 md:h-[72px]">
+          <Link to="/" className="flex items-center gap-2.5 group">
+            <img
+              src={logo}
+              alt="STA Corporate Solutions"
+              className="h-9 md:h-10 w-auto transition-transform duration-500 ease-apple group-hover:scale-[1.04]"
+            />
+            <div className="hidden sm:block leading-tight tracking-tight">
+              <span className="font-semibold text-[15px] text-primary">STA</span>
+              <span className="font-medium text-[15px] text-foreground/70"> Corporate Solutions</span>
             </div>
           </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-5">
-            <Link
-              to="/"
-              className={`text-sm font-medium transition-colors hover:text-accent ${
-                location.pathname === "/" ? "text-accent" : "text-foreground"
-              }`}
-            >
+          {/* Desktop nav */}
+          <nav className="hidden lg:flex items-center gap-8">
+            <Link to="/" className={cn(linkBase, location.pathname === "/" && activeCls)}>
               Home
             </Link>
-            <Link
-              to="/about"
-              className={`text-sm font-medium transition-colors hover:text-accent ${
-                location.pathname === "/about" ? "text-accent" : "text-foreground"
-              }`}
-            >
+            <Link to="/about" className={cn(linkBase, location.pathname === "/about" && activeCls)}>
               About
             </Link>
 
-            {/* Services Dropdown */}
             <DropdownMenu>
-              <DropdownMenuTrigger className="flex items-center gap-1 text-sm font-medium transition-colors hover:text-accent text-foreground">
-                Services <ChevronDown className="h-4 w-4" />
+              <DropdownMenuTrigger className={cn(linkBase, "flex items-center gap-1 outline-none")}>
+                Services <ChevronDown className="h-3.5 w-3.5 opacity-60" />
               </DropdownMenuTrigger>
-              <DropdownMenuContent align="start" className="w-48">
+              <DropdownMenuContent align="start" className="w-52 mt-2 glass-strong border-border/40">
                 {serviceLinks.map((link) => (
                   <DropdownMenuItem key={link.href} asChild>
-                    <Link to={link.href} className="w-full cursor-pointer">
+                    <Link to={link.href} className="w-full cursor-pointer text-[13px]">
                       {link.name}
                     </Link>
                   </DropdownMenuItem>
@@ -76,91 +91,112 @@ export function Header() {
               </DropdownMenuContent>
             </DropdownMenu>
 
-            <Link
-              to="/fleet"
-              className={`text-sm font-medium transition-colors hover:text-accent ${
-                location.pathname === "/fleet" ? "text-accent" : "text-foreground"
-              }`}
-            >
+            <Link to="/fleet" className={cn(linkBase, location.pathname === "/fleet" && activeCls)}>
               Fleet
             </Link>
             <Link
               to="/service-areas"
-              className={`text-sm font-medium transition-colors hover:text-accent ${
-                location.pathname === "/service-areas" ? "text-accent" : "text-foreground"
-              }`}
+              className={cn(linkBase, location.pathname === "/service-areas" && activeCls)}
             >
               Service Areas
             </Link>
             <Link
               to="/contact"
-              className={`text-sm font-medium transition-colors hover:text-accent ${
-                location.pathname === "/contact" ? "text-accent" : "text-foreground"
-              }`}
+              className={cn(linkBase, location.pathname === "/contact" && activeCls)}
             >
               Contact
             </Link>
           </nav>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2">
             <a href="tel:+919443033055" className="hidden md:flex">
-              <Button variant="default" size="sm" className="gap-2">
-                <Phone className="h-4 w-4" />
+              <Button
+                size="sm"
+                className="gap-2 rounded-full px-4 h-9 text-[13px] font-medium shadow-sm hover:shadow-md ease-apple"
+              >
+                <Phone className="h-3.5 w-3.5" />
                 Call Now
               </Button>
             </a>
 
-            {/* Mobile Menu Button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="lg:hidden p-2 text-foreground"
+              className="lg:hidden p-2 -mr-2 text-foreground rounded-full hover:bg-foreground/5 transition-colors"
               aria-label="Toggle menu"
+              aria-expanded={isOpen}
             >
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </button>
           </div>
         </div>
 
-        {/* Mobile Navigation */}
-        {isOpen && (
-          <nav className="lg:hidden py-4 border-t border-border">
-            <div className="flex flex-col gap-2">
-              <Link to="/" onClick={() => setIsOpen(false)} className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${location.pathname === "/" ? "bg-accent text-accent-foreground" : "text-foreground hover:bg-muted"}`}>
-                Home
-              </Link>
-              <Link to="/about" onClick={() => setIsOpen(false)} className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${location.pathname === "/about" ? "bg-accent text-accent-foreground" : "text-foreground hover:bg-muted"}`}>
-                About
-              </Link>
-
-              <div className="px-4 py-2">
-                <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Services</span>
+        {/* Mobile nav */}
+        <div
+          className={cn(
+            "lg:hidden overflow-hidden transition-all duration-500 ease-apple",
+            isOpen ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0"
+          )}
+        >
+          <nav className="py-4 border-t border-border/40">
+            <div className="flex flex-col gap-1">
+              {navLinks.slice(0, 2).map((l) => (
+                <MobileLink key={l.href} to={l.href} active={location.pathname === l.href}>
+                  {l.name}
+                </MobileLink>
+              ))}
+              <div className="px-4 pt-3 pb-1">
+                <span className="text-eyebrow text-muted-foreground/70">Services</span>
               </div>
               {serviceLinks.map((link) => (
-                <Link key={link.href} to={link.href} onClick={() => setIsOpen(false)} className={`px-6 py-2 text-sm font-medium rounded-md transition-colors ${location.pathname === link.href ? "bg-accent text-accent-foreground" : "text-foreground hover:bg-muted"}`}>
+                <MobileLink
+                  key={link.href}
+                  to={link.href}
+                  indent
+                  active={location.pathname === link.href}
+                >
                   {link.name}
-                </Link>
+                </MobileLink>
               ))}
-
-              <Link to="/fleet" onClick={() => setIsOpen(false)} className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${location.pathname === "/fleet" ? "bg-accent text-accent-foreground" : "text-foreground hover:bg-muted"}`}>
-                Fleet
-              </Link>
-              <Link to="/service-areas" onClick={() => setIsOpen(false)} className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${location.pathname === "/service-areas" ? "bg-accent text-accent-foreground" : "text-foreground hover:bg-muted"}`}>
-                Service Areas
-              </Link>
-              <Link to="/contact" onClick={() => setIsOpen(false)} className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${location.pathname === "/contact" ? "bg-accent text-accent-foreground" : "text-foreground hover:bg-muted"}`}>
-                Contact
-              </Link>
-
-              <a href="tel:+919443033055" className="px-4 py-2">
-                <Button variant="default" size="sm" className="w-full gap-2">
+              {navLinks.slice(2).map((l) => (
+                <MobileLink key={l.href} to={l.href} active={location.pathname === l.href}>
+                  {l.name}
+                </MobileLink>
+              ))}
+              <a href="tel:+919443033055" className="px-4 pt-3">
+                <Button size="sm" className="w-full gap-2 rounded-full">
                   <Phone className="h-4 w-4" />
                   Call Now
                 </Button>
               </a>
             </div>
           </nav>
-        )}
+        </div>
       </div>
     </header>
+  );
+}
+
+function MobileLink({
+  to,
+  children,
+  active,
+  indent,
+}: {
+  to: string;
+  children: React.ReactNode;
+  active?: boolean;
+  indent?: boolean;
+}) {
+  return (
+    <Link
+      to={to}
+      className={cn(
+        "px-4 py-2.5 text-[14px] font-medium rounded-lg mx-2 transition-colors duration-300 ease-apple",
+        indent && "pl-7",
+        active ? "bg-foreground/[0.06] text-foreground" : "text-foreground/80 hover:bg-foreground/[0.04]"
+      )}
+    >
+      {children}
+    </Link>
   );
 }

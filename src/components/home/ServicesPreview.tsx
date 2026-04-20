@@ -1,95 +1,127 @@
 import { Link } from "react-router-dom";
-import { Truck, Banknote, Scale, ArrowRight } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
+import { Truck, Banknote, Scale, ArrowUpRight } from "lucide-react";
+import { ScrollReveal, ScrollRevealItem } from "@/components/ui/scroll-reveal";
 
 const verticals = [
   {
+    num: "01",
     icon: Truck,
+    eyebrow: "Logistics",
     title: "Transportation",
-    description: "Full Load lorry transport across Tamil Nadu. 43+ years of trusted service with our own fleet of 12+ lorries. Coimbatore, Tiruppur, Chennai, Salem, Madurai routes.",
-    features: ["Full Load Transport", "Return Loads", "Factory Shifting", "24/7 Service"],
+    headline: "Move what matters, when it matters.",
+    description:
+      "Full Load lorry transport across Tamil Nadu. 43 years. Our own fleet of 12+ vehicles. Routes spanning Coimbatore, Tiruppur, Chennai, Salem, Madurai.",
+    features: ["Full Load Transport", "Return Loads", "Factory Shifting", "24/7 Support"],
     href: "/transportation",
-    badge: "Since 1982"
+    badge: "Since 1982",
   },
   {
+    num: "02",
     icon: Banknote,
+    eyebrow: "Capital",
     title: "Financial Services",
-    description: "Government scheme loans — MSME, Mudra, PMAY, Startup India. Private bank loans — business, home, vehicle, personal. Lowest processing fees in Coimbatore.",
+    headline: "From government schemes to bank loans.",
+    description:
+      "MSME, Mudra, PMAY, Startup India. Private bank loans for business, home, vehicle, personal. Lowest processing fees in Coimbatore — by design.",
     features: ["MSME Loans", "Mudra Scheme", "Home Loans", "Business Loans"],
     href: "/financial-services",
-    badge: "Govt Schemes"
+    badge: "Govt Schemes",
   },
   {
+    num: "03",
     icon: Scale,
+    eyebrow: "Counsel",
     title: "Legal Services",
-    description: "Comprehensive legal solutions for individuals, businesses, and corporates. Property documentation, company registration, litigation, IP — across all 38 districts of Tamil Nadu.",
+    headline: "Confidence at every signature.",
+    description:
+      "Property, company, litigation, IP. A practice with presence in all 38 districts of Tamil Nadu and the depth to handle your most consequential matters.",
     features: ["Property Docs", "Company Formation", "Litigation", "Contracts"],
     href: "/legal-services",
-    badge: "All 38 Districts"
-  }
+    badge: "All 38 Districts",
+  },
 ];
 
 export function ServicesPreview() {
   return (
-    <section className="py-16 md:py-24 bg-background">
+    <section className="relative bg-background py-section">
       <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-12">
-          <Badge variant="outline" className="mb-4">Our Business Verticals</Badge>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Complete Business Solutions in Coimbatore & Tamil Nadu
-          </h2>
-          <p className="text-muted-foreground text-lg">
-            Three integrated business verticals serving individuals and enterprises with the lowest commission rates in the Indian market.
-          </p>
-        </div>
+        <ScrollReveal>
+          <div className="max-w-3xl mx-auto text-center mb-20 md:mb-28">
+            <p className="text-eyebrow text-primary mb-5">Three Verticals · One Partner</p>
+            <h2 className="text-display-xl text-foreground mb-6">
+              Complete business solutions, refined over four decades.
+            </h2>
+            <p className="text-headline text-muted-foreground max-w-2xl mx-auto">
+              Three integrated practices serving individuals and enterprises across Tamil Nadu — at
+              the lowest commission rates in the Indian market.
+            </p>
+          </div>
+        </ScrollReveal>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
-          {verticals.map((vertical, index) => (
-            <Card
-              key={index}
-              className="group hover:shadow-xl transition-all duration-300 border-border hover:border-accent overflow-hidden"
-            >
-              <CardContent className="p-6 md:p-8">
-                <div className="flex items-start justify-between mb-4">
-                  <div className="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center group-hover:bg-accent group-hover:scale-110 transition-all">
-                    <vertical.icon className="h-7 w-7 text-accent group-hover:text-accent-foreground" />
+        {/* Cinematic vertical-by-vertical reveal */}
+        <div className="space-y-24 md:space-y-32 max-w-6xl mx-auto">
+          {verticals.map((v, idx) => (
+            <ScrollReveal key={v.num} stagger>
+              <article
+                className={`grid lg:grid-cols-12 gap-8 lg:gap-12 items-center ${
+                  idx % 2 === 1 ? "lg:[&>*:first-child]:order-2" : ""
+                }`}
+              >
+                {/* Number + visual */}
+                <ScrollRevealItem className="lg:col-span-5">
+                  <div className="relative aspect-[4/5] rounded-3xl overflow-hidden bg-gradient-to-br from-muted via-background to-muted/50 border border-border/50">
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <v.icon
+                        className="w-40 h-40 text-primary/15"
+                        strokeWidth={1}
+                      />
+                    </div>
+                    <div className="absolute top-6 left-6">
+                      <span className="text-display-lg text-primary/20 font-bold tabular-nums">
+                        {v.num}
+                      </span>
+                    </div>
+                    <div className="absolute bottom-6 left-6 right-6">
+                      <span className="inline-block px-3 py-1 text-[10px] font-semibold tracking-[0.16em] uppercase rounded-full bg-secondary/10 text-secondary border border-secondary/20">
+                        {v.badge}
+                      </span>
+                    </div>
                   </div>
-                  <Badge variant="secondary" className="text-xs">
-                    {vertical.badge}
-                  </Badge>
-                </div>
-                
-                <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-accent transition-colors">
-                  {vertical.title}
-                </h3>
-                <p className="text-muted-foreground mb-4 text-sm">
-                  {vertical.description}
-                </p>
-                
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {vertical.features.map((feature, idx) => (
-                    <span key={idx} className="text-xs px-2 py-1 bg-muted rounded-md text-muted-foreground">
-                      {feature}
-                    </span>
-                  ))}
-                </div>
+                </ScrollRevealItem>
 
-                <Link to={vertical.href} className="inline-flex items-center text-sm font-medium text-accent hover:underline">
-                  Learn more <ArrowRight className="h-4 w-4 ml-1" />
-                </Link>
-              </CardContent>
-            </Card>
+                {/* Content */}
+                <ScrollRevealItem className="lg:col-span-7">
+                  <p className="text-eyebrow text-secondary mb-4">{v.eyebrow}</p>
+                  <h3 className="text-display-md text-foreground mb-2">{v.headline}</h3>
+                  <p className="text-sm font-medium text-muted-foreground/80 mb-5 tracking-tight">
+                    {v.title}
+                  </p>
+                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-8 max-w-xl">
+                    {v.description}
+                  </p>
+
+                  <div className="flex flex-wrap gap-2 mb-8">
+                    {v.features.map((f) => (
+                      <span
+                        key={f}
+                        className="text-[12px] px-3 py-1.5 bg-foreground/[0.04] rounded-full text-foreground/70 tracking-tight"
+                      >
+                        {f}
+                      </span>
+                    ))}
+                  </div>
+
+                  <Link
+                    to={v.href}
+                    className="group inline-flex items-center gap-2 text-[14px] font-semibold text-foreground hover:text-primary transition-colors duration-500 ease-apple"
+                  >
+                    Learn more about {v.title}
+                    <ArrowUpRight className="h-4 w-4 transition-transform duration-500 ease-apple group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                  </Link>
+                </ScrollRevealItem>
+              </article>
+            </ScrollReveal>
           ))}
-        </div>
-
-        <div className="text-center mt-10">
-          <Link to="/contact">
-            <Button variant="default" size="lg" className="gap-2">
-              Get Started Today <ArrowRight className="h-4 w-4" />
-            </Button>
-          </Link>
         </div>
       </div>
     </section>
