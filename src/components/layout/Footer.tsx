@@ -25,52 +25,61 @@ const serviceAreas = [
 
 export function Footer() {
   return (
-    <footer className="bg-primary text-primary-foreground">
-      <div className="container mx-auto px-4 py-12 md:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-10">
-          {/* Company Info */}
-          <div className="lg:col-span-2 space-y-4">
-            <div className="flex items-center gap-2">
-              <img src={logo} alt="STA Corporate Solutions" className="h-10 w-auto bg-card rounded p-1" />
-              <div>
-                <span className="font-bold text-lg">STA</span>
-                <span className="font-semibold text-lg text-secondary"> Corporate Solutions</span>
+    <footer className="relative bg-primary text-primary-foreground overflow-hidden">
+      {/* subtle ambient glow */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute -top-32 left-1/4 h-96 w-96 rounded-full opacity-[0.08] blur-3xl"
+        style={{ background: "hsl(var(--primary-glow))" }}
+      />
+      <div className="container mx-auto px-4 py-16 md:py-20 relative">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-12">
+          {/* Company */}
+          <div className="lg:col-span-2 space-y-5">
+            <div className="flex items-center gap-2.5">
+              <img src={logo} alt="STA Corporate Solutions" className="h-10 w-auto bg-card rounded-lg p-1" />
+              <div className="leading-tight tracking-tight">
+                <div className="font-semibold text-base">STA</div>
+                <div className="text-sm text-primary-foreground/70">Corporate Solutions</div>
               </div>
             </div>
-            <p className="text-sm opacity-90">
-              Coimbatore's trusted partner for Transportation, Loan Services & Legal Services since 1982. 
+            <p className="text-sm text-primary-foreground/75 leading-relaxed max-w-md">
+              Coimbatore's trusted partner for Transportation, Loan Services & Legal Services since 1982.
               Lowest commission rates across Tamil Nadu.
             </p>
-            <div className="space-y-2 pt-2">
+            <div className="space-y-3 pt-1">
               <div className="flex items-start gap-3">
-                <MapPin className="h-5 w-5 mt-0.5 flex-shrink-0" />
-                <span className="text-sm opacity-90">
+                <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0 opacity-70" />
+                <span className="text-sm text-primary-foreground/80">
                   No.302/2A7, VK Road, Peelamedu, Coimbatore - 641004, Tamil Nadu, India
                 </span>
               </div>
               <div className="flex items-center gap-3">
-                <Phone className="h-5 w-5 flex-shrink-0" />
-                <div className="text-sm opacity-90">
-                  <a href="tel:+919443033055" className="hover:text-secondary">+91 94430 33055</a>
-                  {" · "}
-                  <a href="tel:+919047721209" className="hover:text-secondary">+91 90477 21209</a>
+                <Phone className="h-4 w-4 flex-shrink-0 opacity-70" />
+                <div className="text-sm text-primary-foreground/80">
+                  <a href="tel:+919443033055" className="hover:text-secondary transition-colors">+91 94430 33055</a>
+                  <span className="opacity-40 mx-1.5">·</span>
+                  <a href="tel:+919047721209" className="hover:text-secondary transition-colors">+91 90477 21209</a>
                 </div>
               </div>
               <div className="flex items-center gap-3">
-                <Clock className="h-5 w-5 flex-shrink-0" />
-                <span className="text-sm opacity-90">Mon - Sat: 9 AM - 7 PM</span>
+                <Clock className="h-4 w-4 flex-shrink-0 opacity-70" />
+                <span className="text-sm text-primary-foreground/80">Mon – Sat · 9 AM – 7 PM</span>
               </div>
             </div>
           </div>
 
-          {/* Our Services */}
+          {/* Services */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Our Services</h3>
-            <ul className="space-y-2">
+            <h3 className="text-eyebrow text-primary-foreground/60 mb-5">Our Services</h3>
+            <ul className="space-y-3">
               {serviceLinks.map((link) => (
                 <li key={link.href}>
-                  <Link to={link.href} className="text-sm opacity-90 hover:opacity-100 hover:text-secondary transition-colors flex items-center gap-2">
-                    <link.icon className="h-4 w-4" />
+                  <Link
+                    to={link.href}
+                    className="text-sm text-primary-foreground/80 hover:text-secondary transition-colors duration-300 ease-apple flex items-center gap-2"
+                  >
+                    <link.icon className="h-3.5 w-3.5 opacity-70" />
                     {link.name}
                   </Link>
                 </li>
@@ -78,13 +87,16 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Quick Links */}
+          {/* Quick links */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Quick Links</h3>
-            <ul className="space-y-2">
+            <h3 className="text-eyebrow text-primary-foreground/60 mb-5">Quick Links</h3>
+            <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.href}>
-                  <Link to={link.href} className="text-sm opacity-90 hover:opacity-100 hover:text-secondary transition-colors">
+                  <Link
+                    to={link.href}
+                    className="text-sm text-primary-foreground/80 hover:text-secondary transition-colors duration-300 ease-apple"
+                  >
                     {link.name}
                   </Link>
                 </li>
@@ -92,13 +104,16 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Service Areas for Local SEO */}
+          {/* Areas */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Service Areas</h3>
-            <ul className="space-y-1">
+            <h3 className="text-eyebrow text-primary-foreground/60 mb-5">Service Areas</h3>
+            <ul className="space-y-2">
               {serviceAreas.map((area) => (
                 <li key={area}>
-                  <Link to="/service-areas" className="text-sm opacity-90 hover:opacity-100 hover:text-secondary transition-colors">
+                  <Link
+                    to="/service-areas"
+                    className="text-sm text-primary-foreground/80 hover:text-secondary transition-colors duration-300 ease-apple"
+                  >
                     {area}
                   </Link>
                 </li>
@@ -107,18 +122,18 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Bottom Bar with Local SEO text */}
-        <div className="mt-12 pt-8 border-t border-primary-foreground/20">
-          <p className="text-xs opacity-60 text-center mb-4">
+        {/* Bottom */}
+        <div className="mt-16 pt-8 border-t border-primary-foreground/10">
+          <p className="text-xs text-primary-foreground/50 text-center mb-5 leading-relaxed max-w-4xl mx-auto">
             STA Corporate Solutions — Lorry Transport, MSME Loans, Mudra Loans, Business Loans, Home Loans, Legal Services, Company Registration, Property Documentation in Coimbatore, Tiruppur, Erode, Salem, Chennai, Madurai, Trichy, Tamil Nadu.
           </p>
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-sm opacity-80">
+            <p className="text-xs text-primary-foreground/60">
               © {new Date().getFullYear()} STA Corporate Solutions. All rights reserved.
             </p>
             <div className="flex gap-6">
-              <Link to="/privacy" className="text-sm opacity-80 hover:opacity-100">Privacy Policy</Link>
-              <Link to="/terms" className="text-sm opacity-80 hover:opacity-100">Terms of Service</Link>
+              <Link to="/privacy" className="text-xs text-primary-foreground/60 hover:text-primary-foreground transition-colors">Privacy Policy</Link>
+              <Link to="/terms" className="text-xs text-primary-foreground/60 hover:text-primary-foreground transition-colors">Terms of Service</Link>
             </div>
           </div>
         </div>
