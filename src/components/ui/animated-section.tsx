@@ -1,5 +1,5 @@
 import { ReactNode, forwardRef } from "react";
-import { useScrollAnimation } from "@/hooks/use-scroll-animation";
+import { ScrollReveal } from "./scroll-reveal";
 import { cn } from "@/lib/utils";
 
 interface AnimatedSectionProps {
@@ -8,22 +8,17 @@ interface AnimatedSectionProps {
   delay?: number;
 }
 
+/**
+ * Backwards-compatible AnimatedSection.
+ * Now uses Framer Motion under the hood — fade + subtle 24px translateY.
+ * Respects prefers-reduced-motion automatically.
+ */
 export const AnimatedSection = forwardRef<HTMLElement, AnimatedSectionProps>(
   ({ children, className, delay = 0 }, _ref) => {
-    const { ref, isVisible } = useScrollAnimation({ threshold: 0.1 });
-
     return (
-      <section
-        ref={ref}
-        className={cn(
-          "transition-opacity duration-500 ease-out will-change-[opacity]",
-          isVisible ? "opacity-100" : "opacity-0",
-          className
-        )}
-        style={{ transitionDelay: `${delay}ms` }}
-      >
+      <ScrollReveal as="section" delay={delay / 1000} className={cn(className)}>
         {children}
-      </section>
+      </ScrollReveal>
     );
   }
 );
