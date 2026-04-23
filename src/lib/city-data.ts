@@ -54,7 +54,7 @@ export const CITY_DATA: Record<CitySlug, CityData> = {
     tagline: "Headquartered in Coimbatore — Serving the Manchester of South India Since 1982",
     metaTitle: "Transport, Loans & Legal Services in Coimbatore | STA Corporate Solutions Since 1982",
     metaDescription:
-      "STA Corporate Solutions — 43+ years in Coimbatore. Full-load lorry transport, MSME/Mudra/home loans, property & company law. Lowest commission in Coimbatore. Call 94430 33055.",
+      "STA Corporate Solutions — 43+ years in Coimbatore. Full-load lorry transport, MSME/Mudra and business funding assistance, property & company law. Business funding guidance in Coimbatore. Call 94430 33055.",
     heroIntro:
       "Our home city. From Peelamedu to Saravanampatti, Gandhipuram to Singanallur — STA has powered Coimbatore's textile mills, foundries, and pump industries for over four decades.",
     about:
@@ -74,14 +74,14 @@ export const CITY_DATA: Record<CitySlug, CityData> = {
       industries: ["Textiles & Knitwear", "Pump & Motor Manufacturing", "Foundry & Castings", "Engineering Goods", "Auto Components"],
     },
     financial: {
-      headline: "MSME, Mudra, Home & Business Loans in Coimbatore",
+      headline: "MSME, Mudra & Business Funding Assistance in Coimbatore",
       description:
-        "Lowest commission loan facilitation in Coimbatore. Direct relationships with all major nationalised banks, NBFCs, and Tamil Nadu co-operative banks.",
+        "Business-focused loan assistance in Coimbatore for MSME, Mudra, working capital, industrial and government funding scheme requirements.",
       highlights: [
         "MSME & Mudra loans for SIDCO and SIPCOT units",
-        "Home loans across Coimbatore, RS Puram, Saibaba Colony, Kovaipudur",
+        "Business funding guidance across Coimbatore, RS Puram, Saibaba Colony, Kovaipudur",
         "Business loans for textile mills, foundries, and exporters",
-        "Quick processing — most approvals in 7–14 working days",
+        "Documentation support as per lender and scheme requirements",
       ],
     },
     legal: {
@@ -107,7 +107,7 @@ export const CITY_DATA: Record<CitySlug, CityData> = {
       },
       {
         q: "Can you help me get an MSME loan for my Coimbatore business?",
-        a: "Absolutely. We have facilitated MSME, Mudra, and CGTMSE loans for hundreds of Coimbatore-based units across SIDCO, SIPCOT, and private industrial estates.",
+        a: "Absolutely. We have facilitated MSME, Mudra, and CGTMSE loans for eligible Coimbatore-based units across SIDCO, SIPCOT, and private industrial estates.",
       },
     ],
   },
@@ -142,11 +142,11 @@ export const CITY_DATA: Record<CitySlug, CityData> = {
     financial: {
       headline: "Business & Trade Loans for Chennai Enterprises",
       description:
-        "Loan facilitation for Chennai importers, exporters, and SMEs — leveraging our 43-year banking relationships across Tamil Nadu.",
+        "Loan assistance for Chennai importers, exporters, and SMEs — leveraging our long-standing business service experience across Tamil Nadu.",
       highlights: [
         "Working capital for Chennai port-linked exporters",
         "Equipment finance for Ambattur & Sriperumbudur units",
-        "Home loans across OMR, ECR, Velachery, Anna Nagar",
+        "Business funding guidance across OMR, ECR, Velachery, Anna Nagar",
         "MSME loans for traders in George Town & Parry's Corner",
       ],
     },
@@ -173,7 +173,7 @@ export const CITY_DATA: Record<CitySlug, CityData> = {
       },
       {
         q: "Do you provide legal support at Madras High Court?",
-        a: "Yes — our 43-year network includes empanelled Madras High Court advocates for civil, commercial, writ, and corporate matters.",
+        a: "Yes — our long-standing professional network includes empanelled Madras High Court advocates for civil, commercial, writ, and corporate matters.",
       },
     ],
   },
@@ -207,7 +207,7 @@ export const CITY_DATA: Record<CitySlug, CityData> = {
     financial: {
       headline: "Export Finance & Working Capital for Tirupur Exporters",
       description:
-        "Specialised loan facilitation for the Tirupur cluster — packing credit, post-shipment finance, and machinery loans for knitwear units.",
+        "Specialised loan assistance for the Tirupur cluster — packing credit, post-shipment finance, and machinery loans for knitwear units.",
       highlights: [
         "Packing credit (PCFC) & post-shipment finance",
         "Machinery loans for circular knitting & dyeing units",
@@ -230,11 +230,11 @@ export const CITY_DATA: Record<CitySlug, CityData> = {
     faqs: [
       {
         q: "Do you handle export cargo from Tirupur to Chennai Port?",
-        a: "Yes — daily container-ready cargo movement from Tirupur knitwear units to Chennai Port and ICDs at Irugur, with on-time port-cut-off guarantee.",
+        a: "Yes — daily container-ready cargo movement from Tirupur knitwear units to Chennai Port and ICDs at Irugur, with route-planned port-cut-off coordination.",
       },
       {
         q: "Can you arrange packing credit for my Tirupur unit?",
-        a: "Yes. We facilitate PCFC, EPC, and post-shipment finance through nationalised banks at lowest commission in the cluster.",
+        a: "Yes. We facilitate PCFC, EPC, and post-shipment finance documentation through eligible lender processes.",
       },
     ],
   },
@@ -269,11 +269,11 @@ export const CITY_DATA: Record<CitySlug, CityData> = {
     financial: {
       headline: "MSME & Trade Loans for Madurai Businesses",
       description:
-        "Loan facilitation for Madurai's traders, manufacturers, and farmers — through nationalised banks, RRBs, and Tamil Nadu co-operative banks.",
+        "Loan assistance for Madurai's traders, manufacturers, and farmers — through nationalised banks, RRBs, and Tamil Nadu co-operative banks.",
       highlights: [
         "MSME & Mudra loans for Madurai traders",
         "Agri & allied finance for Theni / Dindigul belt",
-        "Home loans across Anna Nagar, KK Nagar, Tallakulam",
+        "Business funding guidance across Anna Nagar, KK Nagar, Tallakulam",
         "Vehicle & commercial loans for transporters",
       ],
     },
@@ -296,7 +296,7 @@ export const CITY_DATA: Record<CitySlug, CityData> = {
       },
       {
         q: "Do you offer return loads from Madurai to Coimbatore?",
-        a: "Yes, subject to route availability. Return loads can save up to 40% on standard transport rates when slots are open.",
+        a: "Yes, subject to route availability. Return load pricing depends on current route availability and cargo requirements.",
       },
     ],
   },
@@ -332,11 +332,11 @@ export const CITY_DATA: Record<CitySlug, CityData> = {
     financial: {
       headline: "MSME, Mudra & Trade Loans for Erode Businesses",
       description:
-        "Loan facilitation for Erode's traders, weavers, and SMEs through nationalised banks and Tamil Nadu co-operative banks.",
+        "Loan assistance for Erode's traders, weavers, and SMEs through nationalised banks and Tamil Nadu co-operative banks.",
       highlights: [
         "MSME & Mudra loans for Perundurai SIPCOT units",
         "Working capital for turmeric and textile traders",
-        "Home loans across Erode, Bhavani, Gobichettipalayam",
+        "Business funding guidance across Erode, Bhavani, Gobichettipalayam",
         "Vehicle loans for transporters & traders",
       ],
     },
@@ -359,7 +359,7 @@ export const CITY_DATA: Record<CitySlug, CityData> = {
       },
       {
         q: "Do you handle loans for Perundurai SIPCOT units?",
-        a: "Yes — we have facilitated MSME, Mudra, and term loans for dozens of Perundurai SIPCOT units over the past 20+ years.",
+        a: "Yes — we have facilitated MSME, Mudra, and term loans for eligible Perundurai SIPCOT units through lender documentation processes.",
       },
     ],
   },
@@ -395,11 +395,11 @@ export const CITY_DATA: Record<CitySlug, CityData> = {
     financial: {
       headline: "Industrial & MSME Loans for Salem Enterprises",
       description:
-        "Loan facilitation for Salem's steel traders, sago manufacturers, and SMEs — leveraging our 43-year banking network.",
+        "Loan assistance for Salem's steel traders, sago manufacturers, and SMEs — leveraging our 43-year banking network.",
       highlights: [
         "Working capital for steel & magnesite traders",
         "MSME loans for sago and food-processing units",
-        "Home loans across Salem, Yercaud, Suramangalam",
+        "Business funding guidance across Salem, Yercaud, Suramangalam",
         "Equipment finance for industrial units",
       ],
     },
@@ -458,11 +458,11 @@ export const CITY_DATA: Record<CitySlug, CityData> = {
     financial: {
       headline: "Vendor & MSME Loans for Trichy Businesses",
       description:
-        "Loan facilitation for BHEL vendors, OFT suppliers, and Trichy SMEs through nationalised banks and TN co-operative banks.",
+        "Loan assistance for BHEL vendors, OFT suppliers, and Trichy SMEs through nationalised banks and TN co-operative banks.",
       highlights: [
         "Vendor finance for BHEL & OFT suppliers",
         "MSME & Mudra loans for Trichy traders",
-        "Home loans across Srirangam, Thillai Nagar, Cantonment",
+        "Business funding guidance across Srirangam, Thillai Nagar, Cantonment",
         "Agri & allied loans for Cauvery delta",
       ],
     },
@@ -521,11 +521,11 @@ export const CITY_DATA: Record<CitySlug, CityData> = {
     financial: {
       headline: "MSME, Agri & Trade Loans for Tirunelveli Region",
       description:
-        "Loan facilitation for Tirunelveli, Tuticorin, and Kanyakumari businesses through nationalised banks, RRBs, and co-operative banks.",
+        "Loan assistance for Tirunelveli, Tuticorin, and Kanyakumari businesses through nationalised banks, RRBs, and co-operative banks.",
       highlights: [
         "MSME & Mudra loans for southern TN traders",
         "Working capital for cement & wind-energy vendors",
-        "Home loans across Palayamkottai & Tirunelveli town",
+        "Business funding guidance across Palayamkottai & Tirunelveli town",
         "Agri & marine-trade finance",
       ],
     },
