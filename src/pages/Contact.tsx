@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
+import { z } from "zod";
 import {
   trackContactFormStart,
   trackContactFormSubmit,
@@ -41,6 +42,16 @@ const contactInfo = [
   },
 ];
 
+const contactSchema = z.object({
+  name: z.string().trim().min(2, "Enter your name").max(100, "Name is too long"),
+  phone: z.string().trim().regex(/^(?:\+91[\s-]?)?[6-9]\d{9}$/, "Enter a valid Indian mobile number"),
+  email: z.string().trim().email("Enter a valid email").max(255).optional().or(z.literal("")),
+  pickup: z.string().trim().min(2, "Enter pickup location").max(120, "Pickup is too long"),
+  destination: z.string().trim().min(2, "Enter destination").max(120, "Destination is too long"),
+  goods: z.string().trim().min(2, "Enter goods or service type").max(120, "Goods detail is too long"),
+  message: z.string().trim().max(500, "Details must be under 500 characters").optional(),
+});
+
 const Contact = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
@@ -53,11 +64,22 @@ const Contact = () => {
     message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [errors, setErrors] = useState<Record<string, string>>({});
 
   const [formStarted, setFormStarted] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    const parsed = contactSchema.safeParse(formData);
+    if (!parsed.success) {
+      const nextErrors: Record<string, string> = {};
+      parsed.error.issues.forEach((issue) => {
+        nextErrors[String(issue.path[0])] = issue.message;
+      });
+      setErrors(nextErrors);
+      return;
+    }
+
     setIsSubmitting(true);
 
     // Simulate form submission
@@ -65,9 +87,9 @@ const Contact = () => {
 
     // Track successful submission
     trackContactFormSubmit({
-      source_city: formData.pickup,
-      destination_city: formData.destination,
-      service_type: formData.goods,
+      source_city: parsed.data.pickup,
+      destination_city: parsed.data.destination,
+      service_type: parsed.data.goods,
     });
 
     toast({
@@ -86,6 +108,7 @@ const Contact = () => {
     });
     setIsSubmitting(false);
     setFormStarted(false);
+    setErrors({});
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -94,7 +117,10 @@ const Contact = () => {
       setFormStarted(true);
       trackContactFormStart();
     }
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+    const nextValue = name === "phone" ? value.replace(/[^0-9+\s-]/g, "") : value;
+    setFormData({ ...formData, [name]: nextValue });
+    setErrors((prev) => ({ ...prev, [name]: "" }));
   };
 
   const handlePhoneClick = (phone: string) => {
@@ -188,8 +214,10 @@ const Contact = () => {
                             value={formData.name}
                             onChange={handleChange}
                             required
+                            maxLength={100}
                             placeholder="Enter your name"
                           />
+                          {errors.name && <p className="mt-1 text-xs text-destructive">{errors.name}</p>}
                         </div>
                         <div>
                           <label className="text-sm font-medium text-foreground mb-1 block">
@@ -201,8 +229,10 @@ const Contact = () => {
                             value={formData.phone}
                             onChange={handleChange}
                             required
+                            maxLength={15}
                             placeholder="+91 98765 43210"
                           />
+                          {errors.phone && <p className="mt-1 text-xs text-destructive">{errors.phone}</p>}
                         </div>
                       </div>
                       <div>
@@ -214,8 +244,10 @@ const Contact = () => {
                           type="email"
                           value={formData.email}
                           onChange={handleChange}
+                          maxLength={255}
                           placeholder="your@email.com"
                         />
+                        {errors.email && <p className="mt-1 text-xs text-destructive">{errors.email}</p>}
                       </div>
                       <div className="grid sm:grid-cols-2 gap-4">
                         <div>
@@ -227,8 +259,10 @@ const Contact = () => {
                             value={formData.pickup}
                             onChange={handleChange}
                             required
+                            maxLength={120}
                             placeholder="e.g., Coimbatore"
                           />
+                          {errors.pickup && <p className="mt-1 text-xs text-destructive">{errors.pickup}</p>}
                         </div>
                         <div>
                           <label className="text-sm font-medium text-foreground mb-1 block">
@@ -239,8 +273,10 @@ const Contact = () => {
                             value={formData.destination}
                             onChange={handleChange}
                             required
+                            maxLength={120}
                             placeholder="e.g., Chennai"
                           />
+                          {errors.destination && <p className="mt-1 text-xs text-destructive">{errors.destination}</p>}
                         </div>
                       </div>
                       <div>
@@ -252,8 +288,10 @@ const Contact = () => {
                           value={formData.goods}
                           onChange={handleChange}
                           required
+                          maxLength={120}
                           placeholder="e.g., Textile, Machinery, Construction Material"
                         />
+                        {errors.goods && <p className="mt-1 text-xs text-destructive">{errors.goods}</p>}
                       </div>
                       <div>
                         <label className="text-sm font-medium text-foreground mb-1 block">
@@ -263,9 +301,11 @@ const Contact = () => {
                           name="message"
                           value={formData.message}
                           onChange={handleChange}
+                          maxLength={500}
                           placeholder="Weight, dimensions, preferred date, special requirements..."
                           rows={4}
                         />
+                        {errors.message && <p className="mt-1 text-xs text-destructive">{errors.message}</p>}
                       </div>
                       <Button type="submit" size="lg" className="w-full gap-2" disabled={isSubmitting}>
                         <Send className="h-5 w-5" />
