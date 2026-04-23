@@ -48,7 +48,7 @@ export function Header() {
     <header
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-apple",
-        scrolled
+        scrolled || isOpen
           ? "glass-strong border-b border-border/40"
           : "bg-background/0 backdrop-blur-0 border-b border-transparent"
       )}
@@ -137,7 +137,7 @@ export function Header() {
             isOpen ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0"
           )}
         >
-          <nav className="py-4 border-t border-border/40">
+          <nav className="my-2 rounded-3xl border border-border/60 bg-background/95 py-4 shadow-xl backdrop-blur-2xl">
             <div className="flex flex-col gap-1">
               {navLinks.slice(0, 2).map((l) => (
                 <MobileLink key={l.href} to={l.href} active={location.pathname === l.href}>
@@ -145,7 +145,7 @@ export function Header() {
                 </MobileLink>
               ))}
               <div className="px-4 pt-3 pb-1">
-                <span className="text-eyebrow text-muted-foreground/70">Services</span>
+                <span className="text-eyebrow text-muted-foreground">Services</span>
               </div>
               {serviceLinks.map((link) => (
                 <MobileLink
@@ -193,7 +193,7 @@ function MobileLink({
       className={cn(
         "px-4 py-2.5 text-[14px] font-medium rounded-lg mx-2 transition-colors duration-300 ease-apple",
         indent && "pl-7",
-        active ? "bg-foreground/[0.06] text-foreground" : "text-foreground/80 hover:bg-foreground/[0.04]"
+        active ? "bg-primary/10 text-primary" : "text-foreground hover:bg-primary/5"
       )}
     >
       {children}
