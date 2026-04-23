@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useMemo, useState, type ReactNode } from "react";
 import { z } from "zod";
 import { Phone, MessageCircle, Send, Truck } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -120,7 +120,7 @@ export function LeadEnquiryForm({ city }: { city?: string }) {
   );
 }
 
-function FieldError({ label, error, optional, children }: { label: string; error?: string; optional?: boolean; children: React.ReactNode }) {
+function FieldError({ label, error, optional, children }: { label: string; error?: string; optional?: boolean; children: ReactNode }) {
   const id = label.toLowerCase().replace(/\s+/g, "-");
   return (
     <div className="space-y-1.5">
