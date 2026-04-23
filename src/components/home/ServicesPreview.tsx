@@ -11,7 +11,7 @@ const verticals = [
     headline: "Move what matters, when it matters.",
     description:
       "Full Load lorry transport across Tamil Nadu. 43 years. Our own fleet of 12+ vehicles. Routes spanning Coimbatore, Tiruppur, Chennai, Salem, Madurai.",
-    features: ["Full Load Transport", "Return Loads", "Factory Shifting", "24/7 Support"],
+    features: ["Full Load Transport", "Return Loads", "Factory Shifting", "Route Support"],
     href: "/transportation",
     badge: "Since 1982",
   },
@@ -22,8 +22,8 @@ const verticals = [
     title: "Financial Services",
     headline: "From government schemes to bank loans.",
     description:
-      "MSME, Mudra, PMAY, Startup India. Private bank loans for business, home, vehicle, personal. Lowest processing fees in Coimbatore — by design.",
-    features: ["MSME Loans", "Mudra Scheme", "Home Loans", "Business Loans"],
+      "MSME, Mudra, Startup India, business, industrial and government funding scheme assistance. Strictly not for personal loans.",
+    features: ["MSME Loans", "Mudra Scheme", "Govt Funding", "Business Loans"],
     href: "/financial-services",
     badge: "Govt Schemes",
   },
@@ -34,10 +34,10 @@ const verticals = [
     title: "Legal Services",
     headline: "Confidence at every signature.",
     description:
-      "Property, company, litigation, IP. A practice with presence in all 38 districts of Tamil Nadu and the depth to handle your most consequential matters.",
+      "Property, company, litigation, IP and compliance documentation support for businesses and individuals across Tamil Nadu.",
     features: ["Property Docs", "Company Formation", "Litigation", "Contracts"],
     href: "/legal-services",
-    badge: "All 38 Districts",
+    badge: "Tamil Nadu",
   },
 ];
 
@@ -52,8 +52,8 @@ export function ServicesPreview() {
               Complete business solutions, refined over four decades.
             </h2>
             <p className="text-headline text-muted-foreground max-w-2xl mx-auto">
-              Three integrated practices serving individuals and enterprises across Tamil Nadu — at
-              the lowest commission rates in the Indian market.
+              Three integrated practices serving individuals and enterprises across Tamil Nadu with
+              transparent, practical assistance.
             </p>
           </div>
         </ScrollReveal>

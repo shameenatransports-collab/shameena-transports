@@ -39,8 +39,8 @@ const services = [
   {
     icon: Package,
     title: "Return Loads",
-    description: "Cost-effective transport when trucks are returning. Save up to 40% on select routes. Subject to availability.",
-    features: ["40% savings", "Flexible timing", "Multiple routes"],
+    description: "Cost-effective transport when trucks are returning on matching routes. Subject to route availability.",
+    features: ["Route-based pricing", "Flexible timing", "Subject to availability"],
     link: "/return-loads"
   },
   {
@@ -69,8 +69,8 @@ const services = [
 const stats = [
   { value: "43+", label: "Years Experience", icon: Clock },
   { value: "12+", label: "Lorries Fleet", icon: Truck },
-  { value: "10K+", label: "Deliveries", icon: Package },
-  { value: "24/7", label: "Support", icon: Shield }
+  { value: "FTL", label: "Full Load Focus", icon: Package },
+  { value: "TN", label: "Route Expertise", icon: Shield }
 ];
 
 const areas = [
@@ -83,9 +83,9 @@ const whyChooseUs = [
   { text: "Own fleet of 12+ lorries", icon: Truck },
   { text: "Tamil Nadu route expertise", icon: MapPin },
   { text: "Fully insured transport", icon: Shield },
-  { text: "24/7 customer support", icon: Clock },
+  { text: "Responsive customer support", icon: Clock },
   { text: "Competitive pricing", icon: Gauge },
-  { text: "On-time delivery guarantee", icon: Route },
+  { text: "Route-planned delivery coordination", icon: Route },
   { text: "Expert handling of cargo", icon: Package }
 ];
 
@@ -103,10 +103,10 @@ const Transportation = () => {
     <>
       <Helmet>
         <title>Transportation Services | Full Load Lorry Tamil Nadu | STA Corporate Solutions</title>
-        <meta name="description" content="STA Corporate Solutions Transportation - Full Load lorry service across Tamil Nadu since 1982. Coimbatore, Chennai, Tiruppur, Salem, Madurai. 24/7 service." />
+        <meta name="description" content="STA Corporate Solutions Transportation - Full Load lorry service across Tamil Nadu since 1982. Coimbatore, Chennai, Tiruppur, Salem, Madurai." />
         <link rel="canonical" href="https://www.stacorporate.com/transportation" />
         <meta property="og:title" content="Transportation Services | STA Corporate Solutions" />
-        <meta property="og:description" content="Full Load transport across Tamil Nadu. 43+ years experience. 24/7 service." />
+        <meta property="og:description" content="Full Load transport across Tamil Nadu. 43+ years experience from Coimbatore." />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(localBusinessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(transportBusinessSchema)}</script>

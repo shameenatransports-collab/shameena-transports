@@ -276,7 +276,7 @@ const CityLanding = () => {
               Ready to Work With Tamil Nadu's Most Trusted Name?
             </h2>
             <p className="text-lg text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
-              43 years. 3 verticals. Lowest commission. Call us from {data.name} today.
+              Since 1982. Transportation, business loan assistance, and legal support for {data.name}.
             </p>
             <div className="flex flex-wrap justify-center gap-3">
               <Button size="lg" variant="secondary" asChild>

@@ -37,7 +37,7 @@ const contactInfo = [
   {
     icon: Clock,
     title: "Working Hours",
-    details: ["Booking: 8 AM - 10 PM", "Transport: 24/7"],
+    details: ["Office: 9 AM - 7 PM", "Booking support by call"],
     action: null,
   },
 ];

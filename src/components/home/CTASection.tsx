@@ -29,7 +29,7 @@ export function CTASection() {
               the conversation.
             </h2>
             <p className="text-headline text-background/70 max-w-2xl mx-auto mb-12">
-              Transport, loans, or legal — call or WhatsApp for an instant quote. Available 24/7
+              Transport, business loans, or legal support — call or WhatsApp for a guided enquiry
               across Coimbatore and all of Tamil Nadu.
             </p>
 
@@ -61,7 +61,7 @@ export function CTASection() {
             </div>
 
             <p className="text-xs text-background/50 mt-10 tracking-tight">
-              Coimbatore · Tiruppur · Chennai · Salem · Madurai · Erode · Trichy · all 38 districts
+              Coimbatore · Tiruppur · Chennai · Salem · Madurai · Erode · Trichy · Tamil Nadu
             </p>
           </div>
         </ScrollReveal>

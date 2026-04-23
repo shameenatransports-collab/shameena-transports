@@ -9,9 +9,9 @@ export const organizationSchema = {
   "legalName": "STA Corporate Solutions",
   "url": "https://www.stacorporate.com",
   "logo": "https://www.stacorporate.com/logo.png",
-  "description": "Since 1982 — 43+ years of excellence. Complete business solutions including Transportation, Loan Services & Legal Services in Coimbatore & Tamil Nadu.",
+  "description": "Since 1982 — 43+ years of business support including Transportation, Business Loan Assistance & Legal Services in Coimbatore & Tamil Nadu.",
   "foundingDate": "1982",
-  "slogan": "Lowest Commission Since 1982 — Transport, Loans & Legal Services",
+  "slogan": "Trusted Since 1982 — Transport, Business Loan Assistance & Legal Services",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "No.302/2A7, VK Road, Peelamedu",
@@ -46,7 +46,7 @@ export const localBusinessSchema = {
   "name": "STA Corporate Solutions — Transportation, Loan Services & Legal Services Coimbatore",
   "alternateName": ["STA Corporate", "STA Solutions", "STA Coimbatore", "STA Corporate Solutions Coimbatore"],
   "image": ["https://www.stacorporate.com/logo.png"],
-  "description": "Since 1982, 43+ years of excellence in Transportation (Full Load & Return Load), Loan Services (MSME, Mudra, Home, Business), and Legal Services (Property, Company, Litigation) in Coimbatore & Tamil Nadu. Lowest commission rates.",
+  "description": "Since 1982, STA Corporate Solutions supports Transportation (Full Load & Return Load), Business Loan Assistance (MSME, Mudra, government funding schemes), and Legal Services (Property, Company, Litigation) in Coimbatore & Tamil Nadu.",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "No.302/2A7, VK Road, Peelamedu",
@@ -104,7 +104,7 @@ export const localBusinessSchema = {
         "itemListElement": [
           { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "MSME Loans" } },
           { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mudra Loans" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Home Loans" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Government Funding Scheme Guidance" } },
           { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Business Loans" } }
         ]
       },
@@ -142,7 +142,7 @@ export const transportServiceSchema = {
     { "@type": "City", "name": "Trichy" },
     { "@type": "State", "name": "Tamil Nadu" }
   ],
-  "description": "Dedicated full load lorry transport across Tamil Nadu since 1982. 12+ own lorries, 24/7 service, lowest rates from Coimbatore.",
+  "description": "Dedicated full load lorry transport across Tamil Nadu since 1982 with 12+ own lorries from Coimbatore.",
   "offers": {
     "@type": "Offer",
     "availability": "https://schema.org/InStock",
@@ -191,7 +191,7 @@ export const financialServiceSchema = {
   "@context": "https://schema.org",
   "@type": "FinancialService",
   "@id": "https://www.stacorporate.com/financial-services#service",
-  "name": "Loan Services Coimbatore — MSME, Mudra, Business & Home Loans",
+  "name": "Business Loan Assistance Coimbatore — MSME, Mudra & Government Funding",
   "serviceType": "Loan Assistance",
   "provider": {
     "@type": "LocalBusiness",
@@ -206,7 +206,7 @@ export const financialServiceSchema = {
     { "@type": "City", "name": "Chennai" },
     { "@type": "State", "name": "Tamil Nadu" }
   ],
-  "description": "Government scheme loans (MSME, Mudra, PMAY) and private bank loans (business, home, vehicle, personal) with lowest processing fees in Coimbatore, Tamil Nadu.",
+  "description": "Loan assistance for eligible businesses, industries and companies: MSME, Mudra, government funding schemes, business, industrial and commercial vehicle loan documentation support in Coimbatore, Tamil Nadu. Not for personal loans.",
   "offers": {
     "@type": "Offer",
     "availability": "https://schema.org/InStock",
@@ -235,7 +235,7 @@ export const legalServiceSchema = {
     { "@type": "City", "name": "Trichy" },
     { "@type": "State", "name": "Tamil Nadu" }
   ],
-  "description": "Comprehensive legal services for individuals, businesses, and corporates. Property documentation, company formation, litigation, IP — all 38 districts of Tamil Nadu.",
+  "description": "Legal documentation and consultation support for individuals, businesses, and corporates. Property documentation, company formation, litigation, IP, and compliance support across Tamil Nadu.",
   "offers": {
     "@type": "Offer",
     "availability": "https://schema.org/InStock",

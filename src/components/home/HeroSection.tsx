@@ -49,7 +49,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: reduced ? 0 : 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: easeApple, delay: 0.1 }}
-            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-strong text-[11px] font-semibold tracking-[0.18em] uppercase text-primary-foreground/90 mb-8"
+            className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-background/95 text-[11px] font-bold tracking-[0.18em] uppercase text-primary shadow-xl ring-1 ring-primary-foreground/40 backdrop-blur-2xl mb-8"
           >
             <span className="h-1.5 w-1.5 rounded-full bg-secondary" />
             Trusted Since 1982 · Coimbatore
@@ -85,7 +85,7 @@ export function HeroSection() {
             transition={{ duration: 1, ease: easeApple, delay: 0.5 }}
             className="text-sm md:text-base text-primary-foreground/60 mb-12 tracking-tight"
           >
-            43+ years · Lowest commission · 38 districts
+            43+ years · Coimbatore HQ · Tamil Nadu business support
           </motion.p>
 
           {/* CTAs */}

@@ -10,27 +10,27 @@ const faqs = [
   {
     question: "What services does STA Corporate Solutions provide in Coimbatore?",
     answer:
-      "STA Corporate Solutions provides three core services from our Coimbatore headquarters: (1) Transportation — Full Load and Return Load lorry services across Tamil Nadu, (2) Financial Services — Government scheme loans (MSME, Mudra, PMAY) and private bank loans, and (3) Legal Services — property documentation, company registration, litigation, and IP services across all 38 districts of Tamil Nadu.",
+      "STA Corporate Solutions provides three core services from our Coimbatore headquarters: (1) Transportation — Full Load and Return Load lorry services across Tamil Nadu, (2) Financial Services — business loan assistance, MSME, Mudra and government funding scheme guidance, and (3) Legal Services — property documentation, company registration, litigation, and IP support across Tamil Nadu.",
   },
   {
     question: "What is Full Load transport and when should I use it?",
     answer:
-      "Full Load means booking an entire lorry exclusively for your cargo. You get a dedicated truck, complete control over timing, and faster delivery with no intermediate stops. Best for large shipments (5-25 tons) or when you need guaranteed delivery times. We cover Coimbatore, Tiruppur, Erode, Salem, Chennai, Madurai, Trichy, and all Tamil Nadu cities.",
+      "Full Load means booking an entire lorry exclusively for your cargo. You get a dedicated truck, complete control over timing, and direct delivery with no intermediate stops. Best for large shipments (5-25 tons) or when you need dedicated transport coordination. We cover Coimbatore, Tiruppur, Erode, Salem, Chennai, Madurai, Trichy, and other Tamil Nadu cities.",
   },
   {
     question: "What government loan schemes can STA help with?",
     answer:
-      "We assist with all major government schemes including PMEGP, Mudra Loans (Shishu, Kishore, Tarun), Stand-Up India, CGTMSE, PMAY housing loans, Startup India Seed Fund, Kisan Credit Card, and special category schemes for women entrepreneurs, SC/ST, and minorities. We handle complete documentation and bank coordination.",
+      "We assist eligible businesses, industries, and companies with MSME, Mudra, PMEGP, Stand-Up India, CGTMSE, Startup India, and other government funding scheme documentation. We do not handle personal loans.",
   },
   {
     question: "What types of legal services are available?",
     answer:
-      "We offer comprehensive legal services: Personal — property documentation, family law, civil matters, vehicle & insurance claims. Business — company formation, compliance, contracts, disputes. Corporate — industrial licensing, labour law, intellectual property, mergers & acquisitions. We have presence in all 38 districts of Tamil Nadu.",
+      "We offer legal documentation and consultation support for property documentation, company formation, business compliance, contracts, disputes, industrial licensing, labour law, intellectual property, and corporate matters across Tamil Nadu.",
   },
   {
     question: "What areas in Tamil Nadu do you serve?",
     answer:
-      "Our headquarters is in Peelamedu, Coimbatore. We serve all major cities including Tiruppur, Erode, Salem, Chennai, Madurai, Trichy, Karur, Namakkal, Dindigul, Thanjavur, Vellore, and all 38 districts of Tamil Nadu. For transport, we also cover inter-state routes.",
+      "Our headquarters is in Peelamedu, Coimbatore. We serve major Tamil Nadu cities including Tiruppur, Erode, Salem, Chennai, Madurai, Trichy, Karur, Namakkal, Dindigul, Thanjavur, and Vellore. For transport, route coverage is confirmed based on requirement.",
   },
   {
     question: "How do I get started with STA Corporate Solutions?",
@@ -38,9 +38,9 @@ const faqs = [
       "Simply call us at +91 94430 33055 or WhatsApp us. For transport — share pickup location, destination, cargo type, and weight. For loans — share your business details and loan requirement. For legal services — describe your legal need. We'll provide a free consultation and competitive quote.",
   },
   {
-    question: "Why does STA have the lowest commission rates?",
+    question: "Why choose STA Corporate Solutions?",
     answer:
-      "With 43+ years of experience and strong relationships with banks, legal partners, and our own fleet of 12+ lorries, we operate with minimal overhead. Our direct bank tie-ups, in-house legal team, and owned fleet allow us to pass on savings to our customers — that's been our principle since 1982.",
+      "With 43+ years of experience, business service knowledge, and our own fleet of 12+ lorries, we focus on transparent assistance and practical pricing for eligible requirements.",
   },
 ];
 

@@ -44,8 +44,8 @@ export function Footer() {
               </div>
             </div>
             <p className="text-sm text-primary-foreground/75 leading-relaxed max-w-md">
-              Coimbatore's trusted partner for Transportation, Loan Services & Legal Services since 1982.
-              Lowest commission rates across Tamil Nadu.
+              Coimbatore's trusted partner for Transportation, Business Loan Assistance & Legal Services since 1982.
+              Transparent support across Tamil Nadu.
             </p>
             <div className="space-y-3 pt-1">
               <div className="flex items-start gap-3">
@@ -125,7 +125,7 @@ export function Footer() {
         {/* Bottom */}
         <div className="mt-16 pt-8 border-t border-primary-foreground/10">
           <p className="text-xs text-primary-foreground/50 text-center mb-5 leading-relaxed max-w-4xl mx-auto">
-            STA Corporate Solutions — Lorry Transport, MSME Loans, Mudra Loans, Business Loans, Home Loans, Legal Services, Company Registration, Property Documentation in Coimbatore, Tiruppur, Erode, Salem, Chennai, Madurai, Trichy, Tamil Nadu.
+            STA Corporate Solutions — Lorry Transport, MSME Loans, Mudra Loans, Business Loan Assistance, Government Funding Scheme Guidance, Legal Services, Company Registration, Property Documentation in Coimbatore, Tiruppur, Erode, Salem, Chennai, Madurai, Trichy, Tamil Nadu.
           </p>
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-xs text-primary-foreground/60">

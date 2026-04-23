@@ -198,10 +198,10 @@ const tamilNaduCourts = [
 ];
 
 const whyChooseUs = [
-  "Expert lawyers with 25+ years experience",
-  "Pan Tamil Nadu presence - 38 districts",
+  "Legal documentation and consultation coordination",
+  "Tamil Nadu business and corporate legal support",
   "Competitive and transparent fees",
-  "Quick turnaround on documentation",
+  "Structured documentation support",
   "Regular case status updates",
   "Multilingual support (Tamil & English)",
   "Weekend consultations available",
@@ -289,7 +289,7 @@ const LegalServices = () => {
                 </h1>
                 <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 leading-relaxed">
                   Comprehensive legal solutions for <strong className="text-secondary">individuals</strong>, <strong className="text-secondary">businesses</strong>, and <strong className="text-secondary">corporates</strong>. 
-                  Expert lawyers across Tamil Nadu with presence in all 38 districts.
+                  Documentation, compliance and consultation support across Tamil Nadu.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a href="tel:+919443033055">
@@ -307,10 +307,10 @@ const LegalServices = () => {
               <div className="container mx-auto px-4">
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                   {[
-                    { value: "38", label: "Districts Covered" },
-                    { value: "10K+", label: "Cases Handled" },
-                    { value: "25+", label: "Years Experience" },
-                    { value: "98%", label: "Success Rate" }
+                    { value: "1982", label: "Trusted Since" },
+                    { value: "TN", label: "Tamil Nadu Support" },
+                    { value: "B2B", label: "Business Legal Focus" },
+                    { value: "Doc", label: "Documentation Help" }
                   ].map((stat, index) => (
                     <div key={index} className="text-center p-4 bg-primary-foreground/10 backdrop-blur-sm rounded-xl">
                       <div className="text-2xl md:text-3xl font-bold text-secondary">{stat.value}</div>
@@ -456,7 +456,7 @@ const LegalServices = () => {
                   Additional Legal Services
                 </h2>
                 <p className="text-lg text-muted-foreground">
-                  Quick turnaround services for common legal needs
+                  Structured support for common legal documentation needs
                 </p>
               </div>
 

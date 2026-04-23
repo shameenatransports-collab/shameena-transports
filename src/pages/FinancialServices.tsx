@@ -8,14 +8,9 @@ import { AnimatedSection } from "@/components/ui/animated-section";
 import { 
   Phone, 
   CheckCircle,
-  User,
   Building2,
   Factory,
   Landmark,
-  Shield,
-  Home,
-  Car,
-  GraduationCap,
   TrendingUp,
   Banknote,
   IndianRupee,
@@ -50,27 +45,15 @@ const governmentSchemes = [
     ]
   },
   {
-    icon: GraduationCap,
-    title: "Education Loans",
-    description: "Government education financing schemes",
+    icon: Landmark,
+    title: "Industrial Funding Schemes",
+    description: "Guidance for eligible business, industry, and company funding schemes",
     schemes: [
-      "Central Sector Interest Subsidy",
-      "Vidya Lakshmi Portal Loans",
-      "Dr. Ambedkar Education Loan",
-      "Padho Pardesh - Minority Education",
-      "State Education Loan Schemes"
-    ]
-  },
-  {
-    icon: Home,
-    title: "Housing Schemes",
-    description: "Government housing and construction loans",
-    schemes: [
-      "Pradhan Mantri Awas Yojana (PMAY)",
-      "Credit-Linked Subsidy Scheme",
-      "NHB Refinance Scheme",
-      "HUDCO Home Loans",
-      "Rural Housing Fund"
+      "Industrial subsidy guidance",
+      "Term loan documentation support",
+      "Working capital scheme assistance",
+      "Manufacturing unit funding guidance",
+      "Government department application support"
     ]
   }
 ];
@@ -90,43 +73,17 @@ const privateBankLoans = [
     banks: ["HDFC", "ICICI", "Axis", "Kotak", "Yes Bank"]
   },
   {
-    icon: Home,
-    title: "Home Loans",
-    description: "Residential property purchase and construction",
-    features: [
-      "New Home Purchase",
-      "Home Construction",
-      "Balance Transfer",
-      "Top-Up Loans",
-      "Plot + Construction"
-    ],
-    banks: ["SBI", "HDFC", "LIC Housing", "ICICI", "Bajaj Housing"]
-  },
-  {
-    icon: Car,
-    title: "Vehicle Loans",
-    description: "Commercial and personal vehicle financing",
+    icon: Factory,
+    title: "Industrial & Machinery Loans",
+    description: "Funding assistance for factories, machinery, and industrial expansion",
     features: [
       "Commercial Vehicle Loan",
-      "Car Loans",
-      "Two-Wheeler Loans",
+      "Machinery Finance",
+      "Equipment Loans",
       "Fleet Financing",
-      "Used Vehicle Loans"
+      "Factory Expansion Loans"
     ],
     banks: ["HDFC", "ICICI", "Axis", "Mahindra Finance", "Shriram Finance"]
-  },
-  {
-    icon: User,
-    title: "Personal Loans",
-    description: "Unsecured personal financing solutions",
-    features: [
-      "Salaried Personal Loans",
-      "Self-Employed Loans",
-      "Professional Loans",
-      "Marriage Loans",
-      "Medical Emergency Loans"
-    ],
-    banks: ["HDFC", "ICICI", "Bajaj Finserv", "Tata Capital", "Fullerton"]
   }
 ];
 
@@ -155,13 +112,13 @@ const specialSchemes = [
 ];
 
 const whyChooseUs = [
-  "Lowest processing fees in the market",
-  "Direct bank tie-ups for faster approval",
+  "Transparent assistance for eligible business funding requirements",
+  "Guidance for MSME, Mudra, and government scheme applications",
   "Expert guidance on scheme eligibility",
   "Complete documentation support",
-  "Higher loan sanction rates",
+  "Business, industry, and company-focused loan assistance",
   "Subsidy claim assistance",
-  "Post-disbursement support",
+  "Application follow-up support as per lender or department process",
   "43+ years of trusted service"
 ];
 
@@ -180,7 +137,7 @@ const FinancialServices = () => {
     "@type": "FinancialService",
     "@id": "https://www.stacorporate.com/financial-services#service",
     "name": "STA Corporate Solutions Loan Services",
-    "description": "Complete loan assistance for government schemes and private bank loans. MSME, Mudra, PMAY, business loans, home loans, vehicle loans in Tamil Nadu.",
+    "description": "Loan assistance for businesses, industries, companies, MSME, Mudra, and government funding schemes in Tamil Nadu. Not for personal loans.",
     "provider": {
       "@type": "LocalBusiness",
       "name": "STA Corporate Solutions",
@@ -204,17 +161,17 @@ const FinancialServices = () => {
       "MSME Loans",
       "Mudra Loans",
       "Business Loans",
-      "Home Loans",
-      "Vehicle Loans"
+      "Industrial Funding Assistance",
+      "Commercial Vehicle Loans"
     ]
   };
 
   return (
     <>
       <Helmet>
-        <title>Loan Services Tamil Nadu | MSME, Mudra, Business & Home Loans | STA Corporate Solutions</title>
-        <meta name="description" content="Get government scheme loans - MSME, Mudra, PMAY, Startup India. Private bank loans - business, home, vehicle, personal loans in Coimbatore, Tamil Nadu. Lowest processing fees." />
-        <meta name="keywords" content="msme loan coimbatore, mudra loan tamil nadu, pmay loan, business loan, home loan, vehicle loan, startup loan, government scheme loan, bank loan assistance" />
+        <title>Business Loan Assistance Tamil Nadu | MSME, Mudra & Govt Funding | STA Corporate Solutions</title>
+        <meta name="description" content="100% loan assistance guidance for businesses, industries and companies in Coimbatore, Tamil Nadu. MSME, Mudra, government funding schemes, commercial and industrial loan documentation support. Not for personal loans." />
+        <meta name="keywords" content="msme loan coimbatore, mudra loan tamil nadu, business loan assistance, industry loan tamil nadu, company loan support, government funding schemes tamil nadu, commercial vehicle loan, bank loan assistance" />
         <link rel="canonical" href="https://www.stacorporate.com/financial-services" />
         <meta property="og:title" content="Loan Services | Government Schemes & Bank Loans | STA Corporate Solutions" />
         <meta property="og:description" content="Complete loan assistance - MSME, Mudra, business, home, vehicle loans. Government schemes and private bank financing." />
@@ -242,7 +199,7 @@ const FinancialServices = () => {
                 </h1>
                 <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 leading-relaxed">
                   Access <strong className="text-secondary">Government Schemes</strong> and <strong className="text-secondary">Private Bank Loans</strong>. 
-                  MSME, Mudra, PMAY, Business, Home & Vehicle Loans with expert assistance.
+                  MSME, Mudra, business, industrial, company and government funding scheme guidance. Strictly not for personal loans.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a href="tel:+919443033055">
@@ -255,15 +212,14 @@ const FinancialServices = () => {
               </div>
             </div>
             
-            {/* Stats */}
+            {/* Assistance Summary */}
             <div className="absolute bottom-8 left-0 right-0 z-10">
               <div className="container mx-auto px-4">
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   {[
-                    { value: "₹500Cr+", label: "Loans Facilitated" },
-                    { value: "5000+", label: "Happy Clients" },
-                    { value: "50+", label: "Bank Partners" },
-                    { value: "95%", label: "Approval Rate" }
+                    { value: "100%", label: "Loan Assistance Guidance" },
+                    { value: "MSME", label: "Business & Industry Focus" },
+                    { value: "Govt", label: "Funding Scheme Support" }
                   ].map((stat, index) => (
                     <div key={index} className="text-center p-4 bg-primary-foreground/10 backdrop-blur-sm rounded-xl">
                       <div className="text-2xl md:text-3xl font-bold text-secondary">{stat.value}</div>
@@ -333,7 +289,7 @@ const FinancialServices = () => {
                   Private Bank Loans
                 </h2>
                 <p className="text-lg text-muted-foreground">
-                  Quick approval loans from leading private and public sector banks
+                  Assistance for eligible business, industrial, company and commercial funding requirements
                 </p>
               </div>
 
