@@ -10,7 +10,7 @@ const faqs = [
   {
     question: "What services does STA Corporate Solutions provide in Coimbatore?",
     answer:
-      "STA Corporate Solutions provides three core services from our Coimbatore headquarters: (1) Transportation — Full Load and Return Load lorry services across Tamil Nadu, (2) Financial Services — Government scheme loans (MSME, Mudra, PMAY) and private bank loans, and (3) Legal Services — property documentation, company registration, litigation, and IP services across all 38 districts of Tamil Nadu.",
+      "STA Corporate Solutions provides three core services from our Coimbatore headquarters: (1) Transportation — Full Load and Return Load lorry services across Tamil Nadu, (2) Financial Services — business loan assistance, MSME, Mudra and government funding scheme guidance, and (3) Legal Services — property documentation, company registration, litigation, and IP support across Tamil Nadu.",
   },
   {
     question: "What is Full Load transport and when should I use it?",
@@ -38,7 +38,7 @@ const faqs = [
       "Simply call us at +91 94430 33055 or WhatsApp us. For transport — share pickup location, destination, cargo type, and weight. For loans — share your business details and loan requirement. For legal services — describe your legal need. We'll provide a free consultation and competitive quote.",
   },
   {
-    question: "Why does STA have the lowest commission rates?",
+    question: "Why choose STA Corporate Solutions?",
     answer:
       "With 43+ years of experience, business service knowledge, and our own fleet of 12+ lorries, we focus on transparent assistance and practical pricing for eligible requirements.",
   },

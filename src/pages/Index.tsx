@@ -15,12 +15,12 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>STA Corporate Solutions Coimbatore | Transport, Loans & Legal Services Since 1982</title>
-        <meta name="description" content="STA Corporate Solutions Coimbatore — Lorry Transport (Full Load & Return Load), Loan Services (MSME, Mudra, Home, Business), Legal Services (Property, Company, Litigation). Lowest commission since 1982. Call +91 94430 33055." />
-        <meta name="keywords" content="STA Corporate Solutions, lorry transport coimbatore, MSME loan coimbatore, mudra loan tamil nadu, legal services coimbatore, full load transport, return load, business loan, home loan, company registration, property lawyer coimbatore, transport service tamil nadu" />
+        <title>STA Corporate Solutions Coimbatore | Transport, Business Loans & Legal</title>
+        <meta name="description" content="STA Corporate Solutions Coimbatore — full load lorry transport, business loan assistance, MSME/Mudra and government funding scheme guidance, and legal services since 1982." />
+        <meta name="keywords" content="STA Corporate Solutions, lorry transport coimbatore, MSME loan coimbatore, mudra loan tamil nadu, government funding schemes tamil nadu, business loan assistance, legal services coimbatore, full load transport, return load, company registration, transport service tamil nadu" />
         <link rel="canonical" href="https://www.stacorporate.com" />
         <meta property="og:title" content="STA Corporate Solutions | Transport, Loans & Legal — Coimbatore" />
-        <meta property="og:description" content="43+ years trusted service. Lorry Transport, Loan Services & Legal Services in Coimbatore & Tamil Nadu. Lowest commission rates." />
+        <meta property="og:description" content="Trusted since 1982. Lorry transport, business loan assistance and legal services in Coimbatore & Tamil Nadu." />
         <meta property="og:image" content="https://www.stacorporate.com/og-image.jpg" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en_IN" />
