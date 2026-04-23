@@ -16,7 +16,7 @@ const values = [
   {
     icon: Clock,
     title: "Punctuality",
-    description: "We understand time is money. Our 98% on-time delivery speaks for itself.",
+    description: "We understand time is money and coordinate every assignment with disciplined follow-up.",
   },
   {
     icon: Users,
@@ -75,7 +75,7 @@ const About = () => {
                   About STA Corporate Solutions
                 </h1>
                 <p className="text-lg text-primary-foreground/90">
-                  Coimbatore's trusted business partner since 1982 — serving 500+ businesses across Tamil Nadu
+                  Coimbatore's trusted business partner since 1982 — serving businesses across Tamil Nadu
                 </p>
               </div>
             </div>
@@ -95,7 +95,7 @@ const About = () => {
                     Founded in 1982 in Coimbatore, STA Corporate Solutions started as a transport company with just two lorries and a vision to provide reliable services. Today, we have grown into a diversified business solutions provider with three verticals — <strong className="text-foreground">Transportation</strong>, <strong className="text-foreground">Financial Services</strong> & <strong className="text-foreground">Legal Services</strong>.
                   </p>
                   <p>
-                    Our founders understood the challenges businesses face with unreliable services and high commissions. This drove us to build a company focused on offering the lowest commission rates in India while maintaining excellence.
+                    Our founders understood the challenges businesses face with unreliable services and unclear commissions. This drove us to build a company focused on transparent assistance while maintaining excellence.
                   </p>
                   <p>
                     From textile mills in Tiruppur to factories in Chennai, construction sites in Salem to MSME entrepreneurs in Erode — we have served thousands of clients across diverse industries. Our commitment to excellence has made us Coimbatore's preferred choice for complete business solutions.
@@ -180,12 +180,12 @@ const About = () => {
                 <div className="text-primary-foreground/80 mt-2">Lorries in Fleet</div>
               </div>
               <div>
-                <div className="text-4xl md:text-5xl font-bold text-secondary">500+</div>
-                <div className="text-primary-foreground/80 mt-2">Happy Clients</div>
+                <div className="text-4xl md:text-5xl font-bold text-secondary">B2B</div>
+                <div className="text-primary-foreground/80 mt-2">Business Focus</div>
               </div>
               <div>
-                <div className="text-4xl md:text-5xl font-bold text-secondary">10K+</div>
-                <div className="text-primary-foreground/80 mt-2">Deliveries Done</div>
+                <div className="text-4xl md:text-5xl font-bold text-secondary">TN</div>
+                <div className="text-primary-foreground/80 mt-2">Tamil Nadu Service</div>
               </div>
             </div>
           </div>

@@ -3,11 +3,11 @@ import { ScrollReveal, ScrollRevealItem } from "@/components/ui/scroll-reveal";
 
 const features = [
   { icon: Shield, title: "Fully insured", description: "Damage protection coverage on every shipment, every route." },
-  { icon: Clock, title: "On-time, on principle", description: "98% on-time delivery — measured, not marketed." },
-  { icon: Banknote, title: "Lowest commission", description: "Best-in-market pricing for transport, loans, and legal services." },
-  { icon: Award, title: "43+ years", description: "Trusted by 500+ businesses in Coimbatore & Tamil Nadu since 1982." },
-  { icon: MapPin, title: "Pan Tamil Nadu", description: "All 38 districts — Coimbatore, Tiruppur, Chennai, Salem, Madurai." },
-  { icon: Headphones, title: "24/7 support", description: "Always reachable for bookings, loan queries, legal consultations." },
+  { icon: Clock, title: "Disciplined follow-up", description: "Clear coordination for transport, funding assistance, and documentation needs." },
+  { icon: Banknote, title: "Transparent assistance", description: "Business-focused loan and government scheme guidance without inflated promises." },
+  { icon: Award, title: "43+ years", description: "Coimbatore-rooted service for businesses across Tamil Nadu since 1982." },
+  { icon: MapPin, title: "Tamil Nadu focus", description: "Route and service knowledge across Coimbatore, Tiruppur, Chennai, Salem, Madurai." },
+  { icon: Headphones, title: "Responsive support", description: "Reachable by phone or WhatsApp for bookings, enquiries, and consultations." },
 ];
 
 export function WhyChooseUs() {
@@ -30,7 +30,7 @@ export function WhyChooseUs() {
               <span className="text-primary-foreground/60">measured in deliveries.</span>
             </h2>
             <p className="text-headline text-primary-foreground/70 max-w-2xl mx-auto">
-              The lowest commission rates in the Indian market with 43 years of proven excellence.
+              Transparent business support across transportation, funding assistance, and legal documentation.
             </p>
           </div>
         </ScrollReveal>
