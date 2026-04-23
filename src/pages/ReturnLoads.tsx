@@ -168,7 +168,7 @@ const ReturnLoads = () => {
               <div className="max-w-3xl mx-auto text-center text-primary-foreground">
                 <Badge className="mb-4 bg-secondary text-secondary-foreground">
                   <TrendingDown className="h-3 w-3 mr-1" />
-                  Save 30-40% on Transport
+                  Subject to Route Availability
                 </Badge>
                 <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
                   Return Load Transport in Tamil Nadu
@@ -296,7 +296,7 @@ const ReturnLoads = () => {
                         </div>
                         <Badge variant="secondary" className="w-full justify-center mt-2">
                           <TrendingDown className="h-3 w-3 mr-1" />
-                          Save {route.savings}
+                          {route.note}
                         </Badge>
                       </CardContent>
                     </Card>
@@ -411,11 +411,11 @@ const ReturnLoads = () => {
             <section className="py-16 md:py-24 bg-accent">
               <div className="container mx-auto px-4 text-center">
                 <h2 className="text-2xl md:text-3xl font-bold text-accent-foreground mb-4">
-                  Ready to Save on Transport?
+                  Ready to Check Return Load Availability?
                 </h2>
                 <p className="text-accent-foreground/80 mb-8 max-w-xl mx-auto">
                   Contact us now to check Return Load availability for your route. 
-                  Our team is ready to help you save up to 40% on transport costs.
+                  Our team will confirm route availability and pricing based on your requirement.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a href="tel:+919443033055">
