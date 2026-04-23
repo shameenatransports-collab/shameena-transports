@@ -5,6 +5,7 @@ import { CTASection } from "@/components/home/CTASection";
 import { Badge } from "@/components/ui/badge";
 import {
   localBusinessSchema,
+  transportBusinessSchema,
   fullLoadServiceSchema,
   returnLoadServiceSchema,
   createBreadcrumbSchema,
@@ -123,6 +124,7 @@ const Services = () => {
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(localBusinessSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(transportBusinessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(fullLoadServiceSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(returnLoadServiceSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(serviceListSchema)}</script>
