@@ -8,7 +8,8 @@ import { FAQSection } from "@/components/home/FAQSection";
 import { CitiesWeServe } from "@/components/home/CitiesWeServe";
 import { CTASection } from "@/components/home/CTASection";
 import { AnimatedSection } from "@/components/ui/animated-section";
-import { organizationSchema, localBusinessSchema, websiteSchema } from "@/lib/structured-data";
+import { LeadEnquiryForm } from "@/components/lead/LeadEnquiryForm";
+import { organizationSchema, localBusinessSchema, websiteSchema, transportBusinessSchema } from "@/lib/structured-data";
 
 const Index = () => {
   return (
@@ -29,6 +30,7 @@ const Index = () => {
         <meta name="ICBM" content="11.0168, 76.9558" />
         <script type="application/ld+json">{JSON.stringify(organizationSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(localBusinessSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(transportBusinessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(websiteSchema)}</script>
       </Helmet>
       <Layout>
@@ -45,6 +47,15 @@ const Index = () => {
           </AnimatedSection>
           <AnimatedSection delay={100}>
             <CitiesWeServe />
+          </AnimatedSection>
+          <AnimatedSection delay={100}>
+            <section className="bg-background py-12 md:py-16">
+              <div className="container mx-auto px-4">
+                <div className="mx-auto max-w-3xl">
+                  <LeadEnquiryForm />
+                </div>
+              </div>
+            </section>
           </AnimatedSection>
           <AnimatedSection delay={100}>
             <FAQSection />
