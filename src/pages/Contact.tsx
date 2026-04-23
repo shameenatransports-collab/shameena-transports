@@ -214,8 +214,10 @@ const Contact = () => {
                             value={formData.name}
                             onChange={handleChange}
                             required
+                            maxLength={100}
                             placeholder="Enter your name"
                           />
+                          {errors.name && <p className="mt-1 text-xs text-destructive">{errors.name}</p>}
                         </div>
                         <div>
                           <label className="text-sm font-medium text-foreground mb-1 block">
@@ -227,8 +229,10 @@ const Contact = () => {
                             value={formData.phone}
                             onChange={handleChange}
                             required
+                            maxLength={15}
                             placeholder="+91 98765 43210"
                           />
+                          {errors.phone && <p className="mt-1 text-xs text-destructive">{errors.phone}</p>}
                         </div>
                       </div>
                       <div>
@@ -240,8 +244,10 @@ const Contact = () => {
                           type="email"
                           value={formData.email}
                           onChange={handleChange}
+                          maxLength={255}
                           placeholder="your@email.com"
                         />
+                        {errors.email && <p className="mt-1 text-xs text-destructive">{errors.email}</p>}
                       </div>
                       <div className="grid sm:grid-cols-2 gap-4">
                         <div>
@@ -253,8 +259,10 @@ const Contact = () => {
                             value={formData.pickup}
                             onChange={handleChange}
                             required
+                            maxLength={120}
                             placeholder="e.g., Coimbatore"
                           />
+                          {errors.pickup && <p className="mt-1 text-xs text-destructive">{errors.pickup}</p>}
                         </div>
                         <div>
                           <label className="text-sm font-medium text-foreground mb-1 block">
@@ -265,8 +273,10 @@ const Contact = () => {
                             value={formData.destination}
                             onChange={handleChange}
                             required
+                            maxLength={120}
                             placeholder="e.g., Chennai"
                           />
+                          {errors.destination && <p className="mt-1 text-xs text-destructive">{errors.destination}</p>}
                         </div>
                       </div>
                       <div>
@@ -278,8 +288,10 @@ const Contact = () => {
                           value={formData.goods}
                           onChange={handleChange}
                           required
+                          maxLength={120}
                           placeholder="e.g., Textile, Machinery, Construction Material"
                         />
+                        {errors.goods && <p className="mt-1 text-xs text-destructive">{errors.goods}</p>}
                       </div>
                       <div>
                         <label className="text-sm font-medium text-foreground mb-1 block">
@@ -289,9 +301,11 @@ const Contact = () => {
                           name="message"
                           value={formData.message}
                           onChange={handleChange}
+                          maxLength={500}
                           placeholder="Weight, dimensions, preferred date, special requirements..."
                           rows={4}
                         />
+                        {errors.message && <p className="mt-1 text-xs text-destructive">{errors.message}</p>}
                       </div>
                       <Button type="submit" size="lg" className="w-full gap-2" disabled={isSubmitting}>
                         <Send className="h-5 w-5" />
