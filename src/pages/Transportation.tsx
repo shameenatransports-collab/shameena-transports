@@ -24,6 +24,8 @@ import {
 } from "lucide-react";
 import fleetBg from "@/assets/fleet-bg.jpg";
 import { GetQuoteModal } from "@/components/transportation/GetQuoteModal";
+import { LeadEnquiryForm } from "@/components/lead/LeadEnquiryForm";
+import { localBusinessSchema, transportBusinessSchema, transportServiceSchema } from "@/lib/structured-data";
 
 const services = [
   {
@@ -31,7 +33,7 @@ const services = [
     title: "Full Load Transport",
     description: "Dedicated truck for your exclusive cargo across Tamil Nadu. Complete control, faster delivery with no intermediate stops.",
     isPrimary: true,
-    features: ["Dedicated lorry", "Direct delivery", "GPS tracking"],
+    features: ["Dedicated lorry", "Direct delivery", "Experienced handling"],
     link: "/transport/full-load"
   },
   {
@@ -79,7 +81,7 @@ const areas = [
 const whyChooseUs = [
   { text: "43+ years of trusted service", icon: Star },
   { text: "Own fleet of 12+ lorries", icon: Truck },
-  { text: "GPS tracking available", icon: MapPin },
+  { text: "Tamil Nadu route expertise", icon: MapPin },
   { text: "Fully insured transport", icon: Shield },
   { text: "24/7 customer support", icon: Clock },
   { text: "Competitive pricing", icon: Gauge },
@@ -97,18 +99,6 @@ const Transportation = () => {
     ]
   };
 
-  const serviceSchema = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Full Load Transport Tamil Nadu",
-    "provider": {
-      "@type": "LocalBusiness",
-      "name": "STA Corporate Solutions"
-    },
-    "areaServed": { "@type": "State", "name": "Tamil Nadu" },
-    "description": "Full Load dedicated lorry transport across Tamil Nadu since 1982."
-  };
-
   return (
     <>
       <Helmet>
@@ -118,7 +108,9 @@ const Transportation = () => {
         <meta property="og:title" content="Transportation Services | STA Corporate Solutions" />
         <meta property="og:description" content="Full Load transport across Tamil Nadu. 43+ years experience. 24/7 service." />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
-        <script type="application/ld+json">{JSON.stringify(serviceSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(localBusinessSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(transportBusinessSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(transportServiceSchema)}</script>
       </Helmet>
       <Layout>
         <main>
@@ -174,6 +166,14 @@ const Transportation = () => {
               </div>
             </div>
           </section>
+
+          <AnimatedSection className="py-12 md:py-16 bg-background">
+            <div className="container mx-auto px-4">
+              <div className="mx-auto max-w-3xl">
+                <LeadEnquiryForm />
+              </div>
+            </div>
+          </AnimatedSection>
 
           {/* Services */}
           <AnimatedSection className="py-20 md:py-28 bg-background">
