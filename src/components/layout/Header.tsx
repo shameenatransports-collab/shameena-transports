@@ -47,10 +47,8 @@ export function Header() {
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-apple",
-        scrolled || isOpen
-          ? "glass-strong border-b border-border/40"
-          : "bg-background/0 backdrop-blur-0 border-b border-transparent"
+        "fixed top-0 left-0 right-0 z-50 glass-strong border-b transition-all duration-500 ease-apple",
+        scrolled || isOpen ? "border-border/40 shadow-sm" : "border-border/25"
       )}
     >
       <div className="container mx-auto px-4">
