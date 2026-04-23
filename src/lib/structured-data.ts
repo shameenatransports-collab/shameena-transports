@@ -150,6 +150,43 @@ export const transportServiceSchema = {
   }
 };
 
+export const transportBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": ["LocalBusiness", "MovingCompany"],
+  "@id": "https://www.stacorporate.com/#transport-business",
+  "name": "STA Corporate Solutions Transport — Tamil Nadu",
+  "url": "https://www.stacorporate.com/transportation",
+  "telephone": "+91-94430-33055",
+  "image": "https://www.stacorporate.com/logo.png",
+  "priceRange": "$$",
+  "foundingDate": "1982",
+  "description": "Full load lorry transport and return load transport subject to route availability across Tamil Nadu from Coimbatore.",
+  "address": localBusinessSchema.address,
+  "geo": localBusinessSchema.geo,
+  "areaServed": localBusinessSchema.areaServed,
+  "makesOffer": [
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Full Load Lorry Transport", "serviceType": "Full Truck Load Transport" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Return Load Transport", "serviceType": "Return Load Transport" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Factory and Warehouse Shifting", "serviceType": "Commercial Relocation" } }
+  ]
+};
+
+export const createCityTransportSchema = (city: { name: string; slug: string; metaDescription: string; geo: { lat: string; lng: string } }) => ({
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": `https://www.stacorporate.com/${city.slug}#transport-service`,
+  "name": `Full Load Lorry Transport in ${city.name}, Tamil Nadu`,
+  "serviceType": "Full Truck Load Transport",
+  "description": city.metaDescription,
+  "provider": { "@id": "https://www.stacorporate.com/#transport-business" },
+  "areaServed": {
+    "@type": "City",
+    "name": city.name,
+    "geo": { "@type": "GeoCoordinates", "latitude": city.geo.lat, "longitude": city.geo.lng }
+  },
+  "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "priceCurrency": "INR" }
+});
+
 export const financialServiceSchema = {
   "@context": "https://schema.org",
   "@type": "FinancialService",
