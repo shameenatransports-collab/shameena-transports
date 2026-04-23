@@ -7,7 +7,8 @@ import { Badge } from "@/components/ui/badge";
 import { AnimatedSection } from "@/components/ui/animated-section";
 import { Truck, Banknote, Scale, MapPin, Phone, ArrowRight, CheckCircle2 } from "lucide-react";
 import { CITY_DATA, type CitySlug } from "@/lib/city-data";
-import { createBreadcrumbSchema } from "@/lib/structured-data";
+import { createBreadcrumbSchema, transportBusinessSchema, createCityTransportSchema } from "@/lib/structured-data";
+import { LeadEnquiryForm } from "@/components/lead/LeadEnquiryForm";
 
 const CityLanding = () => {
   const { pathname } = useLocation();
@@ -54,6 +55,7 @@ const CityLanding = () => {
     { name: "Home", url: "https://www.stacorporate.com" },
     { name: data.name, url },
   ]);
+  const cityTransportSchema = createCityTransportSchema(data);
 
   return (
     <>
@@ -70,6 +72,8 @@ const CityLanding = () => {
         <meta property="og:url" content={url} />
         <meta property="og:locale" content="en_IN" />
         <script type="application/ld+json">{JSON.stringify(localBusinessSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(transportBusinessSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(cityTransportSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumb)}</script>
       </Helmet>
@@ -111,6 +115,19 @@ const CityLanding = () => {
                   Why {data.name} Trusts STA Corporate Solutions
                 </h2>
                 <p className="text-muted-foreground leading-relaxed text-lg">{data.about}</p>
+                <Button variant="link" className="mt-4 px-0" asChild>
+                  <Link to="/services">View main transport services <ArrowRight className="w-4 h-4 ml-1" /></Link>
+                </Button>
+              </div>
+            </div>
+          </section>
+        </AnimatedSection>
+
+        <AnimatedSection>
+          <section className="py-12 md:py-16 bg-background">
+            <div className="container mx-auto px-4">
+              <div className="max-w-3xl mx-auto">
+                <LeadEnquiryForm city={data.name} />
               </div>
             </div>
           </section>
