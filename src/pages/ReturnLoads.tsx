@@ -28,19 +28,19 @@ import {
 import { returnLoadServiceSchema, localBusinessSchema, createBreadcrumbSchema } from "@/lib/structured-data";
 
 const popularRoutes = [
-  { from: "Coimbatore", to: "Chennai", savings: "30-40%" },
-  { from: "Tiruppur", to: "Bangalore", savings: "25-35%" },
-  { from: "Salem", to: "Madurai", savings: "30-40%" },
-  { from: "Erode", to: "Chennai", savings: "25-35%" },
-  { from: "Chennai", to: "Coimbatore", savings: "30-40%" },
-  { from: "Trichy", to: "Coimbatore", savings: "25-35%" },
+  { from: "Coimbatore", to: "Chennai", note: "Subject to route availability" },
+  { from: "Tiruppur", to: "Bangalore", note: "Subject to route availability" },
+  { from: "Salem", to: "Madurai", note: "Subject to route availability" },
+  { from: "Erode", to: "Chennai", note: "Subject to route availability" },
+  { from: "Chennai", to: "Coimbatore", note: "Subject to route availability" },
+  { from: "Trichy", to: "Coimbatore", note: "Subject to route availability" },
 ];
 
 const benefits = [
   {
     icon: TrendingDown,
-    title: "Save 30-40% on Transport",
-    description: "Since trucks are already returning, you pay significantly less than full load rates.",
+    title: "Route-Based Transport Pricing",
+    description: "Since trucks are already returning, pricing can be more economical than dedicated full load bookings.",
   },
   {
     icon: Truck,
@@ -85,7 +85,7 @@ const howItWorks = [
 const faqs = [
   {
     question: "What is Return Load transport?",
-    answer: "Return Load transport is when you use a truck that is already returning from a delivery to another location. Since the truck would otherwise return empty, we offer these trips at significantly reduced rates - typically 30-40% cheaper than booking a full load.",
+    answer: "Return Load transport is when you use a truck that is already returning from a delivery to another location. Since the truck would otherwise return empty, rates can be more economical than a dedicated full load booking. Every return load is subject to route availability.",
   },
   {
     question: "How do I check if Return Load is available for my route?",
@@ -133,26 +133,26 @@ const ReturnLoads = () => {
   return (
     <>
       <Helmet>
-        <title>Return Load Transport Tamil Nadu | Save 30-40% | STA Corporate Solutions</title>
+        <title>Return Load Transport Tamil Nadu | Route Availability | STA Corporate Solutions</title>
         <meta
           name="description"
-          content="Return Load transport in Tamil Nadu - Save 30-40% on transport costs. Available on popular routes: Coimbatore-Chennai, Tiruppur-Bangalore, Salem-Madurai. Call +91 94430 33055 to check availability."
+          content="Return Load transport in Tamil Nadu subject to route availability. Popular routes include Coimbatore-Chennai, Tiruppur-Bangalore, Salem-Madurai. Call +91 94430 33055 to check availability."
         />
         <meta
           name="keywords"
           content="return load transport tamil nadu, return load lorry coimbatore, cheap transport chennai, return load availability, part load transport, return lorry booking, discounted transport rates, return truck coimbatore chennai, return load tiruppur bangalore"
         />
         <link rel="canonical" href="https://www.stacorporate.com/return-loads" />
-        <meta property="og:title" content="Return Load Transport Tamil Nadu | Save 30-40% | STA Corporate Solutions" />
+        <meta property="og:title" content="Return Load Transport Tamil Nadu | STA Corporate Solutions" />
         <meta
           property="og:description"
-          content="Save 30-40% with Return Load transport. Popular routes: Coimbatore-Chennai, Tiruppur-Bangalore. Check availability now!"
+          content="Return Load transport subject to route availability. Popular routes: Coimbatore-Chennai, Tiruppur-Bangalore. Check availability now."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.stacorporate.com/return-loads" />
         <meta property="og:image" content="https://www.stacorporate.com/og-image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Return Load Transport | Save 30-40% | STA Corporate Solutions" />
+        <meta name="twitter:title" content="Return Load Transport | STA Corporate Solutions" />
         <meta name="twitter:description" content="Discounted Return Load transport on popular Tamil Nadu routes. Call to check availability." />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(returnLoadServiceSchema)}</script>
