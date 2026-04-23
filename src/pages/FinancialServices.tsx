@@ -8,14 +8,9 @@ import { AnimatedSection } from "@/components/ui/animated-section";
 import { 
   Phone, 
   CheckCircle,
-  User,
   Building2,
   Factory,
   Landmark,
-  Shield,
-  Home,
-  Car,
-  GraduationCap,
   TrendingUp,
   Banknote,
   IndianRupee,
@@ -50,27 +45,15 @@ const governmentSchemes = [
     ]
   },
   {
-    icon: GraduationCap,
-    title: "Education Loans",
-    description: "Government education financing schemes",
+    icon: Landmark,
+    title: "Industrial Funding Schemes",
+    description: "Guidance for eligible business, industry, and company funding schemes",
     schemes: [
-      "Central Sector Interest Subsidy",
-      "Vidya Lakshmi Portal Loans",
-      "Dr. Ambedkar Education Loan",
-      "Padho Pardesh - Minority Education",
-      "State Education Loan Schemes"
-    ]
-  },
-  {
-    icon: Home,
-    title: "Housing Schemes",
-    description: "Government housing and construction loans",
-    schemes: [
-      "Pradhan Mantri Awas Yojana (PMAY)",
-      "Credit-Linked Subsidy Scheme",
-      "NHB Refinance Scheme",
-      "HUDCO Home Loans",
-      "Rural Housing Fund"
+      "Industrial subsidy guidance",
+      "Term loan documentation support",
+      "Working capital scheme assistance",
+      "Manufacturing unit funding guidance",
+      "Government department application support"
     ]
   }
 ];
@@ -90,43 +73,17 @@ const privateBankLoans = [
     banks: ["HDFC", "ICICI", "Axis", "Kotak", "Yes Bank"]
   },
   {
-    icon: Home,
-    title: "Home Loans",
-    description: "Residential property purchase and construction",
-    features: [
-      "New Home Purchase",
-      "Home Construction",
-      "Balance Transfer",
-      "Top-Up Loans",
-      "Plot + Construction"
-    ],
-    banks: ["SBI", "HDFC", "LIC Housing", "ICICI", "Bajaj Housing"]
-  },
-  {
-    icon: Car,
-    title: "Vehicle Loans",
-    description: "Commercial and personal vehicle financing",
+    icon: Factory,
+    title: "Industrial & Machinery Loans",
+    description: "Funding assistance for factories, machinery, and industrial expansion",
     features: [
       "Commercial Vehicle Loan",
-      "Car Loans",
-      "Two-Wheeler Loans",
+      "Machinery Finance",
+      "Equipment Loans",
       "Fleet Financing",
-      "Used Vehicle Loans"
+      "Factory Expansion Loans"
     ],
     banks: ["HDFC", "ICICI", "Axis", "Mahindra Finance", "Shriram Finance"]
-  },
-  {
-    icon: User,
-    title: "Personal Loans",
-    description: "Unsecured personal financing solutions",
-    features: [
-      "Salaried Personal Loans",
-      "Self-Employed Loans",
-      "Professional Loans",
-      "Marriage Loans",
-      "Medical Emergency Loans"
-    ],
-    banks: ["HDFC", "ICICI", "Bajaj Finserv", "Tata Capital", "Fullerton"]
   }
 ];
 
@@ -155,13 +112,13 @@ const specialSchemes = [
 ];
 
 const whyChooseUs = [
-  "Lowest processing fees in the market",
-  "Direct bank tie-ups for faster approval",
+  "Transparent assistance for eligible business funding requirements",
+  "Guidance for MSME, Mudra, and government scheme applications",
   "Expert guidance on scheme eligibility",
   "Complete documentation support",
-  "Higher loan sanction rates",
+  "Business, industry, and company-focused loan assistance",
   "Subsidy claim assistance",
-  "Post-disbursement support",
+  "Application follow-up support as per lender or department process",
   "43+ years of trusted service"
 ];
 
