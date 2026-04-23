@@ -1,4 +1,4 @@
-import { Truck, Users, MapPin, Clock } from "lucide-react";
+import { Truck, Banknote, Scale, Clock } from "lucide-react";
 
 const stats = [
   {
@@ -9,21 +9,21 @@ const stats = [
   },
   {
     icon: Truck,
-    value: "10,000+",
-    label: "Successful Deliveries",
-    description: "And counting",
+    value: "12+",
+    label: "Fleet Vehicles",
+    description: "Trailers & lorries",
   },
   {
-    icon: Users,
-    value: "500+",
-    label: "Happy Clients",
-    description: "Trusted partners",
+    icon: Banknote,
+    value: "100%",
+    label: "Loan Guidance",
+    description: "Business-focused assistance",
   },
   {
-    icon: MapPin,
-    value: "50+",
-    label: "Service Locations",
-    description: "Across Tamil Nadu",
+    icon: Scale,
+    value: "TN",
+    label: "Legal Support",
+    description: "Corporate & business matters",
   },
 ];
 
