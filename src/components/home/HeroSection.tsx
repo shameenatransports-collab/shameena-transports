@@ -85,7 +85,7 @@ export function HeroSection() {
             transition={{ duration: 1, ease: easeApple, delay: 0.5 }}
             className="text-sm md:text-base text-primary-foreground/60 mb-12 tracking-tight"
           >
-            43+ years · Lowest commission · 38 districts
+            43+ years · Coimbatore HQ · Tamil Nadu business support
           </motion.p>
 
           {/* CTAs */}
