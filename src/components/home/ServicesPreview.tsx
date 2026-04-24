@@ -59,7 +59,7 @@ export function ServicesPreview() {
         </ScrollReveal>
 
         {/* Cinematic vertical-by-vertical reveal */}
-        <div className="space-y-24 md:space-y-32 max-w-6xl mx-auto">
+        <div className="space-y-16 md:space-y-20 max-w-6xl mx-auto">
           {verticals.map((v, idx) => (
             <ScrollReveal key={v.num} stagger>
               <article
@@ -68,21 +68,21 @@ export function ServicesPreview() {
                 }`}
               >
                 {/* Number + visual */}
-                <ScrollRevealItem className="lg:col-span-5">
-                  <div className="relative aspect-[4/5] rounded-3xl overflow-hidden bg-gradient-to-br from-muted via-background to-muted/50 border border-border/50">
+                <ScrollRevealItem className="lg:col-span-4">
+                  <div className="relative aspect-square max-w-[280px] mx-auto lg:mx-0 rounded-2xl overflow-hidden bg-gradient-to-br from-muted via-background to-muted/50 border border-border/50">
                     <div className="absolute inset-0 flex items-center justify-center">
                       <v.icon
-                        className="w-40 h-40 text-primary/15"
+                        className="w-20 h-20 text-primary/15"
                         strokeWidth={1}
                       />
                     </div>
-                    <div className="absolute top-6 left-6">
-                      <span className="text-display-lg text-primary/20 font-bold tabular-nums">
+                    <div className="absolute top-4 left-4">
+                      <span className="text-4xl font-bold text-primary/20 tabular-nums leading-none">
                         {v.num}
                       </span>
                     </div>
-                    <div className="absolute bottom-6 left-6 right-6">
-                      <span className="inline-block px-3 py-1 text-[10px] font-semibold tracking-[0.16em] uppercase rounded-full bg-secondary/10 text-secondary border border-secondary/20">
+                    <div className="absolute bottom-4 left-4 right-4">
+                      <span className="inline-block px-2.5 py-1 text-[9px] font-semibold tracking-[0.16em] uppercase rounded-full bg-secondary/10 text-secondary border border-secondary/20">
                         {v.badge}
                       </span>
                     </div>
@@ -90,7 +90,7 @@ export function ServicesPreview() {
                 </ScrollRevealItem>
 
                 {/* Content */}
-                <ScrollRevealItem className="lg:col-span-7">
+                <ScrollRevealItem className="lg:col-span-8">
                   <p className="text-eyebrow text-secondary mb-4">{v.eyebrow}</p>
                   <h3 className="text-display-md text-foreground mb-2">{v.headline}</h3>
                   <p className="text-sm font-medium text-muted-foreground/80 mb-5 tracking-tight">
