@@ -59,7 +59,7 @@ export function ServicesPreview() {
         </ScrollReveal>
 
         {/* Cinematic vertical-by-vertical reveal */}
-        <div className="space-y-24 md:space-y-32 max-w-6xl mx-auto">
+        <div className="space-y-16 md:space-y-20 max-w-6xl mx-auto">
           {verticals.map((v, idx) => (
             <ScrollReveal key={v.num} stagger>
               <article
