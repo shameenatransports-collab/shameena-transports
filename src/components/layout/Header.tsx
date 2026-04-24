@@ -135,7 +135,7 @@ export function Header() {
             isOpen ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0"
           )}
         >
-          <nav className="my-2 rounded-3xl border border-border/60 bg-background/95 py-4 shadow-xl backdrop-blur-2xl">
+          <nav className="my-2 rounded-3xl border border-border/60 bg-background py-4 shadow-xl">
             <div className="flex flex-col gap-1">
               {navLinks.slice(0, 2).map((l) => (
                 <MobileLink key={l.href} to={l.href} active={location.pathname === l.href}>
