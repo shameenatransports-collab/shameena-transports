@@ -1,6 +1,9 @@
-import { ReactNode } from "react";
+import { ReactNode, createContext, useContext, useEffect } from "react";
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { clientLogger } from "@/lib/client-logger";
+
+const ScrollRevealContext = createContext(false);
 
 interface ScrollRevealProps {
   children: ReactNode;
@@ -24,6 +27,17 @@ export function ScrollReveal({
   as = "div",
 }: ScrollRevealProps) {
   const reduced = useReducedMotion();
+  const insideAnotherReveal = useContext(ScrollRevealContext);
+
+  useEffect(() => {
+    if (insideAnotherReveal && import.meta.env.DEV) {
+      clientLogger.log(
+        "warn",
+        "Nested <ScrollReveal>/<AnimatedSection> detected. The outer wrapper can hide content until its bounds enter the viewport. Remove one of the wrappers.",
+        { component: "ScrollReveal" }
+      );
+    }
+  }, [insideAnotherReveal]);
 
   const variants: Variants = {
     hidden: { opacity: 0, y: reduced ? 0 : y },
@@ -43,15 +57,17 @@ export function ScrollReveal({
   const MotionTag = motion[as];
 
   return (
-    <MotionTag
-      className={cn(className)}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, amount: 0.01, margin: "0px 0px 15% 0px" }}
-      variants={variants}
-    >
-      {children}
-    </MotionTag>
+    <ScrollRevealContext.Provider value={true}>
+      <MotionTag
+        className={cn(className)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.01, margin: "0px 0px 15% 0px" }}
+        variants={variants}
+      >
+        {children}
+      </MotionTag>
+    </ScrollRevealContext.Provider>
   );
 }
 
