@@ -49,7 +49,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: reduced ? 0 : 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: easeApple, delay: 0.1 }}
-            className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-background/95 text-[11px] font-bold tracking-[0.18em] uppercase text-primary shadow-xl ring-1 ring-primary-foreground/40 backdrop-blur-2xl mb-8"
+            className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-background text-[11px] font-bold tracking-[0.18em] uppercase text-primary shadow-xl ring-1 ring-primary-foreground/40 mb-8"
           >
             <span className="h-1.5 w-1.5 rounded-full bg-secondary" />
             Trusted Since 1982 · Coimbatore
@@ -134,7 +134,7 @@ export function HeroSection() {
                 className="group glass rounded-2xl p-5 text-left hover-lift focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary"
               >
                 <div className="flex items-start justify-between mb-3">
-                  <div className="w-10 h-10 rounded-xl bg-secondary/15 backdrop-blur-sm flex items-center justify-center">
+                  <div className="w-10 h-10 rounded-xl bg-secondary/15 flex items-center justify-center">
                     <v.icon className="h-4.5 w-4.5 text-secondary" strokeWidth={2} />
                   </div>
                   <ArrowUpRight className="h-4 w-4 text-primary-foreground/40 group-hover:text-primary-foreground transition-colors duration-500 ease-apple" />
