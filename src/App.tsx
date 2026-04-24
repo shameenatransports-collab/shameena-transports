@@ -6,6 +6,8 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import { AnalyticsProvider } from "@/components/analytics/AnalyticsProvider";
+import { ErrorBoundary } from "@/components/system/ErrorBoundary";
+import { ContentWatchdog } from "@/components/system/ContentWatchdog";
 
 import Index from "./pages/Index";
 
@@ -21,6 +23,7 @@ const Contact = lazy(() => import("./pages/Contact"));
 const Privacy = lazy(() => import("./pages/Privacy"));
 const Terms = lazy(() => import("./pages/Terms"));
 const CityLanding = lazy(() => import("./pages/CityLanding"));
+const Debug = lazy(() => import("./pages/Debug"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 const queryClient = new QueryClient();
@@ -37,47 +40,53 @@ function PageLoader() {
 }
 
 const App = () => (
-  <HelmetProvider>
-    <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        <Toaster />
-        <Sonner />
-        <BrowserRouter>
-          <AnalyticsProvider>
-            <Suspense fallback={<PageLoader />}>
-              <Routes>
-                <Route path="/" element={<Index />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/transportation" element={<Transportation />} />
-                <Route path="/financial-services" element={<FinancialServices />} />
-                <Route path="/legal-services" element={<LegalServices />} />
-                <Route path="/services" element={<Services />} />
-                <Route path="/fleet" element={<Fleet />} />
-                <Route path="/return-loads" element={<ReturnLoads />} />
-                <Route path="/service-areas" element={<ServiceAreas />} />
-                <Route path="/contact" element={<Contact />} />
-                <Route path="/privacy" element={<Privacy />} />
-                <Route path="/terms" element={<Terms />} />
-                {/* City landing pages — Tamil Nadu local SEO */}
-                <Route path="/coimbatore" element={<CityLanding />} />
-                <Route path="/chennai" element={<CityLanding />} />
-                <Route path="/tiruppur" element={<CityLanding />} />
-                <Route path="/madurai" element={<CityLanding />} />
-                <Route path="/erode" element={<CityLanding />} />
-                <Route path="/salem" element={<CityLanding />} />
-                <Route path="/trichy" element={<CityLanding />} />
-                <Route path="/tirunelveli" element={<CityLanding />} />
-                {/* Redirect old real estate routes */}
-                <Route path="/overseas-real-estate" element={<Navigate to="/" replace />} />
-                <Route path="/dubai-real-estate" element={<Navigate to="/" replace />} />
-                <Route path="*" element={<NotFound />} />
-              </Routes>
-            </Suspense>
-          </AnalyticsProvider>
-        </BrowserRouter>
-      </TooltipProvider>
-    </QueryClientProvider>
-  </HelmetProvider>
+  <ErrorBoundary scope="App">
+    <HelmetProvider>
+      <QueryClientProvider client={queryClient}>
+        <TooltipProvider>
+          <Toaster />
+          <Sonner />
+          <BrowserRouter>
+            <AnalyticsProvider>
+              <ContentWatchdog />
+              <ErrorBoundary scope="Routes">
+                <Suspense fallback={<PageLoader />}>
+                  <Routes>
+                    <Route path="/" element={<Index />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/transportation" element={<Transportation />} />
+                    <Route path="/financial-services" element={<FinancialServices />} />
+                    <Route path="/legal-services" element={<LegalServices />} />
+                    <Route path="/services" element={<Services />} />
+                    <Route path="/fleet" element={<Fleet />} />
+                    <Route path="/return-loads" element={<ReturnLoads />} />
+                    <Route path="/service-areas" element={<ServiceAreas />} />
+                    <Route path="/contact" element={<Contact />} />
+                    <Route path="/privacy" element={<Privacy />} />
+                    <Route path="/terms" element={<Terms />} />
+                    <Route path="/debug" element={<Debug />} />
+                    {/* City landing pages — Tamil Nadu local SEO */}
+                    <Route path="/coimbatore" element={<CityLanding />} />
+                    <Route path="/chennai" element={<CityLanding />} />
+                    <Route path="/tiruppur" element={<CityLanding />} />
+                    <Route path="/madurai" element={<CityLanding />} />
+                    <Route path="/erode" element={<CityLanding />} />
+                    <Route path="/salem" element={<CityLanding />} />
+                    <Route path="/trichy" element={<CityLanding />} />
+                    <Route path="/tirunelveli" element={<CityLanding />} />
+                    {/* Redirect old real estate routes */}
+                    <Route path="/overseas-real-estate" element={<Navigate to="/" replace />} />
+                    <Route path="/dubai-real-estate" element={<Navigate to="/" replace />} />
+                    <Route path="*" element={<NotFound />} />
+                  </Routes>
+                </Suspense>
+              </ErrorBoundary>
+            </AnalyticsProvider>
+          </BrowserRouter>
+        </TooltipProvider>
+      </QueryClientProvider>
+    </HelmetProvider>
+  </ErrorBoundary>
 );
 
 export default App;
