@@ -1,6 +1,9 @@
-import { ReactNode } from "react";
+import { ReactNode, createContext, useContext, useEffect } from "react";
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { clientLogger } from "@/lib/client-logger";
+
+const ScrollRevealContext = createContext(false);
 
 interface ScrollRevealProps {
   children: ReactNode;
