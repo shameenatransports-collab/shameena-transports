@@ -36,33 +36,19 @@ const Index = () => {
       <Layout>
         <main>
           <HeroSection />
-          <AnimatedSection>
-            <TrustBadges />
-          </AnimatedSection>
-          <AnimatedSection delay={100}>
-            <ServicesPreview />
-          </AnimatedSection>
-          <AnimatedSection delay={100}>
-            <WhyChooseUs />
-          </AnimatedSection>
-          <AnimatedSection delay={100}>
-            <CitiesWeServe />
-          </AnimatedSection>
-          <AnimatedSection delay={100}>
-            <section className="bg-background py-12 md:py-16">
-              <div className="container mx-auto px-4">
-                <div className="mx-auto max-w-3xl">
-                  <LeadEnquiryForm />
-                </div>
+          <TrustBadges />
+          <ServicesPreview />
+          <WhyChooseUs />
+          <CitiesWeServe />
+          <section className="bg-background py-12 md:py-16">
+            <div className="container mx-auto px-4">
+              <div className="mx-auto max-w-3xl">
+                <LeadEnquiryForm />
               </div>
-            </section>
-          </AnimatedSection>
-          <AnimatedSection delay={100}>
-            <FAQSection />
-          </AnimatedSection>
-          <AnimatedSection delay={100}>
-            <CTASection />
-          </AnimatedSection>
+            </div>
+          </section>
+          <FAQSection />
+          <CTASection />
         </main>
       </Layout>
     </>
