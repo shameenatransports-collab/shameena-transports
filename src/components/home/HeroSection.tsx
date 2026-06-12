@@ -1,14 +1,16 @@
 import { Link } from "react-router-dom";
 import { motion, useReducedMotion } from "framer-motion";
-import { Phone, MessageCircle, ArrowUpRight, Truck, Banknote, Scale } from "lucide-react";
+import { Phone, MessageCircle, ArrowUpRight, Truck, Banknote, Scale, GraduationCap, Building2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Parallax } from "@/components/ui/parallax";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const verticals = [
-  { icon: Truck, title: "Transportation", href: "/transportation", desc: "Full Load lorry across Tamil Nadu" },
-  { icon: Banknote, title: "Financial Services", href: "/financial-services", desc: "MSME · Mudra · Home · Business" },
-  { icon: Scale, title: "Legal Services", href: "/legal-services", desc: "All 38 districts of Tamil Nadu" },
+  { icon: Truck, title: "Transportation", href: "/transportation", desc: "Full Load lorry across South India" },
+  { icon: Banknote, title: "Financial Services", href: "/financial-services", desc: "MSME · Mudra · Business" },
+  { icon: Scale, title: "Legal Services", href: "/legal-services", desc: "Documentation · Registrations" },
+  { icon: GraduationCap, title: "Edu Consultancy", href: "/edu-consultancy", desc: "Degree transfer · Academic mobility" },
+  { icon: Building2, title: "Real Estate", href: "/real-estate", desc: "Property discovery · South India" },
 ];
 
 const easeApple = [0.22, 1, 0.36, 1] as const;
@@ -21,7 +23,6 @@ export function HeroSection() {
       className="relative isolate min-h-[100svh] flex items-center overflow-hidden"
       aria-label="Hero"
     >
-      {/* Parallax background */}
       <Parallax className="absolute inset-0 -z-10" distance={80} scaleTo={1.12}>
         <img
           src={heroBg}
@@ -32,7 +33,6 @@ export function HeroSection() {
         />
       </Parallax>
 
-      {/* Cinematic overlay */}
       <div
         aria-hidden
         className="absolute inset-0 -z-10 bg-gradient-to-b from-primary/85 via-primary/80 to-primary/95"
@@ -44,7 +44,6 @@ export function HeroSection() {
 
       <div className="container mx-auto px-4 pt-32 pb-20 md:pt-40 md:pb-28 relative">
         <div className="max-w-5xl mx-auto text-center">
-          {/* Eyebrow */}
           <motion.div
             initial={{ opacity: 0, y: reduced ? 0 : 12 }}
             animate={{ opacity: 1, y: 0 }}
@@ -52,10 +51,9 @@ export function HeroSection() {
             className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-background text-[11px] font-bold tracking-[0.18em] uppercase text-primary shadow-xl ring-1 ring-primary-foreground/40 mb-8"
           >
             <span className="h-1.5 w-1.5 rounded-full bg-secondary" />
-            Trusted Since 1982 · Coimbatore
+            Trusted Since 1982 · Five Practices
           </motion.div>
 
-          {/* Display headline */}
           <motion.h1
             initial={{ opacity: 0, y: reduced ? 0 : 24 }}
             animate={{ opacity: 1, y: 0 }}
@@ -69,15 +67,13 @@ export function HeroSection() {
             </span>
           </motion.h1>
 
-          {/* Sub */}
           <motion.p
             initial={{ opacity: 0, y: reduced ? 0 : 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, ease: easeApple, delay: 0.35 }}
             className="text-headline text-primary-foreground/85 max-w-2xl mx-auto mb-3"
           >
-            Transportation, Financial & Legal Services for businesses across
-            Coimbatore and Tamil Nadu.
+            Transportation, Financial, Legal, Edu Consultancy and Real Estate — five integrated practices for South India.
           </motion.p>
           <motion.p
             initial={{ opacity: 0 }}
@@ -85,15 +81,14 @@ export function HeroSection() {
             transition={{ duration: 1, ease: easeApple, delay: 0.5 }}
             className="text-sm md:text-base text-primary-foreground/60 mb-12 tracking-tight"
           >
-            43+ years · Coimbatore HQ · Tamil Nadu business support
+            43+ years · Coimbatore HQ · Tamil Nadu, Karnataka, Telangana, Andhra Pradesh, Kerala
           </motion.p>
 
-          {/* CTAs */}
           <motion.div
             initial={{ opacity: 0, y: reduced ? 0 : 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: easeApple, delay: 0.6 }}
-            className="flex flex-col sm:flex-row gap-3 justify-center mb-20"
+            className="flex flex-col sm:flex-row gap-3 justify-center mb-16"
           >
             <a href="tel:+919443033055">
               <Button
@@ -120,36 +115,35 @@ export function HeroSection() {
             </a>
           </motion.div>
 
-          {/* Verticals — glass row */}
+          {/* Verticals — 5-card row */}
           <motion.div
             initial={{ opacity: 0, y: reduced ? 0 : 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: easeApple, delay: 0.8 }}
-            className="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-4xl mx-auto"
+            className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 max-w-6xl mx-auto"
           >
             {verticals.map((v) => (
               <Link
                 key={v.title}
                 to={v.href}
-                className="group rounded-2xl p-5 text-left hover-lift bg-primary-foreground/10 backdrop-blur-md border border-primary-foreground/20 hover:bg-primary-foreground/15 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary"
+                className="group rounded-2xl p-4 text-left hover-lift bg-primary-foreground/10 backdrop-blur-md border border-primary-foreground/20 hover:bg-primary-foreground/15 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary"
               >
                 <div className="flex items-start justify-between mb-3">
-                  <div className="w-10 h-10 rounded-xl bg-secondary/15 flex items-center justify-center">
-                    <v.icon className="h-4.5 w-4.5 text-secondary" strokeWidth={2} />
+                  <div className="w-9 h-9 rounded-xl bg-secondary/15 flex items-center justify-center">
+                    <v.icon className="h-4 w-4 text-secondary" strokeWidth={2} />
                   </div>
-                  <ArrowUpRight className="h-4 w-4 text-primary-foreground/40 group-hover:text-primary-foreground transition-colors duration-500 ease-apple" />
+                  <ArrowUpRight className="h-3.5 w-3.5 text-primary-foreground/40 group-hover:text-primary-foreground transition-colors duration-500 ease-apple" />
                 </div>
-                <h3 className="text-[15px] font-semibold text-primary-foreground tracking-tight mb-1">
+                <h3 className="text-[13.5px] font-semibold text-primary-foreground tracking-tight mb-1">
                   {v.title}
                 </h3>
-                <p className="text-[12.5px] text-primary-foreground/75">{v.desc}</p>
+                <p className="text-[11.5px] text-primary-foreground/75 leading-snug">{v.desc}</p>
               </Link>
             ))}
           </motion.div>
         </div>
       </div>
 
-      {/* Scroll cue */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
