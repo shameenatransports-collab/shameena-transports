@@ -4,7 +4,7 @@ import { Shield, Clock, Users, Award, Target, Heart } from "lucide-react";
 import { CTASection } from "@/components/home/CTASection";
 import { Picture } from "@/components/ui/picture";
 import fleetBg from "@/assets/fleet-bg.jpg";
-import logo from "@/assets/sta-logo.png";
+
 import { organizationSchema, localBusinessSchema, createBreadcrumbSchema } from "@/lib/structured-data";
 
 const values = [
