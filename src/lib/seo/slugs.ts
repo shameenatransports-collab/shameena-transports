@@ -1,4 +1,4 @@
-import { CITIES, City } from "./cities";
+import { CITIES, CORRIDORS, City } from "./cities";
 import { Pillar, PILLARS, REGISTRATIONS, BHK_TYPES } from "./pillars";
 
 export const SITE_URL = "https://stacorps.lovable.app";
@@ -74,7 +74,7 @@ export function enumerateAllUrls(): SitemapEntry[] {
   }
 
   // Transportation corridors
-  for (const c of (await import("./cities")).CORRIDORS) {
+  for (const c of CORRIDORS) {
     out.push({ path: corridorUrl(c.slug), priority: "0.7", changefreq: "monthly" });
   }
 
