@@ -115,50 +115,55 @@ const Transportation = () => {
       <Layout>
         <main>
           {/* Hero Section */}
-          <section className="relative min-h-[80vh] flex items-center">
-            <div 
-              className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          <section className="relative isolate min-h-[88svh] flex items-center overflow-hidden">
+            <div
+              className="absolute inset-0 -z-10 bg-cover bg-center"
               style={{ backgroundImage: `url(${fleetBg})` }}
-            >
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/85 to-primary/60" />
-            </div>
-            <div className="container mx-auto px-4 relative z-10 py-20">
-              <div className="max-w-3xl">
-                <Badge className="mb-6 bg-secondary text-secondary-foreground text-sm px-4 py-2">
-                  <Clock className="h-4 w-4 mr-2" />
-                  Since 1982 – 43 Years of Excellence
-                </Badge>
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6 leading-tight">
-                  Transportation Services
+            />
+            <div aria-hidden className="absolute inset-0 -z-10 bg-gradient-to-b from-primary/90 via-primary/85 to-primary/95" />
+            <div aria-hidden className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,_hsl(var(--primary-glow)/0.3),_transparent_60%)]" />
+
+            <div className="container mx-auto px-4 pt-32 pb-44 md:pt-40 md:pb-52 relative">
+              <div className="max-w-4xl">
+                <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-background text-[11px] font-bold tracking-[0.18em] uppercase text-primary shadow-xl ring-1 ring-primary-foreground/40 mb-8">
+                  <span className="h-1.5 w-1.5 rounded-full bg-secondary" />
+                  Logistics · Since 1982
+                </div>
+                <h1 className="text-display-2xl text-primary-foreground mb-6">
+                  Transportation
+                  <br />
+                  <span className="bg-gradient-to-r from-secondary via-secondary to-primary-foreground bg-clip-text text-transparent">
+                    across Tamil Nadu.
+                  </span>
                 </h1>
-                <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 leading-relaxed">
-                  Full Load lorry transport across Tamil Nadu. <strong className="text-secondary">Dedicated trucks</strong>, complete control, 
-                  and safe delivery with our own fleet.
+                <p className="text-headline text-primary-foreground/85 max-w-2xl mb-10">
+                  Full Load lorry transport with our own fleet of 12+ vehicles. Dedicated trucks,
+                  complete control, disciplined route coordination.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4">
+                <div className="flex flex-col sm:flex-row gap-3">
                   <GetQuoteModal />
                   <a href="tel:+919443033055">
-                    <Button size="lg" variant="secondary" className="gap-2 text-lg px-8 py-6">
-                      <Phone className="h-5 w-5" />
-                      Call: +91 94430 33055
+                    <Button size="lg" className="rounded-full px-7 h-12 gap-2 bg-secondary hover:bg-secondary/90 text-secondary-foreground text-[14px] font-medium shadow-xl ease-apple">
+                      <Phone className="h-4 w-4" />
+                      +91 94430 33055
                     </Button>
                   </a>
                 </div>
               </div>
             </div>
-            
-            {/* Stats Overlay */}
-            <div className="absolute bottom-0 left-0 right-0 z-10">
+
+            {/* Glass stats strip */}
+            <div className="absolute bottom-0 left-0 right-0 z-10 pb-6">
               <div className="container mx-auto px-4">
-                <div className="bg-card/95 backdrop-blur-md rounded-t-2xl shadow-2xl p-6 md:p-8">
-                  <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div className="glass rounded-2xl p-5 md:p-7">
+                  <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-border/40">
                     {stats.map((stat, index) => (
-                      <div key={index} className="text-center">
-                        <div className="w-12 h-12 mx-auto mb-3 rounded-xl bg-accent/10 flex items-center justify-center">
-                          <stat.icon className="h-6 w-6 text-accent" />
+                      <div key={index} className="px-4 md:px-6 first:pl-0">
+                        <div className="flex items-center gap-2 mb-2">
+                          <stat.icon className="h-4 w-4 text-secondary" />
+                          <span className="text-[10px] font-semibold tracking-[0.16em] uppercase text-muted-foreground">{stat.label}</span>
                         </div>
-                        <div className="text-2xl md:text-3xl font-bold text-foreground">{stat.value}</div>
-                        <div className="text-sm text-muted-foreground">{stat.label}</div>
+                        <div className="text-2xl md:text-3xl font-bold text-foreground tabular-nums tracking-tight">{stat.value}</div>
                       </div>
                     ))}
                   </div>
