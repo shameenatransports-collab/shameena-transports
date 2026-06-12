@@ -27,9 +27,11 @@ export function HeroSection() {
         <img
           src={heroBg}
           alt=""
+          width={1920}
+          height={1080}
           className="w-full h-[120%] object-cover"
           loading="eager"
-          fetchPriority="high"
+          {...({ fetchpriority: "high" } as React.ImgHTMLAttributes<HTMLImageElement>)}
         />
       </Parallax>
 
