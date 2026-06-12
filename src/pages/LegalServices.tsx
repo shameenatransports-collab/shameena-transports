@@ -272,51 +272,60 @@ const LegalServices = () => {
       <Layout>
         <main>
           {/* Hero Section */}
-          <section className="relative min-h-[80vh] flex items-center bg-gradient-to-br from-primary via-primary/95 to-accent/90">
-            <div className="absolute inset-0 opacity-10">
-              <div className="absolute inset-0" style={{
-                backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M54.627 0l.83.828-1.415 1.415L51.8 0h2.827zM5.373 0l-.83.828L5.96 2.243 8.2 0H5.374zM48.97 0l3.657 3.657-1.414 1.414L46.143 0h2.828zM11.03 0L7.372 3.657 8.787 5.07 13.857 0H11.03zm32.284 0L49.8 6.485 48.384 7.9l-7.9-7.9h2.83zM16.686 0L10.2 6.485 11.616 7.9l7.9-7.9h-2.83zM22.344 0L13.858 8.485 15.272 9.9l9.9-9.9h-2.828zM32 0l-3.657 3.657 1.414 1.414L searching 0H32zM0 5.373l.828-.83 1.415 1.415L0 8.2V5.374zm0 5.656l.828-.829 5.07 5.07-1.414 1.415L0 11.03zm0 5.656l.828-.828 8.485 8.485-1.414 1.414L0 13.857v2.828zm0 5.657l.828-.828 11.9 11.9-1.414 1.414L0 22.344v2.828z' fill='%23ffffff' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E")`,
-              }} />
-            </div>
-            <div className="container mx-auto px-4 relative z-10 py-20">
-              <div className="max-w-3xl">
-                <Badge className="mb-6 bg-secondary text-secondary-foreground text-sm px-4 py-2">
-                  <Scale className="h-4 w-4 mr-2" />
-                  Trusted Legal Partners in Tamil Nadu
-                </Badge>
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6 leading-tight">
-                  Legal Services
+          <section className="relative isolate min-h-[88svh] flex items-center overflow-hidden bg-primary">
+            <div aria-hidden className="absolute inset-0 -z-10 bg-gradient-to-br from-primary via-primary to-primary/90" />
+            <div aria-hidden className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_bottom_left,_hsl(var(--primary-glow)/0.3),_transparent_55%)]" />
+
+            <div className="container mx-auto px-4 pt-32 pb-44 md:pt-40 md:pb-52 relative">
+              <div className="max-w-4xl">
+                <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-background text-[11px] font-bold tracking-[0.18em] uppercase text-primary shadow-xl ring-1 ring-primary-foreground/40 mb-8">
+                  <span className="h-1.5 w-1.5 rounded-full bg-secondary" />
+                  Counsel · All Tamil Nadu Districts
+                </div>
+                <h1 className="text-display-2xl text-primary-foreground mb-6">
+                  Confidence at
+                  <br />
+                  <span className="bg-gradient-to-r from-secondary via-secondary to-primary-foreground bg-clip-text text-transparent">
+                    every signature.
+                  </span>
                 </h1>
-                <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 leading-relaxed">
-                  Comprehensive legal solutions for <strong className="text-secondary">individuals</strong>, <strong className="text-secondary">businesses</strong>, and <strong className="text-secondary">corporates</strong>. 
-                  Documentation, compliance and consultation support across Tamil Nadu.
+                <p className="text-headline text-primary-foreground/85 max-w-2xl mb-10">
+                  Property, company, litigation, IP and compliance documentation support for individuals,
+                  businesses and corporates across Tamil Nadu.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4">
+                <div className="flex flex-col sm:flex-row gap-3">
                   <a href="tel:+919443033055">
-                    <Button size="lg" variant="secondary" className="gap-2 text-lg px-8 py-6">
-                      <Phone className="h-5 w-5" />
-                      Legal Consultation: +91 94430 33055
+                    <Button size="lg" className="rounded-full px-7 h-12 gap-2 bg-secondary hover:bg-secondary/90 text-secondary-foreground text-[14px] font-medium shadow-xl ease-apple">
+                      <Phone className="h-4 w-4" />
+                      +91 94430 33055
+                    </Button>
+                  </a>
+                  <a href="https://wa.me/919443033055?text=Hi%2C%20I%20need%20legal%20consultation" target="_blank" rel="noopener noreferrer">
+                    <Button size="lg" variant="outline" className="rounded-full px-7 h-12 gap-2 glass-subtle border-primary-foreground/25 text-primary-foreground hover:bg-primary-foreground/10 text-[14px] font-medium ease-apple">
+                      <Scale className="h-4 w-4" />
+                      Legal Consultation
                     </Button>
                   </a>
                 </div>
               </div>
             </div>
-            
-            {/* Stats */}
-            <div className="absolute bottom-8 left-0 right-0 z-10">
+
+            <div className="absolute bottom-0 left-0 right-0 z-10 pb-6">
               <div className="container mx-auto px-4">
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-                  {[
-                    { value: "1982", label: "Trusted Since" },
-                    { value: "TN", label: "Tamil Nadu Support" },
-                    { value: "B2B", label: "Business Legal Focus" },
-                    { value: "Doc", label: "Documentation Help" }
-                  ].map((stat, index) => (
-                    <div key={index} className="text-center p-4 bg-primary-foreground/10 backdrop-blur-sm rounded-xl">
-                      <div className="text-2xl md:text-3xl font-bold text-secondary">{stat.value}</div>
-                      <div className="text-sm text-primary-foreground/80">{stat.label}</div>
-                    </div>
-                  ))}
+                <div className="glass rounded-2xl p-5 md:p-7">
+                  <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-border/40">
+                    {[
+                      { value: "1982", label: "Trusted Since" },
+                      { value: "38", label: "TN Districts" },
+                      { value: "B2B", label: "Business Focus" },
+                      { value: "Docs", label: "Full Support" },
+                    ].map((stat, i) => (
+                      <div key={i} className="px-4 md:px-6 first:pl-0">
+                        <div className="text-[10px] font-semibold tracking-[0.16em] uppercase text-muted-foreground mb-2">{stat.label}</div>
+                        <div className="text-2xl md:text-3xl font-bold text-foreground tabular-nums tracking-tight">{stat.value}</div>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>

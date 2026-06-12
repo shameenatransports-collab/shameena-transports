@@ -182,50 +182,62 @@ const FinancialServices = () => {
       <Layout>
         <main>
           {/* Hero Section */}
-          <section className="relative min-h-[80vh] flex items-center bg-gradient-to-br from-primary via-primary/95 to-accent/90">
-            <div className="absolute inset-0 opacity-10">
-              <div className="absolute inset-0" style={{
-                backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-              }} />
-            </div>
-            <div className="container mx-auto px-4 relative z-10 py-20">
-              <div className="max-w-3xl">
-                <Badge className="mb-6 bg-secondary text-secondary-foreground text-sm px-4 py-2">
-                  <IndianRupee className="h-4 w-4 mr-2" />
-                  Lowest Processing Fees in Tamil Nadu
-                </Badge>
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6 leading-tight">
-                  Loan & Funding Services
+          <section className="relative isolate min-h-[88svh] flex items-center overflow-hidden bg-primary">
+            <div aria-hidden className="absolute inset-0 -z-10 bg-gradient-to-br from-primary via-primary to-primary/90" />
+            <div aria-hidden className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_right,_hsl(var(--secondary)/0.25),_transparent_55%)]" />
+            <div aria-hidden className="absolute inset-0 -z-10 opacity-[0.06]" style={{
+              backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.5'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+            }} />
+
+            <div className="container mx-auto px-4 pt-32 pb-44 md:pt-40 md:pb-52 relative">
+              <div className="max-w-4xl">
+                <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-background text-[11px] font-bold tracking-[0.18em] uppercase text-primary shadow-xl ring-1 ring-primary-foreground/40 mb-8">
+                  <span className="h-1.5 w-1.5 rounded-full bg-secondary" />
+                  Capital · Govt Schemes & Bank Loans
+                </div>
+                <h1 className="text-display-2xl text-primary-foreground mb-6">
+                  Funding for
+                  <br />
+                  <span className="bg-gradient-to-r from-secondary via-secondary to-primary-foreground bg-clip-text text-transparent">
+                    business, industry, growth.
+                  </span>
                 </h1>
-                <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 leading-relaxed">
-                  Access <strong className="text-secondary">Government Schemes</strong> and <strong className="text-secondary">Private Bank Loans</strong>. 
-                  MSME, Mudra, business, industrial, company and government funding scheme guidance. Strictly not for personal loans.
+                <p className="text-headline text-primary-foreground/85 max-w-2xl mb-10">
+                  MSME, Mudra, Startup India and government funding scheme assistance.
+                  Documentation, application support, and disciplined follow-up. Strictly not for personal loans.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4">
+                <div className="flex flex-col sm:flex-row gap-3">
                   <a href="tel:+919443033055">
-                    <Button size="lg" variant="secondary" className="gap-2 text-lg px-8 py-6">
-                      <Phone className="h-5 w-5" />
-                      Loan Enquiry: +91 94430 33055
+                    <Button size="lg" className="rounded-full px-7 h-12 gap-2 bg-secondary hover:bg-secondary/90 text-secondary-foreground text-[14px] font-medium shadow-xl ease-apple">
+                      <Phone className="h-4 w-4" />
+                      +91 94430 33055
+                    </Button>
+                  </a>
+                  <a href="https://wa.me/919443033055?text=Hi%2C%20I%20need%20loan%20assistance" target="_blank" rel="noopener noreferrer">
+                    <Button size="lg" variant="outline" className="rounded-full px-7 h-12 gap-2 glass-subtle border-primary-foreground/25 text-primary-foreground hover:bg-primary-foreground/10 text-[14px] font-medium ease-apple">
+                      <IndianRupee className="h-4 w-4" />
+                      Loan Enquiry
                     </Button>
                   </a>
                 </div>
               </div>
             </div>
-            
-            {/* Assistance Summary */}
-            <div className="absolute bottom-8 left-0 right-0 z-10">
+
+            <div className="absolute bottom-0 left-0 right-0 z-10 pb-6">
               <div className="container mx-auto px-4">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  {[
-                    { value: "100%", label: "Loan Assistance Guidance" },
-                    { value: "MSME", label: "Business & Industry Focus" },
-                    { value: "Govt", label: "Funding Scheme Support" }
-                  ].map((stat, index) => (
-                    <div key={index} className="text-center p-4 bg-primary-foreground/10 backdrop-blur-sm rounded-xl">
-                      <div className="text-2xl md:text-3xl font-bold text-secondary">{stat.value}</div>
-                      <div className="text-sm text-primary-foreground/80">{stat.label}</div>
-                    </div>
-                  ))}
+                <div className="glass rounded-2xl p-5 md:p-7">
+                  <div className="grid grid-cols-3 divide-x divide-border/40">
+                    {[
+                      { value: "100%", label: "Loan Guidance" },
+                      { value: "MSME", label: "Business Focus" },
+                      { value: "Govt", label: "Scheme Support" },
+                    ].map((stat, i) => (
+                      <div key={i} className="px-4 md:px-6 first:pl-0">
+                        <div className="text-[10px] font-semibold tracking-[0.16em] uppercase text-muted-foreground mb-2">{stat.label}</div>
+                        <div className="text-2xl md:text-3xl font-bold text-foreground tabular-nums tracking-tight">{stat.value}</div>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
