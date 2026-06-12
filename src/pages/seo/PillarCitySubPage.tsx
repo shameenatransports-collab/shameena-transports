@@ -20,7 +20,8 @@ export default function PillarCitySubPage() {
   const pillarId = location.pathname.split("/").filter(Boolean)[0];
   const pillar = getPillar(pillarId);
   const city = getCity(citySlug);
-  if (!pillar || !city) return <Navigate to="/" replace />;
+  if (!pillar) return <Navigate to="/" replace />;
+  if (!city) return <Navigate to={pillar.path} replace />;
   const sub = subSlug ? getSub(pillar, subSlug) : undefined;
   if (!sub) return <Navigate to={pillarCityUrl(pillar, city.slug)} replace />;
 
