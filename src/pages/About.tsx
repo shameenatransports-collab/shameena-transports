@@ -61,23 +61,26 @@ const About = () => {
       </Helmet>
       <Layout>
         {/* Hero Section */}
-        <section className="relative py-20 md:py-28 bg-primary">
-          <div className="container mx-auto px-4">
-            <div className="max-w-3xl flex items-center gap-6">
-              <img 
-                src={logo} 
-                alt="STA Corporate Solutions Logo" 
-                className="h-24 md:h-32 w-auto bg-card rounded-lg p-2 shadow-lg"
-                loading="eager"
-              />
-              <div>
-                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-4">
-                  About STA Corporate Solutions
-                </h1>
-                <p className="text-lg text-primary-foreground/90">
-                  Coimbatore's trusted business partner since 1982 — serving businesses across Tamil Nadu
-                </p>
+        <section className="relative isolate min-h-[70svh] flex items-center overflow-hidden bg-primary">
+          <div aria-hidden className="absolute inset-0 -z-10 bg-gradient-to-br from-primary via-primary to-primary/90" />
+          <div aria-hidden className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,_hsl(var(--primary-glow)/0.28),_transparent_60%)]" />
+          <div className="container mx-auto px-4 pt-32 pb-24 md:pt-40 md:pb-32 relative">
+            <div className="max-w-4xl">
+              <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-background text-[11px] font-bold tracking-[0.18em] uppercase text-primary shadow-xl ring-1 ring-primary-foreground/40 mb-8">
+                <span className="h-1.5 w-1.5 rounded-full bg-secondary" />
+                Our Story · Since 1982
               </div>
+              <h1 className="text-display-2xl text-primary-foreground mb-6">
+                Built in Coimbatore.
+                <br />
+                <span className="bg-gradient-to-r from-secondary via-secondary to-primary-foreground bg-clip-text text-transparent">
+                  Trusted across Tamil Nadu.
+                </span>
+              </h1>
+              <p className="text-headline text-primary-foreground/85 max-w-2xl">
+                Four decades of transportation, financial services and legal documentation support
+                for businesses and individuals.
+              </p>
             </div>
           </div>
         </section>

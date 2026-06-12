@@ -150,14 +150,25 @@ const Contact = () => {
       </Helmet>
       <Layout>
         {/* Hero Section */}
-        <section className="relative py-20 md:py-28 bg-primary">
-          <div className="container mx-auto px-4">
-            <div className="max-w-3xl">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-6">
-                Contact Us
+        <section className="relative isolate min-h-[60svh] flex items-center overflow-hidden bg-primary">
+          <div aria-hidden className="absolute inset-0 -z-10 bg-gradient-to-br from-primary via-primary to-primary/90" />
+          <div aria-hidden className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_right,_hsl(var(--secondary)/0.25),_transparent_55%)]" />
+          <div className="container mx-auto px-4 pt-32 pb-20 md:pt-40 md:pb-28 relative">
+            <div className="max-w-4xl">
+              <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-background text-[11px] font-bold tracking-[0.18em] uppercase text-primary shadow-xl ring-1 ring-primary-foreground/40 mb-8">
+                <span className="h-1.5 w-1.5 rounded-full bg-secondary" />
+                Contact · Coimbatore HQ
+              </div>
+              <h1 className="text-display-2xl text-primary-foreground mb-6">
+                Let's start
+                <br />
+                <span className="bg-gradient-to-r from-secondary via-secondary to-primary-foreground bg-clip-text text-transparent">
+                  the conversation.
+                </span>
               </h1>
-              <p className="text-lg text-primary-foreground/90">
-                Get in touch for instant quotes, bookings, or any transport enquiries
+              <p className="text-headline text-primary-foreground/85 max-w-2xl">
+                Transport, business loans, or legal support — reach us by phone, WhatsApp, or send a
+                detailed enquiry below.
               </p>
             </div>
           </div>

@@ -71,16 +71,26 @@ const Fleet = () => {
         <BackgroundPicture
           src={fleetBg}
           alt="STA Corporate Solutions Fleet"
-          className="py-20 md:py-28"
-          overlayClassName="bg-primary/90"
+          className="relative isolate min-h-[70svh] flex items-center overflow-hidden"
+          overlayClassName="bg-gradient-to-b from-primary/85 via-primary/80 to-primary/95"
         >
-          <div className="container mx-auto px-4 relative z-10">
-            <div className="max-w-3xl">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-6">
-                Our Modern Fleet
+          <div aria-hidden className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_hsl(var(--primary-glow)/0.28),_transparent_60%)]" />
+          <div className="container mx-auto px-4 pt-32 pb-24 md:pt-40 md:pb-32 relative z-10">
+            <div className="max-w-4xl">
+              <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-background text-[11px] font-bold tracking-[0.18em] uppercase text-primary shadow-xl ring-1 ring-primary-foreground/40 mb-8">
+                <span className="h-1.5 w-1.5 rounded-full bg-secondary" />
+                Our Fleet · 12+ Vehicles
+              </div>
+              <h1 className="text-display-2xl text-primary-foreground mb-6">
+                A fleet built
+                <br />
+                <span className="bg-gradient-to-r from-secondary via-secondary to-primary-foreground bg-clip-text text-transparent">
+                  for Tamil Nadu.
+                </span>
               </h1>
-              <p className="text-lg text-primary-foreground/90">
-                12+ well-maintained lorries ready to transport your goods across Tamil Nadu
+              <p className="text-headline text-primary-foreground/85 max-w-2xl">
+                Multi-axle trailers and open body lorries — insured, well-maintained and ready for
+                full load transport across the state.
               </p>
             </div>
           </div>
