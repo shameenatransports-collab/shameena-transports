@@ -1,54 +1,65 @@
 import { Truck, Banknote, Scale, Clock } from "lucide-react";
+import { ScrollReveal, ScrollRevealItem } from "@/components/ui/scroll-reveal";
 
 const stats = [
   {
     icon: Clock,
     value: "43+",
-    label: "Years of Service",
-    description: "Since 1982",
+    label: "Years of service",
+    description: "Trusted since 1982",
   },
   {
     icon: Truck,
     value: "12+",
-    label: "Fleet Vehicles",
+    label: "Fleet vehicles",
     description: "Trailers & lorries",
   },
   {
     icon: Banknote,
     value: "100%",
-    label: "Loan Guidance",
+    label: "Loan guidance",
     description: "Business-focused assistance",
   },
   {
     icon: Scale,
     value: "TN",
-    label: "Legal Support",
+    label: "Legal support",
     description: "Corporate & business matters",
   },
 ];
 
 export function StatsSection() {
   return (
-    <section className="py-12 md:py-16 bg-primary">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
-          {stats.map((stat, index) => (
-            <article key={index} className="text-center">
-              <div className="w-14 h-14 md:w-16 md:h-16 mx-auto rounded-full bg-primary-foreground/10 flex items-center justify-center mb-3">
-                <stat.icon className="h-7 w-7 md:h-8 md:w-8 text-secondary" />
-              </div>
-              <div className="text-3xl md:text-4xl font-bold text-primary-foreground mb-1">
-                {stat.value}
-              </div>
-              <div className="text-sm md:text-base font-medium text-primary-foreground">
-                {stat.label}
-              </div>
-              <div className="text-xs text-primary-foreground/70 mt-1">
-                {stat.description}
-              </div>
-            </article>
-          ))}
-        </div>
+    <section className="relative py-20 md:py-24 bg-primary text-primary-foreground overflow-hidden">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,_hsl(var(--primary-glow)/0.22),_transparent_60%)]"
+      />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute -bottom-32 left-1/2 -translate-x-1/2 h-[420px] w-[420px] rounded-full opacity-20 blur-3xl"
+        style={{ background: "hsl(var(--secondary))" }}
+      />
+
+      <div className="container mx-auto px-4 relative">
+        <ScrollReveal stagger>
+          <div className="grid grid-cols-2 md:grid-cols-4 divide-y divide-x divide-primary-foreground/10 md:divide-y-0 border border-primary-foreground/10 rounded-3xl overflow-hidden">
+            {stats.map((stat) => (
+              <ScrollRevealItem key={stat.label}>
+                <article className="p-7 md:p-9 h-full flex flex-col items-start text-left transition-colors duration-500 ease-apple hover:bg-primary-foreground/[0.04]">
+                  <div className="w-11 h-11 rounded-xl bg-secondary/15 flex items-center justify-center mb-6">
+                    <stat.icon className="h-5 w-5 text-secondary" strokeWidth={2} />
+                  </div>
+                  <div className="text-4xl md:text-5xl font-bold tracking-tight mb-2 tabular-nums">
+                    {stat.value}
+                  </div>
+                  <div className="text-sm font-semibold tracking-tight mb-1">{stat.label}</div>
+                  <div className="text-xs text-primary-foreground/60">{stat.description}</div>
+                </article>
+              </ScrollRevealItem>
+            ))}
+          </div>
+        </ScrollReveal>
       </div>
     </section>
   );
