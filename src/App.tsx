@@ -36,6 +36,7 @@ const PillarCitySubPage = lazy(() => import("./pages/seo/PillarCitySubPage"));
 const RouteCorridorPage = lazy(() => import("./pages/seo/RouteCorridorPage"));
 const RegistrationPage = lazy(() => import("./pages/seo/RegistrationPage"));
 const BHKPage = lazy(() => import("./pages/seo/BHKPage"));
+const RealEstateCityChild = lazy(() => import("./pages/seo/RealEstateCityChild"));
 
 const queryClient = new QueryClient();
 
@@ -65,13 +66,16 @@ const App = () => (
                   <Routes>
                     <Route path="/" element={<Index />} />
                     <Route path="/about" element={<About />} />
+                    {/* Pillar landing pages — must come before /:pillar/:city dynamic */}
                     <Route path="/transportation" element={<Transportation />} />
                     <Route path="/financial-services" element={<FinancialServices />} />
                     <Route path="/legal-services" element={<LegalServices />} />
+                    <Route path="/edu-consultancy" element={<EduConsultancy />} />
+                    <Route path="/real-estate" element={<RealEstate />} />
+
                     <Route path="/services" element={<ServicesHub />} />
                     <Route path="/services/transport-categories" element={<Services />} />
 
-                    {/* Programmatic SEO routes */}
                     {/* Pillar × sub-service (no city) */}
                     <Route path="/transportation/services/:sub" element={<PillarSubPage />} />
                     <Route path="/financial-services/products/:sub" element={<PillarSubPage />} />
@@ -83,26 +87,24 @@ const App = () => (
                     <Route path="/transportation/routes/:slug" element={<RouteCorridorPage />} />
                     <Route path="/legal-services/registrations/:slug" element={<RegistrationPage />} />
 
-                    {/* Real Estate BHK variants */}
-                    <Route path="/real-estate/:city/:bhk" element={<BHKVariantOrCitySub />} />
-
                     {/* Pillar × city × sub */}
-                    <Route path="/transportation/:city/:sub" element={<PillarCitySubRoute pillar="transportation" />} />
-                    <Route path="/financial-services/:city/:sub" element={<PillarCitySubRoute pillar="financial-services" />} />
-                    <Route path="/legal-services/:city/:sub" element={<PillarCitySubRoute pillar="legal-services" />} />
-                    <Route path="/edu-consultancy/:city/:sub" element={<PillarCitySubRoute pillar="edu-consultancy" />} />
+                    <Route path="/transportation/:city/:sub" element={<PillarCitySubPage />} />
+                    <Route path="/financial-services/:city/:sub" element={<PillarCitySubPage />} />
+                    <Route path="/legal-services/:city/:sub" element={<PillarCitySubPage />} />
+                    <Route path="/edu-consultancy/:city/:sub" element={<PillarCitySubPage />} />
+                    {/* Real Estate :city/:second routes to BHK or sub by slug detection */}
+                    <Route path="/real-estate/:city/:bhk" element={<RealEstateCityChild />} />
 
                     {/* Pillar × city */}
-                    <Route path="/transportation/:city" element={<PillarCityRoute pillar="transportation" />} />
-                    <Route path="/financial-services/:city" element={<PillarCityRoute pillar="financial-services" />} />
-                    <Route path="/legal-services/:city" element={<PillarCityRoute pillar="legal-services" />} />
-                    <Route path="/edu-consultancy/:city" element={<PillarCityRoute pillar="edu-consultancy" />} />
-                    <Route path="/real-estate/:city" element={<PillarCityRoute pillar="real-estate" />} />
+                    <Route path="/transportation/:city" element={<PillarCityPage />} />
+                    <Route path="/financial-services/:city" element={<PillarCityPage />} />
+                    <Route path="/legal-services/:city" element={<PillarCityPage />} />
+                    <Route path="/edu-consultancy/:city" element={<PillarCityPage />} />
+                    <Route path="/real-estate/:city" element={<PillarCityPage />} />
 
-                    <Route path="/edu-consultancy" element={<EduConsultancy />} />
-                    <Route path="/real-estate" element={<RealEstate />} />
                     <Route path="/fleet" element={<Fleet />} />
                     <Route path="/return-loads" element={<ReturnLoads />} />
+
                     <Route path="/service-areas" element={<ServiceAreas />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/privacy" element={<Privacy />} />
