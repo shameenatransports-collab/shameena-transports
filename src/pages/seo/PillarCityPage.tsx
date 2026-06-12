@@ -25,7 +25,8 @@ export default function PillarCityPage() {
   const pillar = getPillar(pillarId);
   const city = getCity(citySlug);
 
-  if (!pillar || !city) return <Navigate to="/" replace />;
+  if (!pillar) return <Navigate to="/" replace />;
+  if (!city) return <Navigate to={pillar.path} replace />;
 
 
   const path = pillarCityUrl(pillar, city.slug);
