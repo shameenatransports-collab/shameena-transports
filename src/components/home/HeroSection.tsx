@@ -131,7 +131,7 @@ export function HeroSection() {
               <Link
                 key={v.title}
                 to={v.href}
-                className="group glass rounded-2xl p-5 text-left hover-lift focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary"
+                className="group rounded-2xl p-5 text-left hover-lift bg-primary-foreground/10 backdrop-blur-md border border-primary-foreground/20 hover:bg-primary-foreground/15 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary"
               >
                 <div className="flex items-start justify-between mb-3">
                   <div className="w-10 h-10 rounded-xl bg-secondary/15 flex items-center justify-center">
@@ -142,7 +142,7 @@ export function HeroSection() {
                 <h3 className="text-[15px] font-semibold text-primary-foreground tracking-tight mb-1">
                   {v.title}
                 </h3>
-                <p className="text-[12.5px] text-primary-foreground/60">{v.desc}</p>
+                <p className="text-[12.5px] text-primary-foreground/75">{v.desc}</p>
               </Link>
             ))}
           </motion.div>
