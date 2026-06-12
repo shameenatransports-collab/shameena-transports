@@ -103,7 +103,7 @@ export const CORRIDORS: Corridor[] = [
   C("coimbatore", "thiruvananthapuram", 415),
   C("tiruppur", "chennai", 480),
   C("tiruppur", "bengaluru", 360),
-  C("tiruppur", "mumbai", 1230),
+  C("tiruppur", "kochi", 240),
   C("chennai", "bengaluru", 345),
   C("chennai", "hyderabad", 625),
   C("chennai", "kochi", 690),
