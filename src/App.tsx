@@ -16,6 +16,8 @@ const Transportation = lazy(() => import("./pages/Transportation"));
 const FinancialServices = lazy(() => import("./pages/FinancialServices"));
 const LegalServices = lazy(() => import("./pages/LegalServices"));
 const Services = lazy(() => import("./pages/Services"));
+const EduConsultancy = lazy(() => import("./pages/EduConsultancy"));
+const RealEstate = lazy(() => import("./pages/RealEstate"));
 const Fleet = lazy(() => import("./pages/Fleet"));
 const ServiceAreas = lazy(() => import("./pages/ServiceAreas"));
 const ReturnLoads = lazy(() => import("./pages/ReturnLoads"));
@@ -58,6 +60,8 @@ const App = () => (
                     <Route path="/financial-services" element={<FinancialServices />} />
                     <Route path="/legal-services" element={<LegalServices />} />
                     <Route path="/services" element={<Services />} />
+                    <Route path="/edu-consultancy" element={<EduConsultancy />} />
+                    <Route path="/real-estate" element={<RealEstate />} />
                     <Route path="/fleet" element={<Fleet />} />
                     <Route path="/return-loads" element={<ReturnLoads />} />
                     <Route path="/service-areas" element={<ServiceAreas />} />
