@@ -1,4 +1,4 @@
-import { useParams, Link, Navigate } from "react-router-dom";
+import { useParams, useLocation, Link, Navigate } from "react-router-dom";
 import { getPillar, getSub } from "@/lib/seo/pillars";
 import { HUB_CITIES } from "@/lib/seo/cities";
 import { PillarPageShell, KeywordList } from "@/components/seo/PillarPageShell";
@@ -10,7 +10,9 @@ import { ArrowUpRight, CheckCircle2 } from "lucide-react";
  * Route: /:pillar/(services|products|practice|programs|categories)/:sub
  */
 export default function PillarSubPage() {
-  const { pillar: pillarId, sub: subSlug } = useParams();
+  const { sub: subSlug } = useParams();
+  const location = useLocation();
+  const pillarId = location.pathname.split("/").filter(Boolean)[0];
   const pillar = getPillar(pillarId);
   if (!pillar) return <Navigate to="/" replace />;
   const sub = subSlug ? getSub(pillar, subSlug) : undefined;

@@ -1,4 +1,4 @@
-import { useParams, Link, Navigate } from "react-router-dom";
+import { useParams, useLocation, Link, Navigate } from "react-router-dom";
 import { getPillar } from "@/lib/seo/pillars";
 import { getCity, HUB_CITIES } from "@/lib/seo/cities";
 import {
@@ -16,13 +16,17 @@ import { ArrowUpRight } from "lucide-react";
 /**
  * Programmatic city page for any pillar.
  * Route: /:pillar/:city  (e.g. /transportation/coimbatore)
+ * Pillar is inferred from the first path segment.
  */
 export default function PillarCityPage() {
-  const { pillar: pillarId, city: citySlug } = useParams();
+  const { city: citySlug } = useParams();
+  const location = useLocation();
+  const pillarId = location.pathname.split("/").filter(Boolean)[0];
   const pillar = getPillar(pillarId);
   const city = getCity(citySlug);
 
   if (!pillar || !city) return <Navigate to="/" replace />;
+
 
   const path = pillarCityUrl(pillar, city.slug);
   const title = `${pillar.name} in ${city.name}`;
