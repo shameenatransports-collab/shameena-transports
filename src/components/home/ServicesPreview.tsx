@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
-import { Truck, Banknote, Scale, ArrowUpRight } from "lucide-react";
+import { Truck, Banknote, Scale, GraduationCap, Building2, ArrowUpRight } from "lucide-react";
 import { ScrollReveal, ScrollRevealItem } from "@/components/ui/scroll-reveal";
 import serviceTransportation from "@/assets/service-transportation.jpg";
 import serviceFinancial from "@/assets/service-financial.jpg";
 import serviceLegal from "@/assets/service-legal.jpg";
+import serviceEdu from "@/assets/service-edu.jpg";
+import serviceRealEstate from "@/assets/service-realestate.jpg";
 
 const verticals = [
   {
@@ -13,8 +15,8 @@ const verticals = [
     title: "Transportation",
     headline: "Move what matters, when it matters.",
     description:
-      "Full Load lorry transport across Tamil Nadu. 43 years. Our own fleet of 12+ vehicles. Routes spanning Coimbatore, Tiruppur, Chennai, Salem, Madurai.",
-    features: ["Full Load Transport", "Return Loads", "Factory Shifting", "Route Support"],
+      "Full Load lorry transport across South India. 43 years. Our own fleet of 12+ vehicles. Routes spanning Coimbatore, Tiruppur, Chennai, Salem, Madurai, Bengaluru, Kochi.",
+    features: ["Full Load Transport", "Return Loads", "Factory Shifting", "Route Corridors"],
     href: "/transportation",
     badge: "Since 1982",
     image: serviceTransportation,
@@ -39,13 +41,40 @@ const verticals = [
     title: "Legal Services",
     headline: "Confidence at every signature.",
     description:
-      "Property, company, litigation, IP and compliance documentation support for businesses and individuals across Tamil Nadu.",
-    features: ["Property Docs", "Company Formation", "Litigation", "Contracts"],
+      "Property, company, litigation, IP and compliance documentation support for businesses and individuals across South India.",
+    features: ["Property Docs", "Company Formation", "Litigation", "Registrations"],
     href: "/legal-services",
-    badge: "Tamil Nadu",
+    badge: "Five States",
     image: serviceLegal,
   },
+  {
+    num: "04",
+    icon: GraduationCap,
+    eyebrow: "Pathways",
+    title: "Edu Consultancy",
+    headline: "Academic mobility, localized.",
+    description:
+      "Localized pathways for degree transfer, credit migration, bachelor-completion and academic-mobility candidates across South India.",
+    features: ["Degree Transfer", "Credit Mapping", "Study Abroad", "Adult Learners"],
+    href: "/edu-consultancy",
+    badge: "1,000+ Pathways",
+    image: serviceEdu,
+  },
+  {
+    num: "05",
+    icon: Building2,
+    eyebrow: "Property",
+    title: "Real Estate",
+    headline: "South India property, intelligently mapped.",
+    description:
+      "Data-driven property discovery for buyers, NRIs and businesses — residential, commercial and investment opportunities across South India.",
+    features: ["Residential", "Commercial", "Investment", "NRI Support"],
+    href: "/real-estate",
+    badge: "5 States · 40+ Cities",
+    image: serviceRealEstate,
+  },
 ];
+
 
 export function ServicesPreview() {
   return (
@@ -53,13 +82,12 @@ export function ServicesPreview() {
       <div className="container mx-auto px-4">
         <ScrollReveal>
           <div className="max-w-3xl mx-auto text-center mb-20 md:mb-28">
-            <p className="text-eyebrow text-primary mb-5">Three Verticals · One Partner</p>
+            <p className="text-eyebrow text-primary mb-5">Five Practices · One Partner</p>
             <h2 className="text-display-xl text-foreground mb-6">
               Complete business solutions, refined over four decades.
             </h2>
             <p className="text-headline text-muted-foreground max-w-2xl mx-auto">
-              Three integrated practices serving individuals and enterprises across Tamil Nadu with
-              transparent, practical assistance.
+              Five integrated practices serving individuals and enterprises across Tamil Nadu, Karnataka, Telangana, Andhra Pradesh and Kerala — with transparent, practical assistance.
             </p>
           </div>
         </ScrollReveal>

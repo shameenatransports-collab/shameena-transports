@@ -1,16 +1,11 @@
-# Robots.txt for STA Corporate Solutions — Coimbatore, Tamil Nadu
+# Robots.txt for STA Corporate Solutions — South India
 
-# Allow all crawlers
 User-agent: *
 Allow: /
 Crawl-delay: 2
 
-# Disallow admin or private paths
 Disallow: /api/
 Disallow: /private/
+Disallow: /debug
 
-# Sitemap
-Sitemap: https://www.stacorporate.com/sitemap.xml
-
-# Host
-Host: https://www.stacorporate.com
+Sitemap: https://stacorps.lovable.app/sitemap.xml

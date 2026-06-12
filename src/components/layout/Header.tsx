@@ -12,6 +12,7 @@ import { cn } from "@/lib/utils";
 import logo from "@/assets/sta-logo.png";
 
 const serviceLinks = [
+  { name: "All Services", href: "/services" },
   { name: "Transportation", href: "/transportation" },
   { name: "Financial Services", href: "/financial-services" },
   { name: "Legal Services", href: "/legal-services" },

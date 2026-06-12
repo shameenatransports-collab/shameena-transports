@@ -28,6 +28,16 @@ const CityLanding = lazy(() => import("./pages/CityLanding"));
 const Debug = lazy(() => import("./pages/Debug"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
+// Programmatic SEO templates
+const ServicesHub = lazy(() => import("./pages/ServicesHub"));
+const PillarCityPage = lazy(() => import("./pages/seo/PillarCityPage"));
+const PillarSubPage = lazy(() => import("./pages/seo/PillarSubPage"));
+const PillarCitySubPage = lazy(() => import("./pages/seo/PillarCitySubPage"));
+const RouteCorridorPage = lazy(() => import("./pages/seo/RouteCorridorPage"));
+const RegistrationPage = lazy(() => import("./pages/seo/RegistrationPage"));
+const BHKPage = lazy(() => import("./pages/seo/BHKPage"));
+const RealEstateCityChild = lazy(() => import("./pages/seo/RealEstateCityChild"));
+
 const queryClient = new QueryClient();
 
 function PageLoader() {
@@ -56,14 +66,45 @@ const App = () => (
                   <Routes>
                     <Route path="/" element={<Index />} />
                     <Route path="/about" element={<About />} />
+                    {/* Pillar landing pages — must come before /:pillar/:city dynamic */}
                     <Route path="/transportation" element={<Transportation />} />
                     <Route path="/financial-services" element={<FinancialServices />} />
                     <Route path="/legal-services" element={<LegalServices />} />
-                    <Route path="/services" element={<Services />} />
                     <Route path="/edu-consultancy" element={<EduConsultancy />} />
                     <Route path="/real-estate" element={<RealEstate />} />
+
+                    <Route path="/services" element={<ServicesHub />} />
+                    <Route path="/services/transport-categories" element={<Services />} />
+
+                    {/* Pillar × sub-service (no city) */}
+                    <Route path="/transportation/services/:sub" element={<PillarSubPage />} />
+                    <Route path="/financial-services/products/:sub" element={<PillarSubPage />} />
+                    <Route path="/legal-services/practice/:sub" element={<PillarSubPage />} />
+                    <Route path="/edu-consultancy/programs/:sub" element={<PillarSubPage />} />
+                    <Route path="/real-estate/categories/:sub" element={<PillarSubPage />} />
+
+                    {/* Special sub-types */}
+                    <Route path="/transportation/routes/:slug" element={<RouteCorridorPage />} />
+                    <Route path="/legal-services/registrations/:slug" element={<RegistrationPage />} />
+
+                    {/* Pillar × city × sub */}
+                    <Route path="/transportation/:city/:sub" element={<PillarCitySubPage />} />
+                    <Route path="/financial-services/:city/:sub" element={<PillarCitySubPage />} />
+                    <Route path="/legal-services/:city/:sub" element={<PillarCitySubPage />} />
+                    <Route path="/edu-consultancy/:city/:sub" element={<PillarCitySubPage />} />
+                    {/* Real Estate :city/:second routes to BHK or sub by slug detection */}
+                    <Route path="/real-estate/:city/:bhk" element={<RealEstateCityChild />} />
+
+                    {/* Pillar × city */}
+                    <Route path="/transportation/:city" element={<PillarCityPage />} />
+                    <Route path="/financial-services/:city" element={<PillarCityPage />} />
+                    <Route path="/legal-services/:city" element={<PillarCityPage />} />
+                    <Route path="/edu-consultancy/:city" element={<PillarCityPage />} />
+                    <Route path="/real-estate/:city" element={<PillarCityPage />} />
+
                     <Route path="/fleet" element={<Fleet />} />
                     <Route path="/return-loads" element={<ReturnLoads />} />
+
                     <Route path="/service-areas" element={<ServiceAreas />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/privacy" element={<Privacy />} />
