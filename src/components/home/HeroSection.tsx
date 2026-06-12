@@ -142,7 +142,7 @@ export function HeroSection() {
                 <h3 className="text-[15px] font-semibold text-primary-foreground tracking-tight mb-1">
                   {v.title}
                 </h3>
-                <p className="text-[12.5px] text-primary-foreground/60">{v.desc}</p>
+                <p className="text-[12.5px] text-primary-foreground/75">{v.desc}</p>
               </Link>
             ))}
           </motion.div>
