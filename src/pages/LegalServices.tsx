@@ -310,10 +310,10 @@ const LegalServices = () => {
               </div>
             </div>
 
-            <div className="absolute bottom-0 left-0 right-0 z-10 pb-6">
+            <div className="absolute bottom-0 left-0 right-0 z-10 pb-6 hidden md:block">
               <div className="container mx-auto px-4">
                 <div className="glass rounded-2xl p-5 md:p-7">
-                  <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-border/40">
+                  <div className="grid grid-cols-4 divide-x divide-border/40">
                     {[
                       { value: "1982", label: "Trusted Since" },
                       { value: "38", label: "TN Districts" },
@@ -326,6 +326,25 @@ const LegalServices = () => {
                       </div>
                     ))}
                   </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section className="md:hidden bg-background border-b border-border">
+            <div className="container mx-auto px-4 py-6">
+              <div className="glass rounded-2xl p-5">
+                <div className="grid grid-cols-2 gap-x-6 gap-y-5">
+                  {[
+                    { value: "1982", label: "Trusted Since" },
+                    { value: "38", label: "TN Districts" },
+                    { value: "B2B", label: "Business Focus" },
+                    { value: "Docs", label: "Full Support" },
+                  ].map((stat, i) => (
+                    <div key={i}>
+                      <div className="text-[10px] font-semibold tracking-[0.16em] uppercase text-muted-foreground mb-2">{stat.label}</div>
+                      <div className="text-2xl font-bold text-foreground tabular-nums tracking-tight">{stat.value}</div>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
