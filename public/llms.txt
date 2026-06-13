@@ -1,0 +1,25 @@
+# STA Corporate Solutions
+
+> Coimbatore-headquartered corporate solutions group since 1982 — Transportation, Financial Services, Legal Services, Edu Consultancy and Real Estate for South India.
+
+STA Corporate Solutions provides Full Load lorry transport across Tamil Nadu, Karnataka, Telangana, Andhra Pradesh and Kerala; business loan assistance (MSME, Mudra, PMEGP and government funding scheme guidance); corporate, property and family legal services; education consultancy; and real estate discovery. Headquartered in Peelamedu, Coimbatore. Contact: +91 94430 33055.
+
+## Pages
+
+- [Home](/): Overview of all five practices and trust signals since 1982.
+- [About](/about): Heritage, values and company story since 1982.
+- [Services](/services): Hub for all five service verticals.
+- [Transportation](/transportation): Full Load lorry transport across South India.
+- [Return Loads](/return-loads): Route-based return-load transport (subject to route availability).
+- [Fleet](/fleet): 12+ trailers and lorries used for full-load assignments.
+- [Financial Services](/financial-services): Business loan assistance, MSME, Mudra and government funding scheme guidance.
+- [Legal Services](/legal-services): Property, family, civil, corporate and registration services.
+- [Edu Consultancy](/edu-consultancy): Degree transfer and academic mobility guidance.
+- [Real Estate](/real-estate): Property discovery across South India.
+- [Service Areas](/service-areas): Cities and districts covered across Tamil Nadu.
+- [Contact](/contact): Phone, WhatsApp, address and enquiry form.
+
+## Optional
+
+- [Privacy Policy](/privacy)
+- [Terms](/terms)

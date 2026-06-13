@@ -27,9 +27,9 @@ export function TrustBadges() {
                   <div className="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-foreground/[0.04] flex items-center justify-center mb-3 transition-all duration-500 ease-apple group-hover:bg-primary/10 group-hover:scale-105">
                     <industry.icon className="h-5 w-5 md:h-5.5 md:w-5.5 text-foreground/70 group-hover:text-primary transition-colors" strokeWidth={1.75} />
                   </div>
-                  <h3 className="text-[13px] md:text-sm font-medium text-foreground tracking-tight">
+                  <h2 className="text-[13px] md:text-sm font-medium text-foreground tracking-tight">
                     {industry.name}
-                  </h3>
+                  </h2>
                   <p className="text-[11px] md:text-xs text-muted-foreground/70 mt-0.5 hidden sm:block">
                     {industry.description}
                   </p>

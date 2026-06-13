@@ -62,10 +62,10 @@ export function HeroSection() {
             transition={{ duration: 0.9, ease: easeApple, delay: 0.2 }}
             className="text-display-2xl text-primary-foreground mb-6"
           >
-            Built on trust.
+            STA Corporate Solutions
             <br />
             <span className="bg-gradient-to-r from-secondary via-secondary to-primary-foreground bg-clip-text text-transparent">
-              Driven for decades.
+              Transport, Loans &amp; Legal · Coimbatore
             </span>
           </motion.h1>
 
