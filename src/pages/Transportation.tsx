@@ -102,11 +102,12 @@ const Transportation = () => {
   return (
     <>
       <Helmet>
-        <title>Transportation Services | Full Load Lorry Tamil Nadu | STA Corporate Solutions</title>
-        <meta name="description" content="STA Corporate Solutions Transportation - Full Load lorry service across Tamil Nadu since 1982. Coimbatore, Chennai, Tiruppur, Salem, Madurai." />
+        <title>Full Load Lorry Transport — Tamil Nadu | STA Corporate</title>
+        <meta name="description" content="Full Load lorry transport across Tamil Nadu since 1982. Coimbatore, Chennai, Tiruppur, Salem, Madurai." />
         <link rel="canonical" href="https://www.stacorporate.com/transportation" />
-        <meta property="og:title" content="Transportation Services | STA Corporate Solutions" />
+        <meta property="og:title" content="Full Load Lorry Transport — Tamil Nadu | STA Corporate" />
         <meta property="og:description" content="Full Load transport across Tamil Nadu. 43+ years experience from Coimbatore." />
+        <meta property="og:url" content="https://www.stacorporate.com/transportation" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(localBusinessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(transportBusinessSchema)}</script>

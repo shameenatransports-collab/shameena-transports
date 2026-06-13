@@ -1,4 +1,4 @@
-import { useMemo, useState, type ReactNode } from "react";
+import { Children, cloneElement, isValidElement, useId, useMemo, useState, type ReactElement, type ReactNode } from "react";
 import { z } from "zod";
 import { Phone, MessageCircle, Send, Truck } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -121,13 +121,18 @@ export function LeadEnquiryForm({ city }: { city?: string }) {
 }
 
 function FieldError({ label, error, optional, children }: { label: string; error?: string; optional?: boolean; children: ReactNode }) {
-  const id = label.toLowerCase().replace(/\s+/g, "-");
+  const reactId = useId();
+  const id = `enquiry-${label.toLowerCase().replace(/\s+/g, "-")}-${reactId}`;
+  const only = Children.only(children);
+  const child = isValidElement(only)
+    ? cloneElement(only as ReactElement<{ id?: string }>, { id })
+    : only;
   return (
     <div className="space-y-1.5">
       <Label htmlFor={id} className="text-sm font-medium text-foreground">
         {label} {!optional && <span className="text-destructive">*</span>}
       </Label>
-      <div id={id}>{children}</div>
+      {child}
       {error && <p className="text-xs text-destructive">{error}</p>}
     </div>
   );

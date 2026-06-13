@@ -15,8 +15,8 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>STA Corporate Solutions Coimbatore | Transport, Business Loans & Legal</title>
-        <meta name="description" content="STA Corporate Solutions Coimbatore — full load lorry transport, business loan assistance, MSME/Mudra and government funding scheme guidance, and legal services since 1982." />
+        <title>STA Corporate Solutions | Transport, Loans, Legal — Coimbatore</title>
+        <meta name="description" content="Coimbatore-based since 1982. Full-load lorry transport across South India, MSME & Mudra loan assistance, and corporate legal services." />
         <meta name="keywords" content="STA Corporate Solutions, lorry transport coimbatore, MSME loan coimbatore, mudra loan tamil nadu, government funding schemes tamil nadu, business loan assistance, legal services coimbatore, full load transport, return load, company registration, transport service tamil nadu" />
         <link rel="canonical" href="https://www.stacorporate.com" />
         <meta property="og:title" content="STA Corporate Solutions | Transport, Loans & Legal — Coimbatore" />
