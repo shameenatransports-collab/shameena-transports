@@ -169,12 +169,12 @@ const FinancialServices = () => {
   return (
     <>
       <Helmet>
-        <title>Business Loan Assistance Tamil Nadu | MSME, Mudra & Govt Funding | STA Corporate Solutions</title>
-        <meta name="description" content="100% loan assistance guidance for businesses, industries and companies in Coimbatore, Tamil Nadu. MSME, Mudra, government funding schemes, commercial and industrial loan documentation support. Not for personal loans." />
+        <title>Business Loans — MSME, Mudra & Govt Schemes | STA</title>
+        <meta name="description" content="Business loan assistance in Tamil Nadu — MSME, Mudra, PMEGP and government funding scheme guidance from Coimbatore." />
         <meta name="keywords" content="msme loan coimbatore, mudra loan tamil nadu, business loan assistance, industry loan tamil nadu, company loan support, government funding schemes tamil nadu, commercial vehicle loan, bank loan assistance" />
         <link rel="canonical" href="https://www.stacorporate.com/financial-services" />
-        <meta property="og:title" content="Loan Services | Government Schemes & Bank Loans | STA Corporate Solutions" />
-        <meta property="og:description" content="Complete loan assistance - MSME, Mudra, business, home, vehicle loans. Government schemes and private bank financing." />
+        <meta property="og:title" content="Business Loans — MSME, Mudra & Govt Schemes | STA" />
+        <meta property="og:description" content="MSME, Mudra and government scheme guidance from Coimbatore." />
         <meta property="og:url" content="https://www.stacorporate.com/financial-services" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(financialServiceSchema)}</script>
