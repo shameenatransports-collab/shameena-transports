@@ -133,7 +133,7 @@ const ReturnLoads = () => {
   return (
     <>
       <Helmet>
-        <title>Return Load Transport Tamil Nadu | Route Availability | STA Corporate Solutions</title>
+        <title>Return Load Transport Tamil Nadu | STA Corporate</title>
         <meta
           name="description"
           content="Return Load transport in Tamil Nadu subject to route availability. Popular routes include Coimbatore-Chennai, Tiruppur-Bangalore, Salem-Madurai. Call +91 94430 33055 to check availability."

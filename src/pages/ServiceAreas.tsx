@@ -90,9 +90,12 @@ const ServiceAreas = () => {
   return (
     <>
       <Helmet>
-        <title>Service Areas | Lorry Transport in Coimbatore, Chennai, Madurai - All Tamil Nadu | STA Corporate Solutions</title>
-        <meta name="description" content="Lorry transport services across Tamil Nadu - Coimbatore, Tiruppur, Chennai, Salem, Madurai, Trichy, Erode, Karur. Complete coverage across all districts." />
+        <title>Service Areas — Tamil Nadu Lorry Transport | STA</title>
+        <meta name="description" content="Lorry transport across Tamil Nadu — Coimbatore, Tiruppur, Chennai, Salem, Madurai, Trichy, Erode, Karur and surrounding districts." />
         <link rel="canonical" href="https://www.stacorporate.com/service-areas" />
+        <meta property="og:title" content="Service Areas — Tamil Nadu Lorry Transport | STA" />
+        <meta property="og:description" content="Coverage across Tamil Nadu — Coimbatore, Chennai, Madurai, Salem and more." />
+        <meta property="og:url" content="https://www.stacorporate.com/service-areas" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
       <Layout>

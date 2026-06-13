@@ -49,8 +49,8 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>About STA Corporate Solutions Coimbatore | Business Solutions Since 1982</title>
-        <meta name="description" content="About STA Corporate Solutions — 43+ years of trusted business services in Coimbatore & Tamil Nadu since 1982. Transportation, Financial Services & Legal Services." />
+        <title>About STA Corporate Solutions | Coimbatore Since 1982</title>
+        <meta name="description" content="Coimbatore-based corporate solutions group since 1982 — transport, business loans, legal, edu and real estate practices for South India." />
         <link rel="canonical" href="https://www.stacorporate.com/about" />
         <meta property="og:title" content="About STA Corporate Solutions | Since 1982 — Coimbatore" />
         <meta property="og:description" content="43+ years of trusted business services in Coimbatore & Tamil Nadu. Transport, Loans & Legal — our story." />
