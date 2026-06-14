@@ -54,18 +54,18 @@ export default function EduConsultancy() {
   return (
     <>
       <Helmet>
-        <title>Edu Consultancy | Academic Mobility Network Across South India</title>
+        <title>Edu Consultancy South India | Coimbatore, Chennai, Bangalore</title>
         <meta
           name="description"
-          content="Academic Mobility & Degree Advancement ecosystem across Tamil Nadu, Karnataka, Telangana, Andhra Pradesh & Kerala. 1,000+ localized educational pathways."
+          content="Academic mobility & degree transfer across Tamil Nadu, Karnataka, Telangana, Andhra Pradesh, Kerala — Coimbatore, Chennai, Bangalore, Hyderabad, Kochi."
         />
-        <link rel="canonical" href="https://stacorps.lovable.app/edu-consultancy" />
-        <meta property="og:title" content="Edu Consultancy | South India Academic Mobility Network" />
+        <link rel="canonical" href="https://sta-corporate.in/edu-consultancy" />
+        <meta property="og:title" content="Edu Consultancy South India | Coimbatore, Chennai, Bangalore" />
         <meta
           property="og:description"
-          content="Discover educational opportunities across 1,000+ localized pathways in South India. Multilingual learner experience."
+          content="Degree transfer, institution migration and academic counselling across 200+ South Indian cities."
         />
-        <meta property="og:url" content="https://stacorps.lovable.app/edu-consultancy" />
+        <meta property="og:url" content="https://sta-corporate.in/edu-consultancy" />
       </Helmet>
 
       <Layout>
@@ -89,11 +89,11 @@ export default function EduConsultancy() {
                 professionals, adult learners, transfer seekers, and academic continuation candidates.
               </p>
 
-              <div className="glass rounded-2xl p-1 inline-flex flex-wrap divide-x divide-border/40">
+              <div className="bg-primary-foreground/10 backdrop-blur-md border border-primary-foreground/15 rounded-2xl p-1 inline-flex flex-wrap divide-x divide-primary-foreground/15">
                 {scale.map((s) => (
                   <div key={s.label} className="px-6 py-4 text-center">
                     <div className="text-2xl md:text-3xl font-bold text-primary-foreground">{s.value}</div>
-                    <div className="text-[11px] uppercase tracking-[0.16em] text-primary-foreground/70">{s.label}</div>
+                    <div className="text-[11px] uppercase tracking-[0.16em] text-primary-foreground/80">{s.label}</div>
                   </div>
                 ))}
               </div>

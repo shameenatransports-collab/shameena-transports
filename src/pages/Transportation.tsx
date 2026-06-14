@@ -94,20 +94,20 @@ const Transportation = () => {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.stacorporate.com" },
-      { "@type": "ListItem", "position": 2, "name": "Transportation", "item": "https://www.stacorporate.com/transportation" }
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sta-corporate.in" },
+      { "@type": "ListItem", "position": 2, "name": "Transportation", "item": "https://sta-corporate.in/transportation" }
     ]
   };
 
   return (
     <>
       <Helmet>
-        <title>Full Load Lorry Transport — Tamil Nadu | STA Corporate</title>
-        <meta name="description" content="Full Load lorry transport across Tamil Nadu since 1982. Coimbatore, Chennai, Tiruppur, Salem, Madurai." />
-        <link rel="canonical" href="https://www.stacorporate.com/transportation" />
-        <meta property="og:title" content="Full Load Lorry Transport — Tamil Nadu | STA Corporate" />
-        <meta property="og:description" content="Full Load transport across Tamil Nadu. 43+ years experience from Coimbatore." />
-        <meta property="og:url" content="https://www.stacorporate.com/transportation" />
+        <title>Full Load Lorry Transport South India | Coimbatore, Chennai</title>
+        <meta name="description" content="Full Load lorry transport across Tamil Nadu, Karnataka, Kerala — Coimbatore, Chennai, Bangalore, Tiruppur, Salem, Madurai. Since 1982." />
+        <link rel="canonical" href="https://sta-corporate.in/transportation" />
+        <meta property="og:title" content="Full Load Lorry Transport South India | Coimbatore HQ" />
+        <meta property="og:description" content="Full Load lorry transport across South India. 12+ fleet, 43+ years from Coimbatore." />
+        <meta property="og:url" content="https://sta-corporate.in/transportation" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(localBusinessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(transportBusinessSchema)}</script>

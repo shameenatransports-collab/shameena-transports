@@ -1,7 +1,7 @@
 import { CITIES, CORRIDORS, City } from "./cities";
 import { Pillar, PILLARS, REGISTRATIONS, BHK_TYPES } from "./pillars";
 
-export const SITE_URL = "https://stacorps.lovable.app";
+export const SITE_URL = "https://sta-corporate.in";
 
 export const pillarUrl = (p: Pillar) => p.path;
 export const pillarSubUrl = (p: Pillar, sub: string) => `${p.path}/${p.subPath}/${sub}`;

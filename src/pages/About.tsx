@@ -42,19 +42,19 @@ const values = [
 
 const About = () => {
   const breadcrumbSchema = createBreadcrumbSchema([
-    { name: "Home", url: "https://www.stacorporate.com" },
-    { name: "About Us", url: "https://www.stacorporate.com/about" },
+    { name: "Home", url: "https://sta-corporate.in" },
+    { name: "About Us", url: "https://sta-corporate.in/about" },
   ]);
 
   return (
     <>
       <Helmet>
         <title>About STA Corporate Solutions | Coimbatore Since 1982</title>
-        <meta name="description" content="Coimbatore-based corporate solutions group since 1982 — transport, business loans, legal, edu and real estate practices for South India." />
-        <link rel="canonical" href="https://www.stacorporate.com/about" />
+        <meta name="description" content="Coimbatore-based corporate group since 1982 — transport, business loans, legal, edu & real estate across Tamil Nadu, Karnataka, Kerala, AP & Telangana." />
+        <link rel="canonical" href="https://sta-corporate.in/about" />
         <meta property="og:title" content="About STA Corporate Solutions | Since 1982 — Coimbatore" />
-        <meta property="og:description" content="43+ years of trusted business services in Coimbatore & Tamil Nadu. Transport, Loans & Legal — our story." />
-        <meta property="og:url" content="https://www.stacorporate.com/about" />
+        <meta property="og:description" content="43+ years of trusted business services across South India. Transport, Loans & Legal — our story." />
+        <meta property="og:url" content="https://sta-corporate.in/about" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(organizationSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(localBusinessSchema)}</script>
