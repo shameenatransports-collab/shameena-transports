@@ -259,12 +259,12 @@ const LegalServices = () => {
   return (
     <>
       <Helmet>
-        <title>Legal Services — Property, Business, Corporate | STA</title>
-        <meta name="description" content="Coimbatore legal services — property documentation, business contracts, registrations and corporate law support across Tamil Nadu." />
-        <meta name="keywords" content="legal services coimbatore, lawyer tamil nadu, property lawyer, company registration, business lawyer, corporate law, litigation support, trademark registration, labour law compliance" />
+        <title>Legal Services South India | Property, Business, Corporate</title>
+        <meta name="description" content="Legal services across Coimbatore, Chennai, Bangalore, Hyderabad — property docs, business contracts, registrations, corporate & litigation support." />
+        <meta name="keywords" content="legal services south india, property lawyer coimbatore, company registration chennai, business lawyer bangalore, corporate law tamil nadu, trademark registration, litigation support hyderabad" />
         <link rel="canonical" href="https://sta-corporate.in/legal-services" />
-        <meta property="og:title" content="Legal Services — Property, Business, Corporate | STA" />
-        <meta property="og:description" content="Property, contracts, registrations and corporate law support across Tamil Nadu." />
+        <meta property="og:title" content="Legal Services South India | Property, Business, Corporate" />
+        <meta property="og:description" content="Property, contracts, registrations & corporate law across South India." />
         <meta property="og:url" content="https://sta-corporate.in/legal-services" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(legalServiceSchema)}</script>
