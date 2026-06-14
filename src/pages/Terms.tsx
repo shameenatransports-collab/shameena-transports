@@ -7,8 +7,8 @@ const Terms = () => {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.stacorporate.com" },
-      { "@type": "ListItem", "position": 2, "name": "Terms of Service", "item": "https://www.stacorporate.com/terms" }
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sta-corporate.in" },
+      { "@type": "ListItem", "position": 2, "name": "Terms of Service", "item": "https://sta-corporate.in/terms" }
     ]
   };
 
@@ -17,7 +17,7 @@ const Terms = () => {
       <Helmet>
         <title>Terms of Service | STA Corporate Solutions — Transport, Loans & Legal</title>
         <meta name="description" content="Terms of Service for STA Corporate Solutions Coimbatore. Terms, conditions, liability & policies for Transportation, Loan Services & Legal Services in Tamil Nadu." />
-        <link rel="canonical" href="https://www.stacorporate.com/terms" />
+        <link rel="canonical" href="https://sta-corporate.in/terms" />
         <meta name="robots" content="index, follow" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>

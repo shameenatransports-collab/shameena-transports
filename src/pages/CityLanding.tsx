@@ -17,7 +17,7 @@ const CityLanding = () => {
 
   if (!data) return <Navigate to="/" replace />;
 
-  const url = `https://www.stacorporate.com/${data.slug}`;
+  const url = `https://sta-corporate.in/${data.slug}`;
 
   const localBusinessSchema = {
     "@context": "https://schema.org",
@@ -52,7 +52,7 @@ const CityLanding = () => {
   };
 
   const breadcrumb = createBreadcrumbSchema([
-    { name: "Home", url: "https://www.stacorporate.com" },
+    { name: "Home", url: "https://sta-corporate.in" },
     { name: data.name, url },
   ]);
   const cityTransportSchema = createCityTransportSchema(data);

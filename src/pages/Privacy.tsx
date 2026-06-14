@@ -9,8 +9,8 @@ const Privacy = () => {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.stacorporate.com" },
-      { "@type": "ListItem", "position": 2, "name": "Privacy Policy", "item": "https://www.stacorporate.com/privacy" }
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sta-corporate.in" },
+      { "@type": "ListItem", "position": 2, "name": "Privacy Policy", "item": "https://sta-corporate.in/privacy" }
     ]
   };
 
@@ -19,7 +19,7 @@ const Privacy = () => {
       <Helmet>
         <title>Privacy Policy | STA Corporate Solutions - Data Protection & Cookie Usage</title>
         <meta name="description" content="Privacy Policy for STA Corporate Solutions. Learn how we collect, use, and protect your personal data. GDPR compliant cookie usage and data handling practices." />
-        <link rel="canonical" href="https://www.stacorporate.com/privacy" />
+        <link rel="canonical" href="https://sta-corporate.in/privacy" />
         <meta name="robots" content="index, follow" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>

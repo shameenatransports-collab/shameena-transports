@@ -4,11 +4,11 @@
 export const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "@id": "https://www.stacorporate.com/#organization",
+  "@id": "https://sta-corporate.in/#organization",
   "name": "STA Corporate Solutions",
   "legalName": "STA Corporate Solutions",
-  "url": "https://www.stacorporate.com",
-  "logo": "https://www.stacorporate.com/logo.png",
+  "url": "https://sta-corporate.in",
+  "logo": "https://sta-corporate.in/logo.png",
   "description": "Since 1982 — 43+ years of business support including Transportation, Business Loan Assistance & Legal Services in Coimbatore & Tamil Nadu.",
   "foundingDate": "1982",
   "slogan": "Trusted Since 1982 — Transport, Business Loan Assistance & Legal Services",
@@ -42,10 +42,10 @@ export const organizationSchema = {
 export const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "@id": "https://www.stacorporate.com/#localbusiness",
+  "@id": "https://sta-corporate.in/#localbusiness",
   "name": "STA Corporate Solutions — Transportation, Loan Services & Legal Services Coimbatore",
   "alternateName": ["STA Corporate", "STA Solutions", "STA Coimbatore", "STA Corporate Solutions Coimbatore"],
-  "image": ["https://www.stacorporate.com/logo.png"],
+  "image": ["https://sta-corporate.in/logo.png"],
   "description": "Since 1982, STA Corporate Solutions supports Transportation (Full Load & Return Load), Business Loan Assistance (MSME, Mudra, government funding schemes), and Legal Services (Property, Company, Litigation) in Coimbatore & Tamil Nadu.",
   "address": {
     "@type": "PostalAddress",
@@ -60,7 +60,7 @@ export const localBusinessSchema = {
     "latitude": "11.0168",
     "longitude": "76.9558"
   },
-  "url": "https://www.stacorporate.com",
+  "url": "https://sta-corporate.in",
   "telephone": "+91-94430-33055",
   "priceRange": "$$",
   "currenciesAccepted": "INR",
@@ -124,13 +124,13 @@ export const localBusinessSchema = {
 export const transportServiceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  "@id": "https://www.stacorporate.com/transportation#service",
+  "@id": "https://sta-corporate.in/transportation#service",
   "name": "Full Load Lorry Transport Service Coimbatore",
   "serviceType": "Full Truck Load Transport",
   "provider": {
     "@type": "LocalBusiness",
     "name": "STA Corporate Solutions",
-    "@id": "https://www.stacorporate.com/#localbusiness"
+    "@id": "https://sta-corporate.in/#localbusiness"
   },
   "areaServed": [
     { "@type": "City", "name": "Coimbatore" },
@@ -153,11 +153,11 @@ export const transportServiceSchema = {
 export const transportBusinessSchema = {
   "@context": "https://schema.org",
   "@type": ["LocalBusiness", "MovingCompany"],
-  "@id": "https://www.stacorporate.com/#transport-business",
+  "@id": "https://sta-corporate.in/#transport-business",
   "name": "STA Corporate Solutions Transport — Tamil Nadu",
-  "url": "https://www.stacorporate.com/transportation",
+  "url": "https://sta-corporate.in/transportation",
   "telephone": "+91-94430-33055",
-  "image": "https://www.stacorporate.com/logo.png",
+  "image": "https://sta-corporate.in/logo.png",
   "priceRange": "$$",
   "foundingDate": "1982",
   "description": "Full load lorry transport and return load transport subject to route availability across Tamil Nadu from Coimbatore.",
@@ -174,11 +174,11 @@ export const transportBusinessSchema = {
 export const createCityTransportSchema = (city: { name: string; slug: string; metaDescription: string; geo: { lat: string; lng: string } }) => ({
   "@context": "https://schema.org",
   "@type": "Service",
-  "@id": `https://www.stacorporate.com/${city.slug}#transport-service`,
+  "@id": `https://sta-corporate.in/${city.slug}#transport-service`,
   "name": `Full Load Lorry Transport in ${city.name}, Tamil Nadu`,
   "serviceType": "Full Truck Load Transport",
   "description": city.metaDescription,
-  "provider": { "@id": "https://www.stacorporate.com/#transport-business" },
+  "provider": { "@id": "https://sta-corporate.in/#transport-business" },
   "areaServed": {
     "@type": "City",
     "name": city.name,
@@ -190,13 +190,13 @@ export const createCityTransportSchema = (city: { name: string; slug: string; me
 export const financialServiceSchema = {
   "@context": "https://schema.org",
   "@type": "FinancialService",
-  "@id": "https://www.stacorporate.com/financial-services#service",
+  "@id": "https://sta-corporate.in/financial-services#service",
   "name": "Business Loan Assistance Coimbatore — MSME, Mudra & Government Funding",
   "serviceType": "Loan Assistance",
   "provider": {
     "@type": "LocalBusiness",
     "name": "STA Corporate Solutions",
-    "@id": "https://www.stacorporate.com/#localbusiness"
+    "@id": "https://sta-corporate.in/#localbusiness"
   },
   "areaServed": [
     { "@type": "City", "name": "Coimbatore" },
@@ -217,13 +217,13 @@ export const financialServiceSchema = {
 export const legalServiceSchema = {
   "@context": "https://schema.org",
   "@type": "LegalService",
-  "@id": "https://www.stacorporate.com/legal-services#service",
+  "@id": "https://sta-corporate.in/legal-services#service",
   "name": "Legal Services Coimbatore & Tamil Nadu — Property, Business, Corporate Law",
   "serviceType": "Legal Assistance",
   "provider": {
     "@type": "LocalBusiness",
     "name": "STA Corporate Solutions",
-    "@id": "https://www.stacorporate.com/#localbusiness"
+    "@id": "https://sta-corporate.in/#localbusiness"
   },
   "areaServed": [
     { "@type": "City", "name": "Coimbatore" },
@@ -257,18 +257,18 @@ export const createBreadcrumbSchema = (items: { name: string; url: string }[]) =
 export const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "@id": "https://www.stacorporate.com/#website",
-  "url": "https://www.stacorporate.com",
+  "@id": "https://sta-corporate.in/#website",
+  "url": "https://sta-corporate.in",
   "name": "STA Corporate Solutions",
   "description": "Transportation, Loan Services & Legal Services in Coimbatore & Tamil Nadu — Since 1982",
   "publisher": {
-    "@id": "https://www.stacorporate.com/#organization"
+    "@id": "https://sta-corporate.in/#organization"
   },
   "potentialAction": {
     "@type": "SearchAction",
     "target": {
       "@type": "EntryPoint",
-      "urlTemplate": "https://www.stacorporate.com/contact?q={search_term_string}"
+      "urlTemplate": "https://sta-corporate.in/contact?q={search_term_string}"
     },
     "query-input": "required name=search_term_string"
   }
@@ -279,13 +279,13 @@ export const fullLoadServiceSchema = transportServiceSchema;
 export const returnLoadServiceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  "@id": "https://www.stacorporate.com/return-loads#service",
+  "@id": "https://sta-corporate.in/return-loads#service",
   "name": "Return Load Transport Coimbatore Tamil Nadu",
   "serviceType": "Part Load Return Transport",
   "provider": {
     "@type": "LocalBusiness",
     "name": "STA Corporate Solutions",
-    "@id": "https://www.stacorporate.com/#localbusiness"
+    "@id": "https://sta-corporate.in/#localbusiness"
   },
   "areaServed": { "@type": "State", "name": "Tamil Nadu" },
   "description": "Cost-effective return load transport on available routes from Coimbatore. Save up to 40% on select Tamil Nadu routes.",
@@ -299,7 +299,7 @@ export const returnLoadServiceSchema = {
 export const fleetSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  "@id": "https://www.stacorporate.com/fleet#vehicles",
+  "@id": "https://sta-corporate.in/fleet#vehicles",
   "name": "STA Corporate Solutions Fleet — Coimbatore",
   "description": "Our fleet of 12+ modern lorries for transport services across Tamil Nadu",
   "itemListElement": [

@@ -187,18 +187,18 @@ const DubaiRealEstate = () => {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.stacorporate.com" },
-      { "@type": "ListItem", "position": 2, "name": "Overseas Real Estate", "item": "https://www.stacorporate.com/overseas-real-estate" }
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sta-corporate.in" },
+      { "@type": "ListItem", "position": 2, "name": "Overseas Real Estate", "item": "https://sta-corporate.in/overseas-real-estate" }
     ]
   };
 
   const realEstateServiceSchema = {
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
-    "@id": "https://www.stacorporate.com/overseas-real-estate#service",
+    "@id": "https://sta-corporate.in/overseas-real-estate#service",
     "name": "STA Corporate Solutions - Overseas Real Estate & Visa Services",
     "description": "Premium overseas real estate investment services for Tamil Nadu & Indian investors. Properties in UAE, UK, Portugal, Greece, Spain, Estonia with visa & residency assistance.",
-    "url": "https://www.stacorporate.com/overseas-real-estate",
+    "url": "https://sta-corporate.in/overseas-real-estate",
     "areaServed": [
       { "@type": "Country", "name": "United Arab Emirates" },
       { "@type": "Country", "name": "United Kingdom" },
@@ -251,11 +251,11 @@ const DubaiRealEstate = () => {
         <title>Overseas Real Estate Investment | UAE, UK, Europe Property & Visa | STA Corporate Solutions</title>
         <meta name="description" content="Invest in overseas real estate from Tamil Nadu — Luxury properties in Dubai, UK, Portugal, Greece, Spain, Estonia. Golden Visa & residency included. 43+ years trusted service. Call +91 94430 33055." />
         <meta name="keywords" content="overseas real estate india, buy property dubai, uk property investment, golden visa portugal, golden visa greece, estonia e-residency, property investment from tamil nadu, nri property investment, overseas property for indians, buy villa abroad" />
-        <link rel="canonical" href="https://www.stacorporate.com/overseas-real-estate" />
+        <link rel="canonical" href="https://sta-corporate.in/overseas-real-estate" />
         <meta property="og:title" content="Overseas Real Estate & Visa Services | STA Corporate Solutions" />
         <meta property="og:description" content="Buy property in UAE, UK & Europe from India. Golden Visa & residency included. Trusted since 1982. Properties from ₹50 Lakhs." />
-        <meta property="og:url" content="https://www.stacorporate.com/overseas-real-estate" />
-        <meta property="og:image" content="https://www.stacorporate.com/og-image.jpg" />
+        <meta property="og:url" content="https://sta-corporate.in/overseas-real-estate" />
+        <meta property="og:image" content="https://sta-corporate.in/og-image.jpg" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(realEstateServiceSchema)}</script>
