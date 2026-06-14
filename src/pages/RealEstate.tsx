@@ -84,18 +84,18 @@ export default function RealEstate() {
   return (
     <>
       <Helmet>
-        <title>Real Estate | South India Property Discovery Network</title>
+        <title>Real Estate South India | Property in Coimbatore, Chennai, Bangalore</title>
         <meta
           name="description"
-          content="South India Property Intelligence & Discovery Network — residential, commercial and investment opportunities across Tamil Nadu, Karnataka, Telangana, Andhra Pradesh & Kerala."
+          content="Residential, commercial & investment property across Coimbatore, Chennai, Bangalore, Hyderabad, Kochi — Tamil Nadu, Karnataka, Telangana, AP, Kerala."
         />
-        <link rel="canonical" href="https://stacorps.lovable.app/real-estate" />
-        <meta property="og:title" content="Real Estate | South India Property Discovery Network" />
+        <link rel="canonical" href="https://sta-corporate.in/real-estate" />
+        <meta property="og:title" content="Real Estate South India | Coimbatore, Chennai, Bangalore" />
         <meta
           property="og:description"
-          content="Hyperlocal real estate intelligence and 1,000+ localized property pages across South India."
+          content="Hyperlocal property intelligence across 200+ South Indian cities — apartments, villas, commercial, land & investments."
         />
-        <meta property="og:url" content="https://stacorps.lovable.app/real-estate" />
+        <meta property="og:url" content="https://sta-corporate.in/real-estate" />
       </Helmet>
 
       <Layout>
@@ -119,11 +119,11 @@ export default function RealEstate() {
                 hyperlocal opportunities across South India.
               </p>
 
-              <div className="glass rounded-2xl p-1 inline-flex flex-wrap divide-x divide-border/40">
+              <div className="bg-primary-foreground/10 backdrop-blur-md border border-primary-foreground/15 rounded-2xl p-1 inline-flex flex-wrap divide-x divide-primary-foreground/15">
                 {scale.map((s) => (
                   <div key={s.label} className="px-6 py-4 text-center">
                     <div className="text-2xl md:text-3xl font-bold text-primary-foreground">{s.value}</div>
-                    <div className="text-[11px] uppercase tracking-[0.16em] text-primary-foreground/70">{s.label}</div>
+                    <div className="text-[11px] uppercase tracking-[0.16em] text-primary-foreground/80">{s.label}</div>
                   </div>
                 ))}
               </div>

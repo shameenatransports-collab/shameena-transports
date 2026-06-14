@@ -110,8 +110,8 @@ const faqs = [
 ];
 
 const breadcrumbItems = [
-  { name: "Home", url: "https://www.stacorporate.com" },
-  { name: "Return Loads", url: "https://www.stacorporate.com/return-loads" },
+  { name: "Home", url: "https://sta-corporate.in" },
+  { name: "Return Loads", url: "https://sta-corporate.in/return-loads" },
 ];
 
 const returnLoadFaqSchema = {
@@ -142,15 +142,15 @@ const ReturnLoads = () => {
           name="keywords"
           content="return load transport tamil nadu, return load lorry coimbatore, cheap transport chennai, return load availability, part load transport, return lorry booking, discounted transport rates, return truck coimbatore chennai, return load tiruppur bangalore"
         />
-        <link rel="canonical" href="https://www.stacorporate.com/return-loads" />
+        <link rel="canonical" href="https://sta-corporate.in/return-loads" />
         <meta property="og:title" content="Return Load Transport Tamil Nadu | STA Corporate Solutions" />
         <meta
           property="og:description"
           content="Return Load transport subject to route availability. Popular routes: Coimbatore-Chennai, Tiruppur-Bangalore. Check availability now."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.stacorporate.com/return-loads" />
-        <meta property="og:image" content="https://www.stacorporate.com/og-image.jpg" />
+        <meta property="og:url" content="https://sta-corporate.in/return-loads" />
+        <meta property="og:image" content="https://sta-corporate.in/og-image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Return Load Transport | STA Corporate Solutions" />
         <meta name="twitter:description" content="Discounted Return Load transport on popular Tamil Nadu routes. Call to check availability." />

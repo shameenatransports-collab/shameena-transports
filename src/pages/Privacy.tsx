@@ -9,8 +9,8 @@ const Privacy = () => {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.stacorporate.com" },
-      { "@type": "ListItem", "position": 2, "name": "Privacy Policy", "item": "https://www.stacorporate.com/privacy" }
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sta-corporate.in" },
+      { "@type": "ListItem", "position": 2, "name": "Privacy Policy", "item": "https://sta-corporate.in/privacy" }
     ]
   };
 
@@ -19,7 +19,7 @@ const Privacy = () => {
       <Helmet>
         <title>Privacy Policy | STA Corporate Solutions - Data Protection & Cookie Usage</title>
         <meta name="description" content="Privacy Policy for STA Corporate Solutions. Learn how we collect, use, and protect your personal data. GDPR compliant cookie usage and data handling practices." />
-        <link rel="canonical" href="https://www.stacorporate.com/privacy" />
+        <link rel="canonical" href="https://sta-corporate.in/privacy" />
         <meta name="robots" content="index, follow" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
@@ -50,7 +50,7 @@ const Privacy = () => {
                   <p className="text-muted-foreground leading-relaxed">
                     STA Corporate Solutions ("we", "our", or "us") is committed to protecting your privacy. 
                     This Privacy Policy explains how we collect, use, disclose, and safeguard your information 
-                    when you visit our website www.stacorporate.com or use our services.
+                    when you visit our website www.sta-corporate.in or use our services.
                   </p>
                   <p className="text-muted-foreground leading-relaxed mt-4">
                     We comply with the following Indian data protection laws:

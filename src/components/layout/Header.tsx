@@ -43,15 +43,23 @@ export function Header() {
   // Close mobile menu on route change
   useEffect(() => setIsOpen(false), [location.pathname]);
 
-  const linkBase =
-    "text-[13px] font-medium tracking-tight text-foreground/80 transition-colors duration-300 ease-apple hover:text-foreground";
-  const activeCls = "text-foreground";
+  const solid = scrolled || isOpen;
+
+  const linkBase = cn(
+    "text-[13px] font-medium tracking-tight transition-colors duration-300 ease-apple",
+    solid
+      ? "text-foreground/80 hover:text-foreground"
+      : "text-primary-foreground/85 hover:text-primary-foreground"
+  );
+  const activeCls = solid ? "text-foreground" : "text-primary-foreground";
 
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 glass-strong border-b transition-all duration-500 ease-apple",
-        scrolled || isOpen ? "border-border/40 shadow-sm" : "border-border/25"
+        "fixed top-0 left-0 right-0 z-50 border-b transition-all duration-500 ease-apple",
+        solid
+          ? "glass-strong border-border/40 shadow-sm"
+          : "bg-transparent border-transparent"
       )}
     >
       <div className="container mx-auto px-4">
@@ -63,8 +71,8 @@ export function Header() {
               className="h-9 md:h-10 w-auto transition-transform duration-500 ease-apple group-hover:scale-[1.04]"
             />
             <div className="hidden sm:block leading-tight tracking-tight">
-              <span className="font-semibold text-[15px] text-primary">STA</span>
-              <span className="font-medium text-[15px] text-foreground/70"> Corporate Solutions</span>
+              <span className={cn("font-semibold text-[15px]", solid ? "text-primary" : "text-primary-foreground")}>STA</span>
+              <span className={cn("font-medium text-[15px]", solid ? "text-foreground/70" : "text-primary-foreground/75")}> Corporate Solutions</span>
             </div>
           </Link>
 
@@ -122,7 +130,10 @@ export function Header() {
 
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="lg:hidden p-2 -mr-2 text-foreground rounded-full hover:bg-foreground/5 transition-colors"
+              className={cn(
+                "lg:hidden p-2 -mr-2 rounded-full transition-colors",
+                solid ? "text-foreground hover:bg-foreground/5" : "text-primary-foreground hover:bg-primary-foreground/10"
+              )}
               aria-label="Toggle menu"
               aria-expanded={isOpen}
             >

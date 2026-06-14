@@ -49,19 +49,19 @@ const features = [
 
 const Fleet = () => {
   const breadcrumbSchema = createBreadcrumbSchema([
-    { name: "Home", url: "https://www.stacorporate.com" },
-    { name: "Fleet", url: "https://www.stacorporate.com/fleet" },
+    { name: "Home", url: "https://sta-corporate.in" },
+    { name: "Fleet", url: "https://sta-corporate.in/fleet" },
   ]);
 
   return (
     <>
       <Helmet>
-        <title>Our Fleet | Modern Lorries & Trucks - STA Corporate Solutions Coimbatore</title>
-        <meta name="description" content="12+ modern lorries and trucks. Multi-axle trailers, open body lorries. Well-maintained, insured fleet for goods transport in Tamil Nadu." />
-        <link rel="canonical" href="https://www.stacorporate.com/fleet" />
-        <meta property="og:title" content="Our Fleet | STA Corporate Solutions" />
-        <meta property="og:description" content="12+ modern, insured lorries for Full Load and Return Load transport in Tamil Nadu." />
-        <meta property="og:url" content="https://www.stacorporate.com/fleet" />
+        <title>Fleet — 12+ Lorries & Trailers | STA Coimbatore</title>
+        <meta name="description" content="12+ insured lorries and multi-axle trailers for Full Load transport across Tamil Nadu, Karnataka, Kerala. Coimbatore-based." />
+        <link rel="canonical" href="https://sta-corporate.in/fleet" />
+        <meta property="og:title" content="Fleet — 12+ Lorries & Trailers | STA Coimbatore" />
+        <meta property="og:description" content="12+ modern, insured lorries for Full Load transport across South India." />
+        <meta property="og:url" content="https://sta-corporate.in/fleet" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(localBusinessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(fleetSchema)}</script>

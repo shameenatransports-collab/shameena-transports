@@ -132,8 +132,8 @@ const Contact = () => {
   };
 
   const breadcrumbSchema = createBreadcrumbSchema([
-    { name: "Home", url: "https://www.stacorporate.com" },
-    { name: "Contact", url: "https://www.stacorporate.com/contact" },
+    { name: "Home", url: "https://sta-corporate.in" },
+    { name: "Contact", url: "https://sta-corporate.in/contact" },
   ]);
 
   return (
@@ -141,10 +141,10 @@ const Contact = () => {
       <Helmet>
         <title>Contact Us | Business Enquiries - STA Corporate Solutions</title>
         <meta name="description" content="Contact STA Corporate Solutions for business enquiries. Call +91 94430 33055 or WhatsApp for instant quotes. Transportation, Trading, Financial Services & Real Estate." />
-        <link rel="canonical" href="https://www.stacorporate.com/contact" />
+        <link rel="canonical" href="https://sta-corporate.in/contact" />
         <meta property="og:title" content="Contact STA Corporate Solutions | Get a Quote" />
         <meta property="og:description" content="Call +91 94430 33055 or WhatsApp for instant quotes. Complete business solutions." />
-        <meta property="og:url" content="https://www.stacorporate.com/contact" />
+        <meta property="og:url" content="https://sta-corporate.in/contact" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(localBusinessSchema)}</script>
       </Helmet>
@@ -217,10 +217,11 @@ const Contact = () => {
                     <form onSubmit={handleSubmit} className="space-y-4">
                       <div className="grid sm:grid-cols-2 gap-4">
                         <div>
-                          <label className="text-sm font-medium text-foreground mb-1 block">
+                          <label htmlFor="contact-name" className="text-sm font-medium text-foreground mb-1 block">
                             Your Name *
                           </label>
                           <Input
+                            id="contact-name"
                             name="name"
                             value={formData.name}
                             onChange={handleChange}
@@ -231,10 +232,11 @@ const Contact = () => {
                           {errors.name && <p className="mt-1 text-xs text-destructive">{errors.name}</p>}
                         </div>
                         <div>
-                          <label className="text-sm font-medium text-foreground mb-1 block">
+                          <label htmlFor="contact-phone" className="text-sm font-medium text-foreground mb-1 block">
                             Phone Number *
                           </label>
                           <Input
+                            id="contact-phone"
                             name="phone"
                             type="tel"
                             value={formData.phone}
@@ -247,10 +249,11 @@ const Contact = () => {
                         </div>
                       </div>
                       <div>
-                        <label className="text-sm font-medium text-foreground mb-1 block">
+                        <label htmlFor="contact-email" className="text-sm font-medium text-foreground mb-1 block">
                           Email (Optional)
                         </label>
                         <Input
+                          id="contact-email"
                           name="email"
                           type="email"
                           value={formData.email}
@@ -262,10 +265,11 @@ const Contact = () => {
                       </div>
                       <div className="grid sm:grid-cols-2 gap-4">
                         <div>
-                          <label className="text-sm font-medium text-foreground mb-1 block">
+                          <label htmlFor="contact-pickup" className="text-sm font-medium text-foreground mb-1 block">
                             Pickup Location *
                           </label>
                           <Input
+                            id="contact-pickup"
                             name="pickup"
                             value={formData.pickup}
                             onChange={handleChange}
@@ -276,10 +280,11 @@ const Contact = () => {
                           {errors.pickup && <p className="mt-1 text-xs text-destructive">{errors.pickup}</p>}
                         </div>
                         <div>
-                          <label className="text-sm font-medium text-foreground mb-1 block">
+                          <label htmlFor="contact-destination" className="text-sm font-medium text-foreground mb-1 block">
                             Destination *
                           </label>
                           <Input
+                            id="contact-destination"
                             name="destination"
                             value={formData.destination}
                             onChange={handleChange}
@@ -291,10 +296,11 @@ const Contact = () => {
                         </div>
                       </div>
                       <div>
-                        <label className="text-sm font-medium text-foreground mb-1 block">
+                        <label htmlFor="contact-goods" className="text-sm font-medium text-foreground mb-1 block">
                           Type of Goods *
                         </label>
                         <Input
+                          id="contact-goods"
                           name="goods"
                           value={formData.goods}
                           onChange={handleChange}
@@ -305,10 +311,11 @@ const Contact = () => {
                         {errors.goods && <p className="mt-1 text-xs text-destructive">{errors.goods}</p>}
                       </div>
                       <div>
-                        <label className="text-sm font-medium text-foreground mb-1 block">
+                        <label htmlFor="contact-message" className="text-sm font-medium text-foreground mb-1 block">
                           Additional Details
                         </label>
                         <Textarea
+                          id="contact-message"
                           name="message"
                           value={formData.message}
                           onChange={handleChange}

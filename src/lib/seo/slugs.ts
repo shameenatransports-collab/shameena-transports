@@ -1,7 +1,7 @@
 import { CITIES, CORRIDORS, City } from "./cities";
 import { Pillar, PILLARS, REGISTRATIONS, BHK_TYPES } from "./pillars";
 
-export const SITE_URL = "https://stacorps.lovable.app";
+export const SITE_URL = "https://sta-corporate.in";
 
 export const pillarUrl = (p: Pillar) => p.path;
 export const pillarSubUrl = (p: Pillar, sub: string) => `${p.path}/${p.subPath}/${sub}`;
@@ -46,11 +46,15 @@ export function enumerateAllUrls(): SitemapEntry[] {
   out.push(
     { path: "/", priority: "1.0", changefreq: "weekly" },
     { path: "/services", priority: "0.9", changefreq: "weekly" },
+    { path: "/services/transport-categories", priority: "0.7", changefreq: "monthly" },
     { path: "/about", priority: "0.7", changefreq: "monthly" },
     { path: "/contact", priority: "0.7", changefreq: "monthly" },
     { path: "/fleet", priority: "0.6", changefreq: "monthly" },
     { path: "/return-loads", priority: "0.6", changefreq: "monthly" },
     { path: "/service-areas", priority: "0.6", changefreq: "monthly" },
+    { path: "/coimbatore", priority: "0.7", changefreq: "monthly" },
+    { path: "/chennai", priority: "0.7", changefreq: "monthly" },
+    { path: "/tiruppur", priority: "0.7", changefreq: "monthly" },
     { path: "/privacy", priority: "0.3", changefreq: "yearly" },
     { path: "/terms", priority: "0.3", changefreq: "yearly" },
   );

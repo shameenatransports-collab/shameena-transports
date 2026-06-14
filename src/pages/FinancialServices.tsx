@@ -127,15 +127,15 @@ const FinancialServices = () => {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.stacorporate.com" },
-      { "@type": "ListItem", "position": 2, "name": "Financial Services", "item": "https://www.stacorporate.com/financial-services" }
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sta-corporate.in" },
+      { "@type": "ListItem", "position": 2, "name": "Financial Services", "item": "https://sta-corporate.in/financial-services" }
     ]
   };
 
   const financialServiceSchema = {
     "@context": "https://schema.org",
     "@type": "FinancialService",
-    "@id": "https://www.stacorporate.com/financial-services#service",
+    "@id": "https://sta-corporate.in/financial-services#service",
     "name": "STA Corporate Solutions Loan Services",
     "description": "Loan assistance for businesses, industries, companies, MSME, Mudra, and government funding schemes in Tamil Nadu. Not for personal loans.",
     "provider": {
@@ -169,13 +169,13 @@ const FinancialServices = () => {
   return (
     <>
       <Helmet>
-        <title>Business Loans — MSME, Mudra & Govt Schemes | STA</title>
-        <meta name="description" content="Business loan assistance in Tamil Nadu — MSME, Mudra, PMEGP and government funding scheme guidance from Coimbatore." />
-        <meta name="keywords" content="msme loan coimbatore, mudra loan tamil nadu, business loan assistance, industry loan tamil nadu, company loan support, government funding schemes tamil nadu, commercial vehicle loan, bank loan assistance" />
-        <link rel="canonical" href="https://www.stacorporate.com/financial-services" />
-        <meta property="og:title" content="Business Loans — MSME, Mudra & Govt Schemes | STA" />
-        <meta property="og:description" content="MSME, Mudra and government scheme guidance from Coimbatore." />
-        <meta property="og:url" content="https://www.stacorporate.com/financial-services" />
+        <title>Business Loans South India | MSME, Mudra, Govt Schemes</title>
+        <meta name="description" content="Business loan assistance across Coimbatore, Chennai, Bangalore, Hyderabad, Kochi — MSME, Mudra, PMEGP & govt scheme guidance. Since 1982." />
+        <meta name="keywords" content="msme loan coimbatore, mudra loan chennai, business loan bangalore, business loan south india, government funding schemes, commercial vehicle loan tamil nadu, msme loan kerala, business loan hyderabad" />
+        <link rel="canonical" href="https://sta-corporate.in/financial-services" />
+        <meta property="og:title" content="Business Loans South India | MSME, Mudra & Govt Schemes" />
+        <meta property="og:description" content="MSME, Mudra and government scheme guidance across South India from Coimbatore." />
+        <meta property="og:url" content="https://sta-corporate.in/financial-services" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(financialServiceSchema)}</script>
       </Helmet>

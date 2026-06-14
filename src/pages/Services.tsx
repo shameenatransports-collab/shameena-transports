@@ -86,8 +86,8 @@ const services = [
 
 const Services = () => {
   const breadcrumbSchema = createBreadcrumbSchema([
-    { name: "Home", url: "https://www.stacorporate.com" },
-    { name: "Transportation Services", url: "https://www.stacorporate.com/services" },
+    { name: "Home", url: "https://sta-corporate.in" },
+    { name: "Transportation Services", url: "https://sta-corporate.in/services" },
   ]);
 
   const serviceListSchema = {
@@ -100,7 +100,7 @@ const Services = () => {
       "position": index + 1,
       "item": {
         "@type": "Service",
-        "@id": `https://www.stacorporate.com/services#${service.id}`,
+        "@id": `https://sta-corporate.in/services#${service.id}`,
         "name": service.title,
         "description": service.description,
         "provider": {
@@ -117,10 +117,10 @@ const Services = () => {
         <title>Full Load & Return Load Lorry Transport Services | STA Corporate Solutions Tamil Nadu</title>
         <meta name="description" content="Full Load dedicated truck transport & Return Load on available routes in Tamil Nadu. Textile, Construction Material Transport. Coimbatore, Chennai, Tiruppur. Since 1982. Call for quotes!" />
         <meta name="keywords" content="full load lorry service, return load transport tamil nadu, dedicated truck booking, return load availability, lorry transport coimbatore, goods transport chennai, textile transport tiruppur" />
-        <link rel="canonical" href="https://www.stacorporate.com/services" />
+        <link rel="canonical" href="https://sta-corporate.in/services" />
         <meta property="og:title" content="Full Load & Return Load Transport Services | STA Corporate Solutions" />
         <meta property="og:description" content="Dedicated Full Load transport & Return Load on available routes. Tamil Nadu's trusted logistics since 1982." />
-        <meta property="og:url" content="https://www.stacorporate.com/services" />
+        <meta property="og:url" content="https://sta-corporate.in/services" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(localBusinessSchema)}</script>
