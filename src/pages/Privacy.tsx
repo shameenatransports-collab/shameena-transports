@@ -50,7 +50,7 @@ const Privacy = () => {
                   <p className="text-muted-foreground leading-relaxed">
                     STA Corporate Solutions ("we", "our", or "us") is committed to protecting your privacy. 
                     This Privacy Policy explains how we collect, use, disclose, and safeguard your information 
-                    when you visit our website www.stacorporate.com or use our services.
+                    when you visit our website www.sta-corporate.in or use our services.
                   </p>
                   <p className="text-muted-foreground leading-relaxed mt-4">
                     We comply with the following Indian data protection laws:
