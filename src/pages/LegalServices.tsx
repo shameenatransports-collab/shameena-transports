@@ -213,15 +213,15 @@ const LegalServices = () => {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.stacorporate.com" },
-      { "@type": "ListItem", "position": 2, "name": "Legal Services", "item": "https://www.stacorporate.com/legal-services" }
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sta-corporate.in" },
+      { "@type": "ListItem", "position": 2, "name": "Legal Services", "item": "https://sta-corporate.in/legal-services" }
     ]
   };
 
   const legalServiceSchema = {
     "@context": "https://schema.org",
     "@type": "LegalService",
-    "@id": "https://www.stacorporate.com/legal-services#service",
+    "@id": "https://sta-corporate.in/legal-services#service",
     "name": "STA Corporate Solutions Legal Services",
     "description": "Comprehensive legal services for individuals, businesses, and corporates in Tamil Nadu. Property documentation, company formation, litigation support, and more.",
     "provider": {
@@ -262,10 +262,10 @@ const LegalServices = () => {
         <title>Legal Services — Property, Business, Corporate | STA</title>
         <meta name="description" content="Coimbatore legal services — property documentation, business contracts, registrations and corporate law support across Tamil Nadu." />
         <meta name="keywords" content="legal services coimbatore, lawyer tamil nadu, property lawyer, company registration, business lawyer, corporate law, litigation support, trademark registration, labour law compliance" />
-        <link rel="canonical" href="https://www.stacorporate.com/legal-services" />
+        <link rel="canonical" href="https://sta-corporate.in/legal-services" />
         <meta property="og:title" content="Legal Services — Property, Business, Corporate | STA" />
         <meta property="og:description" content="Property, contracts, registrations and corporate law support across Tamil Nadu." />
-        <meta property="og:url" content="https://www.stacorporate.com/legal-services" />
+        <meta property="og:url" content="https://sta-corporate.in/legal-services" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(legalServiceSchema)}</script>
       </Helmet>

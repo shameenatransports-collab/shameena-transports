@@ -132,8 +132,8 @@ const Contact = () => {
   };
 
   const breadcrumbSchema = createBreadcrumbSchema([
-    { name: "Home", url: "https://www.stacorporate.com" },
-    { name: "Contact", url: "https://www.stacorporate.com/contact" },
+    { name: "Home", url: "https://sta-corporate.in" },
+    { name: "Contact", url: "https://sta-corporate.in/contact" },
   ]);
 
   return (
@@ -141,10 +141,10 @@ const Contact = () => {
       <Helmet>
         <title>Contact Us | Business Enquiries - STA Corporate Solutions</title>
         <meta name="description" content="Contact STA Corporate Solutions for business enquiries. Call +91 94430 33055 or WhatsApp for instant quotes. Transportation, Trading, Financial Services & Real Estate." />
-        <link rel="canonical" href="https://www.stacorporate.com/contact" />
+        <link rel="canonical" href="https://sta-corporate.in/contact" />
         <meta property="og:title" content="Contact STA Corporate Solutions | Get a Quote" />
         <meta property="og:description" content="Call +91 94430 33055 or WhatsApp for instant quotes. Complete business solutions." />
-        <meta property="og:url" content="https://www.stacorporate.com/contact" />
+        <meta property="og:url" content="https://sta-corporate.in/contact" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(localBusinessSchema)}</script>
       </Helmet>
