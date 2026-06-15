@@ -5,8 +5,8 @@ const stats = [
   {
     icon: Clock,
     value: "43+",
-    label: "Years of service",
-    description: "Trusted since 1982",
+    label: "Years in transport",
+    description: "STA Transport since 1982",
   },
   {
     icon: Truck,
@@ -16,15 +16,15 @@ const stats = [
   },
   {
     icon: Banknote,
-    value: "100%",
-    label: "Loan guidance",
-    description: "Business-focused assistance",
+    value: "5",
+    label: "Integrated practices",
+    description: "Four new verticals since mid-2025",
   },
   {
     icon: Scale,
-    value: "TN",
-    label: "Legal support",
-    description: "Corporate & business matters",
+    value: "5",
+    label: "South India states",
+    description: "TN · KA · TS · AP · KL",
   },
 ];
 
