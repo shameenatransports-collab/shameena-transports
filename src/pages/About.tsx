@@ -176,19 +176,19 @@ const About = () => {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
               <div>
                 <div className="text-4xl md:text-5xl font-bold text-secondary">43+</div>
-                <div className="text-primary-foreground/80 mt-2">Years Experience</div>
+                <div className="text-primary-foreground/80 mt-2">Years in Transport</div>
               </div>
               <div>
-                <div className="text-4xl md:text-5xl font-bold text-secondary">12+</div>
-                <div className="text-primary-foreground/80 mt-2">Lorries in Fleet</div>
+                <div className="text-4xl md:text-5xl font-bold text-secondary">5</div>
+                <div className="text-primary-foreground/80 mt-2">Integrated Practices</div>
               </div>
               <div>
-                <div className="text-4xl md:text-5xl font-bold text-secondary">B2B</div>
-                <div className="text-primary-foreground/80 mt-2">Business Focus</div>
+                <div className="text-4xl md:text-5xl font-bold text-secondary">2025</div>
+                <div className="text-primary-foreground/80 mt-2">4 New Verticals Launched</div>
               </div>
               <div>
-                <div className="text-4xl md:text-5xl font-bold text-secondary">TN</div>
-                <div className="text-primary-foreground/80 mt-2">Tamil Nadu Service</div>
+                <div className="text-4xl md:text-5xl font-bold text-secondary">5</div>
+                <div className="text-primary-foreground/80 mt-2">South India States</div>
               </div>
             </div>
           </div>
