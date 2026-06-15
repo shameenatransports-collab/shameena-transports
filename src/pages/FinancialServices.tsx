@@ -119,7 +119,7 @@ const whyChooseUs = [
   "Business, industry, and company-focused loan assistance",
   "Subsidy claim assistance",
   "Application follow-up support as per lender or department process",
-  "43+ years of trusted service"
+  "Backed by STA Corporate Solutions — 43+ year transport heritage"
 ];
 
 const FinancialServices = () => {

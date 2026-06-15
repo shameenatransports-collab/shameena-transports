@@ -205,7 +205,7 @@ const whyChooseUs = [
   "Regular case status updates",
   "Multilingual support (Tamil & English)",
   "Weekend consultations available",
-  "43+ years of trusted service"
+  "Backed by STA Corporate Solutions — 43+ year transport heritage"
 ];
 
 const LegalServices = () => {

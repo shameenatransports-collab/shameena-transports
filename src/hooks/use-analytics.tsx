@@ -17,7 +17,7 @@ export function usePageTracking() {
       "/services": "Services - Business Solutions",
       "/service-areas": "Service Areas - Tamil Nadu Coverage",
       "/fleet": "Our Fleet - Modern Transport Vehicles",
-      "/about": "About Us - Since 1982",
+      "/about": "About STA Corporate Solutions",
       "/contact": "Contact Us - Get Quote",
       "/transportation": "Transportation Services",
       "/trading": "Iron & Steel Trading",
