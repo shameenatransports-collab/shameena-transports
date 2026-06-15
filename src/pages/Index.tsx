@@ -15,12 +15,12 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>STA Corporate | Transport, Loans & Legal — Coimbatore</title>
-        <meta name="description" content="Coimbatore-based since 1982. Full-load lorry transport across South India, MSME & Mudra loan assistance, and corporate legal services." />
-        <meta name="keywords" content="STA Corporate Solutions, lorry transport coimbatore, MSME loan coimbatore, mudra loan tamil nadu, government funding schemes tamil nadu, business loan assistance, legal services coimbatore, full load transport, return load, company registration, transport service tamil nadu" />
+        <title>STA Corporate Solutions | 5 Practices for South India</title>
+        <meta name="description" content="Transport since 1982 (43+ yrs). Financial, Legal, Edu Consultancy & Real Estate launched mid-2025. Five integrated practices for South India — Coimbatore HQ." />
+        <meta name="keywords" content="STA Corporate Solutions, lorry transport coimbatore, MSME loan coimbatore, mudra loan tamil nadu, government funding schemes south india, business loan assistance, legal services coimbatore, edu consultancy south india, real estate south india, full load transport, return load, company registration" />
         <link rel="canonical" href="https://sta-corporate.in" />
-        <meta property="og:title" content="STA Corporate Solutions | Transport, Loans & Legal — Coimbatore" />
-        <meta property="og:description" content="Trusted since 1982. Lorry transport, business loan assistance and legal services in Coimbatore & Tamil Nadu." />
+        <meta property="og:title" content="STA Corporate Solutions | Transport Since 1982 · 5 Practices for South India" />
+        <meta property="og:description" content="Transportation since 1982. Financial, Legal, Edu Consultancy & Real Estate launched mid-2025. Five integrated practices across Tamil Nadu, Karnataka, Telangana, Andhra Pradesh and Kerala." />
         <meta property="og:image" content="https://sta-corporate.in/og-image.jpg" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en_IN" />
