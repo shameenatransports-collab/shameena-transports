@@ -76,7 +76,7 @@ export default function EduConsultancy() {
             <div className="max-w-4xl">
               <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-background text-[11px] font-bold tracking-[0.18em] uppercase text-primary shadow-xl ring-1 ring-primary-foreground/40 mb-8">
                 <span className="h-1.5 w-1.5 rounded-full bg-secondary" />
-                Edu Consultancy · South India
+                New in 2025 · Part of STA Corporate Solutions
               </div>
               <h1 className="text-display-2xl text-primary-foreground mb-6">
                 Academic Mobility Network <br />
@@ -85,8 +85,7 @@ export default function EduConsultancy() {
                 </span>
               </h1>
               <p className="text-xl text-primary-foreground/80 max-w-2xl mb-10">
-                Discover educational opportunities across 1,000+ localized pathways — built for learners, working
-                professionals, adult learners, transfer seekers, and academic continuation candidates.
+                Launched mid-2025 under STA Corporate Solutions — alongside Transportation (since 1982), Financial, Legal and Real Estate. Discover 1,000+ localized pathways for learners, working professionals, adult learners and degree-transfer seekers.
               </p>
 
               <div className="bg-primary-foreground/10 backdrop-blur-md border border-primary-foreground/15 rounded-2xl p-1 inline-flex flex-wrap divide-x divide-primary-foreground/15">

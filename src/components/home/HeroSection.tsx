@@ -53,7 +53,7 @@ export function HeroSection() {
             className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-background text-[11px] font-bold tracking-[0.18em] uppercase text-primary shadow-xl ring-1 ring-primary-foreground/40 mb-8"
           >
             <span className="h-1.5 w-1.5 rounded-full bg-secondary" />
-            Trusted Since 1982 · Five Practices
+            Transport Since 1982 · Five Practices for South India
           </motion.div>
 
           <motion.h1
@@ -65,7 +65,7 @@ export function HeroSection() {
             STA Corporate Solutions
             <br />
             <span className="bg-gradient-to-r from-secondary via-secondary to-primary-foreground bg-clip-text text-transparent">
-              Transport, Loans &amp; Legal · Coimbatore
+              Five Integrated Practices for South India
             </span>
           </motion.h1>
 
@@ -75,7 +75,7 @@ export function HeroSection() {
             transition={{ duration: 0.9, ease: easeApple, delay: 0.35 }}
             className="text-headline text-primary-foreground/85 max-w-2xl mx-auto mb-3"
           >
-            Transportation, Financial, Legal, Edu Consultancy and Real Estate — five integrated practices for South India.
+            Transportation since 1982 — 43+ years of service excellence. Financial, Legal, Edu Consultancy and Real Estate launched mid-2025 to complete the group.
           </motion.p>
           <motion.p
             initial={{ opacity: 0 }}
@@ -83,7 +83,7 @@ export function HeroSection() {
             transition={{ duration: 1, ease: easeApple, delay: 0.5 }}
             className="text-sm md:text-base text-primary-foreground/60 mb-12 tracking-tight"
           >
-            43+ years · Coimbatore HQ · Tamil Nadu, Karnataka, Telangana, Andhra Pradesh, Kerala
+            Coimbatore HQ · Tamil Nadu, Karnataka, Telangana, Andhra Pradesh, Kerala
           </motion.p>
 
           <motion.div

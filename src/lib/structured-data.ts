@@ -9,9 +9,9 @@ export const organizationSchema = {
   "legalName": "STA Corporate Solutions",
   "url": "https://sta-corporate.in",
   "logo": "https://sta-corporate.in/logo.png",
-  "description": "Since 1982 — 43+ years of business support including Transportation, Business Loan Assistance & Legal Services in Coimbatore & Tamil Nadu.",
+  "description": "STA Corporate Solutions — Transportation since 1982 (43+ years). Financial, Legal, Edu Consultancy and Real Estate practices launched mid-2025. Five integrated practices for South India, headquartered in Coimbatore.",
   "foundingDate": "1982",
-  "slogan": "Trusted Since 1982 — Transport, Business Loan Assistance & Legal Services",
+  "slogan": "Transport Since 1982 · Five Integrated Practices for South India",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "No.302/2A7, VK Road, Peelamedu",
@@ -46,7 +46,7 @@ export const localBusinessSchema = {
   "name": "STA Corporate Solutions — Transportation, Loan Services & Legal Services Coimbatore",
   "alternateName": ["STA Corporate", "STA Solutions", "STA Coimbatore", "STA Corporate Solutions Coimbatore"],
   "image": ["https://sta-corporate.in/logo.png"],
-  "description": "Since 1982, STA Corporate Solutions supports Transportation (Full Load & Return Load), Business Loan Assistance (MSME, Mudra, government funding schemes), and Legal Services (Property, Company, Litigation) in Coimbatore & Tamil Nadu.",
+  "description": "STA Corporate Solutions — Transportation since 1982 (43+ years of service excellence). Financial Services (MSME, Mudra, government funding schemes), Legal Services, Edu Consultancy and Real Estate practices added mid-2025. Five integrated practices serving Coimbatore and South India.",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "No.302/2A7, VK Road, Peelamedu",
@@ -260,7 +260,7 @@ export const websiteSchema = {
   "@id": "https://sta-corporate.in/#website",
   "url": "https://sta-corporate.in",
   "name": "STA Corporate Solutions",
-  "description": "Transportation, Loan Services & Legal Services in Coimbatore & Tamil Nadu — Since 1982",
+  "description": "STA Corporate Solutions — Transport since 1982. Five integrated practices for South India: Transportation, Financial, Legal, Edu Consultancy and Real Estate.",
   "publisher": {
     "@id": "https://sta-corporate.in/#organization"
   },

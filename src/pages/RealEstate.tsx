@@ -106,7 +106,7 @@ export default function RealEstate() {
             <div className="max-w-4xl">
               <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-background text-[11px] font-bold tracking-[0.18em] uppercase text-primary shadow-xl ring-1 ring-primary-foreground/40 mb-8">
                 <span className="h-1.5 w-1.5 rounded-full bg-secondary" />
-                Real Estate · South India
+                New in 2025 · Part of STA Corporate Solutions
               </div>
               <h1 className="text-display-2xl text-primary-foreground mb-6">
                 South India Property <br />
@@ -115,8 +115,7 @@ export default function RealEstate() {
                 </span>
               </h1>
               <p className="text-xl text-primary-foreground/80 max-w-2xl mb-10">
-                A data-driven property intelligence ecosystem connecting buyers, investors, NRIs and businesses with
-                hyperlocal opportunities across South India.
+                Launched mid-2025 under STA Corporate Solutions, joining our 43+ year transport practice and our new Financial, Legal and Edu Consultancy verticals. A data-driven property intelligence ecosystem connecting buyers, investors, NRIs and businesses with hyperlocal opportunities across South India.
               </p>
 
               <div className="bg-primary-foreground/10 backdrop-blur-md border border-primary-foreground/15 rounded-2xl p-1 inline-flex flex-wrap divide-x divide-primary-foreground/15">

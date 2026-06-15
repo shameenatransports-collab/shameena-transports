@@ -2,11 +2,11 @@ import { Shield, Clock, Headphones, Award, MapPin, Banknote } from "lucide-react
 import { ScrollReveal, ScrollRevealItem } from "@/components/ui/scroll-reveal";
 
 const features = [
+  { icon: Award, title: "43+ years in transport", description: "Coimbatore-rooted transportation business since 1982 — service excellence backed by decades of fleet operations." },
   { icon: Shield, title: "Fully insured", description: "Damage protection coverage on every shipment, every route." },
   { icon: Clock, title: "Disciplined follow-up", description: "Clear coordination for transport, funding assistance, and documentation needs." },
-  { icon: Banknote, title: "Transparent assistance", description: "Business-focused loan and government scheme guidance without inflated promises." },
-  { icon: Award, title: "43+ years", description: "Coimbatore-rooted service for businesses across Tamil Nadu since 1982." },
-  { icon: MapPin, title: "Tamil Nadu focus", description: "Route and service knowledge across Coimbatore, Tiruppur, Chennai, Salem, Madurai." },
+  { icon: Banknote, title: "Five integrated practices", description: "Transportation, Financial, Legal, Edu Consultancy and Real Estate — the latter four launched mid-2025 under STA Corporate Solutions." },
+  { icon: MapPin, title: "South India focus", description: "Tamil Nadu, Karnataka, Telangana, Andhra Pradesh and Kerala — local knowledge across the five-state belt." },
   { icon: Headphones, title: "Responsive support", description: "Reachable by phone or WhatsApp for bookings, enquiries, and consultations." },
 ];
 
@@ -25,12 +25,12 @@ export function WhyChooseUs() {
           <div className="max-w-3xl mx-auto text-center mb-16 md:mb-20">
             <p className="text-eyebrow text-secondary mb-5">Why STA</p>
             <h2 className="text-display-xl mb-6">
-              Four decades of trust,
+              43+ years in transport,
               <br />
-              <span className="text-primary-foreground/60">measured in deliveries.</span>
+              <span className="text-primary-foreground/60">five practices for South India.</span>
             </h2>
             <p className="text-headline text-primary-foreground/70 max-w-2xl mx-auto">
-              Transparent business support across transportation, funding assistance, and legal documentation.
+              Transportation since 1982. Financial, Legal, Edu Consultancy and Real Estate added mid-2025 to serve South India end-to-end.
             </p>
           </div>
         </ScrollReveal>

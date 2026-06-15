@@ -119,7 +119,7 @@ const whyChooseUs = [
   "Business, industry, and company-focused loan assistance",
   "Subsidy claim assistance",
   "Application follow-up support as per lender or department process",
-  "43+ years of trusted service"
+  "Backed by STA Corporate Solutions — 43+ year transport heritage"
 ];
 
 const FinancialServices = () => {
@@ -193,7 +193,7 @@ const FinancialServices = () => {
               <div className="max-w-4xl">
                 <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-background text-[11px] font-bold tracking-[0.18em] uppercase text-primary shadow-xl ring-1 ring-primary-foreground/40 mb-8">
                   <span className="h-1.5 w-1.5 rounded-full bg-secondary" />
-                  Capital · Govt Schemes & Bank Loans
+                  New in 2025 · Backed by STA's 43+ Year Heritage
                 </div>
                 <h1 className="text-display-2xl text-primary-foreground mb-6">
                   Funding for
@@ -203,8 +203,7 @@ const FinancialServices = () => {
                   </span>
                 </h1>
                 <p className="text-headline text-primary-foreground/85 max-w-2xl mb-10">
-                  MSME, Mudra, Startup India and government funding scheme assistance.
-                  Documentation, application support, and disciplined follow-up. Strictly not for personal loans.
+                  Launched mid-2025 as part of STA Corporate Solutions — building on 43+ years of Coimbatore business relationships. MSME, Mudra, Startup India and government funding scheme assistance with documentation and disciplined follow-up. Strictly not for personal loans.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
                   <a href="tel:+919443033055">

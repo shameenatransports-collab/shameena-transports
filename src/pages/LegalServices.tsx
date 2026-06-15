@@ -205,7 +205,7 @@ const whyChooseUs = [
   "Regular case status updates",
   "Multilingual support (Tamil & English)",
   "Weekend consultations available",
-  "43+ years of trusted service"
+  "Backed by STA Corporate Solutions — 43+ year transport heritage"
 ];
 
 const LegalServices = () => {
@@ -280,7 +280,7 @@ const LegalServices = () => {
               <div className="max-w-4xl">
                 <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-background text-[11px] font-bold tracking-[0.18em] uppercase text-primary shadow-xl ring-1 ring-primary-foreground/40 mb-8">
                   <span className="h-1.5 w-1.5 rounded-full bg-secondary" />
-                  Counsel · All Tamil Nadu Districts
+                  New in 2025 · Part of STA Corporate Solutions
                 </div>
                 <h1 className="text-display-2xl text-primary-foreground mb-6">
                   Confidence at
@@ -290,8 +290,7 @@ const LegalServices = () => {
                   </span>
                 </h1>
                 <p className="text-headline text-primary-foreground/85 max-w-2xl mb-10">
-                  Property, company, litigation, IP and compliance documentation support for individuals,
-                  businesses and corporates across Tamil Nadu.
+                  Launched mid-2025 under STA Corporate Solutions. Property, company, litigation, IP and compliance documentation support for individuals, businesses and corporates across South India — backed by 43+ years of group-level Coimbatore presence.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
                   <a href="tel:+919443033055">
@@ -315,7 +314,7 @@ const LegalServices = () => {
                 <div className="glass rounded-2xl p-5 md:p-7">
                   <div className="grid grid-cols-4 divide-x divide-border/40">
                     {[
-                      { value: "1982", label: "Trusted Since" },
+                      { value: "2025", label: "New Practice" },
                       { value: "38", label: "TN Districts" },
                       { value: "B2B", label: "Business Focus" },
                       { value: "Docs", label: "Full Support" },
@@ -335,7 +334,7 @@ const LegalServices = () => {
               <div className="glass rounded-2xl p-5">
                 <div className="grid grid-cols-2 gap-x-6 gap-y-5">
                   {[
-                    { value: "1982", label: "Trusted Since" },
+                    { value: "2025", label: "New Practice" },
                     { value: "38", label: "TN Districts" },
                     { value: "B2B", label: "Business Focus" },
                     { value: "Docs", label: "Full Support" },
