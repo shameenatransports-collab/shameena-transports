@@ -9,9 +9,9 @@ export const organizationSchema = {
   "legalName": "STA Corporate Solutions",
   "url": "https://sta-corporate.in",
   "logo": "https://sta-corporate.in/logo.png",
-  "description": "Since 1982 — 43+ years of business support including Transportation, Business Loan Assistance & Legal Services in Coimbatore & Tamil Nadu.",
+  "description": "STA Corporate Solutions — Transportation since 1982 (43+ years). Financial, Legal, Edu Consultancy and Real Estate practices launched mid-2025. Five integrated practices for South India, headquartered in Coimbatore.",
   "foundingDate": "1982",
-  "slogan": "Trusted Since 1982 — Transport, Business Loan Assistance & Legal Services",
+  "slogan": "Transport Since 1982 · Five Integrated Practices for South India",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "No.302/2A7, VK Road, Peelamedu",
