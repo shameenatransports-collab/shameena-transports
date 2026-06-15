@@ -314,7 +314,7 @@ const LegalServices = () => {
                 <div className="glass rounded-2xl p-5 md:p-7">
                   <div className="grid grid-cols-4 divide-x divide-border/40">
                     {[
-                      { value: "1982", label: "Trusted Since" },
+                      { value: "2025", label: "New Practice" },
                       { value: "38", label: "TN Districts" },
                       { value: "B2B", label: "Business Focus" },
                       { value: "Docs", label: "Full Support" },
@@ -334,7 +334,7 @@ const LegalServices = () => {
               <div className="glass rounded-2xl p-5">
                 <div className="grid grid-cols-2 gap-x-6 gap-y-5">
                   {[
-                    { value: "1982", label: "Trusted Since" },
+                    { value: "2025", label: "New Practice" },
                     { value: "38", label: "TN Districts" },
                     { value: "B2B", label: "Business Focus" },
                     { value: "Docs", label: "Full Support" },
