@@ -128,18 +128,17 @@ const Transportation = () => {
               <div className="max-w-4xl">
                 <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-background text-[11px] font-bold tracking-[0.18em] uppercase text-primary shadow-xl ring-1 ring-primary-foreground/40 mb-8">
                   <span className="h-1.5 w-1.5 rounded-full bg-secondary" />
-                  Logistics · Since 1982
+                  STA Transport · Since 1982 · 43+ Years
                 </div>
                 <h1 className="text-display-2xl text-primary-foreground mb-6">
-                  Transportation
+                  Transportation since 1982
                   <br />
                   <span className="bg-gradient-to-r from-secondary via-secondary to-primary-foreground bg-clip-text text-transparent">
-                    across Tamil Nadu.
+                    43+ years of service excellence.
                   </span>
                 </h1>
                 <p className="text-headline text-primary-foreground/85 max-w-2xl mb-10">
-                  Full Load lorry transport with our own fleet of 12+ vehicles. Dedicated trucks,
-                  complete control, disciplined route coordination.
+                  Full Load lorry transport with our own fleet of 12+ vehicles across Tamil Nadu, Karnataka and Kerala. The original STA practice — the foundation on which our four new 2025 verticals are built.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
                   <GetQuoteModal />
