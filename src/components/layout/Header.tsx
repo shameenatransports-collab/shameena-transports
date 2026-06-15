@@ -145,11 +145,14 @@ export function Header() {
         {/* Mobile nav */}
         <div
           className={cn(
-            "lg:hidden overflow-hidden transition-all duration-500 ease-apple",
-            isOpen ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0"
+            "lg:hidden overflow-hidden transition-opacity duration-500 ease-apple",
+            isOpen ? "opacity-100" : "max-h-0 opacity-0 pointer-events-none"
           )}
         >
-          <nav className="my-2 rounded-3xl border border-border/60 bg-background py-4 shadow-xl">
+          <nav
+            className="my-2 rounded-3xl border border-border/60 bg-background py-4 shadow-xl overflow-y-auto overscroll-contain"
+            style={{ maxHeight: "calc(100dvh - 96px)" }}
+          >
             <div className="flex flex-col gap-1">
               {navLinks.slice(0, 2).map((l) => (
                 <MobileLink key={l.href} to={l.href} active={location.pathname === l.href}>
