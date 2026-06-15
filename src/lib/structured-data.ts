@@ -260,7 +260,7 @@ export const websiteSchema = {
   "@id": "https://sta-corporate.in/#website",
   "url": "https://sta-corporate.in",
   "name": "STA Corporate Solutions",
-  "description": "Transportation, Loan Services & Legal Services in Coimbatore & Tamil Nadu — Since 1982",
+  "description": "STA Corporate Solutions — Transport since 1982. Five integrated practices for South India: Transportation, Financial, Legal, Edu Consultancy and Real Estate.",
   "publisher": {
     "@id": "https://sta-corporate.in/#organization"
   },
