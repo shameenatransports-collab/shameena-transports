@@ -17,7 +17,7 @@ export function TrustBadges() {
         <ScrollReveal stagger>
           <ScrollRevealItem>
             <p className="text-eyebrow text-muted-foreground/70 text-center mb-12">
-              Trusted by industries across Tamil Nadu
+              Trusted by industries across South India · Transport since 1982
             </p>
           </ScrollRevealItem>
           <div className="grid grid-cols-3 md:grid-cols-6 gap-x-4 gap-y-10">
