@@ -1,4 +1,4 @@
-import { Children, cloneElement, isValidElement, useId, useMemo, useState, type ReactElement, type ReactNode } from "react";
+import { Children, cloneElement, isValidElement, useId, useMemo, useRef, useState, type ReactElement, type ReactNode } from "react";
 import { z } from "zod";
 import { Phone, MessageCircle, Send, Truck } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -7,7 +7,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
-import { trackContactFormSubmit, trackPhoneClick, trackWhatsAppClick } from "@/lib/analytics";
+import { trackContactFormSubmit, trackPhoneClick, trackWhatsAppClick, isLikelyBot } from "@/lib/analytics";
 
 const enquirySchema = z.object({
   name: z.string().trim().min(2, "Enter your name").max(100, "Name is too long"),
@@ -21,12 +21,19 @@ type EnquiryForm = z.infer<typeof enquirySchema>;
 
 const initialForm: EnquiryForm = { name: "", phone: "", route: "", service: "", details: "" };
 
+const MIN_FILL_MS = 3000; // human users almost never fill faster than 3s
+const SUBMIT_THROTTLE_MS = 60_000; // 1 submission per minute per browser
+const LAST_SUBMIT_KEY = "sta_lead_last_submit";
+
 export function LeadEnquiryForm({ city }: { city?: string }) {
   const { toast } = useToast();
   const [form, setForm] = useState<EnquiryForm>(initialForm);
   const [errors, setErrors] = useState<Partial<Record<keyof EnquiryForm, string>>>({});
+  // Honeypot — invisible to humans, bots auto-fill anything labelled "company"
+  const [honeypot, setHoneypot] = useState("");
+  const mountedAt = useRef<number>(Date.now());
 
-  const context = city ? `${city} enquiry` : "Tamil Nadu enquiry";
+  const context = city ? `${city} enquiry` : "South India enquiry";
   const whatsappHref = useMemo(() => {
     const parsed = enquirySchema.safeParse(form);
     const data = parsed.success ? parsed.data : form;
@@ -51,9 +58,32 @@ export function LeadEnquiryForm({ city }: { city?: string }) {
     return null;
   };
 
+  const passesAntiBot = (): boolean => {
+    // 1. Honeypot must remain empty
+    if (honeypot.trim().length > 0) return false;
+    // 2. Min fill-time gate
+    if (Date.now() - mountedAt.current < MIN_FILL_MS) return false;
+    // 3. UA / webdriver guard
+    if (isLikelyBot()) return false;
+    // 4. Per-browser throttle
+    try {
+      const last = Number(localStorage.getItem(LAST_SUBMIT_KEY) || 0);
+      if (last && Date.now() - last < SUBMIT_THROTTLE_MS) return false;
+    } catch { /* localStorage blocked → allow */ }
+    return true;
+  };
+
   const handleSubmit = (action: "whatsapp" | "form") => {
     const data = validate();
     if (!data) return;
+
+    if (!passesAntiBot()) {
+      // Silent no-op for bots; benign UX nudge for humans hitting the throttle.
+      toast({ title: "Just a moment", description: "Please wait a few seconds before submitting again." });
+      return;
+    }
+
+    try { localStorage.setItem(LAST_SUBMIT_KEY, String(Date.now())); } catch { /* noop */ }
 
     trackContactFormSubmit({
       service_type: data.service,
@@ -83,6 +113,20 @@ export function LeadEnquiryForm({ city }: { city?: string }) {
         </div>
 
         <form className="space-y-4" onSubmit={(e) => e.preventDefault()} noValidate>
+          {/* Honeypot — visually & assistive-tech hidden, but visible to naive bots */}
+          <div aria-hidden="true" className="absolute left-[-9999px] top-auto h-0 w-0 overflow-hidden" tabIndex={-1}>
+            <label htmlFor="sta-company-website">Company website (leave blank)</label>
+            <input
+              id="sta-company-website"
+              name="company_website"
+              type="text"
+              autoComplete="off"
+              tabIndex={-1}
+              value={honeypot}
+              onChange={(e) => setHoneypot(e.target.value)}
+            />
+          </div>
+
           <div className="grid gap-4 sm:grid-cols-2">
             <FieldError label="Name" error={errors.name}>
               <Input value={form.name} onChange={(e) => update("name", e.target.value)} maxLength={100} autoComplete="name" />
@@ -114,6 +158,10 @@ export function LeadEnquiryForm({ city }: { city?: string }) {
           <Button type="button" variant="ghost" className="h-11 w-full rounded-full" onClick={() => handleSubmit("form")}>
             <Send className="h-4 w-4" /> Validate enquiry details
           </Button>
+          <p className="text-[11px] text-muted-foreground/70 text-center">
+            By submitting you consent to STA Corporate Solutions contacting you about this enquiry, under the DPDP Act 2023. Withdraw anytime via{" "}
+            <a href="/data-request" className="underline hover:text-foreground">Data Request</a>.
+          </p>
         </form>
       </CardContent>
     </Card>

@@ -23,6 +23,15 @@ import {
   Star,
   MapPin
 } from "lucide-react";
+import { ServiceFAQ } from "@/components/seo/ServiceFAQ";
+
+const legalFaqs = [
+  { question: "What legal services does STA cover?", answer: "Property documentation, company registration (Pvt Ltd, LLP, OPC, Partnership), GST registration, trademark and IP filings, contracts, business compliance, labour-law advisory, and civil dispute support across Tamil Nadu and South India." },
+  { question: "Does STA represent clients in court?", answer: "STA provides documentation, drafting, and consultation. Court representation is handled by empanelled advocates we coordinate with on your behalf — you get a single point of contact." },
+  { question: "Can STA help register a company end-to-end?", answer: "Yes — name reservation, DIN/DSC, MoA/AoA drafting, MCA filing, PAN/TAN, GST registration and post-incorporation compliance setup. Typical turnaround is 10–15 working days subject to MCA processing." },
+  { question: "Where is STA Legal Services available?", answer: "Primary delivery across Tamil Nadu (Coimbatore, Chennai, Tiruppur, Erode, Salem, Madurai, Trichy) with extended coverage into Karnataka, Telangana, Andhra Pradesh and Kerala. Operating base: Peelamedu, Coimbatore." },
+  { question: "When did STA start Legal Services?", answer: "STA Corporate Solutions launched its Legal Services practice in mid-2025 as part of the group's expansion into integrated corporate practices. The group's transportation business has operated continuously since 1982." },
+];
 
 const personalServices = [
   {
@@ -558,6 +567,14 @@ const LegalServices = () => {
               </div>
             </div>
           </AnimatedSection>
+
+          <ServiceFAQ
+            eyebrow="Legal Services FAQ"
+            heading="Property, corporate, registrations —"
+            subheading="answered plainly."
+            faqs={legalFaqs}
+            speakableId="faq-legal"
+          />
 
           <CTASection />
         </main>
