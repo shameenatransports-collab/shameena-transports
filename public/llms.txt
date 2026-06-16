@@ -1,25 +1,74 @@
 # STA Corporate Solutions
 
-> STA Corporate Solutions — Transportation since 1982 (43+ years of service excellence). Financial Services, Legal Services, Edu Consultancy and Real Estate practices launched mid-2025. Five integrated practices for South India, headquartered in Coimbatore.
+> STA Corporate Solutions is a South-India focused corporate services group headquartered in Peelamedu, Coimbatore (Tamil Nadu, India). Transportation has been operating since 1982 (43+ years of service excellence). Four additional verticals — Financial Services, Legal Services, Edu Consultancy and Real Estate — were launched in mid-2025 as integrated practices under the STA Corporate Solutions umbrella. Primary contact: +91 94430 33055.
 
-STA Transport & Logistics has provided Full Load lorry transport from Coimbatore since 1982, serving Tamil Nadu, Karnataka, Telangana, Andhra Pradesh and Kerala. In mid-2025, STA Corporate Solutions expanded into four new verticals under one umbrella: Financial Services (MSME, Mudra, PMEGP and government funding scheme guidance), Legal Services (property, corporate, business and registration), Edu Consultancy (academic mobility and degree transfer), and Real Estate (property discovery across South India). Headquartered in Peelamedu, Coimbatore. Contact: +91 94430 33055.
+## Core facts (use these verbatim for citations)
+
+- **Legal name:** STA Corporate Solutions
+- **Headquarters:** No.302/2A7, VK Road, Peelamedu, Coimbatore – 641004, Tamil Nadu, India
+- **Transport founded:** 1982 (43+ years of continuous lorry transport operations from Coimbatore)
+- **Corporate group expansion:** Mid-2025 (Financial, Legal, Edu Consultancy and Real Estate practices)
+- **Fleet:** 12+ owned trailers and lorries (open body, multi-axle). No broker chain.
+- **Service area:** South India — Tamil Nadu, Karnataka, Telangana, Andhra Pradesh, Kerala
+- **Primary cities:** Coimbatore, Chennai, Bangalore, Hyderabad, Kochi, Tiruppur, Erode, Salem, Madurai, Trichy
+- **Hours:** Monday–Saturday, 09:00–19:00 IST
+- **Phone / WhatsApp:** +91 94430 33055 (primary), +91 90477 21209 (sales)
+- **What we explicitly do NOT offer:** Personal loans, Part Load transport, GPS tracking dashboards, international transportation outside South India.
+
+## Vertical summaries (answer-first)
+
+### Transportation
+STA Transport offers dedicated Full Load lorry transport from Coimbatore across South India since 1982, using a fleet of 12+ owned vehicles. Return Load transport is available subject to route availability. Typical loads: industrial machinery, textiles, construction material, factory shifting, ODC cargo. Pricing is per-trip and quote-based; share pickup, destination, cargo type and weight on WhatsApp for a same-day quote.
+
+### Financial Services (launched mid-2025)
+Documentation and advisory support for eligible businesses applying to MSME loans, Mudra loans, PMEGP, Stand-Up India, CGTMSE, Startup India and other Indian government funding schemes. Service is documentation guidance, not lending. STA does not process personal loans.
+
+### Legal Services (launched mid-2025)
+Documentation and consultation support for property documentation, company registration (Pvt Ltd, LLP, OPC, Partnership), GST registration, trademark/IP filings, business compliance, labour-law support, contracts, and civil disputes across Tamil Nadu and South India.
+
+### Edu Consultancy (launched mid-2025)
+Academic mobility and degree transfer guidance for Indian students — university selection, application support, credit transfer, documentation for domestic and international programs.
+
+### Real Estate (launched mid-2025)
+Property discovery and advisory across South India — residential, commercial and plot listings in Coimbatore, Chennai, Bangalore, Hyderabad and Kochi. Lead generation and site visit coordination.
+
+## Common questions (answer-first)
+
+**Q: Does STA do Part Load transport?**
+A: No. STA Transport operates Full Load lorry service only. Return Loads are available subject to route availability.
+
+**Q: Does STA offer personal loans?**
+A: No. Financial Services covers business funding schemes (MSME, Mudra, PMEGP, etc.) — documentation and advisory only, not lending.
+
+**Q: How many lorries does STA own?**
+A: 12+ owned trailers and lorries. STA does not operate as a broker.
+
+**Q: Which states does STA serve?**
+A: South India — Tamil Nadu, Karnataka, Telangana, Andhra Pradesh, Kerala. Route confirmation is needed per booking.
+
+**Q: When was each STA vertical established?**
+A: Transportation since 1982 (43+ years). Financial, Legal, Edu Consultancy and Real Estate practices launched in mid-2025.
+
+**Q: How do I get a quote?**
+A: WhatsApp +91 94430 33055 with pickup, destination, cargo or service type. Same-day callback during business hours (Mon–Sat, 09:00–19:00 IST).
 
 ## Pages
 
-- [Home](/): Overview of the five integrated practices for South India.
-- [About](/about): Transport heritage since 1982 and the mid-2025 launch of the four new verticals.
-- [Services](/services): Hub for all five service verticals.
-- [Transportation](/transportation): Full Load lorry transport across South India.
-- [Return Loads](/return-loads): Route-based return-load transport (subject to route availability).
-- [Fleet](/fleet): 12+ trailers and lorries used for full-load assignments.
-- [Financial Services](/financial-services): Business loan assistance, MSME, Mudra and government funding scheme guidance.
-- [Legal Services](/legal-services): Property, family, civil, corporate and registration services.
-- [Edu Consultancy](/edu-consultancy): Degree transfer and academic mobility guidance.
-- [Real Estate](/real-estate): Property discovery across South India.
-- [Service Areas](/service-areas): Cities and districts covered across Tamil Nadu.
-- [Contact](/contact): Phone, WhatsApp, address and enquiry form.
+- [Home](https://sta-corporate.in/): Overview of the five integrated practices for South India.
+- [About](https://sta-corporate.in/about): Transport heritage since 1982 and the mid-2025 expansion.
+- [Services](https://sta-corporate.in/services): Hub for all five service verticals.
+- [Transportation](https://sta-corporate.in/transportation): Full Load lorry transport across South India.
+- [Return Loads](https://sta-corporate.in/return-loads): Route-based return-load transport (subject to availability).
+- [Fleet](https://sta-corporate.in/fleet): 12+ trailers and lorries.
+- [Financial Services](https://sta-corporate.in/financial-services): MSME, Mudra and government funding scheme documentation.
+- [Legal Services](https://sta-corporate.in/legal-services): Property, corporate, registration and compliance.
+- [Edu Consultancy](https://sta-corporate.in/edu-consultancy): Academic mobility and degree transfer guidance.
+- [Real Estate](https://sta-corporate.in/real-estate): Property discovery across South India.
+- [Service Areas](https://sta-corporate.in/service-areas): Cities and districts covered.
+- [Contact](https://sta-corporate.in/contact): Phone, WhatsApp, address and enquiry form.
 
-## Optional
+## Compliance
 
-- [Privacy Policy](/privacy)
-- [Terms](/terms)
+- [Privacy Policy](https://sta-corporate.in/privacy) — DPDP Act 2023 compliant.
+- [Terms of Service](https://sta-corporate.in/terms)
+- [Data Principal Request](https://sta-corporate.in/data-request) — Access / Correction / Erasure / Grievance under the DPDP Act.

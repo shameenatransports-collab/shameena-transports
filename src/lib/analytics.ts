@@ -8,11 +8,34 @@ declare global {
   }
 }
 
+// ============ BOT / AUTOMATION GUARD ============
+// Suppresses GA4 events fired by crawlers, headless browsers, link-preview
+// fetchers and synthetic monitoring so GSC/GA4 numbers reflect real users.
+
+const BOT_UA_RE = /(bot|crawler|spider|crawling|headless|puppeteer|playwright|lighthouse|gtmetrix|pingdom|monitor|preview|scrape|fetch|wget|curl|http-client|axios|node-fetch|facebookexternalhit|whatsapp|telegrambot|slackbot|linkedinbot|twitterbot|discordbot|embedly|skypeuripreview|google-inspectiontool|google-pagespeed|google-extended|chatgpt|gptbot|claudebot|perplexitybot|anthropic-ai|ccbot|bytespider|amazonbot|applebot)/i;
+
+let _botCache: boolean | null = null;
+export const isLikelyBot = (): boolean => {
+  if (typeof window === "undefined" || typeof navigator === "undefined") return true;
+  if (_botCache !== null) return _botCache;
+  try {
+    // navigator.webdriver is true for Selenium / Playwright / Puppeteer in headless mode
+    if ((navigator as any).webdriver === true) return (_botCache = true);
+    if (BOT_UA_RE.test(navigator.userAgent || "")) return (_botCache = true);
+    // No language usually = bot. No plugins on a desktop UA = often bot.
+    if (!navigator.languages || navigator.languages.length === 0) return (_botCache = true);
+    return (_botCache = false);
+  } catch {
+    return (_botCache = false);
+  }
+};
+
 // Track custom events
 export const trackEvent = (
   eventName: string,
   parameters?: Record<string, any>
 ) => {
+  if (isLikelyBot()) return;
   if (typeof window !== "undefined" && window.gtag) {
     window.gtag("event", eventName, parameters);
   }
@@ -56,7 +79,7 @@ export const trackPhoneClick = (phoneNumber: string, location: string) => {
     event_label: phoneNumber,
     click_location: location,
   });
-  
+
   // Also track as conversion
   trackEvent("generate_lead", {
     event_category: "conversion",
@@ -74,7 +97,7 @@ export const trackWhatsAppClick = (location: string) => {
     event_label: "WhatsApp Contact",
     click_location: location,
   });
-  
+
   trackEvent("generate_lead", {
     event_category: "conversion",
     event_label: "WhatsApp Intent",
@@ -124,6 +147,7 @@ export const trackCTAClick = (ctaName: string, location: string) => {
 // ============ PAGE VIEWS ============
 
 export const trackPageView = (pagePath: string, pageTitle: string) => {
+  if (isLikelyBot()) return;
   if (typeof window !== "undefined" && window.gtag) {
     window.gtag("config", getGAMeasurementId(), {
       page_path: pagePath,
@@ -160,7 +184,6 @@ export const trackServiceInterest = (serviceName: string) => {
 
 // Helper to get measurement ID
 const getGAMeasurementId = (): string => {
-  // This will be replaced with actual ID from environment or config
   return (window as any).GA_MEASUREMENT_ID || "G-XXXXXXXXXX";
 };
 
@@ -168,6 +191,7 @@ const getGAMeasurementId = (): string => {
 
 export const initEngagementTracking = () => {
   if (typeof window === "undefined") return;
+  if (isLikelyBot()) return; // skip listeners entirely for bots
 
   let scrollMilestones = [25, 50, 75, 90, 100];
   let trackedMilestones: number[] = [];
