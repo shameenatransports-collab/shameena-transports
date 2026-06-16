@@ -15,6 +15,7 @@ const quickLinks = [
   { name: "Return Loads", href: "/return-loads" },
   { name: "Contact", href: "/contact" },
   { name: "Privacy Policy", href: "/privacy" },
+  { name: "Data Request (DPDP)", href: "/data-request" },
   { name: "Terms of Service", href: "/terms" },
 ];
 
@@ -131,8 +132,9 @@ export function Footer() {
             <p className="text-xs text-primary-foreground/60">
               © {new Date().getFullYear()} STA Corporate Solutions. All rights reserved.
             </p>
-            <div className="flex gap-6">
+            <div className="flex flex-wrap gap-6 justify-center">
               <Link to="/privacy" className="text-xs text-primary-foreground/60 hover:text-primary-foreground transition-colors">Privacy Policy</Link>
+              <Link to="/data-request" className="text-xs text-primary-foreground/60 hover:text-primary-foreground transition-colors">Data Request</Link>
               <Link to="/terms" className="text-xs text-primary-foreground/60 hover:text-primary-foreground transition-colors">Terms of Service</Link>
             </div>
           </div>

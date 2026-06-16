@@ -17,7 +17,13 @@ interface ConsentPreferences {
   marketing: boolean;
 }
 
+interface StoredConsent extends ConsentPreferences {
+  ts: string; // ISO timestamp — DPDP audit trail
+  version: number;
+}
+
 const CONSENT_KEY = "sta_corporate_cookie_consent";
+const CONSENT_VERSION = 2; // bump on policy change to re-prompt users
 
 export function CookieConsent() {
   const [open, setOpen] = useState(false);
@@ -29,14 +35,22 @@ export function CookieConsent() {
   });
 
   useEffect(() => {
-    const savedConsent = localStorage.getItem(CONSENT_KEY);
-    if (!savedConsent) {
-      // Delay showing modal for better UX
+    try {
+      const savedRaw = localStorage.getItem(CONSENT_KEY);
+      if (!savedRaw) {
+        const timer = setTimeout(() => setOpen(true), 1500);
+        return () => clearTimeout(timer);
+      }
+      const parsed = JSON.parse(savedRaw) as Partial<StoredConsent>;
+      // Re-prompt if user consented before the current policy version
+      if (!parsed.version || parsed.version < CONSENT_VERSION) {
+        const timer = setTimeout(() => setOpen(true), 1500);
+        return () => clearTimeout(timer);
+      }
+      updateGoogleConsent(parsed as ConsentPreferences);
+    } catch {
       const timer = setTimeout(() => setOpen(true), 1500);
       return () => clearTimeout(timer);
-    } else {
-      const parsed = JSON.parse(savedConsent);
-      updateGoogleConsent(parsed);
     }
   }, []);
 
@@ -51,64 +65,51 @@ export function CookieConsent() {
     }
   };
 
-  const handleAcceptAll = () => {
-    const allAccepted: ConsentPreferences = {
-      necessary: true,
-      analytics: true,
-      marketing: true,
-    };
-    localStorage.setItem(CONSENT_KEY, JSON.stringify(allAccepted));
-    updateGoogleConsent(allAccepted);
+  const persist = (prefs: ConsentPreferences) => {
+    const stored: StoredConsent = { ...prefs, ts: new Date().toISOString(), version: CONSENT_VERSION };
+    try { localStorage.setItem(CONSENT_KEY, JSON.stringify(stored)); } catch { /* noop */ }
+    updateGoogleConsent(prefs);
     setOpen(false);
   };
 
-  const handleRejectAll = () => {
-    const rejected: ConsentPreferences = {
-      necessary: true,
-      analytics: false,
-      marketing: false,
-    };
-    localStorage.setItem(CONSENT_KEY, JSON.stringify(rejected));
-    updateGoogleConsent(rejected);
-    setOpen(false);
-  };
-
-  const handleSavePreferences = () => {
-    localStorage.setItem(CONSENT_KEY, JSON.stringify(preferences));
-    updateGoogleConsent(preferences);
-    setOpen(false);
-  };
+  const handleAcceptAll = () => persist({ necessary: true, analytics: true, marketing: true });
+  const handleRejectAll = () => persist({ necessary: true, analytics: false, marketing: false });
+  const handleSavePreferences = () => persist(preferences);
 
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogContent className="sm:max-w-lg">
         <DialogHeader>
           <DialogTitle className="text-xl font-bold">
-            🍪 Cookie Preferences
+            Your privacy choices
           </DialogTitle>
           <DialogDescription className="text-base pt-2">
-            We use cookies to enhance your browsing experience, analyze site traffic, 
-            and personalize content. Your privacy matters to us.
+            STA Corporate Solutions is the Data Fiduciary for this site. Under the
+            Digital Personal Data Protection Act 2023, we ask for your free, specific
+            and informed consent before using non-essential cookies. You can withdraw
+            consent anytime — your right.
           </DialogDescription>
         </DialogHeader>
 
         {showDetails ? (
           <div className="space-y-4 py-4">
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between gap-4">
               <div className="space-y-0.5">
-                <Label className="font-semibold">Essential Cookies</Label>
+                <Label className="font-semibold">Essential</Label>
                 <p className="text-sm text-muted-foreground">
-                  Required for website functionality
+                  Required for site functionality, security and consent storage.
+                  Lawful basis: legitimate use (DPDP §7).
                 </p>
               </div>
               <Switch checked disabled />
             </div>
 
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between gap-4">
               <div className="space-y-0.5">
-                <Label className="font-semibold">Analytics Cookies</Label>
+                <Label className="font-semibold">Analytics</Label>
                 <p className="text-sm text-muted-foreground">
-                  Help us understand how visitors use our site
+                  Google Analytics 4 — anonymised page-view, scroll and time-on-page
+                  metrics so we can improve the site. Purpose: service improvement.
                 </p>
               </div>
               <Switch
@@ -119,11 +120,12 @@ export function CookieConsent() {
               />
             </div>
 
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between gap-4">
               <div className="space-y-0.5">
-                <Label className="font-semibold">Marketing Cookies</Label>
+                <Label className="font-semibold">Marketing</Label>
                 <p className="text-sm text-muted-foreground">
-                  Used to deliver relevant advertisements
+                  Re-targeting and ad-campaign measurement. Purpose: relevant
+                  advertising. You can opt out anytime without losing access.
                 </p>
               </div>
               <Switch
@@ -133,31 +135,33 @@ export function CookieConsent() {
                 }
               />
             </div>
+
+            <p className="text-xs text-muted-foreground pt-2">
+              Read our{" "}
+              <a href="/privacy" className="underline hover:text-foreground">Privacy Policy</a>{" "}
+              · File a request via{" "}
+              <a href="/data-request" className="underline hover:text-foreground">Data Request</a>.
+            </p>
           </div>
         ) : (
           <p className="text-sm text-muted-foreground py-2">
-            By clicking "Accept All", you consent to our use of cookies. 
-            Click "Customize" to manage your preferences.
+            We use essential cookies to run the site, and optional analytics &amp; marketing
+            cookies only with your consent. Choose below — you can change this anytime
+            from the Privacy Policy page.
           </p>
         )}
 
         <DialogFooter className="flex-col sm:flex-row gap-2">
           {showDetails ? (
             <>
-              <Button variant="outline" onClick={() => setShowDetails(false)}>
-                Back
-              </Button>
-              <Button onClick={handleSavePreferences}>Save Preferences</Button>
+              <Button variant="outline" onClick={() => setShowDetails(false)}>Back</Button>
+              <Button onClick={handleSavePreferences}>Save preferences</Button>
             </>
           ) : (
             <>
-              <Button variant="outline" onClick={handleRejectAll}>
-                Reject All
-              </Button>
-              <Button variant="secondary" onClick={() => setShowDetails(true)}>
-                Customize
-              </Button>
-              <Button onClick={handleAcceptAll}>Accept All</Button>
+              <Button variant="outline" onClick={handleRejectAll}>Reject all</Button>
+              <Button variant="secondary" onClick={() => setShowDetails(true)}>Customise</Button>
+              <Button onClick={handleAcceptAll}>Accept all</Button>
             </>
           )}
         </DialogFooter>

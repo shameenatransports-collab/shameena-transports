@@ -36,6 +36,29 @@ export const organizationSchema = {
       "availableLanguage": ["English", "Tamil"]
     }
   ],
+  "knowsAbout": [
+    "Full Load Lorry Transport",
+    "Return Load Transport",
+    "Factory Shifting",
+    "MSME Loan Documentation",
+    "Mudra Loan Assistance",
+    "PMEGP Scheme Documentation",
+    "Government Funding Schemes",
+    "Property Documentation",
+    "Company Registration",
+    "GST Registration",
+    "Trademark Filing",
+    "Academic Mobility",
+    "Degree Transfer Guidance",
+    "South India Real Estate"
+  ],
+  "areaServed": [
+    { "@type": "AdministrativeArea", "name": "Tamil Nadu" },
+    { "@type": "AdministrativeArea", "name": "Karnataka" },
+    { "@type": "AdministrativeArea", "name": "Telangana" },
+    { "@type": "AdministrativeArea", "name": "Andhra Pradesh" },
+    { "@type": "AdministrativeArea", "name": "Kerala" }
+  ],
   "sameAs": []
 };
 
