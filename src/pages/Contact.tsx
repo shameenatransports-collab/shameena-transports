@@ -138,7 +138,7 @@ const Contact = () => {
     <>
       <Helmet>
         <title>Contact Us | Business Enquiries - STA Corporate Solutions</title>
-        <meta name="description" content="Contact STA Corporate Solutions for business enquiries. Call +91 94430 33055 or WhatsApp for instant quotes. Transportation, Trading, Financial Services & Real Estate." />
+        <meta name="description" content="Contact STA Corporate Solutions for business enquiries. Call +91 94430 33055 or WhatsApp for instant quotes. Transportation, Financial, Legal & Edu Consultancy." />
         <link rel="canonical" href="https://sta-corporate.in/contact" />
         <meta property="og:title" content="Contact STA Corporate Solutions | Get a Quote" />
         <meta property="og:description" content="Call +91 94430 33055 or WhatsApp for instant quotes. Complete business solutions." />

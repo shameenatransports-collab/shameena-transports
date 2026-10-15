@@ -247,6 +247,7 @@ const Privacy = () => {
                     <p className="font-semibold text-foreground">Grievance Officer — STA Corporate Solutions</p>
                     <p className="text-muted-foreground text-sm mt-1">No.302/2A7, VK Road, Peelamedu, Coimbatore – 641004, Tamil Nadu</p>
                     <p className="text-muted-foreground text-sm">Phone: +91 94430 33055 (Mon–Sat, 09:00–19:00 IST)</p>
+                    <p className="text-muted-foreground text-sm">Email: <a href="mailto:shameenatransports@gmail.com" className="underline">shameenatransports@gmail.com</a></p>
                     <p className="text-muted-foreground text-sm">Online: <Link to="/data-request" className="underline">sta-corporate.in/data-request</Link></p>
                   </div>
                   <p className="text-xs text-muted-foreground mt-3">

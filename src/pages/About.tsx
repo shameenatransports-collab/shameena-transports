@@ -78,8 +78,8 @@ const About = () => {
                 </span>
               </h1>
               <p className="text-headline text-primary-foreground/85 max-w-2xl">
-                43+ years of transportation heritage. Financial, Legal, Edu Consultancy and
-                Real Estate practices launched in mid-2025 — completing the STA Corporate Solutions group.
+                43+ years of transportation heritage. Financial, Legal and Edu Consultancy
+                practices launched in mid-2025 — completing the STA Corporate Solutions group.
               </p>
             </div>
           </div>
@@ -98,10 +98,10 @@ const About = () => {
                     <strong className="text-foreground">STA Transport &amp; Logistics</strong> began in <strong className="text-foreground">1982</strong> in Coimbatore as a reliable goods transport operator. Over <strong className="text-foreground">43+ years of service excellence</strong>, we have grown into a trusted full-load lorry transport partner for textile mills in Tiruppur, foundries in Coimbatore, manufacturers across Tamil Nadu, and businesses moving cargo into Karnataka and Kerala.
                   </p>
                   <p>
-                    In <strong className="text-foreground">mid-2025</strong>, building on this transportation heritage and our deep relationships with South Indian enterprise, we launched four new verticals under the <strong className="text-foreground">STA Corporate Solutions</strong> umbrella — <strong className="text-foreground">Financial Services</strong> (MSME, Mudra, project finance and government scheme guidance), <strong className="text-foreground">Legal Services</strong> (property, corporate, business documentation), <strong className="text-foreground">Edu Consultancy</strong> (academic mobility and degree transfer), and <strong className="text-foreground">Real Estate</strong> (property discovery across South India).
+                    In <strong className="text-foreground">mid-2025</strong>, building on this transportation heritage and our deep relationships with South Indian enterprise, we launched three new verticals under the <strong className="text-foreground">STA Corporate Solutions</strong> umbrella — <strong className="text-foreground">Financial Services</strong> (MSME, Mudra, project finance and government scheme guidance), <strong className="text-foreground">Legal Services</strong> (property, corporate, business documentation) and <strong className="text-foreground">Edu Consultancy</strong> (academic mobility and degree transfer).
                   </p>
                   <p>
-                    Today, STA Corporate Solutions operates as <strong className="text-foreground">four integrated practices for South India</strong> — serving Tamil Nadu, Karnataka, Telangana, Andhra Pradesh and Kerala from our Coimbatore headquarters. Transportation carries the heritage of four decades; the four new verticals carry the same standards of integrity, responsibility and customer excellence into the next chapter.
+                    Today, STA Corporate Solutions operates as <strong className="text-foreground">four integrated practices for South India</strong> — serving Tamil Nadu, Karnataka, Telangana, Andhra Pradesh and Kerala from our Coimbatore headquarters. Transportation carries the heritage of four decades; the three new verticals carry the same standards of integrity, responsibility and customer excellence into the next chapter.
                   </p>
                 </div>
               </div>
