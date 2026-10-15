@@ -5,7 +5,6 @@ import serviceTransportation from "@/assets/service-transportation.jpg";
 import serviceFinancial from "@/assets/service-financial.jpg";
 import serviceLegal from "@/assets/service-legal.jpg";
 import serviceEdu from "@/assets/service-edu.jpg";
-import serviceRealEstate from "@/assets/service-realestate.jpg";
 
 const verticals = [
   {
@@ -60,19 +59,6 @@ const verticals = [
     badge: "1,000+ Pathways",
     image: serviceEdu,
   },
-  {
-    num: "05",
-    icon: Building2,
-    eyebrow: "Property",
-    title: "Real Estate",
-    headline: "South India property, intelligently mapped.",
-    description:
-      "Data-driven property discovery for buyers, NRIs and businesses — residential, commercial and investment opportunities across South India.",
-    features: ["Residential", "Commercial", "Investment", "NRI Support"],
-    href: "/real-estate",
-    badge: "5 States · 40+ Cities",
-    image: serviceRealEstate,
-  },
 ];
 
 
@@ -82,12 +68,12 @@ export function ServicesPreview() {
       <div className="container mx-auto px-4">
         <ScrollReveal>
           <div className="max-w-3xl mx-auto text-center mb-20 md:mb-28">
-            <p className="text-eyebrow text-primary mb-5">Five Practices · One Partner</p>
+            <p className="text-eyebrow text-primary mb-5">Four Practices · One Partner</p>
             <h2 className="text-display-xl text-foreground mb-6">
               Complete business solutions, refined over four decades.
             </h2>
             <p className="text-headline text-muted-foreground max-w-2xl mx-auto">
-              Five integrated practices serving individuals and enterprises across Tamil Nadu, Karnataka, Telangana, Andhra Pradesh and Kerala — with transparent, practical assistance.
+              Four integrated practices serving individuals and enterprises across Tamil Nadu, Karnataka, Telangana, Andhra Pradesh and Kerala — with transparent, practical assistance.
             </p>
           </div>
         </ScrollReveal>

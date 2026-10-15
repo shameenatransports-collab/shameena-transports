@@ -9,9 +9,9 @@ export const organizationSchema = {
   "legalName": "STA Corporate Solutions",
   "url": "https://sta-corporate.in",
   "logo": "https://sta-corporate.in/logo.png",
-  "description": "STA Corporate Solutions — Transportation since 1982 (43+ years). Financial, Legal, Edu Consultancy and Real Estate practices launched mid-2025. Five integrated practices for South India, headquartered in Coimbatore.",
+  "description": "STA Corporate Solutions — Transportation since 1982 (43+ years). Financial, Legal and Edu Consultancy practices launched mid-2025. Four integrated practices for South India, headquartered in Coimbatore.",
   "foundingDate": "1982",
-  "slogan": "Transport Since 1982 · Five Integrated Practices for South India",
+  "slogan": "Transport Since 1982 · Four Integrated Practices for South India",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "No.302/2A7, VK Road, Peelamedu",
@@ -49,8 +49,7 @@ export const organizationSchema = {
     "GST Registration",
     "Trademark Filing",
     "Academic Mobility",
-    "Degree Transfer Guidance",
-    "South India Real Estate"
+    "Degree Transfer Guidance"
   ],
   "areaServed": [
     { "@type": "AdministrativeArea", "name": "Tamil Nadu" },
@@ -69,7 +68,7 @@ export const localBusinessSchema = {
   "name": "STA Corporate Solutions — Transportation, Loan Services & Legal Services Coimbatore",
   "alternateName": ["STA Corporate", "STA Solutions", "STA Coimbatore", "STA Corporate Solutions Coimbatore"],
   "image": ["https://sta-corporate.in/logo.png"],
-  "description": "STA Corporate Solutions — Transportation since 1982 (43+ years of service excellence). Financial Services (MSME, Mudra, government funding schemes), Legal Services, Edu Consultancy and Real Estate practices added mid-2025. Five integrated practices serving Coimbatore and South India.",
+  "description": "STA Corporate Solutions — Transportation since 1982 (43+ years of service excellence). Financial Services (MSME, Mudra, government funding schemes), Legal Services and Edu Consultancy practices added mid-2025. Four integrated practices serving Coimbatore and South India.",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "No.302/2A7, VK Road, Peelamedu",
@@ -283,7 +282,7 @@ export const websiteSchema = {
   "@id": "https://sta-corporate.in/#website",
   "url": "https://sta-corporate.in",
   "name": "STA Corporate Solutions",
-  "description": "STA Corporate Solutions — Transport since 1982. Five integrated practices for South India: Transportation, Financial, Legal, Edu Consultancy and Real Estate.",
+  "description": "STA Corporate Solutions — Transport since 1982. Four integrated practices for South India: Transportation, Financial, Legal and Edu Consultancy.",
   "publisher": {
     "@id": "https://sta-corporate.in/#organization"
   },

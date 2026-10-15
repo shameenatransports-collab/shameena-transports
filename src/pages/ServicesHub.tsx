@@ -17,8 +17,8 @@ const ICONS: Record<string, typeof Truck> = {
 
 export default function ServicesHub() {
   const url = canonical("/services");
-  const metaTitle = "All Services | Transportation, Finance, Legal, Edu & Real Estate | STA Corporate Solutions";
-  const metaDescription = "Five integrated practices across South India — Transportation, Financial Services, Legal Services, Edu Consultancy and Real Estate. 43+ years of trust.";
+  const metaTitle = "All Services | Transportation, Finance, Legal, Edu Consultancy | STA Corporate Solutions";
+  const metaDescription = "Four integrated practices across South India — Transportation, Financial Services, Legal Services and Edu Consultancy. 43+ years of trust.";
 
   return (
     <>
@@ -37,7 +37,7 @@ export default function ServicesHub() {
             <div className="max-w-4xl">
               <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-background text-[11px] font-bold tracking-[0.18em] uppercase text-primary shadow-xl ring-1 ring-primary-foreground/40 mb-8">
                 <span className="h-1.5 w-1.5 rounded-full bg-secondary" />
-                Five Practices · One Partner
+                Four Practices · One Partner
               </div>
               <h1 className="text-display-2xl text-primary-foreground mb-6">
                 All STA Services <br />
@@ -46,7 +46,7 @@ export default function ServicesHub() {
                 </span>
               </h1>
               <p className="text-xl text-primary-foreground/80 max-w-2xl">
-                Transportation, Financial Services, Legal Services, Edu Consultancy and Real Estate — five integrated practices serving individuals and businesses across Tamil Nadu, Karnataka, Telangana, Andhra Pradesh and Kerala.
+                Transportation, Financial Services, Legal Services and Edu Consultancy — four integrated practices serving individuals and businesses across Tamil Nadu, Karnataka, Telangana, Andhra Pradesh and Kerala.
               </p>
             </div>
           </div>

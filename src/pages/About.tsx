@@ -49,11 +49,11 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>About STA Corporate Solutions | Transport Since 1982 · 5 Practices</title>
-        <meta name="description" content="STA Corporate Solutions — Transport since 1982 (43+ years). Financial, Legal, Edu Consultancy and Real Estate launched mid-2025. Five integrated practices for South India, headquartered in Coimbatore." />
+        <title>About STA Corporate Solutions | Transport Since 1982 · 4 Practices</title>
+        <meta name="description" content="STA Corporate Solutions — Transport since 1982 (43+ years). Financial, Legal and Edu Consultancy launched mid-2025. Four integrated practices for South India, headquartered in Coimbatore." />
         <link rel="canonical" href="https://sta-corporate.in/about" />
-        <meta property="og:title" content="About STA Corporate Solutions | 43+ Years in Transport · 5 Practices for South India" />
-        <meta property="og:description" content="Transport since 1982. Financial, Legal, Edu Consultancy & Real Estate added mid-2025. Five integrated practices serving Tamil Nadu, Karnataka, Telangana, Andhra Pradesh and Kerala." />
+        <meta property="og:title" content="About STA Corporate Solutions | 43+ Years in Transport · 4 Practices for South India" />
+        <meta property="og:description" content="Transport since 1982. Financial, Legal & Edu Consultancy added mid-2025. Four integrated practices serving Tamil Nadu, Karnataka, Telangana, Andhra Pradesh and Kerala." />
         <meta property="og:url" content="https://sta-corporate.in/about" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(organizationSchema)}</script>
@@ -74,12 +74,12 @@ const About = () => {
                 Built in Coimbatore.
                 <br />
                 <span className="bg-gradient-to-r from-secondary via-secondary to-primary-foreground bg-clip-text text-transparent">
-                  Five integrated practices for South India.
+                  Four integrated practices for South India.
                 </span>
               </h1>
               <p className="text-headline text-primary-foreground/85 max-w-2xl">
-                43+ years of transportation heritage. Financial, Legal, Edu Consultancy and
-                Real Estate practices launched in mid-2025 — completing the STA Corporate Solutions group.
+                43+ years of transportation heritage. Financial, Legal and Edu Consultancy
+                practices launched in mid-2025 — completing the STA Corporate Solutions group.
               </p>
             </div>
           </div>
@@ -98,10 +98,10 @@ const About = () => {
                     <strong className="text-foreground">STA Transport &amp; Logistics</strong> began in <strong className="text-foreground">1982</strong> in Coimbatore as a reliable goods transport operator. Over <strong className="text-foreground">43+ years of service excellence</strong>, we have grown into a trusted full-load lorry transport partner for textile mills in Tiruppur, foundries in Coimbatore, manufacturers across Tamil Nadu, and businesses moving cargo into Karnataka and Kerala.
                   </p>
                   <p>
-                    In <strong className="text-foreground">mid-2025</strong>, building on this transportation heritage and our deep relationships with South Indian enterprise, we launched four new verticals under the <strong className="text-foreground">STA Corporate Solutions</strong> umbrella — <strong className="text-foreground">Financial Services</strong> (MSME, Mudra, project finance and government scheme guidance), <strong className="text-foreground">Legal Services</strong> (property, corporate, business documentation), <strong className="text-foreground">Edu Consultancy</strong> (academic mobility and degree transfer), and <strong className="text-foreground">Real Estate</strong> (property discovery across South India).
+                    In <strong className="text-foreground">mid-2025</strong>, building on this transportation heritage and our deep relationships with South Indian enterprise, we launched three new verticals under the <strong className="text-foreground">STA Corporate Solutions</strong> umbrella — <strong className="text-foreground">Financial Services</strong> (MSME, Mudra, project finance and government scheme guidance), <strong className="text-foreground">Legal Services</strong> (property, corporate, business documentation) and <strong className="text-foreground">Edu Consultancy</strong> (academic mobility and degree transfer).
                   </p>
                   <p>
-                    Today, STA Corporate Solutions operates as <strong className="text-foreground">five integrated practices for South India</strong> — serving Tamil Nadu, Karnataka, Telangana, Andhra Pradesh and Kerala from our Coimbatore headquarters. Transportation carries the heritage of four decades; the four new verticals carry the same standards of integrity, responsibility and customer excellence into the next chapter.
+                    Today, STA Corporate Solutions operates as <strong className="text-foreground">four integrated practices for South India</strong> — serving Tamil Nadu, Karnataka, Telangana, Andhra Pradesh and Kerala from our Coimbatore headquarters. Transportation carries the heritage of four decades; the three new verticals carry the same standards of integrity, responsibility and customer excellence into the next chapter.
                   </p>
                 </div>
               </div>
@@ -128,13 +128,13 @@ const About = () => {
               <div className="bg-card p-8 rounded-lg border border-border">
                 <h3 className="text-2xl font-bold text-foreground mb-4">Our Mission</h3>
                 <p className="text-muted-foreground">
-                  To deliver superior, competent and personalised services across transportation, finance, legal, education and real estate — empowering South Indian businesses and individuals with one trusted partner. We eliminate the stress and uncertainty of logistics, funding, documentation and property decisions through expert guidance at every stage.
+                  To deliver superior, competent and personalised services across transportation, finance, legal and education — empowering South Indian businesses and individuals with one trusted partner. We eliminate the stress and uncertainty of logistics, funding, documentation and property decisions through expert guidance at every stage.
                 </p>
               </div>
               <div className="bg-card p-8 rounded-lg border border-border">
                 <h3 className="text-2xl font-bold text-foreground mb-4">Our Vision</h3>
                 <p className="text-muted-foreground">
-                  To become South India's most trusted corporate solutions group — built on 43+ years of transport heritage and five integrated practices that businesses and families across Tamil Nadu, Karnataka, Telangana, Andhra Pradesh and Kerala can rely on for the long term.
+                  To become South India's most trusted corporate solutions group — built on 43+ years of transport heritage and four integrated practices that businesses and families across Tamil Nadu, Karnataka, Telangana, Andhra Pradesh and Kerala can rely on for the long term.
                 </p>
               </div>
             </div>

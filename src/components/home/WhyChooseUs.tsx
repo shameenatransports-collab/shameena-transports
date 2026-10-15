@@ -5,7 +5,7 @@ const features = [
   { icon: Award, title: "43+ years in transport", description: "Coimbatore-rooted transportation business since 1982 — service excellence backed by decades of fleet operations." },
   { icon: Shield, title: "Careful handling", description: "Experienced drivers on our own lorries — no broker hand-offs." },
   { icon: Clock, title: "Disciplined follow-up", description: "Clear coordination for transport, funding assistance, and documentation needs." },
-  { icon: Banknote, title: "Five integrated practices", description: "Transportation, Financial, Legal, Edu Consultancy and Real Estate — the latter four launched mid-2025 under STA Corporate Solutions." },
+  { icon: Banknote, title: "Four integrated practices", description: "Transportation, Financial, Legal and Edu Consultancy — the latter four launched mid-2025 under STA Corporate Solutions." },
   { icon: MapPin, title: "South India focus", description: "Tamil Nadu, Karnataka, Telangana, Andhra Pradesh and Kerala — local knowledge across the five-state belt." },
   { icon: Headphones, title: "Responsive support", description: "Reachable by phone or WhatsApp for bookings, enquiries, and consultations." },
 ];
@@ -27,10 +27,10 @@ export function WhyChooseUs() {
             <h2 className="text-display-xl mb-6">
               43+ years in transport,
               <br />
-              <span className="text-primary-foreground/60">five practices for South India.</span>
+              <span className="text-primary-foreground/60">four practices for South India.</span>
             </h2>
             <p className="text-headline text-primary-foreground/70 max-w-2xl mx-auto">
-              Transportation since 1982. Financial, Legal, Edu Consultancy and Real Estate added mid-2025 to serve South India end-to-end.
+              Transportation since 1982. Financial, Legal and Edu Consultancy added mid-2025 to serve South India end-to-end.
             </p>
           </div>
         </ScrollReveal>

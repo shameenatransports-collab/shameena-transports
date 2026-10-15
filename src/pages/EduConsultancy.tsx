@@ -85,7 +85,7 @@ export default function EduConsultancy() {
                 </span>
               </h1>
               <p className="text-xl text-primary-foreground/80 max-w-2xl mb-10">
-                Launched mid-2025 under STA Corporate Solutions — alongside Transportation (since 1982), Financial, Legal and Real Estate. Discover 1,000+ localized pathways for learners, working professionals, adult learners and degree-transfer seekers.
+                Launched mid-2025 under STA Corporate Solutions — alongside Transportation (since 1982), Financial, Legal. Discover 1,000+ localized pathways for learners, working professionals, adult learners and degree-transfer seekers.
               </p>
 
               <div className="bg-primary-foreground/10 backdrop-blur-md border border-primary-foreground/15 rounded-2xl p-1 inline-flex flex-wrap divide-x divide-primary-foreground/15">
