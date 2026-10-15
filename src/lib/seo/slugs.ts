@@ -87,13 +87,6 @@ export function enumerateAllUrls(): SitemapEntry[] {
     out.push({ path: registrationUrl(r.slug), priority: "0.7", changefreq: "monthly" });
   }
 
-  // BHK variants — top 12 cities × 4 BHK types
-  const topReCities = citiesForPillar("real-estate").slice(0, 12);
-  for (const c of topReCities) {
-    for (const b of BHK_TYPES) {
-      out.push({ path: bhkUrl(c.slug, b.slug), priority: "0.6", changefreq: "monthly" });
-    }
-  }
 
   return out;
 }

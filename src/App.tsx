@@ -17,7 +17,6 @@ const FinancialServices = lazy(() => import("./pages/FinancialServices"));
 const LegalServices = lazy(() => import("./pages/LegalServices"));
 const Services = lazy(() => import("./pages/Services"));
 const EduConsultancy = lazy(() => import("./pages/EduConsultancy"));
-const RealEstate = lazy(() => import("./pages/RealEstate"));
 const Fleet = lazy(() => import("./pages/Fleet"));
 const ServiceAreas = lazy(() => import("./pages/ServiceAreas"));
 const ReturnLoads = lazy(() => import("./pages/ReturnLoads"));
@@ -36,8 +35,6 @@ const PillarSubPage = lazy(() => import("./pages/seo/PillarSubPage"));
 const PillarCitySubPage = lazy(() => import("./pages/seo/PillarCitySubPage"));
 const RouteCorridorPage = lazy(() => import("./pages/seo/RouteCorridorPage"));
 const RegistrationPage = lazy(() => import("./pages/seo/RegistrationPage"));
-const BHKPage = lazy(() => import("./pages/seo/BHKPage"));
-const RealEstateCityChild = lazy(() => import("./pages/seo/RealEstateCityChild"));
 
 const queryClient = new QueryClient();
 
@@ -72,7 +69,7 @@ const App = () => (
                     <Route path="/financial-services" element={<FinancialServices />} />
                     <Route path="/legal-services" element={<LegalServices />} />
                     <Route path="/edu-consultancy" element={<EduConsultancy />} />
-                    <Route path="/real-estate" element={<RealEstate />} />
+                    
 
                     <Route path="/services" element={<ServicesHub />} />
                     <Route path="/services/transport-categories" element={<Services />} />
@@ -82,7 +79,7 @@ const App = () => (
                     <Route path="/financial-services/products/:sub" element={<PillarSubPage />} />
                     <Route path="/legal-services/practice/:sub" element={<PillarSubPage />} />
                     <Route path="/edu-consultancy/programs/:sub" element={<PillarSubPage />} />
-                    <Route path="/real-estate/categories/:sub" element={<PillarSubPage />} />
+                    
 
                     {/* Special sub-types */}
                     <Route path="/transportation/routes/:slug" element={<RouteCorridorPage />} />
@@ -94,14 +91,14 @@ const App = () => (
                     <Route path="/legal-services/:city/:sub" element={<PillarCitySubPage />} />
                     <Route path="/edu-consultancy/:city/:sub" element={<PillarCitySubPage />} />
                     {/* Real Estate :city/:second routes to BHK or sub by slug detection */}
-                    <Route path="/real-estate/:city/:bhk" element={<RealEstateCityChild />} />
+                    
 
                     {/* Pillar × city */}
                     <Route path="/transportation/:city" element={<PillarCityPage />} />
                     <Route path="/financial-services/:city" element={<PillarCityPage />} />
                     <Route path="/legal-services/:city" element={<PillarCityPage />} />
                     <Route path="/edu-consultancy/:city" element={<PillarCityPage />} />
-                    <Route path="/real-estate/:city" element={<PillarCityPage />} />
+                    
 
                     <Route path="/fleet" element={<Fleet />} />
                     <Route path="/return-loads" element={<ReturnLoads />} />
@@ -123,6 +120,7 @@ const App = () => (
                     <Route path="/tirunelveli" element={<CityLanding />} />
                     {/* Redirect old real estate routes */}
                     <Route path="/overseas-real-estate" element={<Navigate to="/" replace />} />
+                    <Route path="/real-estate/*" element={<Navigate to="/" replace />} />
                     <Route path="/dubai-real-estate" element={<Navigate to="/" replace />} />
                     <Route path="*" element={<NotFound />} />
                   </Routes>

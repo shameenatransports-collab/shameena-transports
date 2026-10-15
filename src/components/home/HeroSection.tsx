@@ -10,7 +10,6 @@ const verticals = [
   { icon: Banknote, title: "Financial Services", href: "/financial-services", desc: "MSME · Mudra · Business" },
   { icon: Scale, title: "Legal Services", href: "/legal-services", desc: "Documentation · Registrations" },
   { icon: GraduationCap, title: "Edu Consultancy", href: "/edu-consultancy", desc: "Degree transfer · Academic mobility" },
-  { icon: Building2, title: "Real Estate", href: "/real-estate", desc: "Property discovery · South India" },
 ];
 
 const easeApple = [0.22, 1, 0.36, 1] as const;
@@ -75,7 +74,7 @@ export function HeroSection() {
             transition={{ duration: 0.9, ease: easeApple, delay: 0.35 }}
             className="text-headline text-primary-foreground/85 max-w-2xl mx-auto mb-3"
           >
-            Transportation since 1982 — 43+ years of service excellence. Financial, Legal, Edu Consultancy and Real Estate launched mid-2025 to complete the group.
+            Transportation since 1982 — 43+ years of service excellence. Financial, Legal and Edu Consultancy launched mid-2025 to complete the group.
           </motion.p>
           <motion.p
             initial={{ opacity: 0 }}

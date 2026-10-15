@@ -17,8 +17,8 @@ const ICONS: Record<string, typeof Truck> = {
 
 export default function ServicesHub() {
   const url = canonical("/services");
-  const metaTitle = "All Services | Transportation, Finance, Legal, Edu & Real Estate | STA Corporate Solutions";
-  const metaDescription = "Five integrated practices across South India — Transportation, Financial Services, Legal Services, Edu Consultancy and Real Estate. 43+ years of trust.";
+  const metaTitle = "All Services | Transportation, Finance, Legal, Edu Consultancy | STA Corporate Solutions";
+  const metaDescription = "Four integrated practices across South India — Transportation, Financial Services, Legal Services and Edu Consultancy. 43+ years of trust.";
 
   return (
     <>
@@ -46,7 +46,7 @@ export default function ServicesHub() {
                 </span>
               </h1>
               <p className="text-xl text-primary-foreground/80 max-w-2xl">
-                Transportation, Financial Services, Legal Services, Edu Consultancy and Real Estate — five integrated practices serving individuals and businesses across Tamil Nadu, Karnataka, Telangana, Andhra Pradesh and Kerala.
+                Transportation, Financial Services, Legal Services and Edu Consultancy — four integrated practices serving individuals and businesses across Tamil Nadu, Karnataka, Telangana, Andhra Pradesh and Kerala.
               </p>
             </div>
           </div>
