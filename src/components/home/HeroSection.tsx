@@ -52,7 +52,7 @@ export function HeroSection() {
             className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-background text-[11px] font-bold tracking-[0.18em] uppercase text-primary shadow-xl ring-1 ring-primary-foreground/40 mb-8"
           >
             <span className="h-1.5 w-1.5 rounded-full bg-secondary" />
-            Transport Since 1982 · Five Practices for South India
+            Transport Since 1982 · Four Practices for South India
           </motion.div>
 
           <motion.h1
@@ -64,7 +64,7 @@ export function HeroSection() {
             STA Corporate Solutions
             <br />
             <span className="bg-gradient-to-r from-secondary via-secondary to-primary-foreground bg-clip-text text-transparent">
-              Five Integrated Practices for South India
+              Four Integrated Practices for South India
             </span>
           </motion.h1>
 

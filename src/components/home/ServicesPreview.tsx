@@ -68,7 +68,7 @@ export function ServicesPreview() {
       <div className="container mx-auto px-4">
         <ScrollReveal>
           <div className="max-w-3xl mx-auto text-center mb-20 md:mb-28">
-            <p className="text-eyebrow text-primary mb-5">Five Practices · One Partner</p>
+            <p className="text-eyebrow text-primary mb-5">Four Practices · One Partner</p>
             <h2 className="text-display-xl text-foreground mb-6">
               Complete business solutions, refined over four decades.
             </h2>

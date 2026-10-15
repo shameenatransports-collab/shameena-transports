@@ -11,7 +11,7 @@ export const organizationSchema = {
   "logo": "https://sta-corporate.in/logo.png",
   "description": "STA Corporate Solutions — Transportation since 1982 (43+ years). Financial, Legal and Edu Consultancy practices launched mid-2025. Four integrated practices for South India, headquartered in Coimbatore.",
   "foundingDate": "1982",
-  "slogan": "Transport Since 1982 · Five Integrated Practices for South India",
+  "slogan": "Transport Since 1982 · Four Integrated Practices for South India",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "No.302/2A7, VK Road, Peelamedu",
@@ -49,8 +49,7 @@ export const organizationSchema = {
     "GST Registration",
     "Trademark Filing",
     "Academic Mobility",
-    "Degree Transfer Guidance",
-    "South India Real Estate"
+    "Degree Transfer Guidance"
   ],
   "areaServed": [
     { "@type": "AdministrativeArea", "name": "Tamil Nadu" },

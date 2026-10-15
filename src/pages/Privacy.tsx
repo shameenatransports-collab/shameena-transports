@@ -75,7 +75,7 @@ const Privacy = () => {
                         <li>Pickup &amp; delivery city, cargo details (transport)</li>
                         <li>Business name &amp; loan-scheme interest (financial)</li>
                         <li>Nature of legal matter (legal)</li>
-                        <li>Property or programme preferences (real estate, edu)</li>
+                        <li>Programme preferences (edu consultancy)</li>
                         <li>Anything you write in the enquiry message</li>
                       </ul>
                     </div>

@@ -37,7 +37,7 @@ export default function ServicesHub() {
             <div className="max-w-4xl">
               <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-background text-[11px] font-bold tracking-[0.18em] uppercase text-primary shadow-xl ring-1 ring-primary-foreground/40 mb-8">
                 <span className="h-1.5 w-1.5 rounded-full bg-secondary" />
-                Five Practices · One Partner
+                Four Practices · One Partner
               </div>
               <h1 className="text-display-2xl text-primary-foreground mb-6">
                 All STA Services <br />
