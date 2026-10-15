@@ -45,7 +45,6 @@ const contactInfo = [
 const contactSchema = z.object({
   name: z.string().trim().min(2, "Enter your name").max(100, "Name is too long"),
   phone: z.string().trim().regex(/^(?:\+91[\s-]?)?[6-9]\d{9}$/, "Enter a valid Indian mobile number"),
-  email: z.string().trim().email("Enter a valid email").max(255).optional().or(z.literal("")),
   pickup: z.string().trim().min(2, "Enter pickup location").max(120, "Pickup is too long"),
   destination: z.string().trim().min(2, "Enter destination").max(120, "Destination is too long"),
   goods: z.string().trim().min(2, "Enter goods or service type").max(120, "Goods detail is too long"),
@@ -57,7 +56,6 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
-    email: "",
     pickup: "",
     destination: "",
     goods: "",
@@ -82,8 +80,9 @@ const Contact = () => {
 
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    const d = parsed.data;
+    const text = `Hello STA Corporate Solutions,\nI would like a quote.\nName: ${d.name}\nPhone: ${d.phone}\nPickup: ${d.pickup}\nDestination: ${d.destination}\nGoods/Service: ${d.goods}${d.message ? `\nDetails: ${d.message}` : ""}`;
+    window.open(`https://wa.me/919443033055?text=${encodeURIComponent(text)}`, "_blank", "noopener,noreferrer");
 
     // Track successful submission
     trackContactFormSubmit({
@@ -93,15 +92,14 @@ const Contact = () => {
     });
 
     toast({
-      title: "Enquiry Submitted!",
-      description: "Our team will contact you within 30 minutes.",
+      title: "Opening WhatsApp",
+      description: "Send the pre-filled message to complete your enquiry.",
     });
 
     setFormData({
       name: "",
       phone: "",
-      email: "",
-      pickup: "",
+        pickup: "",
       destination: "",
       goods: "",
       message: "",
@@ -247,21 +245,6 @@ const Contact = () => {
                           />
                           {errors.phone && <p className="mt-1 text-xs text-destructive">{errors.phone}</p>}
                         </div>
-                      </div>
-                      <div>
-                        <label htmlFor="contact-email" className="text-sm font-medium text-foreground mb-1 block">
-                          Email (Optional)
-                        </label>
-                        <Input
-                          id="contact-email"
-                          name="email"
-                          type="email"
-                          value={formData.email}
-                          onChange={handleChange}
-                          maxLength={255}
-                          placeholder="your@email.com"
-                        />
-                        {errors.email && <p className="mt-1 text-xs text-destructive">{errors.email}</p>}
                       </div>
                       <div className="grid sm:grid-cols-2 gap-4">
                         <div>
