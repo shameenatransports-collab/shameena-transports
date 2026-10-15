@@ -57,10 +57,10 @@ const Fleet = () => {
     <>
       <Helmet>
         <title>Fleet — 12+ Lorries & Trailers | STA Coimbatore</title>
-        <meta name="description" content="12+ insured lorries and multi-axle trailers for Full Load transport across Tamil Nadu, Karnataka, Kerala. Coimbatore-based." />
+        <meta name="description" content="12+ owned lorries and multi-axle trailers for Full Load transport across Tamil Nadu, Karnataka, Kerala. Coimbatore-based." />
         <link rel="canonical" href="https://sta-corporate.in/fleet" />
         <meta property="og:title" content="Fleet — 12+ Lorries & Trailers | STA Coimbatore" />
-        <meta property="og:description" content="12+ modern, insured lorries for Full Load transport across South India." />
+        <meta property="og:description" content="12+ owned lorries for Full Load transport across South India." />
         <meta property="og:url" content="https://sta-corporate.in/fleet" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(localBusinessSchema)}</script>
@@ -89,7 +89,7 @@ const Fleet = () => {
                 </span>
               </h1>
               <p className="text-headline text-primary-foreground/85 max-w-2xl">
-                Multi-axle trailers and open body lorries — insured, well-maintained and ready for
+                Multi-axle trailers and open body lorries — owned, well-maintained and ready for
                 full load transport across the state.
               </p>
             </div>

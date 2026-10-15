@@ -3,7 +3,7 @@ import { ScrollReveal, ScrollRevealItem } from "@/components/ui/scroll-reveal";
 
 const features = [
   { icon: Award, title: "43+ years in transport", description: "Coimbatore-rooted transportation business since 1982 — service excellence backed by decades of fleet operations." },
-  { icon: Shield, title: "Fully insured", description: "Damage protection coverage on every shipment, every route." },
+  { icon: Shield, title: "Careful handling", description: "Experienced drivers on our own lorries — no broker hand-offs." },
   { icon: Clock, title: "Disciplined follow-up", description: "Clear coordination for transport, funding assistance, and documentation needs." },
   { icon: Banknote, title: "Five integrated practices", description: "Transportation, Financial, Legal, Edu Consultancy and Real Estate — the latter four launched mid-2025 under STA Corporate Solutions." },
   { icon: MapPin, title: "South India focus", description: "Tamil Nadu, Karnataka, Telangana, Andhra Pradesh and Kerala — local knowledge across the five-state belt." },

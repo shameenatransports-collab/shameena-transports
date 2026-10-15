@@ -13,7 +13,7 @@
 - **Primary cities:** Coimbatore, Chennai, Bangalore, Hyderabad, Kochi, Tiruppur, Erode, Salem, Madurai, Trichy
 - **Hours:** Monday–Saturday, 09:00–19:00 IST
 - **Phone / WhatsApp:** +91 94430 33055 (primary), +91 90477 21209 (sales)
-- **What we explicitly do NOT offer:** Personal loans, Part Load transport, GPS tracking dashboards, international transportation outside South India.
+- **What we explicitly do NOT offer:** Personal loans, international transportation outside South India.
 
 ## Vertical summaries (answer-first)
 
@@ -34,8 +34,8 @@ Property discovery and advisory across South India — residential, commercial a
 
 ## Common questions (answer-first)
 
-**Q: Does STA do Part Load transport?**
-A: No. STA Transport operates Full Load lorry service only. Return Loads are available subject to route availability.
+**Q: What lorry service does STA offer?**
+A: Dedicated Full Load lorry service. Return Loads are available subject to route availability.
 
 **Q: Does STA offer personal loans?**
 A: No. Financial Services covers business funding schemes (MSME, Mudra, PMEGP, etc.) — documentation and advisory only, not lending.

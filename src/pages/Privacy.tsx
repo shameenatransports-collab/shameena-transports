@@ -71,7 +71,7 @@ const Privacy = () => {
                     <div>
                       <h3 className="font-semibold text-foreground mb-2">You give us</h3>
                       <ul className="list-disc list-inside text-muted-foreground space-y-1.5 text-sm">
-                        <li>Name, mobile number, email</li>
+                        <li>Name, mobile number</li>
                         <li>Pickup &amp; delivery city, cargo details (transport)</li>
                         <li>Business name &amp; loan-scheme interest (financial)</li>
                         <li>Nature of legal matter (legal)</li>

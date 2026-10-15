@@ -45,7 +45,7 @@ const benefits = [
   {
     icon: Truck,
     title: "Same Quality Service",
-    description: "Get the same reliable, insured transport with experienced drivers.",
+    description: "Get the same reliable transport with experienced drivers.",
   },
   {
     icon: Route,
@@ -92,11 +92,11 @@ const faqs = [
     answer: "Call us at +91 94430 33055 or WhatsApp with your pickup location, destination, and preferred dates. We'll check our current truck schedules and let you know availability. Popular routes like Coimbatore-Chennai often have regular availability.",
   },
   {
-    question: "Is my cargo insured on Return Load transport?",
-    answer: "Yes, all our transport including Return Load is fully insured. Your cargo gets the same protection and care as our Full Load service.",
+    question: "Is cargo insurance available on Return Load transport?",
+    answer: "Transit insurance can be arranged on request — please discuss your cargo value with us on WhatsApp before booking.",
   },
   {
-    question: "How much advance notice do I need for Return Load booking?",
+    question: "How far in advance should I book a Return Load?",
     answer: "We recommend booking 2-3 days in advance for better availability. However, we sometimes have same-day or next-day return loads available - just call to check.",
   },
   {
@@ -140,7 +140,7 @@ const ReturnLoads = () => {
         />
         <meta
           name="keywords"
-          content="return load transport tamil nadu, return load lorry coimbatore, cheap transport chennai, return load availability, part load transport, return lorry booking, discounted transport rates, return truck coimbatore chennai, return load tiruppur bangalore"
+          content="return load transport tamil nadu, return load lorry coimbatore, cheap transport chennai, return load availability, return lorry booking, discounted transport rates, return truck coimbatore chennai, return load tiruppur bangalore"
         />
         <link rel="canonical" href="https://sta-corporate.in/return-loads" />
         <meta property="og:title" content="Return Load Transport Tamil Nadu | STA Corporate Solutions" />
@@ -221,7 +221,7 @@ const ReturnLoads = () => {
                       <p className="text-muted-foreground mb-6">
                         This is a <strong>win-win situation</strong> - you save money on transport, and we 
                         optimize our fleet efficiency. You get the same reliable service with experienced 
-                        drivers and insured cargo protection.
+                        drivers and careful cargo handling.
                       </p>
                       <div className="flex items-center gap-4">
                         <div className="flex items-center gap-2 text-accent">
@@ -247,7 +247,7 @@ const ReturnLoads = () => {
                           </li>
                           <li className="flex items-center gap-2">
                             <CheckCircle className="h-4 w-4 text-accent flex-shrink-0" />
-                            Same quality, insured transport
+                            Same quality, same lorries
                           </li>
                           <li className="flex items-center gap-2">
                             <CheckCircle className="h-4 w-4 text-accent flex-shrink-0" />
