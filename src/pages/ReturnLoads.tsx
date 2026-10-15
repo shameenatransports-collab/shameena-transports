@@ -93,7 +93,7 @@ const faqs = [
   },
   {
     question: "Is cargo insurance available on Return Load transport?",
-    answer: "Yes, all our transport including Return Load is fully insured. Your cargo gets the same protection and care as our Full Load service."Transit insurance can be arranged on request — please discuss your cargo value with us on WhatsApp before booking."How much advance notice do I need for Return Load booking?",
+    answer: "Transit insurance can be arranged on request — please discuss your cargo value with us on WhatsApp before booking.",
     answer: "We recommend booking 2-3 days in advance for better availability. However, we sometimes have same-day or next-day return loads available - just call to check.",
   },
   {
