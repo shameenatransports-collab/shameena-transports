@@ -304,7 +304,7 @@ export const returnLoadServiceSchema = {
   "@type": "Service",
   "@id": "https://sta-corporate.in/return-loads#service",
   "name": "Return Load Transport Coimbatore Tamil Nadu",
-  "serviceType": "Part Load Return Transport",
+  "serviceType": "Return Load Transport",
   "provider": {
     "@type": "LocalBusiness",
     "name": "STA Corporate Solutions",

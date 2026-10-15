@@ -140,7 +140,7 @@ const ReturnLoads = () => {
         />
         <meta
           name="keywords"
-          content="return load transport tamil nadu, return load lorry coimbatore, cheap transport chennai, return load availability, part load transport, return lorry booking, discounted transport rates, return truck coimbatore chennai, return load tiruppur bangalore"
+          content="return load transport tamil nadu, return load lorry coimbatore, cheap transport chennai, return load availability, return lorry booking, discounted transport rates, return truck coimbatore chennai, return load tiruppur bangalore"
         />
         <link rel="canonical" href="https://sta-corporate.in/return-loads" />
         <meta property="og:title" content="Return Load Transport Tamil Nadu | STA Corporate Solutions" />

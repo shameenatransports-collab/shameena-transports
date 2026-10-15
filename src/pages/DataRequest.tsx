@@ -9,7 +9,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { useToast } from "@/hooks/use-toast";
-import { Shield, MessageCircle, Phone, Mail } from "lucide-react";
+import { Shield, MessageCircle, Phone } from "lucide-react";
 import { isLikelyBot } from "@/lib/analytics";
 
 const REQUEST_TYPES = [
@@ -23,7 +23,6 @@ const REQUEST_TYPES = [
 
 const dprSchema = z.object({
   name: z.string().trim().min(2, "Enter your full name").max(120),
-  email: z.string().trim().email("Enter a valid email").max(180),
   mobile: z.string().trim().regex(/^(?:\+91[\s-]?)?[6-9]\d{9}$/, "Enter a valid Indian mobile"),
   requestType: z.enum(["access", "correction", "erasure", "withdraw", "nomination", "grievance"]),
   reference: z.string().trim().max(200).optional(),
@@ -36,7 +35,6 @@ type DPRErrors = Partial<Record<keyof DPRForm, string>>;
 
 const initial: Partial<DPRForm> = {
   name: "",
-  email: "",
   mobile: "",
   requestType: "access",
   reference: "",
@@ -70,7 +68,7 @@ const DataRequest = () => {
   const buildMessage = (d: DPRForm) =>
     `STA DPDP — Data Principal Request\n` +
     `Type: ${REQUEST_TYPES.find((r) => r.value === d.requestType)?.label}\n` +
-    `Name: ${d.name}\nEmail: ${d.email}\nMobile: ${d.mobile}\n` +
+    `Name: ${d.name}\nMobile: ${d.mobile}\n` +
     (d.reference ? `Reference: ${d.reference}\n` : "") +
     `\nRequest:\n${d.message}\n\n— Submitted via sta-corporate.in/data-request`;
 
@@ -80,7 +78,7 @@ const DataRequest = () => {
     return `https://wa.me/919443033055?text=${encodeURIComponent(buildMessage(data))}`;
   }, [form]);
 
-  const submit = (channel: "whatsapp" | "email") => {
+  const submit = () => {
     const data = validate();
     if (!data) return;
 
@@ -90,13 +88,7 @@ const DataRequest = () => {
       return;
     }
 
-    if (channel === "whatsapp") {
       window.open(whatsappHref, "_blank", "noopener,noreferrer");
-    } else {
-      const subject = encodeURIComponent(`DPDP Data Request — ${data.requestType}`);
-      const body = encodeURIComponent(buildMessage(data));
-      window.location.href = `mailto:grievance@sta-corporate.in?subject=${subject}&body=${body}`;
-    }
     toast({
       title: "Request submitted",
       description: "Our Grievance Officer will respond within 30 days as required by the DPDP Act.",
@@ -161,11 +153,7 @@ const DataRequest = () => {
                         <Input id="dpr-name" value={form.name || ""} onChange={(e) => set("name", e.target.value)} maxLength={120} autoComplete="name" />
                         {errors.name && <p className="text-xs text-destructive">{errors.name}</p>}
                       </div>
-                      <div className="space-y-1.5">
-                        <Label htmlFor="dpr-email">Email *</Label>
-                        <Input id="dpr-email" type="email" value={form.email || ""} onChange={(e) => set("email", e.target.value)} maxLength={180} autoComplete="email" />
-                        {errors.email && <p className="text-xs text-destructive">{errors.email}</p>}
-                      </div>
+                      
                     </div>
 
                     <div className="grid sm:grid-cols-2 gap-4">
@@ -209,12 +197,9 @@ const DataRequest = () => {
                     </label>
                     {errors.consent && <p className="text-xs text-destructive">{errors.consent}</p>}
 
-                    <div className="grid sm:grid-cols-2 gap-3 pt-2">
-                      <Button type="button" className="h-12 rounded-full" onClick={() => submit("whatsapp")}>
+                    <div className="grid gap-3 pt-2">
+                      <Button type="button" className="h-12 rounded-full" onClick={() => submit()}>
                         <MessageCircle className="h-4 w-4" /> Submit via WhatsApp
-                      </Button>
-                      <Button type="button" variant="secondary" className="h-12 rounded-full" onClick={() => submit("email")}>
-                        <Mail className="h-4 w-4" /> Submit via Email
                       </Button>
                     </div>
                   </form>
@@ -229,7 +214,6 @@ const DataRequest = () => {
                   </p>
                   <div className="flex flex-wrap gap-3 pt-1">
                     <a href="tel:+919443033055"><Button variant="outline" size="sm"><Phone className="h-3.5 w-3.5" /> +91 94430 33055</Button></a>
-                    <a href="mailto:grievance@sta-corporate.in"><Button variant="outline" size="sm"><Mail className="h-3.5 w-3.5" /> grievance@sta-corporate.in</Button></a>
                   </div>
                   <p className="text-xs text-muted-foreground pt-2">
                     Unresolved after 30 days? Escalate to the Data Protection Board of India once notified

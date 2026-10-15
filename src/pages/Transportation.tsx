@@ -29,7 +29,7 @@ import { localBusinessSchema, transportBusinessSchema, transportServiceSchema } 
 import { ServiceFAQ } from "@/components/seo/ServiceFAQ";
 
 const transportFaqs = [
-  { question: "Does STA Transport offer Part Load or only Full Load?", answer: "STA operates Full Load lorry transport only — your cargo gets a dedicated truck end-to-end. Return Loads are available subject to route availability on routes we are already running." },
+  { question: "What type of lorry booking does STA Transport offer?", answer: "STA operates Full Load lorry transport only — your cargo gets a dedicated truck end-to-end. Return Loads are available subject to route availability on routes we are already running." },
   { question: "How many lorries does STA own and which types?", answer: "We operate 12+ owned trailers and lorries — multi-axle trailers (20–25 ton, for heavy machinery and ODC) and open-body lorries (10–20 ton, for construction material and bulk goods). No broker chain." },
   { question: "Which South India routes do you cover from Coimbatore?", answer: "We run regular full-load trips across Tamil Nadu (Chennai, Madurai, Salem, Trichy, Tiruppur, Erode), Karnataka (Bangalore, Mysore), Telangana (Hyderabad), Andhra Pradesh and Kerala (Kochi, Trivandrum). Confirm specific routes on WhatsApp." },
   { question: "How fast is a quote and how do I book?", answer: "WhatsApp +91 94430 33055 with pickup, destination, cargo type and weight — quotes are issued same-day during business hours (Mon–Sat, 09:00–19:00 IST). No registration needed." },
