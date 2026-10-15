@@ -71,7 +71,7 @@ const services = [
     icon: Warehouse,
     title: "Factory Shifting",
     description: "End-to-end relocation services for factories and warehouses with complete project management.",
-    features: ["Full relocation", "Professional packing", "Insurance coverage"],
+    features: ["Full relocation", "Professional packing", "Careful loading"],
     link: "/transport/factory-shifting"
   }
 ];
@@ -92,7 +92,7 @@ const whyChooseUs = [
   { text: "43+ years of trusted service", icon: Star },
   { text: "Own fleet of 12+ lorries", icon: Truck },
   { text: "Tamil Nadu route expertise", icon: MapPin },
-  { text: "Fully insured transport", icon: Shield },
+  { text: "Own lorries, no broker chain", icon: Shield },
   { text: "Responsive customer support", icon: Clock },
   { text: "Competitive pricing", icon: Gauge },
   { text: "Route-planned delivery coordination", icon: Route },

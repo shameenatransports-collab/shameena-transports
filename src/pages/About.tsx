@@ -11,7 +11,7 @@ const values = [
   {
     icon: Shield,
     title: "Safety First",
-    description: "Every shipment is handled with utmost care and full insurance coverage.",
+    description: "Every shipment is handled with care by experienced drivers on our own lorries.",
   },
   {
     icon: Clock,
