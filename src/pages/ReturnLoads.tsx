@@ -94,6 +94,9 @@ const faqs = [
   {
     question: "Is cargo insurance available on Return Load transport?",
     answer: "Transit insurance can be arranged on request — please discuss your cargo value with us on WhatsApp before booking.",
+  },
+  {
+    question: "How far in advance should I book a Return Load?",
     answer: "We recommend booking 2-3 days in advance for better availability. However, we sometimes have same-day or next-day return loads available - just call to check.",
   },
   {
