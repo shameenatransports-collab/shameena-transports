@@ -14,7 +14,27 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      education_ai_availability: {
+        Row: {
+          feature: string
+          paused_at: string
+          safe_message: string
+          status_code: number
+        }
+        Insert: {
+          feature: string
+          paused_at?: string
+          safe_message: string
+          status_code: number
+        }
+        Update: {
+          feature?: string
+          paused_at?: string
+          safe_message?: string
+          status_code?: number
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
