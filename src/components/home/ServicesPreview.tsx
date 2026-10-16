@@ -56,7 +56,7 @@ const verticals = [
       "Localized pathways for degree transfer, credit migration, bachelor-completion and academic-mobility candidates across South India.",
     features: ["Degree Transfer", "Credit Mapping", "Study Abroad", "Adult Learners"],
     href: "/edu-consultancy",
-    badge: "1,000+ Pathways",
+    badge: "New in 2025",
     image: serviceEdu,
   },
 ];
