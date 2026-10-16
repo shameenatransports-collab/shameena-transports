@@ -35,8 +35,6 @@ const discovery = [
 
 const scale = [
   { value: "5", label: "State Hubs" },
-  { value: "200+", label: "Tier 1–4 Cities" },
-  { value: "1,000+", label: "Localized Pathways" },
   { value: "5", label: "Regional Languages" },
 ];
 
@@ -63,7 +61,7 @@ export default function EduConsultancy() {
         <meta property="og:title" content="Edu Consultancy South India | Coimbatore, Chennai, Bangalore" />
         <meta
           property="og:description"
-          content="Degree transfer, institution migration and academic counselling across 200+ South Indian cities."
+          content="Degree transfer, institution migration and academic counselling across Tamil Nadu, Karnataka, Telangana, Andhra Pradesh and Kerala."
         />
         <meta property="og:url" content="https://sta-corporate.in/edu-consultancy" />
       </Helmet>
@@ -85,7 +83,7 @@ export default function EduConsultancy() {
                 </span>
               </h1>
               <p className="text-xl text-primary-foreground/80 max-w-2xl mb-10">
-                Launched mid-2025 under STA Corporate Solutions — alongside Transportation (since 1982), Financial, Legal. Discover 1,000+ localized pathways for learners, working professionals, adult learners and degree-transfer seekers.
+                Launched mid-2025 under STA Corporate Solutions — alongside Transportation (since 1982), Financial, Legal. Discover localized pathways for learners, working professionals, adult learners and degree-transfer seekers.
               </p>
 
               <div className="bg-primary-foreground/10 backdrop-blur-md border border-primary-foreground/15 rounded-2xl p-1 inline-flex flex-wrap divide-x divide-primary-foreground/15">
