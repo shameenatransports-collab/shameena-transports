@@ -36,7 +36,7 @@ export function EducationPathwayFinder() {
     if (!url || !key) { setError("AI guidance is not configured yet. Please contact STA on WhatsApp."); return; }
     const controller = new AbortController();
     active.current = controller;
-    setBusy(true); setComplete(false); setAnswer(""); setError(""); setSubmitted(parsed.data);
+    setBusy(true); setComplete(false); setAnswer(""); setError(""); setSubmitted({ ...profile, ...parsed.data });
     try {
       const response = await fetch(`${url}/functions/v1/education-pathways`, {
         method: "POST", headers: { "Content-Type": "application/json", apikey: key },
