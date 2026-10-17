@@ -73,9 +73,9 @@ export default function EduConsultancy() {
                 New in 2025 · Part of STA Corporate Solutions
               </div>
               <h1 className="text-display-2xl text-primary-foreground mb-6">
-                Academic Mobility Network <br />
+                Edu Consultancy <br />
                 <span className="bg-gradient-to-r from-secondary via-secondary to-primary-foreground bg-clip-text text-transparent">
-                  Across South India
+                  Explore education pathways
                 </span>
               </h1>
               <p className="text-xl text-primary-foreground/80 max-w-2xl mb-10">
