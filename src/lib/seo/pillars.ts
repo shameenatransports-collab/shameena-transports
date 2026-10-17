@@ -294,9 +294,9 @@ export const PILLARS: Pillar[] = [
     sub: [
       {
         slug: "degree-transfer", name: "Degree Transfer Programs", shortName: "Degree Transfer",
-        description: "Cross-institution and cross-country degree transfer pathways — including American Degree Transfer style routes.",
+        description: "Information on potential credit-based degree transfer pathways; availability, eligibility and credit acceptance require institution confirmation.",
         keywords: ["degree transfer", "american degree transfer program", "credit transfer", "degree migration"],
-        benefits: ["Credit-mapping advisory", "Institution shortlisting", "Application support", "Documentation"],
+        benefits: ["Preliminary credit-mapping guidance", "Institution research", "Application questions", "Documentation guidance"],
       },
       {
         slug: "associate-degree", name: "Associate Degree (AA / AS)", shortName: "Associate Degree",

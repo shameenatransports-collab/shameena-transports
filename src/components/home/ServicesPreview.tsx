@@ -51,10 +51,10 @@ const verticals = [
     icon: GraduationCap,
     eyebrow: "Pathways",
     title: "Edu Consultancy",
-    headline: "Academic mobility, localized.",
+    headline: "Explore your next education step.",
     description:
-      "Localized pathways for degree transfer, credit migration, bachelor-completion and academic-mobility candidates across South India.",
-    features: ["Degree Transfer", "Credit Mapping", "Study Abroad", "Adult Learners"],
+      "Education counselling and AI pathway starting points from Coimbatore. Degree transfers, credit acceptance and destination-specific support require confirmation with STA and the institution.",
+    features: ["Transfer Guidance", "AI Pathway Suggestions", "Education Planning", "Adult Learners"],
     href: "/edu-consultancy",
     badge: "New in 2025",
     image: serviceEdu,

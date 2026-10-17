@@ -75,7 +75,7 @@ const Privacy = () => {
                         <li>Pickup &amp; delivery city, cargo details (transport)</li>
                         <li>Business name &amp; loan-scheme interest (financial)</li>
                         <li>Nature of legal matter (legal)</li>
-                        <li>Programme preferences (edu consultancy)</li>
+                        <li>Qualifications, education goals and destination preferences (optional AI education guidance)</li>
                         <li>Anything you write in the enquiry message</li>
                       </ul>
                     </div>
@@ -161,6 +161,7 @@ const Privacy = () => {
                     <li><strong>Google LLC</strong> — GA4 analytics (processor; data anonymised, EU/US servers)</li>
                     <li><strong>Meta Platforms</strong> — only if marketing consent granted</li>
                     <li><strong>Service partners</strong> (banks, registrars, transport partners) — only what's needed to fulfil your specific request</li>
+                    <li><strong>Lovable Cloud and Lovable AI</strong> — when you explicitly request AI education suggestions, your academic details are processed to generate a response. Do not submit identifiers or documents. AI suggestions are not verified admission advice.</li>
                     <li><strong>Authorities</strong> — when required by Indian law, court order or to protect rights</li>
                   </ul>
                   <p className="text-xs text-muted-foreground mt-3">
@@ -175,6 +176,7 @@ const Privacy = () => {
                 <CardContent className="p-6 md:p-8">
                   <h2 className="text-2xl font-bold text-foreground mb-4">6. Retention schedule</h2>
                   <ul className="list-disc list-inside text-muted-foreground space-y-2 text-sm ml-2">
+                    <li><strong>AI education inputs and suggestions:</strong> not saved in STA student records or browser storage; retained in page memory until you leave or reload. Service providers process requests under their policies. If you send the WhatsApp draft, that becomes an enquiry message.</li>
                     <li><strong>Enquiry messages:</strong> 12 months from last contact, then erased</li>
                     <li><strong>Booked-service records (invoices, LRs):</strong> 7 years (Income Tax Act / GST)</li>
                     <li><strong>Analytics data:</strong> 26 months in GA4, then auto-deleted</li>

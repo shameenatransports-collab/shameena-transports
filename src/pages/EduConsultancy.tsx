@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { Layout } from "@/components/layout/Layout";
 import { CTASection } from "@/components/home/CTASection";
+import { EducationPathwayFinder } from "@/components/education/EducationPathwayFinder";
 import {
   GraduationCap,
   Globe2,
@@ -23,19 +24,14 @@ const states = [
 ];
 
 const discovery = [
-  { icon: Building2, title: "State Education Hubs", desc: "Curated landing experiences for each South Indian state." },
-  { icon: MapPin, title: "City-Specific Pathways", desc: "Tier 1 to Tier 4 city pages with localized academic intel." },
+  { icon: Building2, title: "State Education Information", desc: "Discuss your preferred state and confirm available counselling support." },
+  { icon: MapPin, title: "Location Preferences", desc: "Explore possible options for your preferred city; availability needs verification." },
   { icon: BookOpen, title: "University Discovery", desc: "Explore institutions aligned to your goals and stream." },
-  { icon: Compass, title: "Degree Transfer Pathways", desc: "Plan transitions between institutions with clarity." },
-  { icon: ArrowUpRight, title: "Institution Migration", desc: "Guidance to move forward without losing momentum." },
+  { icon: Compass, title: "Degree Transfer Guidance", desc: "Explore potential transfers, subject to institution eligibility and credit acceptance." },
+  { icon: ArrowUpRight, title: "Institution Migration", desc: "Understand the questions to ask before changing institutions." },
   { icon: Users, title: "Academic Counselling", desc: "Personalised support for learners and professionals." },
   { icon: GraduationCap, title: "Adult Learning", desc: "Continue learning at any stage of your career." },
-  { icon: ShieldCheck, title: "Career Advancement", desc: "Bridge education and employability outcomes." },
-];
-
-const scale = [
-  { value: "5", label: "State Hubs" },
-  { value: "5", label: "Regional Languages" },
+  { icon: ShieldCheck, title: "Career Planning", desc: "Consider education options alongside your career goals; employment is not guaranteed." },
 ];
 
 const trust = [
@@ -55,13 +51,13 @@ export default function EduConsultancy() {
         <title>Edu Consultancy South India | Coimbatore, Chennai, Bangalore</title>
         <meta
           name="description"
-          content="Academic mobility & degree transfer across Tamil Nadu, Karnataka, Telangana, Andhra Pradesh, Kerala — Coimbatore, Chennai, Bangalore, Hyderabad, Kochi."
+          content="Explore education and potential degree-transfer options with STA in Coimbatore. Try AI pathway suggestions; eligibility and local support require confirmation."
         />
         <link rel="canonical" href="https://sta-corporate.in/edu-consultancy" />
         <meta property="og:title" content="Edu Consultancy South India | Coimbatore, Chennai, Bangalore" />
         <meta
           property="og:description"
-          content="Degree transfer, institution migration and academic counselling across Tamil Nadu, Karnataka, Telangana, Andhra Pradesh and Kerala."
+          content="Education counselling and AI pathway starting points from STA in Coimbatore. Institution eligibility, credit transfer and regional support require verification."
         />
         <meta property="og:url" content="https://sta-corporate.in/edu-consultancy" />
       </Helmet>
@@ -77,36 +73,30 @@ export default function EduConsultancy() {
                 New in 2025 · Part of STA Corporate Solutions
               </div>
               <h1 className="text-display-2xl text-primary-foreground mb-6">
-                Academic Mobility Network <br />
+                Edu Consultancy <br />
                 <span className="bg-gradient-to-r from-secondary via-secondary to-primary-foreground bg-clip-text text-transparent">
-                  Across South India
+                  Explore education pathways
                 </span>
               </h1>
               <p className="text-xl text-primary-foreground/80 max-w-2xl mb-10">
-                Launched mid-2025 under STA Corporate Solutions — alongside Transportation (since 1982), Financial, Legal. Discover localized pathways for learners, working professionals, adult learners and degree-transfer seekers.
+                Launched mid-2025 under STA Corporate Solutions. Explore education options for learners, working professionals and degree-transfer seekers, with institution-specific eligibility to be confirmed.
               </p>
 
-              <div className="bg-primary-foreground/10 backdrop-blur-md border border-primary-foreground/15 rounded-2xl p-1 inline-flex flex-wrap divide-x divide-primary-foreground/15">
-                {scale.map((s) => (
-                  <div key={s.label} className="px-6 py-4 text-center">
-                    <div className="text-2xl md:text-3xl font-bold text-primary-foreground">{s.value}</div>
-                    <div className="text-[11px] uppercase tracking-[0.16em] text-primary-foreground/80">{s.label}</div>
-                  </div>
-                ))}
-              </div>
+              <p className="text-sm text-primary-foreground/90">Guidance based in Coimbatore · Regional support confirmed on enquiry</p>
             </div>
           </div>
         </section>
 
-        {/* Regional Coverage */}
+        <EducationPathwayFinder />
+
+        {/* Regional interests, not verified operational coverage */}
         <section className="py-20 md:py-28 bg-background">
           <div className="container mx-auto px-4">
             <div className="max-w-2xl mb-14">
-              <span className="text-eyebrow text-primary">Regional Coverage</span>
-              <h2 className="text-display-lg text-foreground mt-3">South India's most active educational markets</h2>
+              <span className="text-eyebrow text-primary">Preferred destinations</span>
+              <h2 className="text-display-lg text-foreground mt-3">Explore your South India study preferences</h2>
               <p className="text-muted-foreground mt-4">
-                State-specific and city-specific guidance for academic mobility, degree transfer, institution migration,
-                educational continuity and career advancement.
+                These states are destinations you can ask about, not a verified network of partner institutions. Confirm available support and course eligibility with STA before making plans.
               </p>
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
@@ -117,7 +107,7 @@ export default function EduConsultancy() {
                 >
                   <Globe2 className="w-6 h-6 text-primary mb-4" strokeWidth={1.5} />
                   <div className="text-lg font-semibold text-foreground">{s.name}</div>
-                  <div className="text-xs text-muted-foreground mt-1">Localized in {s.language}</div>
+                  <div className="text-xs text-muted-foreground mt-1">Support subject to confirmation</div>
                 </div>
               ))}
             </div>
@@ -128,13 +118,12 @@ export default function EduConsultancy() {
         <section className="py-20 md:py-28 bg-muted/40">
           <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <span className="text-eyebrow text-primary">Multilingual Learning Experience</span>
+              <span className="text-eyebrow text-primary">Language preferences</span>
               <h2 className="text-display-lg text-foreground mt-3 mb-4">
-                Every state and city, fully localized
+                Ask about support in your preferred language
               </h2>
               <p className="text-muted-foreground">
-                Educational guidance is delivered in English, Tamil, Kannada, Telugu and Malayalam — improving
-                accessibility and engagement across regional audiences.
+                Let us know your preferred language. Counsellor availability must be confirmed; these options do not mean every page or service is fully translated.
               </p>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
@@ -155,9 +144,9 @@ export default function EduConsultancy() {
         <section className="py-20 md:py-28 bg-background">
           <div className="container mx-auto px-4">
             <div className="max-w-2xl mb-14">
-              <span className="text-eyebrow text-primary">Hyperlocal Educational Discovery</span>
+              <span className="text-eyebrow text-primary">Education guidance topics</span>
               <h2 className="text-display-lg text-foreground mt-3">
-                Local insights. Nearby opportunities. Region-specific support.
+                Questions to explore with a counsellor
               </h2>
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -181,11 +170,12 @@ export default function EduConsultancy() {
         <section className="py-20 md:py-28 bg-primary text-primary-foreground">
           <div className="container mx-auto px-4">
             <div className="max-w-2xl mb-12">
-              <span className="text-eyebrow text-secondary">Trusted Educational Guidance</span>
+              <span className="text-eyebrow text-secondary">Informed education decisions</span>
               <h2 className="text-display-lg mt-3">
-                Transparent frameworks aligned with recognised standards
+                Verify eligibility before you commit
               </h2>
             </div>
+            <p className="text-primary-foreground/80 mb-8 max-w-2xl">Recognition, admissions and transfer decisions rest with the relevant institutions and regulators. STA does not guarantee admission, accepted credits or career outcomes.</p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {trust.map((t) => (
                 <div
