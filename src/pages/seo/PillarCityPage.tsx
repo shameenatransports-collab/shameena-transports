@@ -3,7 +3,6 @@ import { getPillar } from "@/lib/seo/pillars";
 import { getCity, HUB_CITIES } from "@/lib/seo/cities";
 import {
   PillarPageShell,
-  KeywordList,
 } from "@/components/seo/PillarPageShell";
 import {
   pillarUrl,
@@ -11,6 +10,7 @@ import {
   pillarCitySubUrl,
   pillarSubUrl,
 } from "@/lib/seo/slugs";
+import { localPageContent } from "@/lib/seo/local-content";
 import { ArrowUpRight } from "lucide-react";
 
 /**
@@ -30,55 +30,26 @@ export default function PillarCityPage() {
 
 
   const path = pillarCityUrl(pillar, city.slug);
-  const title = `${pillar.name} in ${city.name}`;
-  const metaTitle = `${pillar.name} in ${city.name}, ${city.stateName} | STA Corporate Solutions`;
-  const metaDescription = `${pillar.tagline} in ${city.name}, ${city.stateName}. Trusted ${pillar.shortName.toLowerCase()} solutions since 1982. Call +91 94430 33055.`;
-  const keywords = [
-    `${pillar.shortName.toLowerCase()} ${city.name.toLowerCase()}`,
-    `${pillar.shortName.toLowerCase()} services ${city.name.toLowerCase()}`,
-    `best ${pillar.shortName.toLowerCase()} in ${city.name.toLowerCase()}`,
-    `${pillar.shortName.toLowerCase()} ${city.stateName.toLowerCase()}`,
-    ...pillar.sub.slice(0, 5).flatMap((s) => s.keywords.slice(0, 1).map((k) => `${k} ${city.name.toLowerCase()}`)),
-  ];
-
+  const content = localPageContent(pillar, city);
+  const { metaTitle, metaDescription } = content;
+  const keywords = [content.heading.toLowerCase(), `${pillar.shortName.toLowerCase()} ${city.stateName.toLowerCase()}`];
   const faqs = [
-    {
-      q: `Do you provide ${pillar.shortName.toLowerCase()} services in ${city.name}?`,
-      a: `Yes. STA Corporate Solutions actively serves ${city.name}, ${city.stateName} for ${pillar.name.toLowerCase()}. Reach us on +91 94430 33055 for a tailored quote.`,
-    },
-    {
-      q: `What ${pillar.subLabel.toLowerCase()} options are available in ${city.name}?`,
-      a: `We offer ${pillar.sub.slice(0, 6).map((s) => s.shortName).join(", ")} ${pillar.subPath} in ${city.name} and surrounding ${city.region}.`,
-    },
-    {
-      q: `How quickly can you start in ${city.name}?`,
-      a: `Most ${pillar.name.toLowerCase()} engagements in ${city.name} are scoped within 24–48 hours of the first call, subject to availability.`,
-    },
-    pillar.id === "transportation" && {
-      q: `Is return-load freight available out of ${city.name}?`,
-      a: `Return loads are subject to route availability. Call us to check current truck schedules out of ${city.name}.`,
-    },
-    pillar.id === "real-estate" && {
-      q: `What property categories are listed in ${city.name}?`,
-      a: `Residential apartments, villas, commercial offices, retail spaces, plots and investment opportunities across ${city.name}'s key localities.`,
-    },
-  ].filter(Boolean) as { q: string; a: string }[];
+    { q: `How do I enquire from ${city.name}?`, a: `WhatsApp +91 94430 33055 with your location and requirements. Enquiries are coordinated from our Coimbatore address; availability is confirmed individually.` },
+    { q: `What should I prepare for ${pillar.shortName.toLowerCase()} support?`, a: content.preparation.join(". ") + "." },
+    { q: `What should I confirm before booking?`, a: content.boundary },
+    { q: `Does STA have an office in ${city.name}?`, a: "Our confirmed office is No.302/2A7, VK Road, Peelamedu, Coimbatore – 641004. This page is for enquiries from your city and does not indicate a separate branch." },
+  ];
 
   return (
     <PillarPageShell
-      title={`${pillar.name} in ${city.name}`}
+      title={content.heading}
       metaTitle={metaTitle}
       metaDescription={metaDescription}
       heroAccent={`${city.stateName} · ${city.region}`}
       path={path}
       eyebrow={`${pillar.name} · ${city.name}`}
-      intro={pillar.cityIntro(city.name)}
-      stats={[
-        { value: "43+", label: "Years" },
-        { value: city.tier === 1 ? "Hub" : `Tier ${city.tier}`, label: city.name },
-        { value: pillar.sub.length.toString(), label: pillar.subLabel + "s" },
-        { value: "South India", label: "Coverage" },
-      ]}
+      intro={content.intro}
+      stats={[content.heritage, { value: "Coimbatore", label: "Based in" }, { value: city.name, label: "Enquiries from" }]}
       breadcrumbs={[
         { name: "Home", url: "/" },
         { name: pillar.name, url: pillarUrl(pillar) },
@@ -103,7 +74,7 @@ export default function PillarCityPage() {
               <Link
                 key={s.slug}
                 to={pillarCitySubUrl(pillar, city.slug, s.slug)}
-                className="group rounded-2xl border border-border/60 bg-card p-6 hover:border-primary/40 hover:shadow-lg transition-all"
+                className="group rounded-lg border border-border/60 bg-card p-6 hover:border-primary/40 transition-opacity hover:opacity-90"
               >
                 <div className="flex items-start justify-between mb-4">
                   <h3 className="font-semibold text-foreground leading-tight">{s.shortName}</h3>
@@ -116,29 +87,33 @@ export default function PillarCityPage() {
         </div>
       </section>
 
-      {/* Why us */}
-      <section className="py-20 md:py-24 bg-muted/40">
-        <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-12">
+      <section className="py-16 md:py-20 bg-muted/40">
+        <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-10">
           <div>
-            <span className="text-eyebrow text-primary">Why STA in {city.name}</span>
-            <h2 className="text-display-lg text-foreground mt-3 mb-5">
-              43 years of trust, local to {city.region}
-            </h2>
-            <p className="text-muted-foreground leading-relaxed">
-              Operating from Coimbatore HQ since 1982, with active engagements in {city.name} and across {city.stateName}. Direct ownership of fleet and process means no middlemen — straight quotes, transparent service, single point of accountability.
-            </p>
+            <h2 className="text-display-lg text-foreground mb-5">Planning your enquiry from {city.name}</h2>
+            <p className="text-muted-foreground leading-relaxed mb-4">{content.localNote}</p>
+            <p className="text-muted-foreground leading-relaxed mb-4">{content.boundary}</p>
+            <p className="text-sm text-muted-foreground">{content.heritage.description}</p>
           </div>
-          <KeywordList
-            label={`Common ${pillar.shortName} searches in ${city.name}`}
-            items={keywords.slice(0, 8)}
-          />
+          <div>
+            <h2 className="text-xl font-semibold text-foreground mb-4">What to share before a quote</h2>
+            <ul className="list-disc pl-5 space-y-3 text-muted-foreground">{content.preparation.map((item) => <li key={item}>{item}</li>)}</ul>
+          </div>
         </div>
       </section>
-
+      {pillar.id === "transportation" && content.corridors.length > 0 && (
+        <section className="py-16 bg-background">
+          <div className="container mx-auto px-4">
+            <h2 className="text-2xl font-semibold text-foreground mb-3">Freight route enquiries for {city.name}</h2>
+            <p className="text-muted-foreground mb-6">Route pages are planning references, not fixed departure schedules. Confirm direction and availability for your booking.</p>
+            <div className="flex flex-wrap gap-4">{content.corridors.map((route) => <Link key={route.slug} to={`/transportation/routes/${route.slug}`} className="text-primary underline underline-offset-4">{route.fromName} to {route.toName}</Link>)}</div>
+          </div>
+        </section>
+      )}
       {/* Nearby city links */}
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
-          <p className="text-eyebrow text-primary mb-4">{pillar.name} in nearby cities</p>
+          <p className="text-eyebrow text-primary mb-4">{pillar.name} across South India</p>
           <div className="flex flex-wrap gap-2">
             {HUB_CITIES.filter((c) => c.slug !== city.slug).map((c) => (
               <Link
@@ -155,6 +130,8 @@ export default function PillarCityPage() {
             >
               All {pillar.name} →
             </Link>
+            <Link to="/services" className="px-4 py-2 text-primary underline">All four services</Link>
+            <Link to="/service-areas" className="px-4 py-2 text-primary underline">South India city directory</Link>
           </div>
         </div>
       </section>

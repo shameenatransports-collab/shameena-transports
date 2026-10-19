@@ -16,7 +16,7 @@ export default function RegistrationPage() {
   const metaDescription = `${reg.description} Across South India. Call +91 94430 33055.`;
   const faqs = [
     { q: `What is included in ${reg.name}?`, a: reg.description },
-    { q: `How long does ${reg.name} take?`, a: "Typical turnaround is 7–21 working days depending on document readiness and government processing." },
+    { q: `How long does ${reg.name} take?`, a: "Timelines depend on document readiness, the relevant authority and its current processing requirements. Confirm the expected steps before engagement." },
     { q: `Do you handle ${reg.name} across South India?`, a: "Yes — Tamil Nadu, Karnataka, Telangana, Andhra Pradesh and Kerala." },
   ];
 
@@ -30,7 +30,7 @@ export default function RegistrationPage() {
       eyebrow={`Registration · ${reg.name}`}
       intro={reg.description}
       stats={[
-        { value: "43+", label: "Years" },
+        { value: "2025", label: "Practice launched" },
         { value: "5", label: "States" },
         { value: "Direct", label: "Filing" },
         { value: "South India", label: "Coverage" },
