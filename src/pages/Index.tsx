@@ -17,7 +17,7 @@ const Index = () => {
       <Helmet>
         <title>STA Corporate Solutions | 4 Practices for South India</title>
         <meta name="description" content="Transport since 1982 (43+ yrs). Financial, Legal & Edu Consultancy launched mid-2025. Four integrated practices for South India — Coimbatore HQ." />
-        <meta name="keywords" content="STA Corporate Solutions, lorry transport coimbatore, MSME loan coimbatore, mudra loan tamil nadu, government funding schemes south india, business loan assistance, legal services coimbatore, edu consultancy south india, real estate south india, full load transport, return load, company registration" />
+        <meta name="keywords" content="STA Corporate Solutions, Shameena Transports, lorry transport Coimbatore, full load transport South India, business loan assistance, legal documentation, education consultancy South India" />
         <link rel="canonical" href="https://sta-corporate.in" />
         <meta property="og:title" content="STA Corporate Solutions | Transport Since 1982 · 4 Practices for South India" />
         <meta property="og:description" content="Transportation since 1982. Financial, Legal & Edu Consultancy launched mid-2025. Four integrated practices across Tamil Nadu, Karnataka, Telangana, Andhra Pradesh and Kerala." />

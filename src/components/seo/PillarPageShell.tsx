@@ -49,7 +49,7 @@ export function PillarPageShell({
     "@context": "https://schema.org",
     "@type": "Service",
     name: serviceName,
-    provider: { "@type": "LocalBusiness", name: "STA Corporate Solutions", telephone: "+91-94430-33055" },
+    provider: { "@type": "LocalBusiness", "@id": canonical("/#localbusiness"), name: "STA Corporate Solutions", telephone: "+91-94430-33055", address: { "@type": "PostalAddress", streetAddress: "No.302/2A7, VK Road, Peelamedu", addressLocality: "Coimbatore", addressRegion: "Tamil Nadu", postalCode: "641004", addressCountry: "IN" } },
     areaServed: serviceArea ?? "South India",
     description: metaDescription,
     url,
@@ -133,7 +133,7 @@ export function PillarPageShell({
                   </Button>
                 </a>
                 <a
-                  href="https://wa.me/919443033055"
+                  href={`https://wa.me/919443033055?text=${encodeURIComponent(`Hello STA, I’m enquiring about ${serviceName ?? title}. Please confirm availability and next steps.`)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >

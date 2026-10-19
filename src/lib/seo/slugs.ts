@@ -55,6 +55,7 @@ export function enumerateAllUrls(): SitemapEntry[] {
     { path: "/coimbatore", priority: "0.7", changefreq: "monthly" },
     { path: "/chennai", priority: "0.7", changefreq: "monthly" },
     { path: "/tiruppur", priority: "0.7", changefreq: "monthly" },
+    ...["madurai", "erode", "salem", "trichy", "tirunelveli"].map((city) => ({ path: `/${city}`, priority: "0.7", changefreq: "monthly" })),
     { path: "/privacy", priority: "0.3", changefreq: "yearly" },
     { path: "/terms", priority: "0.3", changefreq: "yearly" },
   );
