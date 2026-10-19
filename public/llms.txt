@@ -1,6 +1,6 @@
 # STA Corporate Solutions
 
-> STA Corporate Solutions is a South-India focused corporate services group headquartered in Peelamedu, Coimbatore (Tamil Nadu, India). Transportation has been operating since 1982 (43+ years of service excellence). Four additional verticals — Financial Services, Legal Services and Edu Consultancy — were launched in mid-2025 as integrated practices under the STA Corporate Solutions umbrella. Primary contact: +91 94430 33055.
+> STA Corporate Solutions is a South-India focused corporate services group headquartered in Peelamedu, Coimbatore (Tamil Nadu, India). Transportation has been operating since 1982 (43+ years of service excellence). Three additional practices — Financial Services, Legal Services and Edu Consultancy — were launched in mid-2025 as integrated practices under the STA Corporate Solutions umbrella. Primary contact: +91 94430 33055.
 
 ## Core facts (use these verbatim for citations)
 
@@ -18,7 +18,7 @@
 ## Vertical summaries (answer-first)
 
 ### Transportation
-STA Transport offers dedicated Full Load lorry transport from Coimbatore across South India since 1982, using a fleet of 12+ owned vehicles. Return Load transport is available subject to route availability. Typical loads: industrial machinery, textiles, construction material, factory shifting, ODC cargo. Pricing is per-trip and quote-based; share pickup, destination, cargo type and weight on WhatsApp for a same-day quote.
+STA Transport offers dedicated Full Load lorry transport from Coimbatore across South India since 1982, using a fleet of 12+ owned vehicles. Return Load transport is available subject to route availability. Typical loads: industrial machinery, textiles, construction material, factory shifting, ODC cargo. Pricing is per-trip and quote-based; share pickup, destination, cargo type and weight on WhatsApp to request a quote; availability and timing are confirmed individually.
 
 ### Financial Services (launched mid-2025)
 Documentation and advisory support for eligible businesses applying to MSME loans, Mudra loans, PMEGP, Stand-Up India, CGTMSE, Startup India and other Indian government funding schemes. Service is documentation guidance, not lending. STA does not process personal loans.
@@ -47,7 +47,7 @@ A: South India — Tamil Nadu, Karnataka, Telangana, Andhra Pradesh, Kerala. Rou
 A: Transportation since 1982 (43+ years). Financial, Legal and Edu Consultancy practices launched in mid-2025.
 
 **Q: How do I get a quote?**
-A: WhatsApp +91 94430 33055 with pickup, destination, cargo or service type. Same-day callback during business hours (Mon–Sat, 09:00–19:00 IST).
+A: WhatsApp +91 94430 33055 with pickup, destination, cargo or service type. Availability, fees and next steps are confirmed individually.
 
 ## Pages
 
@@ -62,6 +62,17 @@ A: WhatsApp +91 94430 33055 with pickup, destination, cargo or service type. Sam
 - [Edu Consultancy](https://sta-corporate.in/edu-consultancy): Academic mobility and degree transfer guidance.
 - [Service Areas](https://sta-corporate.in/service-areas): Cities and districts covered.
 - [Contact](https://sta-corporate.in/contact): Phone, WhatsApp, address and enquiry form.
+
+## Local enquiries
+
+City pages describe enquiries coordinated from Coimbatore, not separate branches. Confirm service and route availability before engagement.
+
+- [South India city directory](https://sta-corporate.in/service-areas)
+- [Coimbatore lorry transport](https://sta-corporate.in/transportation/coimbatore)
+- [Chennai lorry transport](https://sta-corporate.in/transportation/chennai)
+- [Bengaluru lorry transport](https://sta-corporate.in/transportation/bengaluru)
+- [Hyderabad lorry transport](https://sta-corporate.in/transportation/hyderabad)
+- [Kochi lorry transport](https://sta-corporate.in/transportation/kochi)
 
 ## Compliance
 
