@@ -160,15 +160,15 @@ export const PILLARS: Pillar[] = [
       },
       {
         slug: "home-loan", name: "Home Loan Assistance", shortName: "Home Loan",
-        description: "Home loan documentation and application support — salaried, self-employed and business-owner profiles.",
+        description: "This housing-loan category is not offered. STA financial assistance is restricted to business, industrial and company funding, strictly not personal loans.",
         keywords: ["home loan", "housing loan", "mortgage loan"],
-        benefits: ["Eligibility computation", "Multi-bank comparison", "Documentation support", "Sanction follow-up"],
+        benefits: ["Business funding enquiries only", "No personal or housing loan applications"],
       },
       {
         slug: "loan-against-property", name: "Loan Against Property (LAP)", shortName: "LAP",
         description: "Mortgage your residential, commercial or industrial property for higher-ticket business funding.",
         keywords: ["loan against property", "lap", "mortgage loan", "property loan"],
-        benefits: ["Higher loan amounts", "Lower interest vs unsecured", "Long tenures", "Business or personal end-use"],
+        benefits: ["Higher loan amounts", "Lower interest vs unsecured", "Long tenures", "Business funding purposes only"],
       },
       {
         slug: "startup-india", name: "Startup India Scheme Assistance", shortName: "Startup India",
@@ -188,7 +188,7 @@ export const PILLARS: Pillar[] = [
         keywords: ["industrial loan", "manufacturing loan", "industrial finance"],
         benefits: ["Sector-aware structuring", "Cluster expertise (textile, engineering)", "Subsidy linkage", "Working capital add-on"],
       },
-    ],
+    ].filter((service) => service.slug !== "home-loan"),
   },
   // ─────────────────────────────────────────────────────────────────────────
   {

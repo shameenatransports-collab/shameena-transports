@@ -1,3 +1,4 @@
+import { localPageContent, practiceHeritage } from "@/lib/seo/local-content";
 import { useParams, useLocation, Link, Navigate } from "react-router-dom";
 import { getPillar, getSub } from "@/lib/seo/pillars";
 import { HUB_CITIES } from "@/lib/seo/cities";
@@ -27,11 +28,11 @@ export default function PillarSubPage() {
     { q: `What is ${sub.name}?`, a: sub.description },
     {
       q: `Where is ${sub.shortName} available?`,
-      a: `Across South India — Tamil Nadu, Karnataka, Telangana, Andhra Pradesh and Kerala — with active engagements from Coimbatore HQ.`,
+      a: `Across South India — Tamil Nadu, Karnataka, Telangana, Andhra Pradesh and Kerala — Enquiries are coordinated from Coimbatore; availability depends on your location and requirements.`,
     },
     {
       q: `How do I get a ${sub.shortName} quote?`,
-      a: `Call +91 94430 33055 or WhatsApp us. Most quotes are returned within 24 hours of the first call.`,
+      a: `Call +91 94430 33055 or WhatsApp us. Availability, fees and next steps are confirmed individually.`,
     },
     pillar.id === "transportation" && sub.slug === "return-load" && {
       q: "Is return-load freight always available?",
@@ -49,8 +50,8 @@ export default function PillarSubPage() {
       eyebrow={`${pillar.name} · ${sub.shortName}`}
       intro={sub.description}
       stats={[
-        { value: "43+", label: "Years" },
-        { value: "40+", label: "Cities" },
+        practiceHeritage(pillar.id),
+        { value: "Coimbatore", label: "Based in" },
         { value: "5", label: "States" },
         { value: "South India", label: "Coverage" },
       ]}

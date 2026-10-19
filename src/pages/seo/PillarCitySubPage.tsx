@@ -1,3 +1,4 @@
+import { localPageContent, practiceHeritage } from "@/lib/seo/local-content";
 import { useParams, useLocation, Link, Navigate } from "react-router-dom";
 import { getPillar, getSub } from "@/lib/seo/pillars";
 import { getCity, HUB_CITIES } from "@/lib/seo/cities";
@@ -28,7 +29,7 @@ export default function PillarCitySubPage() {
   const path = pillarCitySubUrl(pillar, city.slug, sub.slug);
   const title = `${sub.name} in ${city.name}`;
   const metaTitle = `${sub.name} in ${city.name} | STA Corporate Solutions`;
-  const metaDescription = `${sub.description} Available in ${city.name}, ${city.stateName}. Call +91 94430 33055.`;
+  const metaDescription = `${sub.description} Enquiries from ${city.name}, ${city.stateName}; confirm availability. Call +91 94430 33055.`;
   const keywords = [
     ...sub.keywords.map((k) => `${k} ${city.name.toLowerCase()}`),
     `${sub.shortName.toLowerCase()} ${city.name.toLowerCase()}`,
@@ -37,9 +38,9 @@ export default function PillarCitySubPage() {
   ];
 
   const faqs = [
-    { q: `Is ${sub.name} available in ${city.name}?`, a: `Yes. ${sub.description.replace(/\.$/, "")} — actively offered in ${city.name}, ${city.stateName}.` },
+    { q: `Is ${sub.name} available in ${city.name}?`, a: `Contact our Coimbatore team to confirm ${sub.shortName.toLowerCase()} support for ${city.name}. ${localPageContent(pillar, city).boundary}` },
     { q: `Who is ${sub.shortName} in ${city.name} for?`, a: pillar.id === "financial-services" ? `Businesses, MSMEs, traders and professionals in ${city.name} seeking ${sub.shortName.toLowerCase()} support.` : `Individuals and organisations in ${city.name} needing ${sub.shortName.toLowerCase()}.` },
-    { q: `How fast can ${sub.shortName} be arranged in ${city.name}?`, a: `Most ${sub.shortName.toLowerCase()} requests in ${city.name} are scoped within 24–48 hours of first call.` },
+    { q: `How fast can ${sub.shortName} be arranged in ${city.name}?`, a: "Timelines depend on your requirements, document readiness and availability. Confirm them before engagement." },
     pillar.id === "transportation" && sub.slug === "return-load" && { q: `Are return loads available out of ${city.name}?`, a: "Return loads are subject to route availability — call us to confirm current truck schedules." },
   ].filter(Boolean) as { q: string; a: string }[];
 
@@ -51,9 +52,9 @@ export default function PillarCitySubPage() {
       metaDescription={metaDescription}
       path={path}
       eyebrow={`${pillar.shortName} · ${sub.shortName} · ${city.name}`}
-      intro={`${sub.description} ${pillar.cityIntro(city.name)}`}
+      intro={`${sub.description} ${localPageContent(pillar, city).intro}`}
       stats={[
-        { value: "43+", label: "Years" },
+        practiceHeritage(pillar.id),
         { value: city.name, label: city.stateName },
         { value: pillar.shortName, label: pillar.subLabel },
         { value: "Direct", label: "Contact" },
@@ -75,7 +76,7 @@ export default function PillarCitySubPage() {
             <span className="text-eyebrow text-primary">{sub.shortName} in {city.name}</span>
             <h2 className="text-display-lg text-foreground mt-3 mb-5">{title}</h2>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              {sub.description} Backed by 43 years of experience and a direct, no-middleman service model across {city.region}.
+              {sub.description} {practiceHeritage(pillar.id).description}
             </p>
             <ul className="space-y-2.5">
               {sub.benefits.map((b) => (
@@ -92,7 +93,7 @@ export default function PillarCitySubPage() {
               <p className="text-foreground font-semibold">{city.name}, {city.stateName}</p>
               <p className="text-sm text-muted-foreground mt-1">{city.region} · {city.language}</p>
             </div>
-            <KeywordList label="Searched in your area" items={keywords.slice(0, 6)} />
+            <p className="text-muted-foreground leading-relaxed">{localPageContent(pillar, city).boundary}</p>
           </div>
         </div>
       </section>

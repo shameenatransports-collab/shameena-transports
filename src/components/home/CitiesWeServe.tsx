@@ -11,14 +11,13 @@ export function CitiesWeServe() {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-10 md:mb-12">
           <span className="text-xs font-semibold tracking-[0.2em] text-primary uppercase">
-            Local Presence
+            Regional Enquiries
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-3 mb-4">
-            Cities We Serve Across Tamil Nadu
+            City Enquiries Across South India
           </h2>
           <p className="text-muted-foreground text-base md:text-lg">
-            Headquartered in Coimbatore. Trusted across Tamil Nadu for transport, finance,
-            and legal services for over 43 years.
+            Headquartered in Coimbatore. Transportation since 1982; financial, legal and education practices launched mid-2025. Confirm availability for your location.
           </p>
         </div>
 
@@ -45,11 +44,11 @@ export function CitiesWeServe() {
                       {city.nameTamil}
                     </p>
                     <p className="text-sm text-muted-foreground leading-relaxed flex-1 mb-4">
-                      {city.tagline}
+                      Transport, business funding assistance, legal documentation and education guidance.
                     </p>
-                    <span className="inline-flex items-center text-sm font-semibold text-primary group-hover:gap-2 transition-all">
+                    <span className="inline-flex items-center text-sm font-semibold text-primary">
                       Explore {city.name}
-                      <ArrowRight className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-0.5" />
+                      <ArrowRight className="w-4 h-4 ml-1" />
                     </span>
                   </CardContent>
                 </Card>
@@ -59,6 +58,7 @@ export function CitiesWeServe() {
         </div>
 
         <div className="text-center mt-8">
+          <Link to="/service-areas" className="inline-flex items-center gap-2 text-primary font-semibold mb-4">Explore Tamil Nadu, Karnataka, Telangana, Andhra Pradesh & Kerala <ArrowRight className="h-4 w-4 shrink-0" /></Link>
           <p className="text-sm text-muted-foreground">
             Also serving{" "}
             <Link to="/erode" className="text-primary hover:underline font-medium">Erode</Link>,{" "}
