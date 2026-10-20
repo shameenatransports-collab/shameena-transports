@@ -56,6 +56,31 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://sta-corporate.in/madurai</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/erode</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/salem</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/trichy</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/tirunelveli</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://sta-corporate.in/privacy</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
@@ -1661,11 +1686,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sta-corporate.in/financial-services/products/home-loan</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://sta-corporate.in/financial-services/products/loan-against-property</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -1722,11 +1742,6 @@
   </url>
   <url>
     <loc>https://sta-corporate.in/financial-services/coimbatore/vehicle-loan</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/financial-services/coimbatore/home-loan</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
@@ -1791,11 +1806,6 @@
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://sta-corporate.in/financial-services/chennai/home-loan</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
     <loc>https://sta-corporate.in/financial-services/chennai/loan-against-property</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
@@ -1852,11 +1862,6 @@
   </url>
   <url>
     <loc>https://sta-corporate.in/financial-services/bengaluru/vehicle-loan</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/financial-services/bengaluru/home-loan</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
@@ -1921,11 +1926,6 @@
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://sta-corporate.in/financial-services/hyderabad/home-loan</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
     <loc>https://sta-corporate.in/financial-services/hyderabad/loan-against-property</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
@@ -1982,11 +1982,6 @@
   </url>
   <url>
     <loc>https://sta-corporate.in/financial-services/kochi/vehicle-loan</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/financial-services/kochi/home-loan</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
