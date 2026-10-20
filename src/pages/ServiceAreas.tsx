@@ -27,8 +27,8 @@ export default function ServiceAreas() {
           <p className="text-lg text-primary-foreground/90">Transportation, business funding assistance, legal documentation and education guidance. Enquiries are coordinated from our Peelamedu, Coimbatore office; these city pages do not represent local branches.</p>
         </div>
       </section>
-      <nav aria-label="States" className="container mx-auto px-4 py-8 flex flex-wrap gap-x-6 gap-y-3">{states.map(state => <a key={state} href={`#${state.toLowerCase().replaceAll(" ", "-")}`} className="text-primary underline underline-offset-4">{state}</a>)}</nav>
-      {states.map(state => <section key={state} id={state.toLowerCase().replaceAll(" ", "-")} className="py-12 border-t border-border scroll-mt-28">
+      <nav aria-label="States" className="container mx-auto px-4 py-8 flex flex-wrap gap-x-6 gap-y-3">{states.map(state => <a key={state} href={`#${state.toLowerCase().replace(/ /g, "-")}`} className="text-primary underline underline-offset-4">{state}</a>)}</nav>
+      {states.map(state => <section key={state} id={state.toLowerCase().replace(/ /g, "-")} className="py-12 border-t border-border scroll-mt-28">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-8">{state}</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">{CITIES.filter(city => city.stateName === state).map(city => <article key={city.slug} className="border-b border-border pb-6 min-w-0">
