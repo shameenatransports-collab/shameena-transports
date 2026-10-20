@@ -1,8 +1,8 @@
 import { test, expect } from "bun:test";
-import { practiceHeritage, localPageContent } from "./local-content";
-import { PILLARS } from "./pillars";
-import { CITIES } from "./cities";
-import { enumerateAllUrls } from "./slugs";
+import { practiceHeritage, localPageContent } from "../src/lib/seo/local-content";
+import { PILLARS } from "../src/lib/seo/pillars";
+import { CITIES } from "../src/lib/seo/cities";
+import { enumerateAllUrls } from "../src/lib/seo/slugs";
 
 test("only transportation has the 1982 heritage", () => {
   expect(practiceHeritage("transportation").value).toBe("1982");
