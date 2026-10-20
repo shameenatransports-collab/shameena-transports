@@ -65,7 +65,7 @@ export const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "@id": "https://sta-corporate.in/#localbusiness",
-  "name": "STA Corporate Solutions — Transportation, Loan Services & Legal Services Coimbatore",
+  "name": "STA Corporate Solutions",
   "alternateName": ["STA Corporate", "STA Solutions", "STA Coimbatore", "STA Corporate Solutions Coimbatore"],
   "image": ["https://sta-corporate.in/logo.png"],
   "description": "STA Corporate Solutions — Transportation since 1982 (43+ years of service excellence). Financial Services (MSME, Mudra, government funding schemes), Legal Services and Edu Consultancy practices added mid-2025. Four integrated practices serving Coimbatore and South India.",
@@ -116,7 +116,7 @@ export const localBusinessSchema = {
         "name": "Transportation Services",
         "itemListElement": [
           { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Full Load Lorry Transport" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Return Load Transport" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Return Load Transport", "description": "Subject to route availability; confirm before booking." } },
           { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Factory Shifting" } }
         ]
       },
@@ -124,10 +124,10 @@ export const localBusinessSchema = {
         "@type": "OfferCatalog",
         "name": "Financial Services",
         "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "MSME Loans" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mudra Loans" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "MSME Business Loan Assistance" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mudra Business Loan Application Assistance" } },
           { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Government Funding Scheme Guidance" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Business Loans" } }
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Business Loan Assistance", "description": "For businesses, industries and companies, strictly not personal loans. STA is not a lender; approval is decided by the bank or relevant authority." } }
         ]
       },
       {
