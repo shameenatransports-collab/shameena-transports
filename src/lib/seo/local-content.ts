@@ -49,7 +49,7 @@ export function localPageContent(pillar: Pillar, city: City) {
     heading,
     metaTitle: `${heading} | STA`,
     metaDescription: `${heading}, ${city.stateName}. Coimbatore-based guidance and WhatsApp enquiries. ${pillar.id === "transportation" ? "Full Load; Return Load subject to route availability." : "Confirm eligibility and availability."}`,
-    intro: `${pillar.cityIntro(city.name)} Enquiries are coordinated from Coimbatore; confirm availability for your location and requirements.`,
+    intro: `${heading} enquiries are coordinated from our Coimbatore office. Share your requirements so service availability, scope and next steps can be confirmed individually.`,
     localNote: pillar.id === "transportation"
       ? local?.planning ?? `For ${city.name} enquiries in ${city.region}, share the exact pickup and delivery addresses, cargo details and preferred date so vehicle suitability and route availability can be checked.`
       : `For enquiries from ${city.name}, ${city.stateName}, tell us your location and the support you need. Advice is coordinated from Coimbatore, not a claimed ${city.name} branch. ${pillar.id === "legal-services" ? "State-specific requirements and the relevant jurisdiction must be checked for each matter." : pillar.id === "edu-consultancy" ? "Your intended destination and institution determine the applicable admission and credit-transfer rules." : "Your business activity, funding purpose and the lender’s current criteria determine suitable options."}`,
