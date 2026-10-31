@@ -91,12 +91,6 @@ export class ErrorBoundary extends Component<Props, State> {
             </Button>
           </div>
 
-          <p className="text-xs text-muted-foreground mt-6">
-            View full diagnostics at{" "}
-            <a href="/debug" className="text-primary hover:underline">
-              /debug
-            </a>
-          </p>
         </div>
       </div>
     );

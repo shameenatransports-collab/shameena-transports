@@ -2,7 +2,7 @@
  * Production-ready client-side logger.
  * - Captures runtime errors, unhandled promise rejections, console errors.
  * - Records route/component context, user agent, viewport.
- * - Stores last N entries in memory + localStorage for retrieval on /debug.
+ * - Stores last N entries in memory + localStorage for retrieval.
  * - Exposes window.__staLogger for ad-hoc inspection.
  */
 

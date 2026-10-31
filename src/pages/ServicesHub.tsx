@@ -5,20 +5,19 @@ import { CTASection } from "@/components/home/CTASection";
 import { PILLARS } from "@/lib/seo/pillars";
 import { HUB_CITIES } from "@/lib/seo/cities";
 import { pillarCityUrl, canonical } from "@/lib/seo/slugs";
-import { ArrowUpRight, Truck, Banknote, Scale, GraduationCap, Building2 } from "lucide-react";
+import { ArrowUpRight, Truck, Banknote, Scale, GraduationCap } from "lucide-react";
 
 const ICONS: Record<string, typeof Truck> = {
   transportation: Truck,
   "financial-services": Banknote,
   "legal-services": Scale,
   "edu-consultancy": GraduationCap,
-  "real-estate": Building2,
 };
 
 export default function ServicesHub() {
   const url = canonical("/services");
-  const metaTitle = "All Services | Transportation, Finance, Legal, Edu Consultancy | STA Corporate Solutions";
-  const metaDescription = "Four integrated practices across South India — Transportation, Financial Services, Legal Services and Edu Consultancy. 43+ years of trust.";
+  const metaTitle = "All Services | Transportation, Finance, Legal, Education | STA Corporate Solutions";
+  const metaDescription = "Four integrated practices across South India — Transportation, Financial Services, Legal & CA Services and Education. 43+ years of trust.";
 
   return (
     <>
@@ -46,7 +45,7 @@ export default function ServicesHub() {
                 </span>
               </h1>
               <p className="text-xl text-primary-foreground/80 max-w-2xl">
-                Transportation, Financial Services, Legal Services and Edu Consultancy — four integrated practices serving individuals and businesses across Tamil Nadu, Karnataka, Telangana, Andhra Pradesh and Kerala.
+                Transportation, Financial Services, Legal & CA Services and Education — four integrated practices serving individuals and businesses across Tamil Nadu, Karnataka, Telangana, Andhra Pradesh and Kerala.
               </p>
             </div>
           </div>

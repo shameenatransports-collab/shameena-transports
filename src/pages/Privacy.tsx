@@ -51,7 +51,7 @@ const Privacy = () => {
                   <p className="text-muted-foreground leading-relaxed">
                     <strong>STA Corporate Solutions</strong> ("STA", "we", "us") is the Data Fiduciary
                     for personal data collected through <span className="font-mono">sta-corporate.in</span> and our
-                    contact channels. Headquartered at No.302/2A7, VK Road, Peelamedu, Coimbatore – 641004,
+                    contact channels. Headquartered at No 10/135-G, Gurusamy Pillai St Extn, Podanur, Coimbatore, Coimbatore South, Tamil Nadu, India, 641023,
                     Tamil Nadu, India.
                   </p>
                   <p className="text-muted-foreground leading-relaxed mt-4">
@@ -247,7 +247,7 @@ const Privacy = () => {
                   <h2 className="text-2xl font-bold text-foreground mb-4">10. Grievance Officer (DPDP §10(2)(c) / IT Rules)</h2>
                   <div className="bg-muted p-4 rounded-lg">
                     <p className="font-semibold text-foreground">Grievance Officer — STA Corporate Solutions</p>
-                    <p className="text-muted-foreground text-sm mt-1">No.302/2A7, VK Road, Peelamedu, Coimbatore – 641004, Tamil Nadu</p>
+                    <p className="text-muted-foreground text-sm mt-1">No 10/135-G, Gurusamy Pillai St Extn, Podanur, Coimbatore, Coimbatore South, Tamil Nadu, India, 641023</p>
                     <p className="text-muted-foreground text-sm">Phone: +91 94430 33055 (Mon–Sat, 09:00–19:00 IST)</p>
                     <p className="text-muted-foreground text-sm">Email: <a href="mailto:shameenatransports@gmail.com" className="underline">shameenatransports@gmail.com</a></p>
                     <p className="text-muted-foreground text-sm">Online: <Link to="/data-request" className="underline">sta-corporate.in/data-request</Link></p>

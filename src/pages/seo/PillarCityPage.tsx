@@ -37,7 +37,7 @@ export default function PillarCityPage() {
     { q: `How do I enquire from ${city.name}?`, a: `WhatsApp +91 94430 33055 with your location and requirements. Enquiries are coordinated from our Coimbatore address; availability is confirmed individually.` },
     { q: `What should I prepare for ${pillar.shortName.toLowerCase()} support?`, a: content.preparation.join(". ") + "." },
     { q: `What should I confirm before booking?`, a: content.boundary },
-    { q: `Does STA have an office in ${city.name}?`, a: "Our confirmed office is No.302/2A7, VK Road, Peelamedu, Coimbatore – 641004. This page is for enquiries from your city and does not indicate a separate branch." },
+    { q: `Does STA have an office in ${city.name}?`, a: "Our confirmed office is No 10/135-G, Gurusamy Pillai St Extn, Podanur, Coimbatore, Coimbatore South, Tamil Nadu, India, 641023. This page is for enquiries from your city and does not indicate a separate branch." },
   ];
 
   return (

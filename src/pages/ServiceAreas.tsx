@@ -24,7 +24,7 @@ export default function ServiceAreas() {
         <div className="container mx-auto px-4 max-w-4xl">
           <p className="text-primary-foreground/80 mb-4">Coimbatore · South India</p>
           <h1 className="text-3xl md:text-5xl font-bold text-primary-foreground mb-6">South India city & service directory</h1>
-          <p className="text-lg text-primary-foreground/90">Transportation, business funding assistance, legal documentation and education guidance. Enquiries are coordinated from our Peelamedu, Coimbatore office; these city pages do not represent local branches.</p>
+          <p className="text-lg text-primary-foreground/90">Transportation, business funding assistance, legal documentation and education guidance. Enquiries are coordinated from our Podanur, Coimbatore office; these city pages do not represent local branches.</p>
         </div>
       </section>
       <nav aria-label="States" className="container mx-auto px-4 py-8 flex flex-wrap gap-x-6 gap-y-3">{states.map(state => <a key={state} href={`#${state.toLowerCase().replace(/ /g, "-")}`} className="text-primary underline underline-offset-4">{state}</a>)}</nav>

@@ -48,13 +48,13 @@ export default function EduConsultancy() {
   return (
     <>
       <Helmet>
-        <title>Edu Consultancy South India | Coimbatore, Chennai, Bangalore</title>
+        <title>Job Consulting & Degree Transfer | Education | STA Corporate Solutions</title>
         <meta
           name="description"
-          content="Explore education and potential degree-transfer options with STA in Coimbatore. Try AI pathway suggestions; eligibility and local support require confirmation."
+          content="Job consulting and degree-transfer guidance from STA Corporate Solutions, Coimbatore. Try AI pathway suggestions; eligibility and outcomes depend on the employer or institution and are confirmed on enquiry."
         />
         <link rel="canonical" href="https://sta-corporate.in/edu-consultancy" />
-        <meta property="og:title" content="Edu Consultancy South India | Coimbatore, Chennai, Bangalore" />
+        <meta property="og:title" content="Education South India | Coimbatore, Chennai, Bangalore" />
         <meta
           property="og:description"
           content="Education counselling and AI pathway starting points from STA in Coimbatore. Institution eligibility, credit transfer and regional support require verification."
@@ -73,13 +73,13 @@ export default function EduConsultancy() {
                 New in 2025 · Part of STA Corporate Solutions
               </div>
               <h1 className="text-display-2xl text-primary-foreground mb-6">
-                Edu Consultancy <br />
+                Education <br />
                 <span className="bg-gradient-to-r from-secondary via-secondary to-primary-foreground bg-clip-text text-transparent">
-                  Explore education pathways
+                  Job consulting & degree transfer
                 </span>
               </h1>
               <p className="text-xl text-primary-foreground/80 max-w-2xl mb-10">
-                Launched mid-2025 under STA Corporate Solutions. Explore education options for learners, working professionals and degree-transfer seekers, with institution-specific eligibility to be confirmed.
+                Launched mid-2025 under STA Corporate Solutions. Job consulting and degree-transfer guidance for learners, graduates and working professionals — with employer and institution-specific eligibility confirmed before you proceed.
               </p>
 
               <p className="text-sm text-primary-foreground/90">Guidance based in Coimbatore · Regional support confirmed on enquiry</p>

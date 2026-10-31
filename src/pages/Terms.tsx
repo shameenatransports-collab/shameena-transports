@@ -16,7 +16,7 @@ const Terms = () => {
     <>
       <Helmet>
         <title>Terms of Service | STA Corporate Solutions — Transport, Loans & Legal</title>
-        <meta name="description" content="Terms of Service for STA Corporate Solutions Coimbatore. Terms, conditions, liability & policies for Transportation, Loan Services & Legal Services in Tamil Nadu." />
+        <meta name="description" content="Terms of Service for STA Corporate Solutions Coimbatore. Terms, conditions, liability & policies for Transportation, Loan Services & Legal & CA Services in Tamil Nadu." />
         <link rel="canonical" href="https://sta-corporate.in/terms" />
         <meta name="robots" content="index, follow" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
@@ -63,7 +63,8 @@ const Terms = () => {
                   <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4">
                     <li><strong>Transportation Services:</strong> Full Load and Return Load lorry transport across Tamil Nadu</li>
                     <li><strong>Financial Services:</strong> MSME Loans, Mudra Loans, Home Loans, Business Loans — lowest commission in Coimbatore</li>
-                    <li><strong>Legal Services:</strong> Property documentation, company registration, GST filing, litigation support</li>
+                    <li><strong>Legal & CA Services:</strong> Legal documentation, company registration, GST and income-tax compliance, accounts, litigation support</li>
+                    <li><strong>Education:</strong> Job consulting and degree-transfer guidance (outcomes depend on the employer or institution)</li>
                   </ul>
                   <p className="text-muted-foreground leading-relaxed mt-4 text-sm">
                     All services are governed by Indian law and are available exclusively within India.
@@ -193,8 +194,8 @@ const Terms = () => {
                   </p>
                   <div className="bg-muted p-4 rounded-lg">
                     <p className="font-semibold text-foreground">STA Corporate Solutions</p>
-                    <p className="text-muted-foreground">No.302/2A7, VK Road, Peelamedu</p>
-                    <p className="text-muted-foreground">Coimbatore - 641004, Tamil Nadu</p>
+                    <p className="text-muted-foreground">No 10/135-G, Gurusamy Pillai St Extn, Podanur</p>
+                    <p className="text-muted-foreground">Coimbatore, Coimbatore South, Tamil Nadu, India, 641023</p>
                     <p className="text-muted-foreground mt-2">Phone: +91 94430 33055</p>
                     <p className="text-muted-foreground">GST: 33AHTPA8379E1Z3</p>
                   </div>

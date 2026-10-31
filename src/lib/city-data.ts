@@ -49,16 +49,16 @@ export const CITY_DATA: Record<CitySlug, CityData> = {
     name: "Coimbatore",
     nameTamil: "கோயம்புத்தூர்",
     region: "Tamil Nadu",
-    postalCode: "641004",
+    postalCode: "641023",
     geo: { lat: "11.0168", lng: "76.9558" },
     tagline: "Headquartered in Coimbatore — Serving the Manchester of South India Since 1982",
-    metaTitle: "Transport, Loans & Legal Services in Coimbatore | STA Corporate Solutions Since 1982",
+    metaTitle: "Transport, Loans & Legal & CA Services in Coimbatore | STA Corporate Solutions Since 1982",
     metaDescription:
       "STA Corporate Solutions — 43+ years in Coimbatore. Full-load lorry transport, MSME/Mudra and business funding assistance, property & company law. Business funding guidance in Coimbatore. Call 94430 33055.",
     heroIntro:
       "Our home city. From Peelamedu to Saravanampatti, Gandhipuram to Singanallur — STA has powered Coimbatore's textile mills, foundries, and pump industries for over four decades.",
     about:
-      "Founded in 1982 on VK Road, Peelamedu, STA Corporate Solutions has grown alongside Coimbatore's transformation into India's pump capital and textile hub. We understand local business — from Tirupur knitwear exporters to Coimbatore's wet-grinder manufacturers — and deliver transport, finance, and legal solutions tailored to Kongu Nadu enterprise.",
+      "Serving Coimbatore since 1982, STA Corporate Solutions has grown alongside Coimbatore's transformation into India's pump capital and textile hub. We understand local business — from Tirupur knitwear exporters to Coimbatore's wet-grinder manufacturers — and deliver transport, finance, and legal solutions tailored to Kongu Nadu enterprise.",
     transport: {
       headline: "Full Load & Return Load Lorry Transport from Coimbatore",
       description:
@@ -85,7 +85,7 @@ export const CITY_DATA: Record<CitySlug, CityData> = {
       ],
     },
     legal: {
-      headline: "Property, Company & Litigation Legal Services in Coimbatore",
+      headline: "Property, Company & Litigation Legal & CA Services in Coimbatore",
       description:
         "End-to-end legal support for Coimbatore residents and businesses — from patta transfer at Taluk Office to High Court Madras Bench representation.",
       highlights: [
@@ -99,7 +99,7 @@ export const CITY_DATA: Record<CitySlug, CityData> = {
     faqs: [
       {
         q: "Where is STA Corporate Solutions located in Coimbatore?",
-        a: "Our head office is at No.302/2A7, VK Road, Peelamedu, Coimbatore – 641004. Walk-ins welcome Mon–Sat, 9 AM to 7 PM.",
+        a: "Our head office is at No 10/135-G, Gurusamy Pillai St Extn, Podanur, Coimbatore, Coimbatore South, Tamil Nadu, India, 641023. Walk-ins welcome Mon–Sat, 9 AM to 7 PM.",
       },
       {
         q: "Do you arrange same-day lorry pickup within Coimbatore?",
@@ -119,9 +119,9 @@ export const CITY_DATA: Record<CitySlug, CityData> = {
     postalCode: "600001",
     geo: { lat: "13.0827", lng: "80.2707" },
     tagline: "Trusted Logistics & Legal Partner for Chennai Businesses Since 1982",
-    metaTitle: "Transport, Loans & Legal Services in Chennai | STA Corporate Solutions",
+    metaTitle: "Transport, Loans & Legal & CA Services in Chennai | STA Corporate Solutions",
     metaDescription:
-      "Coimbatore-to-Chennai lorry transport, business loans & High Court legal services. 43 years of trusted service across Chennai, Ambattur, Sriperumbudur. Call 94430 33055.",
+      "Coimbatore-to-Chennai lorry transport, business loans & High Court legal & CA services. 43 years of trusted service across Chennai, Ambattur, Sriperumbudur. Call 94430 33055.",
     heroIntro:
       "Daily lorry runs to Chennai and back — connecting Tamil Nadu's capital with the manufacturing belt of Coimbatore, Tiruppur, and Erode for over four decades.",
     about:
@@ -151,7 +151,7 @@ export const CITY_DATA: Record<CitySlug, CityData> = {
       ],
     },
     legal: {
-      headline: "Madras High Court & Property Legal Services",
+      headline: "Madras High Court & Property Legal & CA Services",
       description:
         "Coordinated legal representation in Chennai with experienced Madras High Court advocates. Property due-diligence across all Chennai zones.",
       highlights: [
@@ -185,7 +185,7 @@ export const CITY_DATA: Record<CitySlug, CityData> = {
     postalCode: "641601",
     geo: { lat: "11.1085", lng: "77.3411" },
     tagline: "The Knitwear Capital's Logistics & Finance Partner Since 1982",
-    metaTitle: "Lorry Transport, Export Finance & Legal Services in Tiruppur | STA Corporate Solutions",
+    metaTitle: "Lorry Transport, Export Finance & Legal & CA Services in Tiruppur | STA Corporate Solutions",
     metaDescription:
       "Trusted by Tiruppur knitwear exporters for 40+ years. Daily lorry service, export-linked finance, GST & customs legal support. Call STA Coimbatore: 94430 33055.",
     heroIntro:
@@ -246,9 +246,9 @@ export const CITY_DATA: Record<CitySlug, CityData> = {
     postalCode: "625001",
     geo: { lat: "9.9252", lng: "78.1198" },
     tagline: "Serving the Temple City & Southern Tamil Nadu Since 1982",
-    metaTitle: "Lorry Transport, Loans & Legal Services in Madurai | STA Corporate Solutions",
+    metaTitle: "Lorry Transport, Loans & Legal & CA Services in Madurai | STA Corporate Solutions",
     metaDescription:
-      "Coimbatore-to-Madurai full-load lorry, MSME loans, and legal services for Madurai businesses. 43 years of trust across Southern Tamil Nadu. Call 94430 33055.",
+      "Coimbatore-to-Madurai full-load lorry, MSME loans, and legal & CA services for Madurai businesses. 43 years of trust across Southern Tamil Nadu. Call 94430 33055.",
     heroIntro:
       "Madurai — the cultural heart of Tamil Nadu and gateway to the southern districts. STA connects Madurai's traders, textile units, and farmers to opportunities across the state.",
     about:
@@ -278,7 +278,7 @@ export const CITY_DATA: Record<CitySlug, CityData> = {
       ],
     },
     legal: {
-      headline: "Property, Civil & Business Legal Services in Madurai",
+      headline: "Property, Civil & Business Legal & CA Services in Madurai",
       description:
         "Legal support coordinated from Coimbatore, with on-ground partner advocates at the Madurai Bench of the Madras High Court.",
       highlights: [
@@ -309,7 +309,7 @@ export const CITY_DATA: Record<CitySlug, CityData> = {
     postalCode: "638001",
     geo: { lat: "11.3410", lng: "77.7172" },
     tagline: "Powering the Turmeric City & Textile Hub Since 1982",
-    metaTitle: "Lorry Transport, Loans & Legal Services in Erode | STA Corporate Solutions",
+    metaTitle: "Lorry Transport, Loans & Legal & CA Services in Erode | STA Corporate Solutions",
     metaDescription:
       "Daily Coimbatore–Erode lorry service, MSME & textile loans, GST & legal support for Erode handloom and turmeric trade. 43 years trusted. Call 94430 33055.",
     heroIntro:
@@ -341,7 +341,7 @@ export const CITY_DATA: Record<CitySlug, CityData> = {
       ],
     },
     legal: {
-      headline: "Property, GST & Business Legal Services in Erode",
+      headline: "Property, GST & Business Legal & CA Services in Erode",
       description:
         "End-to-end legal support coordinated from Coimbatore for Erode district residents and businesses.",
       highlights: [
@@ -372,13 +372,13 @@ export const CITY_DATA: Record<CitySlug, CityData> = {
     postalCode: "636001",
     geo: { lat: "11.6643", lng: "78.1460" },
     tagline: "Steel City's Trusted Transport, Finance & Legal Partner Since 1982",
-    metaTitle: "Lorry Transport, Loans & Legal Services in Salem | STA Corporate Solutions",
+    metaTitle: "Lorry Transport, Loans & Legal & CA Services in Salem | STA Corporate Solutions",
     metaDescription:
-      "Coimbatore–Salem lorry transport, MSME & steel-trade finance, legal services for Salem's industrial belt. 43 years of Tamil Nadu trust. Call 94430 33055.",
+      "Coimbatore–Salem lorry transport, MSME & steel-trade finance, legal & CA services for Salem's industrial belt. 43 years of Tamil Nadu trust. Call 94430 33055.",
     heroIntro:
       "Salem — Tamil Nadu's steel city and gateway to the Kongu plateau. STA's lorries link Salem's SAIL plant, magnesite belt, and sago industries to markets across South India.",
     about:
-      "Home to SAIL Salem Steel Plant, the magnesite mines of Yercaud belt, and a thriving sago and silver-jewellery trade — Salem's economy is uniquely diverse. STA has supported Salem's industrial belt with reliable transport, banking access, and legal services since 1982.",
+      "Home to SAIL Salem Steel Plant, the magnesite mines of Yercaud belt, and a thriving sago and silver-jewellery trade — Salem's economy is uniquely diverse. STA has supported Salem's industrial belt with reliable transport, banking access, and legal & CA services since 1982.",
     transport: {
       headline: "Coimbatore ↔ Salem & Salem ↔ Bangalore Lorry Service",
       description:
@@ -404,7 +404,7 @@ export const CITY_DATA: Record<CitySlug, CityData> = {
       ],
     },
     legal: {
-      headline: "Property, Mining & Industrial Legal Services in Salem",
+      headline: "Property, Mining & Industrial Legal & CA Services in Salem",
       description:
         "Legal support for Salem residents, traders, and industrial units — coordinated from our Coimbatore HQ.",
       highlights: [
@@ -435,13 +435,13 @@ export const CITY_DATA: Record<CitySlug, CityData> = {
     postalCode: "620001",
     geo: { lat: "10.7905", lng: "78.7047" },
     tagline: "Serving Central Tamil Nadu's Engineering & Trade Hub Since 1982",
-    metaTitle: "Lorry Transport, Loans & Legal Services in Trichy | STA Corporate Solutions",
+    metaTitle: "Lorry Transport, Loans & Legal & CA Services in Trichy | STA Corporate Solutions",
     metaDescription:
-      "Coimbatore–Trichy lorry service, BHEL-belt finance, and legal services for Tiruchirappalli businesses. 43 years across Tamil Nadu. Call 94430 33055.",
+      "Coimbatore–Trichy lorry service, BHEL-belt finance, and legal & CA services for Tiruchirappalli businesses. 43 years across Tamil Nadu. Call 94430 33055.",
     heroIntro:
       "Tiruchirappalli — central Tamil Nadu's engineering and education hub, home to BHEL, OFT, and the Cauvery delta trade. STA connects Trichy to Coimbatore, Chennai, and beyond.",
     about:
-      "From BHEL and Ordnance Factory Tiruchirappalli to the temple-economy of Srirangam and the agri-trade of the Cauvery delta — Trichy is a strategic hub. STA serves Trichy's engineering vendors, traders, and residents with transport, finance, and legal services since 1982.",
+      "From BHEL and Ordnance Factory Tiruchirappalli to the temple-economy of Srirangam and the agri-trade of the Cauvery delta — Trichy is a strategic hub. STA serves Trichy's engineering vendors, traders, and residents with transport, finance, and legal & CA services since 1982.",
     transport: {
       headline: "Coimbatore ↔ Trichy & Central TN Lorry Service",
       description:
@@ -467,7 +467,7 @@ export const CITY_DATA: Record<CitySlug, CityData> = {
       ],
     },
     legal: {
-      headline: "Property, Vendor & Civil Legal Services in Trichy",
+      headline: "Property, Vendor & Civil Legal & CA Services in Trichy",
       description:
         "Legal support coordinated from Coimbatore with on-ground partner advocates across Trichy district.",
       highlights: [
@@ -498,9 +498,9 @@ export const CITY_DATA: Record<CitySlug, CityData> = {
     postalCode: "627001",
     geo: { lat: "8.7139", lng: "77.7567" },
     tagline: "Connecting Southern Tamil Nadu to Coimbatore Since 1982",
-    metaTitle: "Lorry Transport, Loans & Legal Services in Tirunelveli | STA Corporate Solutions",
+    metaTitle: "Lorry Transport, Loans & Legal & CA Services in Tirunelveli | STA Corporate Solutions",
     metaDescription:
-      "Coimbatore–Tirunelveli lorry transport, MSME loans, and legal services for Tirunelveli, Tuticorin, and Kanyakumari belt. 43 years of trust. Call 94430 33055.",
+      "Coimbatore–Tirunelveli lorry transport, MSME loans, and legal & CA services for Tirunelveli, Tuticorin, and Kanyakumari belt. 43 years of trust. Call 94430 33055.",
     heroIntro:
       "Tirunelveli — gateway to southern Tamil Nadu, halwa city, and hub for the Tuticorin port hinterland. STA's lorries connect this region to Coimbatore, Chennai, and beyond.",
     about:
@@ -530,7 +530,7 @@ export const CITY_DATA: Record<CitySlug, CityData> = {
       ],
     },
     legal: {
-      headline: "Property, Agri & Marine Legal Services in Tirunelveli",
+      headline: "Property, Agri & Marine Legal & CA Services in Tirunelveli",
       description:
         "Legal support coordinated from Coimbatore for Tirunelveli, Tuticorin, and the southern districts.",
       highlights: [

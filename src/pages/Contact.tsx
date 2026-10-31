@@ -31,7 +31,7 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Address",
-    details: ["No.302/2A7, VK Road, Peelamedu, Coimbatore - 641004"],
+    details: ["No 10/135-G, Gurusamy Pillai St Extn, Podanur, Coimbatore, Coimbatore South, Tamil Nadu, India, 641023"],
     action: null,
   },
   {
@@ -138,7 +138,7 @@ const Contact = () => {
     <>
       <Helmet>
         <title>Contact Us | Business Enquiries - STA Corporate Solutions</title>
-        <meta name="description" content="Contact STA Corporate Solutions for business enquiries. Call +91 94430 33055 or WhatsApp for instant quotes. Transportation, Financial, Legal & Edu Consultancy." />
+        <meta name="description" content="Contact STA Corporate Solutions for business enquiries. Call +91 94430 33055 or WhatsApp for instant quotes. Transportation, Financial, Legal & CA and Education." />
         <link rel="canonical" href="https://sta-corporate.in/contact" />
         <meta property="og:title" content="Contact STA Corporate Solutions | Get a Quote" />
         <meta property="og:description" content="Call +91 94430 33055 or WhatsApp for instant quotes. Complete business solutions." />
@@ -325,7 +325,7 @@ const Contact = () => {
                 <Card className="border-border overflow-hidden">
                   <div className="aspect-video bg-muted">
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.1234!2d77.0216!3d11.0273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859c6d8a6d8a7%3A0x1234567890abcdef!2sVK%20Road%2C%20Peelamedu%2C%20Coimbatore%2C%20Tamil%20Nadu%20641004!5e0!3m2!1sen!2sin!4v1702000000000!5m2!1sen!2sin"
+                      src="https://www.google.com/maps?q=No+10%2F135-G%2C+Gurusamy+Pillai+St+Extn%2C+Podanur%2C+Coimbatore%2C+Tamil+Nadu+641023&output=embed"
                       width="100%"
                       height="100%"
                       style={{ border: 0 }}
@@ -343,8 +343,9 @@ const Contact = () => {
                           STA Corporate Solutions
                         </h3>
                         <p className="text-muted-foreground text-sm">
-                          No.302/2A7, VK Road, Peelamedu,<br />
-                          Coimbatore - 641004, Tamil Nadu<br />
+                          No 10/135-G, Gurusamy Pillai St Extn,<br />
+                          Podanur, Coimbatore, Coimbatore South,<br />
+                          Tamil Nadu, India, 641023<br />
                           GST: 33AHTPA8379E1Z3
                         </p>
                       </div>

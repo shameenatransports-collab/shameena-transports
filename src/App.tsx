@@ -24,8 +24,8 @@ const Contact = lazy(() => import("./pages/Contact"));
 const Privacy = lazy(() => import("./pages/Privacy"));
 const DataRequest = lazy(() => import("./pages/DataRequest"));
 const Terms = lazy(() => import("./pages/Terms"));
+const MsmeLoanGuide = lazy(() => import("./pages/MsmeLoanGuide"));
 const CityLanding = lazy(() => import("./pages/CityLanding"));
-const Debug = lazy(() => import("./pages/Debug"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 // Programmatic SEO templates
@@ -90,7 +90,6 @@ const App = () => (
                     <Route path="/financial-services/:city/:sub" element={<PillarCitySubPage />} />
                     <Route path="/legal-services/:city/:sub" element={<PillarCitySubPage />} />
                     <Route path="/edu-consultancy/:city/:sub" element={<PillarCitySubPage />} />
-                    {/* Real Estate :city/:second routes to BHK or sub by slug detection */}
                     
 
                     {/* Pillar × city */}
@@ -100,6 +99,7 @@ const App = () => (
                     <Route path="/edu-consultancy/:city" element={<PillarCityPage />} />
                     
 
+                    <Route path="/msme-loan-guide" element={<MsmeLoanGuide />} />
                     <Route path="/fleet" element={<Fleet />} />
                     <Route path="/return-loads" element={<ReturnLoads />} />
 
@@ -108,7 +108,6 @@ const App = () => (
                     <Route path="/privacy" element={<Privacy />} />
                     <Route path="/data-request" element={<DataRequest />} />
                     <Route path="/terms" element={<Terms />} />
-                    <Route path="/debug" element={<Debug />} />
                     {/* City landing pages — Tamil Nadu local SEO */}
                     <Route path="/coimbatore" element={<CityLanding />} />
                     <Route path="/chennai" element={<CityLanding />} />

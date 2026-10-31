@@ -26,11 +26,11 @@ import {
 import { ServiceFAQ } from "@/components/seo/ServiceFAQ";
 
 const legalFaqs = [
-  { question: "What legal services does STA cover?", answer: "Property documentation, company registration (Pvt Ltd, LLP, OPC, Partnership), GST registration, trademark and IP filings, contracts, business compliance, labour-law advisory, and civil dispute support across Tamil Nadu and South India." },
+  { question: "What legal & CA services does STA cover?", answer: "Property documentation, company registration (Pvt Ltd, LLP, OPC, Partnership), GST registration, trademark and IP filings, contracts, business compliance, labour-law advisory, and civil dispute support across Tamil Nadu and South India." },
   { question: "Does STA represent clients in court?", answer: "STA provides documentation, drafting, and consultation. Court representation is handled by empanelled advocates we coordinate with on your behalf — you get a single point of contact." },
   { question: "Can STA help register a company end-to-end?", answer: "Yes — name reservation, DIN/DSC, MoA/AoA drafting, MCA filing, PAN/TAN, GST registration and post-incorporation compliance setup. Typical turnaround is 10–15 working days subject to MCA processing." },
-  { question: "Where is STA Legal Services available?", answer: "Primary delivery across Tamil Nadu (Coimbatore, Chennai, Tiruppur, Erode, Salem, Madurai, Trichy) with extended coverage into Karnataka, Telangana, Andhra Pradesh and Kerala. Operating base: Peelamedu, Coimbatore." },
-  { question: "When did STA start Legal Services?", answer: "STA Corporate Solutions launched its Legal Services practice in mid-2025 as part of the group's expansion into integrated corporate practices. The group's transportation business has operated continuously since 1982." },
+  { question: "Where is STA Legal & CA Services available?", answer: "Primary delivery across Tamil Nadu (Coimbatore, Chennai, Tiruppur, Erode, Salem, Madurai, Trichy) with extended coverage into Karnataka, Telangana, Andhra Pradesh and Kerala. Operating base: Podanur, Coimbatore." },
+  { question: "When did STA start Legal & CA Services?", answer: "STA Corporate Solutions launched its Legal & CA Services practice in mid-2025 as part of the group's expansion into integrated corporate practices. The group's transportation business has operated continuously since 1982." },
 ];
 
 const personalServices = [
@@ -85,6 +85,18 @@ const personalServices = [
 ];
 
 const businessServices = [
+  {
+    icon: Briefcase,
+    title: "CA & Tax Services",
+    description: "Chartered accountancy and professional services",
+    features: [
+      "GST Registration & Returns",
+      "Income Tax & ITR Filing",
+      "Accounting & Bookkeeping",
+      "Audit Support",
+      "Tax Planning Advisory"
+    ]
+  },
   {
     icon: Building2,
     title: "Company Formation",
@@ -223,7 +235,7 @@ const LegalServices = () => {
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sta-corporate.in" },
-      { "@type": "ListItem", "position": 2, "name": "Legal Services", "item": "https://sta-corporate.in/legal-services" }
+      { "@type": "ListItem", "position": 2, "name": "Legal & CA Services", "item": "https://sta-corporate.in/legal-services" }
     ]
   };
 
@@ -231,17 +243,17 @@ const LegalServices = () => {
     "@context": "https://schema.org",
     "@type": "LegalService",
     "@id": "https://sta-corporate.in/legal-services#service",
-    "name": "STA Corporate Solutions Legal Services",
-    "description": "Comprehensive legal services for individuals, businesses, and corporates in Tamil Nadu. Property documentation, company formation, litigation support, and more.",
+    "name": "STA Corporate Solutions Legal & CA Services",
+    "description": "Comprehensive legal & CA services for individuals, businesses, and corporates in Tamil Nadu. Property documentation, company formation, litigation support, and more.",
     "provider": {
       "@type": "LocalBusiness",
       "name": "STA Corporate Solutions",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "No.302/2A7, VK Road, Peelamedu",
+        "streetAddress": "No 10/135-G, Gurusamy Pillai St Extn, Podanur",
         "addressLocality": "Coimbatore",
         "addressRegion": "Tamil Nadu",
-        "postalCode": "641004",
+        "postalCode": "641023",
         "addressCountry": "IN"
       }
     },
@@ -268,11 +280,11 @@ const LegalServices = () => {
   return (
     <>
       <Helmet>
-        <title>Legal Services South India | Property, Business, Corporate</title>
-        <meta name="description" content="Legal services across Coimbatore, Chennai, Bangalore, Hyderabad — property docs, business contracts, registrations, corporate & litigation support." />
-        <meta name="keywords" content="legal services south india, property lawyer coimbatore, company registration chennai, business lawyer bangalore, corporate law tamil nadu, trademark registration, litigation support hyderabad" />
+        <title>Legal & CA Services South India | Legal, GST, Tax, Audit & Company Registration</title>
+        <meta name="description" content="Legal and CA professional services from Coimbatore — legal documentation, company registration, GST, income tax, accounts, audit and compliance support for South India." />
+        <meta name="keywords" content="legal & CA services south india, property lawyer coimbatore, company registration chennai, business lawyer bangalore, corporate law tamil nadu, trademark registration, litigation support hyderabad" />
         <link rel="canonical" href="https://sta-corporate.in/legal-services" />
-        <meta property="og:title" content="Legal Services South India | Property, Business, Corporate" />
+        <meta property="og:title" content="Legal & CA Services South India | Property, Business, Corporate" />
         <meta property="og:description" content="Property, contracts, registrations & corporate law across South India." />
         <meta property="og:url" content="https://sta-corporate.in/legal-services" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
@@ -299,7 +311,7 @@ const LegalServices = () => {
                   </span>
                 </h1>
                 <p className="text-headline text-primary-foreground/85 max-w-2xl mb-10">
-                  Launched mid-2025 under STA Corporate Solutions. Property, company, litigation, IP and compliance documentation support for individuals, businesses and corporates across South India — backed by 43+ years of group-level Coimbatore presence.
+                  Launched mid-2025 under STA Corporate Solutions. Legal documentation, company registration, GST, income tax, accounts, audit and compliance support for individuals, businesses and corporates across South India — backed by 43+ years of group-level Coimbatore presence.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
                   <a href="tel:+919443033055">
@@ -358,7 +370,7 @@ const LegalServices = () => {
             </div>
           </section>
 
-          {/* Personal Legal Services */}
+          {/* Personal Legal & CA Services */}
           <AnimatedSection className="py-20 md:py-28 bg-background">
             <div className="container mx-auto px-4">
               <div className="text-center max-w-3xl mx-auto mb-16">
@@ -367,7 +379,7 @@ const LegalServices = () => {
                   For Individuals
                 </Badge>
                 <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
-                  Personal Legal Services
+                  Personal Legal & CA Services
                 </h2>
                 <p className="text-lg text-muted-foreground">
                   Expert legal assistance for all your personal matters
@@ -400,7 +412,7 @@ const LegalServices = () => {
             </div>
           </AnimatedSection>
 
-          {/* Business Legal Services */}
+          {/* Business Legal & CA Services */}
           <AnimatedSection className="py-20 md:py-28 bg-muted">
             <div className="container mx-auto px-4">
               <div className="text-center max-w-3xl mx-auto mb-16">
@@ -409,7 +421,7 @@ const LegalServices = () => {
                   For Businesses
                 </Badge>
                 <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
-                  Business Legal Services
+                  Business Legal & CA Services
                 </h2>
                 <p className="text-lg text-muted-foreground">
                   Complete legal support for startups, SMEs, and enterprises
@@ -442,7 +454,7 @@ const LegalServices = () => {
             </div>
           </AnimatedSection>
 
-          {/* Corporate Legal Services */}
+          {/* Corporate Legal & CA Services */}
           <AnimatedSection className="py-20 md:py-28 bg-background">
             <div className="container mx-auto px-4">
               <div className="text-center max-w-3xl mx-auto mb-16">
@@ -451,7 +463,7 @@ const LegalServices = () => {
                   For Corporates
                 </Badge>
                 <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
-                  Corporate Legal Services
+                  Corporate Legal & CA Services
                 </h2>
                 <p className="text-lg text-muted-foreground">
                   Enterprise-grade legal solutions for large organizations
@@ -489,7 +501,7 @@ const LegalServices = () => {
             <div className="container mx-auto px-4">
               <div className="text-center max-w-3xl mx-auto mb-16">
                 <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-                  Additional Legal Services
+                  Additional Legal & CA Services
                 </h2>
                 <p className="text-lg text-muted-foreground">
                   Structured support for common legal documentation needs
@@ -551,7 +563,7 @@ const LegalServices = () => {
                     Why Us
                   </Badge>
                   <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                    Why STA Corporate Solutions for Legal Services?
+                    Why STA Corporate Solutions for Legal & CA Services?
                   </h2>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -569,7 +581,7 @@ const LegalServices = () => {
           </AnimatedSection>
 
           <ServiceFAQ
-            eyebrow="Legal Services FAQ"
+            eyebrow="Legal & CA Services FAQ"
             heading="Property, corporate, registrations —"
             subheading="answered plainly."
             faqs={legalFaqs}

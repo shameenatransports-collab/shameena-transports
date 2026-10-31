@@ -8,7 +8,6 @@ Crawl-delay: 2
 
 Disallow: /api/
 Disallow: /private/
-Disallow: /debug
 Disallow: /data-request
 
 # ===== Major search engines — no crawl-delay =====

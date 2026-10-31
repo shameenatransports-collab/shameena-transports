@@ -61,7 +61,7 @@ export default function CityLanding() {
       <section className="py-12 md:py-16 bg-background"><div className="container mx-auto px-4 max-w-3xl"><LeadEnquiryForm city={city.name} /></div></section>
       <section className="py-12 bg-muted/40"><div className="container mx-auto px-4 max-w-4xl">
         <h2 className="text-2xl font-semibold text-foreground mb-4">Where is STA based?</h2>
-        <p className="text-muted-foreground mb-5">Our confirmed office is No.302/2A7, VK Road, Peelamedu, Coimbatore – 641004. This page does not claim a separate {city.name} branch or scheduled daily departures.</p>
+        <p className="text-muted-foreground mb-5">Our confirmed office is No 10/135-G, Gurusamy Pillai St Extn, Podanur, Coimbatore, Coimbatore South, Tamil Nadu, India, 641023. This page does not claim a separate {city.name} branch or scheduled daily departures.</p>
         <div className="flex flex-wrap gap-6"><Link to="/services" className="text-primary underline">All four services</Link><Link to="/service-areas" className="text-primary underline">South India city directory</Link><Link to="/contact" className="text-primary underline">Contact STA</Link></div>
       </div></section>
     </Layout>

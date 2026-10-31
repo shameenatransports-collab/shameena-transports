@@ -49,7 +49,7 @@ export function PillarPageShell({
     "@context": "https://schema.org",
     "@type": "Service",
     name: serviceName,
-    provider: { "@type": "LocalBusiness", "@id": canonical("/#localbusiness"), name: "STA Corporate Solutions", telephone: "+91-94430-33055", address: { "@type": "PostalAddress", streetAddress: "No.302/2A7, VK Road, Peelamedu", addressLocality: "Coimbatore", addressRegion: "Tamil Nadu", postalCode: "641004", addressCountry: "IN" } },
+    provider: { "@type": "LocalBusiness", "@id": canonical("/#localbusiness"), name: "STA Corporate Solutions", telephone: "+91-94430-33055", address: { "@type": "PostalAddress", streetAddress: "No 10/135-G, Gurusamy Pillai St Extn, Podanur", addressLocality: "Coimbatore", addressRegion: "Tamil Nadu", postalCode: "641023", addressCountry: "IN" } },
     areaServed: serviceArea ?? "South India",
     description: metaDescription,
     url,

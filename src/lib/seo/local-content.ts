@@ -4,7 +4,7 @@ import type { Pillar } from "./pillars";
 
 // Geographic context is not a claim of local offices or scheduled departures.
 const LOCAL_CONTEXT: Record<string, { connections: string; planning: string }> = {
-  coimbatore: { connections: "Tiruppur, Erode, Chennai, Bengaluru and Kochi", planning: "For Peelamedu pickups, share the loading address, gate access and loading equipment before requesting a vehicle." },
+  coimbatore: { connections: "Tiruppur, Erode, Chennai, Bengaluru and Kochi", planning: "For Coimbatore pickups, share the loading address, gate access and loading equipment before requesting a vehicle." },
   chennai: { connections: "Coimbatore, Tiruppur, Bengaluru and Hyderabad", planning: "For port-related enquiries, identify the terminal, cargo release status and loading requirements; port handling must be confirmed separately." },
   tiruppur: { connections: "Coimbatore, Chennai and Bengaluru", planning: "For garment cartons, textile bales or yarn, share package counts, dimensions and protection requirements alongside the total weight." },
   erode: { connections: "Coimbatore, Tiruppur and Salem", planning: "For textile or bulk-goods enquiries, specify packaging, stacking restrictions and whether loading equipment is available." },
@@ -19,7 +19,7 @@ const LOCAL_CONTEXT: Record<string, { connections: string; planning: string }> =
 
 export function practiceHeritage(pillarId: string) {
   return pillarId === "transportation"
-    ? { value: "1982", label: "Transport since", description: "Shameena Transports has operated from Coimbatore since 1982, with 12+ trailers and lorries." }
+    ? { value: "1982", label: "Transport since", description: "STA Corporate Solutions has operated from Coimbatore since 1982, with 12+ trailers and lorries." }
     : { value: "2025", label: "Practice launched", description: "STA’s financial, legal and education practices launched in mid-2025, building on the group’s transportation heritage." };
 }
 
@@ -29,20 +29,20 @@ export function localPageContent(pillar: Pillar, city: City) {
   const headings: Record<string, string> = {
     transportation: `Lorry Transport in ${city.name}`,
     "financial-services": `Business Loan Assistance in ${city.name}`,
-    "legal-services": `Legal Documentation in ${city.name}`,
-    "edu-consultancy": `Education Consultancy in ${city.name}`,
+    "legal-services": `Legal & CA Services in ${city.name}`,
+    "edu-consultancy": `Job Consulting & Degree Transfer in ${city.name}`,
   };
   const preparation: Record<string, string[]> = {
     transportation: ["Pickup and delivery addresses, including site access", "Cargo type, weight, dimensions and packaging", "Preferred loading date and loading/unloading arrangements", "Full Load or Return Load preference; return loads are subject to route availability"],
     "financial-services": ["Business activity and funding purpose", "Business registration status and available financial records", "Term-loan, working-capital or government-scheme enquiry", "Share a summary first; do not send identity or bank documents in an initial enquiry"],
-    "legal-services": ["The document, registration or dispute you need help with", "The relevant state and authority or jurisdiction", "Any filing deadline and the current stage of the matter", "Describe the matter first; avoid sharing confidential documents in an initial enquiry"],
-    "edu-consultancy": ["Your current qualification and academic goal", "Preferred destination and study format", "Existing credits, study gap and intended intake", "Share a summary, not identity documents or student records"],
+    "legal-services": ["The document, registration, tax, accounts or dispute matter you need help with", "The relevant state and authority or jurisdiction", "Any filing deadline and the current stage of the matter", "Describe the matter first; avoid sharing confidential documents in an initial enquiry"],
+    "edu-consultancy": ["Your current qualification, work experience and career or degree goal", "Preferred destination and study format", "Existing credits, study gap and intended intake", "Share a summary, not identity documents or student records"],
   };
   const boundaries: Record<string, string> = {
     transportation: "Vehicle suitability, loading date and freight are confirmed for each booking. Return loads are subject to route availability. Transit insurance can be arranged on request.",
     "financial-services": "Assistance is for businesses, industries and companies, strictly not personal loans. STA is not a lender; eligibility, sanction and scheme availability are decided by the bank or relevant authority.",
-    "legal-services": "Documentation and referral support depend on the matter and jurisdiction. Professional representation, fees and timelines must be confirmed before engagement; outcomes are not guaranteed.",
-    "edu-consultancy": "Guidance is preliminary. Admission, credit acceptance, course recognition, fees and visa requirements must be verified with the institution or relevant authority. No admission or visa outcome is guaranteed.",
+    "legal-services": "Documentation, CA and referral support depend on the matter and jurisdiction. Professional representation, fees and timelines must be confirmed before engagement; outcomes are not guaranteed.",
+    "edu-consultancy": "Guidance is preliminary. Job opportunities and outcomes depend on employers and are not guaranteed. Admission, credit acceptance, course recognition, fees and visa requirements must be verified with the institution or relevant authority. No admission or visa outcome is guaranteed.",
   };
   const heading = headings[pillar.id] ?? `${pillar.name} in ${city.name}`;
   return {

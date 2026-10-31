@@ -9,15 +9,15 @@ export const organizationSchema = {
   "legalName": "STA Corporate Solutions",
   "url": "https://sta-corporate.in",
   "logo": "https://sta-corporate.in/logo.png",
-  "description": "STA Corporate Solutions — Transportation since 1982 (43+ years). Financial, Legal and Edu Consultancy practices launched mid-2025. Four integrated practices for South India, headquartered in Coimbatore.",
+  "description": "STA Corporate Solutions — Transportation since 1982 (43+ years). Financial, Legal & CA and Education practices launched mid-2025. Four integrated practices for South India, headquartered in Coimbatore.",
   "foundingDate": "1982",
   "slogan": "Transport Since 1982 · Four Integrated Practices for South India",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "No.302/2A7, VK Road, Peelamedu",
+    "streetAddress": "No 10/135-G, Gurusamy Pillai St Extn, Podanur",
     "addressLocality": "Coimbatore",
     "addressRegion": "Tamil Nadu",
-    "postalCode": "641004",
+    "postalCode": "641023",
     "addressCountry": "IN"
   },
   "contactPoint": [
@@ -68,13 +68,13 @@ export const localBusinessSchema = {
   "name": "STA Corporate Solutions",
   "alternateName": ["STA Corporate", "STA Solutions", "STA Coimbatore", "STA Corporate Solutions Coimbatore"],
   "image": ["https://sta-corporate.in/logo.png"],
-  "description": "STA Corporate Solutions — Transportation since 1982 (43+ years of service excellence). Financial Services (MSME, Mudra, government funding schemes), Legal Services and Edu Consultancy practices added mid-2025. Four integrated practices serving Coimbatore and South India.",
+  "description": "STA Corporate Solutions — Transportation since 1982 (43+ years of service excellence). Financial Services (MSME, Mudra, government funding schemes), Legal & CA and Education practices added mid-2025. Four integrated practices serving Coimbatore and South India.",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "No.302/2A7, VK Road, Peelamedu",
+    "streetAddress": "No 10/135-G, Gurusamy Pillai St Extn, Podanur",
     "addressLocality": "Coimbatore",
     "addressRegion": "Tamil Nadu",
-    "postalCode": "641004",
+    "postalCode": "641023",
     "addressCountry": "IN"
   },
   "geo": {
@@ -132,11 +132,13 @@ export const localBusinessSchema = {
       },
       {
         "@type": "OfferCatalog",
-        "name": "Legal Services",
+        "name": "Legal & CA Services",
         "itemListElement": [
           { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Property Documentation" } },
           { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Company Registration" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Litigation Support" } }
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Litigation Support" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "GST & Income Tax Compliance" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Accounts & Audit Support" } }
         ]
       }
     ]
@@ -240,7 +242,7 @@ export const legalServiceSchema = {
   "@context": "https://schema.org",
   "@type": "LegalService",
   "@id": "https://sta-corporate.in/legal-services#service",
-  "name": "Legal Services Coimbatore & Tamil Nadu — Property, Business, Corporate Law",
+  "name": "Legal & CA Services Coimbatore & Tamil Nadu — Property, Business, Corporate Law",
   "serviceType": "Legal Assistance",
   "provider": {
     "@type": "LocalBusiness",
@@ -257,7 +259,7 @@ export const legalServiceSchema = {
     { "@type": "City", "name": "Trichy" },
     { "@type": "State", "name": "Tamil Nadu" }
   ],
-  "description": "Legal documentation and consultation support for individuals, businesses, and corporates. Property documentation, company formation, litigation, IP, and compliance support across Tamil Nadu.",
+  "description": "Legal documentation and consultation support for individuals, businesses, and corporates. Property documentation, company formation, litigation, IP, GST, income-tax, accounts and compliance support across Tamil Nadu.",
   "offers": {
     "@type": "Offer",
     "availability": "https://schema.org/InStock",
@@ -282,7 +284,7 @@ export const websiteSchema = {
   "@id": "https://sta-corporate.in/#website",
   "url": "https://sta-corporate.in",
   "name": "STA Corporate Solutions",
-  "description": "STA Corporate Solutions — Transport since 1982. Four integrated practices for South India: Transportation, Financial, Legal and Edu Consultancy.",
+  "description": "STA Corporate Solutions — Transport since 1982. Four integrated practices for South India: Transportation, Financial, Legal & CA and Education.",
   "publisher": {
     "@id": "https://sta-corporate.in/#organization"
   },

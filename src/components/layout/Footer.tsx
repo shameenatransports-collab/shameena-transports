@@ -5,7 +5,7 @@ import logo from "@/assets/sta-logo.png";
 const serviceLinks = [
   { name: "Transportation", href: "/transportation", icon: Truck },
   { name: "Financial Services", href: "/financial-services", icon: Banknote },
-  { name: "Legal Services", href: "/legal-services", icon: Scale },
+  { name: "Legal & CA", href: "/legal-services", icon: Scale },
 ];
 
 const quickLinks = [
@@ -45,14 +45,14 @@ export function Footer() {
               </div>
             </div>
             <p className="text-sm text-primary-foreground/75 leading-relaxed max-w-md">
-              Coimbatore's trusted partner for Transportation, Business Loan Assistance & Legal Services since 1982.
+              Coimbatore's trusted partner for Transportation since 1982, with Business Loan Assistance, Legal & CA and Education (job consulting & degree transfer) services.
               Transparent support across Tamil Nadu.
             </p>
             <div className="space-y-3 pt-1">
               <div className="flex items-start gap-3">
                 <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0 opacity-70" />
                 <span className="text-sm text-primary-foreground/80">
-                  No.302/2A7, VK Road, Peelamedu, Coimbatore - 641004, Tamil Nadu, India
+                  No 10/135-G, Gurusamy Pillai St Extn, Podanur, Coimbatore, Coimbatore South, Tamil Nadu, India, 641023
                 </span>
               </div>
               <div className="flex items-center gap-3">
@@ -126,7 +126,7 @@ export function Footer() {
         {/* Bottom */}
         <div className="mt-16 pt-8 border-t border-primary-foreground/10">
           <p className="text-xs text-primary-foreground/50 text-center mb-5 leading-relaxed max-w-4xl mx-auto">
-            STA Corporate Solutions — Lorry Transport, MSME Loans, Mudra Loans, Business Loan Assistance, Government Funding Scheme Guidance, Legal Services, Company Registration, Property Documentation in Coimbatore, Tiruppur, Erode, Salem, Chennai, Madurai, Trichy, Tamil Nadu.
+            STA Corporate Solutions — Lorry Transport, MSME Loans, Mudra Loans, Business Loan Assistance, Government Funding Scheme Guidance, Legal & CA Services, Company Registration, GST & Income Tax, Job Consulting, Degree Transfer in Coimbatore, Tiruppur, Erode, Salem, Chennai, Madurai, Trichy, Tamil Nadu.
           </p>
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-xs text-primary-foreground/60">

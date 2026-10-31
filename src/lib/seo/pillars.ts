@@ -1,7 +1,7 @@
 // Service catalogues for each of the 5 pillars.
 // Each sub-item becomes a programmatic page template seeded by city + intent.
 
-export type PillarId = "transportation" | "financial-services" | "legal-services" | "edu-consultancy" | "real-estate";
+export type PillarId = "transportation" | "financial-services" | "legal-services" | "edu-consultancy";
 
 export interface SubService {
   slug: string;
@@ -193,17 +193,29 @@ export const PILLARS: Pillar[] = [
   // ─────────────────────────────────────────────────────────────────────────
   {
     id: "legal-services",
-    name: "Legal Services",
-    shortName: "Legal",
-    tagline: "Documentation, registrations, property & corporate legal counsel",
+    name: "Legal & CA",
+    shortName: "Legal & CA",
+    tagline: "Legal, CA & professional services for businesses and families",
     description:
-      "Property documentation, company formation, MSME & trademark registrations, contracts, litigation referral and compliance support.",
+      "Legal documentation, company formation, GST and income-tax compliance, accounts and audit support, MSME & trademark registrations, contracts, litigation referral and compliance support.",
     path: "/legal-services",
     subPath: "practice",
     subLabel: "Practice",
     cityIntro: (c) =>
-      `Legal documentation, registrations and litigation referral support in ${c}. We coordinate property paperwork, business formation and compliance filings end-to-end.`,
+      `Legal and CA professional services in ${c}. We coordinate legal documentation, business formation, GST and income-tax compliance and accounts support end-to-end.`,
     sub: [
+      {
+        slug: "gst-income-tax", name: "GST & Income Tax Services", shortName: "GST & Tax",
+        description: "GST registration and returns, income-tax return filing and tax compliance support through our CA professional services.",
+        keywords: ["gst registration", "gst return filing", "income tax return", "itr filing", "ca services"],
+        benefits: ["GST registration & returns", "ITR filing", "Notice response support", "Tax planning advisory"],
+      },
+      {
+        slug: "accounting-audit", name: "Accounting & Audit Support", shortName: "Accounts & Audit",
+        description: "Bookkeeping, financial statements, statutory and tax audit support and annual compliance for businesses.",
+        keywords: ["chartered accountant", "accounting services", "audit services", "bookkeeping"],
+        benefits: ["Bookkeeping & accounts", "Financial statements", "Statutory audit support", "Annual compliance"],
+      },
       {
         slug: "property-law", name: "Property & Real Estate Law", shortName: "Property Law",
         description: "Title verification, sale deed, mutation, gift deed, partition and property registration coordination.",
@@ -281,17 +293,23 @@ export const PILLARS: Pillar[] = [
   // ─────────────────────────────────────────────────────────────────────────
   {
     id: "edu-consultancy",
-    name: "Edu Consultancy",
+    name: "Education",
     shortName: "Education",
-    tagline: "Academic mobility & degree advancement for South India learners",
+    tagline: "Job consulting & degree transfer guidance for South India",
     description:
-      "Localized pathways for degree transfer, credit migration, bachelor-completion and academic-mobility candidates across South India.",
+      "Job consulting and degree-transfer guidance — credit migration, bachelor-completion and career pathways for learners and working professionals across South India.",
     path: "/edu-consultancy",
     subPath: "programs",
     subLabel: "Program",
     cityIntro: (c) =>
-      `Educational pathway guidance for students, working professionals and adult learners in ${c}. Localized advice on degree transfer, credit migration and academic continuation routes.`,
+      `Job consulting and degree-transfer guidance for students, graduates and working professionals in ${c}. Advice on career pathways, degree transfer, credit migration and academic continuation routes.`,
     sub: [
+      {
+        slug: "job-consulting", name: "Job Consulting", shortName: "Job Consulting",
+        description: "Career and job-search guidance for graduates and working professionals; opportunities and outcomes depend on employers and are not guaranteed.",
+        keywords: ["job consulting", "career consulting", "job guidance", "career counselling"],
+        benefits: ["Profile & resume guidance", "Career pathway planning", "Interview preparation", "Opportunity search guidance"],
+      },
       {
         slug: "degree-transfer", name: "Degree Transfer Programs", shortName: "Degree Transfer",
         description: "Information on potential credit-based degree transfer pathways; availability, eligibility and credit acceptance require institution confirmation.",
@@ -381,12 +399,3 @@ export const REGISTRATIONS: Registration[] = [
   { slug: "partnership", name: "Partnership Firm Registration", description: "Partnership deed drafting and registration with Registrar of Firms.", keywords: ["partnership firm registration", "partnership deed"], benefits: ["Deed drafting", "Registrar filing", "PAN & bank setup"] },
 ];
 export const REGISTRATION_BY_SLUG = Object.fromEntries(REGISTRATIONS.map((r) => [r.slug, r]));
-
-// Real Estate BHK variants
-export const BHK_TYPES = [
-  { slug: "1-bhk", name: "1 BHK Apartments", keywords: ["1 bhk", "1bhk apartment"] },
-  { slug: "2-bhk", name: "2 BHK Apartments", keywords: ["2 bhk", "2bhk flat"] },
-  { slug: "3-bhk", name: "3 BHK Apartments", keywords: ["3 bhk", "3bhk flat", "three bedroom apartment"] },
-  { slug: "villa", name: "Villas", keywords: ["villa", "independent villa", "luxury villa"] },
-];
-export const BHK_BY_SLUG = Object.fromEntries(BHK_TYPES.map((b) => [b.slug, b]));

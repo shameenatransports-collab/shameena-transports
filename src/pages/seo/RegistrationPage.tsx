@@ -12,7 +12,7 @@ export default function RegistrationPage() {
   const pillar = PILLAR_BY_ID["legal-services"];
   const path = registrationUrl(reg.slug);
 
-  const metaTitle = `${reg.name} | Legal Services | STA Corporate Solutions`;
+  const metaTitle = `${reg.name} | Legal & CA Services | STA Corporate Solutions`;
   const metaDescription = `${reg.description} Across South India. Call +91 94430 33055.`;
   const faqs = [
     { q: `What is included in ${reg.name}?`, a: reg.description },
@@ -23,7 +23,7 @@ export default function RegistrationPage() {
   return (
     <PillarPageShell
       title={reg.name}
-      heroAccent="Legal Services"
+      heroAccent="Legal & CA Services"
       metaTitle={metaTitle}
       metaDescription={metaDescription}
       path={path}
@@ -37,7 +37,7 @@ export default function RegistrationPage() {
       ]}
       breadcrumbs={[
         { name: "Home", url: "/" },
-        { name: "Legal Services", url: pillar.path },
+        { name: "Legal & CA Services", url: pillar.path },
         { name: "Registrations", url: pillar.path },
         { name: reg.name, url: path },
       ]}
@@ -80,7 +80,7 @@ export default function RegistrationPage() {
               to={pillar.path}
               className="px-4 py-2 rounded-full bg-foreground text-background text-sm font-medium inline-flex items-center gap-1.5"
             >
-              All Legal Services <ArrowUpRight className="h-3.5 w-3.5" />
+              All Legal & CA Services <ArrowUpRight className="h-3.5 w-3.5" />
             </Link>
           </div>
         </div>

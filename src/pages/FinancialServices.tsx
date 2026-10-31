@@ -25,7 +25,7 @@ const financialFaqs = [
   { question: "Which government schemes can STA help me apply for?", answer: "MSME, Mudra (Shishu/Kishore/Tarun), PMEGP, Stand-Up India, CGTMSE collateral-free credit, Startup India, and state-specific industrial schemes. We help eligible businesses prepare paperwork that meets the scheme's published criteria." },
   { question: "Is STA a bank, NBFC or lending agent?", answer: "No. STA Corporate Solutions is a documentation and advisory practice. Final lending decisions rest with the bank, NBFC or scheme authority you apply to." },
   { question: "When did STA start Financial Services?", answer: "STA Corporate Solutions launched its Financial Services practice in mid-2025 as part of the group's expansion into integrated corporate practices for South India. Transportation has run since 1982." },
-  { question: "Where is STA Financial Services available?", answer: "Across South India with Coimbatore as the operating base — primary delivery in Tamil Nadu, Karnataka, Telangana, Andhra Pradesh and Kerala. Consultations are by phone, WhatsApp or in-office at Peelamedu, Coimbatore." },
+  { question: "Where is STA Financial Services available?", answer: "Across South India with Coimbatore as the operating base — primary delivery in Tamil Nadu, Karnataka, Telangana, Andhra Pradesh and Kerala. Consultations are by phone, WhatsApp or in-office at Podanur, Coimbatore." },
 ];
 
 const governmentSchemes = [
@@ -152,10 +152,10 @@ const FinancialServices = () => {
       "name": "STA Corporate Solutions",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "No.302/2A7, VK Road, Peelamedu",
+        "streetAddress": "No 10/135-G, Gurusamy Pillai St Extn, Podanur",
         "addressLocality": "Coimbatore",
         "addressRegion": "Tamil Nadu",
-        "postalCode": "641004",
+        "postalCode": "641023",
         "addressCountry": "IN"
       }
     },
@@ -449,6 +449,11 @@ const FinancialServices = () => {
             </div>
           </AnimatedSection>
 
+          <section className="py-10 bg-muted/40">
+            <div className="container mx-auto px-4 text-center">
+              <a href="/msme-loan-guide" className="text-primary font-medium underline">New: read our MSME &amp; Mudra business loan guide</a>
+            </div>
+          </section>
           <ServiceFAQ
             eyebrow="Financial Services FAQ"
             heading="MSME, Mudra & PMEGP,"

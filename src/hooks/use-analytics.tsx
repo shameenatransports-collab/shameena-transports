@@ -22,7 +22,6 @@ export function usePageTracking() {
       "/transportation": "Transportation Services",
       "/trading": "Iron & Steel Trading",
       "/financial-services": "Financial Services",
-      "/real-estate": "Real Estate Services",
     };
 
     const pageTitle =
