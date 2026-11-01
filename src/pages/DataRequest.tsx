@@ -209,12 +209,13 @@ const DataRequest = () => {
               <Card>
                 <CardContent className="p-6 md:p-8 space-y-3">
                   <h2 className="text-lg font-semibold text-foreground">Grievance Officer</h2>
+                  <p className="text-sm font-semibold text-foreground">XTSY Ventures Private Limited</p>
                   <p className="text-sm text-muted-foreground">
                     No.302/2A7, VK Road, Peelamedu, Coimbatore – 641004, Tamil Nadu
                   </p>
                   <div className="flex flex-wrap gap-3 pt-1">
                     <a href="tel:+919443033055"><Button variant="outline" size="sm"><Phone className="h-3.5 w-3.5" /> +91 94430 33055</Button></a>
-                    <a href="mailto:shameenatransports@gmail.com"><Button variant="outline" size="sm"><Mail className="h-3.5 w-3.5" /> shameenatransports@gmail.com</Button></a>
+                    <a href="mailto:admin@xtsy.one"><Button variant="outline" size="sm"><Mail className="h-3.5 w-3.5" /> admin@xtsy.one</Button></a>
                   </div>
                   <p className="text-xs text-muted-foreground pt-2">
                     Unresolved after 30 days? Escalate to the Data Protection Board of India once notified
