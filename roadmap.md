@@ -6,8 +6,9 @@
 - [x] Research India keywords and improve city-specific content without invented branches or guarantees.
 - [x] Link regional landing pages from the homepage and service-area directory; align sitemap and app-level metadata.
 - [x] Deliver a dated 12-week local SEO calendar and verify city-to-service navigation, contextual WhatsApp links and mobile layouts.
-- [ ] Publish the prepared corrections — requires the user's publication request.
-- [ ] Establish measured search performance — requires connecting and verifying Google Search Console; GA4 also needs a real measurement ID.
+- [x] Publish the prepared corrections (published 2026-11-01; live at https://sta-corporate.in).
+- [x] Connect and verify Google Search Console and submit the sitemap (2026-11-01).
+- [ ] Add a real GA4 measurement ID — the current one is a placeholder.
 
 # MSME loan guide and WhatsApp enquiries
 - [ ] Build a fact-checked MSME business-loan guide from the supplied brief; no brief is currently present in the project files.
