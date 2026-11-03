@@ -148,8 +148,9 @@ export const trackCTAClick = (ctaName: string, location: string) => {
 
 export const trackPageView = (pagePath: string, pageTitle: string) => {
   if (isLikelyBot()) return;
-  if (typeof window !== "undefined" && window.gtag) {
-    window.gtag("config", getGAMeasurementId(), {
+  const measurementId = getGAMeasurementId();
+  if (typeof window !== "undefined" && window.gtag && measurementId) {
+    window.gtag("config", measurementId, {
       page_path: pagePath,
       page_title: pageTitle,
     });
