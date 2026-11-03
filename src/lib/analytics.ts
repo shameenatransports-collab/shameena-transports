@@ -182,9 +182,39 @@ export const trackServiceInterest = (serviceName: string) => {
   });
 };
 
-// Helper to get measurement ID
-const getGAMeasurementId = (): string => {
-  return (window as any).GA_MEASUREMENT_ID || "G-XXXXXXXXXX";
+// Resolves the GA4 measurement ID. The Lovable Cloud connector syncs the
+// Browser-tracking Measurement ID into this env var; a manually set
+// window.GA_MEASUREMENT_ID acts as fallback. The "G-XXXXXXXXXX" template
+// placeholder is treated as "no ID configured" so we never ship a fake ID.
+export const getGAMeasurementId = (): string | undefined => {
+  const fromEnv = import.meta.env.VITE_LOVABLE_CONNECTOR_GOOGLE_ANALYTICS_API_KEY as string | undefined;
+  const fromWindow = (window as any).GA_MEASUREMENT_ID as string | undefined;
+  const id = fromEnv || fromWindow;
+  if (!id || /^G-XXXXXXXXXX$/.test(id)) return undefined;
+  return id;
+};
+
+// Loads gtag.js with the real measurement ID once, after Consent Mode v2
+// defaults are already set in index.html. No-op when no real ID exists so the
+// site never sends events to a placeholder property.
+let _gaInitialized = false;
+export const initAnalytics = (): void => {
+  if (_gaInitialized || isLikelyBot()) return;
+  const measurementId = getGAMeasurementId();
+  if (!measurementId) return;
+  _gaInitialized = true;
+
+  window.GA_MEASUREMENT_ID = measurementId;
+  const script = document.createElement("script");
+  script.async = true;
+  script.src = `https://www.googletagmanager.com/gtag/js?id=${measurementId}`;
+  document.head.appendChild(script);
+
+  window.gtag("js", new Date());
+  window.gtag("config", measurementId, {
+    send_page_view: false, // SPA tracks page views manually
+    cookie_flags: "SameSite=None;Secure",
+  });
 };
 
 // ============ ENGAGEMENT TRACKER HOOK ============
