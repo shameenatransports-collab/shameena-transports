@@ -10,7 +10,7 @@ import {
   pillarCitySubUrl,
   pillarSubUrl,
 } from "@/lib/seo/slugs";
-import { localPageContent } from "@/lib/seo/local-content";
+import { localPageContent, CITY_PROFILES } from "@/lib/seo/local-content";
 import { ArrowUpRight } from "lucide-react";
 
 /**
@@ -31,13 +31,20 @@ export default function PillarCityPage() {
 
   const path = pillarCityUrl(pillar, city.slug);
   const content = localPageContent(pillar, city);
+  const profile = CITY_PROFILES[city.slug];
   const { metaTitle, metaDescription } = content;
-  const keywords = [content.heading.toLowerCase(), `${pillar.shortName.toLowerCase()} ${city.stateName.toLowerCase()}`];
+  const keywords = [
+    content.heading.toLowerCase(),
+    `${pillar.shortName.toLowerCase()} ${city.stateName.toLowerCase()}`,
+    ...(profile?.alias ? [`${pillar.shortName.toLowerCase()} in ${profile.alias.toLowerCase()}`, `${profile.alias.toLowerCase()} ${pillar.shortName.toLowerCase()}`] : []),
+    ...profile?.industries?.map((i) => `${i.toLowerCase()} ${city.name.toLowerCase()}`) ?? [],
+  ];
   const faqs = [
     { q: `How do I enquire from ${city.name}?`, a: `WhatsApp +91 94430 33055 with your location and requirements. Enquiries are coordinated from our Coimbatore address; availability is confirmed individually.` },
     { q: `What should I prepare for ${pillar.shortName.toLowerCase()} support?`, a: content.preparation.join(". ") + "." },
     { q: `What should I confirm before booking?`, a: content.boundary },
     { q: `Does STA have an office in ${city.name}?`, a: "Our confirmed office is No.302/2A7, VK Road, Peelamedu, Coimbatore – 641004. This page is for enquiries from your city and does not indicate a separate branch." },
+    ...(profile?.faqs ?? []),
   ];
 
   return (
@@ -86,6 +93,36 @@ export default function PillarCityPage() {
           </div>
         </div>
       </section>
+
+      {profile && (
+        <section className="py-16 md:py-20 bg-background border-t border-border/40">
+          <div className="container mx-auto px-4">
+            <div className="max-w-2xl mb-10">
+              <span className="text-eyebrow text-primary">{city.name} trade and enquiry context{profile.alias ? ` · also searched as ${profile.alias}` : ""}</span>
+              <h2 className="text-display-lg text-foreground mt-3">Serving {city.name} {profile.alias ? `(${profile.alias}) ` : ""}enquiries</h2>
+            </div>
+            <div className="grid lg:grid-cols-5 gap-8">
+              <div className="lg:col-span-3">
+                <p className="text-muted-foreground leading-relaxed mb-6">{profile.overview}</p>
+                <h3 className="text-lg font-semibold text-foreground mb-3">Industries we plan freight and enquiries around</h3>
+                <ul className="grid sm:grid-cols-2 gap-3">
+                  {profile.industries.map((industry) => (
+                    <li key={industry} className="rounded-lg border border-border/60 bg-card px-4 py-3 text-sm text-foreground/90">{industry}</li>
+                  ))}
+                </ul>
+              </div>
+              {profile.pillarNotes[pillar.id] && (
+                <div className="lg:col-span-2">
+                  <div className="rounded-lg border border-border/60 bg-muted/40 p-6 h-full">
+                    <h3 className="text-lg font-semibold text-foreground mb-3">{pillar.shortName} from {city.name}</h3>
+                    <p className="text-muted-foreground leading-relaxed text-sm">{profile.pillarNotes[pillar.id]}</p>
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+        </section>
+      )}
 
       <section className="py-16 md:py-20 bg-muted/40">
         <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-10">

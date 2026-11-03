@@ -82,16 +82,11 @@
         'wait_for_update': 500
       });
       
-      // Store measurement ID for later use
-      window.GA_MEASUREMENT_ID = 'G-XXXXXXXXXX'; // Replace with your GA4 Measurement ID
-      
-      gtag('js', new Date());
-      gtag('config', window.GA_MEASUREMENT_ID, {
-        send_page_view: false, // We'll track manually for SPA
-        cookie_flags: 'SameSite=None;Secure'
-      });
+      // The real GA4 Measurement ID is injected by the Lovable connector env
+      // var and gtag.js is loaded from src/lib/analytics.ts (initAnalytics),
+      // after these Consent Mode v2 defaults. No placeholder property is
+      // contacted when no real ID is configured.
     </script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
     <meta property="og:title" content="STA Corporate Solutions | Transport Since 1982 · 4 Practices for South India">
   <meta name="twitter:title" content="STA Corporate Solutions | Transport Since 1982 · 4 Practices for South India">
   <meta property="og:description" content="Transport since 1982 (43+ yrs). Financial, Legal & Edu Consultancy launched mid-2025. Four integrated practices for South India — Coimbatore HQ.">
