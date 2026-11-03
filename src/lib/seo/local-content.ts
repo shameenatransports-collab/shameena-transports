@@ -152,10 +152,21 @@ export function localPageContent(pillar: Pillar, city: City) {
     "edu-consultancy": "Guidance is preliminary. Admission, credit acceptance, course recognition, fees and visa requirements must be verified with the institution or relevant authority. No admission or visa outcome is guaranteed.",
   };
   const heading = headings[pillar.id] ?? `${pillar.name} in ${city.name}`;
+  const profile = CITY_PROFILES[city.slug];
+  const cityRef = profile?.alias ? `${city.name} (${profile.alias})` : city.name;
+  const firstConnections = profile?.connections ?? `${city.name} and South India`;
+  const metaDescription: Record<string, string> = {
+    transportation: `Full Load lorry transport in ${cityRef}, ${city.stateName}. Regular freight across ${firstConnections}. Transport from Coimbatore since 1982.`,
+    "financial-services": `Business loan assistance in ${cityRef}: working capital, term loans and government funding schemes. For businesses only — strictly not personal loans.`,
+    "legal-services": `Legal documentation support in ${cityRef}: registrations, agreements and compliance filings. Requirements confirmed per matter. WhatsApp enquiries.`,
+    "edu-consultancy": `Education consultancy in ${cityRef}: course selection, credit transfer and destination guidance, coordinated from Coimbatore. WhatsApp enquiries.`,
+  };
   return {
     heading,
-    metaTitle: `${heading} | STA`,
-    metaDescription: `${heading}, ${city.stateName}. Coimbatore-based guidance and WhatsApp enquiries. ${pillar.id === "transportation" ? "Full Load; Return Load subject to route availability." : "Confirm eligibility and availability."}`,
+    profile,
+    cityRef,
+    metaTitle: `${heading}${profile?.alias ? ` (${profile.alias})` : ""} | STA`,
+    metaDescription: metaDescription[pillar.id] ?? `${heading}, ${city.stateName}. Coimbatore-based guidance and WhatsApp enquiries. Confirm eligibility and availability.`,
     intro: `${heading} enquiries are coordinated from our Coimbatore office. Share your requirements so service availability, scope and next steps can be confirmed individually.`,
     localNote: pillar.id === "transportation"
       ? local?.planning ?? `For ${city.name} enquiries in ${city.region}, share the exact pickup and delivery addresses, cargo details and preferred date so vehicle suitability and route availability can be checked.`

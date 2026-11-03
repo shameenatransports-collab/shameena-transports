@@ -10,7 +10,7 @@ import {
   pillarCitySubUrl,
   pillarSubUrl,
 } from "@/lib/seo/slugs";
-import { localPageContent } from "@/lib/seo/local-content";
+import { localPageContent, CITY_PROFILES } from "@/lib/seo/local-content";
 import { ArrowUpRight } from "lucide-react";
 
 /**
