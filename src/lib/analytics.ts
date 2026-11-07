@@ -205,7 +205,7 @@ export const initAnalytics = (): void => {
   if (!measurementId) return;
   _gaInitialized = true;
 
-  window.GA_MEASUREMENT_ID = measurementId;
+  (window as any).GA_MEASUREMENT_ID = measurementId;
   const script = document.createElement("script");
   script.async = true;
   script.src = `https://www.googletagmanager.com/gtag/js?id=${measurementId}`;

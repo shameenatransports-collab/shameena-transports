@@ -154,7 +154,7 @@ export function localPageContent(pillar: Pillar, city: City) {
   const heading = headings[pillar.id] ?? `${pillar.name} in ${city.name}`;
   const profile = CITY_PROFILES[city.slug];
   const cityRef = profile?.alias ? `${city.name} (${profile.alias})` : city.name;
-  const firstConnections = profile?.connections ?? `${city.name} and South India`;
+  const firstConnections = LOCAL_CONTEXT[city.slug]?.connections ?? `${city.name} and South India`;
   const metaDescription: Record<string, string> = {
     transportation: `Full Load lorry transport in ${cityRef}, ${city.stateName}. Regular freight across ${firstConnections}. Transport from Coimbatore since 1982.`,
     "financial-services": `Business loan assistance in ${cityRef}: working capital, term loans and government funding schemes. For businesses only — strictly not personal loans.`,
