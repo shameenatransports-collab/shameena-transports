@@ -150,9 +150,10 @@ export const trackPageView = (pagePath: string, pageTitle: string) => {
   if (isLikelyBot()) return;
   const measurementId = getGAMeasurementId();
   if (typeof window !== "undefined" && window.gtag && measurementId) {
-    window.gtag("config", measurementId, {
+    window.gtag("event", "page_view", {
       page_path: pagePath,
       page_title: pageTitle,
+      page_location: window.location.href,
     });
   }
 };
