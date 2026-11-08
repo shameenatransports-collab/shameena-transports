@@ -57,10 +57,10 @@ const Fleet = () => {
     <>
       <Helmet>
         <title>Fleet — 12+ Lorries & Trailers | STA Coimbatore</title>
-        <meta name="description" content="12+ owned lorries and multi-axle trailers for Full Load transport across Tamil Nadu, Karnataka, Kerala. Coimbatore-based." />
+        <meta name="description" content="12+ owned lorries and multi-axle trailers for Full Load transport across Coimbatore and Tiruppur districts. Coimbatore-based." />
         <link rel="canonical" href="https://sta-corporate.in/fleet" />
         <meta property="og:title" content="Fleet — 12+ Lorries & Trailers | STA Coimbatore" />
-        <meta property="og:description" content="12+ owned lorries for Full Load transport across South India." />
+        <meta property="og:description" content="12+ owned lorries for Full Load transport in Coimbatore and Tiruppur districts." />
         <meta property="og:url" content="https://sta-corporate.in/fleet" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(localBusinessSchema)}</script>

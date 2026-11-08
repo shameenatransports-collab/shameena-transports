@@ -10,27 +10,27 @@ const faqs = [
   {
     question: "What services does STA Corporate Solutions provide in Coimbatore?",
     answer:
-      "STA Corporate Solutions provides four practices from our Coimbatore headquarters: (1) Transportation — Full Load and Return Load lorry services across Tamil Nadu, (2) Financial Services — business loan assistance, MSME, Mudra and government funding scheme guidance, (3) Legal & CA — legal documentation, company registration, GST, income tax, accounts and compliance support, and (4) Education — job consulting and degree-transfer guidance, across Tamil Nadu and South India.",
+      "STA Corporate Solutions provides three practices for businesses from our Coimbatore headquarters: (1) Transportation — Full Load and Return Load lorry services in Coimbatore and Tiruppur districts, (2) Financial Services — funding assistance for startups and deep-tech companies (Startup India recognition, seed funding and grants, bank-credit documentation), and (3) Legal & CA — legal documentation, company registration, GST, income tax, accounts and compliance support.",
   },
   {
     question: "What is Full Load transport and when should I use it?",
     answer:
-      "Full Load means booking an entire lorry exclusively for your cargo. You get a dedicated truck, complete control over timing, and direct delivery with no intermediate stops. Best for large shipments (5-25 tons) or when you need dedicated transport coordination. We cover Coimbatore, Tiruppur, Erode, Salem, Chennai, Madurai, Trichy, and other Tamil Nadu cities.",
+      "Full Load means booking an entire lorry exclusively for your cargo. You get a dedicated truck, complete control over timing, and direct delivery with no intermediate stops. Best for large shipments (5-25 tons) or when you need dedicated transport coordination. We cover Coimbatore, Tiruppur and the district towns around them.",
   },
   {
-    question: "What government loan schemes can STA help with?",
+    question: "What funding can STA help startups and deep-tech companies with?",
     answer:
-      "We assist eligible businesses, industries, and companies with MSME, Mudra, PMEGP, Stand-Up India, CGTMSE, Startup India, and other government funding scheme documentation. We do not handle personal loans.",
+      "We assist startups and deep-tech companies with Startup India (DPIIT) recognition, seed funding and grant applications, bank-credit documentation and fundraising readiness. STA is not a lender and does not handle personal loans.",
   },
   {
     question: "What types of legal & CA services are available?",
     answer:
-      "We offer legal documentation and consultation support (property documentation, company formation, contracts, disputes, licensing, labour law, intellectual property) together with CA-led professional services such as GST, income-tax and accounts compliance, across Tamil Nadu.",
+      "We offer legal documentation and consultation support (property documentation, company formation, contracts, disputes, licensing, labour law, intellectual property) together with CA-led professional services such as GST, income-tax and accounts compliance, in Coimbatore and Tiruppur.",
   },
   {
-    question: "What areas in Tamil Nadu do you serve?",
+    question: "What areas do you serve?",
     answer:
-      "Our headquarters is in Podanur, Coimbatore. We serve major Tamil Nadu cities including Tiruppur, Erode, Salem, Chennai, Madurai, Trichy, Karur, Namakkal, Dindigul, Thanjavur, and Vellore. For transport, route coverage is confirmed based on requirement.",
+      "Our headquarters is in Podanur, Coimbatore. We serve businesses in Coimbatore and Tiruppur districts, including Pollachi, Mettupalayam, Sulur, Avinashi, Palladam, Udumalpet, Dharapuram and Kangeyam. For transport, route coverage is confirmed based on requirement.",
   },
   {
     question: "How do I get started with STA Corporate Solutions?",

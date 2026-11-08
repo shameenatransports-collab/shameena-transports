@@ -19,3 +19,11 @@
 - [x] Sitewide name STA Corporate Solutions; address now No 10/135-G, Gurusamy Pillai St Extn, Podanur, Coimbatore, Coimbatore South, Tamil Nadu, India, 641023.
 - [x] Legal → Legal & CA; Education → Job consulting & degree transfer. Route slugs unchanged for SEO.
 - [x] Removed /debug, real-estate pages and the committed .env.
+
+
+# Focus update (Nov 2026)
+- [x] SEO and service coverage limited to Coimbatore and Tiruppur districts (Tamil Nadu); other cities and states removed. Old city URLs redirect to /service-areas.
+- [x] Education practice and its AI pathway function removed; /edu-consultancy redirects to /services.
+- [x] Practices: Transportation, Financial Services (startups and deep-tech companies only), Legal & CA (businesses only).
+- [x] MSME/Mudra content replaced by /startup-funding-guide; /msme-loan-guide redirects there.
+- [ ] Re-verify scheme names and terms on the funding guide before each publish.

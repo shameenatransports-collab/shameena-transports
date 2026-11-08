@@ -16,7 +16,6 @@ const serviceLinks = [
   { name: "Transportation", href: "/transportation" },
   { name: "Financial Services", href: "/financial-services" },
   { name: "Legal & CA", href: "/legal-services" },
-  { name: "Education", href: "/edu-consultancy" },
 ];
 
 const navLinks = [

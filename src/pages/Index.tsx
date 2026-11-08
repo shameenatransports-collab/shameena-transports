@@ -16,12 +16,12 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>STA Corporate Solutions | 4 Practices for South India</title>
-        <meta name="description" content="Transport since 1982 (43+ yrs). Financial, Legal & CA and Education launched mid-2025. Four integrated practices for South India — Coimbatore HQ." />
-        <meta name="keywords" content="STA Corporate Solutions, lorry transport Coimbatore, full load transport South India, business loan assistance, legal documentation, education consultancy South India" />
+        <title>STA Corporate Solutions | 3 Practices for Coimbatore & Tiruppur</title>
+        <meta name="description" content="Transport since 1982 (43+ yrs). Financial Services and Legal & CA launched mid-2025. Three integrated practices for Coimbatore and Tiruppur — Coimbatore HQ." />
+        <meta name="keywords" content="STA Corporate Solutions, lorry transport Coimbatore, full load transport Coimbatore Tiruppur, business loan assistance, legal documentation, startup funding assistance Coimbatore" />
         <link rel="canonical" href="https://sta-corporate.in" />
-        <meta property="og:title" content="STA Corporate Solutions | Transport Since 1982 · 4 Practices for South India" />
-        <meta property="og:description" content="Transportation since 1982. Financial, Legal & CA and Education launched mid-2025. Four integrated practices across Tamil Nadu, Karnataka, Telangana, Andhra Pradesh and Kerala." />
+        <meta property="og:title" content="STA Corporate Solutions | Transport Since 1982 · 3 Practices for Coimbatore & Tiruppur" />
+        <meta property="og:description" content="Transportation since 1982. Financial Services and Legal & CA launched mid-2025. Three integrated practices across Coimbatore and Tiruppur districts." />
         <meta property="og:image" content="https://sta-corporate.in/og-image.jpg" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en_IN" />
@@ -51,9 +51,9 @@ const Index = () => {
           <section className="bg-muted/40 py-12 md:py-16">
             <div className="container mx-auto px-4">
               <div className="mx-auto max-w-3xl text-center">
-                <h2 className="text-display-lg text-foreground mb-3">Planning a business loan?</h2>
-                <p className="text-muted-foreground mb-6">Read our plain-language MSME and Mudra loan guide: categories, documents and the steps to apply. Business loans only; STA is not a lender.</p>
-                <Link to="/msme-loan-guide" className="inline-flex items-center rounded-full bg-primary px-6 py-3 font-medium text-primary-foreground">Read the MSME loan guide</Link>
+                <h2 className="text-display-lg text-foreground mb-3">Raising funds for a startup or deep-tech venture?</h2>
+                <p className="text-muted-foreground mb-6">Read our plain-language guide to DPIIT recognition, seed funding, grants and bank credit. For businesses only; STA is not a lender.</p>
+                <Link to="/startup-funding-guide" className="inline-flex items-center rounded-full bg-primary px-6 py-3 font-medium text-primary-foreground">Read the funding guide</Link>
               </div>
             </div>
           </section>

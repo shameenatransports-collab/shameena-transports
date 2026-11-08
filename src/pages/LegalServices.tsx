@@ -8,17 +8,14 @@ import { AnimatedSection } from "@/components/ui/animated-section";
 import { 
   Phone, 
   CheckCircle,
-  User,
   Building2,
   Factory,
   FileText,
   Scale,
   Shield,
   Gavel,
-  ScrollText,
   Briefcase,
   Car,
-  Heart,
   HandshakeIcon,
   Star,
   MapPin
@@ -26,62 +23,11 @@ import {
 import { ServiceFAQ } from "@/components/seo/ServiceFAQ";
 
 const legalFaqs = [
-  { question: "What legal & CA services does STA cover?", answer: "Property documentation, company registration (Pvt Ltd, LLP, OPC, Partnership), GST registration, trademark and IP filings, contracts, business compliance, labour-law advisory, and civil dispute support across Tamil Nadu and South India." },
+  { question: "What legal & CA services does STA cover?", answer: "Property documentation, company registration (Pvt Ltd, LLP, OPC, Partnership), GST registration, trademark and IP filings, contracts, business compliance, labour-law advisory, and commercial dispute support for businesses in Coimbatore and Tiruppur." },
   { question: "Does STA represent clients in court?", answer: "STA provides documentation, drafting, and consultation. Court representation is handled by empanelled advocates we coordinate with on your behalf — you get a single point of contact." },
   { question: "Can STA help register a company end-to-end?", answer: "Yes — name reservation, DIN/DSC, MoA/AoA drafting, MCA filing, PAN/TAN, GST registration and post-incorporation compliance setup. Typical turnaround is 10–15 working days subject to MCA processing." },
-  { question: "Where is STA Legal & CA Services available?", answer: "Primary delivery across Tamil Nadu (Coimbatore, Chennai, Tiruppur, Erode, Salem, Madurai, Trichy) with extended coverage into Karnataka, Telangana, Andhra Pradesh and Kerala. Operating base: Podanur, Coimbatore." },
+  { question: "Where is STA Legal & CA Services available?", answer: "For businesses in Coimbatore and Tiruppur districts, Tamil Nadu. Operating base: Podanur, Coimbatore. Consultations are by phone, WhatsApp or in-office." },
   { question: "When did STA start Legal & CA Services?", answer: "STA Corporate Solutions launched its Legal & CA Services practice in mid-2025 as part of the group's expansion into integrated corporate practices. The group's transportation business has operated continuously since 1982." },
-];
-
-const personalServices = [
-  {
-    icon: FileText,
-    title: "Property Documentation",
-    description: "Complete property legal services",
-    features: [
-      "Sale Deed Drafting & Registration",
-      "Title Verification & Search",
-      "Encumbrance Certificate",
-      "Property Partition",
-      "Gift Deed & Will Preparation"
-    ]
-  },
-  {
-    icon: Heart,
-    title: "Family Law",
-    description: "Personal and family legal matters",
-    features: [
-      "Marriage Registration",
-      "Divorce Proceedings",
-      "Child Custody Matters",
-      "Maintenance & Alimony",
-      "Succession Certificate"
-    ]
-  },
-  {
-    icon: ScrollText,
-    title: "Civil Matters",
-    description: "Individual civil legal services",
-    features: [
-      "Consumer Complaints",
-      "Cheque Bounce Cases",
-      "Recovery Proceedings",
-      "Defamation Cases",
-      "RTI Applications"
-    ]
-  },
-  {
-    icon: Car,
-    title: "Vehicle & Insurance",
-    description: "Motor vehicle legal assistance",
-    features: [
-      "Motor Accident Claims",
-      "Insurance Claims",
-      "Vehicle Transfer",
-      "Traffic Violations",
-      "Registration Issues"
-    ]
-  }
 ];
 
 const businessServices = [
@@ -202,18 +148,16 @@ const additionalServices = [
   { name: "Legal Notice Drafting", description: "Professional legal notices for all purposes" },
   { name: "Affidavit Preparation", description: "Sworn affidavits for courts and authorities" },
   { name: "Power of Attorney", description: "GPA and SPA drafting and registration" },
-  { name: "Court Representation", description: "Civil, criminal, and tribunal representation" },
-  { name: "Legal Consultation", description: "Expert legal advice on any matter" },
+  { name: "Court Representation", description: "Commercial and tribunal representation through empanelled advocates" },
+  { name: "Legal Consultation", description: "Legal advice for business matters" },
   { name: "Document Attestation", description: "Notarization and apostille services" }
 ];
 
 const tamilNaduCourts = [
   "Madras High Court",
-  "District Courts - All 38 Districts",
-  "Family Courts",
-  "Consumer Forums",
+  "District Courts (Coimbatore and Tiruppur)",
   "Labour Courts",
-  "NCLT Chennai",
+  "National Company Law Tribunal (company matters)",
   "Debt Recovery Tribunal",
   "Rent Control Tribunals"
 ];
@@ -244,7 +188,7 @@ const LegalServices = () => {
     "@type": "LegalService",
     "@id": "https://sta-corporate.in/legal-services#service",
     "name": "STA Corporate Solutions Legal & CA Services",
-    "description": "Comprehensive legal & CA services for individuals, businesses, and corporates in Tamil Nadu. Property documentation, company formation, litigation support, and more.",
+    "description": "Legal & CA professional services for businesses and corporates in Coimbatore and Tiruppur. Property documentation, company formation, litigation support, and more.",
     "provider": {
       "@type": "LocalBusiness",
       "name": "STA Corporate Solutions",
@@ -259,12 +203,7 @@ const LegalServices = () => {
     },
     "areaServed": [
       { "@type": "City", "name": "Coimbatore" },
-      { "@type": "City", "name": "Chennai" },
       { "@type": "City", "name": "Tiruppur" },
-      { "@type": "City", "name": "Erode" },
-      { "@type": "City", "name": "Salem" },
-      { "@type": "City", "name": "Madurai" },
-      { "@type": "City", "name": "Trichy" },
       { "@type": "State", "name": "Tamil Nadu" }
     ],
     "serviceType": [
@@ -280,12 +219,12 @@ const LegalServices = () => {
   return (
     <>
       <Helmet>
-        <title>Legal & CA Services South India | Legal, GST, Tax, Audit & Company Registration</title>
-        <meta name="description" content="Legal and CA professional services from Coimbatore — legal documentation, company registration, GST, income tax, accounts, audit and compliance support for South India." />
-        <meta name="keywords" content="legal & CA services south india, property lawyer coimbatore, company registration chennai, business lawyer bangalore, corporate law tamil nadu, trademark registration, litigation support hyderabad" />
+        <title>Legal & CA Services Coimbatore & Tiruppur | GST, Tax, Audit & Company Registration</title>
+        <meta name="description" content="Legal and CA professional services from Coimbatore — legal documentation, company registration, GST, income tax, accounts, audit and compliance support for Coimbatore and Tiruppur." />
+        <meta name="keywords" content="legal and ca services coimbatore, company registration coimbatore, gst registration tiruppur, chartered accountant coimbatore, business lawyer coimbatore, corporate law tamil nadu, trademark registration coimbatore" />
         <link rel="canonical" href="https://sta-corporate.in/legal-services" />
-        <meta property="og:title" content="Legal & CA Services South India | Property, Business, Corporate" />
-        <meta property="og:description" content="Property, contracts, registrations & corporate law across South India." />
+        <meta property="og:title" content="Legal & CA Services Coimbatore & Tiruppur | Business Legal & Compliance" />
+        <meta property="og:description" content="Property, contracts, registrations & corporate law in Coimbatore and Tiruppur districts." />
         <meta property="og:url" content="https://sta-corporate.in/legal-services" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(legalServiceSchema)}</script>
@@ -311,7 +250,7 @@ const LegalServices = () => {
                   </span>
                 </h1>
                 <p className="text-headline text-primary-foreground/85 max-w-2xl mb-10">
-                  Launched mid-2025 under STA Corporate Solutions. Legal documentation, company registration, GST, income tax, accounts, audit and compliance support for individuals, businesses and corporates across South India — backed by 43+ years of group-level Coimbatore presence.
+                  Launched mid-2025 under STA Corporate Solutions. Legal documentation, company registration, GST, income tax, accounts, audit and compliance support for businesses and corporates in Coimbatore and Tiruppur districts — backed by 43+ years of group-level Coimbatore presence.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
                   <a href="tel:+919443033055">
@@ -370,50 +309,8 @@ const LegalServices = () => {
             </div>
           </section>
 
-          {/* Personal Legal & CA Services */}
-          <AnimatedSection className="py-20 md:py-28 bg-background">
-            <div className="container mx-auto px-4">
-              <div className="text-center max-w-3xl mx-auto mb-16">
-                <Badge variant="outline" className="mb-4">
-                  <User className="h-4 w-4 mr-2" />
-                  For Individuals
-                </Badge>
-                <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
-                  Personal Legal & CA Services
-                </h2>
-                <p className="text-lg text-muted-foreground">
-                  Expert legal assistance for all your personal matters
-                </p>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                {personalServices.map((service, index) => (
-                  <Card key={index} className="group hover:shadow-2xl transition-all duration-500 border-border hover:border-accent overflow-hidden">
-                    <CardHeader className="pb-4">
-                      <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-accent/10 to-accent/5 flex items-center justify-center mb-4 group-hover:from-accent group-hover:to-accent/70 transition-all duration-500">
-                        <service.icon className="h-7 w-7 text-accent group-hover:text-accent-foreground transition-colors" />
-                      </div>
-                      <CardTitle className="text-lg text-foreground">{service.title}</CardTitle>
-                      <p className="text-sm text-muted-foreground">{service.description}</p>
-                    </CardHeader>
-                    <CardContent>
-                      <ul className="space-y-2">
-                        {service.features.map((feature, idx) => (
-                          <li key={idx} className="flex items-start gap-2 text-sm text-foreground">
-                            <CheckCircle className="h-4 w-4 text-accent flex-shrink-0 mt-0.5" />
-                            {feature}
-                          </li>
-                        ))}
-                      </ul>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-            </div>
-          </AnimatedSection>
-
           {/* Business Legal & CA Services */}
-          <AnimatedSection className="py-20 md:py-28 bg-muted">
+          <AnimatedSection className="py-20 md:py-28 bg-background">
             <div className="container mx-auto px-4">
               <div className="text-center max-w-3xl mx-auto mb-16">
                 <Badge variant="outline" className="mb-4">

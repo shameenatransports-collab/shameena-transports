@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom";
-import { Truck, Banknote, Scale, GraduationCap, Building2, ArrowUpRight } from "lucide-react";
+import { Truck, Banknote, Scale, Building2, ArrowUpRight } from "lucide-react";
 import { ScrollReveal, ScrollRevealItem } from "@/components/ui/scroll-reveal";
 import serviceTransportation from "@/assets/service-transportation.jpg";
 import serviceFinancial from "@/assets/service-financial.jpg";
 import serviceLegal from "@/assets/service-legal.jpg";
-import serviceEdu from "@/assets/service-edu.jpg";
 
 const verticals = [
   {
@@ -14,7 +13,7 @@ const verticals = [
     title: "Transportation",
     headline: "Move what matters, when it matters.",
     description:
-      "Full Load lorry transport across South India. 43 years. Our own fleet of 12+ vehicles. Routes spanning Coimbatore, Tiruppur, Chennai, Salem, Madurai, Bengaluru, Kochi.",
+      "Full Load lorry transport in Coimbatore and Tiruppur districts. 43 years. Our own fleet of 12+ vehicles, with routes between Coimbatore, Tiruppur and nearby district towns.",
     features: ["Full Load Transport", "Return Loads", "Factory Shifting", "Route Corridors"],
     href: "/transportation",
     badge: "Since 1982",
@@ -25,12 +24,12 @@ const verticals = [
     icon: Banknote,
     eyebrow: "Capital",
     title: "Financial Services",
-    headline: "From government schemes to bank loans.",
+    headline: "Funding support for startups and deep tech.",
     description:
-      "MSME, Mudra, Startup India, business, industrial and government funding scheme assistance. Strictly not for personal loans.",
-    features: ["MSME Loans", "Mudra Scheme", "Govt Funding", "Business Loans"],
+      "Startup India recognition, seed funding and grants, bank-credit documentation and fundraising readiness for startups and deep-tech companies. For businesses only; not a lender, and strictly no personal loans.",
+    features: ["Startup India", "Seed & Grants", "Deep-Tech Funding", "Bank Credit"],
     href: "/financial-services",
-    badge: "Govt Schemes",
+    badge: "Startups & Deep Tech",
     image: serviceFinancial,
   },
   {
@@ -40,24 +39,11 @@ const verticals = [
     title: "Legal & CA",
     headline: "Confidence at every signature.",
     description:
-      "Legal documentation, company registration, GST, income tax, accounts and compliance — professional legal and CA support for businesses and individuals across South India.",
+      "Legal documentation, company registration, GST, income tax, accounts and compliance — professional legal and CA support for businesses in Coimbatore and Tiruppur.",
     features: ["Legal Documentation", "Company Formation", "GST & Income Tax", "Accounts & Audit"],
     href: "/legal-services",
-    badge: "Five States",
+    badge: "Businesses Only",
     image: serviceLegal,
-  },
-  {
-    num: "04",
-    icon: GraduationCap,
-    eyebrow: "Pathways",
-    title: "Education",
-    headline: "Your next career and degree step.",
-    description:
-      "Job consulting and degree-transfer guidance from Coimbatore. Job opportunities, degree transfers and credit acceptance depend on the employer or institution and are confirmed with STA before you proceed.",
-    features: ["Job Consulting", "Degree Transfer", "Credit Guidance", "AI Pathway Finder"],
-    href: "/edu-consultancy",
-    badge: "New in 2025",
-    image: serviceEdu,
   },
 ];
 
@@ -68,12 +54,12 @@ export function ServicesPreview() {
       <div className="container mx-auto px-4">
         <ScrollReveal>
           <div className="max-w-3xl mx-auto text-center mb-20 md:mb-28">
-            <p className="text-eyebrow text-primary mb-5">Four Practices · One Partner</p>
+            <p className="text-eyebrow text-primary mb-5">Three Practices · One Partner</p>
             <h2 className="text-display-xl text-foreground mb-6">
               Complete business solutions, refined over four decades.
             </h2>
             <p className="text-headline text-muted-foreground max-w-2xl mx-auto">
-              Four integrated practices serving individuals and enterprises across Tamil Nadu, Karnataka, Telangana, Andhra Pradesh and Kerala — with transparent, practical assistance.
+              Three integrated practices serving businesses in Coimbatore and Tiruppur districts, with transparent, practical assistance.
             </p>
           </div>
         </ScrollReveal>

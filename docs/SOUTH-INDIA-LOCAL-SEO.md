@@ -1,3 +1,5 @@
+> **Scope update (Nov 2026):** SEO coverage is now limited to Coimbatore and Tiruppur districts, and the Education practice is retired. Treat other-state and Education items below as historical.
+
 # South India local SEO calendar
 
 Prepared 20 October 2026. Execution starts 26 October 2026; adjust dates if publication is later.

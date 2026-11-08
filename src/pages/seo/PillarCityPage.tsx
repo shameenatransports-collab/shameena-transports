@@ -113,7 +113,7 @@ export default function PillarCityPage() {
       {/* Nearby city links */}
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
-          <p className="text-eyebrow text-primary mb-4">{pillar.name} across South India</p>
+          <p className="text-eyebrow text-primary mb-4">{pillar.name} in Coimbatore and Tiruppur districts</p>
           <div className="flex flex-wrap gap-2">
             {HUB_CITIES.filter((c) => c.slug !== city.slug).map((c) => (
               <Link
@@ -130,8 +130,8 @@ export default function PillarCityPage() {
             >
               All {pillar.name} →
             </Link>
-            <Link to="/services" className="px-4 py-2 text-primary underline">All four services</Link>
-            <Link to="/service-areas" className="px-4 py-2 text-primary underline">South India city directory</Link>
+            <Link to="/services" className="px-4 py-2 text-primary underline">All services</Link>
+            <Link to="/service-areas" className="px-4 py-2 text-primary underline">Coimbatore & Tiruppur directory</Link>
           </div>
         </div>
       </section>

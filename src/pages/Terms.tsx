@@ -58,13 +58,12 @@ const Terms = () => {
                 <CardContent className="p-6 md:p-8">
                   <h2 className="text-2xl font-bold text-foreground mb-4">Our Services</h2>
                   <p className="text-muted-foreground leading-relaxed mb-4">
-                    STA Corporate Solutions provides the following business services across Tamil Nadu, India:
+                    STA Corporate Solutions provides the following business services in Coimbatore and Tiruppur districts, Tamil Nadu, India (for businesses only):
                   </p>
                   <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4">
-                    <li><strong>Transportation Services:</strong> Full Load and Return Load lorry transport across Tamil Nadu</li>
-                    <li><strong>Financial Services:</strong> MSME Loans, Mudra Loans, Home Loans, Business Loans — lowest commission in Coimbatore</li>
+                    <li><strong>Transportation Services:</strong> Full Load and Return Load lorry transport in Coimbatore and Tiruppur districts</li>
+                    <li><strong>Financial Services:</strong> Funding assistance for startups and deep-tech companies (scheme, grant and bank-credit applications). STA is not a lender and does not offer personal loans.</li>
                     <li><strong>Legal & CA Services:</strong> Legal documentation, company registration, GST and income-tax compliance, accounts, litigation support</li>
-                    <li><strong>Education:</strong> Job consulting and degree-transfer guidance (outcomes depend on the employer or institution)</li>
                   </ul>
                   <p className="text-muted-foreground leading-relaxed mt-4 text-sm">
                     All services are governed by Indian law and are available exclusively within India.

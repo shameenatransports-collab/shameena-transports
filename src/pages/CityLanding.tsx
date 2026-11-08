@@ -19,7 +19,7 @@ export default function CityLanding() {
   if (!data || !city) return <Navigate to="/service-areas" replace />;
   const url = canonical(`/${city.slug}`);
   const title = `Transport & Business Services in ${city.name} | STA`;
-  const description = `Lorry transport, business funding assistance, legal documentation and education guidance for ${city.name}, Tamil Nadu. Coimbatore-based; confirm availability.`;
+  const description = `Lorry transport, startup and deep-tech funding assistance, and legal and CA services for ${city.name}, Tamil Nadu. Coimbatore-based; confirm availability.`;
   const transport = localPageContent(PILLARS[0], city);
   return <>
     <Helmet>
@@ -34,7 +34,7 @@ export default function CityLanding() {
         <div className="container mx-auto px-4 max-w-4xl">
           <p className="text-primary-foreground/80 mb-4">{city.name} · <span lang="ta">{data.nameTamil}</span> · Tamil Nadu</p>
           <h1 className="text-3xl md:text-5xl font-bold text-primary-foreground mb-6">Transport & business services in {city.name}</h1>
-          <p className="text-lg text-primary-foreground/90 mb-8">Full Load lorry transport, business funding assistance, legal documentation and education guidance. Transportation since 1982; the other three practices launched mid-2025. Enquiries from {city.name} are coordinated from Coimbatore, with availability confirmed individually.</p>
+          <p className="text-lg text-primary-foreground/90 mb-8">Full Load lorry transport, business funding assistance, legal documentation and CA services. Transportation since 1982; the other practices launched mid-2025. Enquiries from {city.name} are coordinated from Coimbatore, with availability confirmed individually.</p>
           <div className="flex flex-wrap gap-3">
             <Button size="lg" variant="secondary" asChild><a href={`https://wa.me/919443033055?text=${encodeURIComponent(`Hello STA, I’m enquiring from ${city.name}. Please confirm service availability.`)}`} target="_blank" rel="noopener noreferrer"><MessageCircle className="h-4 w-4 mr-2" />WhatsApp enquiry</a></Button>
             <Button size="lg" variant="outline" className="bg-primary-foreground/10 text-primary-foreground border-primary-foreground/30" asChild><a href="tel:+919443033055"><Phone className="h-4 w-4 mr-2" />94430 33055</a></Button>
@@ -62,7 +62,7 @@ export default function CityLanding() {
       <section className="py-12 bg-muted/40"><div className="container mx-auto px-4 max-w-4xl">
         <h2 className="text-2xl font-semibold text-foreground mb-4">Where is STA based?</h2>
         <p className="text-muted-foreground mb-5">Our confirmed office is No 10/135-G, Gurusamy Pillai St Extn, Podanur, Coimbatore, Coimbatore South, Tamil Nadu, India, 641023. This page does not claim a separate {city.name} branch or scheduled daily departures.</p>
-        <div className="flex flex-wrap gap-6"><Link to="/services" className="text-primary underline">All four services</Link><Link to="/service-areas" className="text-primary underline">South India city directory</Link><Link to="/contact" className="text-primary underline">Contact STA</Link></div>
+        <div className="flex flex-wrap gap-6"><Link to="/services" className="text-primary underline">All services</Link><Link to="/service-areas" className="text-primary underline">Coimbatore & Tiruppur directory</Link><Link to="/contact" className="text-primary underline">Contact STA</Link></div>
       </div></section>
     </Layout>
   </>;

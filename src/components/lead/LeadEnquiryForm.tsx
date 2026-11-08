@@ -33,7 +33,7 @@ export function LeadEnquiryForm({ city }: { city?: string }) {
   const [honeypot, setHoneypot] = useState("");
   const mountedAt = useRef<number>(Date.now());
 
-  const context = city ? `${city} enquiry` : "South India enquiry";
+  const context = city ? `${city} enquiry` : "Coimbatore & Tiruppur enquiry";
   const whatsappHref = useMemo(() => {
     const parsed = enquirySchema.safeParse(form);
     const data = parsed.success ? parsed.data : form;
@@ -136,10 +136,10 @@ export function LeadEnquiryForm({ city }: { city?: string }) {
             </FieldError>
           </div>
           <FieldError label="Route / City" error={errors.route}>
-            <Input value={form.route} onChange={(e) => update("route", e.target.value)} maxLength={140} placeholder={city ? `${city} to Chennai` : "Coimbatore to Chennai"} />
+            <Input value={form.route} onChange={(e) => update("route", e.target.value)} maxLength={140} placeholder={city ? `${city} to Tiruppur` : "Coimbatore to Tiruppur"} />
           </FieldError>
           <FieldError label="Service needed" error={errors.service}>
-            <Input value={form.service} onChange={(e) => update("service", e.target.value)} maxLength={120} placeholder="Full load lorry, MSME loan, legal service" />
+            <Input value={form.service} onChange={(e) => update("service", e.target.value)} maxLength={120} placeholder="Full load lorry, startup funding, legal & CA service" />
           </FieldError>
           <FieldError label="Details" error={errors.details} optional>
             <Textarea value={form.details} onChange={(e) => update("details", e.target.value)} maxLength={500} rows={3} placeholder="Goods, weight, date, or preferred callback time" />

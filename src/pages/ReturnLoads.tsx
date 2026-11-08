@@ -28,12 +28,12 @@ import {
 import { returnLoadServiceSchema, localBusinessSchema, createBreadcrumbSchema } from "@/lib/structured-data";
 
 const popularRoutes = [
-  { from: "Coimbatore", to: "Chennai", note: "Subject to route availability" },
-  { from: "Tiruppur", to: "Bangalore", note: "Subject to route availability" },
-  { from: "Salem", to: "Madurai", note: "Subject to route availability" },
-  { from: "Erode", to: "Chennai", note: "Subject to route availability" },
-  { from: "Chennai", to: "Coimbatore", note: "Subject to route availability" },
-  { from: "Trichy", to: "Coimbatore", note: "Subject to route availability" },
+  { from: "Coimbatore", to: "Tiruppur", note: "Subject to route availability" },
+  { from: "Tiruppur", to: "Coimbatore", note: "Subject to route availability" },
+  { from: "Coimbatore", to: "Pollachi", note: "Subject to route availability" },
+  { from: "Tiruppur", to: "Avinashi", note: "Subject to route availability" },
+  { from: "Palladam", to: "Coimbatore", note: "Subject to route availability" },
+  { from: "Udumalpet", to: "Tiruppur", note: "Subject to route availability" },
 ];
 
 const benefits = [
@@ -89,7 +89,7 @@ const faqs = [
   },
   {
     question: "How do I check if Return Load is available for my route?",
-    answer: "Call us at +91 94430 33055 or WhatsApp with your pickup location, destination, and preferred dates. We'll check our current truck schedules and let you know availability. Popular routes like Coimbatore-Chennai often have regular availability.",
+    answer: "Call us at +91 94430 33055 or WhatsApp with your pickup location, destination, and preferred dates. We'll check our current truck schedules and let you know availability. Availability depends on the route and date, and is confirmed per enquiry.",
   },
   {
     question: "Is cargo insurance available on Return Load transport?",
@@ -136,17 +136,17 @@ const ReturnLoads = () => {
         <title>Return Load Transport Tamil Nadu | STA Corporate</title>
         <meta
           name="description"
-          content="Return Load transport in Tamil Nadu subject to route availability. Popular routes include Coimbatore-Chennai, Tiruppur-Bangalore, Salem-Madurai. Call +91 94430 33055 to check availability."
+          content="Return Load transport in Tamil Nadu subject to route availability. Popular routes include Coimbatore-Tiruppur and Coimbatore-Pollachi. Call +91 94430 33055 to check availability."
         />
         <meta
           name="keywords"
-          content="return load transport tamil nadu, return load lorry coimbatore, cheap transport chennai, return load availability, return lorry booking, discounted transport rates, return truck coimbatore chennai, return load tiruppur bangalore"
+          content="return load transport coimbatore tiruppur, return load lorry coimbatore, return load availability, return lorry booking, discounted transport rates, return truck coimbatore tiruppur"
         />
         <link rel="canonical" href="https://sta-corporate.in/return-loads" />
         <meta property="og:title" content="Return Load Transport Tamil Nadu | STA Corporate Solutions" />
         <meta
           property="og:description"
-          content="Return Load transport subject to route availability. Popular routes: Coimbatore-Chennai, Tiruppur-Bangalore. Check availability now."
+          content="Return Load transport subject to route availability. Popular routes: Coimbatore-Tiruppur, Coimbatore-Pollachi. Check availability now."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://sta-corporate.in/return-loads" />

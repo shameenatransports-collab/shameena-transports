@@ -39,7 +39,7 @@ const services = [
       "Available when trucks return from deliveries",
       "Ideal for flexible delivery timelines",
       "Contact us to check current route availability",
-      "Popular routes: Coimbatore-Chennai, Tiruppur-Bangalore",
+      "Popular routes: Coimbatore-Tiruppur, Coimbatore-Pollachi",
       "Book in advance for better availability",
     ],
   },
@@ -115,8 +115,8 @@ const Services = () => {
     <>
       <Helmet>
         <title>Full Load & Return Load Lorry Transport Services | STA Corporate Solutions Tamil Nadu</title>
-        <meta name="description" content="Full Load dedicated truck transport & Return Load on available routes in Tamil Nadu. Textile, Construction Material Transport. Coimbatore, Chennai, Tiruppur. Since 1982. Call for quotes!" />
-        <meta name="keywords" content="full load lorry service, return load transport tamil nadu, dedicated truck booking, return load availability, lorry transport coimbatore, goods transport chennai, textile transport tiruppur" />
+        <meta name="description" content="Full Load dedicated truck transport & Return Load on available routes in Coimbatore and Tiruppur districts. Textile, Construction Material Transport. Coimbatore, Tiruppur. Since 1982. Call for quotes!" />
+        <meta name="keywords" content="full load lorry service, return load transport tamil nadu, dedicated truck booking, return load availability, lorry transport coimbatore, goods transport coimbatore, transport tiruppur" />
         <link rel="canonical" href="https://sta-corporate.in/services" />
         <meta property="og:title" content="Full Load & Return Load Transport Services | STA Corporate Solutions" />
         <meta property="og:description" content="Dedicated Full Load transport & Return Load on available routes. Tamil Nadu's trusted logistics since 1982." />

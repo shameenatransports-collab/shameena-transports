@@ -5,19 +5,18 @@ import { CTASection } from "@/components/home/CTASection";
 import { PILLARS } from "@/lib/seo/pillars";
 import { HUB_CITIES } from "@/lib/seo/cities";
 import { pillarCityUrl, canonical } from "@/lib/seo/slugs";
-import { ArrowUpRight, Truck, Banknote, Scale, GraduationCap } from "lucide-react";
+import { ArrowUpRight, Truck, Banknote, Scale } from "lucide-react";
 
 const ICONS: Record<string, typeof Truck> = {
   transportation: Truck,
   "financial-services": Banknote,
   "legal-services": Scale,
-  "edu-consultancy": GraduationCap,
 };
 
 export default function ServicesHub() {
   const url = canonical("/services");
-  const metaTitle = "All Services | Transportation, Finance, Legal, Education | STA Corporate Solutions";
-  const metaDescription = "Four integrated practices across South India — Transportation, Financial Services, Legal & CA Services and Education. 43+ years of trust.";
+  const metaTitle = "All Services | Transportation, Finance, Legal & CA | STA Corporate Solutions";
+  const metaDescription = "Three integrated practices for businesses in Coimbatore and Tiruppur: Transportation, Financial Services (startups and deep tech) and Legal & CA. Transport since 1982.";
 
   return (
     <>
@@ -36,16 +35,16 @@ export default function ServicesHub() {
             <div className="max-w-4xl">
               <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-background text-[11px] font-bold tracking-[0.18em] uppercase text-primary shadow-xl ring-1 ring-primary-foreground/40 mb-8">
                 <span className="h-1.5 w-1.5 rounded-full bg-secondary" />
-                Four Practices · One Partner
+                Three Practices · One Partner
               </div>
               <h1 className="text-display-2xl text-primary-foreground mb-6">
                 All STA Services <br />
                 <span className="bg-gradient-to-r from-secondary via-secondary to-primary-foreground bg-clip-text text-transparent">
-                  for South India
+                  for Coimbatore & Tiruppur
                 </span>
               </h1>
               <p className="text-xl text-primary-foreground/80 max-w-2xl">
-                Transportation, Financial Services, Legal & CA Services and Education — four integrated practices serving individuals and businesses across Tamil Nadu, Karnataka, Telangana, Andhra Pradesh and Kerala.
+                Transportation, Financial Services and Legal & CA Services — three integrated practices serving businesses in Coimbatore and Tiruppur districts.
               </p>
             </div>
           </div>

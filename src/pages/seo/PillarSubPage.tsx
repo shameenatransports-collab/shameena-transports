@@ -21,14 +21,14 @@ export default function PillarSubPage() {
 
   const path = pillarSubUrl(pillar, sub.slug);
   const metaTitle = `${sub.name} | ${pillar.name} | STA Corporate Solutions`;
-  const metaDescription = `${sub.description} ${pillar.tagline} — South India. Call +91 94430 33055.`;
-  const keywords = [...sub.keywords, ...sub.keywords.map((k) => `${k} south india`)];
+  const metaDescription = `${sub.description} ${pillar.tagline} — Coimbatore & Tiruppur. Call +91 94430 33055.`;
+  const keywords = [...sub.keywords, ...sub.keywords.map((k) => `${k} coimbatore tiruppur`)];
 
   const faqs = [
     { q: `What is ${sub.name}?`, a: sub.description },
     {
       q: `Where is ${sub.shortName} available?`,
-      a: `Across South India — Tamil Nadu, Karnataka, Telangana, Andhra Pradesh and Kerala — Enquiries are coordinated from Coimbatore; availability depends on your location and requirements.`,
+      a: `In Coimbatore and Tiruppur districts. Enquiries are coordinated from Coimbatore; availability depends on your location and requirements.`,
     },
     {
       q: `How do I get a ${sub.shortName} quote?`,
@@ -53,7 +53,7 @@ export default function PillarSubPage() {
         practiceHeritage(pillar.id),
         { value: "Coimbatore", label: "Based in" },
         { value: "5", label: "States" },
-        { value: "South India", label: "Coverage" },
+        { value: "Coimbatore & Tiruppur", label: "Coverage" },
       ]}
       breadcrumbs={[
         { name: "Home", url: "/" },
@@ -61,7 +61,7 @@ export default function PillarSubPage() {
         { name: sub.shortName, url: path },
       ]}
       serviceName={sub.name}
-      serviceArea="South India"
+      serviceArea="Coimbatore and Tiruppur districts, Tamil Nadu"
       faqs={faqs}
       keywords={keywords}
     >
@@ -91,7 +91,7 @@ export default function PillarSubPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mb-12">
             <span className="text-eyebrow text-primary">Where we deliver</span>
-            <h2 className="text-display-lg text-foreground mt-3">{sub.shortName} across South India</h2>
+            <h2 className="text-display-lg text-foreground mt-3">{sub.shortName} in Coimbatore and Tiruppur districts</h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {HUB_CITIES.map((c) => (

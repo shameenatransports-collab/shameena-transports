@@ -9,9 +9,9 @@ export const organizationSchema = {
   "legalName": "STA Corporate Solutions",
   "url": "https://sta-corporate.in",
   "logo": "https://sta-corporate.in/logo.png",
-  "description": "STA Corporate Solutions — Transportation since 1982 (43+ years). Financial, Legal & CA and Education practices launched mid-2025. Four integrated practices for South India, headquartered in Coimbatore.",
+  "description": "STA Corporate Solutions — Transportation since 1982 (43+ years). Financial Services and Legal & CA practices launched mid-2025. Three integrated practices for Coimbatore and Tiruppur, headquartered in Coimbatore.",
   "foundingDate": "1982",
-  "slogan": "Transport Since 1982 · Four Integrated Practices for South India",
+  "slogan": "Transport Since 1982 · Three Integrated Practices for Coimbatore & Tiruppur",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "No 10/135-G, Gurusamy Pillai St Extn, Podanur",
@@ -40,23 +40,21 @@ export const organizationSchema = {
     "Full Load Lorry Transport",
     "Return Load Transport",
     "Factory Shifting",
-    "MSME Loan Documentation",
-    "Mudra Loan Assistance",
-    "PMEGP Scheme Documentation",
-    "Government Funding Schemes",
+    "Startup India Recognition",
+    "Startup and Deep-Tech Funding Assistance",
+    "Seed Funding and Grants",
+    "Government Startup Schemes",
     "Property Documentation",
     "Company Registration",
     "GST Registration",
     "Trademark Filing",
-    "Academic Mobility",
-    "Degree Transfer Guidance"
+    "GST and Income Tax Compliance"
   ],
   "areaServed": [
-    { "@type": "AdministrativeArea", "name": "Tamil Nadu" },
-    { "@type": "AdministrativeArea", "name": "Karnataka" },
-    { "@type": "AdministrativeArea", "name": "Telangana" },
-    { "@type": "AdministrativeArea", "name": "Andhra Pradesh" },
-    { "@type": "AdministrativeArea", "name": "Kerala" }
+    { "@type": "City", "name": "Coimbatore" },
+    { "@type": "City", "name": "Tiruppur" },
+    { "@type": "AdministrativeArea", "name": "Coimbatore District" },
+    { "@type": "AdministrativeArea", "name": "Tiruppur District" }
   ],
   "sameAs": []
 };
@@ -68,7 +66,7 @@ export const localBusinessSchema = {
   "name": "STA Corporate Solutions",
   "alternateName": ["STA Corporate", "STA Solutions", "STA Coimbatore", "STA Corporate Solutions Coimbatore"],
   "image": ["https://sta-corporate.in/logo.png"],
-  "description": "STA Corporate Solutions — Transportation since 1982 (43+ years of service excellence). Financial Services (MSME, Mudra, government funding schemes), Legal & CA and Education practices added mid-2025. Four integrated practices serving Coimbatore and South India.",
+  "description": "STA Corporate Solutions — Transportation since 1982 (43+ years of service excellence). Financial Services (startup and deep-tech funding assistance) and Legal & CA practices added mid-2025. Three integrated practices for businesses in Coimbatore and Tiruppur.",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "No 10/135-G, Gurusamy Pillai St Extn, Podanur",
@@ -97,15 +95,8 @@ export const localBusinessSchema = {
   "areaServed": [
     { "@type": "City", "name": "Coimbatore" },
     { "@type": "City", "name": "Tiruppur" },
-    { "@type": "City", "name": "Erode" },
-    { "@type": "City", "name": "Salem" },
-    { "@type": "City", "name": "Chennai" },
-    { "@type": "City", "name": "Madurai" },
-    { "@type": "City", "name": "Trichy" },
-    { "@type": "City", "name": "Karur" },
-    { "@type": "City", "name": "Namakkal" },
-    { "@type": "City", "name": "Dindigul" },
-    { "@type": "State", "name": "Tamil Nadu" }
+    { "@type": "AdministrativeArea", "name": "Coimbatore District" },
+    { "@type": "AdministrativeArea", "name": "Tiruppur District" }
   ],
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
@@ -124,10 +115,10 @@ export const localBusinessSchema = {
         "@type": "OfferCatalog",
         "name": "Financial Services",
         "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "MSME Business Loan Assistance" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mudra Business Loan Application Assistance" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Government Funding Scheme Guidance" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Business Loan Assistance", "description": "For businesses, industries and companies, strictly not personal loans. STA is not a lender; approval is decided by the bank or relevant authority." } }
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Startup India (DPIIT) Recognition Assistance" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Seed Funding and Grant Application Assistance" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Deep-Tech Funding Assistance" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Bank Credit Documentation for Startups", "description": "For startups and deep-tech companies, strictly not personal loans. STA is not a lender; approval is decided by the bank or relevant authority." } }
         ]
       },
       {
@@ -159,14 +150,10 @@ export const transportServiceSchema = {
   "areaServed": [
     { "@type": "City", "name": "Coimbatore" },
     { "@type": "City", "name": "Tiruppur" },
-    { "@type": "City", "name": "Erode" },
-    { "@type": "City", "name": "Salem" },
-    { "@type": "City", "name": "Chennai" },
-    { "@type": "City", "name": "Madurai" },
-    { "@type": "City", "name": "Trichy" },
-    { "@type": "State", "name": "Tamil Nadu" }
+    { "@type": "AdministrativeArea", "name": "Coimbatore District" },
+    { "@type": "AdministrativeArea", "name": "Tiruppur District" }
   ],
-  "description": "Dedicated full load lorry transport across Tamil Nadu since 1982 with 12+ own lorries from Coimbatore.",
+  "description": "Dedicated full load lorry transport in Coimbatore and Tiruppur districts since 1982 with 12+ own lorries from Coimbatore.",
   "offers": {
     "@type": "Offer",
     "availability": "https://schema.org/InStock",
@@ -215,8 +202,8 @@ export const financialServiceSchema = {
   "@context": "https://schema.org",
   "@type": "FinancialService",
   "@id": "https://sta-corporate.in/financial-services#service",
-  "name": "Business Loan Assistance Coimbatore — MSME, Mudra & Government Funding",
-  "serviceType": "Loan Assistance",
+  "name": "Startup & Deep-Tech Funding Assistance Coimbatore & Tiruppur",
+  "serviceType": "Funding Assistance",
   "provider": {
     "@type": "LocalBusiness",
     "name": "STA Corporate Solutions",
@@ -225,12 +212,10 @@ export const financialServiceSchema = {
   "areaServed": [
     { "@type": "City", "name": "Coimbatore" },
     { "@type": "City", "name": "Tiruppur" },
-    { "@type": "City", "name": "Erode" },
-    { "@type": "City", "name": "Salem" },
-    { "@type": "City", "name": "Chennai" },
-    { "@type": "State", "name": "Tamil Nadu" }
+    { "@type": "AdministrativeArea", "name": "Coimbatore District" },
+    { "@type": "AdministrativeArea", "name": "Tiruppur District" }
   ],
-  "description": "Loan assistance for eligible businesses, industries and companies: MSME, Mudra, government funding schemes, business, industrial and commercial vehicle loan documentation support in Coimbatore, Tamil Nadu. Not for personal loans.",
+  "description": "Funding assistance for startups and deep-tech companies: Startup India recognition, seed funding and grants, bank-credit documentation and fundraising readiness in Coimbatore and Tiruppur. Not a lender. Not for personal loans.",
   "offers": {
     "@type": "Offer",
     "availability": "https://schema.org/InStock",
@@ -242,7 +227,7 @@ export const legalServiceSchema = {
   "@context": "https://schema.org",
   "@type": "LegalService",
   "@id": "https://sta-corporate.in/legal-services#service",
-  "name": "Legal & CA Services Coimbatore & Tamil Nadu — Property, Business, Corporate Law",
+  "name": "Legal & CA Services Coimbatore & Tiruppur — Business Legal, Tax and Compliance",
   "serviceType": "Legal Assistance",
   "provider": {
     "@type": "LocalBusiness",
@@ -251,15 +236,11 @@ export const legalServiceSchema = {
   },
   "areaServed": [
     { "@type": "City", "name": "Coimbatore" },
-    { "@type": "City", "name": "Chennai" },
     { "@type": "City", "name": "Tiruppur" },
-    { "@type": "City", "name": "Erode" },
-    { "@type": "City", "name": "Salem" },
-    { "@type": "City", "name": "Madurai" },
-    { "@type": "City", "name": "Trichy" },
-    { "@type": "State", "name": "Tamil Nadu" }
+    { "@type": "AdministrativeArea", "name": "Coimbatore District" },
+    { "@type": "AdministrativeArea", "name": "Tiruppur District" }
   ],
-  "description": "Legal documentation and consultation support for individuals, businesses, and corporates. Property documentation, company formation, litigation, IP, GST, income-tax, accounts and compliance support across Tamil Nadu.",
+  "description": "Legal documentation and CA professional services for businesses and corporates: company formation, contracts, IP, GST, income-tax, accounts and compliance support in Coimbatore and Tiruppur.",
   "offers": {
     "@type": "Offer",
     "availability": "https://schema.org/InStock",
@@ -284,7 +265,7 @@ export const websiteSchema = {
   "@id": "https://sta-corporate.in/#website",
   "url": "https://sta-corporate.in",
   "name": "STA Corporate Solutions",
-  "description": "STA Corporate Solutions — Transport since 1982. Four integrated practices for South India: Transportation, Financial, Legal & CA and Education.",
+  "description": "STA Corporate Solutions — Transport since 1982. Three integrated practices for Coimbatore and Tiruppur: Transportation, Financial Services and Legal & CA.",
   "publisher": {
     "@id": "https://sta-corporate.in/#organization"
   },

@@ -61,7 +61,7 @@ export function CTASection() {
             </div>
 
             <p className="text-xs text-background/50 mt-10 tracking-tight">
-              Coimbatore · Tiruppur · Chennai · Salem · Madurai · Erode · Trichy · Tamil Nadu
+              Coimbatore · Tiruppur · Tamil Nadu
             </p>
           </div>
         </ScrollReveal>

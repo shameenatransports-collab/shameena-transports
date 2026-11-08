@@ -17,10 +17,9 @@ export const canonical = (path: string) => `${SITE_URL}${path}`;
 export function citiesForPillar(pillarId: string): City[] {
   // Tier limits per pillar (controls page count)
   const limits: Record<string, number> = {
-    transportation: 40,
-    "financial-services": 25,
-    "legal-services": 25,
-    "edu-consultancy": 15,
+    transportation: 10,
+    "financial-services": 10,
+    "legal-services": 10,
   };
   const n = limits[pillarId] ?? 25;
   return [...CITIES].sort((a, b) => a.tier - b.tier).slice(0, n);
@@ -45,16 +44,14 @@ export function enumerateAllUrls(): SitemapEntry[] {
     { path: "/", priority: "1.0", changefreq: "weekly" },
     { path: "/services", priority: "0.9", changefreq: "weekly" },
     { path: "/services/transport-categories", priority: "0.7", changefreq: "monthly" },
-    { path: "/msme-loan-guide", priority: "0.8", changefreq: "monthly" },
+    { path: "/startup-funding-guide", priority: "0.8", changefreq: "monthly" },
     { path: "/about", priority: "0.7", changefreq: "monthly" },
     { path: "/contact", priority: "0.7", changefreq: "monthly" },
     { path: "/fleet", priority: "0.6", changefreq: "monthly" },
     { path: "/return-loads", priority: "0.6", changefreq: "monthly" },
     { path: "/service-areas", priority: "0.6", changefreq: "monthly" },
     { path: "/coimbatore", priority: "0.7", changefreq: "monthly" },
-    { path: "/chennai", priority: "0.7", changefreq: "monthly" },
     { path: "/tiruppur", priority: "0.7", changefreq: "monthly" },
-    ...["madurai", "erode", "salem", "trichy", "tirunelveli"].map((city) => ({ path: `/${city}`, priority: "0.7", changefreq: "monthly" })),
     { path: "/privacy", priority: "0.3", changefreq: "yearly" },
     { path: "/terms", priority: "0.3", changefreq: "yearly" },
   );

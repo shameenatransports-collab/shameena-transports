@@ -50,7 +50,7 @@ export function PillarPageShell({
     "@type": "Service",
     name: serviceName,
     provider: { "@type": "LocalBusiness", "@id": canonical("/#localbusiness"), name: "STA Corporate Solutions", telephone: "+91-94430-33055", address: { "@type": "PostalAddress", streetAddress: "No 10/135-G, Gurusamy Pillai St Extn, Podanur", addressLocality: "Coimbatore", addressRegion: "Tamil Nadu", postalCode: "641023", addressCountry: "IN" } },
-    areaServed: serviceArea ?? "South India",
+    areaServed: serviceArea ?? "Coimbatore and Tiruppur districts, Tamil Nadu",
     description: metaDescription,
     url,
   };

@@ -14,55 +14,52 @@ import {
   TrendingUp,
   Banknote,
   IndianRupee,
-  BadgePercent,
-  Star,
-  Sparkles
+  Star
 } from "lucide-react";
 import { ServiceFAQ } from "@/components/seo/ServiceFAQ";
 
 const financialFaqs = [
-  { question: "Does STA give personal loans?", answer: "No. STA Financial Services covers business funding schemes only — MSME, Mudra, PMEGP, Stand-Up India, CGTMSE, Startup India and similar government-backed programmes. We provide documentation guidance, not lending." },
-  { question: "Which government schemes can STA help me apply for?", answer: "MSME, Mudra (Shishu/Kishore/Tarun), PMEGP, Stand-Up India, CGTMSE collateral-free credit, Startup India, and state-specific industrial schemes. We help eligible businesses prepare paperwork that meets the scheme's published criteria." },
-  { question: "Is STA a bank, NBFC or lending agent?", answer: "No. STA Corporate Solutions is a documentation and advisory practice. Final lending decisions rest with the bank, NBFC or scheme authority you apply to." },
-  { question: "When did STA start Financial Services?", answer: "STA Corporate Solutions launched its Financial Services practice in mid-2025 as part of the group's expansion into integrated corporate practices for South India. Transportation has run since 1982." },
-  { question: "Where is STA Financial Services available?", answer: "Across South India with Coimbatore as the operating base — primary delivery in Tamil Nadu, Karnataka, Telangana, Andhra Pradesh and Kerala. Consultations are by phone, WhatsApp or in-office at Podanur, Coimbatore." },
+  { question: "Does STA give loans or personal loans?", answer: "No. STA is not a lender and does not offer personal loans. We assist startups and deep-tech companies with funding scheme, grant and bank-credit applications and documentation. Funding decisions rest with the funder, bank or authority." },
+  { question: "Who is this service for?", answer: "Startups and deep-tech companies, and other technology-led businesses, in Coimbatore and Tiruppur districts. It is for businesses only, not individuals." },
+  { question: "Which schemes can STA help me apply for?", answer: "Examples include DPIIT startup recognition, the Startup India Seed Fund Scheme, Fund of Funds for Startups, the Credit Guarantee Scheme for Startups, StartupTN programmes such as TANSEED, and technology-grant programmes such as TDB, NIDHI and BIRAC where you are eligible. Scheme terms change, so we confirm current criteria with you before you apply." },
+  { question: "Can STA guarantee that my application will be approved?", answer: "No. Eligibility, sanction, amounts and timelines are decided by the funder or authority. We help you prepare a complete, well-organised application." },
+  { question: "Where is the Financial Services practice available?", answer: "For businesses in Coimbatore and Tiruppur districts, Tamil Nadu, coordinated from our Podanur, Coimbatore office. Consultations are by phone, WhatsApp or in-office." },
 ];
 
 const governmentSchemes = [
   {
-    icon: Factory,
-    title: "MSME Loans",
-    description: "Government-backed loans for micro, small, and medium enterprises",
-    schemes: [
-      "PMEGP - Prime Minister Employment Generation Programme",
-      "MUDRA Loans - Shishu, Kishore, Tarun",
-      "Stand-Up India Scheme",
-      "Credit Guarantee Fund (CGTMSE)",
-      "MSME Cluster Development"
-    ]
-  },
-  {
     icon: TrendingUp,
     title: "Startup India",
-    description: "Funding schemes for startups and new ventures",
+    description: "Central programmes for recognised startups",
     schemes: [
-      "Startup India Seed Fund",
+      "DPIIT startup recognition",
+      "Startup India Seed Fund Scheme",
       "Fund of Funds for Startups",
-      "SIDBI Make in India Loan",
-      "Atal Innovation Mission",
-      "Technology Development Board"
+      "Credit Guarantee Scheme for Startups",
+      "Atal Innovation Mission linkages"
     ]
   },
   {
     icon: Landmark,
-    title: "Industrial Funding Schemes",
-    description: "Guidance for eligible business, industry, and company funding schemes",
+    title: "Tamil Nadu Startup Programmes",
+    description: "State-level support for early-stage companies",
     schemes: [
-      "Industrial subsidy guidance",
-      "Term loan documentation support",
-      "Working capital scheme assistance",
-      "Manufacturing unit funding guidance",
-      "Government department application support"
+      "StartupTN programmes",
+      "TANSEED seed funding rounds",
+      "Incubator and accelerator linkages",
+      "State scheme application documentation"
+    ]
+  },
+  {
+    icon: Factory,
+    title: "Deep-Tech & Research Funding",
+    description: "Grant and credit routes for technology-led ventures",
+    schemes: [
+      "Technology Development Board support",
+      "DST NIDHI programmes",
+      "BIRAC programmes for biotechnology ventures",
+      "Research and prototype grant applications",
+      "Long-gestation project funding guidance"
     ]
   }
 ];
@@ -70,65 +67,35 @@ const governmentSchemes = [
 const privateBankLoans = [
   {
     icon: Building2,
-    title: "Business Loans",
-    description: "Working capital and business expansion loans",
+    title: "Bank Credit for Startups",
+    description: "Working capital and term-loan documentation for startups and technology companies",
     features: [
-      "Working Capital Loans",
-      "Term Loans",
-      "Overdraft Facility",
-      "Bill Discounting",
-      "Letter of Credit"
+      "Working capital applications",
+      "Term loans for equipment and prototyping",
+      "Credit-guarantee-backed options where eligible",
+      "Financial projections and project reports"
     ],
-    banks: ["HDFC", "ICICI", "Axis", "Kotak", "Yes Bank"]
   },
   {
-    icon: Factory,
-    title: "Industrial & Machinery Loans",
-    description: "Funding assistance for factories, machinery, and industrial expansion",
+    icon: Banknote,
+    title: "Fundraising Readiness",
+    description: "Preparation for angel and venture investor conversations",
     features: [
-      "Commercial Vehicle Loan",
-      "Machinery Finance",
-      "Equipment Loans",
-      "Fleet Financing",
-      "Factory Expansion Loans"
+      "Financial model review",
+      "Data-room checklist",
+      "Cap-table and compliance clean-up",
+      "Investor-document support"
     ],
-    banks: ["HDFC", "ICICI", "Axis", "Mahindra Finance", "Shriram Finance"]
-  }
-];
-
-const agricultureLoans = [
-  { name: "Kisan Credit Card", description: "Flexible credit for farmers" },
-  { name: "PM-KISAN Samman Nidhi", description: "Direct income support scheme" },
-  { name: "Agri Infrastructure Fund", description: "Farm infrastructure development" },
-  { name: "Dairy Entrepreneurship", description: "NABARD dairy development scheme" },
-  { name: "Fisheries Development", description: "PM Matsya Sampada Yojana" },
-  { name: "Crop Insurance", description: "PM Fasal Bima Yojana assistance" }
-];
-
-const specialSchemes = [
-  {
-    title: "Women Entrepreneurs",
-    schemes: ["Mudra for Women", "Stand-Up India (Women)", "Stree Shakti Package", "Mahila Udyam Nidhi"]
-  },
-  {
-    title: "SC/ST & Minorities",
-    schemes: ["NSFDC Loans", "NMDFC Schemes", "Venture Capital for SC/ST", "Minority Business Loans"]
-  },
-  {
-    title: "Ex-Servicemen",
-    schemes: ["AGIF Loans", "DESW Schemes", "Priority Sector Lending", "Skill Development Loans"]
   }
 ];
 
 const whyChooseUs = [
-  "Transparent assistance for eligible business funding requirements",
-  "Guidance for MSME, Mudra, and government scheme applications",
-  "Expert guidance on scheme eligibility",
-  "Complete documentation support",
-  "Business, industry, and company-focused loan assistance",
-  "Subsidy claim assistance",
-  "Application follow-up support as per lender or department process",
-  "Backed by STA Corporate Solutions — 43+ year transport heritage"
+  "Assistance for startups and deep-tech companies only; businesses, not individuals",
+  "Scheme shortlisting and eligibility guidance",
+  "Complete documentation and project-report support",
+  "Legal & CA support from the same team for registration, GST and accounts",
+  "Application follow-up as per funder or department process",
+  "Backed by STA Corporate Solutions, with transport operations in Coimbatore since 1982"
 ];
 
 const FinancialServices = () => {
@@ -145,8 +112,8 @@ const FinancialServices = () => {
     "@context": "https://schema.org",
     "@type": "FinancialService",
     "@id": "https://sta-corporate.in/financial-services#service",
-    "name": "STA Corporate Solutions Loan Services",
-    "description": "Loan assistance for businesses, industries, companies, MSME, Mudra, and government funding schemes in Tamil Nadu. Not for personal loans.",
+    "name": "STA Corporate Solutions Startup & Deep-Tech Funding Assistance",
+    "description": "Funding assistance for startups and deep-tech companies in Coimbatore and Tiruppur: Startup India recognition, seed and grant schemes, bank credit and fundraising readiness. Businesses only; not a lender; no personal loans.",
     "provider": {
       "@type": "LocalBusiness",
       "name": "STA Corporate Solutions",
@@ -161,29 +128,28 @@ const FinancialServices = () => {
     },
     "areaServed": [
       { "@type": "City", "name": "Coimbatore" },
-      { "@type": "City", "name": "Chennai" },
       { "@type": "City", "name": "Tiruppur" },
-      { "@type": "State", "name": "Tamil Nadu" }
+      { "@type": "AdministrativeArea", "name": "Coimbatore District" },
+      { "@type": "AdministrativeArea", "name": "Tiruppur District" }
     ],
     "serviceType": [
-      "Government Scheme Loans",
-      "MSME Loans",
-      "Mudra Loans",
-      "Business Loans",
-      "Industrial Funding Assistance",
-      "Commercial Vehicle Loans"
+      "Startup India Recognition",
+      "Seed Funding & Grants",
+      "Deep-Tech Funding Assistance",
+      "Credit Guarantee & Bank Credit Documentation",
+      "Fundraising Readiness"
     ]
   };
 
   return (
     <>
       <Helmet>
-        <title>Business Loans South India | MSME, Mudra, Govt Schemes</title>
-        <meta name="description" content="Business loan assistance across Coimbatore, Chennai, Bangalore, Hyderabad, Kochi — MSME, Mudra, PMEGP & govt scheme guidance. Since 1982." />
-        <meta name="keywords" content="msme loan coimbatore, mudra loan chennai, business loan bangalore, business loan south india, government funding schemes, commercial vehicle loan tamil nadu, msme loan kerala, business loan hyderabad" />
+        <title>Startup & Deep-Tech Funding Assistance | Coimbatore & Tiruppur | STA</title>
+        <meta name="description" content="Funding assistance for startups and deep-tech companies in Coimbatore and Tiruppur: Startup India recognition, seed and grant schemes, bank credit documentation and fundraising readiness. Businesses only; STA is not a lender." />
+        <meta name="keywords" content="startup funding coimbatore, deep tech funding tamil nadu, startup india recognition, seed funding tiruppur, startup grants tamil nadu, startup funding assistance" />
         <link rel="canonical" href="https://sta-corporate.in/financial-services" />
-        <meta property="og:title" content="Business Loans South India | MSME, Mudra & Govt Schemes" />
-        <meta property="og:description" content="MSME, Mudra and government scheme guidance across South India from Coimbatore." />
+        <meta property="og:title" content="Startup & Deep-Tech Funding Assistance | STA Corporate Solutions" />
+        <meta property="og:description" content="Startup India, seed funding, grants and bank-credit documentation for startups and deep-tech companies in Coimbatore and Tiruppur." />
         <meta property="og:url" content="https://sta-corporate.in/financial-services" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(financialServiceSchema)}</script>
@@ -202,17 +168,17 @@ const FinancialServices = () => {
               <div className="max-w-4xl">
                 <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-background text-[11px] font-bold tracking-[0.18em] uppercase text-primary shadow-xl ring-1 ring-primary-foreground/40 mb-8">
                   <span className="h-1.5 w-1.5 rounded-full bg-secondary" />
-                  New in 2025 · Backed by STA's 43+ Year Heritage
+                  New in 2025 · Startups &amp; Deep Tech
                 </div>
                 <h1 className="text-display-2xl text-primary-foreground mb-6">
                   Funding for
                   <br />
                   <span className="bg-gradient-to-r from-secondary via-secondary to-primary-foreground bg-clip-text text-transparent">
-                    business, industry, growth.
+                    startups &amp; deep tech.
                   </span>
                 </h1>
                 <p className="text-headline text-primary-foreground/85 max-w-2xl mb-10">
-                  Launched mid-2025 as part of STA Corporate Solutions — building on 43+ years of Coimbatore business relationships. MSME, Mudra, Startup India and government funding scheme assistance with documentation and disciplined follow-up. Strictly not for personal loans.
+                  Launched mid-2025 as part of STA Corporate Solutions. Funding assistance for startups and deep-tech companies in Coimbatore and Tiruppur: Startup India recognition, seed and grant schemes, bank credit and fundraising readiness. Businesses only; STA is not a lender.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
                   <a href="tel:+919443033055">
@@ -221,10 +187,10 @@ const FinancialServices = () => {
                       +91 94430 33055
                     </Button>
                   </a>
-                  <a href="https://wa.me/919443033055?text=Hi%2C%20I%20need%20loan%20assistance" target="_blank" rel="noopener noreferrer">
+                  <a href="https://wa.me/919443033055?text=Hi%2C%20I%20need%20startup%20funding%20assistance" target="_blank" rel="noopener noreferrer">
                     <Button size="lg" variant="outline" className="rounded-full px-7 h-12 gap-2 glass-subtle border-primary-foreground/25 text-primary-foreground hover:bg-primary-foreground/10 text-[14px] font-medium ease-apple">
                       <IndianRupee className="h-4 w-4" />
-                      Loan Enquiry
+                      Funding Enquiry
                     </Button>
                   </a>
                 </div>
@@ -236,8 +202,8 @@ const FinancialServices = () => {
                 <div className="glass rounded-2xl p-5 md:p-7">
                   <div className="grid grid-cols-3 divide-x divide-border/40">
                     {[
-                      { value: "100%", label: "Loan Guidance" },
-                      { value: "MSME", label: "Business Focus" },
+                      { value: "Startup", label: "Funding Assistance" },
+                      { value: "Deep Tech", label: "Technology Ventures" },
                       { value: "Govt", label: "Scheme Support" },
                     ].map((stat, i) => (
                       <div key={i} className="px-4 md:px-6 first:pl-0">
@@ -260,10 +226,10 @@ const FinancialServices = () => {
                   Government Schemes
                 </Badge>
                 <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
-                  Government Funded Loans
+                  Schemes & Programmes
                 </h2>
                 <p className="text-lg text-muted-foreground">
-                  Access subsidized loans with low interest rates through central and state government schemes
+                  Central and Tamil Nadu programmes for startups and technology companies. Scheme terms, caps and application windows change; confirm on the official portal.
                 </p>
               </div>
 
@@ -297,19 +263,19 @@ const FinancialServices = () => {
             </div>
           </AnimatedSection>
 
-          {/* Private Bank Loans */}
+          {/* Credit & Investor Readiness */}
           <AnimatedSection className="py-20 md:py-28 bg-muted">
             <div className="container mx-auto px-4">
               <div className="text-center max-w-3xl mx-auto mb-16">
                 <Badge variant="outline" className="mb-4">
                   <Banknote className="h-4 w-4 mr-2" />
-                  Private Banks
+                  Credit & Investors
                 </Badge>
                 <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
-                  Private Bank Loans
+                  Credit & Investor Readiness
                 </h2>
                 <p className="text-lg text-muted-foreground">
-                  Assistance for eligible business, industrial, company and commercial funding requirements
+                  Documentation and preparation support. STA is not a lender and does not guarantee funding.
                 </p>
               </div>
 
@@ -336,85 +302,6 @@ const FinancialServices = () => {
                           </li>
                         ))}
                       </ul>
-                      <div className="flex flex-wrap gap-2 pt-4 border-t border-border">
-                        {loan.banks.map((bank, idx) => (
-                          <Badge key={idx} variant="secondary" className="text-xs">
-                            {bank}
-                          </Badge>
-                        ))}
-                      </div>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-            </div>
-          </AnimatedSection>
-
-          {/* Agriculture Loans */}
-          <AnimatedSection className="py-20 md:py-28 bg-background">
-            <div className="container mx-auto px-4">
-              <div className="text-center max-w-3xl mx-auto mb-16">
-                <Badge variant="outline" className="mb-4">
-                  <Sparkles className="h-4 w-4 mr-2" />
-                  Agriculture Sector
-                </Badge>
-                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-                  Agriculture & Allied Sector Loans
-                </h2>
-                <p className="text-lg text-muted-foreground">
-                  Special financing for farmers, dairy, fisheries, and agri-businesses
-                </p>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-                {agricultureLoans.map((loan, index) => (
-                  <Card key={index} className="group hover:shadow-xl transition-all duration-500 hover:border-accent">
-                    <CardContent className="p-6">
-                      <div className="flex items-start gap-4">
-                        <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center flex-shrink-0 group-hover:bg-accent transition-colors">
-                          <TrendingUp className="h-6 w-6 text-accent group-hover:text-accent-foreground transition-colors" />
-                        </div>
-                        <div>
-                          <h3 className="font-bold text-foreground mb-1">{loan.name}</h3>
-                          <p className="text-sm text-muted-foreground">{loan.description}</p>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-            </div>
-          </AnimatedSection>
-
-          {/* Special Category Schemes */}
-          <AnimatedSection className="py-20 md:py-28 bg-muted">
-            <div className="container mx-auto px-4">
-              <div className="text-center max-w-3xl mx-auto mb-16">
-                <Badge variant="outline" className="mb-4">
-                  <BadgePercent className="h-4 w-4 mr-2" />
-                  Special Categories
-                </Badge>
-                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-                  Special Category Loan Schemes
-                </h2>
-                <p className="text-lg text-muted-foreground">
-                  Priority sector lending with special benefits
-                </p>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-                {specialSchemes.map((category, index) => (
-                  <Card key={index} className="group hover:shadow-xl transition-all duration-500 hover:border-accent">
-                    <CardContent className="p-8">
-                      <h3 className="text-xl font-bold text-foreground mb-6 text-center">{category.title}</h3>
-                      <ul className="space-y-3">
-                        {category.schemes.map((scheme, idx) => (
-                          <li key={idx} className="flex items-center gap-3 text-sm text-foreground">
-                            <CheckCircle className="h-4 w-4 text-accent flex-shrink-0" />
-                            {scheme}
-                          </li>
-                        ))}
-                      </ul>
                     </CardContent>
                   </Card>
                 ))}
@@ -432,7 +319,7 @@ const FinancialServices = () => {
                     Why Us
                   </Badge>
                   <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                    Why STA Corporate Solutions for Loan Services?
+                    Why STA Corporate Solutions for startup funding?
                   </h2>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -451,12 +338,12 @@ const FinancialServices = () => {
 
           <section className="py-10 bg-muted/40">
             <div className="container mx-auto px-4 text-center">
-              <a href="/msme-loan-guide" className="text-primary font-medium underline">New: read our MSME &amp; Mudra business loan guide</a>
+              <a href="/startup-funding-guide" className="text-primary font-medium underline">Read our startup &amp; deep-tech funding guide</a>
             </div>
           </section>
           <ServiceFAQ
             eyebrow="Financial Services FAQ"
-            heading="MSME, Mudra & PMEGP,"
+            heading="Startup and deep-tech funding,"
             subheading="the practical questions."
             faqs={financialFaqs}
             speakableId="faq-financial"

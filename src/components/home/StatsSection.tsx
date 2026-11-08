@@ -16,15 +16,15 @@ const stats = [
   },
   {
     icon: Banknote,
-    value: "5",
+    value: "3",
     label: "Integrated practices",
-    description: "Four new verticals since mid-2025",
+    description: "Two new practices since mid-2025"
   },
   {
     icon: Scale,
-    value: "5",
-    label: "South India states",
-    description: "TN · KA · TS · AP · KL",
+    value: "2",
+    label: "Districts served",
+    description: "Coimbatore · Tiruppur",
   },
 ];
 

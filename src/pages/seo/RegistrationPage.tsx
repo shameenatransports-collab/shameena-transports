@@ -13,11 +13,11 @@ export default function RegistrationPage() {
   const path = registrationUrl(reg.slug);
 
   const metaTitle = `${reg.name} | Legal & CA Services | STA Corporate Solutions`;
-  const metaDescription = `${reg.description} Across South India. Call +91 94430 33055.`;
+  const metaDescription = `${reg.description} Coimbatore and Tiruppur districts. Call +91 94430 33055.`;
   const faqs = [
     { q: `What is included in ${reg.name}?`, a: reg.description },
     { q: `How long does ${reg.name} take?`, a: "Timelines depend on document readiness, the relevant authority and its current processing requirements. Confirm the expected steps before engagement." },
-    { q: `Do you handle ${reg.name} across South India?`, a: "Yes — Tamil Nadu, Karnataka, Telangana, Andhra Pradesh and Kerala." },
+    { q: `Do you handle ${reg.name} in Coimbatore and Tiruppur districts?`, a: "Yes — Coimbatore and Tiruppur districts." },
   ];
 
   return (
@@ -33,7 +33,7 @@ export default function RegistrationPage() {
         { value: "2025", label: "Practice launched" },
         { value: "5", label: "States" },
         { value: "Direct", label: "Filing" },
-        { value: "South India", label: "Coverage" },
+        { value: "Coimbatore & Tiruppur", label: "Coverage" },
       ]}
       breadcrumbs={[
         { name: "Home", url: "/" },

@@ -20,8 +20,8 @@ const quickLinks = [
 ];
 
 const serviceAreas = [
-  "Coimbatore", "Tiruppur", "Erode", "Salem", "Chennai",
-  "Madurai", "Trichy", "Karur", "Namakkal", "Dindigul",
+  "Coimbatore", "Tiruppur", "Pollachi", "Mettupalayam", "Sulur",
+  "Avinashi", "Palladam", "Udumalpet", "Dharapuram", "Kangeyam",
 ];
 
 export function Footer() {
@@ -45,7 +45,7 @@ export function Footer() {
               </div>
             </div>
             <p className="text-sm text-primary-foreground/75 leading-relaxed max-w-md">
-              Coimbatore's trusted partner for Transportation since 1982, with Business Loan Assistance, Legal & CA and Education (job consulting & degree transfer) services.
+              Coimbatore's trusted partner for Transportation since 1982, with startup and deep-tech funding assistance and Legal & CA services for businesses.
               Transparent support across Tamil Nadu.
             </p>
             <div className="space-y-3 pt-1">
@@ -126,7 +126,7 @@ export function Footer() {
         {/* Bottom */}
         <div className="mt-16 pt-8 border-t border-primary-foreground/10">
           <p className="text-xs text-primary-foreground/50 text-center mb-5 leading-relaxed max-w-4xl mx-auto">
-            STA Corporate Solutions — Lorry Transport, MSME Loans, Mudra Loans, Business Loan Assistance, Government Funding Scheme Guidance, Legal & CA Services, Company Registration, GST & Income Tax, Job Consulting, Degree Transfer in Coimbatore, Tiruppur, Erode, Salem, Chennai, Madurai, Trichy, Tamil Nadu.
+            STA Corporate Solutions — Lorry Transport, Startup & Deep-Tech Funding Assistance, Legal & CA Services, Company Registration, GST & Income Tax in Coimbatore and Tiruppur, Tamil Nadu.
           </p>
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-xs text-primary-foreground/60">

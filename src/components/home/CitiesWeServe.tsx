@@ -3,7 +3,7 @@ import { MapPin, ArrowRight } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { CITY_DATA } from "@/lib/city-data";
 
-const FEATURED: Array<keyof typeof CITY_DATA> = ["coimbatore", "chennai", "tiruppur", "madurai"];
+const FEATURED: Array<keyof typeof CITY_DATA> = ["coimbatore", "tiruppur"];
 
 export function CitiesWeServe() {
   return (
@@ -14,14 +14,14 @@ export function CitiesWeServe() {
             Regional Enquiries
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-3 mb-4">
-            City Enquiries Across South India
+            Coimbatore & Tiruppur Districts
           </h2>
           <p className="text-muted-foreground text-base md:text-lg">
-            Headquartered in Coimbatore. Transportation since 1982; financial, legal and education practices launched mid-2025. Confirm availability for your location.
+            Headquartered in Coimbatore. Transportation since 1982; financial and legal & CA practices launched mid-2025. Confirm availability for your location.
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-2 max-w-3xl mx-auto gap-4 md:gap-6">
           {FEATURED.map((slug) => {
             const city = CITY_DATA[slug];
             return (
@@ -44,7 +44,7 @@ export function CitiesWeServe() {
                       {city.nameTamil}
                     </p>
                     <p className="text-sm text-muted-foreground leading-relaxed flex-1 mb-4">
-                      Transport, business funding assistance, legal documentation and education guidance.
+                      Transport, startup and deep-tech funding assistance, and legal and CA services for businesses.
                     </p>
                     <span className="inline-flex items-center text-sm font-semibold text-primary">
                       Explore {city.name}
@@ -58,13 +58,9 @@ export function CitiesWeServe() {
         </div>
 
         <div className="text-center mt-8">
-          <Link to="/service-areas" className="inline-flex items-center gap-2 text-primary font-semibold mb-4">Explore Tamil Nadu, Karnataka, Telangana, Andhra Pradesh & Kerala <ArrowRight className="h-4 w-4 shrink-0" /></Link>
+          <Link to="/service-areas" className="inline-flex items-center gap-2 text-primary font-semibold mb-4">Explore all areas we serve <ArrowRight className="h-4 w-4 shrink-0" /></Link>
           <p className="text-sm text-muted-foreground">
-            Also serving{" "}
-            <Link to="/erode" className="text-primary hover:underline font-medium">Erode</Link>,{" "}
-            <Link to="/salem" className="text-primary hover:underline font-medium">Salem</Link>,{" "}
-            <Link to="/trichy" className="text-primary hover:underline font-medium">Trichy</Link>, and{" "}
-            <Link to="/tirunelveli" className="text-primary hover:underline font-medium">Tirunelveli</Link>.
+            Also serving Pollachi, Mettupalayam, Sulur, Avinashi, Palladam, Udumalpet, Dharapuram and Kangeyam.
           </p>
         </div>
       </div>
