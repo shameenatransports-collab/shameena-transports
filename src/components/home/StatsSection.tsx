@@ -1,30 +1,30 @@
-import { Truck, Banknote, Scale, Clock } from "lucide-react";
+import { Truck, MapPin, Clock } from "lucide-react";
 import { ScrollReveal, ScrollRevealItem } from "@/components/ui/scroll-reveal";
 
 const stats = [
   {
     icon: Clock,
-    value: "43+",
+    value: "44+",
     label: "Years in transport",
-    description: "STA Transport since 1982",
+    description: "STA since 1982",
   },
   {
     icon: Truck,
-    value: "12+",
-    label: "Fleet vehicles",
-    description: "Trailers & lorries",
+    value: "1982",
+    label: "Operating since",
+    description: "From Podanur, Coimbatore",
   },
   {
-    icon: Banknote,
-    value: "5",
-    label: "Integrated practices",
-    description: "Four new verticals since mid-2025",
+    icon: MapPin,
+    value: "10",
+    label: "Towns on our routes",
+    description: "Around Coimbatore"
   },
   {
-    icon: Scale,
-    value: "5",
-    label: "South India states",
-    description: "TN · KA · TS · AP · KL",
+    icon: MapPin,
+    value: "2",
+    label: "Districts served",
+    description: "Coimbatore",
   },
 ];
 

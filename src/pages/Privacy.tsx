@@ -35,7 +35,7 @@ const Privacy = () => {
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-4">
                 Privacy Policy
               </h1>
-              <p className="text-lg text-primary-foreground/90">Effective: 1 June 2026 · Version 2.0</p>
+              <p className="text-lg text-primary-foreground/90">Effective: 10 November 2026 · Version 2.1</p>
             </div>
           </div>
         </section>
@@ -51,7 +51,7 @@ const Privacy = () => {
                   <p className="text-muted-foreground leading-relaxed">
                     <strong>STA Corporate Solutions</strong> ("STA", "we", "us") is the Data Fiduciary
                     for personal data collected through <span className="font-mono">sta-corporate.in</span> and our
-                    contact channels. Headquartered at No.302/2A7, VK Road, Peelamedu, Coimbatore – 641004,
+                    contact channels. Headquartered at No 10/135-G, Gurusamy Pillai St Extn, Podanur, Coimbatore, Coimbatore South, Tamil Nadu, India, 641023,
                     Tamil Nadu, India.
                   </p>
                   <p className="text-muted-foreground leading-relaxed mt-4">
@@ -72,10 +72,7 @@ const Privacy = () => {
                       <h3 className="font-semibold text-foreground mb-2">You give us</h3>
                       <ul className="list-disc list-inside text-muted-foreground space-y-1.5 text-sm">
                         <li>Name, mobile number</li>
-                        <li>Pickup &amp; delivery city, cargo details (transport)</li>
-                        <li>Business name &amp; loan-scheme interest (financial)</li>
-                        <li>Nature of legal matter (legal)</li>
-                        <li>Qualifications, education goals and destination preferences (optional AI education guidance)</li>
+                        <li>Pickup &amp; delivery city, cargo details</li>
                         <li>Anything you write in the enquiry message</li>
                       </ul>
                     </div>
@@ -161,7 +158,6 @@ const Privacy = () => {
                     <li><strong>Google LLC</strong> — GA4 analytics (processor; data anonymised, EU/US servers)</li>
                     <li><strong>Meta Platforms</strong> — only if marketing consent granted</li>
                     <li><strong>Service partners</strong> (banks, registrars, transport partners) — only what's needed to fulfil your specific request</li>
-                    <li><strong>Lovable Cloud and Lovable AI</strong> — when you explicitly request AI education suggestions, your academic details are processed to generate a response. Do not submit identifiers or documents. AI suggestions are not verified admission advice.</li>
                     <li><strong>Authorities</strong> — when required by Indian law, court order or to protect rights</li>
                   </ul>
                   <p className="text-xs text-muted-foreground mt-3">
@@ -176,7 +172,6 @@ const Privacy = () => {
                 <CardContent className="p-6 md:p-8">
                   <h2 className="text-2xl font-bold text-foreground mb-4">6. Retention schedule</h2>
                   <ul className="list-disc list-inside text-muted-foreground space-y-2 text-sm ml-2">
-                    <li><strong>AI education inputs and suggestions:</strong> not saved in STA student records or browser storage; retained in page memory until you leave or reload. Service providers process requests under their policies. If you send the WhatsApp draft, that becomes an enquiry message.</li>
                     <li><strong>Enquiry messages:</strong> 12 months from last contact, then erased</li>
                     <li><strong>Booked-service records (invoices, LRs):</strong> 7 years (Income Tax Act / GST)</li>
                     <li><strong>Analytics data:</strong> 26 months in GA4, then auto-deleted</li>
@@ -246,10 +241,10 @@ const Privacy = () => {
                 <CardContent className="p-6 md:p-8">
                   <h2 className="text-2xl font-bold text-foreground mb-4">10. Grievance Officer (DPDP §10(2)(c) / IT Rules)</h2>
                   <div className="bg-muted p-4 rounded-lg">
-                    <p className="font-semibold text-foreground">Grievance Officer: XTSY Ventures Private Limited</p>
-                    <p className="text-muted-foreground text-sm mt-1">No.302/2A7, VK Road, Peelamedu, Coimbatore – 641004, Tamil Nadu</p>
+                    <p className="font-semibold text-foreground">Grievance Officer: STA Corporate Solutions</p>
+                    <p className="text-muted-foreground text-sm mt-1">No 10/135-G, Gurusamy Pillai St Extn, Podanur, Coimbatore, Coimbatore South, Tamil Nadu, India, 641023</p>
                     <p className="text-muted-foreground text-sm">Phone: +91 94430 33055 (Mon–Sat, 09:00–19:00 IST)</p>
-                    <p className="text-muted-foreground text-sm">Email: <a href="mailto:admin@xtsy.one" className="underline">admin@xtsy.one</a></p>
+                    <p className="text-muted-foreground text-sm">Email: <a href="mailto:shameenatransports@gmail.com" className="underline">shameenatransports@gmail.com</a></p>
                     <p className="text-muted-foreground text-sm">Online: <Link to="/data-request" className="underline">sta-corporate.in/data-request</Link></p>
                   </div>
                   <p className="text-xs text-muted-foreground mt-3">

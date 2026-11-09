@@ -15,8 +15,8 @@ const Terms = () => {
   return (
     <>
       <Helmet>
-        <title>Terms of Service | STA Corporate Solutions — Transport, Loans & Legal</title>
-        <meta name="description" content="Terms of Service for STA Corporate Solutions Coimbatore. Terms, conditions, liability & policies for Transportation, Loan Services & Legal Services in Tamil Nadu." />
+        <title>Terms of Service | STA Corporate Solutions — Lorry Transport</title>
+        <meta name="description" content="Terms of Service for STA Corporate Solutions Coimbatore. Terms, conditions, liability & policies for Lorry Transportation Services in Tamil Nadu." />
         <link rel="canonical" href="https://sta-corporate.in/terms" />
         <meta name="robots" content="index, follow" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
@@ -30,7 +30,7 @@ const Terms = () => {
                 Terms of Service
               </h1>
               <p className="text-lg text-primary-foreground/90">
-                Last updated: January 2025
+                Last updated: November 2026
               </p>
             </div>
           </div>
@@ -58,12 +58,12 @@ const Terms = () => {
                 <CardContent className="p-6 md:p-8">
                   <h2 className="text-2xl font-bold text-foreground mb-4">Our Services</h2>
                   <p className="text-muted-foreground leading-relaxed mb-4">
-                    STA Corporate Solutions provides the following business services across Tamil Nadu, India:
+                    STA Corporate Solutions provides the following services in Coimbatore district, Tamil Nadu, India:
                   </p>
                   <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4">
-                    <li><strong>Transportation Services:</strong> Full Load and Return Load lorry transport across Tamil Nadu</li>
-                    <li><strong>Financial Services:</strong> MSME Loans, Mudra Loans, Home Loans, Business Loans — lowest commission in Coimbatore</li>
-                    <li><strong>Legal Services:</strong> Property documentation, company registration, GST filing, litigation support</li>
+                    <li><strong>Goods Transport:</strong> Full Load open-body lorry transport</li>
+                    <li><strong>Trucks on Hire:</strong> daily, monthly or contract basis</li>
+                    <li><strong>Loaders &amp; Packers:</strong> loading, unloading, house and office shifting</li>
                   </ul>
                   <p className="text-muted-foreground leading-relaxed mt-4 text-sm">
                     All services are governed by Indian law and are available exclusively within India.
@@ -124,6 +124,7 @@ const Terms = () => {
                   </p>
                   <ul className="list-disc list-inside text-muted-foreground space-y-3 ml-4">
                     <li>We take reasonable care in providing all services</li>
+                    <li>STA does not provide cargo insurance; customers should arrange their own cover for goods in transit</li>
                     <li>Liability for loss or damage is limited to the declared value</li>
                     <li>We are not liable for delays due to weather, strikes, or force majeure</li>
                     <li>Customers are advised to obtain their own insurance for high-value transactions</li>
@@ -193,11 +194,11 @@ const Terms = () => {
                   </p>
                   <div className="bg-muted p-4 rounded-lg">
                     <p className="font-semibold text-foreground">STA Corporate Solutions</p>
-                    <p className="text-muted-foreground">No.302/2A7, VK Road, Peelamedu</p>
-                    <p className="text-muted-foreground">Coimbatore - 641004, Tamil Nadu</p>
+                    <p className="text-muted-foreground">No 10/135-G, Gurusamy Pillai St Extn, Podanur</p>
+                    <p className="text-muted-foreground">Coimbatore, Coimbatore South, Tamil Nadu, India, 641023</p>
                     <p className="text-muted-foreground mt-2">Phone: +91 94430 33055</p>
-                    <p className="text-muted-foreground">Email: <a href="mailto:admin@xtsy.one" className="underline">admin@xtsy.one</a></p>
-                    <p className="text-xs text-muted-foreground mt-2">Grievance Officer: XTSY Ventures Private Limited — admin@xtsy.one</p>
+                    <p className="text-muted-foreground">Email: <a href="mailto:shameenatransports@gmail.com" className="underline">shameenatransports@gmail.com</a></p>
+                    <p className="text-xs text-muted-foreground mt-2">Grievance Officer: STA Corporate Solutions — shameenatransports@gmail.com</p>
                   </div>
                 </CardContent>
               </Card>

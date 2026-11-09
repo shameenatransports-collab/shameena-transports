@@ -1,18 +1,18 @@
 import { Link } from "react-router-dom";
-import { Phone, MapPin, Clock, Truck, Banknote, Scale } from "lucide-react";
+import { Phone, MapPin, Clock, Truck, Factory } from "lucide-react";
 import logo from "@/assets/sta-logo.png";
 
 const serviceLinks = [
   { name: "Transportation", href: "/transportation", icon: Truck },
-  { name: "Financial Services", href: "/financial-services", icon: Banknote },
-  { name: "Legal Services", href: "/legal-services", icon: Scale },
+  { name: "Full Load", href: "/transportation/services/full-load", icon: Truck },
+  { name: "Trucks on Hire", href: "/transportation/services/trucks-on-hire", icon: Truck },
+  { name: "Loaders & Packers", href: "/transportation/services/loaders-packers", icon: Factory },
 ];
 
 const quickLinks = [
   { name: "About Us", href: "/about" },
-  { name: "Our Fleet", href: "/fleet" },
+  { name: "Our Lorry", href: "/fleet" },
   { name: "Service Areas", href: "/service-areas" },
-  { name: "Return Loads", href: "/return-loads" },
   { name: "Contact", href: "/contact" },
   { name: "Privacy Policy", href: "/privacy" },
   { name: "Data Request (DPDP)", href: "/data-request" },
@@ -20,8 +20,8 @@ const quickLinks = [
 ];
 
 const serviceAreas = [
-  "Coimbatore", "Tiruppur", "Erode", "Salem", "Chennai",
-  "Madurai", "Trichy", "Karur", "Namakkal", "Dindigul",
+  "Coimbatore", "Pollachi", "Mettupalayam", "Sulur",
+  "Annur", "Madukkarai", "Kinathukadavu",
 ];
 
 export function Footer() {
@@ -45,14 +45,13 @@ export function Footer() {
               </div>
             </div>
             <p className="text-sm text-primary-foreground/75 leading-relaxed max-w-md">
-              Coimbatore's trusted partner for Transportation, Business Loan Assistance & Legal Services since 1982.
-              Transparent support across Tamil Nadu.
+              Coimbatore's lorry transport partner since 1982 — goods transport, trucks on hire and loaders & packers across Coimbatore district.
             </p>
             <div className="space-y-3 pt-1">
               <div className="flex items-start gap-3">
                 <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0 opacity-70" />
                 <span className="text-sm text-primary-foreground/80">
-                  No.302/2A7, VK Road, Peelamedu, Coimbatore - 641004, Tamil Nadu, India
+                  No 10/135-G, Gurusamy Pillai St Extn, Podanur, Coimbatore, Coimbatore South, Tamil Nadu, India, 641023
                 </span>
               </div>
               <div className="flex items-center gap-3">
@@ -126,7 +125,7 @@ export function Footer() {
         {/* Bottom */}
         <div className="mt-16 pt-8 border-t border-primary-foreground/10">
           <p className="text-xs text-primary-foreground/50 text-center mb-5 leading-relaxed max-w-4xl mx-auto">
-            STA Corporate Solutions — Lorry Transport, MSME Loans, Mudra Loans, Business Loan Assistance, Government Funding Scheme Guidance, Legal Services, Company Registration, Property Documentation in Coimbatore, Tiruppur, Erode, Salem, Chennai, Madurai, Trichy, Tamil Nadu.
+            STA Corporate Solutions — Goods Transport, Trucks on Hire, Loaders & Packers and Factory Shifting in Coimbatore district, Tamil Nadu.
           </p>
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-xs text-primary-foreground/60">

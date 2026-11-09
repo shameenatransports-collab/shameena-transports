@@ -33,7 +33,7 @@ export function LeadEnquiryForm({ city }: { city?: string }) {
   const [honeypot, setHoneypot] = useState("");
   const mountedAt = useRef<number>(Date.now());
 
-  const context = city ? `${city} enquiry` : "South India enquiry";
+  const context = city ? `${city} enquiry` : "Coimbatore enquiry";
   const whatsappHref = useMemo(() => {
     const parsed = enquirySchema.safeParse(form);
     const data = parsed.success ? parsed.data : form;
@@ -108,7 +108,7 @@ export function LeadEnquiryForm({ city }: { city?: string }) {
           </div>
           <div>
             <h2 className="text-xl font-semibold text-foreground">Quick Enquiry</h2>
-            <p className="text-sm text-muted-foreground">Fast callback for transport, loans, and legal support.</p>
+            <p className="text-sm text-muted-foreground">Fast callback for lorry transport enquiries.</p>
           </div>
         </div>
 
@@ -136,10 +136,10 @@ export function LeadEnquiryForm({ city }: { city?: string }) {
             </FieldError>
           </div>
           <FieldError label="Route / City" error={errors.route}>
-            <Input value={form.route} onChange={(e) => update("route", e.target.value)} maxLength={140} placeholder={city ? `${city} to Chennai` : "Coimbatore to Chennai"} />
+            <Input value={form.route} onChange={(e) => update("route", e.target.value)} maxLength={140} placeholder={city ? `${city} to Pollachi` : "Coimbatore to Pollachi"} />
           </FieldError>
           <FieldError label="Service needed" error={errors.service}>
-            <Input value={form.service} onChange={(e) => update("service", e.target.value)} maxLength={120} placeholder="Full load lorry, MSME loan, legal service" />
+            <Input value={form.service} onChange={(e) => update("service", e.target.value)} maxLength={120} placeholder="Full load lorry, factory shifting" />
           </FieldError>
           <FieldError label="Details" error={errors.details} optional>
             <Textarea value={form.details} onChange={(e) => update("details", e.target.value)} maxLength={500} rows={3} placeholder="Goods, weight, date, or preferred callback time" />

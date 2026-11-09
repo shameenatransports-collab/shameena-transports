@@ -2,22 +2,22 @@ import { Factory, HardHat, Shirt, Package, Warehouse, Building2 } from "lucide-r
 import { ScrollReveal, ScrollRevealItem } from "@/components/ui/scroll-reveal";
 
 const industries = [
-  { icon: Shirt, name: "Textile", description: "Tiruppur · Coimbatore" },
-  { icon: Factory, name: "Manufacturing", description: "Industrial Cargo" },
-  { icon: HardHat, name: "Construction", description: "Building Materials" },
-  { icon: Package, name: "FMCG & Retail", description: "Consumer Goods" },
-  { icon: Warehouse, name: "Warehousing", description: "Storage Solutions" },
-  { icon: Building2, name: "Corporate", description: "Office Relocation" },
+  { icon: HardHat, name: "Building Material", description: "Cement, steel, pipes" },
+  { icon: Package, name: "Packed Goods", description: "Bags, cartons, sacks" },
+  { icon: Shirt, name: "Textile Cargo", description: "Bales and yarn" },
+  { icon: Factory, name: "Factory Shifting", description: "Plants & machinery" },
+  { icon: Warehouse, name: "Warehouse Loads", description: "Loading & unloading" },
+  { icon: Building2, name: "Office Relocation", description: "Packers & loaders" },
 ];
 
 export function TrustBadges() {
   return (
-    <section className="py-20 md:py-24 bg-background border-b border-border/40" aria-label="Industries we serve">
+    <section className="py-20 md:py-24 bg-background border-b border-border/40" aria-label="What we move">
       <div className="container mx-auto px-4">
         <ScrollReveal stagger>
           <ScrollRevealItem>
             <p className="text-eyebrow text-muted-foreground/70 text-center mb-12">
-              Trusted by industries across South India · Transport since 1982
+              What we move in Coimbatore district · Transport since 1982
             </p>
           </ScrollRevealItem>
           <div className="grid grid-cols-3 md:grid-cols-6 gap-x-4 gap-y-10">

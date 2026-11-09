@@ -29,11 +29,11 @@ import { localBusinessSchema, transportBusinessSchema, transportServiceSchema } 
 import { ServiceFAQ } from "@/components/seo/ServiceFAQ";
 
 const transportFaqs = [
-  { question: "What type of lorry booking does STA Transport offer?", answer: "STA operates Full Load lorry transport only — your cargo gets a dedicated truck end-to-end. Return Loads are available subject to route availability on routes we are already running." },
-  { question: "How many lorries does STA own and which types?", answer: "We operate 12+ owned trailers and lorries — multi-axle trailers (20–25 ton, for heavy machinery and ODC) and open-body lorries (10–20 ton, for construction material and bulk goods). No broker chain." },
-  { question: "Which South India routes do you cover from Coimbatore?", answer: "We run regular full-load trips across Tamil Nadu (Chennai, Madurai, Salem, Trichy, Tiruppur, Erode), Karnataka (Bangalore, Mysore), Telangana (Hyderabad), Andhra Pradesh and Kerala (Kochi, Trivandrum). Confirm specific routes on WhatsApp." },
-  { question: "How fast is a quote and how do I book?", answer: "WhatsApp +91 94430 33055 with pickup, destination, cargo type and weight — quotes are issued same-day during business hours (Mon–Sat, 09:00–19:00 IST). No registration needed." },
-  { question: "Since when has STA been in transportation?", answer: "STA Transport has operated continuously from Coimbatore since 1982 — 43+ years of full-load lorry experience across South India." },
+  { question: "What does STA offer?", answer: "Goods transport by open-body lorry, trucks on hire (daily, monthly or contract) and loaders & packers services in Coimbatore district." },
+  { question: "What vehicle do you use?", answer: "An open-body lorry, suited to building material, steel, packed goods, bales and crated cargo. Suitability and load are confirmed per booking." },
+  { question: "Which areas do you cover?", answer: "Coimbatore district, including Pollachi, Mettupalayam, Sulur, Annur, Madukkarai and Kinathukadavu." },
+  { question: "How do I get a quote?", answer: "WhatsApp or call +91 94430 33055 with pickup, destination, cargo type and weight. Mon–Sat, 9 AM–7 PM." },
+  { question: "Are return loads available?", answer: "Only occasionally and only on availability. Enquire with your route and we will confirm." },
 ];
 
 
@@ -41,60 +41,66 @@ const services = [
   {
     icon: Truck,
     title: "Full Load Transport",
-    description: "Dedicated truck for your exclusive cargo across Tamil Nadu. Complete control, faster delivery with no intermediate stops.",
+    description: "Dedicated truck for your exclusive cargo across Coimbatore district. Complete control, faster delivery with no intermediate stops.",
     isPrimary: true,
     features: ["Dedicated lorry", "Direct delivery", "Experienced handling"],
-    link: "/transport/full-load"
+    link: "/transportation/services/full-load"
   },
   {
-    icon: Package,
-    title: "Return Loads",
-    description: "Cost-effective transport when trucks are returning on matching routes. Subject to route availability.",
-    features: ["Route-based pricing", "Flexible timing", "Subject to availability"],
-    link: "/return-loads"
+    icon: Truck,
+    title: "Trucks on Hire",
+    description: "Trucks on hire for local and long-distance needs: 12-wheeler / 14-wheeler and open trucks (40 ft platform), on a daily, monthly or contract basis.",
+    features: ["12 / 14-wheeler", "40 ft open trucks", "Daily · Monthly · Contract"],
+    link: "/transportation/services/trucks-on-hire"
+  },
+  {
+    icon: Warehouse,
+    title: "Loaders & Packers",
+    description: "Professional loaders and helpers for safe, efficient handling — house shifting, office relocation, loading and unloading.",
+    features: ["House shifting", "Office relocation", "Loading & unloading"],
+    link: "/transportation/services/loaders-packers"
   },
   {
     icon: Factory,
     title: "Textile & Industrial Cargo",
-    description: "Specialized handling for textile bales and industrial equipment from Tiruppur and Coimbatore.",
+    description: "Specialized handling for textile bales and industrial equipment in Coimbatore.",
     features: ["Expert handling", "Textile specialist", "Industrial cargo"],
-    link: "/transport/textile"
+    link: "/transportation/services/textile-cargo"
   },
   {
     icon: Building2,
     title: "Construction Material",
-    description: "Heavy-duty transport for sand, cement, steel, and building materials across Tamil Nadu.",
+    description: "Heavy-duty transport for sand, cement, steel, and building materials across Coimbatore district.",
     features: ["Heavy loads", "Tipper trucks", "Material safety"],
-    link: "/transport/construction"
+    link: "/transportation/services/construction-material"
   },
   {
     icon: Warehouse,
     title: "Factory Shifting",
     description: "End-to-end relocation services for factories and warehouses with complete project management.",
     features: ["Full relocation", "Professional packing", "Careful loading"],
-    link: "/transport/factory-shifting"
+    link: "/transportation/services/factory-shifting"
   }
 ];
 
 const stats = [
-  { value: "43+", label: "Years Experience", icon: Clock },
-  { value: "12+", label: "Lorries Fleet", icon: Truck },
+  { value: "44+", label: "Years Experience", icon: Clock },
+  { value: "1982", label: "Operating Since", icon: Truck },
   { value: "FTL", label: "Full Load Focus", icon: Package },
   { value: "TN", label: "Route Expertise", icon: Shield }
 ];
 
 const areas = [
-  "Coimbatore", "Chennai", "Tiruppur", "Erode", "Salem", 
-  "Madurai", "Trichy", "Karur", "Namakkal", "Dindigul"
+  "Coimbatore", "Pollachi", "Mettupalayam", "Sulur",
+  "Annur", "Madukkarai", "Kinathukadavu"
 ];
 
 const whyChooseUs = [
-  { text: "43+ years of trusted service", icon: Star },
-  { text: "Own fleet of 12+ lorries", icon: Truck },
-  { text: "Tamil Nadu route expertise", icon: MapPin },
-  { text: "Own lorries, no broker chain", icon: Shield },
-  { text: "Responsive customer support", icon: Clock },
-  { text: "Competitive pricing", icon: Gauge },
+  { text: "44+ years of trusted service", icon: Star },
+  { text: "On-time delivery", icon: Clock },
+  { text: "Experienced drivers & loaders", icon: Shield },
+  { text: "Well-maintained fleet", icon: Truck },
+  { text: "Affordable & transparent pricing", icon: Gauge },
   { text: "Route-planned delivery coordination", icon: Route },
   { text: "Expert handling of cargo", icon: Package }
 ];
@@ -112,11 +118,11 @@ const Transportation = () => {
   return (
     <>
       <Helmet>
-        <title>Full Load Lorry Transport South India | Coimbatore, Chennai</title>
-        <meta name="description" content="Full Load lorry transport across Tamil Nadu, Karnataka, Kerala — Coimbatore, Chennai, Bangalore, Tiruppur, Salem, Madurai. Since 1982." />
+        <title>Full Load Lorry Transport Coimbatore | STA</title>
+        <meta name="description" content="Full Load lorry transport across Coimbatore district — Coimbatore, Pollachi and nearby towns. Since 1982." />
         <link rel="canonical" href="https://sta-corporate.in/transportation" />
-        <meta property="og:title" content="Full Load Lorry Transport South India | Coimbatore HQ" />
-        <meta property="og:description" content="Full Load lorry transport across South India. 12+ fleet, 43+ years from Coimbatore." />
+        <meta property="og:title" content="Full Load Lorry Transport Coimbatore | STA" />
+        <meta property="og:description" content="Full Load lorry transport in Coimbatore district. 44+ years from Coimbatore." />
         <meta property="og:url" content="https://sta-corporate.in/transportation" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(localBusinessSchema)}</script>
@@ -138,17 +144,17 @@ const Transportation = () => {
               <div className="max-w-4xl">
                 <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-background text-[11px] font-bold tracking-[0.18em] uppercase text-primary shadow-xl ring-1 ring-primary-foreground/40 mb-8">
                   <span className="h-1.5 w-1.5 rounded-full bg-secondary" />
-                  STA Transport · Since 1982 · 43+ Years
+                  STA Corporate Solutions · Since 1982 · 44+ Years
                 </div>
                 <h1 className="text-display-2xl text-primary-foreground mb-6">
                   Transportation since 1982
                   <br />
                   <span className="bg-gradient-to-r from-secondary via-secondary to-primary-foreground bg-clip-text text-transparent">
-                    43+ years of service excellence.
+                    44+ years of service excellence.
                   </span>
                 </h1>
                 <p className="text-headline text-primary-foreground/85 max-w-2xl mb-10">
-                  Full Load lorry transport with our own fleet of 12+ vehicles across Tamil Nadu, Karnataka and Kerala. The original STA practice — the foundation on which our four new 2025 verticals are built.
+                  Full Load open-body lorry transport across Coimbatore district, since 1982.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
                   <GetQuoteModal />
@@ -269,7 +275,7 @@ const Transportation = () => {
                   Service Areas
                 </h2>
                 <p className="text-lg text-muted-foreground">
-                  Covering all major cities across Tamil Nadu
+                  Covering Coimbatore district
                 </p>
               </div>
 

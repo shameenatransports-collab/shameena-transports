@@ -4,15 +4,12 @@ import { Button } from "@/components/ui/button";
 
 const areas = [
   "Coimbatore",
-  "Tiruppur",
-  "Erode",
-  "Salem",
-  "Karur",
-  "Chennai",
-  "Madurai",
-  "Trichy",
-  "Dindigul",
   "Pollachi",
+  "Mettupalayam",
+  "Sulur",
+  "Annur",
+  "Madukkarai",
+  "Kinathukadavu",
 ];
 
 export function ServiceAreasPreview() {
@@ -22,10 +19,10 @@ export function ServiceAreasPreview() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <header>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Serving All Over Tamil Nadu
+              Coimbatore District
             </h2>
             <p className="text-muted-foreground text-lg mb-6">
-              From Coimbatore to Chennai, Salem to Madurai – we provide reliable lorry transport services across every major city and town in Tamil Nadu.
+              From Coimbatore to the district towns around them, we provide Full Load lorry transport for businesses.
             </p>
             <Link to="/service-areas">
               <Button variant="default" size="lg" className="gap-2">

@@ -9,15 +9,15 @@ export const organizationSchema = {
   "legalName": "STA Corporate Solutions",
   "url": "https://sta-corporate.in",
   "logo": "https://sta-corporate.in/logo.png",
-  "description": "STA Corporate Solutions — Transportation since 1982 (43+ years). Financial, Legal and Edu Consultancy practices launched mid-2025. Four integrated practices for South India, headquartered in Coimbatore.",
+  "description": "STA Corporate Solutions — lorry transport since 1982 (44+ years) for businesses in Coimbatore district, headquartered in Coimbatore.",
   "foundingDate": "1982",
-  "slogan": "Transport Since 1982 · Four Integrated Practices for South India",
+  "slogan": "Lorry Transport Since 1982 · Coimbatore",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "No.302/2A7, VK Road, Peelamedu",
+    "streetAddress": "No 10/135-G, Gurusamy Pillai St Extn, Podanur",
     "addressLocality": "Coimbatore",
     "addressRegion": "Tamil Nadu",
-    "postalCode": "641004",
+    "postalCode": "641023",
     "addressCountry": "IN"
   },
   "contactPoint": [
@@ -38,25 +38,11 @@ export const organizationSchema = {
   ],
   "knowsAbout": [
     "Full Load Lorry Transport",
-    "Return Load Transport",
-    "Factory Shifting",
-    "MSME Loan Documentation",
-    "Mudra Loan Assistance",
-    "PMEGP Scheme Documentation",
-    "Government Funding Schemes",
-    "Property Documentation",
-    "Company Registration",
-    "GST Registration",
-    "Trademark Filing",
-    "Academic Mobility",
-    "Degree Transfer Guidance"
+    "Factory Shifting"
   ],
   "areaServed": [
-    { "@type": "AdministrativeArea", "name": "Tamil Nadu" },
-    { "@type": "AdministrativeArea", "name": "Karnataka" },
-    { "@type": "AdministrativeArea", "name": "Telangana" },
-    { "@type": "AdministrativeArea", "name": "Andhra Pradesh" },
-    { "@type": "AdministrativeArea", "name": "Kerala" }
+    { "@type": "City", "name": "Coimbatore" },
+    { "@type": "AdministrativeArea", "name": "Coimbatore District" }
   ],
   "sameAs": []
 };
@@ -68,13 +54,13 @@ export const localBusinessSchema = {
   "name": "STA Corporate Solutions",
   "alternateName": ["STA Corporate", "STA Solutions", "STA Coimbatore", "STA Corporate Solutions Coimbatore"],
   "image": ["https://sta-corporate.in/logo.png"],
-  "description": "STA Corporate Solutions — Transportation since 1982 (43+ years of service excellence). Financial Services (MSME, Mudra, government funding schemes), Legal Services and Edu Consultancy practices added mid-2025. Four integrated practices serving Coimbatore and South India.",
+  "description": "STA Corporate Solutions — Full Load lorry transport since 1982 (44+ years) for businesses in Coimbatore.",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "No.302/2A7, VK Road, Peelamedu",
+    "streetAddress": "No 10/135-G, Gurusamy Pillai St Extn, Podanur",
     "addressLocality": "Coimbatore",
     "addressRegion": "Tamil Nadu",
-    "postalCode": "641004",
+    "postalCode": "641023",
     "addressCountry": "IN"
   },
   "geo": {
@@ -96,16 +82,7 @@ export const localBusinessSchema = {
   },
   "areaServed": [
     { "@type": "City", "name": "Coimbatore" },
-    { "@type": "City", "name": "Tiruppur" },
-    { "@type": "City", "name": "Erode" },
-    { "@type": "City", "name": "Salem" },
-    { "@type": "City", "name": "Chennai" },
-    { "@type": "City", "name": "Madurai" },
-    { "@type": "City", "name": "Trichy" },
-    { "@type": "City", "name": "Karur" },
-    { "@type": "City", "name": "Namakkal" },
-    { "@type": "City", "name": "Dindigul" },
-    { "@type": "State", "name": "Tamil Nadu" }
+    { "@type": "AdministrativeArea", "name": "Coimbatore District" }
   ],
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
@@ -116,27 +93,7 @@ export const localBusinessSchema = {
         "name": "Transportation Services",
         "itemListElement": [
           { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Full Load Lorry Transport" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Return Load Transport", "description": "Subject to route availability; confirm before booking." } },
           { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Factory Shifting" } }
-        ]
-      },
-      {
-        "@type": "OfferCatalog",
-        "name": "Financial Services",
-        "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "MSME Business Loan Assistance" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mudra Business Loan Application Assistance" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Government Funding Scheme Guidance" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Business Loan Assistance", "description": "For businesses, industries and companies, strictly not personal loans. STA is not a lender; approval is decided by the bank or relevant authority." } }
-        ]
-      },
-      {
-        "@type": "OfferCatalog",
-        "name": "Legal Services",
-        "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Property Documentation" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Company Registration" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Litigation Support" } }
         ]
       }
     ]
@@ -156,15 +113,9 @@ export const transportServiceSchema = {
   },
   "areaServed": [
     { "@type": "City", "name": "Coimbatore" },
-    { "@type": "City", "name": "Tiruppur" },
-    { "@type": "City", "name": "Erode" },
-    { "@type": "City", "name": "Salem" },
-    { "@type": "City", "name": "Chennai" },
-    { "@type": "City", "name": "Madurai" },
-    { "@type": "City", "name": "Trichy" },
-    { "@type": "State", "name": "Tamil Nadu" }
+    { "@type": "AdministrativeArea", "name": "Coimbatore District" }
   ],
-  "description": "Dedicated full load lorry transport across Tamil Nadu since 1982 with 12+ own lorries from Coimbatore.",
+  "description": "Dedicated full load lorry transport in Coimbatore district since 1982.",
   "offers": {
     "@type": "Offer",
     "availability": "https://schema.org/InStock",
@@ -182,13 +133,14 @@ export const transportBusinessSchema = {
   "image": "https://sta-corporate.in/logo.png",
   "priceRange": "$$",
   "foundingDate": "1982",
-  "description": "Full load lorry transport and return load transport subject to route availability across Tamil Nadu from Coimbatore.",
+  "description": "Full load lorry transport in Coimbatore district since 1982.",
   "address": localBusinessSchema.address,
   "geo": localBusinessSchema.geo,
   "areaServed": localBusinessSchema.areaServed,
   "makesOffer": [
     { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Full Load Lorry Transport", "serviceType": "Full Truck Load Transport" } },
-    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Return Load Transport", "serviceType": "Return Load Transport" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Trucks on Hire", "serviceType": "Truck Rental" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Loaders and Packers", "serviceType": "Moving and Packing" } },
     { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Factory and Warehouse Shifting", "serviceType": "Commercial Relocation" } }
   ]
 };
@@ -209,62 +161,6 @@ export const createCityTransportSchema = (city: { name: string; slug: string; me
   "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "priceCurrency": "INR" }
 });
 
-export const financialServiceSchema = {
-  "@context": "https://schema.org",
-  "@type": "FinancialService",
-  "@id": "https://sta-corporate.in/financial-services#service",
-  "name": "Business Loan Assistance Coimbatore — MSME, Mudra & Government Funding",
-  "serviceType": "Loan Assistance",
-  "provider": {
-    "@type": "LocalBusiness",
-    "name": "STA Corporate Solutions",
-    "@id": "https://sta-corporate.in/#localbusiness"
-  },
-  "areaServed": [
-    { "@type": "City", "name": "Coimbatore" },
-    { "@type": "City", "name": "Tiruppur" },
-    { "@type": "City", "name": "Erode" },
-    { "@type": "City", "name": "Salem" },
-    { "@type": "City", "name": "Chennai" },
-    { "@type": "State", "name": "Tamil Nadu" }
-  ],
-  "description": "Loan assistance for eligible businesses, industries and companies: MSME, Mudra, government funding schemes, business, industrial and commercial vehicle loan documentation support in Coimbatore, Tamil Nadu. Not for personal loans.",
-  "offers": {
-    "@type": "Offer",
-    "availability": "https://schema.org/InStock",
-    "priceCurrency": "INR"
-  }
-};
-
-export const legalServiceSchema = {
-  "@context": "https://schema.org",
-  "@type": "LegalService",
-  "@id": "https://sta-corporate.in/legal-services#service",
-  "name": "Legal Services Coimbatore & Tamil Nadu — Property, Business, Corporate Law",
-  "serviceType": "Legal Assistance",
-  "provider": {
-    "@type": "LocalBusiness",
-    "name": "STA Corporate Solutions",
-    "@id": "https://sta-corporate.in/#localbusiness"
-  },
-  "areaServed": [
-    { "@type": "City", "name": "Coimbatore" },
-    { "@type": "City", "name": "Chennai" },
-    { "@type": "City", "name": "Tiruppur" },
-    { "@type": "City", "name": "Erode" },
-    { "@type": "City", "name": "Salem" },
-    { "@type": "City", "name": "Madurai" },
-    { "@type": "City", "name": "Trichy" },
-    { "@type": "State", "name": "Tamil Nadu" }
-  ],
-  "description": "Legal documentation and consultation support for individuals, businesses, and corporates. Property documentation, company formation, litigation, IP, and compliance support across Tamil Nadu.",
-  "offers": {
-    "@type": "Offer",
-    "availability": "https://schema.org/InStock",
-    "priceCurrency": "INR"
-  }
-};
-
 export const createBreadcrumbSchema = (items: { name: string; url: string }[]) => ({
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -282,7 +178,7 @@ export const websiteSchema = {
   "@id": "https://sta-corporate.in/#website",
   "url": "https://sta-corporate.in",
   "name": "STA Corporate Solutions",
-  "description": "STA Corporate Solutions — Transport since 1982. Four integrated practices for South India: Transportation, Financial, Legal and Edu Consultancy.",
+  "description": "STA Corporate Solutions — lorry transport since 1982 for Coimbatore district.",
   "publisher": {
     "@id": "https://sta-corporate.in/#organization"
   },
@@ -298,34 +194,14 @@ export const websiteSchema = {
 
 export const fullLoadServiceSchema = transportServiceSchema;
 
-export const returnLoadServiceSchema = {
+export const openBodyLorrySchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  "@id": "https://sta-corporate.in/return-loads#service",
-  "name": "Return Load Transport Coimbatore Tamil Nadu",
-  "serviceType": "Return Load Transport",
-  "provider": {
-    "@type": "LocalBusiness",
-    "name": "STA Corporate Solutions",
-    "@id": "https://sta-corporate.in/#localbusiness"
-  },
-  "areaServed": { "@type": "State", "name": "Tamil Nadu" },
-  "description": "Cost-effective return load transport on available routes from Coimbatore. Save up to 40% on select Tamil Nadu routes.",
-  "offers": {
-    "@type": "Offer",
-    "availability": "https://schema.org/LimitedAvailability",
-    "priceCurrency": "INR"
-  }
-};
-
-export const fleetSchema = {
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  "@id": "https://sta-corporate.in/fleet#vehicles",
-  "name": "STA Corporate Solutions Fleet — Coimbatore",
-  "description": "Our fleet of 12+ modern lorries for transport services across Tamil Nadu",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "item": { "@type": "Vehicle", "name": "Multi-Axle Trailer", "description": "20-25 Ton capacity — heavy machinery & ODC cargo" } },
-    { "@type": "ListItem", "position": 2, "item": { "@type": "Vehicle", "name": "Open Body Lorry", "description": "10-20 Ton capacity — construction materials & bulk goods" } }
-  ]
+  "@id": "https://sta-corporate.in/fleet#service",
+  "name": "Open-Body Lorry Goods Transport, Coimbatore",
+  "serviceType": "Open body lorry goods transport",
+  "provider": { "@type": "LocalBusiness", "name": "STA Corporate Solutions", "@id": "https://sta-corporate.in/#localbusiness" },
+  "areaServed": { "@type": "AdministrativeArea", "name": "Coimbatore District, Tamil Nadu" },
+  "description": "Open-body lorry for building material, steel, pipes, bagged and packed goods, textile bales and crated cargo in Coimbatore district. Not suited to containers, loose sand or gravel, liquids, temperature-controlled goods or oversize machinery. Vehicle suitability and permitted load are confirmed per booking.",
+  "audience": { "@type": "BusinessAudience", "audienceType": "Businesses" }
 };

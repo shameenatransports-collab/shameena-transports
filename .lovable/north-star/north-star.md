@@ -2,7 +2,7 @@
 
 # North star
 
-South Indian businesses and learners get their loads moved, funding raised and legal matters resolved
+Businesses in Coimbatore district get their goods moved by lorry, with a quick quote and a dependable booking
 
 ## Metric
 

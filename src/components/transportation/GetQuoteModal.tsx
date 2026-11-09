@@ -41,20 +41,12 @@ const loadTypes = [
 
 const tamilNaduCities = [
   "Coimbatore",
-  "Chennai",
-  "Tiruppur",
-  "Erode",
-  "Salem",
-  "Madurai",
-  "Trichy",
-  "Karur",
-  "Namakkal",
-  "Dindigul",
   "Pollachi",
-  "Palani",
-  "Hosur",
-  "Vellore",
-  "Thanjavur",
+  "Mettupalayam",
+  "Sulur",
+  "Annur",
+  "Madukkarai",
+  "Kinathukadavu",
   "Other",
 ];
 

@@ -18,7 +18,7 @@ export default function RouteCorridorPage() {
 
   const title = `${corridor.fromName} to ${corridor.toName} Transport`;
   const metaTitle = `${corridor.fromName} to ${corridor.toName} Lorry Transport (${corridor.distanceKm} km) | STA Corporate Solutions`;
-  const metaDescription = `Full load lorry transport from ${corridor.fromName} to ${corridor.toName} — ${corridor.distanceKm} km. Return loads subject to route availability. Call +91 94430 33055.`;
+  const metaDescription = `Full load lorry transport from ${corridor.fromName} to ${corridor.toName} — ${corridor.distanceKm} km. Call +91 94430 33055.`;
   const keywords = [
     `${corridor.fromName.toLowerCase()} to ${corridor.toName.toLowerCase()} transport`,
     `${corridor.fromName.toLowerCase()} to ${corridor.toName.toLowerCase()} lorry`,
@@ -29,9 +29,7 @@ export default function RouteCorridorPage() {
 
   const faqs = [
     { q: `What is the distance from ${corridor.fromName} to ${corridor.toName}?`, a: `Approximately ${corridor.distanceKm} km by road.` },
-    { q: `Is return load available on the ${corridor.fromName}–${corridor.toName} route?`, a: "Return loads are subject to route availability. Call us to confirm current truck schedules." },
     { q: `How long is transit from ${corridor.fromName} to ${corridor.toName}?`, a: `Typical transit ranges from ${Math.ceil(corridor.distanceKm / 500)}–${Math.ceil(corridor.distanceKm / 350)} days depending on truck type, traffic and unloading time.` },
-    { q: `What truck sizes are available?`, a: "20ft, 24ft, 32ft and multi-axle trailers are available depending on your load and route." },
   ];
 
   return (
@@ -71,7 +69,7 @@ export default function RouteCorridorPage() {
               We dispatch trucks on this corridor regularly. {from?.region} to {to?.region} is one of our active operating belts, with direct loading and consignee delivery.
             </p>
             <ul className="space-y-2.5">
-              {["Dedicated full-load truck", "20ft / 24ft / multi-axle options", "Direct door-to-door delivery", "Return loads subject to route availability", "Transparent freight quote, no hidden charges"].map((b) => (
+              {["Dedicated full-load truck", "Open-body lorry, sheeted where needed", "Direct door-to-door delivery", "Transparent freight quote, no hidden charges"].map((b) => (
                 <li key={b} className="flex items-start gap-2.5 text-foreground">
                   <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" strokeWidth={2} />
                   <span>{b}</span>

@@ -14,15 +14,12 @@ export function usePageTracking() {
     // Map routes to readable titles
     const pageTitles: Record<string, string> = {
       "/": "Home - STA Corporate Solutions",
-      "/services": "Services - Business Solutions",
+      "/services/transport-categories": "Transport Categories",
       "/service-areas": "Service Areas - Tamil Nadu Coverage",
       "/fleet": "Our Fleet - Modern Transport Vehicles",
       "/about": "About STA Corporate Solutions",
       "/contact": "Contact Us - Get Quote",
       "/transportation": "Transportation Services",
-      "/trading": "Iron & Steel Trading",
-      "/financial-services": "Financial Services",
-      "/real-estate": "Real Estate Services",
     };
 
     const pageTitle =
