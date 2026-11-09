@@ -11,7 +11,7 @@ const steps = [
     icon: FileText,
     step: "02",
     title: "Get Quote",
-    description: "Receive competitive pricing based on your cargo details",
+    description: "Receive a quote based on your cargo details",
   },
   {
     icon: Truck,
@@ -36,7 +36,7 @@ export function ProcessSection() {
             How It Works
           </h2>
           <p className="text-muted-foreground text-lg">
-            Simple 4-step process to get your goods transported safely
+            Four simple steps from enquiry to delivery in Coimbatore district
           </p>
         </header>
 

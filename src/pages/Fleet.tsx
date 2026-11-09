@@ -26,33 +26,23 @@ const notSuited = [
 const faqs = [
   {
     question: "What is an open-body lorry?",
-    answer:
-      "An open-body lorry is a goods truck with a flat load platform and high side walls but no fixed roof. It is loaded from the sides or the rear and covered with a tarpaulin when the cargo needs protection from rain and dust.",
+    answer: "A goods truck with a flat platform and high sides but no fixed roof, covered with tarpaulin when needed.",
   },
   {
-    question: "What can an open-body lorry carry in Coimbatore?",
-    answer:
-      "It suits building material, steel and pipes, bagged and packed goods, textile bales and cartons, and crated cargo that fits the body height. STA runs open-body lorries for businesses in Coimbatore district, including Pollachi, Mettupalayam, Sulur, Annur, Madukkarai and Kinathukadavu.",
+    question: "What can it carry?",
+    answer: "Building material, steel, pipes, packed goods, textile bales and crated cargo that fits the body height.",
   },
   {
-    question: "What can an open-body lorry not carry?",
-    answer:
-      "It is not suited to containers, loose sand or gravel, liquids, temperature-controlled goods or oversize machinery. Tell us your cargo and we will say honestly whether an open-body lorry is the right vehicle.",
+    question: "What can it not carry?",
+    answer: "Containers, loose sand or gravel, liquids, temperature-controlled goods and oversize machinery.",
   },
   {
-    question: "Is cargo protected from rain on an open-body lorry?",
-    answer:
-      "Weather-sensitive cargo is covered with tarpaulin and tied down. Please mention at booking if your goods need sheeting. STA does not offer cargo insurance; for high-value goods we advise you to arrange your own cover.",
+    question: "Is cargo insured?",
+    answer: "No. STA does not offer cargo insurance, so arrange your own cover for high-value goods.",
   },
   {
-    question: "How do I book an open-body lorry from STA?",
-    answer:
-      "Call or WhatsApp +91 94430 33055 with the pickup and delivery locations, cargo type and weight, and preferred date. We confirm the vehicle, loading date and freight for each booking.",
-  },
-  {
-    question: "What is the load capacity of the lorry?",
-    answer:
-      "Capacity depends on the vehicle allotted. We confirm the vehicle and the permitted load for your cargo at booking, so you are not quoted a figure that does not apply to your load.",
+    question: "How do I book?",
+    answer: "Call or WhatsApp +91 94430 33055 with pickup, destination, cargo and date. We confirm vehicle, load and freight per booking.",
   },
 ];
 

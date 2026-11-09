@@ -26,7 +26,7 @@ const values = [
   {
     icon: Award,
     title: "Excellence",
-    description: "Maintaining the highest standards in logistics and lorry transport.",
+    description: "Maintaining the highest standards in goods transport.",
   },
   {
     icon: Target,
@@ -94,7 +94,7 @@ const About = () => {
                 </h2>
                 <div className="space-y-4 text-muted-foreground">
                   <p>
-                    <strong className="text-foreground">STA Transport &amp; Logistics</strong> began in <strong className="text-foreground">1982</strong> in Coimbatore as a reliable goods transport operator. Over <strong className="text-foreground">44+ years of service excellence</strong>, we have grown into a trusted full-load lorry transport partner for textile mills and foundries in Coimbatore, and manufacturers across Coimbatore district.
+                    <strong className="text-foreground">STA Corporate Solutions</strong> began in <strong className="text-foreground">1982</strong> in Coimbatore as a reliable goods transport operator. Over <strong className="text-foreground">44+ years of service excellence</strong>, we have grown into a trusted full-load lorry transport partner for textile mills and foundries in Coimbatore, and manufacturers across Coimbatore district.
                   </p>
                   <p>
                     Today, <strong className="text-foreground">STA Corporate Solutions</strong> serves businesses in Coimbatore district from our Coimbatore headquarters, with the same standards of integrity, responsibility and customer care we started with.

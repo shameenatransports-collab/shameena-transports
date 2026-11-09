@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Phone, ChevronDown } from "lucide-react";
+import { Menu, X, Phone, ChevronDown, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -16,13 +16,15 @@ const serviceLinks = [
   { name: "Full Load", href: "/transportation/services/full-load" },
   { name: "Trucks on Hire", href: "/transportation/services/trucks-on-hire" },
   { name: "Loaders & Packers", href: "/transportation/services/loaders-packers" },
+  { name: "Construction Material", href: "/transportation/services/construction-material" },
+  { name: "Factory Shifting", href: "/transportation/services/factory-shifting" },
   { name: "Transport Categories", href: "/services/transport-categories" },
 ];
 
 const navLinks = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
-  { name: "Fleet", href: "/fleet" },
+  { name: "Our Lorry", href: "/fleet" },
   { name: "Service Areas", href: "/service-areas" },
   { name: "Contact", href: "/contact" },
 ];
@@ -88,7 +90,7 @@ export function Header() {
               <DropdownMenuTrigger className={cn(linkBase, "flex items-center gap-1 outline-none")}>
                 Services <ChevronDown className="h-3.5 w-3.5 opacity-60" />
               </DropdownMenuTrigger>
-              <DropdownMenuContent align="start" className="w-52 mt-2 glass-strong border-border/40">
+              <DropdownMenuContent align="start" className="w-56 mt-2 glass-strong border-border/40">
                 {serviceLinks.map((link) => (
                   <DropdownMenuItem key={link.href} asChild>
                     <Link to={link.href} className="w-full cursor-pointer text-[13px]">
@@ -100,7 +102,7 @@ export function Header() {
             </DropdownMenu>
 
             <Link to="/fleet" className={cn(linkBase, location.pathname === "/fleet" && activeCls)}>
-              Fleet
+              Our Lorry
             </Link>
             <Link
               to="/service-areas"
@@ -117,6 +119,12 @@ export function Header() {
           </nav>
 
           <div className="flex items-center gap-2">
+            <a href="https://wa.me/919443033055" target="_blank" rel="noopener noreferrer" className="hidden xl:flex">
+              <Button size="sm" variant="outline" className="gap-2 rounded-full px-4 h-9 text-[13px] font-medium bg-background/80">
+                <MessageCircle className="h-3.5 w-3.5" />
+                WhatsApp
+              </Button>
+            </a>
             <a href="tel:+919443033055" className="hidden md:flex">
               <Button
                 size="sm"

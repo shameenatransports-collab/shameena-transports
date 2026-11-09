@@ -30,7 +30,7 @@ const Terms = () => {
                 Terms of Service
               </h1>
               <p className="text-lg text-primary-foreground/90">
-                Last updated: January 2025
+                Last updated: November 2026
               </p>
             </div>
           </div>
@@ -58,10 +58,12 @@ const Terms = () => {
                 <CardContent className="p-6 md:p-8">
                   <h2 className="text-2xl font-bold text-foreground mb-4">Our Services</h2>
                   <p className="text-muted-foreground leading-relaxed mb-4">
-                    STA Corporate Solutions provides the following business service in Coimbatore district, Tamil Nadu, India (for businesses only):
+                    STA Corporate Solutions provides the following services in Coimbatore district, Tamil Nadu, India:
                   </p>
                   <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4">
-                    <li><strong>Transportation Services:</strong> Full Load lorry transport in Coimbatore district</li>
+                    <li><strong>Goods Transport:</strong> Full Load open-body lorry transport</li>
+                    <li><strong>Trucks on Hire:</strong> daily, monthly or contract basis</li>
+                    <li><strong>Loaders &amp; Packers:</strong> loading, unloading, house and office shifting</li>
                   </ul>
                   <p className="text-muted-foreground leading-relaxed mt-4 text-sm">
                     All services are governed by Indian law and are available exclusively within India.
@@ -122,6 +124,7 @@ const Terms = () => {
                   </p>
                   <ul className="list-disc list-inside text-muted-foreground space-y-3 ml-4">
                     <li>We take reasonable care in providing all services</li>
+                    <li>STA does not provide cargo insurance; customers should arrange their own cover for goods in transit</li>
                     <li>Liability for loss or damage is limited to the declared value</li>
                     <li>We are not liable for delays due to weather, strikes, or force majeure</li>
                     <li>Customers are advised to obtain their own insurance for high-value transactions</li>

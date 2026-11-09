@@ -85,7 +85,7 @@ export const PILLARS: Pillar[] = [
       {
         slug: "intercity-freight", name: "Intercity Freight", shortName: "Intercity Freight",
         description: "Point-to-point freight between Coimbatore and nearby district towns, planned route by route.",
-        keywords: ["intercity transport", "interstate freight", "long distance trucking"],
+        keywords: ["transport between coimbatore towns", "district freight", "lorry freight coimbatore"],
         benefits: ["Route-planned trips", "Transparent per-trip quotes", "Volume rate contracts", "Coimbatore focus"],
       },
     ],

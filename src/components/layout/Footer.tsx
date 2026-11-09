@@ -4,13 +4,14 @@ import logo from "@/assets/sta-logo.png";
 
 const serviceLinks = [
   { name: "Transportation", href: "/transportation", icon: Truck },
+  { name: "Full Load", href: "/transportation/services/full-load", icon: Truck },
   { name: "Trucks on Hire", href: "/transportation/services/trucks-on-hire", icon: Truck },
   { name: "Loaders & Packers", href: "/transportation/services/loaders-packers", icon: Factory },
 ];
 
 const quickLinks = [
   { name: "About Us", href: "/about" },
-  { name: "Our Fleet", href: "/fleet" },
+  { name: "Our Lorry", href: "/fleet" },
   { name: "Service Areas", href: "/service-areas" },
   { name: "Contact", href: "/contact" },
   { name: "Privacy Policy", href: "/privacy" },
@@ -44,8 +45,7 @@ export function Footer() {
               </div>
             </div>
             <p className="text-sm text-primary-foreground/75 leading-relaxed max-w-md">
-              Coimbatore's trusted lorry transport partner since 1982, serving businesses across Coimbatore district.
-              Transparent support across Tamil Nadu.
+              Coimbatore's lorry transport partner since 1982 — goods transport, trucks on hire and loaders & packers across Coimbatore district.
             </p>
             <div className="space-y-3 pt-1">
               <div className="flex items-start gap-3">
@@ -125,7 +125,7 @@ export function Footer() {
         {/* Bottom */}
         <div className="mt-16 pt-8 border-t border-primary-foreground/10">
           <p className="text-xs text-primary-foreground/50 text-center mb-5 leading-relaxed max-w-4xl mx-auto">
-            STA Corporate Solutions — Full Load Lorry Transport, Textile Cargo and Factory Shifting in Coimbatore, Tamil Nadu.
+            STA Corporate Solutions — Goods Transport, Trucks on Hire, Loaders & Packers and Factory Shifting in Coimbatore district, Tamil Nadu.
           </p>
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-xs text-primary-foreground/60">

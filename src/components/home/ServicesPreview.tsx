@@ -38,7 +38,7 @@ export function ServicesPreview() {
               />
               <div aria-hidden className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-primary/0" />
               <div className="absolute bottom-6 left-6 right-6">
-                <p className="text-eyebrow text-secondary mb-1">Logistics</p>
+                <p className="text-eyebrow text-secondary mb-1">Goods transport</p>
                 <h3 className="text-2xl md:text-3xl font-bold text-primary-foreground tracking-tight">Transportation</h3>
               </div>
             </div>

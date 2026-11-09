@@ -48,7 +48,7 @@ export default function PillarSubPage() {
       stats={[
         practiceHeritage(pillar.id),
         { value: "Coimbatore", label: "Based in" },
-        { value: "5", label: "States" },
+        { value: "WhatsApp", label: "Quotes via" },
         { value: "Coimbatore", label: "Coverage" },
       ]}
       breadcrumbs={[

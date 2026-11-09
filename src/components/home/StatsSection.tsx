@@ -6,7 +6,7 @@ const stats = [
     icon: Clock,
     value: "44+",
     label: "Years in transport",
-    description: "STA Transport since 1982",
+    description: "STA since 1982",
   },
   {
     icon: Truck,

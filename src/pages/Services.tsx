@@ -100,7 +100,7 @@ const Services = () => {
         <meta name="keywords" content="full load lorry service, dedicated truck booking, lorry transport coimbatore, goods transport coimbatore" />
         <link rel="canonical" href="https://sta-corporate.in/services" />
         <meta property="og:title" content="Full Load Transport Services | STA Corporate Solutions" />
-        <meta property="og:description" content="Dedicated Full Load transport. Tamil Nadu's trusted logistics since 1982." />
+        <meta property="og:description" content="Dedicated Full Load transport. Coimbatore's lorry transport since 1982." />
         <meta property="og:url" content="https://sta-corporate.in/services" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>

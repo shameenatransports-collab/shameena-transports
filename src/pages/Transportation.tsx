@@ -29,11 +29,11 @@ import { localBusinessSchema, transportBusinessSchema, transportServiceSchema } 
 import { ServiceFAQ } from "@/components/seo/ServiceFAQ";
 
 const transportFaqs = [
-  { question: "What type of lorry booking does STA Transport offer?", answer: "STA operates Full Load lorry transport — your cargo gets a dedicated truck end-to-end. Return loads are not a regular offering; if a truck happens to be returning on your route we can confirm availability when you enquire." },
-  { question: "What vehicle does STA use?", answer: "STA uses an open-body lorry, suited to building material, steel, pipes, packed goods, textile bales and crated cargo. It is not suited to containers, loose sand or gravel, liquids, temperature-controlled goods or oversize machinery. Vehicle suitability and permitted load are confirmed for each booking." },
-  { question: "Which routes do you cover?", answer: "We run full-load trips in Coimbatore district, including Pollachi, Mettupalayam, Sulur, Annur, Madukkarai and Kinathukadavu. Confirm specific routes on WhatsApp." },
-  { question: "How fast is a quote and how do I book?", answer: "WhatsApp +91 94430 33055 with pickup, destination, cargo type and weight — quotes are issued same-day during business hours (Mon–Sat, 09:00–19:00 IST). No registration needed." },
-  { question: "Since when has STA been in transportation?", answer: "STA Transport has operated continuously from Coimbatore since 1982 — 44+ years of full-load lorry experience in Coimbatore district." },
+  { question: "What does STA offer?", answer: "Goods transport by open-body lorry, trucks on hire (daily, monthly or contract) and loaders & packers services in Coimbatore district." },
+  { question: "What vehicle do you use?", answer: "An open-body lorry, suited to building material, steel, packed goods, bales and crated cargo. Suitability and load are confirmed per booking." },
+  { question: "Which areas do you cover?", answer: "Coimbatore district, including Pollachi, Mettupalayam, Sulur, Annur, Madukkarai and Kinathukadavu." },
+  { question: "How do I get a quote?", answer: "WhatsApp or call +91 94430 33055 with pickup, destination, cargo type and weight. Mon–Sat, 9 AM–7 PM." },
+  { question: "Are return loads available?", answer: "Only occasionally and only on availability. Enquire with your route and we will confirm." },
 ];
 
 
@@ -41,7 +41,7 @@ const services = [
   {
     icon: Truck,
     title: "Full Load Transport",
-    description: "Dedicated truck for your exclusive cargo across Tamil Nadu. Complete control, faster delivery with no intermediate stops.",
+    description: "Dedicated truck for your exclusive cargo across Coimbatore district. Complete control, faster delivery with no intermediate stops.",
     isPrimary: true,
     features: ["Dedicated lorry", "Direct delivery", "Experienced handling"],
     link: "/transportation/services/full-load"
@@ -70,7 +70,7 @@ const services = [
   {
     icon: Building2,
     title: "Construction Material",
-    description: "Heavy-duty transport for sand, cement, steel, and building materials across Tamil Nadu.",
+    description: "Heavy-duty transport for sand, cement, steel, and building materials across Coimbatore district.",
     features: ["Heavy loads", "Tipper trucks", "Material safety"],
     link: "/transportation/services/construction-material"
   },
@@ -144,7 +144,7 @@ const Transportation = () => {
               <div className="max-w-4xl">
                 <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-background text-[11px] font-bold tracking-[0.18em] uppercase text-primary shadow-xl ring-1 ring-primary-foreground/40 mb-8">
                   <span className="h-1.5 w-1.5 rounded-full bg-secondary" />
-                  STA Transport · Since 1982 · 44+ Years
+                  STA Corporate Solutions · Since 1982 · 44+ Years
                 </div>
                 <h1 className="text-display-2xl text-primary-foreground mb-6">
                   Transportation since 1982
@@ -275,7 +275,7 @@ const Transportation = () => {
                   Service Areas
                 </h2>
                 <p className="text-lg text-muted-foreground">
-                  Covering all major cities across Tamil Nadu
+                  Covering Coimbatore district
                 </p>
               </div>
 

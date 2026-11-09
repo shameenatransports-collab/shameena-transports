@@ -1,5 +1,5 @@
 # Robots.txt for STA Corporate Solutions — Coimbatore
-# Last reviewed: 2026-06
+# Last reviewed: 2026-11
 
 # ===== Default: open to all well-behaved crawlers =====
 User-agent: *

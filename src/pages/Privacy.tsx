@@ -35,7 +35,7 @@ const Privacy = () => {
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-4">
                 Privacy Policy
               </h1>
-              <p className="text-lg text-primary-foreground/90">Effective: 1 June 2026 · Version 2.0</p>
+              <p className="text-lg text-primary-foreground/90">Effective: 10 November 2026 · Version 2.1</p>
             </div>
           </div>
         </section>

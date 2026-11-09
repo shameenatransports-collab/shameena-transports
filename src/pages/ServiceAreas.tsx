@@ -12,7 +12,7 @@ export default function ServiceAreas() {
   return <>
     <Helmet>
       <title>Coimbatore Service Directory | STA</title>
-      <meta name="description" content="Full Load lorry transport for businesses in Coimbatore district, Tamil Nadu. Confirm service availability." />
+      <meta name="description" content="Lorry transport in Coimbatore district, Tamil Nadu. Confirm service availability." />
       <link rel="canonical" href={canonical("/service-areas")} />
       <meta property="og:title" content="Coimbatore Service Directory | STA" />
       <meta property="og:description" content="Enquiry guidance for Coimbatore district, Tamil Nadu, coordinated from our Podanur, Coimbatore office." />
@@ -24,7 +24,7 @@ export default function ServiceAreas() {
         <div className="container mx-auto px-4 max-w-4xl">
           <p className="text-primary-foreground/80 mb-4">Coimbatore District</p>
           <h1 className="text-3xl md:text-5xl font-bold text-primary-foreground mb-6">Coimbatore service directory</h1>
-          <p className="text-lg text-primary-foreground/90">Full Load lorry transport, for businesses only. Enquiries are coordinated from our Podanur, Coimbatore office; these city pages do not represent local branches.</p>
+          <p className="text-lg text-primary-foreground/90">Goods transport, trucks on hire and loaders & packers. Enquiries are coordinated from our Podanur, Coimbatore office; these city pages do not represent local branches.</p>
         </div>
       </section>
       <nav aria-label="Districts" className="container mx-auto px-4 py-8 flex flex-wrap gap-x-6 gap-y-3">{states.map(state => <a key={state} href={`#${state.toLowerCase().replace(/ /g, "-")}`} className="text-primary underline underline-offset-4">{state}</a>)}</nav>
