@@ -14,7 +14,7 @@ const LOCAL_CONTEXT: Record<string, { connections: string; planning: string }> =
 };
 
 export function practiceHeritage(_pillarId: string) {
-  return { value: "1982", label: "Transport since", description: "STA Corporate Solutions has operated from Coimbatore since 1982, with 12+ trailers and lorries." };
+  return { value: "1982", label: "Transport since", description: "STA Corporate Solutions has operated from Coimbatore since 1982." };
 }
 
 export function localPageContent(pillar: Pillar, city: City) {
@@ -27,7 +27,7 @@ export function localPageContent(pillar: Pillar, city: City) {
     transportation: ["Pickup and delivery addresses, including site access", "Cargo type, weight, dimensions and packaging", "Preferred loading date and loading/unloading arrangements"],
   };
   const boundaries: Record<string, string> = {
-    transportation: "Vehicle suitability, loading date and freight are confirmed for each booking. Transit insurance can be arranged on request.",
+    transportation: "Vehicle suitability, loading date and freight are confirmed for each booking.",
   };
   const heading = headings[pillar.id] ?? `${pillar.name} in ${city.name}`;
   return {

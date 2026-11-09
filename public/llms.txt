@@ -7,7 +7,7 @@
 - **Legal name:** STA Corporate Solutions
 - **Headquarters:** No 10/135-G, Gurusamy Pillai St Extn, Podanur, Coimbatore, Coimbatore South, Tamil Nadu, India, 641023
 - **Transport founded:** 1982 (44+ years of lorry transport operations from Coimbatore)
-- **Fleet:** 12+ owned trailers and lorries (open body, multi-axle). No broker chain.
+- **Vehicle:** Open-body lorry (building material, steel, pipes, packed goods, bales, crated cargo). Not suited to containers, loose sand or gravel, liquids, temperature-controlled goods or oversize machinery.
 - **Service area:** Coimbatore district, Tamil Nadu
 - **Towns covered:** Coimbatore, Pollachi, Mettupalayam, Sulur, Annur, Madukkarai, Kinathukadavu
 - **Hours:** Monday–Saturday, 09:00–19:00 IST
@@ -17,15 +17,15 @@
 
 ## What we do (answer-first)
 
-STA Transport offers dedicated Full Load lorry transport from Coimbatore since 1982, using a fleet of 12+ owned vehicles. Also offered: trucks on hire (12/14-wheeler and 40 ft open trucks; daily, monthly or contract basis) and loaders and packers services (house shifting, office relocation, loading and unloading). Return loads are not a regular offering; availability is confirmed only on enquiry. Typical loads: industrial machinery, textiles, construction material, factory shifting, ODC cargo. Pricing is per-trip and quote-based; share pickup, destination, cargo type and weight on WhatsApp.
+STA Transport offers dedicated Full Load lorry transport from Coimbatore since 1982. Also offered: trucks on hire (12/14-wheeler and 40 ft open trucks; daily, monthly or contract basis) and loaders and packers services (house shifting, office relocation, loading and unloading). Return loads are not a regular offering; availability is confirmed only on enquiry. Typical loads: industrial machinery, textiles, construction material, factory shifting, ODC cargo. Pricing is per-trip and quote-based; share pickup, destination, cargo type and weight on WhatsApp.
 
 ## Common questions (answer-first)
 
 **Q: What lorry service does STA offer?**
 A: Dedicated Full Load lorry service. Return loads are not promoted; if a truck is returning on your route, availability is confirmed on enquiry.
 
-**Q: How many lorries does STA own?**
-A: 12+ owned trailers and lorries. STA does not operate as a broker.
+**Q: What vehicle does STA use?**
+A: An open-body lorry, suited to building material, steel, pipes, packed goods, bales and crated cargo. Capacity and suitability are confirmed per booking. STA does not offer cargo insurance.
 
 **Q: Which areas does STA serve?**
 A: Coimbatore district, Tamil Nadu. Route confirmation is needed per booking.
@@ -42,7 +42,7 @@ A: WhatsApp +91 94430 33055 with pickup, destination, cargo type and weight. Ava
 - [About](https://sta-corporate.in/about): Transport heritage since 1982.
 - [Transport categories](https://sta-corporate.in/services/transport-categories): Cargo and vehicle categories.
 - [Transportation](https://sta-corporate.in/transportation): Full Load lorry transport in Coimbatore district.
-- [Fleet](https://sta-corporate.in/fleet): 12+ trailers and lorries.
+- [Open-body lorry](https://sta-corporate.in/fleet): What it carries and what it does not.
 - [Service Areas](https://sta-corporate.in/service-areas): Coimbatore district.
 - [Contact](https://sta-corporate.in/contact): Phone, WhatsApp, address and enquiry form.
 

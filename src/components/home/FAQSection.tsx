@@ -30,7 +30,7 @@ const faqs = [
   {
     question: "Why choose STA Corporate Solutions?",
     answer:
-      "With 44+ years of experience, business service knowledge, and our own fleet of 12+ lorries, we focus on transparent assistance and practical pricing for eligible requirements.",
+      "With 44+ years of experience, business service knowledge, we focus on transparent assistance and practical pricing for eligible requirements.",
   },
 ];
 

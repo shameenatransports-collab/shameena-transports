@@ -115,7 +115,7 @@ export const transportServiceSchema = {
     { "@type": "City", "name": "Coimbatore" },
     { "@type": "AdministrativeArea", "name": "Coimbatore District" }
   ],
-  "description": "Dedicated full load lorry transport in Coimbatore district since 1982 with 12+ own lorries from Coimbatore.",
+  "description": "Dedicated full load lorry transport in Coimbatore district since 1982.",
   "offers": {
     "@type": "Offer",
     "availability": "https://schema.org/InStock",
@@ -194,14 +194,14 @@ export const websiteSchema = {
 
 export const fullLoadServiceSchema = transportServiceSchema;
 
-export const fleetSchema = {
+export const openBodyLorrySchema = {
   "@context": "https://schema.org",
-  "@type": "ItemList",
-  "@id": "https://sta-corporate.in/fleet#vehicles",
-  "name": "STA Corporate Solutions Fleet — Coimbatore",
-  "description": "Our fleet of 12+ modern lorries for transport services across Tamil Nadu",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "item": { "@type": "Vehicle", "name": "Multi-Axle Trailer", "description": "20-25 Ton capacity — heavy machinery & ODC cargo" } },
-    { "@type": "ListItem", "position": 2, "item": { "@type": "Vehicle", "name": "Open Body Lorry", "description": "10-20 Ton capacity — construction materials & bulk goods" } }
-  ]
+  "@type": "Service",
+  "@id": "https://sta-corporate.in/fleet#service",
+  "name": "Open-Body Lorry Goods Transport, Coimbatore",
+  "serviceType": "Open body lorry goods transport",
+  "provider": { "@type": "LocalBusiness", "name": "STA Corporate Solutions", "@id": "https://sta-corporate.in/#localbusiness" },
+  "areaServed": { "@type": "AdministrativeArea", "name": "Coimbatore District, Tamil Nadu" },
+  "description": "Open-body lorry for building material, steel, pipes, bagged and packed goods, textile bales and crated cargo in Coimbatore district. Not suited to containers, loose sand or gravel, liquids, temperature-controlled goods or oversize machinery. Vehicle suitability and permitted load are confirmed per booking.",
+  "audience": { "@type": "BusinessAudience", "audienceType": "Businesses" }
 };

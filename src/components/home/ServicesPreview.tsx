@@ -9,9 +9,6 @@ const services = [
   { icon: Wrench, title: "Loaders & Packers", desc: "Skilled loaders for house shifting, office relocation, loading and unloading.", href: "/transportation/services/loaders-packers" },
   { icon: Shirt, title: "Textile & Yarn Cargo", desc: "Careful bale, carton and yarn movement within the Coimbatore industrial belt.", href: "/transportation/services/textile-cargo" },
   { icon: Factory, title: "Factory & Warehouse Shifting", desc: "Planned relocation of plants and warehouses with multi-vehicle coordination.", href: "/transportation/services/factory-shifting" },
-  // heavy machinery and containers: see /transportation
-  // { icon: Wrench, title: "Heavy Machinery", desc: "Low-bed and ODC movement for presses, CNCs, generators and transformers.", href: "/transportation/services/heavy-machinery" },
-  // { icon: Container, title: "Containerised Cargo", desc: "20ft and 40ft container movement linked to ICD/CFS and port-bound cargo.", href: "/transportation/services/containerized" },
 ];
 
 export function ServicesPreview() {
@@ -23,7 +20,7 @@ export function ServicesPreview() {
             <p className="text-eyebrow text-primary mb-5">Transportation · Since 1982</p>
             <h2 className="text-display-xl text-foreground mb-6">Move what matters, when it matters.</h2>
             <p className="text-headline text-muted-foreground max-w-2xl mx-auto">
-              Full Load lorry transport from our own 12+ vehicle fleet, serving businesses in Coimbatore district.
+              Full Load open-body lorry transport, serving businesses in Coimbatore district.
             </p>
           </div>
         </ScrollReveal>

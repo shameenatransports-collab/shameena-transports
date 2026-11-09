@@ -56,11 +56,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sta-corporate.in/transportation/services/containerized</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://sta-corporate.in/transportation/services/textile-cargo</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -72,16 +67,6 @@
   </url>
   <url>
     <loc>https://sta-corporate.in/transportation/services/factory-shifting</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/transportation/services/heavy-machinery</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/transportation/services/project-cargo</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -116,11 +101,6 @@
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://sta-corporate.in/transportation/coimbatore/containerized</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
     <loc>https://sta-corporate.in/transportation/coimbatore/textile-cargo</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
@@ -132,16 +112,6 @@
   </url>
   <url>
     <loc>https://sta-corporate.in/transportation/coimbatore/factory-shifting</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/transportation/coimbatore/heavy-machinery</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/transportation/coimbatore/project-cargo</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
@@ -176,11 +146,6 @@
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://sta-corporate.in/transportation/pollachi/containerized</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
     <loc>https://sta-corporate.in/transportation/pollachi/textile-cargo</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
@@ -196,7 +161,12 @@
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://sta-corporate.in/transportation/pollachi/heavy-machinery</loc>
+    <loc>https://sta-corporate.in/transportation/pollachi/trucks-on-hire</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/pollachi/loaders-packers</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
@@ -207,11 +177,6 @@
   </url>
   <url>
     <loc>https://sta-corporate.in/transportation/mettupalayam/full-load</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/transportation/mettupalayam/containerized</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
@@ -231,7 +196,12 @@
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://sta-corporate.in/transportation/mettupalayam/heavy-machinery</loc>
+    <loc>https://sta-corporate.in/transportation/mettupalayam/trucks-on-hire</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/mettupalayam/loaders-packers</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
@@ -242,11 +212,6 @@
   </url>
   <url>
     <loc>https://sta-corporate.in/transportation/sulur/full-load</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/transportation/sulur/containerized</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
@@ -266,7 +231,12 @@
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://sta-corporate.in/transportation/sulur/heavy-machinery</loc>
+    <loc>https://sta-corporate.in/transportation/sulur/trucks-on-hire</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/sulur/loaders-packers</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
@@ -277,11 +247,6 @@
   </url>
   <url>
     <loc>https://sta-corporate.in/transportation/annur/full-load</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/transportation/annur/containerized</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
@@ -301,7 +266,12 @@
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://sta-corporate.in/transportation/annur/heavy-machinery</loc>
+    <loc>https://sta-corporate.in/transportation/annur/trucks-on-hire</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/annur/loaders-packers</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
@@ -312,11 +282,6 @@
   </url>
   <url>
     <loc>https://sta-corporate.in/transportation/madukkarai/full-load</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/transportation/madukkarai/containerized</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
@@ -336,7 +301,12 @@
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://sta-corporate.in/transportation/madukkarai/heavy-machinery</loc>
+    <loc>https://sta-corporate.in/transportation/madukkarai/trucks-on-hire</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/madukkarai/loaders-packers</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
@@ -347,11 +317,6 @@
   </url>
   <url>
     <loc>https://sta-corporate.in/transportation/kinathukadavu/full-load</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/transportation/kinathukadavu/containerized</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
@@ -371,7 +336,12 @@
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://sta-corporate.in/transportation/kinathukadavu/heavy-machinery</loc>
+    <loc>https://sta-corporate.in/transportation/kinathukadavu/trucks-on-hire</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/kinathukadavu/loaders-packers</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>

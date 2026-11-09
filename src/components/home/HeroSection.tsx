@@ -73,7 +73,7 @@ export function HeroSection() {
             transition={{ duration: 0.9, ease: easeApple, delay: 0.35 }}
             className="text-headline text-primary-foreground/85 max-w-2xl mx-auto mb-3"
           >
-            Full Load freight from our own 12+ vehicle fleet — 44+ years of dependable transport for businesses in Coimbatore district.
+            Full Load lorry transport — 44+ years of dependable transport for businesses in Coimbatore district.
           </motion.p>
           <motion.p
             initial={{ opacity: 0 }}

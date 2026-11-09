@@ -11,7 +11,7 @@ const values = [
   {
     icon: Shield,
     title: "Safety First",
-    description: "Every shipment is handled with care by experienced drivers on our own lorries.",
+    description: "Every shipment is handled with care by experienced drivers and loaders.",
   },
   {
     icon: Clock,
@@ -175,8 +175,8 @@ const About = () => {
                 <div className="text-primary-foreground/80 mt-2">Years in Transport</div>
               </div>
               <div>
-                <div className="text-4xl md:text-5xl font-bold text-secondary">12+</div>
-                <div className="text-primary-foreground/80 mt-2">Fleet Vehicles</div>
+                <div className="text-4xl md:text-5xl font-bold text-secondary">1982</div>
+\1<div className="text-primary-foreground/80 mt-2">Operating Since</div>
               </div>
               <div>
                 <div className="text-4xl md:text-5xl font-bold text-secondary">10</div>

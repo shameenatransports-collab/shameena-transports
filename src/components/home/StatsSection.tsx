@@ -10,9 +10,9 @@ const stats = [
   },
   {
     icon: Truck,
-    value: "12+",
-    label: "Fleet vehicles",
-    description: "Trailers & lorries",
+    value: "1982",
+    label: "Operating since",
+    description: "From Podanur, Coimbatore",
   },
   {
     icon: MapPin,

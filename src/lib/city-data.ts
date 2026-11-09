@@ -40,11 +40,11 @@ export const CITY_DATA: Record<CitySlug, CityData> = {
     heroIntro:
       "Our home district. STA has moved freight for Coimbatore's textile, pump, foundry and engineering businesses since 1982, from our Podanur base.",
     about:
-      "STA Corporate Solutions operates from Podanur, Coimbatore. Transportation has been our core since 1982 with a 12+ vehicle owned fleet.",
+      "STA Corporate Solutions operates from Podanur, Coimbatore. Transportation has been our core since 1982.",
     transport: {
       headline: "Full Load Lorry Transport from Coimbatore",
       description:
-        "Owned lorries and trailers based in Coimbatore, serving businesses across Coimbatore district and the nearby district towns. Vehicle suitability, date and freight are confirmed for each booking.",
+        "Open-body lorry transport from Coimbatore, serving businesses across Coimbatore district and the nearby district towns. Vehicle suitability, date and freight are confirmed for each booking.",
       routes: [
         "Coimbatore to Pollachi (about 40 km)",
         "Coimbatore to Mettupalayam (about 35 km)",

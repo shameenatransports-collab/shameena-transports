@@ -22,7 +22,7 @@ const services = [
       "Complete control over pickup and delivery time",
       "Ideal for large volume goods (5-25 tons)",
       "Faster transit with no intermediate stops",
-      "Available in 20ft, 24ft, and multi-axle options",
+      "Open-body lorry, sheeted where needed",
       "Best for factory-to-factory or bulk movements",
     ],
   },
@@ -45,11 +45,9 @@ const services = [
     title: "Construction Material Transport",
     description: "Heavy-duty transport for building materials",
     features: [
-      "Sand, cement, bricks transport",
+      "Cement, bricks and bagged material transport",
       "Steel bars and TMT rods",
-      "Heavy machinery and equipment",
-      "Aggregates and stone materials",
-      "Tipper and trailer services",
+            "Open-body lorry, site-direct delivery",
     ],
   },
   {
