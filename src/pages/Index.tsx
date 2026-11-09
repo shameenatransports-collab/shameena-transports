@@ -17,7 +17,7 @@ const Index = () => {
     <>
       <Helmet>
         <title>STA Corporate Solutions | Lorry Transport for Coimbatore</title>
-        <meta name="description" content="Full Load lorry transport since 1982 (43+ yrs) for businesses in Coimbatore district — Coimbatore HQ." />
+        <meta name="description" content="Full Load lorry transport since 1982 (44+ yrs) for businesses in Coimbatore district — Coimbatore HQ." />
         <meta name="keywords" content="STA Corporate Solutions, lorry transport Coimbatore, full load transport Coimbatore, factory shifting Coimbatore, textile cargo Coimbatore" />
         <link rel="canonical" href="https://sta-corporate.in" />
         <meta property="og:title" content="STA Corporate Solutions | Lorry Transport Since 1982 · Coimbatore" />

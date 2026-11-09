@@ -9,7 +9,7 @@ export const organizationSchema = {
   "legalName": "STA Corporate Solutions",
   "url": "https://sta-corporate.in",
   "logo": "https://sta-corporate.in/logo.png",
-  "description": "STA Corporate Solutions — lorry transport since 1982 (43+ years) for businesses in Coimbatore district, headquartered in Coimbatore.",
+  "description": "STA Corporate Solutions — lorry transport since 1982 (44+ years) for businesses in Coimbatore district, headquartered in Coimbatore.",
   "foundingDate": "1982",
   "slogan": "Lorry Transport Since 1982 · Coimbatore",
   "address": {
@@ -54,7 +54,7 @@ export const localBusinessSchema = {
   "name": "STA Corporate Solutions",
   "alternateName": ["STA Corporate", "STA Solutions", "STA Coimbatore", "STA Corporate Solutions Coimbatore"],
   "image": ["https://sta-corporate.in/logo.png"],
-  "description": "STA Corporate Solutions — Full Load lorry transport since 1982 (43+ years) for businesses in Coimbatore.",
+  "description": "STA Corporate Solutions — Full Load lorry transport since 1982 (44+ years) for businesses in Coimbatore.",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "No 10/135-G, Gurusamy Pillai St Extn, Podanur",
@@ -139,6 +139,8 @@ export const transportBusinessSchema = {
   "areaServed": localBusinessSchema.areaServed,
   "makesOffer": [
     { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Full Load Lorry Transport", "serviceType": "Full Truck Load Transport" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Trucks on Hire", "serviceType": "Truck Rental" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Loaders and Packers", "serviceType": "Moving and Packing" } },
     { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Factory and Warehouse Shifting", "serviceType": "Commercial Relocation" } }
   ]
 };

@@ -7,8 +7,8 @@ import heroBg from "@/assets/hero-bg.jpg";
 
 const verticals = [
   { icon: Truck, title: "Full Load Transport", href: "/transportation/services/full-load", desc: "Dedicated lorry, door to door" },
-  { icon: Truck, title: "Door-to-Door", href: "/transportation/services/door-to-door", desc: "Pickup to delivery, no transhipment" },
-  { icon: Factory, title: "Factory Shifting", href: "/transportation/services/factory-shifting", desc: "Plant & warehouse relocation" },
+  { icon: Truck, title: "Trucks on Hire", href: "/transportation/services/trucks-on-hire", desc: "12/14-wheeler & 40 ft open trucks" },
+  { icon: Factory, title: "Loaders & Packers", href: "/transportation/services/loaders-packers", desc: "House & office shifting, loading" },
 ];
 
 const easeApple = [0.22, 1, 0.36, 1] as const;
@@ -73,7 +73,7 @@ export function HeroSection() {
             transition={{ duration: 0.9, ease: easeApple, delay: 0.35 }}
             className="text-headline text-primary-foreground/85 max-w-2xl mx-auto mb-3"
           >
-            Full Load freight from our own 12+ vehicle fleet — 43+ years of dependable transport for businesses in Coimbatore district.
+            Full Load freight from our own 12+ vehicle fleet — 44+ years of dependable transport for businesses in Coimbatore district.
           </motion.p>
           <motion.p
             initial={{ opacity: 0 }}

@@ -4,7 +4,7 @@ import { ScrollReveal, ScrollRevealItem } from "@/components/ui/scroll-reveal";
 const stats = [
   {
     icon: Clock,
-    value: "43+",
+    value: "44+",
     label: "Years in transport",
     description: "STA Transport since 1982",
   },

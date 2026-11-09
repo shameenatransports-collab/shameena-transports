@@ -83,6 +83,18 @@ export const PILLARS: Pillar[] = [
         benefits: ["Single PoC for multi-site projects", "Daily dispatch planning", "MIS reporting on request", "Long-term rate contracts"],
       },
       {
+        slug: "trucks-on-hire", name: "Trucks on Hire", shortName: "Trucks on Hire",
+        description: "Trucks on hire for local and long-distance transport needs in Coimbatore district — 12-wheeler and 14-wheeler trucks and open trucks with a 40 ft platform, on a daily, monthly or contract basis.",
+        keywords: ["trucks on hire", "truck hire coimbatore", "lorry on rent", "12 wheeler on hire", "14 wheeler on hire", "40 feet open truck"],
+        benefits: ["12-wheeler / 14-wheeler trucks", "Open trucks (40 ft platform)", "Daily, monthly or contract basis", "Experienced drivers"],
+      },
+      {
+        slug: "loaders-packers", name: "Loaders & Packers Services", shortName: "Loaders & Packers",
+        description: "Professional loaders and helpers for safe and efficient handling — house shifting, office relocation, and loading and unloading services.",
+        keywords: ["loaders and packers", "packers and movers coimbatore", "loading unloading service", "office relocation", "house shifting"],
+        benefits: ["House shifting", "Office relocation", "Loading & unloading", "Skilled, careful loaders"],
+      },
+      {
         slug: "door-to-door", name: "Door-to-Door Transport", shortName: "Door-to-Door",
         description: "Pickup from your loading bay, delivery direct to consignee. No transhipment, no godown layovers.",
         keywords: ["door to door transport", "direct delivery", "pickup and delivery"],

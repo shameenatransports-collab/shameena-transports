@@ -14,6 +14,8 @@ import logo from "@/assets/sta-logo.png";
 const serviceLinks = [
   { name: "Transportation", href: "/transportation" },
   { name: "Full Load", href: "/transportation/services/full-load" },
+  { name: "Trucks on Hire", href: "/transportation/services/trucks-on-hire" },
+  { name: "Loaders & Packers", href: "/transportation/services/loaders-packers" },
   { name: "Transport Categories", href: "/services/transport-categories" },
 ];
 

@@ -10,7 +10,7 @@ const faqs = [
   {
     question: "What services does STA Corporate Solutions provide in Coimbatore?",
     answer:
-      "STA Corporate Solutions is a lorry transport business based in Podanur, Coimbatore. We offer Full Load transport, textile and yarn cargo, construction material, factory and warehouse shifting, heavy machinery and containerised cargo across Coimbatore district.",
+      "STA Corporate Solutions is a lorry transport business based in Podanur, Coimbatore. We offer goods transport (Full Load), trucks on hire (12/14-wheeler and 40 ft open trucks, daily, monthly or contract basis), loaders and packers services, textile and yarn cargo, construction material, factory and warehouse shifting, heavy machinery and containerised cargo across Coimbatore district.",
   },
   {
     question: "What is Full Load transport and when should I use it?",
@@ -30,7 +30,7 @@ const faqs = [
   {
     question: "Why choose STA Corporate Solutions?",
     answer:
-      "With 43+ years of experience, business service knowledge, and our own fleet of 12+ lorries, we focus on transparent assistance and practical pricing for eligible requirements.",
+      "With 44+ years of experience, business service knowledge, and our own fleet of 12+ lorries, we focus on transparent assistance and practical pricing for eligible requirements.",
   },
 ];
 

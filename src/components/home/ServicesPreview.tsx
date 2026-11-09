@@ -5,10 +5,13 @@ import serviceTransportation from "@/assets/service-transportation.jpg";
 
 const services = [
   { icon: Truck, title: "Full Load Transport", desc: "A dedicated truck for your cargo, door to door across Coimbatore district.", href: "/transportation/services/full-load" },
+  { icon: Truck, title: "Trucks on Hire", desc: "12/14-wheeler and 40 ft open trucks on a daily, monthly or contract basis.", href: "/transportation/services/trucks-on-hire" },
+  { icon: Wrench, title: "Loaders & Packers", desc: "Skilled loaders for house shifting, office relocation, loading and unloading.", href: "/transportation/services/loaders-packers" },
   { icon: Shirt, title: "Textile & Yarn Cargo", desc: "Careful bale, carton and yarn movement within the Coimbatore industrial belt.", href: "/transportation/services/textile-cargo" },
   { icon: Factory, title: "Factory & Warehouse Shifting", desc: "Planned relocation of plants and warehouses with multi-vehicle coordination.", href: "/transportation/services/factory-shifting" },
-  { icon: Wrench, title: "Heavy Machinery", desc: "Low-bed and ODC movement for presses, CNCs, generators and transformers.", href: "/transportation/services/heavy-machinery" },
-  { icon: Container, title: "Containerised Cargo", desc: "20ft and 40ft container movement linked to ICD/CFS and port-bound cargo.", href: "/transportation/services/containerized" },
+  // heavy machinery and containers: see /transportation
+  // { icon: Wrench, title: "Heavy Machinery", desc: "Low-bed and ODC movement for presses, CNCs, generators and transformers.", href: "/transportation/services/heavy-machinery" },
+  // { icon: Container, title: "Containerised Cargo", desc: "20ft and 40ft container movement linked to ICD/CFS and port-bound cargo.", href: "/transportation/services/containerized" },
 ];
 
 export function ServicesPreview() {

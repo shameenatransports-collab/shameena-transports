@@ -50,9 +50,9 @@ const About = () => {
     <>
       <Helmet>
         <title>About STA Corporate Solutions | Lorry Transport Since 1982</title>
-        <meta name="description" content="STA Corporate Solutions — lorry transport since 1982 (43+ years) for businesses in Coimbatore district, headquartered in Coimbatore." />
+        <meta name="description" content="STA Corporate Solutions — lorry transport since 1982 (44+ years) for businesses in Coimbatore district, headquartered in Coimbatore." />
         <link rel="canonical" href="https://sta-corporate.in/about" />
-        <meta property="og:title" content="About STA Corporate Solutions | 43+ Years in Lorry Transport · Coimbatore" />
+        <meta property="og:title" content="About STA Corporate Solutions | 44+ Years in Lorry Transport · Coimbatore" />
         <meta property="og:description" content="Lorry transport since 1982, serving Coimbatore district." />
         <meta property="og:url" content="https://sta-corporate.in/about" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
@@ -78,7 +78,7 @@ const About = () => {
                 </span>
               </h1>
               <p className="text-headline text-primary-foreground/85 max-w-2xl">
-                43+ years of dependable lorry transport for the businesses of Coimbatore district.
+                44+ years of dependable lorry transport for the businesses of Coimbatore district.
               </p>
             </div>
           </div>
@@ -94,7 +94,7 @@ const About = () => {
                 </h2>
                 <div className="space-y-4 text-muted-foreground">
                   <p>
-                    <strong className="text-foreground">STA Transport &amp; Logistics</strong> began in <strong className="text-foreground">1982</strong> in Coimbatore as a reliable goods transport operator. Over <strong className="text-foreground">43+ years of service excellence</strong>, we have grown into a trusted full-load lorry transport partner for textile mills and foundries in Coimbatore, and manufacturers across Coimbatore district.
+                    <strong className="text-foreground">STA Transport &amp; Logistics</strong> began in <strong className="text-foreground">1982</strong> in Coimbatore as a reliable goods transport operator. Over <strong className="text-foreground">44+ years of service excellence</strong>, we have grown into a trusted full-load lorry transport partner for textile mills and foundries in Coimbatore, and manufacturers across Coimbatore district.
                   </p>
                   <p>
                     Today, <strong className="text-foreground">STA Corporate Solutions</strong> serves businesses in Coimbatore district from our Coimbatore headquarters, with the same standards of integrity, responsibility and customer care we started with.
@@ -109,7 +109,7 @@ const About = () => {
                   imgClassName="rounded-lg"
                 />
                 <div className="absolute -bottom-6 -left-6 bg-accent text-accent-foreground p-6 rounded-lg shadow-lg">
-                  <div className="text-4xl font-bold">43+</div>
+                  <div className="text-4xl font-bold">44+</div>
                   <div className="text-sm">Years in Transport</div>
                 </div>
               </div>
@@ -130,7 +130,7 @@ const About = () => {
               <div className="bg-card p-8 rounded-lg border border-border">
                 <h3 className="text-2xl font-bold text-foreground mb-4">Our Vision</h3>
                 <p className="text-muted-foreground">
-                  To become the most trusted transport partner for businesses in Coimbatore — built on 43+ years of transport heritage and a fleet that businesses can rely on for the long term.
+                  To become the most trusted transport partner for businesses in Coimbatore — built on 44+ years of transport heritage and a fleet that businesses can rely on for the long term.
                 </p>
               </div>
             </div>
@@ -171,7 +171,7 @@ const About = () => {
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
               <div>
-                <div className="text-4xl md:text-5xl font-bold text-secondary">43+</div>
+                <div className="text-4xl md:text-5xl font-bold text-secondary">44+</div>
                 <div className="text-primary-foreground/80 mt-2">Years in Transport</div>
               </div>
               <div>

@@ -86,6 +86,16 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://sta-corporate.in/transportation/services/trucks-on-hire</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/services/loaders-packers</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://sta-corporate.in/transportation/services/door-to-door</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -132,6 +142,16 @@
   </url>
   <url>
     <loc>https://sta-corporate.in/transportation/coimbatore/project-cargo</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/coimbatore/trucks-on-hire</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/coimbatore/loaders-packers</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>

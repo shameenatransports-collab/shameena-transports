@@ -169,7 +169,7 @@ const Fleet = () => {
                 <div className="text-primary-foreground/80 mt-2">Insured</div>
               </div>
               <div>
-                <div className="text-4xl md:text-5xl font-bold text-secondary">43+</div>
+                <div className="text-4xl md:text-5xl font-bold text-secondary">44+</div>
                 <div className="text-primary-foreground/80 mt-2">Years Experience</div>
               </div>
               <div>

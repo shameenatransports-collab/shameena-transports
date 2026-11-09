@@ -2,7 +2,7 @@ import { Shield, Clock, Headphones, Award, MapPin, Truck } from "lucide-react";
 import { ScrollReveal, ScrollRevealItem } from "@/components/ui/scroll-reveal";
 
 const features = [
-  { icon: Award, title: "43+ years in transport", description: "Coimbatore-rooted transportation business since 1982 — service excellence backed by decades of fleet operations." },
+  { icon: Award, title: "44+ years in transport", description: "Coimbatore-rooted transportation business since 1982 — service excellence backed by decades of fleet operations." },
   { icon: Shield, title: "Careful handling", description: "Experienced drivers on our own lorries — no broker hand-offs." },
   { icon: Clock, title: "Disciplined follow-up", description: "Clear coordination from enquiry to delivery, with a single point of contact." },
   { icon: Truck, title: "Own fleet since 1982", description: "12+ owned vehicles, so dispatch and pricing stay in our control." },
@@ -25,7 +25,7 @@ export function WhyChooseUs() {
           <div className="max-w-3xl mx-auto text-center mb-16 md:mb-20">
             <p className="text-eyebrow text-secondary mb-5">Why STA</p>
             <h2 className="text-display-xl mb-6">
-              43+ years in transport,
+              44+ years in transport,
               <br />
               <span className="text-primary-foreground/60">lorry transport for Coimbatore.</span>
             </h2>

@@ -4,7 +4,8 @@ import logo from "@/assets/sta-logo.png";
 
 const serviceLinks = [
   { name: "Transportation", href: "/transportation", icon: Truck },
-  { name: "Factory Shifting", href: "/transportation/services/factory-shifting", icon: Factory },
+  { name: "Trucks on Hire", href: "/transportation/services/trucks-on-hire", icon: Truck },
+  { name: "Loaders & Packers", href: "/transportation/services/loaders-packers", icon: Factory },
 ];
 
 const quickLinks = [
