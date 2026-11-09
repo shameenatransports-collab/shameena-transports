@@ -19,8 +19,8 @@ const fleetData = [
     type: "Open Body Lorries",
     capacity: "10-20 Tons",
     count: "6",
-    ideal: "Construction materials, bulk goods",
-    features: ["Easy loading/unloading", "Sand & gravel", "Steel & TMT bars"],
+    ideal: "Construction materials, bagged and packed goods, general cargo",
+    features: ["Easy loading/unloading", "Cement, steel & TMT bars", "Textile bales & cartons (sheeted)"],
   },
 ];
 
@@ -151,6 +151,21 @@ const Fleet = () => {
                   </CardContent>
                 </Card>
               ))}
+            </div>
+          </div>
+        </section>
+
+
+        {/* Suitability note */}
+        <section className="pb-16 bg-background">
+          <div className="container mx-auto px-4 max-w-3xl">
+            <div className="rounded-xl border border-border bg-muted/40 p-6 text-sm text-muted-foreground">
+              <h3 className="text-base font-semibold text-foreground mb-2">Choosing the right vehicle</h3>
+              <p className="mb-2">
+                Open-body lorries suit building material, bagged and packed goods, steel, pipes, bales and crated cargo, sheeted with tarpaulin where needed.
+                They are not suited to containers, loose sand or gravel, liquids, temperature-controlled goods or oversize machinery.
+              </p>
+              <p>Vehicle suitability, capacity and loading date are confirmed for each booking — call or WhatsApp us with your cargo details.</p>
             </div>
           </div>
         </section>
