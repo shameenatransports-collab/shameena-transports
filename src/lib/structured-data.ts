@@ -9,9 +9,9 @@ export const organizationSchema = {
   "legalName": "STA Corporate Solutions",
   "url": "https://sta-corporate.in",
   "logo": "https://sta-corporate.in/logo.png",
-  "description": "STA Corporate Solutions — Transportation since 1982 (43+ years). Financial Services and Legal & CA practices launched mid-2025. Three integrated practices for Coimbatore and Tiruppur, headquartered in Coimbatore.",
+  "description": "STA Corporate Solutions — lorry transport since 1982 (43+ years) for businesses in Coimbatore and Tiruppur districts, headquartered in Coimbatore.",
   "foundingDate": "1982",
-  "slogan": "Transport Since 1982 · Three Integrated Practices for Coimbatore & Tiruppur",
+  "slogan": "Lorry Transport Since 1982 · Coimbatore & Tiruppur",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "No 10/135-G, Gurusamy Pillai St Extn, Podanur",
@@ -39,16 +39,7 @@ export const organizationSchema = {
   "knowsAbout": [
     "Full Load Lorry Transport",
     "Return Load Transport",
-    "Factory Shifting",
-    "Startup India Recognition",
-    "Startup and Deep-Tech Funding Assistance",
-    "Seed Funding and Grants",
-    "Government Startup Schemes",
-    "Property Documentation",
-    "Company Registration",
-    "GST Registration",
-    "Trademark Filing",
-    "GST and Income Tax Compliance"
+    "Factory Shifting"
   ],
   "areaServed": [
     { "@type": "City", "name": "Coimbatore" },
@@ -66,7 +57,7 @@ export const localBusinessSchema = {
   "name": "STA Corporate Solutions",
   "alternateName": ["STA Corporate", "STA Solutions", "STA Coimbatore", "STA Corporate Solutions Coimbatore"],
   "image": ["https://sta-corporate.in/logo.png"],
-  "description": "STA Corporate Solutions — Transportation since 1982 (43+ years of service excellence). Financial Services (startup and deep-tech funding assistance) and Legal & CA practices added mid-2025. Three integrated practices for businesses in Coimbatore and Tiruppur.",
+  "description": "STA Corporate Solutions — Full Load and Return Load lorry transport since 1982 (43+ years) for businesses in Coimbatore and Tiruppur.",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "No 10/135-G, Gurusamy Pillai St Extn, Podanur",
@@ -109,27 +100,6 @@ export const localBusinessSchema = {
           { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Full Load Lorry Transport" } },
           { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Return Load Transport", "description": "Subject to route availability; confirm before booking." } },
           { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Factory Shifting" } }
-        ]
-      },
-      {
-        "@type": "OfferCatalog",
-        "name": "Financial Services",
-        "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Startup India (DPIIT) Recognition Assistance" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Seed Funding and Grant Application Assistance" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Deep-Tech Funding Assistance" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Bank Credit Documentation for Startups", "description": "For startups and deep-tech companies, strictly not personal loans. STA is not a lender; approval is decided by the bank or relevant authority." } }
-        ]
-      },
-      {
-        "@type": "OfferCatalog",
-        "name": "Legal & CA Services",
-        "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Property Documentation" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Company Registration" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Litigation Support" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "GST & Income Tax Compliance" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Accounts & Audit Support" } }
         ]
       }
     ]
@@ -198,56 +168,6 @@ export const createCityTransportSchema = (city: { name: string; slug: string; me
   "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "priceCurrency": "INR" }
 });
 
-export const financialServiceSchema = {
-  "@context": "https://schema.org",
-  "@type": "FinancialService",
-  "@id": "https://sta-corporate.in/financial-services#service",
-  "name": "Startup & Deep-Tech Funding Assistance Coimbatore & Tiruppur",
-  "serviceType": "Funding Assistance",
-  "provider": {
-    "@type": "LocalBusiness",
-    "name": "STA Corporate Solutions",
-    "@id": "https://sta-corporate.in/#localbusiness"
-  },
-  "areaServed": [
-    { "@type": "City", "name": "Coimbatore" },
-    { "@type": "City", "name": "Tiruppur" },
-    { "@type": "AdministrativeArea", "name": "Coimbatore District" },
-    { "@type": "AdministrativeArea", "name": "Tiruppur District" }
-  ],
-  "description": "Funding assistance for startups and deep-tech companies: Startup India recognition, seed funding and grants, bank-credit documentation and fundraising readiness in Coimbatore and Tiruppur. Not a lender. Not for personal loans.",
-  "offers": {
-    "@type": "Offer",
-    "availability": "https://schema.org/InStock",
-    "priceCurrency": "INR"
-  }
-};
-
-export const legalServiceSchema = {
-  "@context": "https://schema.org",
-  "@type": "LegalService",
-  "@id": "https://sta-corporate.in/legal-services#service",
-  "name": "Legal & CA Services Coimbatore & Tiruppur — Business Legal, Tax and Compliance",
-  "serviceType": "Legal Assistance",
-  "provider": {
-    "@type": "LocalBusiness",
-    "name": "STA Corporate Solutions",
-    "@id": "https://sta-corporate.in/#localbusiness"
-  },
-  "areaServed": [
-    { "@type": "City", "name": "Coimbatore" },
-    { "@type": "City", "name": "Tiruppur" },
-    { "@type": "AdministrativeArea", "name": "Coimbatore District" },
-    { "@type": "AdministrativeArea", "name": "Tiruppur District" }
-  ],
-  "description": "Legal documentation and CA professional services for businesses and corporates: company formation, contracts, IP, GST, income-tax, accounts and compliance support in Coimbatore and Tiruppur.",
-  "offers": {
-    "@type": "Offer",
-    "availability": "https://schema.org/InStock",
-    "priceCurrency": "INR"
-  }
-};
-
 export const createBreadcrumbSchema = (items: { name: string; url: string }[]) => ({
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -265,7 +185,7 @@ export const websiteSchema = {
   "@id": "https://sta-corporate.in/#website",
   "url": "https://sta-corporate.in",
   "name": "STA Corporate Solutions",
-  "description": "STA Corporate Solutions — Transport since 1982. Three integrated practices for Coimbatore and Tiruppur: Transportation, Financial Services and Legal & CA.",
+  "description": "STA Corporate Solutions — lorry transport since 1982 for Coimbatore and Tiruppur districts.",
   "publisher": {
     "@id": "https://sta-corporate.in/#organization"
   },

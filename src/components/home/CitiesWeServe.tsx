@@ -17,7 +17,7 @@ export function CitiesWeServe() {
             Coimbatore & Tiruppur Districts
           </h2>
           <p className="text-muted-foreground text-base md:text-lg">
-            Headquartered in Coimbatore. Transportation since 1982; financial and legal & CA practices launched mid-2025. Confirm availability for your location.
+            Headquartered in Coimbatore. Lorry transport since 1982. Confirm availability for your location.
           </p>
         </div>
 
@@ -44,7 +44,7 @@ export function CitiesWeServe() {
                       {city.nameTamil}
                     </p>
                     <p className="text-sm text-muted-foreground leading-relaxed flex-1 mb-4">
-                      Transport, startup and deep-tech funding assistance, and legal and CA services for businesses.
+                      Full Load and Return Load lorry transport for businesses.
                     </p>
                     <span className="inline-flex items-center text-sm font-semibold text-primary">
                       Explore {city.name}

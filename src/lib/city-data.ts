@@ -21,16 +21,6 @@ export interface CityData {
     routes: string[];
     industries: string[];
   };
-  financial: {
-    headline: string;
-    description: string;
-    highlights: string[];
-  };
-  legal: {
-    headline: string;
-    description: string;
-    highlights: string[];
-  };
   landmarks: string[];
   faqs: { q: string; a: string }[];
 }
@@ -43,14 +33,14 @@ export const CITY_DATA: Record<CitySlug, CityData> = {
     region: "Tamil Nadu",
     postalCode: "641023",
     geo: { lat: "11.0168", lng: "76.9558" },
-    tagline: "Headquartered in Coimbatore: transport since 1982, plus startup funding and professional services for businesses",
-    metaTitle: "Lorry Transport, Startup Funding Assistance & Legal and CA Services in Coimbatore | STA Corporate Solutions",
+    tagline: "Headquartered in Coimbatore: lorry transport since 1982 for Coimbatore businesses",
+    metaTitle: "Lorry Transport in Coimbatore | STA Corporate Solutions",
     metaDescription:
-      "STA Corporate Solutions in Coimbatore: full-load lorry transport since 1982, funding assistance for startups and deep-tech companies, and legal and CA professional services for businesses. Call 94430 33055.",
+      "STA Corporate Solutions in Coimbatore: full-load and return-load lorry transport since 1982 for businesses. Call 94430 33055.",
     heroIntro:
-      "Our home district. STA has moved freight for Coimbatore's textile, pump, foundry and engineering businesses since 1982, and now also supports startups, deep-tech companies and growing businesses with funding assistance and professional services.",
+      "Our home district. STA has moved freight for Coimbatore's textile, pump, foundry and engineering businesses since 1982, from our Podanur base.",
     about:
-      "STA Corporate Solutions operates from Podanur, Coimbatore. Transportation has been our core since 1982 with a 12+ vehicle owned fleet. Our finance practice assists startups and deep-tech companies with scheme and funding applications, and our Legal & CA practice supports businesses with company registration, GST, income tax, accounts and compliance. Services are for businesses only.",
+      "STA Corporate Solutions operates from Podanur, Coimbatore. Transportation has been our core since 1982 with a 12+ vehicle owned fleet.",
     transport: {
       headline: "Full Load & Return Load Lorry Transport from Coimbatore",
       description:
@@ -64,28 +54,6 @@ export const CITY_DATA: Record<CitySlug, CityData> = {
       ],
       industries: ["Textiles & Knitwear", "Pump & Motor Manufacturing", "Foundry & Castings", "Engineering Goods", "Auto Components"],
     },
-    financial: {
-      headline: "Funding Assistance for Startups & Deep-Tech Companies in Coimbatore",
-      description:
-        "Application and documentation assistance for startups and deep-tech companies in Coimbatore: Startup India recognition, seed and equity-linked schemes, grants and bank credit. For businesses only, not personal loans. STA is not a lender.",
-      highlights: [
-        "Startup India (DPIIT) recognition support",
-        "Seed, grant and equity-linked scheme applications, including StartupTN programmes",
-        "Funding readiness: pitch, financial projections and documentation",
-        "Guidance for deep-tech and research-led ventures on grant and credit options",
-      ],
-    },
-    legal: {
-      headline: "Legal & CA Professional Services for Coimbatore Businesses",
-      description:
-        "Legal documentation and CA services for companies, LLPs and startups in Coimbatore: registration, GST, income tax, accounts, audit support and compliance.",
-      highlights: [
-        "Company, LLP and OPC registration",
-        "GST registration, returns and compliance",
-        "Income tax, accounts and audit support",
-        "Contracts, shareholder agreements and IP/trademark filings",
-      ],
-    },
     landmarks: ["Peelamedu", "Gandhipuram", "RS Puram", "Saravanampatti", "Singanallur", "Saibaba Colony", "Kovaipudur", "Podanur"],
     faqs: [
       {
@@ -96,10 +64,6 @@ export const CITY_DATA: Record<CitySlug, CityData> = {
         q: "Do you arrange lorry pickup within Coimbatore?",
         a: "Yes. We run full-load lorry transport from Coimbatore. Pickup timing and vehicle suitability are confirmed for each booking.",
       },
-      {
-        q: "Can you help my startup or deep-tech company raise funding?",
-        a: "We assist startups and deep-tech companies with scheme and funding applications and documentation. STA is not a lender and does not guarantee approval; eligibility and sanction are decided by the funder or authority.",
-      },
     ],
   },
   tiruppur: {
@@ -109,14 +73,14 @@ export const CITY_DATA: Record<CitySlug, CityData> = {
     region: "Tamil Nadu",
     postalCode: "641601",
     geo: { lat: "11.1085", lng: "77.3411" },
-    tagline: "Lorry transport, startup funding assistance and professional services for Tiruppur businesses",
-    metaTitle: "Lorry Transport, Startup Funding Assistance & Legal and CA Services in Tiruppur | STA Corporate Solutions",
+    tagline: "Lorry transport for Tiruppur businesses, coordinated from Coimbatore",
+    metaTitle: "Lorry Transport in Tiruppur | STA Corporate Solutions",
     metaDescription:
-      "Lorry transport for Tiruppur businesses, funding assistance for startups and deep-tech companies, and legal and CA services. Coordinated from STA's Coimbatore office: 94430 33055.",
+      "Full Load and Return Load lorry transport for Tiruppur businesses. Coordinated from STA's Coimbatore office: 94430 33055.",
     heroIntro:
-      "Tiruppur is a knitwear and textile hub only about 50 km from our Coimbatore office. STA supports Tiruppur businesses with lorry transport, startup and deep-tech funding assistance, and legal and CA professional services.",
+      "Tiruppur is a knitwear and textile hub only about 50 km from our Coimbatore office. STA supports Tiruppur businesses with Full Load and Return Load lorry transport.",
     about:
-      "Enquiries from Tiruppur district are coordinated from our Coimbatore office, which is not a separate Tiruppur branch. We move freight between Tiruppur, Coimbatore and nearby towns, assist startups and deep-tech companies with funding applications, and provide legal and CA support to businesses. Services are for businesses only.",
+      "Enquiries from Tiruppur district are coordinated from our Coimbatore office, which is not a separate Tiruppur branch. We move freight between Tiruppur, Coimbatore and nearby towns. Services are for businesses only.",
     transport: {
       headline: "Lorry Transport for Tiruppur Businesses",
       description:
@@ -129,28 +93,6 @@ export const CITY_DATA: Record<CitySlug, CityData> = {
       ],
       industries: ["Knitwear & Hosiery", "Dyeing & Processing", "Yarn Trading", "Garment Accessories"],
     },
-    financial: {
-      headline: "Funding Assistance for Tiruppur Startups & Deep-Tech Companies",
-      description:
-        "Application and documentation assistance for startups and deep-tech companies in Tiruppur, including textile-tech and manufacturing-tech ventures. For businesses only. STA is not a lender.",
-      highlights: [
-        "Startup India (DPIIT) recognition support",
-        "Seed, grant and equity-linked scheme applications, including StartupTN programmes",
-        "Funding readiness: financial projections and documentation",
-        "Guidance on grant and credit options for technology ventures",
-      ],
-    },
-    legal: {
-      headline: "Legal & CA Professional Services for Tiruppur Businesses",
-      description:
-        "Legal documentation and CA services for Tiruppur companies and startups: registration, GST, income tax, accounts, audit support and compliance.",
-      highlights: [
-        "Company, LLP and partnership registration",
-        "GST registration, returns and refund support",
-        "Income tax, accounts and audit support",
-        "Contracts, labour-law and factory compliance support",
-      ],
-    },
     landmarks: ["Mannarai", "Anupparpalayam", "Avinashi Road", "Palladam Road", "Kangeyam Road", "Andipalayam"],
     faqs: [
       {
@@ -160,10 +102,6 @@ export const CITY_DATA: Record<CitySlug, CityData> = {
       {
         q: "Can you move goods between Tiruppur and Coimbatore?",
         a: "Yes. We run full-load lorry transport between the two districts. Vehicle suitability, date and freight are confirmed per booking.",
-      },
-      {
-        q: "Do you offer loans?",
-        a: "STA is not a lender. We assist startups and deep-tech companies with funding scheme and loan applications and documentation, for businesses only.",
       },
     ],
   },

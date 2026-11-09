@@ -16,12 +16,12 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>STA Corporate Solutions | 3 Practices for Coimbatore & Tiruppur</title>
-        <meta name="description" content="Transport since 1982 (43+ yrs). Financial Services and Legal & CA launched mid-2025. Three integrated practices for Coimbatore and Tiruppur — Coimbatore HQ." />
-        <meta name="keywords" content="STA Corporate Solutions, lorry transport Coimbatore, full load transport Coimbatore Tiruppur, business loan assistance, legal documentation, startup funding assistance Coimbatore" />
+        <title>STA Corporate Solutions | Lorry Transport for Coimbatore & Tiruppur</title>
+        <meta name="description" content="Full Load and Return Load lorry transport since 1982 (43+ yrs) for businesses in Coimbatore and Tiruppur districts — Coimbatore HQ." />
+        <meta name="keywords" content="STA Corporate Solutions, lorry transport Coimbatore, full load transport Coimbatore Tiruppur, return load transport Coimbatore, factory shifting Coimbatore, textile cargo Tiruppur" />
         <link rel="canonical" href="https://sta-corporate.in" />
-        <meta property="og:title" content="STA Corporate Solutions | Transport Since 1982 · 3 Practices for Coimbatore & Tiruppur" />
-        <meta property="og:description" content="Transportation since 1982. Financial Services and Legal & CA launched mid-2025. Three integrated practices across Coimbatore and Tiruppur districts." />
+        <meta property="og:title" content="STA Corporate Solutions | Lorry Transport Since 1982 · Coimbatore & Tiruppur" />
+        <meta property="og:description" content="Lorry transport since 1982 across Coimbatore and Tiruppur districts." />
         <meta property="og:image" content="https://sta-corporate.in/og-image.jpg" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en_IN" />
@@ -45,15 +45,6 @@ const Index = () => {
             <div className="container mx-auto px-4">
               <div className="mx-auto max-w-3xl">
                 <LeadEnquiryForm />
-              </div>
-            </div>
-          </section>
-          <section className="bg-muted/40 py-12 md:py-16">
-            <div className="container mx-auto px-4">
-              <div className="mx-auto max-w-3xl text-center">
-                <h2 className="text-display-lg text-foreground mb-3">Raising funds for a startup or deep-tech venture?</h2>
-                <p className="text-muted-foreground mb-6">Read our plain-language guide to DPIIT recognition, seed funding, grants and bank credit. For businesses only; STA is not a lender.</p>
-                <Link to="/startup-funding-guide" className="inline-flex items-center rounded-full bg-primary px-6 py-3 font-medium text-primary-foreground">Read the funding guide</Link>
               </div>
             </div>
           </section>

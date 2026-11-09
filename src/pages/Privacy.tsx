@@ -72,9 +72,7 @@ const Privacy = () => {
                       <h3 className="font-semibold text-foreground mb-2">You give us</h3>
                       <ul className="list-disc list-inside text-muted-foreground space-y-1.5 text-sm">
                         <li>Name, mobile number</li>
-                        <li>Pickup &amp; delivery city, cargo details (transport)</li>
-                        <li>Business name &amp; loan-scheme interest (financial)</li>
-                        <li>Nature of legal matter (legal)</li>
+                        <li>Pickup &amp; delivery city, cargo details</li>
                         <li>Anything you write in the enquiry message</li>
                       </ul>
                     </div>

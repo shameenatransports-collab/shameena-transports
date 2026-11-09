@@ -25,7 +25,7 @@ export function ServiceAreasPreview() {
               Coimbatore & Tiruppur Districts
             </h2>
             <p className="text-muted-foreground text-lg mb-6">
-              From Coimbatore and Tiruppur to the district towns around them, we provide lorry transport, startup funding assistance and legal and CA services for businesses.
+              From Coimbatore and Tiruppur to the district towns around them, we provide Full Load and Return Load lorry transport for businesses.
             </p>
             <Link to="/service-areas">
               <Button variant="default" size="lg" className="gap-2">

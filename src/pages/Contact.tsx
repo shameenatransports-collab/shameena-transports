@@ -138,7 +138,7 @@ const Contact = () => {
     <>
       <Helmet>
         <title>Contact Us | Business Enquiries - STA Corporate Solutions</title>
-        <meta name="description" content="Contact STA Corporate Solutions for business enquiries. Call +91 94430 33055 or WhatsApp for instant quotes. Transportation, Financial Services and Legal & CA." />
+        <meta name="description" content="Contact STA Corporate Solutions for business enquiries. Call +91 94430 33055 or WhatsApp for instant quotes. Lorry transport in Coimbatore and Tiruppur." />
         <link rel="canonical" href="https://sta-corporate.in/contact" />
         <meta property="og:title" content="Contact STA Corporate Solutions | Get a Quote" />
         <meta property="og:description" content="Call +91 94430 33055 or WhatsApp for instant quotes. Complete business solutions." />
@@ -165,7 +165,7 @@ const Contact = () => {
                 </span>
               </h1>
               <p className="text-headline text-primary-foreground/85 max-w-2xl">
-                Transport, business loans, or legal support — reach us by phone, WhatsApp, or send a
+                Need a lorry or a freight quote? Reach us by phone, WhatsApp, or send a
                 detailed enquiry below.
               </p>
             </div>

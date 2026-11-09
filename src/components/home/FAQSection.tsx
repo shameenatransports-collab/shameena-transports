@@ -10,22 +10,12 @@ const faqs = [
   {
     question: "What services does STA Corporate Solutions provide in Coimbatore?",
     answer:
-      "STA Corporate Solutions provides three practices for businesses from our Coimbatore headquarters: (1) Transportation — Full Load and Return Load lorry services in Coimbatore and Tiruppur districts, (2) Financial Services — funding assistance for startups and deep-tech companies (Startup India recognition, seed funding and grants, bank-credit documentation), and (3) Legal & CA — legal documentation, company registration, GST, income tax, accounts and compliance support.",
+      "STA Corporate Solutions is a lorry transport business based in Podanur, Coimbatore. We offer Full Load and Return Load transport, textile and yarn cargo, construction material, factory and warehouse shifting, heavy machinery and containerised cargo across Coimbatore and Tiruppur districts.",
   },
   {
     question: "What is Full Load transport and when should I use it?",
     answer:
       "Full Load means booking an entire lorry exclusively for your cargo. You get a dedicated truck, complete control over timing, and direct delivery with no intermediate stops. Best for large shipments (5-25 tons) or when you need dedicated transport coordination. We cover Coimbatore, Tiruppur and the district towns around them.",
-  },
-  {
-    question: "What funding can STA help startups and deep-tech companies with?",
-    answer:
-      "We assist startups and deep-tech companies with Startup India (DPIIT) recognition, seed funding and grant applications, bank-credit documentation and fundraising readiness. STA is not a lender and does not handle personal loans.",
-  },
-  {
-    question: "What types of legal & CA services are available?",
-    answer:
-      "We offer legal documentation and consultation support (property documentation, company formation, contracts, disputes, licensing, labour law, intellectual property) together with CA-led professional services such as GST, income-tax and accounts compliance, in Coimbatore and Tiruppur.",
   },
   {
     question: "What areas do you serve?",
@@ -35,7 +25,7 @@ const faqs = [
   {
     question: "How do I get started with STA Corporate Solutions?",
     answer:
-      "Simply call us at +91 94430 33055 or WhatsApp us. For transport — share pickup location, destination, cargo type, and weight. For loans — share your business details and loan requirement. For legal & CA services — describe your legal need. We'll provide a free consultation and competitive quote.",
+      "Simply call us at +91 94430 33055 or WhatsApp us. Share the pickup location, destination, cargo type and weight, and preferred date. We'll confirm the vehicle and give you a quote.",
   },
   {
     question: "Why choose STA Corporate Solutions?",

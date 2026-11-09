@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import { Phone, MapPin, Clock, Truck, Banknote, Scale } from "lucide-react";
+import { Phone, MapPin, Clock, Truck, Repeat, Factory } from "lucide-react";
 import logo from "@/assets/sta-logo.png";
 
 const serviceLinks = [
   { name: "Transportation", href: "/transportation", icon: Truck },
-  { name: "Financial Services", href: "/financial-services", icon: Banknote },
-  { name: "Legal & CA", href: "/legal-services", icon: Scale },
+  { name: "Return Loads", href: "/return-loads", icon: Repeat },
+  { name: "Factory Shifting", href: "/transportation/services/factory-shifting", icon: Factory },
 ];
 
 const quickLinks = [
@@ -45,7 +45,7 @@ export function Footer() {
               </div>
             </div>
             <p className="text-sm text-primary-foreground/75 leading-relaxed max-w-md">
-              Coimbatore's trusted partner for Transportation since 1982, with startup and deep-tech funding assistance and Legal & CA services for businesses.
+              Coimbatore's trusted lorry transport partner since 1982, serving businesses across Coimbatore and Tiruppur districts.
               Transparent support across Tamil Nadu.
             </p>
             <div className="space-y-3 pt-1">
@@ -126,7 +126,7 @@ export function Footer() {
         {/* Bottom */}
         <div className="mt-16 pt-8 border-t border-primary-foreground/10">
           <p className="text-xs text-primary-foreground/50 text-center mb-5 leading-relaxed max-w-4xl mx-auto">
-            STA Corporate Solutions — Lorry Transport, Startup & Deep-Tech Funding Assistance, Legal & CA Services, Company Registration, GST & Income Tax in Coimbatore and Tiruppur, Tamil Nadu.
+            STA Corporate Solutions — Full Load Lorry Transport, Return Loads, Textile Cargo and Factory Shifting in Coimbatore and Tiruppur, Tamil Nadu.
           </p>
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-xs text-primary-foreground/60">

@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
 import { motion, useReducedMotion } from "framer-motion";
-import { Phone, MessageCircle, ArrowUpRight, Truck, Banknote, Scale, Building2 } from "lucide-react";
+import { Phone, MessageCircle, ArrowUpRight, Truck, Repeat, Factory } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Parallax } from "@/components/ui/parallax";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const verticals = [
-  { icon: Truck, title: "Transportation", href: "/transportation", desc: "Full Load lorry · Coimbatore & Tiruppur" },
-  { icon: Banknote, title: "Financial Services", href: "/financial-services", desc: "Startup & deep-tech funding" },
-  { icon: Scale, title: "Legal & CA", href: "/legal-services", desc: "Legal · Accounts · Compliance" },
+  { icon: Truck, title: "Full Load Transport", href: "/transportation/services/full-load", desc: "Dedicated lorry, door to door" },
+  { icon: Repeat, title: "Return Loads", href: "/return-loads", desc: "Lower freight, subject to route availability" },
+  { icon: Factory, title: "Factory Shifting", href: "/transportation/services/factory-shifting", desc: "Plant & warehouse relocation" },
 ];
 
 const easeApple = [0.22, 1, 0.36, 1] as const;
@@ -51,7 +51,7 @@ export function HeroSection() {
             className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-background text-[11px] font-bold tracking-[0.18em] uppercase text-primary shadow-xl ring-1 ring-primary-foreground/40 mb-8"
           >
             <span className="h-1.5 w-1.5 rounded-full bg-secondary" />
-            Transport Since 1982 · Three Practices for Coimbatore & Tiruppur
+            Lorry Transport Since 1982 · Coimbatore & Tiruppur
           </motion.div>
 
           <motion.h1
@@ -63,7 +63,7 @@ export function HeroSection() {
             STA Corporate Solutions
             <br />
             <span className="bg-gradient-to-r from-secondary via-secondary to-primary-foreground bg-clip-text text-transparent">
-              Three Integrated Practices for Coimbatore & Tiruppur
+              Lorry Transport for Coimbatore & Tiruppur
             </span>
           </motion.h1>
 
@@ -73,7 +73,7 @@ export function HeroSection() {
             transition={{ duration: 0.9, ease: easeApple, delay: 0.35 }}
             className="text-headline text-primary-foreground/85 max-w-2xl mx-auto mb-3"
           >
-            Transportation since 1982 — 43+ years of service excellence. Financial Services and Legal & CA launched mid-2025 to complete the group. Serving businesses in Coimbatore and Tiruppur.
+            Full Load and Return Load freight from our own 12+ vehicle fleet — 43+ years of dependable transport for businesses in Coimbatore and Tiruppur districts.
           </motion.p>
           <motion.p
             initial={{ opacity: 0 }}
@@ -100,7 +100,7 @@ export function HeroSection() {
               </Button>
             </a>
             <a
-              href="https://wa.me/919443033055?text=Hi%2C%20I%20need%20information%20about%20STA%20Corporate%20Solutions%20services"
+              href="https://wa.me/919443033055?text=Hi%2C%20I%20need%20transport%20services%20from%20STA%20Corporate%20Solutions"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -115,12 +115,12 @@ export function HeroSection() {
             </a>
           </motion.div>
 
-          {/* Verticals — 5-card row */}
+          {/* Service shortcuts */}
           <motion.div
             initial={{ opacity: 0, y: reduced ? 0 : 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: easeApple, delay: 0.8 }}
-            className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 max-w-6xl mx-auto"
+            className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-3 max-w-6xl mx-auto"
           >
             {verticals.map((v) => (
               <Link

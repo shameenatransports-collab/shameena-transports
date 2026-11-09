@@ -1,5 +1,5 @@
 import { CITIES, CORRIDORS, City } from "./cities";
-import { Pillar, PILLARS, REGISTRATIONS } from "./pillars";
+import { Pillar, PILLARS } from "./pillars";
 
 export const SITE_URL = "https://sta-corporate.in";
 
@@ -9,7 +9,6 @@ export const pillarCityUrl = (p: Pillar, city: string) => `${p.path}/${city}`;
 export const pillarCitySubUrl = (p: Pillar, city: string, sub: string) =>
   `${p.path}/${city}/${sub}`;
 export const corridorUrl = (slug: string) => `/transportation/routes/${slug}`;
-export const registrationUrl = (slug: string) => `/legal-services/registrations/${slug}`;
 
 export const canonical = (path: string) => `${SITE_URL}${path}`;
 
@@ -18,8 +17,6 @@ export function citiesForPillar(pillarId: string): City[] {
   // Tier limits per pillar (controls page count)
   const limits: Record<string, number> = {
     transportation: 10,
-    "financial-services": 10,
-    "legal-services": 10,
   };
   const n = limits[pillarId] ?? 25;
   return [...CITIES].sort((a, b) => a.tier - b.tier).slice(0, n);
@@ -42,9 +39,7 @@ export function enumerateAllUrls(): SitemapEntry[] {
   // Static
   out.push(
     { path: "/", priority: "1.0", changefreq: "weekly" },
-    { path: "/services", priority: "0.9", changefreq: "weekly" },
     { path: "/services/transport-categories", priority: "0.7", changefreq: "monthly" },
-    { path: "/startup-funding-guide", priority: "0.8", changefreq: "monthly" },
     { path: "/about", priority: "0.7", changefreq: "monthly" },
     { path: "/contact", priority: "0.7", changefreq: "monthly" },
     { path: "/fleet", priority: "0.6", changefreq: "monthly" },
@@ -77,11 +72,6 @@ export function enumerateAllUrls(): SitemapEntry[] {
   // Transportation corridors
   for (const c of CORRIDORS) {
     out.push({ path: corridorUrl(c.slug), priority: "0.7", changefreq: "monthly" });
-  }
-
-  // Legal registrations
-  for (const r of REGISTRATIONS) {
-    out.push({ path: registrationUrl(r.slug), priority: "0.7", changefreq: "monthly" });
   }
 
 

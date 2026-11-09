@@ -1,4 +1,4 @@
-import { Truck, Banknote, Scale, Clock } from "lucide-react";
+import { Truck, MapPin, Clock } from "lucide-react";
 import { ScrollReveal, ScrollRevealItem } from "@/components/ui/scroll-reveal";
 
 const stats = [
@@ -15,13 +15,13 @@ const stats = [
     description: "Trailers & lorries",
   },
   {
-    icon: Banknote,
-    value: "3",
-    label: "Integrated practices",
-    description: "Two new practices since mid-2025"
+    icon: MapPin,
+    value: "10",
+    label: "Towns on our routes",
+    description: "Around Coimbatore & Tiruppur"
   },
   {
-    icon: Scale,
+    icon: MapPin,
     value: "2",
     label: "Districts served",
     description: "Coimbatore · Tiruppur",

@@ -19,7 +19,7 @@ export default function CityLanding() {
   if (!data || !city) return <Navigate to="/service-areas" replace />;
   const url = canonical(`/${city.slug}`);
   const title = `Transport & Business Services in ${city.name} | STA`;
-  const description = `Lorry transport, startup and deep-tech funding assistance, and legal and CA services for ${city.name}, Tamil Nadu. Coimbatore-based; confirm availability.`;
+  const description = `Full Load and Return Load lorry transport for ${city.name}, Tamil Nadu. Coimbatore-based; confirm availability.`;
   const transport = localPageContent(PILLARS[0], city);
   return <>
     <Helmet>
@@ -33,8 +33,8 @@ export default function CityLanding() {
       <section className="bg-primary pt-32 pb-16 md:pt-40 md:pb-20">
         <div className="container mx-auto px-4 max-w-4xl">
           <p className="text-primary-foreground/80 mb-4">{city.name} · <span lang="ta">{data.nameTamil}</span> · Tamil Nadu</p>
-          <h1 className="text-3xl md:text-5xl font-bold text-primary-foreground mb-6">Transport & business services in {city.name}</h1>
-          <p className="text-lg text-primary-foreground/90 mb-8">Full Load lorry transport, business funding assistance, legal documentation and CA services. Transportation since 1982; the other practices launched mid-2025. Enquiries from {city.name} are coordinated from Coimbatore, with availability confirmed individually.</p>
+          <h1 className="text-3xl md:text-5xl font-bold text-primary-foreground mb-6">Lorry transport in {city.name}</h1>
+          <p className="text-lg text-primary-foreground/90 mb-8">Full Load and Return Load lorry transport since 1982. Enquiries from {city.name} are coordinated from Coimbatore, with availability confirmed individually.</p>
           <div className="flex flex-wrap gap-3">
             <Button size="lg" variant="secondary" asChild><a href={`https://wa.me/919443033055?text=${encodeURIComponent(`Hello STA, I’m enquiring from ${city.name}. Please confirm service availability.`)}`} target="_blank" rel="noopener noreferrer"><MessageCircle className="h-4 w-4 mr-2" />WhatsApp enquiry</a></Button>
             <Button size="lg" variant="outline" className="bg-primary-foreground/10 text-primary-foreground border-primary-foreground/30" asChild><a href="tel:+919443033055"><Phone className="h-4 w-4 mr-2" />94430 33055</a></Button>

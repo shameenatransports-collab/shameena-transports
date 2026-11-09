@@ -1,7 +1,7 @@
-// Service catalogues for each of the 3 pillars.
+// Service catalogue for the transportation pillar (the only business line).
 // Each sub-item becomes a programmatic page template seeded by city + intent.
 
-export type PillarId = "transportation" | "financial-services" | "legal-services";
+export type PillarId = "transportation";
 
 export interface SubService {
   slug: string;
@@ -102,134 +102,6 @@ export const PILLARS: Pillar[] = [
       },
     ],
   },
-  // ─────────────────────────────────────────────────────────────────────────
-  {
-    id: "financial-services",
-    name: "Financial Services",
-    shortName: "Finance",
-    tagline: "Funding assistance for startups and deep-tech companies",
-    description:
-      "Documentation and application assistance for startups and deep-tech companies: Startup India recognition, seed and grant schemes, bank credit and fundraising readiness. For businesses only. STA is not a lender.",
-    path: "/financial-services",
-    subPath: "products",
-    subLabel: "Product",
-    cityIntro: (c) =>
-      `Funding assistance for startups and deep-tech companies in ${c}. We help you assemble documents, choose suitable schemes and present a clean application. STA is not a lender and does not guarantee funding.`,
-    sub: [
-      {
-        slug: "startup-india", name: "Startup India (DPIIT) Recognition", shortName: "Startup India",
-        description: "Assistance with DPIIT recognition and the documentation startups need before applying to government schemes.",
-        keywords: ["startup india registration","dpiit recognition","startup recognition certificate"],
-        benefits: ["Eligibility check", "Application documentation", "Recognition follow-up", "Scheme readiness"],
-      },
-      {
-        slug: "seed-funding", name: "Seed Funding & Grants", shortName: "Seed & Grants",
-        description: "Application support for seed funds and early-stage grants, including central and Tamil Nadu startup programmes.",
-        keywords: ["startup seed fund","startup grant","tanseed","seed funding tamil nadu"],
-        benefits: ["Scheme shortlisting", "Application drafting", "Supporting documents", "Follow-up with the programme"],
-      },
-      {
-        slug: "deep-tech-funding", name: "Deep-Tech Funding Assistance", shortName: "Deep-Tech",
-        description: "Guidance for deep-tech and research-led companies on grant, equity and credit routes suited to long development cycles.",
-        keywords: ["deep tech funding","deep tech startup funding","research grant startup","technology startup grant"],
-        benefits: ["Funding route mapping", "Technical-commercial write-ups", "Grant and credit documentation", "Readiness review"],
-      },
-      {
-        slug: "government-schemes", name: "Government Scheme Funding", shortName: "Govt Schemes",
-        description: "Mapping and applying to central and Tamil Nadu government schemes for startups and technology companies.",
-        keywords: ["government schemes for startups","startup subsidy","startup scheme application"],
-        benefits: ["Scheme eligibility mapping", "Application documentation", "Compliance checklist", "Status follow-up"],
-      },
-      {
-        slug: "credit-guarantee", name: "Credit Guarantee & Bank Credit", shortName: "Credit & Guarantee",
-        description: "Assistance preparing bank credit applications for startups, including credit-guarantee-backed options where eligible.",
-        keywords: ["startup bank loan","credit guarantee scheme startups","collateral free startup loan"],
-        benefits: ["Lender and product shortlisting", "Credit file preparation", "Guarantee-scheme eligibility check", "Documentation support"],
-      },
-      {
-        slug: "working-capital", name: "Working Capital & Term Loans for Startups", shortName: "Working Capital",
-        description: "Documentation and process assistance for working-capital and term-loan applications by startups and technology companies.",
-        keywords: ["startup working capital","startup term loan","business loan for startups"],
-        benefits: ["Product selection", "Financial projections", "Application documentation", "Lender coordination"],
-      },
-      {
-        slug: "fundraising-readiness", name: "Fundraising Readiness", shortName: "Fundraising",
-        description: "Preparation for angel and venture investor conversations: financial model, data room and compliance clean-up.",
-        keywords: ["startup fundraising","investor readiness","angel investment preparation"],
-        benefits: ["Financial model review", "Data-room checklist", "Cap-table and compliance review", "Investor-document support"],
-      },
-      {
-        slug: "project-reports", name: "Project Reports & Funding Documentation", shortName: "Project Reports",
-        description: "Project reports, financial projections and supporting documents for grant, scheme and bank applications.",
-        keywords: ["project report for startup","dpr for loan","financial projections startup"],
-        benefits: ["Project report drafting", "Financial projections", "Use-of-funds statement", "Supporting document checklist"],
-      },
-    ],
-  },
-  // ─────────────────────────────────────────────────────────────────────────
-  {
-    id: "legal-services",
-    name: "Legal & CA",
-    shortName: "Legal & CA",
-    tagline: "Legal & CA professional services for businesses",
-    description:
-      "Legal documentation, company formation, GST and income-tax compliance, accounts and audit support, trademark and other business registrations, contracts, commercial disputes and compliance support, for businesses only.",
-    path: "/legal-services",
-    subPath: "practice",
-    subLabel: "Practice",
-    cityIntro: (c) =>
-      `Legal and CA professional services in ${c}. We coordinate legal documentation, business formation, GST and income-tax compliance and accounts support end-to-end.`,
-    sub: [
-      {
-        slug: "gst-income-tax", name: "GST & Income Tax Services", shortName: "GST & Tax",
-        description: "GST registration and returns, income-tax return filing and tax compliance support through our CA professional services.",
-        keywords: ["gst registration", "gst return filing", "income tax return", "itr filing", "ca services"],
-        benefits: ["GST registration & returns", "ITR filing", "Notice response support", "Tax planning advisory"],
-      },
-      {
-        slug: "accounting-audit", name: "Accounting & Audit Support", shortName: "Accounts & Audit",
-        description: "Bookkeeping, financial statements, statutory and tax audit support and annual compliance for businesses.",
-        keywords: ["chartered accountant", "accounting services", "audit services", "bookkeeping"],
-        benefits: ["Bookkeeping & accounts", "Financial statements", "Statutory audit support", "Annual compliance"],
-      },
-      {
-        slug: "property-law", name: "Commercial Property Documentation", shortName: "Property Docs",
-        description: "Title verification, sale deed, lease and registration coordination for business, factory and commercial property.",
-        keywords: ["property registration", "sale deed", "title verification", "real estate lawyer"],
-        benefits: ["Title due diligence", "Sale deed drafting", "Sub-registrar coordination", "Encumbrance certificate"],
-      },
-      {
-        slug: "civil-litigation", name: "Commercial Litigation & Recovery", shortName: "Commercial Disputes",
-        description: "Commercial recovery and contract-dispute support: case strategy and counsel referral for businesses.",
-        keywords: ["civil lawyer", "civil litigation", "recovery suit", "injunction"],
-        benefits: ["Case strategy", "Counsel referral", "Documentation review", "Settlement facilitation"],
-      },
-      {
-        slug: "corporate-law", name: "Corporate & Commercial Law", shortName: "Corporate Law",
-        description: "Contracts, MOU, shareholder agreements, JV structuring, corporate restructuring and commercial advisory.",
-        keywords: ["corporate lawyer", "commercial law", "shareholder agreement", "contract drafting"],
-        benefits: ["Contract drafting & review", "Shareholder agreements", "JV & restructuring", "Commercial advisory"],
-      },
-      {
-        slug: "labour-law", name: "Labour & Employment Law", shortName: "Labour Law",
-        description: "PF, ESI, gratuity, factory licence, contract labour and HR policy compliance.",
-        keywords: ["labour law", "employment lawyer", "pf esi compliance"],
-        benefits: ["PF/ESI registration & filings", "Factory licence", "Contract labour compliance", "HR policy review"],
-      },
-      {
-        slug: "intellectual-property", name: "Intellectual Property", shortName: "IP Law",
-        description: "Trademark, copyright, patent search, filing and opposition matters.",
-        keywords: ["trademark lawyer", "patent", "copyright", "ip law"],
-        benefits: ["Trademark filing", "Search & opposition", "Copyright & patent advisory"],
-      },
-      {
-        slug: "arbitration", name: "Arbitration & ADR", shortName: "Arbitration",
-        description: "Domestic arbitration, mediation and ADR clause drafting for commercial disputes.",
-        keywords: ["arbitration lawyer", "mediation", "dispute resolution"],
-        benefits: ["Arbitration clause drafting", "Mediation facilitation", "Award enforcement"],
-      },
-    ],
-  },
 ];
 
 export const PILLAR_BY_ID = Object.fromEntries(PILLARS.map((p) => [p.id, p])) as Record<PillarId, Pillar>;
@@ -241,19 +113,3 @@ export function getPillar(id?: string) {
 export function getSub(pillar: Pillar, slug: string) {
   return pillar.sub.find((s) => s.slug === slug);
 }
-
-// Legal registration micro-pages
-export interface Registration {
-  slug: string; name: string; description: string; keywords: string[]; benefits: string[];
-}
-export const REGISTRATIONS: Registration[] = [
-  { slug: "company", name: "Private Limited Company Registration", description: "Pvt Ltd incorporation with DIN, DSC, MOA/AOA and PAN.", keywords: ["company registration", "pvt ltd registration"], benefits: ["DIN & DSC", "MOA / AOA drafting", "Bank-account ready"] },
-  { slug: "llp", name: "LLP Registration", description: "Limited Liability Partnership incorporation and compliance.", keywords: ["llp registration", "limited liability partnership"], benefits: ["LLP agreement", "DIN & DSC", "Compliance handover"] },
-  { slug: "gst", name: "GST Registration", description: "Goods & Services Tax registration, GSTIN and filing rhythm setup.", keywords: ["gst registration", "gst number", "gst filing"], benefits: ["GSTIN issuance", "Filing rhythm setup", "Invoice template"] },
-  { slug: "msme", name: "MSME / Udyam Registration", description: "Udyam (MSME) registration for eligible businesses, often needed for scheme and bank applications.", keywords: ["msme registration", "udyam registration"], benefits: ["Udyam certificate", "Priority-sector access", "Scheme eligibility"] },
-  { slug: "fssai", name: "FSSAI Licence", description: "FSSAI basic, state and central licence for food businesses.", keywords: ["fssai", "food licence"], benefits: ["Basic / State / Central", "Renewal management"] },
-  { slug: "trademark", name: "Trademark Registration", description: "Trademark search, filing, prosecution and renewal.", keywords: ["trademark registration", "tm filing"], benefits: ["Search & class", "Filing & prosecution", "Renewals"] },
-  { slug: "iso", name: "ISO Certification", description: "ISO 9001, 14001, 27001 and sector-specific certification facilitation.", keywords: ["iso certification", "iso 9001"], benefits: ["Gap analysis", "Audit coordination", "Certification issuance"] },
-  { slug: "partnership", name: "Partnership Firm Registration", description: "Partnership deed drafting and registration with Registrar of Firms.", keywords: ["partnership firm registration", "partnership deed"], benefits: ["Deed drafting", "Registrar filing", "PAN & bank setup"] },
-];
-export const REGISTRATION_BY_SLUG = Object.fromEntries(REGISTRATIONS.map((r) => [r.slug, r]));

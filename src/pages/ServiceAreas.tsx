@@ -12,7 +12,7 @@ export default function ServiceAreas() {
   return <>
     <Helmet>
       <title>Coimbatore & Tiruppur Service Directory | STA</title>
-      <meta name="description" content="Lorry transport, startup and deep-tech funding assistance, and legal and CA services for businesses in Coimbatore and Tiruppur districts, Tamil Nadu. Confirm service availability." />
+      <meta name="description" content="Full Load and Return Load lorry transport for businesses in Coimbatore and Tiruppur districts, Tamil Nadu. Confirm service availability." />
       <link rel="canonical" href={canonical("/service-areas")} />
       <meta property="og:title" content="Coimbatore & Tiruppur Service Directory | STA" />
       <meta property="og:description" content="Enquiry guidance for Coimbatore and Tiruppur districts, Tamil Nadu, coordinated from our Podanur, Coimbatore office." />
@@ -24,7 +24,7 @@ export default function ServiceAreas() {
         <div className="container mx-auto px-4 max-w-4xl">
           <p className="text-primary-foreground/80 mb-4">Coimbatore & Tiruppur Districts</p>
           <h1 className="text-3xl md:text-5xl font-bold text-primary-foreground mb-6">Coimbatore & Tiruppur service directory</h1>
-          <p className="text-lg text-primary-foreground/90">Transportation, startup and deep-tech funding assistance, and legal and CA professional services, for businesses only. Enquiries are coordinated from our Podanur, Coimbatore office; these city pages do not represent local branches.</p>
+          <p className="text-lg text-primary-foreground/90">Full Load and Return Load lorry transport, for businesses only. Enquiries are coordinated from our Podanur, Coimbatore office; these city pages do not represent local branches.</p>
         </div>
       </section>
       <nav aria-label="Districts" className="container mx-auto px-4 py-8 flex flex-wrap gap-x-6 gap-y-3">{states.map(state => <a key={state} href={`#${state.toLowerCase().replace(/ /g, "-")}`} className="text-primary underline underline-offset-4">{state}</a>)}</nav>

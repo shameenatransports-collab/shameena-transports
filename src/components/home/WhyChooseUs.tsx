@@ -1,11 +1,11 @@
-import { Shield, Clock, Headphones, Award, MapPin, Banknote } from "lucide-react";
+import { Shield, Clock, Headphones, Award, MapPin, Truck } from "lucide-react";
 import { ScrollReveal, ScrollRevealItem } from "@/components/ui/scroll-reveal";
 
 const features = [
   { icon: Award, title: "43+ years in transport", description: "Coimbatore-rooted transportation business since 1982 — service excellence backed by decades of fleet operations." },
   { icon: Shield, title: "Careful handling", description: "Experienced drivers on our own lorries — no broker hand-offs." },
-  { icon: Clock, title: "Disciplined follow-up", description: "Clear coordination for transport, funding assistance, and documentation needs." },
-  { icon: Banknote, title: "Three integrated practices", description: "Transportation, Financial Services and Legal & CA — the latter two launched mid-2025 under STA Corporate Solutions." },
+  { icon: Clock, title: "Disciplined follow-up", description: "Clear coordination from enquiry to delivery, with a single point of contact." },
+  { icon: Truck, title: "Own fleet since 1982", description: "12+ owned vehicles, so dispatch and pricing stay in our control." },
   { icon: MapPin, title: "Coimbatore & Tiruppur focus", description: "Local knowledge of the Coimbatore and Tiruppur industrial belt, coordinated from our Podanur office." },
   { icon: Headphones, title: "Responsive support", description: "Reachable by phone or WhatsApp for bookings, enquiries, and consultations." },
 ];
@@ -27,10 +27,10 @@ export function WhyChooseUs() {
             <h2 className="text-display-xl mb-6">
               43+ years in transport,
               <br />
-              <span className="text-primary-foreground/60">three practices for Coimbatore & Tiruppur.</span>
+              <span className="text-primary-foreground/60">lorry transport for Coimbatore & Tiruppur.</span>
             </h2>
             <p className="text-headline text-primary-foreground/70 max-w-2xl mx-auto">
-              Transportation since 1982. Financial Services and Legal & CA added mid-2025, for businesses only.
+              Transportation since 1982, for businesses in Coimbatore and Tiruppur districts.
             </p>
           </div>
         </ScrollReveal>
