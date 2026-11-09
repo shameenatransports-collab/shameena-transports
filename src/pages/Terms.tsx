@@ -194,7 +194,8 @@ const Terms = () => {
                     <p className="text-muted-foreground">No 10/135-G, Gurusamy Pillai St Extn, Podanur</p>
                     <p className="text-muted-foreground">Coimbatore, Coimbatore South, Tamil Nadu, India, 641023</p>
                     <p className="text-muted-foreground mt-2">Phone: +91 94430 33055</p>
-                    <p className="text-muted-foreground">GST: 33AHTPA8379E1Z3</p>
+                    <p className="text-muted-foreground">Email: <a href="mailto:admin@xtsy.one" className="underline">admin@xtsy.one</a></p>
+                    <p className="text-xs text-muted-foreground mt-2">Grievance Officer: XTSY Ventures Private Limited — admin@xtsy.one</p>
                   </div>
                 </CardContent>
               </Card>

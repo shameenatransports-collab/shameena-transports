@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/dialog";
 import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
+import { trackPageView } from "@/lib/analytics";
 
 interface ConsentPreferences {
   necessary: boolean;
@@ -62,6 +63,14 @@ export function CookieConsent() {
         ad_user_data: prefs.marketing ? "granted" : "denied",
         ad_personalization: prefs.marketing ? "granted" : "denied",
       });
+    }
+
+    // The initial SPA page view can run while Consent Mode is still denied.
+    // Send it again after analytics consent so GA4 records the visit normally.
+    if (prefs.analytics && typeof window !== "undefined") {
+      window.setTimeout(() => {
+        trackPageView(window.location.pathname, document.title);
+      }, 0);
     }
   };
 

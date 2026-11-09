@@ -6,13 +6,14 @@
 - [x] Research India keywords and improve city-specific content without invented branches or guarantees.
 - [x] Link regional landing pages from the homepage and service-area directory; align sitemap and app-level metadata.
 - [x] Deliver a dated 12-week local SEO calendar and verify city-to-service navigation, contextual WhatsApp links and mobile layouts.
-- [x] Publish the prepared corrections — branch `sta-rebrand` prepared; publish after review.
-- [ ] Establish measured search performance — requires connecting and verifying Google Search Console; GA4 also needs a real measurement ID.
+- [x] Publish the prepared corrections (published 2026-11-01; live at https://sta-corporate.in).
+- [x] Connect and verify Google Search Console and submit the sitemap (2026-11-01).
+- [x] Real GA4 measurement ID connected via Lovable (Nov 2026).
 
 # MSME loan guide and WhatsApp enquiries
 - [x] Build an MSME business-loan guide (/msme-loan-guide); figures reviewed Oct 2026, re-verify before each publish.
 - [x] Link the guide from the homepage and include it in the sitemap.
-- [ ] Publish city-specific South India content and outreach-ready backlink materials for Coimbatore, Chennai, Bengaluru, Hyderabad, Kochi and Tiruppur.
+- [-] City-specific South India content — superseded by the Coimbatore-district-only scope (Nov 2026).
 - [ ] Wire enquiry forms to a WhatsApp Business account — blocked until the connection is authorized.
 
 # Rebrand (Oct 2026)
@@ -26,6 +27,6 @@
 - [x] Education practice and its AI pathway function removed; /edu-consultancy redirects to /services.
 - [x] Practices: Transportation, Financial Services (startups and deep-tech companies only), Legal & CA (businesses only).
 - [x] MSME/Mudra content replaced by /startup-funding-guide; /msme-loan-guide redirects there.
-- [ ] Re-verify scheme names and terms on the funding guide before each publish.
+- [-] Funding guide removed (Nov 2026 transport-only scope).
 - [x] Transport-only scope (Nov 2026): Financial Services and Legal & CA removed; /financial-services*, /legal-services*, /startup-funding-guide, /msme-loan-guide and /services redirect to /transportation.
 - [x] Coimbatore-district-only scope (Nov 2026): Tiruppur and all other districts removed; /tiruppur redirects to /coimbatore. Return loads no longer promoted (page and nav removed; /return-loads redirects to /transportation); only an availability-on-enquiry note remains.

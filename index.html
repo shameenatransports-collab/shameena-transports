@@ -9,6 +9,7 @@
     <meta name="keywords" content="STA Corporate Solutions, lorry transport Coimbatore, full load transport Coimbatore, factory shifting Coimbatore, textile cargo Coimbatore, goods transport Tamil Nadu">
     <meta name="author" content="STA Corporate Solutions" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="google-site-verification" content="AubJ2wiLEIRyRExgQBs4hF_fmzU0KJRDt3sh7ymkejI" />
     <meta name="googlebot" content="index, follow" />
     <meta name="bingbot" content="index, follow" />
     <link rel="canonical" href="https://sta-corporate.in" />
@@ -81,16 +82,11 @@
         'wait_for_update': 500
       });
       
-      // Store measurement ID for later use
-      window.GA_MEASUREMENT_ID = 'G-XXXXXXXXXX'; // Replace with your GA4 Measurement ID
-      
-      gtag('js', new Date());
-      gtag('config', window.GA_MEASUREMENT_ID, {
-        send_page_view: false, // We'll track manually for SPA
-        cookie_flags: 'SameSite=None;Secure'
-      });
+      // The real GA4 Measurement ID is injected by the Lovable connector env
+      // var and gtag.js is loaded from src/lib/analytics.ts (initAnalytics),
+      // after these Consent Mode v2 defaults. No placeholder property is
+      // contacted when no real ID is configured.
     </script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
     <meta property="og:title" content="STA Corporate Solutions | Lorry Transport Since 1982 · Coimbatore">
   <meta name="twitter:title" content="STA Corporate Solutions | Lorry Transport Since 1982 · Coimbatore">
   <meta property="og:description" content="Full Load lorry transport since 1982 for Coimbatore district — Coimbatore HQ.">
