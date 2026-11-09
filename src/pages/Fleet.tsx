@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { Layout } from "@/components/layout/Layout";
-import { Truck, Shield, Gauge, Users } from "lucide-react";
+import { Truck, Shield, Gauge, Users, Clock } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { CTASection } from "@/components/home/CTASection";
 import { BackgroundPicture } from "@/components/ui/picture";
@@ -36,9 +36,9 @@ const features = [
     description: "Regular servicing and safety checks",
   },
   {
-    icon: Truck,
-    title: "Modern Fleet",
-    description: "Vehicles less than 5 years old",
+    icon: Clock,
+    title: "On-Time Delivery",
+    description: "Planned dispatch and clear coordination",
   },
   {
     icon: Users,
