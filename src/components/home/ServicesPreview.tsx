@@ -1,12 +1,11 @@
 import { Link } from "react-router-dom";
-import { Truck, Repeat, Container, Factory, Wrench, Shirt, ArrowUpRight } from "lucide-react";
+import { Truck, Container, Factory, Wrench, Shirt, ArrowUpRight } from "lucide-react";
 import { ScrollReveal, ScrollRevealItem } from "@/components/ui/scroll-reveal";
 import serviceTransportation from "@/assets/service-transportation.jpg";
 
 const services = [
-  { icon: Truck, title: "Full Load Transport", desc: "A dedicated truck for your cargo, door to door across Coimbatore and Tiruppur districts.", href: "/transportation/services/full-load" },
-  { icon: Repeat, title: "Return Loads", desc: "Lower freight on trucks returning along your route, subject to route availability.", href: "/transportation/services/return-load" },
-  { icon: Shirt, title: "Textile & Yarn Cargo", desc: "Careful bale, carton and yarn movement along the Tiruppur–Coimbatore corridor.", href: "/transportation/services/textile-cargo" },
+  { icon: Truck, title: "Full Load Transport", desc: "A dedicated truck for your cargo, door to door across Coimbatore district.", href: "/transportation/services/full-load" },
+  { icon: Shirt, title: "Textile & Yarn Cargo", desc: "Careful bale, carton and yarn movement within the Coimbatore industrial belt.", href: "/transportation/services/textile-cargo" },
   { icon: Factory, title: "Factory & Warehouse Shifting", desc: "Planned relocation of plants and warehouses with multi-vehicle coordination.", href: "/transportation/services/factory-shifting" },
   { icon: Wrench, title: "Heavy Machinery", desc: "Low-bed and ODC movement for presses, CNCs, generators and transformers.", href: "/transportation/services/heavy-machinery" },
   { icon: Container, title: "Containerised Cargo", desc: "20ft and 40ft container movement linked to ICD/CFS and port-bound cargo.", href: "/transportation/services/containerized" },
@@ -21,7 +20,7 @@ export function ServicesPreview() {
             <p className="text-eyebrow text-primary mb-5">Transportation · Since 1982</p>
             <h2 className="text-display-xl text-foreground mb-6">Move what matters, when it matters.</h2>
             <p className="text-headline text-muted-foreground max-w-2xl mx-auto">
-              Full Load lorry transport from our own 12+ vehicle fleet, serving businesses in Coimbatore and Tiruppur districts.
+              Full Load lorry transport from our own 12+ vehicle fleet, serving businesses in Coimbatore district.
             </p>
           </div>
         </ScrollReveal>

@@ -9,9 +9,9 @@ export const organizationSchema = {
   "legalName": "STA Corporate Solutions",
   "url": "https://sta-corporate.in",
   "logo": "https://sta-corporate.in/logo.png",
-  "description": "STA Corporate Solutions — lorry transport since 1982 (43+ years) for businesses in Coimbatore and Tiruppur districts, headquartered in Coimbatore.",
+  "description": "STA Corporate Solutions — lorry transport since 1982 (43+ years) for businesses in Coimbatore district, headquartered in Coimbatore.",
   "foundingDate": "1982",
-  "slogan": "Lorry Transport Since 1982 · Coimbatore & Tiruppur",
+  "slogan": "Lorry Transport Since 1982 · Coimbatore",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "No 10/135-G, Gurusamy Pillai St Extn, Podanur",
@@ -38,14 +38,11 @@ export const organizationSchema = {
   ],
   "knowsAbout": [
     "Full Load Lorry Transport",
-    "Return Load Transport",
     "Factory Shifting"
   ],
   "areaServed": [
     { "@type": "City", "name": "Coimbatore" },
-    { "@type": "City", "name": "Tiruppur" },
-    { "@type": "AdministrativeArea", "name": "Coimbatore District" },
-    { "@type": "AdministrativeArea", "name": "Tiruppur District" }
+    { "@type": "AdministrativeArea", "name": "Coimbatore District" }
   ],
   "sameAs": []
 };
@@ -57,7 +54,7 @@ export const localBusinessSchema = {
   "name": "STA Corporate Solutions",
   "alternateName": ["STA Corporate", "STA Solutions", "STA Coimbatore", "STA Corporate Solutions Coimbatore"],
   "image": ["https://sta-corporate.in/logo.png"],
-  "description": "STA Corporate Solutions — Full Load and Return Load lorry transport since 1982 (43+ years) for businesses in Coimbatore and Tiruppur.",
+  "description": "STA Corporate Solutions — Full Load lorry transport since 1982 (43+ years) for businesses in Coimbatore.",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "No 10/135-G, Gurusamy Pillai St Extn, Podanur",
@@ -85,9 +82,7 @@ export const localBusinessSchema = {
   },
   "areaServed": [
     { "@type": "City", "name": "Coimbatore" },
-    { "@type": "City", "name": "Tiruppur" },
-    { "@type": "AdministrativeArea", "name": "Coimbatore District" },
-    { "@type": "AdministrativeArea", "name": "Tiruppur District" }
+    { "@type": "AdministrativeArea", "name": "Coimbatore District" }
   ],
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
@@ -98,7 +93,6 @@ export const localBusinessSchema = {
         "name": "Transportation Services",
         "itemListElement": [
           { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Full Load Lorry Transport" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Return Load Transport", "description": "Subject to route availability; confirm before booking." } },
           { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Factory Shifting" } }
         ]
       }
@@ -119,11 +113,9 @@ export const transportServiceSchema = {
   },
   "areaServed": [
     { "@type": "City", "name": "Coimbatore" },
-    { "@type": "City", "name": "Tiruppur" },
-    { "@type": "AdministrativeArea", "name": "Coimbatore District" },
-    { "@type": "AdministrativeArea", "name": "Tiruppur District" }
+    { "@type": "AdministrativeArea", "name": "Coimbatore District" }
   ],
-  "description": "Dedicated full load lorry transport in Coimbatore and Tiruppur districts since 1982 with 12+ own lorries from Coimbatore.",
+  "description": "Dedicated full load lorry transport in Coimbatore district since 1982 with 12+ own lorries from Coimbatore.",
   "offers": {
     "@type": "Offer",
     "availability": "https://schema.org/InStock",
@@ -141,13 +133,12 @@ export const transportBusinessSchema = {
   "image": "https://sta-corporate.in/logo.png",
   "priceRange": "$$",
   "foundingDate": "1982",
-  "description": "Full load lorry transport and return load transport subject to route availability across Tamil Nadu from Coimbatore.",
+  "description": "Full load lorry transport in Coimbatore district since 1982.",
   "address": localBusinessSchema.address,
   "geo": localBusinessSchema.geo,
   "areaServed": localBusinessSchema.areaServed,
   "makesOffer": [
     { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Full Load Lorry Transport", "serviceType": "Full Truck Load Transport" } },
-    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Return Load Transport", "serviceType": "Return Load Transport" } },
     { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Factory and Warehouse Shifting", "serviceType": "Commercial Relocation" } }
   ]
 };
@@ -185,7 +176,7 @@ export const websiteSchema = {
   "@id": "https://sta-corporate.in/#website",
   "url": "https://sta-corporate.in",
   "name": "STA Corporate Solutions",
-  "description": "STA Corporate Solutions — lorry transport since 1982 for Coimbatore and Tiruppur districts.",
+  "description": "STA Corporate Solutions — lorry transport since 1982 for Coimbatore district.",
   "publisher": {
     "@id": "https://sta-corporate.in/#organization"
   },
@@ -200,26 +191,6 @@ export const websiteSchema = {
 };
 
 export const fullLoadServiceSchema = transportServiceSchema;
-
-export const returnLoadServiceSchema = {
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "@id": "https://sta-corporate.in/return-loads#service",
-  "name": "Return Load Transport Coimbatore Tamil Nadu",
-  "serviceType": "Return Load Transport",
-  "provider": {
-    "@type": "LocalBusiness",
-    "name": "STA Corporate Solutions",
-    "@id": "https://sta-corporate.in/#localbusiness"
-  },
-  "areaServed": { "@type": "State", "name": "Tamil Nadu" },
-  "description": "Cost-effective return load transport on available routes from Coimbatore. Save up to 40% on select Tamil Nadu routes.",
-  "offers": {
-    "@type": "Offer",
-    "availability": "https://schema.org/LimitedAvailability",
-    "priceCurrency": "INR"
-  }
-};
 
 export const fleetSchema = {
   "@context": "https://schema.org",

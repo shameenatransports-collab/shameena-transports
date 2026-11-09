@@ -41,15 +41,12 @@ const loadTypes = [
 
 const tamilNaduCities = [
   "Coimbatore",
-  "Tiruppur",
   "Pollachi",
   "Mettupalayam",
   "Sulur",
-  "Avinashi",
-  "Palladam",
-  "Udumalpet",
-  "Dharapuram",
-  "Kangeyam",
+  "Annur",
+  "Madukkarai",
+  "Kinathukadavu",
   "Other",
 ];
 

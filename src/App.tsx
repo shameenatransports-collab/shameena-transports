@@ -16,7 +16,6 @@ const Transportation = lazy(() => import("./pages/Transportation"));
 const Services = lazy(() => import("./pages/Services"));
 const Fleet = lazy(() => import("./pages/Fleet"));
 const ServiceAreas = lazy(() => import("./pages/ServiceAreas"));
-const ReturnLoads = lazy(() => import("./pages/ReturnLoads"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Privacy = lazy(() => import("./pages/Privacy"));
 const DataRequest = lazy(() => import("./pages/DataRequest"));
@@ -81,16 +80,16 @@ const App = () => (
                     
 
                     <Route path="/fleet" element={<Fleet />} />
-                    <Route path="/return-loads" element={<ReturnLoads />} />
+                    <Route path="/return-loads" element={<Navigate to="/transportation" replace />} />
 
                     <Route path="/service-areas" element={<ServiceAreas />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/privacy" element={<Privacy />} />
                     <Route path="/data-request" element={<DataRequest />} />
                     <Route path="/terms" element={<Terms />} />
-                    {/* City landing pages: Coimbatore and Tiruppur districts */}
+                    {/* City landing pages: Coimbatore district */}
                     <Route path="/coimbatore" element={<CityLanding />} />
-                    <Route path="/tiruppur" element={<CityLanding />} />
+                    <Route path="/tiruppur" element={<Navigate to="/coimbatore" replace />} />
                     {/* Redirects for retired pages and areas */}
                     <Route path="/financial-services/*" element={<Navigate to="/transportation" replace />} />
                     <Route path="/financial-services" element={<Navigate to="/transportation" replace />} />

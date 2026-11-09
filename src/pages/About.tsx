@@ -50,10 +50,10 @@ const About = () => {
     <>
       <Helmet>
         <title>About STA Corporate Solutions | Lorry Transport Since 1982</title>
-        <meta name="description" content="STA Corporate Solutions — lorry transport since 1982 (43+ years) for businesses in Coimbatore and Tiruppur districts, headquartered in Coimbatore." />
+        <meta name="description" content="STA Corporate Solutions — lorry transport since 1982 (43+ years) for businesses in Coimbatore district, headquartered in Coimbatore." />
         <link rel="canonical" href="https://sta-corporate.in/about" />
-        <meta property="og:title" content="About STA Corporate Solutions | 43+ Years in Lorry Transport · Coimbatore & Tiruppur" />
-        <meta property="og:description" content="Lorry transport since 1982, serving Coimbatore and Tiruppur districts." />
+        <meta property="og:title" content="About STA Corporate Solutions | 43+ Years in Lorry Transport · Coimbatore" />
+        <meta property="og:description" content="Lorry transport since 1982, serving Coimbatore district." />
         <meta property="og:url" content="https://sta-corporate.in/about" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(organizationSchema)}</script>
@@ -74,11 +74,11 @@ const About = () => {
                 Built in Coimbatore.
                 <br />
                 <span className="bg-gradient-to-r from-secondary via-secondary to-primary-foreground bg-clip-text text-transparent">
-                  Lorry transport for Coimbatore and Tiruppur.
+                  Lorry transport for Coimbatore.
                 </span>
               </h1>
               <p className="text-headline text-primary-foreground/85 max-w-2xl">
-                43+ years of dependable lorry transport for the businesses of Coimbatore and Tiruppur districts.
+                43+ years of dependable lorry transport for the businesses of Coimbatore district.
               </p>
             </div>
           </div>
@@ -94,10 +94,10 @@ const About = () => {
                 </h2>
                 <div className="space-y-4 text-muted-foreground">
                   <p>
-                    <strong className="text-foreground">STA Transport &amp; Logistics</strong> began in <strong className="text-foreground">1982</strong> in Coimbatore as a reliable goods transport operator. Over <strong className="text-foreground">43+ years of service excellence</strong>, we have grown into a trusted full-load lorry transport partner for textile mills in Tiruppur, foundries in Coimbatore, and manufacturers across Coimbatore and Tiruppur districts.
+                    <strong className="text-foreground">STA Transport &amp; Logistics</strong> began in <strong className="text-foreground">1982</strong> in Coimbatore as a reliable goods transport operator. Over <strong className="text-foreground">43+ years of service excellence</strong>, we have grown into a trusted full-load lorry transport partner for textile mills and foundries in Coimbatore, and manufacturers across Coimbatore district.
                   </p>
                   <p>
-                    Today, <strong className="text-foreground">STA Corporate Solutions</strong> serves businesses in Coimbatore and Tiruppur districts from our Coimbatore headquarters, with the same standards of integrity, responsibility and customer care we started with.
+                    Today, <strong className="text-foreground">STA Corporate Solutions</strong> serves businesses in Coimbatore district from our Coimbatore headquarters, with the same standards of integrity, responsibility and customer care we started with.
                   </p>
                 </div>
               </div>
@@ -124,13 +124,13 @@ const About = () => {
               <div className="bg-card p-8 rounded-lg border border-border">
                 <h3 className="text-2xl font-bold text-foreground mb-4">Our Mission</h3>
                 <p className="text-muted-foreground">
-                  To deliver superior, competent and personalised services in lorry transport — empowering businesses in Coimbatore and Tiruppur with a trusted freight partner. We remove the stress and uncertainty of moving goods through clear planning and honest communication at every stage.
+                  To deliver superior, competent and personalised services in lorry transport — empowering businesses in Coimbatore with a trusted freight partner. We remove the stress and uncertainty of moving goods through clear planning and honest communication at every stage.
                 </p>
               </div>
               <div className="bg-card p-8 rounded-lg border border-border">
                 <h3 className="text-2xl font-bold text-foreground mb-4">Our Vision</h3>
                 <p className="text-muted-foreground">
-                  To become the most trusted transport partner for businesses in Coimbatore and Tiruppur — built on 43+ years of transport heritage and a fleet that businesses can rely on for the long term.
+                  To become the most trusted transport partner for businesses in Coimbatore — built on 43+ years of transport heritage and a fleet that businesses can rely on for the long term.
                 </p>
               </div>
             </div>

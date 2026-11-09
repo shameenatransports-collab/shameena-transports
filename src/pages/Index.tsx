@@ -16,12 +16,12 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>STA Corporate Solutions | Lorry Transport for Coimbatore & Tiruppur</title>
-        <meta name="description" content="Full Load and Return Load lorry transport since 1982 (43+ yrs) for businesses in Coimbatore and Tiruppur districts — Coimbatore HQ." />
-        <meta name="keywords" content="STA Corporate Solutions, lorry transport Coimbatore, full load transport Coimbatore Tiruppur, return load transport Coimbatore, factory shifting Coimbatore, textile cargo Tiruppur" />
+        <title>STA Corporate Solutions | Lorry Transport for Coimbatore</title>
+        <meta name="description" content="Full Load lorry transport since 1982 (43+ yrs) for businesses in Coimbatore district — Coimbatore HQ." />
+        <meta name="keywords" content="STA Corporate Solutions, lorry transport Coimbatore, full load transport Coimbatore, factory shifting Coimbatore, textile cargo Coimbatore" />
         <link rel="canonical" href="https://sta-corporate.in" />
-        <meta property="og:title" content="STA Corporate Solutions | Lorry Transport Since 1982 · Coimbatore & Tiruppur" />
-        <meta property="og:description" content="Lorry transport since 1982 across Coimbatore and Tiruppur districts." />
+        <meta property="og:title" content="STA Corporate Solutions | Lorry Transport Since 1982 · Coimbatore" />
+        <meta property="og:description" content="Lorry transport since 1982 across Coimbatore district." />
         <meta property="og:image" content="https://sta-corporate.in/og-image.jpg" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en_IN" />

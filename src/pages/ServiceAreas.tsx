@@ -7,24 +7,24 @@ import { PILLARS } from "@/lib/seo/pillars";
 import { pillarCityUrl, canonical } from "@/lib/seo/slugs";
 import { MapPin, ArrowUpRight } from "lucide-react";
 
-const states = ["Coimbatore", "Tiruppur"];
+const states = ["Coimbatore"];
 export default function ServiceAreas() {
   return <>
     <Helmet>
-      <title>Coimbatore & Tiruppur Service Directory | STA</title>
-      <meta name="description" content="Full Load and Return Load lorry transport for businesses in Coimbatore and Tiruppur districts, Tamil Nadu. Confirm service availability." />
+      <title>Coimbatore Service Directory | STA</title>
+      <meta name="description" content="Full Load lorry transport for businesses in Coimbatore district, Tamil Nadu. Confirm service availability." />
       <link rel="canonical" href={canonical("/service-areas")} />
-      <meta property="og:title" content="Coimbatore & Tiruppur Service Directory | STA" />
-      <meta property="og:description" content="Enquiry guidance for Coimbatore and Tiruppur districts, Tamil Nadu, coordinated from our Podanur, Coimbatore office." />
+      <meta property="og:title" content="Coimbatore Service Directory | STA" />
+      <meta property="og:description" content="Enquiry guidance for Coimbatore district, Tamil Nadu, coordinated from our Podanur, Coimbatore office." />
       <meta property="og:url" content={canonical("/service-areas")} />
       <meta property="og:type" content="website" />
     </Helmet>
     <Layout>
       <section className="bg-primary pt-32 pb-16 md:pt-40 md:pb-20">
         <div className="container mx-auto px-4 max-w-4xl">
-          <p className="text-primary-foreground/80 mb-4">Coimbatore & Tiruppur Districts</p>
-          <h1 className="text-3xl md:text-5xl font-bold text-primary-foreground mb-6">Coimbatore & Tiruppur service directory</h1>
-          <p className="text-lg text-primary-foreground/90">Full Load and Return Load lorry transport, for businesses only. Enquiries are coordinated from our Podanur, Coimbatore office; these city pages do not represent local branches.</p>
+          <p className="text-primary-foreground/80 mb-4">Coimbatore District</p>
+          <h1 className="text-3xl md:text-5xl font-bold text-primary-foreground mb-6">Coimbatore service directory</h1>
+          <p className="text-lg text-primary-foreground/90">Full Load lorry transport, for businesses only. Enquiries are coordinated from our Podanur, Coimbatore office; these city pages do not represent local branches.</p>
         </div>
       </section>
       <nav aria-label="Districts" className="container mx-auto px-4 py-8 flex flex-wrap gap-x-6 gap-y-3">{states.map(state => <a key={state} href={`#${state.toLowerCase().replace(/ /g, "-")}`} className="text-primary underline underline-offset-4">{state}</a>)}</nav>
@@ -38,7 +38,7 @@ export default function ServiceAreas() {
           </article>)}</div>
         </div>
       </section>)}
-      <section className="py-12 bg-muted/40"><div className="container mx-auto px-4 max-w-4xl"><h2 className="text-2xl font-semibold text-foreground mb-4">Confirm your requirements before engagement</h2><p className="text-muted-foreground mb-4">Transport routes, vehicle suitability and loading dates are confirmed per booking. Return loads are subject to route availability. Financial assistance is for startups and deep-tech companies, strictly not personal loans; STA is not a lender. Legal and CA requirements depend on the relevant authority.</p><Link to="/services" className="text-primary underline">Explore all services</Link></div></section>
+      <section className="py-12 bg-muted/40"><div className="container mx-auto px-4 max-w-4xl"><h2 className="text-2xl font-semibold text-foreground mb-4">Confirm your requirements before engagement</h2><p className="text-muted-foreground mb-4">Transport routes, vehicle suitability and loading dates are confirmed per booking.</p><Link to="/services" className="text-primary underline">Explore all services</Link></div></section>
       <CTASection />
     </Layout>
   </>;

@@ -41,7 +41,6 @@ export default function PillarCitySubPage() {
     { q: `Is ${sub.name} available in ${city.name}?`, a: `Contact our Coimbatore team to confirm ${sub.shortName.toLowerCase()} support for ${city.name}. ${localPageContent(pillar, city).boundary}` },
     { q: `Who is ${sub.shortName} in ${city.name} for?`, a: `Businesses and organisations in ${city.name} needing ${sub.shortName.toLowerCase()}.` },
     { q: `How fast can ${sub.shortName} be arranged in ${city.name}?`, a: "Timelines depend on your requirements, document readiness and availability. Confirm them before engagement." },
-    pillar.id === "transportation" && sub.slug === "return-load" && { q: `Are return loads available out of ${city.name}?`, a: "Return loads are subject to route availability — call us to confirm current truck schedules." },
   ].filter(Boolean) as { q: string; a: string }[];
 
   return (

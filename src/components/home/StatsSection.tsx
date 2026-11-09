@@ -18,13 +18,13 @@ const stats = [
     icon: MapPin,
     value: "10",
     label: "Towns on our routes",
-    description: "Around Coimbatore & Tiruppur"
+    description: "Around Coimbatore"
   },
   {
     icon: MapPin,
     value: "2",
     label: "Districts served",
-    description: "Coimbatore · Tiruppur",
+    description: "Coimbatore",
   },
 ];
 

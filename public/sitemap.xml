@@ -26,22 +26,12 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://sta-corporate.in/return-loads</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://sta-corporate.in/service-areas</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://sta-corporate.in/coimbatore</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/tiruppur</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -62,11 +52,6 @@
   </url>
   <url>
     <loc>https://sta-corporate.in/transportation/services/full-load</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/transportation/services/return-load</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -121,11 +106,6 @@
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://sta-corporate.in/transportation/coimbatore/return-load</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
     <loc>https://sta-corporate.in/transportation/coimbatore/containerized</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
@@ -166,72 +146,12 @@
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://sta-corporate.in/transportation/tiruppur</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/transportation/tiruppur/full-load</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/transportation/tiruppur/return-load</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/transportation/tiruppur/containerized</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/transportation/tiruppur/textile-cargo</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/transportation/tiruppur/construction-material</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/transportation/tiruppur/factory-shifting</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/transportation/tiruppur/heavy-machinery</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/transportation/tiruppur/project-cargo</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/transportation/tiruppur/door-to-door</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/transportation/tiruppur/intercity-freight</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
     <loc>https://sta-corporate.in/transportation/pollachi</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sta-corporate.in/transportation/pollachi/full-load</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/transportation/pollachi/return-load</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
@@ -256,17 +176,17 @@
     <priority>0.65</priority>
   </url>
   <url>
+    <loc>https://sta-corporate.in/transportation/pollachi/heavy-machinery</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
     <loc>https://sta-corporate.in/transportation/mettupalayam</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sta-corporate.in/transportation/mettupalayam/full-load</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/transportation/mettupalayam/return-load</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
@@ -291,17 +211,17 @@
     <priority>0.65</priority>
   </url>
   <url>
+    <loc>https://sta-corporate.in/transportation/mettupalayam/heavy-machinery</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
     <loc>https://sta-corporate.in/transportation/sulur</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://sta-corporate.in/transportation/sulur/full-load</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/transportation/sulur/return-load</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
@@ -326,184 +246,114 @@
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://sta-corporate.in/transportation/avinashi</loc>
+    <loc>https://sta-corporate.in/transportation/sulur/heavy-machinery</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/annur</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://sta-corporate.in/transportation/avinashi/full-load</loc>
+    <loc>https://sta-corporate.in/transportation/annur/full-load</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://sta-corporate.in/transportation/avinashi/return-load</loc>
+    <loc>https://sta-corporate.in/transportation/annur/containerized</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://sta-corporate.in/transportation/avinashi/containerized</loc>
+    <loc>https://sta-corporate.in/transportation/annur/textile-cargo</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://sta-corporate.in/transportation/avinashi/textile-cargo</loc>
+    <loc>https://sta-corporate.in/transportation/annur/construction-material</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://sta-corporate.in/transportation/avinashi/construction-material</loc>
+    <loc>https://sta-corporate.in/transportation/annur/factory-shifting</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://sta-corporate.in/transportation/avinashi/factory-shifting</loc>
+    <loc>https://sta-corporate.in/transportation/annur/heavy-machinery</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://sta-corporate.in/transportation/palladam</loc>
+    <loc>https://sta-corporate.in/transportation/madukkarai</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://sta-corporate.in/transportation/palladam/full-load</loc>
+    <loc>https://sta-corporate.in/transportation/madukkarai/full-load</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://sta-corporate.in/transportation/palladam/return-load</loc>
+    <loc>https://sta-corporate.in/transportation/madukkarai/containerized</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://sta-corporate.in/transportation/palladam/containerized</loc>
+    <loc>https://sta-corporate.in/transportation/madukkarai/textile-cargo</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://sta-corporate.in/transportation/palladam/textile-cargo</loc>
+    <loc>https://sta-corporate.in/transportation/madukkarai/construction-material</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://sta-corporate.in/transportation/palladam/construction-material</loc>
+    <loc>https://sta-corporate.in/transportation/madukkarai/factory-shifting</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://sta-corporate.in/transportation/palladam/factory-shifting</loc>
+    <loc>https://sta-corporate.in/transportation/madukkarai/heavy-machinery</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://sta-corporate.in/transportation/udumalpet</loc>
+    <loc>https://sta-corporate.in/transportation/kinathukadavu</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://sta-corporate.in/transportation/udumalpet/full-load</loc>
+    <loc>https://sta-corporate.in/transportation/kinathukadavu/full-load</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://sta-corporate.in/transportation/udumalpet/return-load</loc>
+    <loc>https://sta-corporate.in/transportation/kinathukadavu/containerized</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://sta-corporate.in/transportation/udumalpet/containerized</loc>
+    <loc>https://sta-corporate.in/transportation/kinathukadavu/textile-cargo</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://sta-corporate.in/transportation/udumalpet/textile-cargo</loc>
+    <loc>https://sta-corporate.in/transportation/kinathukadavu/construction-material</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://sta-corporate.in/transportation/udumalpet/construction-material</loc>
+    <loc>https://sta-corporate.in/transportation/kinathukadavu/factory-shifting</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://sta-corporate.in/transportation/udumalpet/factory-shifting</loc>
+    <loc>https://sta-corporate.in/transportation/kinathukadavu/heavy-machinery</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/transportation/dharapuram</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/transportation/dharapuram/full-load</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/transportation/dharapuram/return-load</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/transportation/dharapuram/containerized</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/transportation/dharapuram/textile-cargo</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/transportation/dharapuram/construction-material</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/transportation/dharapuram/factory-shifting</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/transportation/kangeyam</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/transportation/kangeyam/full-load</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/transportation/kangeyam/return-load</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/transportation/kangeyam/containerized</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/transportation/kangeyam/textile-cargo</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/transportation/kangeyam/construction-material</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/transportation/kangeyam/factory-shifting</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/transportation/routes/coimbatore-to-tiruppur</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://sta-corporate.in/transportation/routes/coimbatore-to-pollachi</loc>
@@ -521,42 +371,17 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sta-corporate.in/transportation/routes/coimbatore-to-palladam</loc>
+    <loc>https://sta-corporate.in/transportation/routes/coimbatore-to-annur</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sta-corporate.in/transportation/routes/coimbatore-to-avinashi</loc>
+    <loc>https://sta-corporate.in/transportation/routes/coimbatore-to-madukkarai</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sta-corporate.in/transportation/routes/coimbatore-to-udumalpet</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/transportation/routes/tiruppur-to-avinashi</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/transportation/routes/tiruppur-to-palladam</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/transportation/routes/tiruppur-to-kangeyam</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/transportation/routes/tiruppur-to-dharapuram</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/transportation/routes/tiruppur-to-udumalpet</loc>
+    <loc>https://sta-corporate.in/transportation/routes/coimbatore-to-kinathukadavu</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

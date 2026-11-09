@@ -29,11 +29,11 @@ import { localBusinessSchema, transportBusinessSchema, transportServiceSchema } 
 import { ServiceFAQ } from "@/components/seo/ServiceFAQ";
 
 const transportFaqs = [
-  { question: "What type of lorry booking does STA Transport offer?", answer: "STA operates Full Load lorry transport only — your cargo gets a dedicated truck end-to-end. Return Loads are available subject to route availability on routes we are already running." },
+  { question: "What type of lorry booking does STA Transport offer?", answer: "STA operates Full Load lorry transport — your cargo gets a dedicated truck end-to-end. Return loads are not a regular offering; if a truck happens to be returning on your route we can confirm availability when you enquire." },
   { question: "How many lorries does STA own and which types?", answer: "We operate 12+ owned trailers and lorries — multi-axle trailers (20–25 ton, for heavy machinery and ODC) and open-body lorries (10–20 ton, for construction material and bulk goods). No broker chain." },
-  { question: "Which routes do you cover?", answer: "We run full-load trips in Coimbatore and Tiruppur districts, including Coimbatore–Tiruppur, Pollachi, Mettupalayam, Sulur, Avinashi, Palladam, Udumalpet, Dharapuram and Kangeyam. Confirm specific routes on WhatsApp." },
+  { question: "Which routes do you cover?", answer: "We run full-load trips in Coimbatore district, including Pollachi, Mettupalayam, Sulur, Annur, Madukkarai and Kinathukadavu. Confirm specific routes on WhatsApp." },
   { question: "How fast is a quote and how do I book?", answer: "WhatsApp +91 94430 33055 with pickup, destination, cargo type and weight — quotes are issued same-day during business hours (Mon–Sat, 09:00–19:00 IST). No registration needed." },
-  { question: "Since when has STA been in transportation?", answer: "STA Transport has operated continuously from Coimbatore since 1982 — 43+ years of full-load lorry experience in Coimbatore and Tiruppur districts." },
+  { question: "Since when has STA been in transportation?", answer: "STA Transport has operated continuously from Coimbatore since 1982 — 43+ years of full-load lorry experience in Coimbatore district." },
 ];
 
 
@@ -47,16 +47,9 @@ const services = [
     link: "/transport/full-load"
   },
   {
-    icon: Package,
-    title: "Return Loads",
-    description: "Cost-effective transport when trucks are returning on matching routes. Subject to route availability.",
-    features: ["Route-based pricing", "Flexible timing", "Subject to availability"],
-    link: "/return-loads"
-  },
-  {
     icon: Factory,
     title: "Textile & Industrial Cargo",
-    description: "Specialized handling for textile bales and industrial equipment from Tiruppur and Coimbatore.",
+    description: "Specialized handling for textile bales and industrial equipment in Coimbatore.",
     features: ["Expert handling", "Textile specialist", "Industrial cargo"],
     link: "/transport/textile"
   },
@@ -84,8 +77,8 @@ const stats = [
 ];
 
 const areas = [
-  "Coimbatore", "Tiruppur", "Pollachi", "Mettupalayam", "Sulur",
-  "Avinashi", "Palladam", "Udumalpet", "Dharapuram", "Kangeyam"
+  "Coimbatore", "Pollachi", "Mettupalayam", "Sulur",
+  "Annur", "Madukkarai", "Kinathukadavu"
 ];
 
 const whyChooseUs = [
@@ -112,11 +105,11 @@ const Transportation = () => {
   return (
     <>
       <Helmet>
-        <title>Full Load Lorry Transport Coimbatore & Tiruppur | STA</title>
-        <meta name="description" content="Full Load lorry transport across Coimbatore and Tiruppur districts — Coimbatore, Tiruppur, Pollachi, Palladam and nearby towns. Since 1982." />
+        <title>Full Load Lorry Transport Coimbatore | STA</title>
+        <meta name="description" content="Full Load lorry transport across Coimbatore district — Coimbatore, Pollachi and nearby towns. Since 1982." />
         <link rel="canonical" href="https://sta-corporate.in/transportation" />
-        <meta property="og:title" content="Full Load Lorry Transport Coimbatore & Tiruppur | STA" />
-        <meta property="og:description" content="Full Load lorry transport in Coimbatore and Tiruppur districts. 12+ fleet, 43+ years from Coimbatore." />
+        <meta property="og:title" content="Full Load Lorry Transport Coimbatore | STA" />
+        <meta property="og:description" content="Full Load lorry transport in Coimbatore district. 12+ fleet, 43+ years from Coimbatore." />
         <meta property="og:url" content="https://sta-corporate.in/transportation" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(localBusinessSchema)}</script>
@@ -148,7 +141,7 @@ const Transportation = () => {
                   </span>
                 </h1>
                 <p className="text-headline text-primary-foreground/85 max-w-2xl mb-10">
-                  Full Load lorry transport with our own fleet of 12+ vehicles across Coimbatore and Tiruppur districts. The original STA practice — the foundation on which our four new 2025 verticals are built.
+                  Full Load lorry transport with our own fleet of 12+ vehicles across Coimbatore district. The original STA practice — the foundation on which our four new 2025 verticals are built.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
                   <GetQuoteModal />

@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom";
-import { Phone, MapPin, Clock, Truck, Repeat, Factory } from "lucide-react";
+import { Phone, MapPin, Clock, Truck, Factory } from "lucide-react";
 import logo from "@/assets/sta-logo.png";
 
 const serviceLinks = [
   { name: "Transportation", href: "/transportation", icon: Truck },
-  { name: "Return Loads", href: "/return-loads", icon: Repeat },
   { name: "Factory Shifting", href: "/transportation/services/factory-shifting", icon: Factory },
 ];
 
@@ -12,7 +11,6 @@ const quickLinks = [
   { name: "About Us", href: "/about" },
   { name: "Our Fleet", href: "/fleet" },
   { name: "Service Areas", href: "/service-areas" },
-  { name: "Return Loads", href: "/return-loads" },
   { name: "Contact", href: "/contact" },
   { name: "Privacy Policy", href: "/privacy" },
   { name: "Data Request (DPDP)", href: "/data-request" },
@@ -20,8 +18,8 @@ const quickLinks = [
 ];
 
 const serviceAreas = [
-  "Coimbatore", "Tiruppur", "Pollachi", "Mettupalayam", "Sulur",
-  "Avinashi", "Palladam", "Udumalpet", "Dharapuram", "Kangeyam",
+  "Coimbatore", "Pollachi", "Mettupalayam", "Sulur",
+  "Annur", "Madukkarai", "Kinathukadavu",
 ];
 
 export function Footer() {
@@ -45,7 +43,7 @@ export function Footer() {
               </div>
             </div>
             <p className="text-sm text-primary-foreground/75 leading-relaxed max-w-md">
-              Coimbatore's trusted lorry transport partner since 1982, serving businesses across Coimbatore and Tiruppur districts.
+              Coimbatore's trusted lorry transport partner since 1982, serving businesses across Coimbatore district.
               Transparent support across Tamil Nadu.
             </p>
             <div className="space-y-3 pt-1">
@@ -126,7 +124,7 @@ export function Footer() {
         {/* Bottom */}
         <div className="mt-16 pt-8 border-t border-primary-foreground/10">
           <p className="text-xs text-primary-foreground/50 text-center mb-5 leading-relaxed max-w-4xl mx-auto">
-            STA Corporate Solutions — Full Load Lorry Transport, Return Loads, Textile Cargo and Factory Shifting in Coimbatore and Tiruppur, Tamil Nadu.
+            STA Corporate Solutions — Full Load Lorry Transport, Textile Cargo and Factory Shifting in Coimbatore, Tamil Nadu.
           </p>
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-xs text-primary-foreground/60">

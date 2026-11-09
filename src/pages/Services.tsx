@@ -7,7 +7,6 @@ import {
   localBusinessSchema,
   transportBusinessSchema,
   fullLoadServiceSchema,
-  returnLoadServiceSchema,
   createBreadcrumbSchema,
 } from "@/lib/structured-data";
 
@@ -28,22 +27,6 @@ const services = [
     ],
   },
   {
-    id: "return-load",
-    icon: Package,
-    title: "Return Load Transport",
-    description: "Cost-effective option when our trucks return on available routes",
-    isPrimary: true,
-    badge: "Subject to Route Availability",
-    features: [
-      "Significantly cheaper rates than full load",
-      "Available when trucks return from deliveries",
-      "Ideal for flexible delivery timelines",
-      "Contact us to check current route availability",
-      "Popular routes: Coimbatore-Tiruppur, Coimbatore-Pollachi",
-      "Book in advance for better availability",
-    ],
-  },
-  {
     id: "textile",
     icon: Factory,
     title: "Textile & Industrial Cargo",
@@ -52,7 +35,7 @@ const services = [
       "Textile bales and yarn transport",
       "Industrial machinery movement",
       "Careful handling of delicate equipment",
-      "Tiruppur-Coimbatore textile corridor experts",
+      "Coimbatore textile and engineering cargo experts",
       "Factory equipment relocation",
     ],
   },
@@ -94,7 +77,7 @@ const Services = () => {
     "@context": "https://schema.org",
     "@type": "ItemList",
     "name": "STA Corporate Solutions Transport Services",
-    "description": "Full Load and Return Load transport services in Tamil Nadu",
+    "description": "Full Load transport services in Tamil Nadu",
     "itemListElement": services.map((service, index) => ({
       "@type": "ListItem",
       "position": index + 1,
@@ -114,19 +97,18 @@ const Services = () => {
   return (
     <>
       <Helmet>
-        <title>Full Load & Return Load Lorry Transport Services | STA Corporate Solutions Tamil Nadu</title>
-        <meta name="description" content="Full Load dedicated truck transport & Return Load on available routes in Coimbatore and Tiruppur districts. Textile, Construction Material Transport. Coimbatore, Tiruppur. Since 1982. Call for quotes!" />
-        <meta name="keywords" content="full load lorry service, return load transport tamil nadu, dedicated truck booking, return load availability, lorry transport coimbatore, goods transport coimbatore, transport tiruppur" />
+        <title>Full Load Lorry Transport Services | STA Corporate Solutions Tamil Nadu</title>
+        <meta name="description" content="Full Load dedicated truck transport in Coimbatore district. Textile, Construction Material Transport. Coimbatore. Since 1982. Call for quotes!" />
+        <meta name="keywords" content="full load lorry service, dedicated truck booking, lorry transport coimbatore, goods transport coimbatore" />
         <link rel="canonical" href="https://sta-corporate.in/services" />
-        <meta property="og:title" content="Full Load & Return Load Transport Services | STA Corporate Solutions" />
-        <meta property="og:description" content="Dedicated Full Load transport & Return Load on available routes. Tamil Nadu's trusted logistics since 1982." />
+        <meta property="og:title" content="Full Load Transport Services | STA Corporate Solutions" />
+        <meta property="og:description" content="Dedicated Full Load transport. Tamil Nadu's trusted logistics since 1982." />
         <meta property="og:url" content="https://sta-corporate.in/services" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(localBusinessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(transportBusinessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(fullLoadServiceSchema)}</script>
-        <script type="application/ld+json">{JSON.stringify(returnLoadServiceSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(serviceListSchema)}</script>
       </Helmet>
       <Layout>
@@ -136,11 +118,10 @@ const Services = () => {
             <div className="max-w-3xl">
               <Badge variant="secondary" className="mb-4">Since 1982 – 43 Years of Heritage</Badge>
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-6">
-                Full Load & Return Load Transport Services
+                Full Load Transport Services
               </h1>
               <p className="text-lg text-primary-foreground/90">
-                <strong>Full Load</strong> – Your dedicated truck for complete cargo control. <strong>Return Load</strong> – Save costs on available return routes across Tamil Nadu.
-              </p>
+                <strong>Full Load</strong> – Your dedicated truck for complete cargo control.</p>
             </div>
           </div>
         </section>
@@ -195,39 +176,6 @@ const Services = () => {
                   </div>
                 </div>
               ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Return Load Info Box */}
-        <section className="py-12 bg-muted">
-          <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto bg-card border border-border rounded-xl p-6 md:p-8">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                  <AlertCircle className="h-6 w-6 text-accent" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-foreground mb-2">About Return Load Transport</h3>
-                  <p className="text-muted-foreground mb-4">
-                    Return Load transport is available when our trucks are returning from a delivery on specific routes. This allows us to offer significantly cheaper rates as the truck is already heading in that direction.
-                  </p>
-                  <ul className="space-y-2 text-sm text-muted-foreground">
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="h-4 w-4 text-accent" />
-                      Availability depends on current truck schedules and routes
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="h-4 w-4 text-accent" />
-                      Call us to check if return load is available for your route
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="h-4 w-4 text-accent" />
-                      Ideal for customers with flexible delivery timelines
-                    </li>
-                  </ul>
-                </div>
-              </div>
             </div>
           </div>
         </section>

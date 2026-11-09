@@ -1,3 +1,5 @@
+> **Scope update (Nov 2026, latest):** Coimbatore district only, transportation only. Return loads are not promoted. Earlier items below are historical.
+
 > **Scope update (Nov 2026, latest):** The business is now transportation only, for Coimbatore and Tiruppur districts. Finance, Legal & CA and Education items below are historical.
 
 > **Scope update (Nov 2026):** SEO coverage is now limited to Coimbatore and Tiruppur districts, and the Education practice is retired. Treat other-state and Education items below as historical.

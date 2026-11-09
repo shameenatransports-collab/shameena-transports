@@ -10,17 +10,17 @@ const faqs = [
   {
     question: "What services does STA Corporate Solutions provide in Coimbatore?",
     answer:
-      "STA Corporate Solutions is a lorry transport business based in Podanur, Coimbatore. We offer Full Load and Return Load transport, textile and yarn cargo, construction material, factory and warehouse shifting, heavy machinery and containerised cargo across Coimbatore and Tiruppur districts.",
+      "STA Corporate Solutions is a lorry transport business based in Podanur, Coimbatore. We offer Full Load transport, textile and yarn cargo, construction material, factory and warehouse shifting, heavy machinery and containerised cargo across Coimbatore district.",
   },
   {
     question: "What is Full Load transport and when should I use it?",
     answer:
-      "Full Load means booking an entire lorry exclusively for your cargo. You get a dedicated truck, complete control over timing, and direct delivery with no intermediate stops. Best for large shipments (5-25 tons) or when you need dedicated transport coordination. We cover Coimbatore, Tiruppur and the district towns around them.",
+      "Full Load means booking an entire lorry exclusively for your cargo. You get a dedicated truck, complete control over timing, and direct delivery with no intermediate stops. Best for large shipments (5-25 tons) or when you need dedicated transport coordination. We cover Coimbatore and the district towns around it.",
   },
   {
     question: "What areas do you serve?",
     answer:
-      "Our headquarters is in Podanur, Coimbatore. We serve businesses in Coimbatore and Tiruppur districts, including Pollachi, Mettupalayam, Sulur, Avinashi, Palladam, Udumalpet, Dharapuram and Kangeyam. For transport, route coverage is confirmed based on requirement.",
+      "Our headquarters is in Podanur, Coimbatore. We serve businesses in Coimbatore district, including Pollachi, Mettupalayam, Sulur, Annur, Madukkarai and Kinathukadavu. For transport, route coverage is confirmed based on requirement.",
   },
   {
     question: "How do I get started with STA Corporate Solutions?",

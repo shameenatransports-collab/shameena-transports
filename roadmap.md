@@ -22,9 +22,10 @@
 
 
 # Focus update (Nov 2026)
-- [x] SEO and service coverage limited to Coimbatore and Tiruppur districts (Tamil Nadu); other cities and states removed. Old city URLs redirect to /service-areas.
+- [x] SEO and service coverage limited to Coimbatore district (Tamil Nadu); other cities and states removed. Old city URLs redirect to /service-areas.
 - [x] Education practice and its AI pathway function removed; /edu-consultancy redirects to /services.
 - [x] Practices: Transportation, Financial Services (startups and deep-tech companies only), Legal & CA (businesses only).
 - [x] MSME/Mudra content replaced by /startup-funding-guide; /msme-loan-guide redirects there.
 - [ ] Re-verify scheme names and terms on the funding guide before each publish.
 - [x] Transport-only scope (Nov 2026): Financial Services and Legal & CA removed; /financial-services*, /legal-services*, /startup-funding-guide, /msme-loan-guide and /services redirect to /transportation.
+- [x] Coimbatore-district-only scope (Nov 2026): Tiruppur and all other districts removed; /tiruppur redirects to /coimbatore. Return loads no longer promoted (page and nav removed; /return-loads redirects to /transportation); only an availability-on-enquiry note remains.

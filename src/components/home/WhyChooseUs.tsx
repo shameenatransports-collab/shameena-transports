@@ -6,7 +6,7 @@ const features = [
   { icon: Shield, title: "Careful handling", description: "Experienced drivers on our own lorries — no broker hand-offs." },
   { icon: Clock, title: "Disciplined follow-up", description: "Clear coordination from enquiry to delivery, with a single point of contact." },
   { icon: Truck, title: "Own fleet since 1982", description: "12+ owned vehicles, so dispatch and pricing stay in our control." },
-  { icon: MapPin, title: "Coimbatore & Tiruppur focus", description: "Local knowledge of the Coimbatore and Tiruppur industrial belt, coordinated from our Podanur office." },
+  { icon: MapPin, title: "Coimbatore focus", description: "Local knowledge of the Coimbatore industrial belt, coordinated from our Podanur office." },
   { icon: Headphones, title: "Responsive support", description: "Reachable by phone or WhatsApp for bookings, enquiries, and consultations." },
 ];
 
@@ -27,10 +27,10 @@ export function WhyChooseUs() {
             <h2 className="text-display-xl mb-6">
               43+ years in transport,
               <br />
-              <span className="text-primary-foreground/60">lorry transport for Coimbatore & Tiruppur.</span>
+              <span className="text-primary-foreground/60">lorry transport for Coimbatore.</span>
             </h2>
             <p className="text-headline text-primary-foreground/70 max-w-2xl mx-auto">
-              Transportation since 1982, for businesses in Coimbatore and Tiruppur districts.
+              Transportation since 1982, for businesses in Coimbatore district.
             </p>
           </div>
         </ScrollReveal>

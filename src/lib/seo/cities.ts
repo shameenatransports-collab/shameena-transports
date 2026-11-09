@@ -1,8 +1,8 @@
-// Coverage: Coimbatore and Tiruppur districts, Tamil Nadu only.
+// Coverage: Coimbatore district, Tamil Nadu only.
 // Tier: 1 = district hub, 3 = district town.
 
 export type StateCode = "TN";
-export type DistrictName = "Coimbatore" | "Tiruppur";
+export type DistrictName = "Coimbatore";
 
 export interface City {
   slug: string;
@@ -24,13 +24,9 @@ export const CITIES: City[] = [
   { slug: "pollachi", name: "Pollachi", ...TN, district: "Coimbatore", tier: 3, region: "Coimbatore District" },
   { slug: "mettupalayam", name: "Mettupalayam", ...TN, district: "Coimbatore", tier: 3, region: "Coimbatore District" },
   { slug: "sulur", name: "Sulur", ...TN, district: "Coimbatore", tier: 3, region: "Coimbatore District" },
-  // Tiruppur district
-  { slug: "tiruppur", name: "Tiruppur", ...TN, district: "Tiruppur", tier: 1, region: "Tiruppur District", hub: true },
-  { slug: "avinashi", name: "Avinashi", ...TN, district: "Tiruppur", tier: 3, region: "Tiruppur District" },
-  { slug: "palladam", name: "Palladam", ...TN, district: "Tiruppur", tier: 3, region: "Tiruppur District" },
-  { slug: "udumalpet", name: "Udumalpet", ...TN, district: "Tiruppur", tier: 3, region: "Tiruppur District" },
-  { slug: "dharapuram", name: "Dharapuram", ...TN, district: "Tiruppur", tier: 3, region: "Tiruppur District" },
-  { slug: "kangeyam", name: "Kangeyam", ...TN, district: "Tiruppur", tier: 3, region: "Tiruppur District" },
+  { slug: "annur", name: "Annur", ...TN, district: "Coimbatore", tier: 3, region: "Coimbatore District" },
+  { slug: "madukkarai", name: "Madukkarai", ...TN, district: "Coimbatore", tier: 3, region: "Coimbatore District" },
+  { slug: "kinathukadavu", name: "Kinathukadavu", ...TN, district: "Coimbatore", tier: 3, region: "Coimbatore District" },
 ];
 
 export const CITY_BY_SLUG = Object.fromEntries(CITIES.map((c) => [c.slug, c]));
@@ -42,7 +38,7 @@ export function getCity(slug?: string) {
   return slug ? CITY_BY_SLUG[slug] : undefined;
 }
 
-// Freight corridors within and between the two districts (approximate road distances)
+// Freight corridors within Coimbatore district (approximate road distances)
 export interface Corridor {
   slug: string;
   from: string;
@@ -58,18 +54,12 @@ const C = (from: string, to: string, distanceKm: number): Corridor => {
 };
 
 export const CORRIDORS: Corridor[] = [
-  C("coimbatore", "tiruppur", 50),
   C("coimbatore", "pollachi", 40),
   C("coimbatore", "mettupalayam", 35),
   C("coimbatore", "sulur", 20),
-  C("coimbatore", "palladam", 40),
-  C("coimbatore", "avinashi", 40),
-  C("coimbatore", "udumalpet", 60),
-  C("tiruppur", "avinashi", 15),
-  C("tiruppur", "palladam", 25),
-  C("tiruppur", "kangeyam", 40),
-  C("tiruppur", "dharapuram", 50),
-  C("tiruppur", "udumalpet", 55),
+  C("coimbatore", "annur", 35),
+  C("coimbatore", "madukkarai", 15),
+  C("coimbatore", "kinathukadavu", 30),
 ];
 
 export const CORRIDOR_BY_SLUG = Object.fromEntries(CORRIDORS.map((c) => [c.slug, c]));

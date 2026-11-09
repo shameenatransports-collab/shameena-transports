@@ -138,7 +138,7 @@ const Contact = () => {
     <>
       <Helmet>
         <title>Contact Us | Business Enquiries - STA Corporate Solutions</title>
-        <meta name="description" content="Contact STA Corporate Solutions for business enquiries. Call +91 94430 33055 or WhatsApp for instant quotes. Lorry transport in Coimbatore and Tiruppur." />
+        <meta name="description" content="Contact STA Corporate Solutions for business enquiries. Call +91 94430 33055 or WhatsApp for instant quotes. Lorry transport in Coimbatore." />
         <link rel="canonical" href="https://sta-corporate.in/contact" />
         <meta property="og:title" content="Contact STA Corporate Solutions | Get a Quote" />
         <meta property="og:description" content="Call +91 94430 33055 or WhatsApp for instant quotes. Complete business solutions." />
@@ -273,7 +273,7 @@ const Contact = () => {
                             onChange={handleChange}
                             required
                             maxLength={120}
-                            placeholder="e.g., Tiruppur"
+                            placeholder="e.g., Pollachi"
                           />
                           {errors.destination && <p className="mt-1 text-xs text-destructive">{errors.destination}</p>}
                         </div>

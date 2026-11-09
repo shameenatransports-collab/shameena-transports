@@ -2,7 +2,7 @@ import { Factory, HardHat, Shirt, Package, Warehouse, Building2 } from "lucide-r
 import { ScrollReveal, ScrollRevealItem } from "@/components/ui/scroll-reveal";
 
 const industries = [
-  { icon: Shirt, name: "Textile", description: "Tiruppur · Coimbatore" },
+  { icon: Shirt, name: "Textile", description: "Coimbatore" },
   { icon: Factory, name: "Manufacturing", description: "Industrial Cargo" },
   { icon: HardHat, name: "Construction", description: "Building Materials" },
   { icon: Package, name: "FMCG & Retail", description: "Consumer Goods" },
@@ -17,7 +17,7 @@ export function TrustBadges() {
         <ScrollReveal stagger>
           <ScrollRevealItem>
             <p className="text-eyebrow text-muted-foreground/70 text-center mb-12">
-              Trusted by industries in Coimbatore and Tiruppur districts · Transport since 1982
+              Trusted by industries in Coimbatore district · Transport since 1982
             </p>
           </ScrollRevealItem>
           <div className="grid grid-cols-3 md:grid-cols-6 gap-x-4 gap-y-10">

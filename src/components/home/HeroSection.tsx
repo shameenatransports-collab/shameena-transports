@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 import { motion, useReducedMotion } from "framer-motion";
-import { Phone, MessageCircle, ArrowUpRight, Truck, Repeat, Factory } from "lucide-react";
+import { Phone, MessageCircle, ArrowUpRight, Truck, Factory } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Parallax } from "@/components/ui/parallax";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const verticals = [
   { icon: Truck, title: "Full Load Transport", href: "/transportation/services/full-load", desc: "Dedicated lorry, door to door" },
-  { icon: Repeat, title: "Return Loads", href: "/return-loads", desc: "Lower freight, subject to route availability" },
+  { icon: Truck, title: "Door-to-Door", href: "/transportation/services/door-to-door", desc: "Pickup to delivery, no transhipment" },
   { icon: Factory, title: "Factory Shifting", href: "/transportation/services/factory-shifting", desc: "Plant & warehouse relocation" },
 ];
 
@@ -51,7 +51,7 @@ export function HeroSection() {
             className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-background text-[11px] font-bold tracking-[0.18em] uppercase text-primary shadow-xl ring-1 ring-primary-foreground/40 mb-8"
           >
             <span className="h-1.5 w-1.5 rounded-full bg-secondary" />
-            Lorry Transport Since 1982 · Coimbatore & Tiruppur
+            Lorry Transport Since 1982 · Coimbatore
           </motion.div>
 
           <motion.h1
@@ -63,7 +63,7 @@ export function HeroSection() {
             STA Corporate Solutions
             <br />
             <span className="bg-gradient-to-r from-secondary via-secondary to-primary-foreground bg-clip-text text-transparent">
-              Lorry Transport for Coimbatore & Tiruppur
+              Lorry Transport for Coimbatore
             </span>
           </motion.h1>
 
@@ -73,7 +73,7 @@ export function HeroSection() {
             transition={{ duration: 0.9, ease: easeApple, delay: 0.35 }}
             className="text-headline text-primary-foreground/85 max-w-2xl mx-auto mb-3"
           >
-            Full Load and Return Load freight from our own 12+ vehicle fleet — 43+ years of dependable transport for businesses in Coimbatore and Tiruppur districts.
+            Full Load freight from our own 12+ vehicle fleet — 43+ years of dependable transport for businesses in Coimbatore district.
           </motion.p>
           <motion.p
             initial={{ opacity: 0 }}
@@ -81,7 +81,7 @@ export function HeroSection() {
             transition={{ duration: 1, ease: easeApple, delay: 0.5 }}
             className="text-sm md:text-base text-primary-foreground/60 mb-12 tracking-tight"
           >
-            Coimbatore HQ · Coimbatore and Tiruppur districts
+            Coimbatore HQ · Coimbatore district
           </motion.p>
 
           <motion.div
