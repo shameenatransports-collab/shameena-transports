@@ -124,7 +124,7 @@ const Terms = () => {
                   </p>
                   <ul className="list-disc list-inside text-muted-foreground space-y-3 ml-4">
                     <li>We take reasonable care in providing all services</li>
-                    <li>STA does not provide cargo insurance; customers should arrange their own cover for goods in transit</li>
+                    <li>STA does not provide cargo insurance or accident cover; customers should arrange their own cover for goods in transit</li>
                     <li>Liability for loss or damage is limited to the declared value</li>
                     <li>We are not liable for delays due to weather, strikes, or force majeure</li>
                     <li>Customers are advised to obtain their own insurance for high-value transactions</li>

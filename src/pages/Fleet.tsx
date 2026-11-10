@@ -38,7 +38,7 @@ const faqs = [
   },
   {
     question: "Is cargo insured?",
-    answer: "No. STA does not offer cargo insurance, so arrange your own cover for high-value goods.",
+    answer: "No. STA offers no cargo insurance or accident cover, so arrange your own cover for goods in transit.",
   },
   {
     question: "How do I book?",
