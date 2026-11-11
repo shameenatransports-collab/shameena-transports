@@ -21,9 +21,9 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sta-corporate.in/fleet</loc>
+    <loc>https://sta-corporate.in/open-body-lorry-coimbatore</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://sta-corporate.in/service-areas</loc>
@@ -49,6 +49,41 @@
     <loc>https://sta-corporate.in/transportation</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/services/open-body-lorry</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/services/cement-transport</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/services/steel-transport</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/services/pipe-transport</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/services/bagged-goods-transport</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/services/pump-motor-transport</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/services/foundry-casting-transport</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://sta-corporate.in/transportation/services/full-load</loc>
@@ -96,6 +131,41 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://sta-corporate.in/transportation/coimbatore/open-body-lorry</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/coimbatore/cement-transport</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/coimbatore/steel-transport</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/coimbatore/pipe-transport</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/coimbatore/bagged-goods-transport</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/coimbatore/pump-motor-transport</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/coimbatore/foundry-casting-transport</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
     <loc>https://sta-corporate.in/transportation/coimbatore/full-load</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
@@ -141,22 +211,32 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://sta-corporate.in/transportation/pollachi/open-body-lorry</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/pollachi/cement-transport</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/pollachi/steel-transport</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/pollachi/bagged-goods-transport</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
     <loc>https://sta-corporate.in/transportation/pollachi/full-load</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://sta-corporate.in/transportation/pollachi/textile-cargo</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
     <loc>https://sta-corporate.in/transportation/pollachi/construction-material</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/transportation/pollachi/factory-shifting</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
@@ -176,22 +256,32 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://sta-corporate.in/transportation/mettupalayam/open-body-lorry</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/mettupalayam/cement-transport</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/mettupalayam/steel-transport</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/mettupalayam/bagged-goods-transport</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
     <loc>https://sta-corporate.in/transportation/mettupalayam/full-load</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://sta-corporate.in/transportation/mettupalayam/textile-cargo</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
     <loc>https://sta-corporate.in/transportation/mettupalayam/construction-material</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/transportation/mettupalayam/factory-shifting</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
@@ -211,22 +301,32 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://sta-corporate.in/transportation/sulur/open-body-lorry</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/sulur/cement-transport</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/sulur/steel-transport</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/sulur/bagged-goods-transport</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
     <loc>https://sta-corporate.in/transportation/sulur/full-load</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://sta-corporate.in/transportation/sulur/textile-cargo</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
     <loc>https://sta-corporate.in/transportation/sulur/construction-material</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/transportation/sulur/factory-shifting</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
@@ -246,22 +346,32 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://sta-corporate.in/transportation/annur/open-body-lorry</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/annur/cement-transport</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/annur/steel-transport</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/annur/bagged-goods-transport</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
     <loc>https://sta-corporate.in/transportation/annur/full-load</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://sta-corporate.in/transportation/annur/textile-cargo</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
     <loc>https://sta-corporate.in/transportation/annur/construction-material</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/transportation/annur/factory-shifting</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
@@ -281,22 +391,32 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://sta-corporate.in/transportation/madukkarai/open-body-lorry</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/madukkarai/cement-transport</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/madukkarai/steel-transport</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/madukkarai/bagged-goods-transport</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
     <loc>https://sta-corporate.in/transportation/madukkarai/full-load</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://sta-corporate.in/transportation/madukkarai/textile-cargo</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
     <loc>https://sta-corporate.in/transportation/madukkarai/construction-material</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/transportation/madukkarai/factory-shifting</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
@@ -316,22 +436,32 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://sta-corporate.in/transportation/kinathukadavu/open-body-lorry</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/kinathukadavu/cement-transport</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/kinathukadavu/steel-transport</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/kinathukadavu/bagged-goods-transport</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
     <loc>https://sta-corporate.in/transportation/kinathukadavu/full-load</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://sta-corporate.in/transportation/kinathukadavu/textile-cargo</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
     <loc>https://sta-corporate.in/transportation/kinathukadavu/construction-material</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://sta-corporate.in/transportation/kinathukadavu/factory-shifting</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>

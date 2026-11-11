@@ -57,6 +57,7 @@ export default function PillarCityPage() {
       ]}
       serviceName={`${pillar.name} in ${city.name}`}
       serviceArea={`${city.name}, ${city.stateName}, India`}
+      answer={`STA Corporate Solutions provides open-body lorry transport for pickups in ${city.name}${content.typical ? `, including ${content.typical}` : ""}. Call or WhatsApp +91 94430 33055 with cargo, weight and date to confirm the vehicle and freight.`}
       faqs={faqs}
       keywords={keywords}
     >

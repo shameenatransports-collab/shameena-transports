@@ -25,6 +25,7 @@ export default function PillarSubPage() {
   const keywords = [...sub.keywords, ...sub.keywords.map((k) => `${k} coimbatore`)];
 
   const faqs = [
+    ...(sub.faqs ?? []),
     { q: `What is ${sub.name}?`, a: sub.description },
     {
       q: `Where is ${sub.shortName} available?`,
@@ -60,6 +61,7 @@ export default function PillarSubPage() {
       serviceArea="Coimbatore district, Tamil Nadu"
       faqs={faqs}
       keywords={keywords}
+      answer={sub.answer}
     >
       {/* Benefits */}
       <section className="py-20 md:py-24 bg-background">
@@ -82,6 +84,31 @@ export default function PillarSubPage() {
         </div>
       </section>
 
+      {(sub.tell || sub.caution) && (
+        <section className="py-16 bg-muted/40">
+          <div className="container mx-auto px-4 max-w-4xl grid md:grid-cols-2 gap-8">
+            {sub.tell && (
+              <div>
+                <h2 className="text-xl font-semibold text-foreground mb-4">What to tell us for a quote</h2>
+                <ul className="space-y-2 text-foreground">
+                  {sub.tell.map((t) => (
+                    <li key={t} className="flex items-start gap-2.5"><CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />{t}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+            {sub.caution && (
+              <div>
+                <h2 className="text-xl font-semibold text-foreground mb-4">Good to know</h2>
+                <p className="text-muted-foreground leading-relaxed">{sub.caution}</p>
+                <p className="text-muted-foreground leading-relaxed mt-3">STA does not offer cargo insurance. Freight is confirmed per booking; there is no fixed rate card.</p>
+                <p className="mt-4 text-sm"><Link to="/open-body-lorry-coimbatore" className="text-primary underline">Open-body lorry guide for Coimbatore</Link></p>
+              </div>
+            )}
+          </div>
+        </section>
+      )}
+
       {/* Cities */}
       <section className="py-20 md:py-24 bg-muted/40">
         <div className="container mx-auto px-4">
@@ -98,7 +125,7 @@ export default function PillarSubPage() {
               >
                 <span>
                   <span className="block font-semibold text-foreground">{sub.shortName} in {c.name}</span>
-                  <span className="block text-xs text-muted-foreground">{c.stateName}</span>
+                  <span className="block text-xs text-muted-foreground">{c.region}</span>
                 </span>
                 <ArrowUpRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
               </Link>

@@ -10,6 +10,14 @@ export interface SubService {
   description: string;
   keywords: string[]; // seed keywords (mapped from corpus)
   benefits: string[];
+  /** Answer-first summary shown at the top of the page (also used for AI answers). */
+  answer?: string;
+  /** What the customer should tell us to get a quote. */
+  tell?: string[];
+  /** Honest limits of the open-body lorry for this cargo. */
+  caution?: string;
+  /** Brief page-specific FAQs. */
+  faqs?: { q: string; a: string }[];
 }
 
 export interface Pillar {
@@ -41,6 +49,79 @@ export const PILLARS: Pillar[] = [
       `Reliable full-load lorry transport in and out of ${c}. Dedicated trucks, transparent pricing, and direct dispatch — serving manufacturers, traders and project sites across the region.`,
     sub: [
       {
+        slug: "open-body-lorry", name: "Open-Body Lorry Hire & Transport", shortName: "Open-Body Lorry",
+        description: "Open-body lorry hire and goods transport in Coimbatore district for building material, steel, pipes, packed goods, textile bales and crated cargo.",
+        answer: "An open-body lorry is a goods truck with a flat platform and high side walls but no fixed roof. STA Corporate Solutions provides open-body lorry transport and hire in Coimbatore district for building material, steel, pipes, packed goods, textile bales and crated cargo.",
+        keywords: ["open body lorry", "open truck on hire", "open body truck booking", "goods lorry", "lorry booking", "open lorry transport"],
+        benefits: ["Side and rear loading", "Tarpaulin cover for weather-sensitive cargo", "Suited to long and bulky items", "Vehicle and load confirmed per booking"],
+        tell: ["Pickup and delivery addresses", "Cargo type, weight and packing", "Longest item length, if any", "Loading and unloading help needed", "Preferred date and time"],
+        caution: "Not suited to containers, loose sand or gravel, liquids, temperature-controlled goods or oversize machinery.",
+        faqs: [
+          { q: "How do I book an open-body lorry in Coimbatore?", a: "Call or WhatsApp +91 94430 33055 with pickup, destination, cargo and date. Vehicle, load and freight are confirmed per booking." },
+          { q: "Do you quote a fixed price?", a: "No fixed rate card. Freight depends on distance, cargo weight, loading and unloading time, and waiting. You get a quote after sharing the details." },
+        ],
+      },
+      {
+        slug: "cement-transport", name: "Cement & Bagged Building Material Transport", shortName: "Cement Transport",
+        description: "Cement bags and bagged building material by open-body lorry for dealers, contractors and builders in Coimbatore district.",
+        answer: "Cement bags travel well on an open-body lorry when loaded flat and covered with tarpaulin against rain. STA arranges cement and bagged building material transport in Coimbatore district for dealers, contractors and builders.",
+        keywords: ["cement transport", "cement lorry", "cement bag transport", "building material lorry"],
+        benefits: ["Flat, stable loading of bags", "Tarpaulin cover against rain", "Delivery to site or godown", "Loading and unloading help on request"],
+        tell: ["Number of bags and total weight", "Loading point (dealer, godown or plant)", "Site access for a lorry", "Who will unload", "Delivery date"],
+        caution: "Not for loose bulk cement, which needs a bulker.",
+        faqs: [{ q: "Is cement protected from rain on the lorry?", a: "Bags are sheeted with tarpaulin. Tell us if the trip is in wet weather so extra cover is arranged." }],
+      },
+      {
+        slug: "steel-transport", name: "Steel, TMT Bar & Rod Transport", shortName: "Steel Transport",
+        description: "TMT bars, rods, angles, channels and structural steel by open-body lorry in Coimbatore district.",
+        answer: "Long steel such as TMT bars, rods, angles and channels fits on an open platform. Tell STA the longest length and total weight so we can confirm the lorry body and load are suitable for your steel transport in Coimbatore district.",
+        keywords: ["steel transport", "TMT bar transport", "rod transport lorry", "steel lorry"],
+        benefits: ["Open platform for long items", "Secure tie-down", "Plant-to-site delivery", "Weight and length confirmed per booking"],
+        tell: ["Item type and bundle count", "Longest length", "Total weight", "Loading equipment (crane, forklift)", "Delivery site access"],
+        caution: "Very long or heavy structural sections are checked against the vehicle and permitted overhang before we confirm.",
+        faqs: [{ q: "How long can steel bars be on your lorry?", a: "It depends on the vehicle allotted. Share the longest length at booking and we confirm whether it fits safely." }],
+      },
+      {
+        slug: "pipe-transport", name: "Pipe Transport (PVC, GI & Ductile)", shortName: "Pipe Transport",
+        description: "PVC, GI, HDPE and ductile iron pipes by open-body lorry for contractors and suppliers in Coimbatore district.",
+        answer: "Pipes are stacked, chocked and tied down on an open-body lorry. STA transports PVC, GI, HDPE and ductile pipes for contractors and suppliers in Coimbatore district; share diameter, length and count so we can confirm the load.",
+        keywords: ["pipe transport", "pvc pipe lorry", "gi pipe transport", "pipe lorry coimbatore"],
+        benefits: ["Stacked and chocked loading", "Suited to long lengths", "Supplier-to-site delivery", "Careful handling of coated pipes"],
+        tell: ["Pipe material and diameter", "Length and count", "Total weight", "Loading and unloading arrangement", "Site access"],
+        caution: "Heavy large-diameter pipes need lifting equipment at both ends.",
+        faqs: [{ q: "Do you supply the crane for unloading pipes?", a: "Loaders and packers can help with handling. Heavy pipes need lifting equipment, which we discuss at booking." }],
+      },
+      {
+        slug: "bagged-goods-transport", name: "Bagged & Packed Goods Transport", shortName: "Bagged Goods",
+        description: "Rice, fertiliser, cattle feed, sacks and packed cartons by open-body lorry for traders and distributors in Coimbatore district.",
+        answer: "Bagged and packed goods such as rice, fertiliser, cattle feed and cartons suit an open-body lorry with tarpaulin cover. STA moves them for traders, dealers and distributors in Coimbatore district.",
+        keywords: ["bagged goods transport", "rice bag lorry", "fertiliser transport", "packed goods lorry"],
+        benefits: ["Easy loading and unloading", "Tarpaulin cover", "Trader and distributor friendly", "Loaders available on request"],
+        tell: ["Bag or carton count", "Total weight", "Loading godown address", "Delivery points", "Preferred date"],
+        caution: "Goods that must stay dry or cool need a covered or temperature-controlled vehicle, which we do not run.",
+        faqs: [{ q: "Can you carry food grains?", a: "Bagged grains and feed can be carried sheeted on an open-body lorry. Goods needing a closed, clean or cool vehicle are not suitable." }],
+      },
+      {
+        slug: "pump-motor-transport", name: "Pump, Motor & Engineering Goods Transport", shortName: "Pump & Motor Transport",
+        description: "Crated pumps, motors, castings and engineering goods by open-body lorry from Coimbatore industrial units.",
+        answer: "Crated pumps, motors and engineering goods that fit within the body height can travel on an open-body lorry. STA moves them from Coimbatore industrial units; share crate size and weight so we can confirm the load.",
+        keywords: ["pump transport", "motor transport", "engineering goods lorry", "machinery transport coimbatore"],
+        benefits: ["Crated and palletised loads", "Unit-to-customer delivery", "Loading aid coordination", "Tie-down and cover"],
+        tell: ["Crate or pallet size and count", "Weight per piece", "Loading equipment (forklift, crane)", "Delivery address", "Date"],
+        caution: "Over-height or oversize machinery is not suited to an open-body lorry.",
+        faqs: [{ q: "What size of crate can you carry?", a: "It depends on the vehicle allotted. Share crate dimensions and weight at booking and we confirm if it fits within the body height." }],
+      },
+      {
+        slug: "foundry-casting-transport", name: "Foundry Casting & Metal Parts Transport", shortName: "Casting Transport",
+        description: "Foundry castings and machined metal parts in bins, crates or pallets by open-body lorry in Coimbatore district.",
+        answer: "Castings and metal parts are dense, so weight per load matters more than volume. STA moves them in bins, crates or pallets by open-body lorry in Coimbatore district; share weight per pallet and loading equipment to confirm the load.",
+        keywords: ["casting transport", "foundry lorry", "metal parts transport", "casting lorry coimbatore"],
+        benefits: ["Bins, crates and pallets", "Foundry-to-customer delivery", "Weight-based load planning", "Forklift and crane coordination"],
+        tell: ["Weight per pallet or bin", "Number of pallets", "Loading equipment at both ends", "Delivery address", "Date"],
+        caution: "Very heavy single castings need lifting equipment and a vehicle check before we confirm.",
+        faqs: [{ q: "Is weight limited?", a: "Every vehicle has a permitted load. We check your total weight against it before confirming the booking." }],
+      },
+      {
         slug: "full-load", name: "Full Load Lorry Transport", shortName: "Full Load",
         description: "A dedicated truck exclusively for your cargo. Best for 5–25 ton loads, factory-to-factory movements, and time-sensitive shipments.",
         keywords: ["full load lorry", "dedicated truck", "lorry booking", "goods transport", "freight service"],
@@ -54,9 +135,9 @@ export const PILLARS: Pillar[] = [
       },
       {
         slug: "construction-material", name: "Construction Material Transport", shortName: "Construction",
-        description: "Sand, cement, steel, TMT rods, aggregates and bricks by open-body lorry for builders, developers and infrastructure projects.",
-        keywords: ["construction material transport", "tipper hire", "cement transport", "steel transport"],
-        benefits: ["Open-body lorry", "Site-direct delivery", "Builder & contractor friendly", "Heavy aggregate handling"],
+        description: "Cement bags, steel, TMT rods, pipes, plywood and bricks by open-body lorry for builders, dealers and contractors in Coimbatore district.",
+        keywords: ["construction material transport", "building material lorry", "cement transport", "steel transport"],
+        benefits: ["Open-body lorry", "Site-direct delivery", "Builder & contractor friendly", "Bagged and bundled material handling"],
       },
       {
         slug: "factory-shifting", name: "Factory & Warehouse Shifting", shortName: "Factory Shifting",

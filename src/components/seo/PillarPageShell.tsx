@@ -25,12 +25,16 @@ interface PillarPageShellProps {
   serviceArea?: string;
   faqs?: FAQ[];
   keywords?: string[]; // meta keywords
+  /** Answer-first summary shown directly under the hero. */
+  answer?: string;
+  /** Set true for thin or duplicate-prone combinations. */
+  noindex?: boolean;
   children: ReactNode;
 }
 
 export function PillarPageShell({
   title, metaTitle, metaDescription, path, eyebrow, heroAccent,
-  intro, stats, breadcrumbs, serviceName, serviceArea, faqs, keywords, children,
+  intro, stats, breadcrumbs, serviceName, serviceArea, faqs, keywords, answer, noindex, children,
 }: PillarPageShellProps) {
   const url = canonical(path);
 
@@ -51,6 +55,7 @@ export function PillarPageShell({
     name: serviceName,
     provider: { "@type": "LocalBusiness", "@id": canonical("/#localbusiness"), name: "STA Corporate Solutions", telephone: "+91-94430-33055", address: { "@type": "PostalAddress", streetAddress: "No 10/135-G, Gurusamy Pillai St Extn, Podanur", addressLocality: "Coimbatore", addressRegion: "Tamil Nadu", postalCode: "641023", addressCountry: "IN" } },
     areaServed: serviceArea ?? "Coimbatore district, Tamil Nadu",
+    speakable: { "@type": "SpeakableSpecification", cssSelector: ["[data-speakable]"] },
     description: metaDescription,
     url,
   };
@@ -74,6 +79,7 @@ export function PillarPageShell({
           <meta name="keywords" content={keywords.join(", ")} />
         )}
         <link rel="canonical" href={url} />
+        {noindex && <meta name="robots" content="noindex, follow" />}
         <meta property="og:title" content={metaTitle} />
         <meta property="og:description" content={metaDescription} />
         <meta property="og:url" content={url} />
@@ -156,6 +162,17 @@ export function PillarPageShell({
             </div>
           </div>
         </section>
+
+        {answer && (
+          <section className="bg-background pt-12" aria-label="Quick answer">
+            <div className="container mx-auto px-4 max-w-4xl">
+              <div className="rounded-2xl border border-primary/20 bg-primary/5 p-6 md:p-8">
+                <p className="text-eyebrow text-primary mb-2">Quick answer</p>
+                <p className="text-lg text-foreground leading-relaxed" data-speakable="true">{answer}</p>
+              </div>
+            </div>
+          </section>
+        )}
 
         {children}
 
