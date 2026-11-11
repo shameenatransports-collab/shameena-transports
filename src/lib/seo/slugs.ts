@@ -10,6 +10,16 @@ export const pillarCitySubUrl = (p: Pillar, city: string, sub: string) =>
   `${p.path}/${city}/${sub}`;
 export const corridorUrl = (slug: string) => `/transportation/routes/${slug}`;
 
+// Towns get these pages in the sitemap; Coimbatore (tier 1) gets every sub-service.
+const TOWN_SUBS = [
+  "open-body-lorry", "full-load", "trucks-on-hire", "cement-transport",
+  "steel-transport", "construction-material", "bagged-goods-transport", "loaders-packers",
+];
+export const isIndexableCitySub = (city: City, subSlug: string) =>
+  city.tier === 1 || TOWN_SUBS.includes(subSlug);
+
+export const OPEN_BODY_GUIDE_PATH = "/open-body-lorry-coimbatore";
+
 export const canonical = (path: string) => `${SITE_URL}${path}`;
 
 // City selection per pillar (top tiers + hubs)
@@ -42,7 +52,7 @@ export function enumerateAllUrls(): SitemapEntry[] {
     { path: "/services/transport-categories", priority: "0.7", changefreq: "monthly" },
     { path: "/about", priority: "0.7", changefreq: "monthly" },
     { path: "/contact", priority: "0.7", changefreq: "monthly" },
-    { path: "/fleet", priority: "0.6", changefreq: "monthly" },
+    { path: OPEN_BODY_GUIDE_PATH, priority: "0.9", changefreq: "monthly" },
     { path: "/service-areas", priority: "0.6", changefreq: "monthly" },
     { path: "/coimbatore", priority: "0.7", changefreq: "monthly" },
     { path: "/privacy", priority: "0.3", changefreq: "yearly" },
@@ -59,9 +69,8 @@ export function enumerateAllUrls(): SitemapEntry[] {
     const cities = citiesForPillar(p.id);
     for (const c of cities) {
       out.push({ path: pillarCityUrl(p, c.slug), priority: "0.75", changefreq: "monthly" });
-      // City×sub combos — cap: tier 1 → all subs, tier 2+ → top 6
-      const subCount = c.tier === 1 ? p.sub.length : Math.min(6, p.sub.length);
-      for (const s of p.sub.slice(0, subCount)) {
+      // City×sub combos — Coimbatore: all; towns: priority subs only (others are noindex)
+      for (const s of p.sub.filter((x) => isIndexableCitySub(c, x.slug))) {
         out.push({ path: pillarCitySubUrl(p, c.slug, s.slug), priority: "0.65", changefreq: "monthly" });
       }
     }

@@ -8,6 +8,7 @@ import {
   pillarCityUrl,
   pillarSubUrl,
   pillarCitySubUrl,
+  isIndexableCitySub,
 } from "@/lib/seo/slugs";
 import { CheckCircle2, ArrowUpRight } from "lucide-react";
 
@@ -37,9 +38,11 @@ export default function PillarCitySubPage() {
     `${sub.shortName.toLowerCase()} near ${city.name.toLowerCase()}`,
   ];
 
+  const local = localPageContent(pillar, city);
   const faqs = [
+    ...(sub.faqs ?? []).slice(0, 1),
     { q: `Is ${sub.name} available in ${city.name}?`, a: `Contact our Coimbatore team to confirm ${sub.shortName.toLowerCase()} support for ${city.name}. ${localPageContent(pillar, city).boundary}` },
-    { q: `Who is ${sub.shortName} in ${city.name} for?`, a: `Businesses and organisations in ${city.name} needing ${sub.shortName.toLowerCase()}.` },
+    { q: `What cargo moves from ${city.name}?`, a: local.typical ? `Typical cargo around ${city.name} includes ${local.typical}. Tell us your cargo and we confirm whether an open-body lorry suits it.` : `Tell us your cargo and we confirm whether an open-body lorry suits it.` },
     { q: `How fast can ${sub.shortName} be arranged in ${city.name}?`, a: "Timelines depend on your requirements, document readiness and availability. Confirm them before engagement." },
   ].filter(Boolean) as { q: string; a: string }[];
 
@@ -68,6 +71,8 @@ export default function PillarCitySubPage() {
       serviceArea={`${city.name}, ${city.stateName}, India`}
       faqs={faqs}
       keywords={keywords}
+      answer={sub.answer ? `${sub.answer} Available for pickups in ${city.name}.` : undefined}
+      noindex={!isIndexableCitySub(city, sub.slug)}
     >
       <section className="py-20 md:py-24 bg-background">
         <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-12">
@@ -90,9 +95,17 @@ export default function PillarCitySubPage() {
             <div className="rounded-2xl border border-border/60 bg-card p-6">
               <p className="text-eyebrow text-primary mb-3">Coverage</p>
               <p className="text-foreground font-semibold">{city.name}, {city.stateName}</p>
-              <p className="text-sm text-muted-foreground mt-1">{city.region} · {city.language}</p>
+              <p className="text-sm text-muted-foreground mt-1">{city.region}</p>
             </div>
-            <p className="text-muted-foreground leading-relaxed">{localPageContent(pillar, city).boundary}</p>
+            {local.typical && (
+              <p className="text-muted-foreground leading-relaxed">
+                <strong className="text-foreground">Around {city.name}:</strong> typical cargo includes {local.typical}.
+              </p>
+            )}
+            <p className="text-muted-foreground leading-relaxed">{local.localNote}</p>
+            {sub.caution && <p className="text-muted-foreground leading-relaxed">{sub.caution}</p>}
+            <p className="text-muted-foreground leading-relaxed">{local.boundary}</p>
+            <p className="text-sm"><Link to="/open-body-lorry-coimbatore" className="text-primary underline">Open-body lorry guide for Coimbatore</Link></p>
           </div>
         </div>
       </section>

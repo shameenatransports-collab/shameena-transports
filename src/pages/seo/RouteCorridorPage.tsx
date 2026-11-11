@@ -17,8 +17,8 @@ export default function RouteCorridorPage() {
   const path = corridorUrl(corridor.slug);
 
   const title = `${corridor.fromName} to ${corridor.toName} Transport`;
-  const metaTitle = `${corridor.fromName} to ${corridor.toName} Lorry Transport (${corridor.distanceKm} km) | STA Corporate Solutions`;
-  const metaDescription = `Full load lorry transport from ${corridor.fromName} to ${corridor.toName} — ${corridor.distanceKm} km. Call +91 94430 33055.`;
+  const metaTitle = `${corridor.fromName} to ${corridor.toName} Open-Body Lorry Transport (${corridor.distanceKm} km) | STA Corporate Solutions`;
+  const metaDescription = `Open-body lorry transport from ${corridor.fromName} to ${corridor.toName}, about ${corridor.distanceKm} km within Coimbatore district. Building material, steel, packed goods and more. Call +91 94430 33055.`;
   const keywords = [
     `${corridor.fromName.toLowerCase()} to ${corridor.toName.toLowerCase()} transport`,
     `${corridor.fromName.toLowerCase()} to ${corridor.toName.toLowerCase()} lorry`,
@@ -29,7 +29,7 @@ export default function RouteCorridorPage() {
 
   const faqs = [
     { q: `What is the distance from ${corridor.fromName} to ${corridor.toName}?`, a: `Approximately ${corridor.distanceKm} km by road.` },
-    { q: `How long is transit from ${corridor.fromName} to ${corridor.toName}?`, a: `Typical transit ranges from ${Math.ceil(corridor.distanceKm / 500)}–${Math.ceil(corridor.distanceKm / 350)} days depending on truck type, traffic and unloading time.` },
+    { q: `Can an open-body lorry do ${corridor.fromName} to ${corridor.toName} in one day?`, a: `Yes, for most loads. The distance is about ${corridor.distanceKm} km; loading, unloading and traffic decide the time. Share your cargo and date to confirm.` },
   ];
 
   return (
@@ -40,18 +40,18 @@ export default function RouteCorridorPage() {
       metaDescription={metaDescription}
       path={path}
       eyebrow={`Route · ${corridor.fromName} → ${corridor.toName}`}
-      intro={`Direct full-load lorry transport between ${corridor.fromName} and ${corridor.toName}. Dedicated truck, transparent pricing and door-to-door movement.`}
+      intro={`Open-body lorry transport between ${corridor.fromName} and ${corridor.toName}, about ${corridor.distanceKm} km. Dedicated lorry, door-to-door movement, freight confirmed per booking.`}
+      answer={`STA runs open-body lorry transport between ${corridor.fromName} and ${corridor.toName} (about ${corridor.distanceKm} km). Share cargo, weight and date by call or WhatsApp on +91 94430 33055 to confirm the vehicle and freight.`}
       stats={[
         { value: `${corridor.distanceKm}`, label: "Distance (km)" },
-        { value: `${Math.ceil(corridor.distanceKm / 450)}`, label: "Typical days" },
+        { value: "Same day", label: "Typical trip" },
         { value: "Full Load", label: "Service" },
         { value: "Direct", label: "No transhipment" },
       ]}
       breadcrumbs={[
         { name: "Home", url: "/" },
         { name: "Transportation", url: pillar.path },
-        { name: "Routes", url: pillar.path },
-        { name: `${corridor.fromName} → ${corridor.toName}`, url: path },
+                { name: `${corridor.fromName} → ${corridor.toName}`, url: path },
       ]}
       serviceName={title}
       serviceArea={`${corridor.fromName}–${corridor.toName}, India`}

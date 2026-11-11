@@ -7,6 +7,7 @@ import { BackgroundPicture } from "@/components/ui/picture";
 import { ServiceFAQ } from "@/components/seo/ServiceFAQ";
 import fleetBg from "@/assets/fleet-bg.jpg";
 import { localBusinessSchema, createBreadcrumbSchema, openBodyLorrySchema } from "@/lib/structured-data";
+import { CITIES } from "@/lib/seo/cities";
 
 const carries = [
   "Building and construction material — cement bags, steel, TMT bars, pipes, plywood",
@@ -38,13 +39,36 @@ const faqs = [
   },
   {
     question: "Is cargo insured?",
-    answer: "No. STA does not offer cargo insurance, so arrange your own cover for high-value goods.",
+    answer: "No. STA offers no cargo insurance or accident cover, so arrange your own cover for goods in transit.",
+  },
+  {
+    question: "Is there a fixed rate per km or per tonne?",
+    answer: "No. Freight depends on the cargo, weight, distance, loading and unloading effort and date, so it is confirmed per booking after a call or WhatsApp.",
+  },
+  {
+    question: "Can I book a lorry for a single day or a whole month?",
+    answer: "Yes. Open-body lorries are available for a single trip, daily hire, monthly hire or contract, subject to availability.",
+  },
+  {
+    question: "Is the cargo covered from rain?",
+    answer: "Tarpaulin cover and tie-down are used when the cargo needs it. Tell us if your goods are moisture-sensitive, such as cement or paper.",
+  },
+  {
+    question: "Which areas in Coimbatore district do you cover?",
+    answer: "Coimbatore, Pollachi, Mettupalayam, Sulur, Annur, Madukkarai and Kinathukadavu, and routes between them.",
   },
   {
     question: "How do I book?",
     answer: "Call or WhatsApp +91 94430 33055 with pickup, destination, cargo and date. We confirm vehicle, load and freight per booking.",
   },
 ];
+
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "How to book an open-body lorry in Coimbatore",
+  step: [{name:"Share pickup and delivery",text:"Give the loading address, the unloading address and the preferred date."},{name:"Describe the cargo",text:"Say what it is, how it is packed, approximate weight and length or height of the longest item."},{name:"Mention loading help",text:"Tell us if loaders are needed or if a crane, forklift or ramp is available at either end."},{name:"Get vehicle and freight confirmed",text:"We confirm whether an open-body lorry suits the load, then quote freight for that booking."}].map((s, i) => ({ "@type": "HowToStep", position: i + 1, name: s.name, text: s.text })),
+};
 
 const features = [
   { icon: Gauge, title: "Well Maintained", description: "Regular servicing and safety checks" },
@@ -53,10 +77,10 @@ const features = [
   { icon: Shield, title: "Careful Handling", description: "Tarpaulin cover and secure tie-down" },
 ];
 
-const Fleet = () => {
+const OpenBodyLorry = () => {
   const breadcrumbSchema = createBreadcrumbSchema([
     { name: "Home", url: "https://sta-corporate.in" },
-    { name: "Fleet", url: "https://sta-corporate.in/fleet" },
+    { name: "Open-Body Lorry", url: "https://sta-corporate.in/open-body-lorry-coimbatore" },
   ]);
 
   return (
@@ -71,13 +95,14 @@ const Fleet = () => {
           name="keywords"
           content="open body lorry coimbatore, open truck on hire coimbatore, goods lorry coimbatore, building material transport coimbatore, steel transport coimbatore, lorry booking coimbatore"
         />
-        <link rel="canonical" href="https://sta-corporate.in/fleet" />
+        <link rel="canonical" href="https://sta-corporate.in/open-body-lorry-coimbatore" />
         <meta property="og:title" content="Open-Body Lorry Transport in Coimbatore | STA Corporate Solutions" />
         <meta property="og:description" content="Open-body lorry for building material, steel, packed goods and bales in Coimbatore district." />
-        <meta property="og:url" content="https://sta-corporate.in/fleet" />
+        <meta property="og:url" content="https://sta-corporate.in/open-body-lorry-coimbatore" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(localBusinessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(openBodyLorrySchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(howToSchema)}</script>
       </Helmet>
       <Layout>
         <BackgroundPicture
@@ -174,6 +199,54 @@ const Fleet = () => {
           </div>
         </section>
 
+        <section className="py-16 bg-muted/40">
+          <div className="container mx-auto px-4 max-w-5xl grid md:grid-cols-2 gap-10">
+            <div>
+              <h2 className="text-2xl font-bold text-foreground mb-4">How to book</h2>
+              <ol className="space-y-3 list-decimal pl-5 text-foreground">
+                {howToSchema.step.map((st) => (
+                  <li key={st.name}><strong>{st.name}.</strong> <span className="text-muted-foreground">{st.text}</span></li>
+                ))}
+              </ol>
+            </div>
+            <div>
+              <h2 className="text-2xl font-bold text-foreground mb-4">What decides freight</h2>
+              <ul className="space-y-2 text-muted-foreground list-disc pl-5">
+                <li>Distance between pickup and delivery</li>
+                <li>Cargo type, weight and how it is packed</li>
+                <li>Loading and unloading effort, and whether loaders are needed</li>
+                <li>Single trip, daily, monthly or contract hire</li>
+                <li>Date, timing and waiting time at either end</li>
+              </ul>
+              <p className="text-sm text-muted-foreground mt-4">There is no fixed rate card. STA does not offer cargo insurance or accident cover.</p>
+              <h2 className="text-2xl font-bold text-foreground mt-8 mb-3">Loading and covering</h2>
+              <p className="text-muted-foreground">Cargo is loaded from the sides or rear, tied down and sheeted with tarpaulin where needed. Share any height or length limits before booking.</p>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-16 bg-background">
+          <div className="container mx-auto px-4 max-w-5xl">
+            <h2 className="text-2xl font-bold text-foreground mb-6">Open-body lorry by town in Coimbatore district</h2>
+            <div className="flex flex-wrap gap-3">
+              {CITIES.map((c) => (
+                <Link key={c.slug} to={`/transportation/${c.slug}/open-body-lorry`} className="px-4 py-2 rounded-full border border-border text-sm text-foreground hover:bg-muted">
+                  {c.name}
+                </Link>
+              ))}
+            </div>
+            <p className="text-sm text-muted-foreground mt-6">
+              By cargo:{" "}
+              <Link to="/transportation/services/cement-transport" className="underline">Cement</Link>,{" "}
+              <Link to="/transportation/services/steel-transport" className="underline">Steel</Link>,{" "}
+              <Link to="/transportation/services/pipe-transport" className="underline">Pipes</Link>,{" "}
+              <Link to="/transportation/services/bagged-goods-transport" className="underline">Bagged goods</Link>,{" "}
+              <Link to="/transportation/services/pump-motor-transport" className="underline">Pumps and motors</Link>,{" "}
+              <Link to="/transportation/services/foundry-casting-transport" className="underline">Foundry castings</Link>.
+            </p>
+          </div>
+        </section>
+
         <ServiceFAQ
           eyebrow="Open-body lorry"
           heading="Open-body lorry questions, answered"
@@ -187,4 +260,4 @@ const Fleet = () => {
   );
 };
 
-export default Fleet;
+export default OpenBodyLorry;

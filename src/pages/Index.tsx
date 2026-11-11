@@ -74,7 +74,7 @@ const Index = () => {
                   </ul>
                 </div>
               </div>
-              <p className="mt-6 text-sm"><Link to="/fleet" className="text-primary underline">More about the open-body lorry</Link></p>
+              <p className="mt-6 text-sm"><Link to="/open-body-lorry-coimbatore" className="text-primary underline">More about the open-body lorry</Link></p>
             </div>
           </section>
           <WhyChooseUs />

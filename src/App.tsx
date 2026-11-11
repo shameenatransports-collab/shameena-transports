@@ -14,7 +14,7 @@ import Index from "./pages/Index";
 const About = lazy(() => import("./pages/About"));
 const Transportation = lazy(() => import("./pages/Transportation"));
 const Services = lazy(() => import("./pages/Services"));
-const Fleet = lazy(() => import("./pages/Fleet"));
+const OpenBodyLorry = lazy(() => import("./pages/OpenBodyLorry"));
 const ServiceAreas = lazy(() => import("./pages/ServiceAreas"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Privacy = lazy(() => import("./pages/Privacy"));
@@ -79,7 +79,8 @@ const App = () => (
                     <Route path="/transportation/:city" element={<PillarCityPage />} />
                     
 
-                    <Route path="/fleet" element={<Fleet />} />
+                    <Route path="/open-body-lorry-coimbatore" element={<OpenBodyLorry />} />
+                    <Route path="/fleet" element={<Navigate to="/open-body-lorry-coimbatore" replace />} />
                     <Route path="/return-loads" element={<Navigate to="/transportation" replace />} />
 
                     <Route path="/service-areas" element={<ServiceAreas />} />

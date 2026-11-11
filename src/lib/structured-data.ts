@@ -92,7 +92,11 @@ export const localBusinessSchema = {
         "@type": "OfferCatalog",
         "name": "Transportation Services",
         "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Open-Body Lorry Transport" } },
           { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Full Load Lorry Transport" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Trucks on Hire" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Loaders and Packers" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Construction Material Transport" } },
           { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Factory Shifting" } }
         ]
       }
@@ -197,7 +201,7 @@ export const fullLoadServiceSchema = transportServiceSchema;
 export const openBodyLorrySchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  "@id": "https://sta-corporate.in/fleet#service",
+  "@id": "https://sta-corporate.in/open-body-lorry-coimbatore#service",
   "name": "Open-Body Lorry Goods Transport, Coimbatore",
   "serviceType": "Open body lorry goods transport",
   "provider": { "@type": "LocalBusiness", "name": "STA Corporate Solutions", "@id": "https://sta-corporate.in/#localbusiness" },

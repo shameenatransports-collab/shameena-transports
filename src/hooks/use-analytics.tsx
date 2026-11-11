@@ -15,8 +15,8 @@ export function usePageTracking() {
     const pageTitles: Record<string, string> = {
       "/": "Home - STA Corporate Solutions",
       "/services/transport-categories": "Transport Categories",
-      "/service-areas": "Service Areas - Tamil Nadu Coverage",
-      "/fleet": "Our Fleet - Modern Transport Vehicles",
+      "/service-areas": "Service Areas - Coimbatore District",
+      "/open-body-lorry-coimbatore": "Open-Body Lorry Transport, Coimbatore",
       "/about": "About STA Corporate Solutions",
       "/contact": "Contact Us - Get Quote",
       "/transportation": "Transportation Services",

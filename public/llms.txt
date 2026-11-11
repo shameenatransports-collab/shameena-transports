@@ -25,7 +25,7 @@ STA Corporate Solutions offers dedicated Full Load open-body lorry transport fro
 A: Dedicated Full Load lorry service. Return loads are not promoted; if a truck is returning on your route, availability is confirmed on enquiry.
 
 **Q: What vehicle does STA use?**
-A: An open-body lorry, suited to building material, steel, pipes, packed goods, bales and crated cargo. Capacity and suitability are confirmed per booking. STA does not offer cargo insurance.
+A: An open-body lorry, suited to building material, steel, pipes, packed goods, bales and crated cargo. Capacity and suitability are confirmed per booking. STA does not offer cargo insurance or accident cover.
 
 **Q: Which areas does STA serve?**
 A: Coimbatore district, Tamil Nadu. Route confirmation is needed per booking.
@@ -42,7 +42,14 @@ A: WhatsApp +91 94430 33055 with pickup, destination, cargo type and weight. Ava
 - [About](https://sta-corporate.in/about): Transport heritage since 1982.
 - [Transport categories](https://sta-corporate.in/services/transport-categories): Cargo and vehicle categories.
 - [Transportation](https://sta-corporate.in/transportation): Full Load lorry transport in Coimbatore district.
-- [Open-body lorry](https://sta-corporate.in/fleet): What it carries and what it does not.
+- [Open-body lorry guide, Coimbatore](https://sta-corporate.in/open-body-lorry-coimbatore): What it carries, what it does not, how to book, what decides freight.
+- [Open-body lorry service](https://sta-corporate.in/transportation/services/open-body-lorry)
+- [Cement transport](https://sta-corporate.in/transportation/services/cement-transport)
+- [Steel and TMT transport](https://sta-corporate.in/transportation/services/steel-transport)
+- [Pipe transport](https://sta-corporate.in/transportation/services/pipe-transport)
+- [Bagged goods transport](https://sta-corporate.in/transportation/services/bagged-goods-transport)
+- [Pump and motor transport](https://sta-corporate.in/transportation/services/pump-motor-transport)
+- [Foundry casting transport](https://sta-corporate.in/transportation/services/foundry-casting-transport)
 - [Service Areas](https://sta-corporate.in/service-areas): Coimbatore district.
 - [Contact](https://sta-corporate.in/contact): Phone, WhatsApp, address and enquiry form.
 
@@ -58,3 +65,7 @@ City pages describe enquiries coordinated from Coimbatore, not separate branches
 - [Privacy Policy](https://sta-corporate.in/privacy) — DPDP Act 2023 compliant.
 - [Terms of Service](https://sta-corporate.in/terms)
 - [Data Principal Request](https://sta-corporate.in/data-request) — Access / Correction / Erasure / Grievance under the DPDP Act.
+
+## More detail
+
+A longer answer-first reference is at https://sta-corporate.in/llms-full.txt
