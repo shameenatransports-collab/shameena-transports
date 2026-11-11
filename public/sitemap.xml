@@ -56,6 +56,21 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://sta-corporate.in/transportation/services/lorry-transport</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/services/truck-transport</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/services/trailer-transport</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://sta-corporate.in/transportation/services/cement-transport</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -132,6 +147,21 @@
   </url>
   <url>
     <loc>https://sta-corporate.in/transportation/coimbatore/open-body-lorry</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/coimbatore/lorry-transport</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/coimbatore/truck-transport</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/coimbatore/trailer-transport</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
@@ -216,6 +246,21 @@
     <priority>0.65</priority>
   </url>
   <url>
+    <loc>https://sta-corporate.in/transportation/pollachi/lorry-transport</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/pollachi/truck-transport</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/pollachi/trailer-transport</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
     <loc>https://sta-corporate.in/transportation/pollachi/cement-transport</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
@@ -257,6 +302,21 @@
   </url>
   <url>
     <loc>https://sta-corporate.in/transportation/mettupalayam/open-body-lorry</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/mettupalayam/lorry-transport</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/mettupalayam/truck-transport</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/mettupalayam/trailer-transport</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
@@ -306,6 +366,21 @@
     <priority>0.65</priority>
   </url>
   <url>
+    <loc>https://sta-corporate.in/transportation/sulur/lorry-transport</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/sulur/truck-transport</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/sulur/trailer-transport</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
     <loc>https://sta-corporate.in/transportation/sulur/cement-transport</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
@@ -347,6 +422,21 @@
   </url>
   <url>
     <loc>https://sta-corporate.in/transportation/annur/open-body-lorry</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/annur/lorry-transport</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/annur/truck-transport</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/annur/trailer-transport</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
@@ -396,6 +486,21 @@
     <priority>0.65</priority>
   </url>
   <url>
+    <loc>https://sta-corporate.in/transportation/madukkarai/lorry-transport</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/madukkarai/truck-transport</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/madukkarai/trailer-transport</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
     <loc>https://sta-corporate.in/transportation/madukkarai/cement-transport</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
@@ -437,6 +542,21 @@
   </url>
   <url>
     <loc>https://sta-corporate.in/transportation/kinathukadavu/open-body-lorry</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/kinathukadavu/lorry-transport</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/kinathukadavu/truck-transport</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/kinathukadavu/trailer-transport</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>

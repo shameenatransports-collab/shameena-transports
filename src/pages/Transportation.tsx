@@ -30,6 +30,7 @@ import { ServiceFAQ } from "@/components/seo/ServiceFAQ";
 
 const transportFaqs = [
   { question: "What does STA offer?", answer: "Goods transport for local industries, trucks on hire (daily, monthly or contract) and loaders & packers services in Coimbatore district." },
+  { question: "Do you offer truck and trailer transport in Coimbatore?", answer: "Yes. We run lorries and trailers of our own, supported by partnered vehicles, with 12/14-wheeler and 40 ft open trucks on daily, monthly or contract hire. Trailers suit company equipment shifting and construction material; suitability is confirmed per booking." },
   { question: "What vehicle do you use?", answer: "An open-body lorry, suited to the cargo of construction, steel, textile, engineering and agri businesses. Suitability and load are confirmed per booking." },
   { question: "Which areas do you cover?", answer: "Coimbatore district, including Pollachi, Mettupalayam, Sulur, Annur, Madukkarai and Kinathukadavu." },
   { question: "How do I get a quote?", answer: "WhatsApp or call +91 94430 33055 with pickup, destination, cargo type and weight. Mon–Sat, 9 AM–7 PM." },

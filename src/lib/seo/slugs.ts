@@ -12,7 +12,7 @@ export const corridorUrl = (slug: string) => `/transportation/routes/${slug}`;
 
 // Towns get these pages in the sitemap; Coimbatore (tier 1) gets every sub-service.
 const TOWN_SUBS = [
-  "open-body-lorry", "full-load", "trucks-on-hire", "cement-transport",
+  "lorry-transport", "truck-transport", "trailer-transport", "open-body-lorry", "full-load", "trucks-on-hire", "cement-transport",
   "steel-transport", "construction-material", "bagged-goods-transport", "loaders-packers",
 ];
 export const isIndexableCitySub = (city: City, subSlug: string) =>

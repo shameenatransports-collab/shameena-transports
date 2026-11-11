@@ -208,6 +208,9 @@ const OpenBodyLorry = () => {
             </div>
             <p className="text-sm text-muted-foreground mt-8">
               Related services:{" "}
+              <Link to="/transportation/services/lorry-transport" className="underline">Lorry Transport</Link>,{" "}
+              <Link to="/transportation/services/truck-transport" className="underline">Truck Transport</Link>,{" "}
+              <Link to="/transportation/services/trailer-transport" className="underline">Trailer Transport</Link>,{" "}
               <Link to="/transportation/services/full-load" className="underline">Full Load</Link>,{" "}
               <Link to="/transportation/services/trucks-on-hire" className="underline">Trucks on Hire</Link>,{" "}
               <Link to="/transportation/services/construction-material" className="underline">Construction Material</Link>,{" "}

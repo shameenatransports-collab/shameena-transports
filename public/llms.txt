@@ -7,7 +7,7 @@
 - **Legal name:** STA Corporate Solutions
 - **Headquarters:** No 10/135-G, Gurusamy Pillai St Extn, Podanur, Coimbatore, Coimbatore South, Tamil Nadu, India, 641023
 - **Transport founded:** 1982 (44+ years of lorry transport operations from Coimbatore)
-- **Vehicle:** Open-body lorry (building material, steel, pipes, packed goods, bales, crated cargo). Not suited to containers, loose sand or gravel, liquids, temperature-controlled goods or oversize machinery.
+- **Vehicles:** Own lorries and trailers plus partnered vehicles; trucks on hire (12/14-wheeler, 40 ft open trucks; daily, monthly or contract). Open-body lorry (building material, steel, pipes, packed goods, bales, crated cargo). Not suited to containers, loose sand or gravel, liquids, temperature-controlled goods or oversize machinery.
 - **Service area:** Coimbatore district, Tamil Nadu
 - **Towns covered:** Coimbatore, Pollachi, Mettupalayam, Sulur, Annur, Madukkarai, Kinathukadavu
 - **Hours:** Monday–Saturday, 09:00–19:00 IST
@@ -43,6 +43,9 @@ A: WhatsApp +91 94430 33055 with pickup, destination, cargo type and weight. Ava
 - [Transport categories](https://sta-corporate.in/services/transport-categories): Cargo and vehicle categories.
 - [Transportation](https://sta-corporate.in/transportation): Full Load lorry transport in Coimbatore district.
 - [Open-body lorry guide, Coimbatore](https://sta-corporate.in/open-body-lorry-coimbatore): What it carries, what it does not, how to book, what decides freight.
+- [Lorry transport in Coimbatore](https://sta-corporate.in/transportation/services/lorry-transport)
+- [Truck transport in Coimbatore](https://sta-corporate.in/transportation/services/truck-transport)
+- [Trailer transport in Coimbatore](https://sta-corporate.in/transportation/services/trailer-transport)
 - [Open-body lorry service](https://sta-corporate.in/transportation/services/open-body-lorry)
 - [Cement transport](https://sta-corporate.in/transportation/services/cement-transport)
 - [Steel and TMT transport](https://sta-corporate.in/transportation/services/steel-transport)

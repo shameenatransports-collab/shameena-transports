@@ -16,9 +16,9 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Lorry Transport in Coimbatore | Trucks on Hire, Loaders & Packers | STA Corporate Solutions</title>
-        <meta name="description" content="STA Corporate Solutions, Podanur, Coimbatore: goods transport by open-body lorry, trucks on hire, and loaders & packers across Coimbatore district since 1982. Call +91 94430 33055." />
-        <meta name="keywords" content="lorry transport Coimbatore, goods transport Coimbatore, trucks on hire Coimbatore, loaders and packers Coimbatore, open body lorry Coimbatore, lorry booking Coimbatore, factory shifting Coimbatore" />
+        <title>Lorry, Truck & Trailer Transport in Coimbatore | STA Corporate Solutions</title>
+        <meta name="description" content="STA Corporate Solutions, Podanur, Coimbatore: lorry, truck and trailer transport, trucks on hire and loaders & packers across Coimbatore district since 1982. Call +91 94430 33055." />
+        <meta name="keywords" content="lorry transport in coimbatore, truck transport in coimbatore, trailer transport in coimbatore, goods transport coimbatore, trucks on hire coimbatore, open body lorry coimbatore, loaders and packers coimbatore, lorry booking coimbatore, equipment shifting coimbatore, factory shifting coimbatore" />
         <link rel="canonical" href="https://sta-corporate.in" />
         <meta property="og:title" content="STA Corporate Solutions | Lorry Transport Since 1982 · Coimbatore" />
         <meta property="og:description" content="Goods transport, trucks on hire and loaders & packers across Coimbatore district since 1982." />
@@ -41,7 +41,7 @@ const Index = () => {
             <div className="container mx-auto px-4">
               <p className="mx-auto max-w-3xl text-center text-lg md:text-xl text-foreground leading-relaxed">
                 <strong>STA Corporate Solutions</strong> is a lorry transport business in Podanur, Coimbatore, operating since 1982.
-                We provide goods transport, trucks on hire and loaders &amp; packers services across Coimbatore district.
+                We provide lorry, truck and trailer transport, trucks on hire and loaders &amp; packers services across Coimbatore district.
               </p>
             </div>
           </section>
