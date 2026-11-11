@@ -71,7 +71,7 @@ export default function PillarCitySubPage() {
       serviceArea={`${city.name}, ${city.stateName}, India`}
       faqs={faqs}
       keywords={keywords}
-      answer={sub.answer ? `${sub.answer} Available for pickups in ${city.name}.` : undefined}
+      answer={sub.slug === "return-load" ? sub.answer : sub.answer ? `${sub.answer} Available for pickups in ${city.name}.` : undefined}
       noindex={!isIndexableCitySub(city, sub.slug)}
     >
       <section className="py-20 md:py-24 bg-background">

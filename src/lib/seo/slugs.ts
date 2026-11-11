@@ -1,4 +1,5 @@
 import { CITIES, CORRIDORS, City } from "./cities";
+import { RETURN_ORIGINS, returnOriginUrl } from "./return-origins";
 import { Pillar, PILLARS } from "./pillars";
 
 export const SITE_URL = "https://sta-corporate.in";
@@ -81,6 +82,10 @@ export function enumerateAllUrls(): SitemapEntry[] {
     out.push({ path: corridorUrl(c.slug), priority: "0.7", changefreq: "monthly" });
   }
 
+  // Return load origins (Tamil Nadu to Coimbatore)
+  for (const o of RETURN_ORIGINS) {
+    out.push({ path: returnOriginUrl(o.slug), priority: "0.6", changefreq: "monthly" });
+  }
 
   return out;
 }

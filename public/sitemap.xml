@@ -56,6 +56,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://sta-corporate.in/transportation/services/return-load</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://sta-corporate.in/transportation/services/lorry-transport</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -147,6 +152,11 @@
   </url>
   <url>
     <loc>https://sta-corporate.in/transportation/coimbatore/open-body-lorry</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/coimbatore/return-load</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
@@ -624,5 +634,65 @@
     <loc>https://sta-corporate.in/transportation/routes/coimbatore-to-kinathukadavu</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/return-load/tirupur</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/return-load/erode</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/return-load/salem</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/return-load/karur</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/return-load/namakkal</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/return-load/dindigul</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/return-load/trichy</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/return-load/madurai</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/return-load/tirunelveli</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/return-load/hosur</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/return-load/vellore</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://sta-corporate.in/transportation/return-load/chennai</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>

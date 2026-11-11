@@ -34,7 +34,7 @@ const transportFaqs = [
   { question: "What vehicle do you use?", answer: "An open-body lorry, suited to the cargo of construction, steel, textile, engineering and agri businesses. Suitability and load are confirmed per booking." },
   { question: "Which areas do you cover?", answer: "Coimbatore district, including Pollachi, Mettupalayam, Sulur, Annur, Madukkarai and Kinathukadavu." },
   { question: "How do I get a quote?", answer: "WhatsApp or call +91 94430 33055 with pickup, destination, cargo type and weight. Mon–Sat, 9 AM–7 PM." },
-  { question: "Are return loads available?", answer: "Only occasionally and only on availability. Enquire with your route and we will confirm." },
+  { question: "Are return loads available?", answer: "Yes, for goods coming into Coimbatore from towns across Tamil Nadu on vehicles returning to Coimbatore, subject to availability. Enquire with your pickup town, cargo and date and we will confirm." },
 ];
 
 

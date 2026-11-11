@@ -62,6 +62,19 @@ export const PILLARS: Pillar[] = [
         ],
       },
       {
+        slug: "return-load", name: "Return Load to Coimbatore from Tamil Nadu", shortName: "Return Load",
+        description: "Goods transport into Coimbatore from towns across Tamil Nadu on vehicles returning to Coimbatore, subject to availability.",
+        answer: "A return load is spare space on a vehicle that is coming back to Coimbatore anyway. STA arranges return loads into Coimbatore from towns across Tamil Nadu on availability: share pickup town, cargo, weight and date on +91 94430 33055 and we confirm if a vehicle is coming your way.",
+        keywords: ["return load to coimbatore", "return load coimbatore", "back load coimbatore", "return lorry to coimbatore", "lorry to coimbatore from tamil nadu", "tamil nadu to coimbatore goods transport", "return truck load coimbatore"],
+        benefits: ["Tamil Nadu towns to Coimbatore", "Lorry, truck or trailer, as the returning vehicle allows", "Confirmed per enquiry", "Told plainly when no vehicle is available"],
+        tell: ["Pickup town in Tamil Nadu", "Delivery address in Coimbatore", "Cargo type, weight and dimensions", "Preferred date and flexibility"],
+        caution: "A return load depends on a vehicle returning to Coimbatore on that day, so it is never guaranteed. It covers goods coming into Coimbatore from Tamil Nadu. STA does not offer cargo insurance.",
+        faqs: [
+          { q: "What is a return load to Coimbatore?", a: "Spare space on a vehicle that is returning to Coimbatore. It is booked on availability and confirmed per enquiry." },
+          { q: "Which towns can a return load come from?", a: "Towns across Tamil Nadu on the way to Coimbatore, such as Tirupur, Erode, Salem, Karur, Dindigul, Trichy, Madurai, Hosur, Vellore and Chennai." },
+        ],
+      },
+      {
         slug: "lorry-transport", name: "Lorry Transport in Coimbatore", shortName: "Lorry Transport",
         description: "Goods lorry transport in Coimbatore district for factories, shops, warehouses, builders and individuals, with experienced drivers and loaders.",
         answer: "STA Corporate Solutions provides lorry transport in Coimbatore district, from single full-load trips to daily or monthly hire. Share pickup, destination, cargo and date on +91 94430 33055 and we confirm the vehicle and freight.",

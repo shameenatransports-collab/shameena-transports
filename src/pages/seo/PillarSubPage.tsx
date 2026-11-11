@@ -1,3 +1,4 @@
+import { RETURN_ORIGINS, returnOriginUrl } from "@/lib/seo/return-origins";
 import { localPageContent, practiceHeritage } from "@/lib/seo/local-content";
 import { useParams, useLocation, Link, Navigate } from "react-router-dom";
 import { getPillar, getSub } from "@/lib/seo/pillars";
@@ -105,6 +106,21 @@ export default function PillarSubPage() {
                 <p className="mt-4 text-sm"><Link to="/open-body-lorry-coimbatore" className="text-primary underline">Open-body lorry guide for Coimbatore</Link></p>
               </div>
             )}
+          </div>
+        </section>
+      )}
+
+      {sub.slug === "return-load" && (
+        <section className="py-16 bg-background">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <h2 className="text-xl font-semibold text-foreground mb-4">Tamil Nadu towns to Coimbatore</h2>
+            <div className="flex flex-wrap gap-2">
+              {RETURN_ORIGINS.map((o) => (
+                <Link key={o.slug} to={returnOriginUrl(o.slug)} className="px-4 py-2 rounded-full border border-border/60 text-sm text-foreground/80 hover:border-primary hover:text-primary">
+                  {o.name} → Coimbatore
+                </Link>
+              ))}
+            </div>
           </div>
         </section>
       )}

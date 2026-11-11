@@ -28,6 +28,7 @@ const PillarCityPage = lazy(() => import("./pages/seo/PillarCityPage"));
 const PillarSubPage = lazy(() => import("./pages/seo/PillarSubPage"));
 const PillarCitySubPage = lazy(() => import("./pages/seo/PillarCitySubPage"));
 const RouteCorridorPage = lazy(() => import("./pages/seo/RouteCorridorPage"));
+const ReturnLoadPage = lazy(() => import("./pages/seo/ReturnLoadPage"));
 
 const queryClient = new QueryClient();
 
@@ -70,6 +71,7 @@ const App = () => (
 
                     {/* Special sub-types */}
                     <Route path="/transportation/routes/:slug" element={<RouteCorridorPage />} />
+                    <Route path="/transportation/return-load/:origin" element={<ReturnLoadPage />} />
 
                     {/* Pillar × city × sub */}
                     <Route path="/transportation/:city/:sub" element={<PillarCitySubPage />} />
@@ -81,7 +83,7 @@ const App = () => (
 
                     <Route path="/open-body-lorry-coimbatore" element={<OpenBodyLorry />} />
                     <Route path="/fleet" element={<Navigate to="/open-body-lorry-coimbatore" replace />} />
-                    <Route path="/return-loads" element={<Navigate to="/transportation" replace />} />
+                    <Route path="/return-loads" element={<Navigate to="/transportation/services/return-load" replace />} />
 
                     <Route path="/service-areas" element={<ServiceAreas />} />
                     <Route path="/contact" element={<Contact />} />
