@@ -29,8 +29,8 @@ import { localBusinessSchema, transportBusinessSchema, transportServiceSchema } 
 import { ServiceFAQ } from "@/components/seo/ServiceFAQ";
 
 const transportFaqs = [
-  { question: "What does STA offer?", answer: "Goods transport by open-body lorry, trucks on hire (daily, monthly or contract) and loaders & packers services in Coimbatore district." },
-  { question: "What vehicle do you use?", answer: "An open-body lorry, suited to building material, steel, packed goods, bales and crated cargo. Suitability and load are confirmed per booking." },
+  { question: "What does STA offer?", answer: "Goods transport for local industries, trucks on hire (daily, monthly or contract) and loaders & packers services in Coimbatore district." },
+  { question: "What vehicle do you use?", answer: "An open-body lorry, suited to the cargo of construction, steel, textile, engineering and agri businesses. Suitability and load are confirmed per booking." },
   { question: "Which areas do you cover?", answer: "Coimbatore district, including Pollachi, Mettupalayam, Sulur, Annur, Madukkarai and Kinathukadavu." },
   { question: "How do I get a quote?", answer: "WhatsApp or call +91 94430 33055 with pickup, destination, cargo type and weight. Mon–Sat, 9 AM–7 PM." },
   { question: "Are return loads available?", answer: "Only occasionally and only on availability. Enquire with your route and we will confirm." },
@@ -154,7 +154,7 @@ const Transportation = () => {
                   </span>
                 </h1>
                 <p className="text-headline text-primary-foreground/85 max-w-2xl mb-10">
-                  Full Load open-body lorry transport across Coimbatore district, since 1982.
+                  Full load goods transport across Coimbatore district, since 1982.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
                   <GetQuoteModal />

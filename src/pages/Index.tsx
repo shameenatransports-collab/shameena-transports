@@ -5,7 +5,6 @@ import { TrustBadges } from "@/components/home/TrustBadges";
 import { ServicesPreview } from "@/components/home/ServicesPreview";
 import { WhyChooseUs } from "@/components/home/WhyChooseUs";
 import { ProcessSection } from "@/components/home/ProcessSection";
-import { CheckCircle2, XCircle } from "lucide-react";
 import { CitiesWeServe } from "@/components/home/CitiesWeServe";
 import { CTASection } from "@/components/home/CTASection";
 import { AnimatedSection } from "@/components/ui/animated-section";
@@ -47,34 +46,31 @@ const Index = () => {
             </div>
           </section>
           <ServicesPreview />
-          <section className="bg-muted/40 py-16 md:py-20" aria-label="Open-body lorry">
+          <section className="bg-muted/40 py-16 md:py-20" aria-label="Industries we serve">
             <div className="container mx-auto px-4 max-w-5xl">
               <div className="max-w-3xl mb-10">
-                <p className="text-eyebrow text-primary mb-3">Our lorry</p>
-                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-3">Open-body lorry, matched to your cargo</h2>
+                <p className="text-eyebrow text-primary mb-3">Industries we serve</p>
+                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-3">Logistics for Coimbatore's industries</h2>
                 <p className="text-muted-foreground text-lg">
-                  We tell you plainly whether an open-body lorry fits your load, so you never pay for the wrong vehicle.
+                  Goods transport matched to your cargo. We tell you plainly whether the vehicle fits your load.
                 </p>
               </div>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="rounded-xl border border-border bg-background p-6">
-                  <h3 className="font-semibold text-foreground mb-3">Suited to</h3>
-                  <ul className="space-y-2 text-sm text-foreground">
-                    {["Building material, steel and pipes", "Bagged and packed goods", "Textile bales and cartons", "Crated machinery and factory shifting"].map((t) => (
-                      <li key={t} className="flex items-start gap-2"><CheckCircle2 className="h-4 w-4 mt-0.5 text-accent flex-shrink-0" />{t}</li>
-                    ))}
-                  </ul>
-                </div>
-                <div className="rounded-xl border border-border bg-background p-6">
-                  <h3 className="font-semibold text-foreground mb-3">Not suited to</h3>
-                  <ul className="space-y-2 text-sm text-muted-foreground">
-                    {["Containers", "Loose sand or gravel", "Liquids and temperature-controlled goods", "Oversize machinery"].map((t) => (
-                      <li key={t} className="flex items-start gap-2"><XCircle className="h-4 w-4 mt-0.5 flex-shrink-0" />{t}</li>
-                    ))}
-                  </ul>
-                </div>
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                {[
+                  ["Construction & building material", "Cement, bricks, tiles, plywood"],
+                  ["Steel & hardware", "TMT bars, pipes, sections"],
+                  ["Textile & yarn", "Bales and cartons, mill to market"],
+                  ["Engineering & pumps", "Pumps, motors, crated machinery"],
+                  ["Foundry & castings", "Castings and industrial parts"],
+                  ["Agri & packed goods", "Bagged grain, feed, fertiliser, cartons"],
+                ].map(([t, d]) => (
+                  <div key={t} className="rounded-xl border border-border bg-background p-5">
+                    <h3 className="font-semibold text-foreground mb-1">{t}</h3>
+                    <p className="text-sm text-muted-foreground">{d}</p>
+                  </div>
+                ))}
               </div>
-              <p className="mt-6 text-sm"><Link to="/open-body-lorry-coimbatore" className="text-primary underline">More about the open-body lorry</Link></p>
+              <p className="mt-6 text-sm"><Link to="/open-body-lorry-coimbatore" className="text-primary underline">See all industries and what we carry</Link></p>
             </div>
           </section>
           <WhyChooseUs />

@@ -24,7 +24,7 @@ const serviceLinks = [
 const navLinks = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
-  { name: "Our Lorry", href: "/open-body-lorry-coimbatore" },
+  { name: "Industries", href: "/open-body-lorry-coimbatore" },
   { name: "Service Areas", href: "/service-areas" },
   { name: "Contact", href: "/contact" },
 ];
@@ -102,7 +102,7 @@ export function Header() {
             </DropdownMenu>
 
             <Link to="/open-body-lorry-coimbatore" className={cn(linkBase, location.pathname === "/open-body-lorry-coimbatore" && activeCls)}>
-              Our Lorry
+              Industries
             </Link>
             <Link
               to="/service-areas"

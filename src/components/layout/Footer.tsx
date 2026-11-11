@@ -11,7 +11,7 @@ const serviceLinks = [
 
 const quickLinks = [
   { name: "About Us", href: "/about" },
-  { name: "Our Lorry", href: "/open-body-lorry-coimbatore" },
+  { name: "Industries", href: "/open-body-lorry-coimbatore" },
   { name: "Service Areas", href: "/service-areas" },
   { name: "Contact", href: "/contact" },
   { name: "Privacy Policy", href: "/privacy" },
