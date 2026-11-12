@@ -2,6 +2,8 @@ import { Link, Navigate, useParams } from "react-router-dom";
 import { PillarPageShell } from "@/components/seo/PillarPageShell";
 import { DESTINATIONS, INDUSTRIES, VEHICLES, LANES_HUB_PATH, RETURN_AVAILABILITY, laneUrl, industryUrl, laneKeywords } from "@/lib/seo/lanes";
 import { RETURN_HUB_PATH, returnOriginUrl } from "@/lib/seo/return-origins";
+import { COIMBATORE_OFFICE_CONTENT } from "@/lib/seo/local-content";
+import { CoimbatoreOfficeContent } from "@/components/seo/CoimbatoreOfficeContent";
 
 const linkClass = "text-primary underline underline-offset-4";
 export default function LanePages() {
@@ -9,23 +11,25 @@ export default function LanePages() {
   const destination = DESTINATIONS.find(d => d.slug === params.destination);
   const vehicle = VEHICLES.find(v => v.slug === params.vehicle);
   const industry = INDUSTRIES.find(i => i.slug === params.industry);
+  const isLocalHub = !params.destination && !params.industry && !params.vehicle;
   if ((params.destination && !destination) || (params.vehicle && !vehicle) || (params.industry && !industry)) return <Navigate to={LANES_HUB_PATH} replace />;
   const path = industry ? industryUrl(industry.slug) : destination ? laneUrl(destination.slug, vehicle?.slug) : LANES_HUB_PATH;
   const title = industry ? `${industry.name} Transport from Coimbatore` : destination ? `${vehicle?.name ?? "Lorry, Truck & Trailer"} Transport from Coimbatore to ${destination.name}` : "Lorry, Truck & Trailer Transport from Coimbatore";
-  const intro = industry ? `${industry.cargo} from Coimbatore, with local deliveries and Kerala/Karnataka destinations considered per enquiry.` : destination ? `${vehicle?.name ?? "Lorry, truck and trailer"} transport from Coimbatore, Tamil Nadu to ${destination.name}, ${destination.state}. Vehicle suitability, loading date and freight are confirmed per booking.` : "Coimbatore-based goods transport since 1982. Local district services and outbound lorry, truck and trailer enquiries to Kerala and Karnataka, confirmed per booking.";
+  const intro = industry ? `${industry.cargo} from Coimbatore, with local deliveries and Kerala/Karnataka destinations considered per enquiry.` : destination ? `${vehicle?.name ?? "Lorry, truck and trailer"} transport from Coimbatore, Tamil Nadu to ${destination.name}, ${destination.state}. Vehicle suitability, loading date and freight are confirmed per booking.` : COIMBATORE_OFFICE_CONTENT.intro;
   const answer = `${intro} ${RETURN_AVAILABILITY} Destination cities describe delivery locations, not STA branches. Share cargo, weight, dimensions, pickup, delivery and preferred date on WhatsApp +91 94430 33055.`;
-  const faqs = [
+  const faqs = isLocalHub ? COIMBATORE_OFFICE_CONTENT.faqs : [
     { q: destination ? `Can I book ${vehicle?.name.toLowerCase() ?? "goods"} transport from Coimbatore to ${destination.name}?` : "Where do outbound trips originate?", a: intro },
     { q: destination ? `Is ${destination.name} to Coimbatore return transport guaranteed?` : "Are inbound return loads guaranteed?", a: `No. ${RETURN_AVAILABILITY} Enquiries are for vehicles returning from Tamil Nadu, Kerala or Karnataka towards Coimbatore, not fixed departures.` },
     { q: "What determines the quote?", a: "Pickup and delivery addresses, cargo type, permitted load, dimensions, loading and unloading effort, date and waiting time. No fixed rate or transit-time promise is made." },
     { q: "Does STA provide cargo insurance?", a: "No. STA does not provide cargo insurance or accident cover; customers should arrange their own cover for goods in transit." },
   ];
-  return <PillarPageShell title={title} metaTitle={`${title} | STA`} metaDescription={intro} path={path}
+  return <PillarPageShell title={title} metaTitle={`${title} | STA`} metaDescription={isLocalHub ? "Lorry, truck and trailer transport from our Podanur, Coimbatore office since 1982. Local industrial cargo and Kerala/Karnataka route enquiries." : intro} path={path}
     eyebrow={industry ? "Industry cargo · Origin: Coimbatore" : "Origin: Coimbatore, Tamil Nadu"}
     intro={intro} answer={answer} serviceName={title}
     serviceArea={destination ? `Coimbatore, Tamil Nadu to ${destination.name}, ${destination.state}` : "Coimbatore-origin local, Kerala and Karnataka routes"}
     breadcrumbs={[{ name: "Home", url: "/" }, { name: "Transportation", url: "/transportation" }, { name: "From Coimbatore", url: LANES_HUB_PATH }, ...(path !== LANES_HUB_PATH ? [{ name: industry?.name ?? destination?.name ?? title, url: path }] : [])]}
     keywords={destination ? laneKeywords(destination, vehicle) : ["lorry transport from coimbatore", "truck transport in coimbatore", "trailer transport in coimbatore"]} faqs={faqs}>
+    {isLocalHub && <CoimbatoreOfficeContent />}
     <section className="py-16 bg-background"><div className="container mx-auto px-4 max-w-5xl grid md:grid-cols-2 gap-10">
       <div><h2 className="text-2xl font-semibold text-foreground mb-4">{industry ? "Cargo and loading requirements" : "Plan your cargo movement"}</h2>
         <p className="text-muted-foreground mb-4">{industry?.cargo ?? destination?.context ?? "Pumps, motors, foundry castings, textile bales, bundled steel, bagged material and packed commercial goods are considered against the vehicle allotted."}</p>

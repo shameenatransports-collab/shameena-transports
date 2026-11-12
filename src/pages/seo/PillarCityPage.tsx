@@ -10,7 +10,8 @@ import {
   pillarCitySubUrl,
   pillarSubUrl,
 } from "@/lib/seo/slugs";
-import { localPageContent } from "@/lib/seo/local-content";
+import { COIMBATORE_OFFICE_CONTENT, localPageContent } from "@/lib/seo/local-content";
+import { CoimbatoreOfficeContent } from "@/components/seo/CoimbatoreOfficeContent";
 import { ArrowUpRight } from "lucide-react";
 
 /**
@@ -33,7 +34,7 @@ export default function PillarCityPage() {
   const content = localPageContent(pillar, city);
   const { metaTitle, metaDescription } = content;
   const keywords = [content.heading.toLowerCase(), `${pillar.shortName.toLowerCase()} ${city.stateName.toLowerCase()}`];
-  const faqs = [
+  const faqs = city.slug === "coimbatore" ? COIMBATORE_OFFICE_CONTENT.faqs : [
     { q: `How do I enquire from ${city.name}?`, a: `WhatsApp +91 94430 33055 with your location and requirements. Enquiries are coordinated from our Coimbatore address; availability is confirmed individually.` },
     { q: `What should I prepare for ${pillar.shortName.toLowerCase()} support?`, a: content.preparation.join(". ") + "." },
     { q: `What should I confirm before booking?`, a: content.boundary },
@@ -61,6 +62,7 @@ export default function PillarCityPage() {
       faqs={faqs}
       keywords={keywords}
     >
+      {city.slug === "coimbatore" && <CoimbatoreOfficeContent />}
       {/* Sub-services grid */}
       <section className="py-20 md:py-24 bg-background">
         <div className="container mx-auto px-4">
