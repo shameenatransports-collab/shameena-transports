@@ -58,7 +58,7 @@ const Terms = () => {
                 <CardContent className="p-6 md:p-8">
                   <h2 className="text-2xl font-bold text-foreground mb-4">Our Services</h2>
                   <p className="text-muted-foreground leading-relaxed mb-4">
-                    STA Corporate Solutions provides the following services in Coimbatore district, Tamil Nadu, India:
+                    STA Corporate Solutions provides local Coimbatore district services and outbound lorry, truck and trailer transport from Coimbatore to Kerala and Karnataka. Return loads from Tamil Nadu, Kerala and Karnataka towards Coimbatore are strictly subject to route availability:
                   </p>
                   <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4">
                     <li><strong>Goods Transport:</strong> Full Load open-body lorry transport</li>
@@ -106,7 +106,6 @@ const Terms = () => {
                   <h2 className="text-2xl font-bold text-foreground mb-4">Pricing & Payment</h2>
                   <ul className="list-disc list-inside text-muted-foreground space-y-3 ml-4">
                     <li>Prices are quoted based on service type and scope</li>
-                    <li>We offer the lowest commission rates in the Indian market</li>
                     <li>Additional charges may apply for special requirements</li>
                     <li>Payment modes: Cash, UPI, Bank Transfer</li>
                     <li>Advance payment may be required for booking confirmation</li>

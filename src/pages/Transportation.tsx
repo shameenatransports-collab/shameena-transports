@@ -29,11 +29,12 @@ import { localBusinessSchema, transportBusinessSchema, transportServiceSchema } 
 import { ServiceFAQ } from "@/components/seo/ServiceFAQ";
 
 const transportFaqs = [
-  { question: "What does STA offer?", answer: "Goods transport by open-body lorry, trucks on hire (daily, monthly or contract) and loaders & packers services in Coimbatore district." },
-  { question: "What vehicle do you use?", answer: "An open-body lorry, suited to building material, steel, packed goods, bales and crated cargo. Suitability and load are confirmed per booking." },
-  { question: "Which areas do you cover?", answer: "Coimbatore district, including Pollachi, Mettupalayam, Sulur, Annur, Madukkarai and Kinathukadavu." },
+  { question: "What does STA offer?", answer: "Goods transport for local industries, trucks on hire (daily, monthly or contract) and loaders & packers services in Coimbatore district." },
+  { question: "Do you offer truck and trailer transport in Coimbatore?", answer: "Yes. We run lorries and trailers of our own, supported by partnered vehicles, with 12/14-wheeler and 40 ft open trucks on daily, monthly or contract hire. Trailers suit company equipment shifting and construction material; suitability is confirmed per booking." },
+  { question: "What vehicle do you use?", answer: "An open-body lorry, suited to the cargo of construction, steel, textile, engineering and agri businesses. Suitability and load are confirmed per booking." },
+  { question: "Which areas do you cover?", answer: "Local Coimbatore district routes, plus outbound routes from Coimbatore to Kerala and Karnataka. Destinations are not branches." },
   { question: "How do I get a quote?", answer: "WhatsApp or call +91 94430 33055 with pickup, destination, cargo type and weight. Mon–Sat, 9 AM–7 PM." },
-  { question: "Are return loads available?", answer: "Only occasionally and only on availability. Enquire with your route and we will confirm." },
+  { question: "Are return loads available?", answer: "Yes, for goods coming into Coimbatore from Tamil Nadu, Kerala or Karnataka on vehicles returning towards Coimbatore, strictly subject to route availability. Enquire with your pickup town, cargo and date and we will confirm." },
 ];
 
 
@@ -70,8 +71,8 @@ const services = [
   {
     icon: Building2,
     title: "Construction Material",
-    description: "Heavy-duty transport for sand, cement, steel, and building materials across Coimbatore district.",
-    features: ["Heavy loads", "Tipper trucks", "Material safety"],
+    description: "Transport for cement bags, bundled steel, pipes and building material; cargo suitability confirmed per booking.",
+    features: ["Heavy loads", "Open-body vehicles", "Material safety"],
     link: "/transportation/services/construction-material"
   },
   {
@@ -99,8 +100,8 @@ const whyChooseUs = [
   { text: "44+ years of trusted service", icon: Star },
   { text: "On-time delivery", icon: Clock },
   { text: "Experienced drivers & loaders", icon: Shield },
-  { text: "Well-maintained fleet", icon: Truck },
-  { text: "Affordable & transparent pricing", icon: Gauge },
+  { text: "Vehicle suitability checked", icon: Truck },
+  { text: "Freight quoted per booking", icon: Gauge },
   { text: "Route-planned delivery coordination", icon: Route },
   { text: "Expert handling of cargo", icon: Package }
 ];
@@ -154,7 +155,7 @@ const Transportation = () => {
                   </span>
                 </h1>
                 <p className="text-headline text-primary-foreground/85 max-w-2xl mb-10">
-                  Full Load open-body lorry transport across Coimbatore district, since 1982.
+                  Full load goods transport from Coimbatore, including Kerala and Karnataka routes, since 1982.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
                   <GetQuoteModal />
@@ -333,6 +334,7 @@ const Transportation = () => {
             speakableId="faq-transportation"
           />
 
+          <section className="py-12 bg-background border-t border-border"><div className="container mx-auto px-4 max-w-5xl"><h2 className="text-2xl font-semibold text-foreground mb-4">Transport from Coimbatore</h2><p className="text-muted-foreground mb-5">Lorry, truck and trailer enquiries from Coimbatore to Kerala and Karnataka. Vehicle suitability and freight are confirmed per booking. Inbound return loads are strictly subject to route availability.</p><div className="flex flex-wrap gap-x-6 gap-y-3"><Link to="/transportation/from-coimbatore" className="text-primary underline">Kerala &amp; Karnataka routes</Link><Link to="/transportation/services/lorry-transport" className="text-primary underline">Lorry transport</Link><Link to="/transportation/services/truck-transport" className="text-primary underline">Truck transport</Link><Link to="/transportation/services/trailer-transport" className="text-primary underline">Trailer transport</Link><Link to="/transportation/services/return-load" className="text-primary underline">Inbound availability enquiries</Link></div></div></section>
           <CTASection />
         </main>
       </Layout>

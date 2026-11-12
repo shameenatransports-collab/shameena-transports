@@ -9,6 +9,15 @@ import fleetBg from "@/assets/fleet-bg.jpg";
 import { localBusinessSchema, createBreadcrumbSchema, openBodyLorrySchema } from "@/lib/structured-data";
 import { CITIES } from "@/lib/seo/cities";
 
+const industries = [
+  ["Construction & building material", "Cement bags, steel, pipes, plywood, tiles"],
+  ["Textile & yarn", "Bales and cartons between mills, processors and markets"],
+  ["Engineering, pumps & motors", "Crated pumps, motors and machine parts"],
+  ["Foundry & castings", "Castings and industrial parts"],
+  ["Agri & food packing", "Bagged rice, feed, fertiliser, sacks and cartons"],
+  ["Warehouses, shops & factories", "Shifting loads and stock transfers"],
+];
+
 const carries = [
   "Building and construction material — cement bags, steel, TMT bars, pipes, plywood",
   "Bagged and packed goods — rice, fertiliser, cattle feed, sacks and cartons",
@@ -80,7 +89,7 @@ const features = [
 const OpenBodyLorry = () => {
   const breadcrumbSchema = createBreadcrumbSchema([
     { name: "Home", url: "https://sta-corporate.in" },
-    { name: "Open-Body Lorry", url: "https://sta-corporate.in/open-body-lorry-coimbatore" },
+    { name: "Industries", url: "https://sta-corporate.in/open-body-lorry-coimbatore" },
   ]);
 
   return (
@@ -107,7 +116,7 @@ const OpenBodyLorry = () => {
       <Layout>
         <BackgroundPicture
           src={fleetBg}
-          alt="Open-body lorry for goods transport, STA Corporate Solutions, Coimbatore"
+          alt="Goods lorry, STA Corporate Solutions, Coimbatore"
           className="relative isolate min-h-[70svh] flex items-center overflow-hidden"
           overlayClassName="bg-gradient-to-b from-primary/85 via-primary/80 to-primary/95"
         >
@@ -116,18 +125,18 @@ const OpenBodyLorry = () => {
             <div className="max-w-4xl">
               <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-background text-[11px] font-bold tracking-[0.18em] uppercase text-primary shadow-xl ring-1 ring-primary-foreground/40 mb-8">
                 <span className="h-1.5 w-1.5 rounded-full bg-secondary" />
-                Our Lorry · Coimbatore District
+                Industries · Coimbatore District
               </div>
               <h1 className="text-display-2xl text-primary-foreground mb-6">
-                Open-body lorry
+                Logistics for
                 <br />
                 <span className="bg-gradient-to-r from-secondary via-secondary to-primary-foreground bg-clip-text text-transparent">
-                  transport in Coimbatore.
+                  Coimbatore industries.
                 </span>
               </h1>
               <p className="text-headline text-primary-foreground/85 max-w-2xl">
-                An open-body lorry carries building material, steel, packed goods, bales and crated cargo for
-                businesses in Coimbatore district. Here is what it carries, and what it does not.
+                Construction, steel, textile, engineering and agri businesses in Coimbatore district rely on us
+                for goods transport. Here is the cargo we move, and what we do not.
               </p>
             </div>
           </div>
@@ -154,12 +163,20 @@ const OpenBodyLorry = () => {
         <section className="py-16 md:py-24 bg-background">
           <div className="container mx-auto px-4 max-w-5xl">
             <div className="max-w-3xl mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">What an open-body lorry is for</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Industries and cargo we move</h2>
               <p className="text-muted-foreground text-lg">
-                An open-body lorry has a flat platform with high side walls and no fixed roof, so goods are loaded from
+                Our open-body lorry has a flat platform with high side walls and no fixed roof, so goods are loaded from
                 the sides or rear and covered with tarpaulin when needed. Vehicle suitability, permitted load and
                 loading date are confirmed for each booking.
               </p>
+            </div>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
+              {industries.map(([t, d]) => (
+                <div key={t} className="rounded-xl border border-border p-5">
+                  <h3 className="font-semibold text-foreground mb-1">{t}</h3>
+                  <p className="text-sm text-muted-foreground">{d}</p>
+                </div>
+              ))}
             </div>
             <div className="grid md:grid-cols-2 gap-8">
               <div className="rounded-xl border border-border p-6">
@@ -191,6 +208,9 @@ const OpenBodyLorry = () => {
             </div>
             <p className="text-sm text-muted-foreground mt-8">
               Related services:{" "}
+              <Link to="/transportation/services/lorry-transport" className="underline">Lorry Transport</Link>,{" "}
+              <Link to="/transportation/services/truck-transport" className="underline">Truck Transport</Link>,{" "}
+              <Link to="/transportation/services/trailer-transport" className="underline">Trailer Transport</Link>,{" "}
               <Link to="/transportation/services/full-load" className="underline">Full Load</Link>,{" "}
               <Link to="/transportation/services/trucks-on-hire" className="underline">Trucks on Hire</Link>,{" "}
               <Link to="/transportation/services/construction-material" className="underline">Construction Material</Link>,{" "}
@@ -227,7 +247,7 @@ const OpenBodyLorry = () => {
 
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4 max-w-5xl">
-            <h2 className="text-2xl font-bold text-foreground mb-6">Open-body lorry by town in Coimbatore district</h2>
+            <h2 className="text-2xl font-bold text-foreground mb-6">Transport by town in Coimbatore district</h2>
             <div className="flex flex-wrap gap-3">
               {CITIES.map((c) => (
                 <Link key={c.slug} to={`/transportation/${c.slug}/open-body-lorry`} className="px-4 py-2 rounded-full border border-border text-sm text-foreground hover:bg-muted">
@@ -248,8 +268,8 @@ const OpenBodyLorry = () => {
         </section>
 
         <ServiceFAQ
-          eyebrow="Open-body lorry"
-          heading="Open-body lorry questions, answered"
+          eyebrow="Questions"
+          heading="Questions, answered"
           faqs={faqs}
           speakableId="fleet-faq"
         />

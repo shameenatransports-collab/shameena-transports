@@ -28,6 +28,9 @@ const PillarCityPage = lazy(() => import("./pages/seo/PillarCityPage"));
 const PillarSubPage = lazy(() => import("./pages/seo/PillarSubPage"));
 const PillarCitySubPage = lazy(() => import("./pages/seo/PillarCitySubPage"));
 const RouteCorridorPage = lazy(() => import("./pages/seo/RouteCorridorPage"));
+const ReturnLoadPage = lazy(() => import("./pages/seo/ReturnLoadPage"));
+
+const LanePages = lazy(() => import("./pages/seo/LanePages"));
 
 const queryClient = new QueryClient();
 
@@ -68,8 +71,13 @@ const App = () => (
                     <Route path="/transportation/services/:sub" element={<PillarSubPage />} />
                     
 
+                    <Route path="/transportation/from-coimbatore" element={<LanePages />} />
+                    <Route path="/transportation/from-coimbatore/:destination" element={<LanePages />} />
+                    <Route path="/transportation/from-coimbatore/:destination/:vehicle" element={<LanePages />} />
+                    <Route path="/transportation/industries/:industry" element={<LanePages />} />
                     {/* Special sub-types */}
                     <Route path="/transportation/routes/:slug" element={<RouteCorridorPage />} />
+                    <Route path="/transportation/return-load/:origin" element={<ReturnLoadPage />} />
 
                     {/* Pillar × city × sub */}
                     <Route path="/transportation/:city/:sub" element={<PillarCitySubPage />} />
@@ -81,7 +89,7 @@ const App = () => (
 
                     <Route path="/open-body-lorry-coimbatore" element={<OpenBodyLorry />} />
                     <Route path="/fleet" element={<Navigate to="/open-body-lorry-coimbatore" replace />} />
-                    <Route path="/return-loads" element={<Navigate to="/transportation" replace />} />
+                    <Route path="/return-loads" element={<Navigate to="/transportation/services/return-load" replace />} />
 
                     <Route path="/service-areas" element={<ServiceAreas />} />
                     <Route path="/contact" element={<Contact />} />

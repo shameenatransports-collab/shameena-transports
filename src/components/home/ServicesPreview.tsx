@@ -20,7 +20,7 @@ export function ServicesPreview() {
             <p className="text-eyebrow text-primary mb-5">Transportation · Since 1982</p>
             <h2 className="text-display-xl text-foreground mb-6">Move what matters, when it matters.</h2>
             <p className="text-headline text-muted-foreground max-w-2xl mx-auto">
-              Full Load open-body lorry transport, serving businesses in Coimbatore district.
+              Full load goods transport for the industries of Coimbatore district.
             </p>
           </div>
         </ScrollReveal>

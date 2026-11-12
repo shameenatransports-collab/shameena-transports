@@ -7,22 +7,22 @@
 - **Legal name:** STA Corporate Solutions
 - **Headquarters:** No 10/135-G, Gurusamy Pillai St Extn, Podanur, Coimbatore, Coimbatore South, Tamil Nadu, India, 641023
 - **Transport founded:** 1982 (44+ years of lorry transport operations from Coimbatore)
-- **Vehicle:** Open-body lorry (building material, steel, pipes, packed goods, bales, crated cargo). Not suited to containers, loose sand or gravel, liquids, temperature-controlled goods or oversize machinery.
+- **Vehicles:** Own lorries and trailers plus partnered vehicles; trucks on hire (12/14-wheeler, 40 ft open trucks; daily, monthly or contract). Open-body lorry (building material, steel, pipes, packed goods, bales, crated cargo). Not suited to containers, loose sand or gravel, liquids, temperature-controlled goods or oversize machinery.
 - **Service area:** Coimbatore district, Tamil Nadu
 - **Towns covered:** Coimbatore, Pollachi, Mettupalayam, Sulur, Annur, Madukkarai, Kinathukadavu
 - **Hours:** Monday–Saturday, 09:00–19:00 IST
 - **Phone / WhatsApp:** +91 94430 33055 (primary), +91 90477 21209 (sales)
 - **Customers:** Businesses and commercial customers; house and office shifting enquiries also handled.
-- **What we do NOT offer:** Services outside Coimbatore district, lending or financial services, legal or CA services, real estate, education consulting.
+- **What we do NOT offer:** lending or financial services, legal or CA services, real estate, education consulting.
 
 ## What we do (answer-first)
 
-STA Corporate Solutions offers dedicated Full Load open-body lorry transport from Coimbatore since 1982. Also offered: trucks on hire (12/14-wheeler and 40 ft open trucks; daily, monthly or contract basis) and loaders and packers services (house shifting, office relocation, loading and unloading). Return loads are not a regular offering; availability is confirmed only on enquiry. Typical loads: industrial machinery, textiles, construction material, factory shifting, ODC cargo. Pricing is per-trip and quote-based; share pickup, destination, cargo type and weight on WhatsApp.
+STA Corporate Solutions offers dedicated Full Load open-body lorry transport from Coimbatore since 1982. Also offered: trucks on hire (12/14-wheeler and 40 ft open trucks; daily, monthly or contract basis) and loaders and packers services (house shifting, office relocation, loading and unloading). Return loads into Coimbatore from Tamil Nadu, Kerala and Karnataka are arranged on vehicle availability, confirmed per enquiry. Typical loads: industrial machinery, textiles, construction material, factory shifting. Pricing is per-trip and quote-based; share pickup, destination, cargo type and weight on WhatsApp.
 
 ## Common questions (answer-first)
 
 **Q: What lorry service does STA offer?**
-A: Dedicated Full Load lorry service. Return loads are not promoted; if a truck is returning on your route, availability is confirmed on enquiry.
+A: Dedicated Full Load lorry service. Return loads into Coimbatore from Tamil Nadu, Kerala and Karnataka towns are available only when a vehicle is returning on that route; availability is confirmed on enquiry.
 
 **Q: What vehicle does STA use?**
 A: An open-body lorry, suited to building material, steel, pipes, packed goods, bales and crated cargo. Capacity and suitability are confirmed per booking. STA does not offer cargo insurance or accident cover.
@@ -36,6 +36,9 @@ A: Lorry transport from Coimbatore since 1982 (44+ years).
 **Q: How do I get a quote?**
 A: WhatsApp +91 94430 33055 with pickup, destination, cargo type and weight. Availability, fees and next steps are confirmed individually.
 
+**Q: Do you offer return loads?**
+A: Yes, into Coimbatore only, from Tamil Nadu, Kerala and Karnataka (for example Tirupur, Erode, Salem, Karur, Dindigul, Trichy, Madurai, Hosur, Vellore, Chennai), when a vehicle is returning to Coimbatore. It is never guaranteed and is confirmed per enquiry.
+
 ## Pages
 
 - [Home](https://sta-corporate.in/): Lorry transport for Coimbatore.
@@ -43,6 +46,10 @@ A: WhatsApp +91 94430 33055 with pickup, destination, cargo type and weight. Ava
 - [Transport categories](https://sta-corporate.in/services/transport-categories): Cargo and vehicle categories.
 - [Transportation](https://sta-corporate.in/transportation): Full Load lorry transport in Coimbatore district.
 - [Open-body lorry guide, Coimbatore](https://sta-corporate.in/open-body-lorry-coimbatore): What it carries, what it does not, how to book, what decides freight.
+- [Lorry transport in Coimbatore](https://sta-corporate.in/transportation/services/lorry-transport)
+- [Truck transport in Coimbatore](https://sta-corporate.in/transportation/services/truck-transport)
+- [Trailer transport in Coimbatore](https://sta-corporate.in/transportation/services/trailer-transport)
+- [Return load to Coimbatore from Tamil Nadu, Kerala and Karnataka](https://sta-corporate.in/transportation/services/return-load)
 - [Open-body lorry service](https://sta-corporate.in/transportation/services/open-body-lorry)
 - [Cement transport](https://sta-corporate.in/transportation/services/cement-transport)
 - [Steel and TMT transport](https://sta-corporate.in/transportation/services/steel-transport)
@@ -69,3 +76,25 @@ City pages describe enquiries coordinated from Coimbatore, not separate branches
 ## More detail
 
 A longer answer-first reference is at https://sta-corporate.in/llms-full.txt
+
+## Coimbatore-origin routes
+Outbound origin: Coimbatore, Tamil Nadu. Destinations are not branches. Vehicle, load, date and freight confirmed per booking. Return loads towards Coimbatore are strictly subject to route availability; never guaranteed.
+- https://sta-corporate.in/transportation/from-coimbatore
+- https://sta-corporate.in/transportation/from-coimbatore/bangalore
+- https://sta-corporate.in/transportation/return-load/bangalore
+- https://sta-corporate.in/transportation/from-coimbatore/mysuru
+- https://sta-corporate.in/transportation/return-load/mysuru
+- https://sta-corporate.in/transportation/from-coimbatore/mangaluru
+- https://sta-corporate.in/transportation/return-load/mangaluru
+- https://sta-corporate.in/transportation/from-coimbatore/kochi
+- https://sta-corporate.in/transportation/return-load/kochi
+- https://sta-corporate.in/transportation/from-coimbatore/thrissur
+- https://sta-corporate.in/transportation/return-load/thrissur
+- https://sta-corporate.in/transportation/from-coimbatore/palakkad
+- https://sta-corporate.in/transportation/return-load/palakkad
+- https://sta-corporate.in/transportation/from-coimbatore/kozhikode
+- https://sta-corporate.in/transportation/return-load/kozhikode
+- https://sta-corporate.in/transportation/from-coimbatore/kottayam
+- https://sta-corporate.in/transportation/return-load/kottayam
+- https://sta-corporate.in/transportation/from-coimbatore/thiruvananthapuram
+- https://sta-corporate.in/transportation/return-load/thiruvananthapuram

@@ -97,7 +97,7 @@ const About = () => {
                     <strong className="text-foreground">STA Corporate Solutions</strong> began in <strong className="text-foreground">1982</strong> in Coimbatore as a reliable goods transport operator. Over <strong className="text-foreground">44+ years of service excellence</strong>, we have grown into a trusted full-load lorry transport partner for textile mills and foundries in Coimbatore, and manufacturers across Coimbatore district.
                   </p>
                   <p>
-                    Today, <strong className="text-foreground">STA Corporate Solutions</strong> serves businesses in Coimbatore district from our Coimbatore headquarters, with the same standards of integrity, responsibility and customer care we started with.
+                    Today, <strong className="text-foreground">STA Corporate Solutions</strong> serves local businesses and arranges outbound goods transport from Coimbatore to Kerala and Karnataka from our Coimbatore headquarters, with the same standards of integrity, responsibility and customer care we started with.
                   </p>
                 </div>
               </div>
@@ -176,15 +176,15 @@ const About = () => {
               </div>
               <div>
                 <div className="text-4xl md:text-5xl font-bold text-secondary">1982</div>
-\1<div className="text-primary-foreground/80 mt-2">Operating Since</div>
+<div className="text-primary-foreground/80 mt-2">Operating Since</div>
               </div>
               <div>
-                <div className="text-4xl md:text-5xl font-bold text-secondary">10</div>
-                <div className="text-primary-foreground/80 mt-2">Towns on Our Routes</div>
+                <div className="text-4xl md:text-5xl font-bold text-secondary">Coimbatore</div>
+                <div className="text-primary-foreground/80 mt-2">Outbound Origin</div>
               </div>
               <div>
-                <div className="text-4xl md:text-5xl font-bold text-secondary">2</div>
-                <div className="text-primary-foreground/80 mt-2">Districts served</div>
+                <div className="text-4xl md:text-5xl font-bold text-secondary">On enquiry</div>
+                <div className="text-primary-foreground/80 mt-2">Route confirmation</div>
               </div>
             </div>
           </div>

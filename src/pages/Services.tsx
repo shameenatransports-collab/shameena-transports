@@ -20,7 +20,7 @@ const services = [
     features: [
       "Dedicated lorry for your shipment only",
       "Complete control over pickup and delivery time",
-      "Ideal for large volume goods (5-25 tons)",
+      "Permitted load confirmed for the allotted vehicle",
       "Faster transit with no intermediate stops",
       "Open-body lorry, sheeted where needed",
       "Best for factory-to-factory or bulk movements",
@@ -141,12 +141,6 @@ const Services = () => {
                       <div className={`w-16 h-16 rounded-lg flex items-center justify-center ${service.isPrimary ? 'bg-accent' : 'bg-accent/10'}`}>
                         <service.icon className={`h-8 w-8 ${service.isPrimary ? 'text-accent-foreground' : 'text-accent'}`} />
                       </div>
-                      {service.badge && (
-                        <Badge variant="outline" className="gap-1">
-                          <Clock className="h-3 w-3" />
-                          {service.badge}
-                        </Badge>
-                      )}
                     </div>
                     <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
                       {service.title}

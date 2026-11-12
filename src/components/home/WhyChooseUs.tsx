@@ -5,7 +5,7 @@ const features = [
   { icon: Award, title: "44+ years in transport", description: "Coimbatore-rooted transportation business since 1982 — service excellence backed by decades of fleet operations." },
   { icon: Shield, title: "Careful handling", description: "Experienced drivers and loaders handle every load with care." },
   { icon: Clock, title: "Disciplined follow-up", description: "Clear coordination from enquiry to delivery, with a single point of contact." },
-  { icon: Truck, title: "Open-body lorry", description: "Suited to building material, steel, packed goods, bales and crated cargo." },
+  { icon: Truck, title: "Built for industry cargo", description: "Construction, steel, textile, engineering and agri cargo moved across the Coimbatore industrial belt." },
   { icon: MapPin, title: "Coimbatore focus", description: "Local knowledge of the Coimbatore industrial belt, coordinated from our Podanur office." },
   { icon: Headphones, title: "Responsive support", description: "Reachable by phone or WhatsApp for bookings, enquiries, and consultations." },
 ];

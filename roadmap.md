@@ -30,3 +30,9 @@
 - [-] Funding guide removed (Nov 2026 transport-only scope).
 - [x] Transport-only scope (Nov 2026): Financial Services and Legal & CA removed; /financial-services*, /legal-services*, /startup-funding-guide, /msme-loan-guide and /services redirect to /transportation.
 - [x] Coimbatore-district-only scope (Nov 2026): Tiruppur and all other districts removed; /tiruppur redirects to /coimbatore. Return loads no longer promoted (page and nav removed; /return-loads redirects to /transportation); only an availability-on-enquiry note remains.
+
+# PR 7 recovery (12 Nov 2026)
+- [x] Apply PR 7 vehicle SEO and industries updates, preserving current analytics fixes.
+- [x] Complete attached-chat Coimbatore-origin Kerala/Karnataka lanes and availability-only inbound return pages.
+- [x] Verify route navigation, WhatsApp enquiry context, sitemap, tests and preview health (12 tests; desktop/mobile flow; 190 unique sitemap URLs).
+- [ ] Close PR 7 on GitHub after its changes are safely applied and committed in Lovable.

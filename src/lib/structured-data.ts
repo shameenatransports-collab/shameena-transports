@@ -119,10 +119,9 @@ export const transportServiceSchema = {
     { "@type": "City", "name": "Coimbatore" },
     { "@type": "AdministrativeArea", "name": "Coimbatore District" }
   ],
-  "description": "Dedicated full load lorry transport in Coimbatore district since 1982.",
+  "description": "Lorry, truck and trailer transport from Coimbatore since 1982; outbound Kerala and Karnataka routes confirmed per booking, inbound return loads strictly subject to route availability.",
   "offers": {
     "@type": "Offer",
-    "availability": "https://schema.org/InStock",
     "priceCurrency": "INR"
   }
 };

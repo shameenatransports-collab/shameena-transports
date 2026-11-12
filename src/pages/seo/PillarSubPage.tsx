@@ -1,3 +1,4 @@
+import { RETURN_ORIGINS, returnOriginUrl } from "@/lib/seo/return-origins";
 import { localPageContent, practiceHeritage } from "@/lib/seo/local-content";
 import { useParams, useLocation, Link, Navigate } from "react-router-dom";
 import { getPillar, getSub } from "@/lib/seo/pillars";
@@ -29,7 +30,7 @@ export default function PillarSubPage() {
     { q: `What is ${sub.name}?`, a: sub.description },
     {
       q: `Where is ${sub.shortName} available?`,
-      a: `In Coimbatore district. Enquiries are coordinated from Coimbatore; availability depends on your location and requirements.`,
+      a: sub.slug === "return-load" ? "Tamil Nadu, Kerala and Karnataka towards Coimbatore, strictly subject to route availability." : `In Coimbatore district. Enquiries are coordinated from Coimbatore; availability depends on your location and requirements.`,
     },
     {
       q: `How do I get a ${sub.shortName} quote?`,
@@ -58,7 +59,7 @@ export default function PillarSubPage() {
         { name: sub.shortName, url: path },
       ]}
       serviceName={sub.name}
-      serviceArea="Coimbatore district, Tamil Nadu"
+      serviceArea={sub.slug === "return-load" ? "Tamil Nadu, Kerala and Karnataka towards Coimbatore" : "Coimbatore district, Tamil Nadu"}
       faqs={faqs}
       keywords={keywords}
       answer={sub.answer}
@@ -109,8 +110,23 @@ export default function PillarSubPage() {
         </section>
       )}
 
-      {/* Cities */}
-      <section className="py-20 md:py-24 bg-muted/40">
+      {sub.slug === "return-load" && (
+        <section className="py-16 bg-background">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <h2 className="text-xl font-semibold text-foreground mb-4">Tamil Nadu, Kerala and Karnataka origins towards Coimbatore</h2>
+            <div className="flex flex-wrap gap-2">
+              {RETURN_ORIGINS.map((o) => (
+                <Link key={o.slug} to={returnOriginUrl(o.slug)} className="px-4 py-2 rounded-full border border-border/60 text-sm text-foreground/80 hover:border-primary hover:text-primary">
+                  {o.name} → Coimbatore
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Local services do not imply return origins. */}
+      {sub.slug !== "return-load" && <section className="py-20 md:py-24 bg-muted/40">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mb-12">
             <span className="text-eyebrow text-primary">Where we deliver</span>
@@ -132,7 +148,7 @@ export default function PillarSubPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section>}
 
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4 max-w-4xl">

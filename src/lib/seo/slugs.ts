@@ -1,4 +1,6 @@
+import { DESTINATIONS, VEHICLES, INDUSTRIES, LANES_HUB_PATH, laneUrl, industryUrl } from "./lanes";
 import { CITIES, CORRIDORS, City } from "./cities";
+import { RETURN_ORIGINS, returnOriginUrl } from "./return-origins";
 import { Pillar, PILLARS } from "./pillars";
 
 export const SITE_URL = "https://sta-corporate.in";
@@ -12,11 +14,11 @@ export const corridorUrl = (slug: string) => `/transportation/routes/${slug}`;
 
 // Towns get these pages in the sitemap; Coimbatore (tier 1) gets every sub-service.
 const TOWN_SUBS = [
-  "open-body-lorry", "full-load", "trucks-on-hire", "cement-transport",
+  "lorry-transport", "truck-transport", "trailer-transport", "open-body-lorry", "full-load", "trucks-on-hire", "cement-transport",
   "steel-transport", "construction-material", "bagged-goods-transport", "loaders-packers",
 ];
 export const isIndexableCitySub = (city: City, subSlug: string) =>
-  city.tier === 1 || TOWN_SUBS.includes(subSlug);
+  subSlug !== "return-load" && (city.tier === 1 || TOWN_SUBS.includes(subSlug));
 
 export const OPEN_BODY_GUIDE_PATH = "/open-body-lorry-coimbatore";
 
@@ -81,6 +83,16 @@ export function enumerateAllUrls(): SitemapEntry[] {
     out.push({ path: corridorUrl(c.slug), priority: "0.7", changefreq: "monthly" });
   }
 
+  // Return load origins (Tamil Nadu to Coimbatore)
+  for (const o of RETURN_ORIGINS) {
+    out.push({ path: returnOriginUrl(o.slug), priority: "0.6", changefreq: "monthly" });
+  }
 
+  out.push({ path: LANES_HUB_PATH, priority: "0.9", changefreq: "monthly" });
+  for (const d of DESTINATIONS) {
+    out.push({ path: laneUrl(d.slug), priority: "0.8", changefreq: "monthly" });
+    for (const v of VEHICLES) out.push({ path: laneUrl(d.slug, v.slug), priority: "0.7", changefreq: "monthly" });
+  }
+  for (const i of INDUSTRIES) out.push({ path: industryUrl(i.slug), priority: "0.7", changefreq: "monthly" });
   return out;
 }

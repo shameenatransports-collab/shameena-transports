@@ -63,7 +63,7 @@ export function HeroSection() {
             STA Corporate Solutions
             <br />
             <span className="bg-gradient-to-r from-secondary via-secondary to-primary-foreground bg-clip-text text-transparent">
-              Lorry Transport for Coimbatore
+              Lorry, Truck &amp; Trailer Transport
             </span>
           </motion.h1>
 
@@ -73,7 +73,7 @@ export function HeroSection() {
             transition={{ duration: 0.9, ease: easeApple, delay: 0.35 }}
             className="text-headline text-primary-foreground/85 max-w-2xl mx-auto mb-3"
           >
-            Full Load lorry transport — 44+ years of dependable transport for businesses in Coimbatore district.
+            Transport service excellence since 1982 — local Coimbatore district trips and outbound routes to Kerala and Karnataka.
           </motion.p>
           <motion.p
             initial={{ opacity: 0 }}
@@ -81,7 +81,7 @@ export function HeroSection() {
             transition={{ duration: 1, ease: easeApple, delay: 0.5 }}
             className="text-sm md:text-base text-primary-foreground/60 mb-12 tracking-tight"
           >
-            Coimbatore HQ · Coimbatore district
+            Origin: Coimbatore · Routes confirmed per booking
           </motion.p>
 
           <motion.div

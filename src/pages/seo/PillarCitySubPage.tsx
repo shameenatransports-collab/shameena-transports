@@ -27,6 +27,8 @@ export default function PillarCitySubPage() {
   const sub = subSlug ? getSub(pillar, subSlug) : undefined;
   if (!sub) return <Navigate to={pillarCityUrl(pillar, city.slug)} replace />;
 
+  if (sub.slug === "return-load") return <Navigate to="/transportation/services/return-load" replace />;
+
   const path = pillarCitySubUrl(pillar, city.slug, sub.slug);
   const title = `${sub.name} in ${city.name}`;
   const metaTitle = `${sub.name} in ${city.name} | STA Corporate Solutions`;
