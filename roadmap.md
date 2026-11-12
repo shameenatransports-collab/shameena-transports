@@ -35,4 +35,4 @@
 - [x] Apply PR 7 vehicle SEO and industries updates, preserving current analytics fixes.
 - [x] Complete attached-chat Coimbatore-origin Kerala/Karnataka lanes and availability-only inbound return pages.
 - [x] Verify route navigation, WhatsApp enquiry context, sitemap, tests and preview health (12 tests; desktop/mobile flow; 190 unique sitemap URLs).
-- [ ] Close PR 7 on GitHub after its changes are safely applied and committed in Lovable.
+- [x] Close PR 7 on GitHub after its changes are safely applied and committed in Lovable (closed without merging; recovery commit 02fd6e9).
