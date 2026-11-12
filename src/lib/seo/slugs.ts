@@ -56,7 +56,6 @@ export function enumerateAllUrls(): SitemapEntry[] {
     { path: "/contact", priority: "0.7", changefreq: "monthly" },
     { path: OPEN_BODY_GUIDE_PATH, priority: "0.9", changefreq: "monthly" },
     { path: "/service-areas", priority: "0.6", changefreq: "monthly" },
-    { path: "/coimbatore", priority: "0.7", changefreq: "monthly" },
     { path: "/privacy", priority: "0.3", changefreq: "yearly" },
     { path: "/terms", priority: "0.3", changefreq: "yearly" },
   );

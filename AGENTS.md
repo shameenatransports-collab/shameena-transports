@@ -4,3 +4,4 @@
 - Keep all public city routes in the sitemap enumerator and link them through the regional directory; this makes existing landing pages discoverable without creating duplicate routes.
 - Generate outbound vehicle/destination and industry pages from the shared lane catalogue and inbound return pages from the origin catalogue; explicit direction prevents coverage and branch claims from leaking across templates.
 - Recover external PRs as reviewed file changes in the current checkout, preserving analytics and managed configuration; close superseded PRs only after local verification and a recovery commit.
+- Keep retired URL aliases in the shared fallback redirect resolver, not as advertised page routes; this preserves old links while keeping the preview page list and sitemap focused on current pages.

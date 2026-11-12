@@ -3,7 +3,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import { AnalyticsProvider } from "@/components/analytics/AnalyticsProvider";
 import { ErrorBoundary } from "@/components/system/ErrorBoundary";
@@ -20,8 +20,7 @@ const Contact = lazy(() => import("./pages/Contact"));
 const Privacy = lazy(() => import("./pages/Privacy"));
 const DataRequest = lazy(() => import("./pages/DataRequest"));
 const Terms = lazy(() => import("./pages/Terms"));
-const CityLanding = lazy(() => import("./pages/CityLanding"));
-const NotFound = lazy(() => import("./pages/NotFound"));
+const LegacyRoute = lazy(() => import("./pages/LegacyRoute"));
 
 // Programmatic SEO templates
 const PillarCityPage = lazy(() => import("./pages/seo/PillarCityPage"));
@@ -64,7 +63,6 @@ const App = () => (
                     <Route path="/transportation" element={<Transportation />} />
                     
 
-                    <Route path="/services" element={<Navigate to="/transportation" replace />} />
                     <Route path="/services/transport-categories" element={<Services />} />
 
                     {/* Pillar × sub-service (no city) */}
@@ -88,32 +86,14 @@ const App = () => (
                     
 
                     <Route path="/open-body-lorry-coimbatore" element={<OpenBodyLorry />} />
-                    <Route path="/fleet" element={<Navigate to="/open-body-lorry-coimbatore" replace />} />
-                    <Route path="/return-loads" element={<Navigate to="/transportation/services/return-load" replace />} />
 
                     <Route path="/service-areas" element={<ServiceAreas />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/privacy" element={<Privacy />} />
                     <Route path="/data-request" element={<DataRequest />} />
                     <Route path="/terms" element={<Terms />} />
-                    {/* City landing pages: Coimbatore district */}
-                    <Route path="/coimbatore" element={<CityLanding />} />
-                    <Route path="/tiruppur" element={<Navigate to="/coimbatore" replace />} />
-                    {/* Redirects for retired pages and areas */}
-                    <Route path="/financial-services/*" element={<Navigate to="/transportation" replace />} />
-                    <Route path="/financial-services" element={<Navigate to="/transportation" replace />} />
-                    <Route path="/legal-services/*" element={<Navigate to="/transportation" replace />} />
-                    <Route path="/legal-services" element={<Navigate to="/transportation" replace />} />
-                    <Route path="/startup-funding-guide" element={<Navigate to="/transportation" replace />} />
-                    <Route path="/msme-loan-guide" element={<Navigate to="/transportation" replace />} />
-                    <Route path="/edu-consultancy/*" element={<Navigate to="/transportation" replace />} />
-                    {["chennai", "madurai", "erode", "salem", "trichy", "tirunelveli"].map((c) => (
-                      <Route key={c} path={`/${c}`} element={<Navigate to="/service-areas" replace />} />
-                    ))}
-                    <Route path="/overseas-real-estate" element={<Navigate to="/" replace />} />
-                    <Route path="/real-estate/*" element={<Navigate to="/" replace />} />
-                    <Route path="/dubai-real-estate" element={<Navigate to="/" replace />} />
-                    <Route path="*" element={<NotFound />} />
+                    {/* Retired aliases are resolved without listing them as current pages. */}
+                    <Route path="*" element={<LegacyRoute />} />
                   </Routes>
                 </Suspense>
               </ErrorBoundary>
