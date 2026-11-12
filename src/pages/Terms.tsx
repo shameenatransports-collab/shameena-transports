@@ -15,7 +15,7 @@ const Terms = () => {
   return (
     <>
       <Helmet>
-        <title>Terms of Service | STA Corporate Solutions — Lorry Transport</title>
+        <title>Terms of Service | STA — Lorry Transport</title>
         <meta name="description" content="Terms of Service for STA Corporate Solutions Coimbatore. Terms, conditions, liability & policies for Lorry Transportation Services in Tamil Nadu." />
         <link rel="canonical" href="https://sta-corporate.in/terms" />
         <meta name="robots" content="index, follow" />

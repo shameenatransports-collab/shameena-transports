@@ -17,7 +17,7 @@ export default function RouteCorridorPage() {
   const path = corridorUrl(corridor.slug);
 
   const title = `${corridor.fromName} to ${corridor.toName} Transport`;
-  const metaTitle = `${corridor.fromName} to ${corridor.toName} Open-Body Lorry Transport (${corridor.distanceKm} km) | STA Corporate Solutions`;
+  const metaTitle = `${corridor.fromName} to ${corridor.toName} Open-Body Lorry Transport (${corridor.distanceKm} km) | STA`;
   const metaDescription = `Open-body lorry transport from ${corridor.fromName} to ${corridor.toName}, about ${corridor.distanceKm} km within Coimbatore district. Building material, steel, packed goods and more. Call +91 94430 33055.`;
   const keywords = [
     `${corridor.fromName.toLowerCase()} to ${corridor.toName.toLowerCase()} transport`,

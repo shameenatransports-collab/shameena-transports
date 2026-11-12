@@ -26,7 +26,7 @@ export default function ReturnLoadPage() {
     <PillarPageShell
       title={title}
       heroAccent="Strictly subject to route availability"
-      metaTitle={`${o.name} to Coimbatore Return Load & Lorry Transport | STA Corporate Solutions`}
+      metaTitle={`${o.name} to Coimbatore Return Load Lorry | STA`}
       metaDescription={`Goods transport from ${o.name} to Coimbatore on returning STA vehicles, strictly subject to route availability. Lorry, truck and trailer enquiries: +91 94430 33055.`}
       path={path}
       eyebrow={`Return load · ${o.name} → Coimbatore`}

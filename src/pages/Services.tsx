@@ -95,11 +95,11 @@ const Services = () => {
   return (
     <>
       <Helmet>
-        <title>Full Load Lorry Transport Services | STA Corporate Solutions Tamil Nadu</title>
+        <title>Full Load Lorry Transport Services | STA Tamil Nadu</title>
         <meta name="description" content="Full Load dedicated truck transport in Coimbatore district. Textile, Construction Material Transport. Coimbatore. Since 1982. Call for quotes!" />
         <meta name="keywords" content="full load lorry service, dedicated truck booking, lorry transport coimbatore, goods transport coimbatore" />
         <link rel="canonical" href="https://sta-corporate.in/services" />
-        <meta property="og:title" content="Full Load Transport Services | STA Corporate Solutions" />
+        <meta property="og:title" content="Full Load Transport Services | STA" />
         <meta property="og:description" content="Dedicated Full Load transport. Coimbatore's lorry transport since 1982." />
         <meta property="og:url" content="https://sta-corporate.in/services" />
         <meta property="og:type" content="website" />

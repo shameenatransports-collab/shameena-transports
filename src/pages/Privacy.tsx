@@ -18,7 +18,7 @@ const Privacy = () => {
   return (
     <>
       <Helmet>
-        <title>Privacy Policy | DPDP Act 2023 Compliant | STA Corporate Solutions</title>
+        <title>Privacy Policy | DPDP Act 2023 Compliant | STA</title>
         <meta
           name="description"
           content="STA Corporate Solutions Privacy Policy aligned with India's Digital Personal Data Protection Act 2023 — data principal rights, grievance officer, retention, cookies and consent."

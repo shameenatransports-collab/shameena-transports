@@ -108,7 +108,7 @@ const DataRequest = () => {
   return (
     <>
       <Helmet>
-        <title>Data Principal Request | DPDP Act 2023 | STA Corporate Solutions</title>
+        <title>Data Principal Request | DPDP Act 2023 | STA</title>
         <meta name="description" content="Exercise your DPDP Act 2023 rights — access, correction, erasure, withdraw consent, nomination or grievance. STA Corporate Solutions responds within 30 days." />
         <link rel="canonical" href="https://sta-corporate.in/data-request" />
         <meta name="robots" content="noindex, follow" />

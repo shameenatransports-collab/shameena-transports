@@ -137,7 +137,7 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Us | Business Enquiries - STA Corporate Solutions</title>
+        <title>Contact STA Lorry Transport Coimbatore | WhatsApp</title>
         <meta name="description" content="Contact STA Corporate Solutions for business enquiries. Call +91 94430 33055 or WhatsApp for instant quotes. Lorry transport in Coimbatore." />
         <link rel="canonical" href="https://sta-corporate.in/contact" />
         <meta property="og:title" content="Contact STA Corporate Solutions | Get a Quote" />

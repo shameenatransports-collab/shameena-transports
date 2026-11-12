@@ -34,7 +34,7 @@ export const CITY_DATA: Record<CitySlug, CityData> = {
     postalCode: "641023",
     geo: { lat: "11.0168", lng: "76.9558" },
     tagline: "Headquartered in Coimbatore: lorry transport since 1982 for Coimbatore businesses",
-    metaTitle: "Lorry Transport in Coimbatore | STA Corporate Solutions",
+    metaTitle: "Lorry Transport in Coimbatore | STA",
     metaDescription:
       "STA Corporate Solutions in Coimbatore: full-load lorry transport since 1982 for businesses. Call 94430 33055.",
     heroIntro:

@@ -95,7 +95,7 @@ const OpenBodyLorry = () => {
   return (
     <>
       <Helmet>
-        <title>Open-Body Lorry Transport in Coimbatore | STA Corporate Solutions</title>
+        <title>Open-Body Lorry Transport in Coimbatore | STA</title>
         <meta
           name="description"
           content="Open-body lorry for building material, steel, pipes, packed goods, bales and crated cargo in Coimbatore district. See what it carries and what it does not. Call +91 94430 33055."
@@ -105,7 +105,7 @@ const OpenBodyLorry = () => {
           content="open body lorry coimbatore, open truck on hire coimbatore, goods lorry coimbatore, building material transport coimbatore, steel transport coimbatore, lorry booking coimbatore"
         />
         <link rel="canonical" href="https://sta-corporate.in/open-body-lorry-coimbatore" />
-        <meta property="og:title" content="Open-Body Lorry Transport in Coimbatore | STA Corporate Solutions" />
+        <meta property="og:title" content="Open-Body Lorry Transport in Coimbatore | STA" />
         <meta property="og:description" content="Open-body lorry for building material, steel, packed goods and bales in Coimbatore district." />
         <meta property="og:url" content="https://sta-corporate.in/open-body-lorry-coimbatore" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>

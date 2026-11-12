@@ -21,7 +21,7 @@ export default function PillarSubPage() {
   if (!sub) return <Navigate to={pillarUrl(pillar)} replace />;
 
   const path = pillarSubUrl(pillar, sub.slug);
-  const metaTitle = `${sub.name} | ${pillar.name} | STA Corporate Solutions`;
+  const metaTitle = `${sub.name} | ${pillar.name} | STA`;
   const metaDescription = `${sub.description} ${pillar.tagline} — Coimbatore. Call +91 94430 33055.`;
   const keywords = [...sub.keywords, ...sub.keywords.map((k) => `${k} coimbatore`)];
 

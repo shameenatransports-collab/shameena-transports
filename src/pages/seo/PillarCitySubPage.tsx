@@ -31,7 +31,7 @@ export default function PillarCitySubPage() {
 
   const path = pillarCitySubUrl(pillar, city.slug, sub.slug);
   const title = `${sub.name} in ${city.name}`;
-  const metaTitle = `${sub.name} in ${city.name} | STA Corporate Solutions`;
+  const metaTitle = `${sub.name} in ${city.name} | STA`;
   const metaDescription = `${sub.description} Enquiries from ${city.name}, ${city.stateName}; confirm availability. Call +91 94430 33055.`;
   const keywords = [
     ...sub.keywords.map((k) => `${k} ${city.name.toLowerCase()}`),
