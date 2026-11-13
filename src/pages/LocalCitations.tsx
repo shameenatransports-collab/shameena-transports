@@ -9,8 +9,8 @@ import { canonical } from "@/lib/seo/slugs";
 import { getPillar } from "@/lib/seo/pillars";
 
 export default function LocalCitations() {
-  const title = "Coimbatore Office & Local Citations | STA";
-  const description = "STA Corporate Solutions’ Podanur office details, Coimbatore service areas and Chennai and Kochi port delivery references. WhatsApp +91 94430 33055.";
+  const title = "Transport Company in Coimbatore, Podanur Office | STA";
+  const description = "Lorry, truck & trailer transport in Coimbatore from our Podanur office. Serving Kurichi, Sulur, Pollachi, Mettupalayam & Chennai/Kochi ports.";
   const services = getPillar("transportation")?.sub.filter(s => CITATION_SERVICE_SLUGS.includes(s.slug)) ?? [];
   const schema = {
     "@context": "https://schema.org", "@type": "WebPage", name: title, url: canonical(LOCAL_CITATIONS_PATH),
@@ -18,11 +18,19 @@ export default function LocalCitations() {
       "@type": "LocalBusiness", "@id": canonical("/#localbusiness"), name: office.name,
       telephone: office.phone, url: office.website,
       address: { "@type": "PostalAddress", streetAddress: "No 10/135-G, Gurusamy Pillai St Extn, Podanur", addressLocality: "Coimbatore", addressRegion: "Tamil Nadu", postalCode: "641023", addressCountry: "IN" },
+      areaServed: ["Coimbatore","Podanur","Kurichi","Sulur","Pollachi","Mettupalayam"].map(n => ({ "@type": "Place", name: n })),
+      hasMap: OFFICE_MAPS_URL,
     },
+    breadcrumb: { "@type": "BreadcrumbList", itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: canonical("/") },
+      { "@type": "ListItem", position: 2, name: "Transportation", item: canonical("/transportation") },
+      { "@type": "ListItem", position: 3, name: "Local citations", item: canonical(LOCAL_CITATIONS_PATH) },
+    ] },
   };
   return <>
     <Helmet>
       <title>{title}</title><meta name="description" content={description} />
+      <meta name="keywords" content="transport company in Coimbatore, lorry transport Coimbatore, truck transport Podanur, trailer transport Coimbatore, goods transport Sulur, Pollachi lorry service, Mettupalayam transport" />
       <link rel="canonical" href={canonical(LOCAL_CITATIONS_PATH)} />
       <meta property="og:title" content={title} /><meta property="og:description" content={description} />
       <meta property="og:type" content="website" /><meta property="og:url" content={canonical(LOCAL_CITATIONS_PATH)} />
@@ -72,6 +80,16 @@ export default function LocalCitations() {
         <section className="container mx-auto px-4 max-w-5xl pt-12">
           <h2 className="text-2xl font-semibold text-foreground mb-6">Coimbatore transport services</h2>
           <ul className="grid sm:grid-cols-2 gap-5">{services.map(service => <li key={service.slug}><Link to={`/transportation/services/${service.slug}`} className="inline-flex items-center gap-2 text-primary underline underline-offset-4">{service.shortName} in Coimbatore<ArrowUpRight className="h-4 w-4 shrink-0" aria-hidden="true" /></Link></li>)}</ul>
+        </section>
+        <section className="container mx-auto px-4 max-w-5xl pt-12" aria-labelledby="links-heading">
+          <h2 id="links-heading" className="text-2xl font-semibold text-foreground mb-4">More Coimbatore transport pages</h2>
+          <p className="text-muted-foreground leading-relaxed mb-6">Looking for a lorry service in Coimbatore, truck transport from Podanur or trailer hire for heavy cargo? These pages cover vehicles and routes from our Coimbatore base.</p>
+          <ul className="grid sm:grid-cols-2 gap-5">{[
+            ["/transportation/coimbatore", "Goods transport in Coimbatore"],
+            ["/transportation/from-coimbatore", "Routes from Coimbatore to Kerala & Karnataka"],
+            ["/open-body-lorry-coimbatore", "Open body lorry in Coimbatore"],
+            ["/service-areas", "All service areas"],
+          ].map(([to, label]) => <li key={to}><Link to={to} className="inline-flex items-center gap-2 text-primary underline underline-offset-4">{label}<ArrowUpRight className="h-4 w-4 shrink-0" aria-hidden="true" /></Link></li>)}</ul>
         </section>
       </main>
     </Layout>
