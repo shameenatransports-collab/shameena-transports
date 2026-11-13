@@ -2,6 +2,7 @@ import { DESTINATIONS, VEHICLES, INDUSTRIES, LANES_HUB_PATH, laneUrl, industryUr
 import { CITIES, CORRIDORS, City } from "./cities";
 import { RETURN_ORIGINS, returnOriginUrl } from "./return-origins";
 import { Pillar, PILLARS } from "./pillars";
+import { LOCAL_CITATIONS_PATH } from "./local-citations";
 
 export const SITE_URL = "https://sta-corporate.in";
 
@@ -54,6 +55,7 @@ export function enumerateAllUrls(): SitemapEntry[] {
     { path: "/services/transport-categories", priority: "0.7", changefreq: "monthly" },
     { path: "/about", priority: "0.7", changefreq: "monthly" },
     { path: "/contact", priority: "0.7", changefreq: "monthly" },
+    { path: LOCAL_CITATIONS_PATH, priority: "0.6", changefreq: "monthly" },
     { path: OPEN_BODY_GUIDE_PATH, priority: "0.9", changefreq: "monthly" },
     { path: "/service-areas", priority: "0.6", changefreq: "monthly" },
     { path: "/privacy", priority: "0.3", changefreq: "yearly" },

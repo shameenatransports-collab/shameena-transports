@@ -17,6 +17,7 @@ const Services = lazy(() => import("./pages/Services"));
 const OpenBodyLorry = lazy(() => import("./pages/OpenBodyLorry"));
 const ServiceAreas = lazy(() => import("./pages/ServiceAreas"));
 const Contact = lazy(() => import("./pages/Contact"));
+const LocalCitations = lazy(() => import("./pages/LocalCitations"));
 const Privacy = lazy(() => import("./pages/Privacy"));
 const DataRequest = lazy(() => import("./pages/DataRequest"));
 const Terms = lazy(() => import("./pages/Terms"));
@@ -89,6 +90,7 @@ const App = () => (
 
                     <Route path="/service-areas" element={<ServiceAreas />} />
                     <Route path="/contact" element={<Contact />} />
+                    <Route path="/local-citations" element={<LocalCitations />} />
                     <Route path="/privacy" element={<Privacy />} />
                     <Route path="/data-request" element={<DataRequest />} />
                     <Route path="/terms" element={<Terms />} />

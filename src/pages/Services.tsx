@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { LocalCitationsLink } from "@/components/seo/LocalCitationsLink";
 import { Layout } from "@/components/layout/Layout";
 import { Truck, Package, Factory, Building2, Warehouse, CheckCircle, Clock, AlertCircle } from "lucide-react";
 import { CTASection } from "@/components/home/CTASection";
@@ -172,6 +173,7 @@ const Services = () => {
           </div>
         </section>
 
+        <section className="container mx-auto px-4 pb-12"><LocalCitationsLink /></section>
         <CTASection />
       </Layout>
     </>

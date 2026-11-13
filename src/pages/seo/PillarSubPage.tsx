@@ -6,14 +6,15 @@ import { HUB_CITIES } from "@/lib/seo/cities";
 import { PillarPageShell, KeywordList } from "@/components/seo/PillarPageShell";
 import { pillarUrl, pillarSubUrl, pillarCitySubUrl } from "@/lib/seo/slugs";
 import { CoimbatoreOfficeContent } from "@/components/seo/CoimbatoreOfficeContent";
+import { LocalCitationsLink } from "@/components/seo/LocalCitationsLink";
+import { COIMBATORE_OFFICE_CONTENT as office } from "@/lib/seo/local-content";
+import { CITATION_SERVICE_SLUGS, OFFICE_MAPS_URL } from "@/lib/seo/local-citations";
 import { ArrowUpRight, CheckCircle2 } from "lucide-react";
 
 /**
  * Programmatic pillar sub-service page (no city).
  * Route: /:pillar/(services|products|practice|programs|categories)/:sub
  */
-const LOCAL_CORE = ["truck-transport", "trailer-transport", "freight-transport", "logistics"];
-const MAPS_URL = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent("STA Corporate Solutions, No 10/135-G, Gurusamy Pillai St Extn, Podanur, Coimbatore 641023");
 
 export default function PillarSubPage() {
   const { sub: subSlug } = useParams();
@@ -25,7 +26,7 @@ export default function PillarSubPage() {
   if (!sub) return <Navigate to={pillarUrl(pillar)} replace />;
 
   const path = pillarSubUrl(pillar, sub.slug);
-  const isLocalCore = pillar.id === "transportation" && LOCAL_CORE.includes(sub.slug);
+  const isLocalCore = pillar.id === "transportation" && CITATION_SERVICE_SLUGS.includes(sub.slug);
   const metaTitle = isLocalCore ? `${sub.shortName} in Coimbatore | Podanur Office | STA` : `${sub.name} | ${pillar.name} | STA`;
   const metaDescription = `${sub.description} ${pillar.tagline} — Coimbatore. Call +91 94430 33055.`;
   const keywords = [...sub.keywords, ...sub.keywords.map((k) => `${k} coimbatore`)];
@@ -121,11 +122,12 @@ export default function PillarSubPage() {
           <div className="container mx-auto px-4 max-w-5xl">
             <h2 className="text-2xl font-semibold text-foreground mb-4">Find STA Corporate Solutions in Coimbatore</h2>
             <dl className="grid sm:grid-cols-3 gap-6 text-foreground">
-              <div><dt className="text-sm text-muted-foreground">Business name</dt><dd className="font-semibold">STA Corporate Solutions</dd></div>
-              <div><dt className="text-sm text-muted-foreground">Office</dt><dd>No 10/135-G, Gurusamy Pillai St Extn, Podanur, Coimbatore, Tamil Nadu 641023</dd></div>
-              <div><dt className="text-sm text-muted-foreground">Phone / WhatsApp</dt><dd><a href="tel:+919443033055" className="text-primary underline">+91 94430 33055</a></dd></div>
+              <div><dt className="text-sm text-muted-foreground">Business name</dt><dd className="font-semibold">{office.name}</dd></div>
+              <div><dt className="text-sm text-muted-foreground">Office</dt><dd>{office.address}</dd></div>
+              <div><dt className="text-sm text-muted-foreground">Phone / WhatsApp</dt><dd><a href={office.whatsappUrl} className="text-primary underline">{office.phone}</a></dd></div>
             </dl>
-            <p className="mt-6 text-sm"><a href={MAPS_URL} target="_blank" rel="noopener noreferrer" className="text-primary underline">Open our Podanur office on Google Maps</a> · Serving Coimbatore city, Podanur, Kurichi, Sulur, Pollachi, Mettupalayam and onward Kerala and Karnataka routes.</p>
+            <p className="mt-6 text-sm"><a href={OFFICE_MAPS_URL} target="_blank" rel="noopener noreferrer" className="text-primary underline">Open our Podanur office on Google Maps</a> · Serving Coimbatore city, Podanur, Kurichi, Sulur, Pollachi, Mettupalayam and onward Kerala and Karnataka routes.</p>
+            <p className="mt-4"><LocalCitationsLink /></p>
           </div>
         </section>
       )}

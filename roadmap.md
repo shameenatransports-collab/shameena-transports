@@ -36,3 +36,8 @@
 - [x] Complete attached-chat Coimbatore-origin Kerala/Karnataka lanes and availability-only inbound return pages.
 - [x] Verify route navigation, WhatsApp enquiry context, sitemap, tests and preview health (12 tests; desktop/mobile flow; 190 unique sitemap URLs).
 - [x] Close PR 7 on GitHub after its changes are safely applied and committed in Lovable (closed without merging; recovery commit 02fd6e9).
+
+# Local citations page
+- [x] Check office identity against the managed Google listing and add local areas plus Chennai/Kochi port references.
+- [x] Link the citations page from service templates and include it in the sitemap.
+- [x] Verify service-to-citations navigation, office details and mobile layout (22 tests pass; four service links and WhatsApp checked; no runtime errors or mobile overflow).

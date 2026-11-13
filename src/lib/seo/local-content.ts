@@ -3,6 +3,10 @@ import { CORRIDORS } from "./cities";
 import type { Pillar } from "./pillars";
 
 export const COIMBATORE_OFFICE_CONTENT = {
+  name: "STA Corporate Solutions",
+  phone: "+91 94430 33055",
+  whatsappUrl: "https://wa.me/919443033055",
+  website: "https://sta-corporate.in/",
   address: "No 10/135-G, Gurusamy Pillai St Extn, Podanur, Coimbatore, Tamil Nadu 641023",
   intro: "We coordinate lorry, truck and trailer enquiries from our Podanur office in Coimbatore. Serving goods-transport customers since 1982, we plan local district pickups and outbound movements to Kerala and Karnataka around your cargo, loading access and delivery address.",
   industries: [

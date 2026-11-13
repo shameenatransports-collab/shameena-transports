@@ -11,6 +11,8 @@ import {
   isIndexableCitySub,
 } from "@/lib/seo/slugs";
 import { CheckCircle2, ArrowUpRight } from "lucide-react";
+import { LocalCitationsLink } from "@/components/seo/LocalCitationsLink";
+import { CITATION_SERVICE_SLUGS } from "@/lib/seo/local-citations";
 
 /**
  * Programmatic city × sub-service combo page.
@@ -108,6 +110,7 @@ export default function PillarCitySubPage() {
             {sub.caution && <p className="text-muted-foreground leading-relaxed">{sub.caution}</p>}
             <p className="text-muted-foreground leading-relaxed">{local.boundary}</p>
             <p className="text-sm"><Link to="/open-body-lorry-coimbatore" className="text-primary underline">Open-body lorry guide for Coimbatore</Link></p>
+            {CITATION_SERVICE_SLUGS.includes(sub.slug) && <p><LocalCitationsLink /></p>}
           </div>
         </div>
       </section>

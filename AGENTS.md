@@ -6,3 +6,4 @@
 - Generate outbound vehicle/destination and industry pages from the shared lane catalogue and inbound return pages from the origin catalogue; explicit direction prevents coverage and branch claims from leaking across templates.
 - Recover external PRs as reviewed file changes in the current checkout, preserving analytics and managed configuration; close superseded PRs only after local verification and a recovery commit.
 - Keep retired URL aliases in the shared fallback redirect resolver, not as advertised page routes; this preserves old links while keeping the preview page list and sitemap focused on current pages.
+- Share office identity through the local-content module and citation areas through the local-citations catalogue; service links and the citations page must not drift or imply additional branches.
