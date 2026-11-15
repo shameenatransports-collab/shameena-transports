@@ -82,11 +82,28 @@ Outbound origin: Coimbatore, Tamil Nadu. Destinations are not branches. Vehicle,
 - https://sta-corporate.in/transportation/from-coimbatore/thiruvananthapuram
 - https://sta-corporate.in/transportation/return-load/thiruvananthapuram
 
-## Coimbatore areas and customer types
+## Coimbatore search-intent pages (lorry, truck and trailer)
 
-Lorry, truck and trailer enquiries from companies and individuals across Coimbatore, coordinated from the Podanur office. No prices published; no cargo insurance.
+Pages written around what buyers search: hire, rent, booking, transporters, factories, builders, contractors, traders and house shifting. No prices published; no cargo insurance; return loads on availability only.
 
-- https://sta-corporate.in/transportation/coimbatore/areas
+- https://sta-corporate.in/lorry-on-hire-coimbatore (Lorry on Hire in Coimbatore)
+- https://sta-corporate.in/lorry-on-rent-coimbatore (Lorry on Rent in Coimbatore)
+- https://sta-corporate.in/lorry-booking-coimbatore (Book a Lorry in Coimbatore)
+- https://sta-corporate.in/truck-on-hire-coimbatore (Truck on Hire in Coimbatore)
+- https://sta-corporate.in/truck-rental-coimbatore (Truck Rental in Coimbatore)
+- https://sta-corporate.in/trailer-on-hire-coimbatore (Trailer on Hire in Coimbatore)
+- https://sta-corporate.in/full-truck-load-coimbatore (Full Truck Load (FTL) Transport in Coimbatore)
+- https://sta-corporate.in/transporters-in-coimbatore (Transporters in Coimbatore)
+- https://sta-corporate.in/transport-company-coimbatore (Transport Company in Coimbatore)
+- https://sta-corporate.in/goods-transport-service-coimbatore (Goods Transport Service in Coimbatore for Companies)
+- https://sta-corporate.in/factory-goods-transport-coimbatore (Factory Goods Transport in Coimbatore)
+- https://sta-corporate.in/machinery-transport-coimbatore (Machinery and Equipment Transport in Coimbatore)
+- https://sta-corporate.in/lorry-monthly-contract-coimbatore (Monthly and Contract Lorry Hire in Coimbatore)
+- https://sta-corporate.in/construction-material-lorry-coimbatore (Lorry for Construction Material in Coimbatore)
+- https://sta-corporate.in/transport-contractor-coimbatore (Transport Contractor in Coimbatore for Building Sites)
+- https://sta-corporate.in/lorry-for-traders-coimbatore (Lorry for Traders and Dealers in Coimbatore)
+- https://sta-corporate.in/house-shifting-lorry-coimbatore (Lorry for House Shifting in Coimbatore)
+- https://sta-corporate.in/transportation/coimbatore/areas (hub and area pages)
 - https://sta-corporate.in/transportation/coimbatore/areas/podanur
 - https://sta-corporate.in/transportation/coimbatore/areas/kurichi
 - https://sta-corporate.in/transportation/coimbatore/areas/ganapathy
@@ -106,11 +123,3 @@ Lorry, truck and trailer enquiries from companies and individuals across Coimbat
 - https://sta-corporate.in/transportation/coimbatore/areas/kuniyamuthur
 - https://sta-corporate.in/transportation/coimbatore/areas/eachanari
 - https://sta-corporate.in/transportation/coimbatore/areas/malumichampatti
-- https://sta-corporate.in/transportation/coimbatore/for/factories-manufacturers
-- https://sta-corporate.in/transportation/coimbatore/for/traders-wholesalers
-- https://sta-corporate.in/transportation/coimbatore/for/builders-contractors
-- https://sta-corporate.in/transportation/coimbatore/for/equipment-owners
-- https://sta-corporate.in/transportation/coimbatore/for/shops-showrooms
-- https://sta-corporate.in/transportation/coimbatore/for/exporters-traders-to-ports
-- https://sta-corporate.in/transportation/coimbatore/for/households-house-shifting
-- https://sta-corporate.in/transportation/coimbatore/for/individuals-goods-transport

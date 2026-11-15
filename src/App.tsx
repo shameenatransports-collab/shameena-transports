@@ -23,7 +23,8 @@ const DataRequest = lazy(() => import("./pages/DataRequest"));
 const Terms = lazy(() => import("./pages/Terms"));
 const AreasHub = lazy(() => import("./pages/seo/CoimbatoreCoverage").then((m) => ({ default: m.AreasHub })));
 const AreaPage = lazy(() => import("./pages/seo/CoimbatoreCoverage").then((m) => ({ default: m.AreaPage })));
-const AudiencePage = lazy(() => import("./pages/seo/CoimbatoreCoverage").then((m) => ({ default: m.AudiencePage })));
+const IntentPage = lazy(() => import("./pages/seo/IntentPages").then((m) => ({ default: m.IntentPage })));
+import { INTENTS } from "./lib/seo/intents";
 const LegacyRoute = lazy(() => import("./pages/LegacyRoute"));
 
 // Programmatic SEO templates
@@ -79,7 +80,7 @@ const App = () => (
                     <Route path="/transportation/industries/:industry" element={<LanePages />} />
                     <Route path="/transportation/coimbatore/areas" element={<AreasHub />} />
                     <Route path="/transportation/coimbatore/areas/:area" element={<AreaPage />} />
-                    <Route path="/transportation/coimbatore/for/:audience" element={<AudiencePage />} />
+                    {INTENTS.map((i) => <Route key={i.slug} path={`/${i.slug}`} element={<IntentPage slug={i.slug} />} />)}
                     {/* Special sub-types */}
                     <Route path="/transportation/routes/:slug" element={<RouteCorridorPage />} />
                     <Route path="/transportation/return-load/:origin" element={<ReturnLoadPage />} />
