@@ -1,13 +1,13 @@
 import { test, expect } from "bun:test";
-import { legacyDestination } from "../src/lib/seo/legacy-routes";
+import { legacyDestination, isRetiredSection } from "../src/lib/seo/legacy-routes";
 import { enumerateAllUrls } from "../src/lib/seo/slugs";
 
 test("Coimbatore's old static page opens the updated transport city page", () => {
   expect(legacyDestination("/coimbatore")).toBe("/transportation/coimbatore");
   expect(legacyDestination("/coimbatore/")).toBe("/transportation/coimbatore");
 });
-test("retired practices resolve to transportation without reviving their content", () => {
-  for (const p of ["/dubai-real-estate", "/real-estate", "/edu-consultancy", "/edu-consultancy/coimbatore", "/financial-services", "/legal-services"]) expect(legacyDestination(p)).toBe("/transportation");
+test("retired non-transport sections are not redirected and are flagged for noindex 404", () => {
+  for (const p of ["/dubai-real-estate", "/real-estate", "/edu-consultancy", "/edu-consultancy/coimbatore", "/financial-services", "/financial-services/thiruvananthapuram/mudra-loan", "/legal-services", "/msme-loan-guide"]) { expect(legacyDestination(p)).toBeUndefined(); expect(isRetiredSection(p)).toBe(true); }
 });
 test("retired local service cities resolve to the current coverage directory", () => {
   for (const p of ["/chennai", "/tiruppur", "/madurai", "/erode", "/salem", "/trichy", "/tirunelveli"]) expect(legacyDestination(p)).toBe("/service-areas");

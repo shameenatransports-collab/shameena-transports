@@ -1,5 +1,5 @@
 // Localized SEO data for Coimbatore district (Tamil Nadu), the only area STA serves.
-// Used by src/pages/CityLanding.tsx
+// Used by src/components/home/CitiesWeServe.tsx
 
 export type CitySlug = "coimbatore";
 
