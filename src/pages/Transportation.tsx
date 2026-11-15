@@ -98,7 +98,7 @@ const areas = [
 
 const whyChooseUs = [
   { text: "44+ years of trusted service", icon: Star },
-  { text: "On-time delivery", icon: Clock },
+  { text: "Planned, on-time delivery*", icon: Clock },
   { text: "Experienced drivers & loaders", icon: Shield },
   { text: "Vehicle suitability checked", icon: Truck },
   { text: "Freight quoted per booking", icon: Gauge },
@@ -322,6 +322,7 @@ const Transportation = () => {
                     </div>
                   ))}
                 </div>
+                <p className="mt-4 text-sm text-muted-foreground">*Delivery times depend on road, traffic and weather conditions, loading and unloading time, permits and site access. We confirm the expected time per booking; it is an estimate, not a guarantee.</p>
               </div>
             </div>
           </AnimatedSection>
