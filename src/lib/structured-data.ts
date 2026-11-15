@@ -25,14 +25,14 @@ export const organizationSchema = {
       "@type": "ContactPoint",
       "telephone": "+91-94430-33055",
       "contactType": "customer service",
-      "areaServed": "IN",
+      "areaServed": ["Coimbatore", "Kerala", "Karnataka"],
       "availableLanguage": ["English", "Tamil"]
     },
     {
       "@type": "ContactPoint",
       "telephone": "+91-90477-21209",
       "contactType": "sales",
-      "areaServed": "IN",
+      "areaServed": ["Coimbatore", "Kerala", "Karnataka"],
       "availableLanguage": ["English", "Tamil"]
     }
   ],
@@ -42,7 +42,9 @@ export const organizationSchema = {
   ],
   "areaServed": [
     { "@type": "City", "name": "Coimbatore" },
-    { "@type": "AdministrativeArea", "name": "Coimbatore District" }
+    { "@type": "AdministrativeArea", "name": "Coimbatore District" },
+    { "@type": "State", "name": "Kerala" },
+    { "@type": "State", "name": "Karnataka" }
   ],
   "sameAs": []
 };
@@ -82,7 +84,9 @@ export const localBusinessSchema = {
   },
   "areaServed": [
     { "@type": "City", "name": "Coimbatore" },
-    { "@type": "AdministrativeArea", "name": "Coimbatore District" }
+    { "@type": "AdministrativeArea", "name": "Coimbatore District" },
+    { "@type": "State", "name": "Kerala" },
+    { "@type": "State", "name": "Karnataka" }
   ],
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
@@ -117,13 +121,11 @@ export const transportServiceSchema = {
   },
   "areaServed": [
     { "@type": "City", "name": "Coimbatore" },
-    { "@type": "AdministrativeArea", "name": "Coimbatore District" }
+    { "@type": "AdministrativeArea", "name": "Coimbatore District" },
+    { "@type": "State", "name": "Kerala" },
+    { "@type": "State", "name": "Karnataka" }
   ],
-  "description": "Lorry, truck and trailer transport from Coimbatore since 1982; outbound Kerala and Karnataka routes confirmed per booking, inbound return loads strictly subject to route availability.",
-  "offers": {
-    "@type": "Offer",
-    "priceCurrency": "INR"
-  }
+  "description": "Lorry, truck and trailer transport from Coimbatore since 1982; outbound Kerala and Karnataka routes confirmed per booking, inbound return loads strictly subject to route availability."
 };
 
 export const transportBusinessSchema = {
@@ -160,8 +162,7 @@ export const createCityTransportSchema = (city: { name: string; slug: string; me
     "@type": "City",
     "name": city.name,
     "geo": { "@type": "GeoCoordinates", "latitude": city.geo.lat, "longitude": city.geo.lng }
-  },
-  "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "priceCurrency": "INR" }
+  }
 });
 
 export const createBreadcrumbSchema = (items: { name: string; url: string }[]) => ({
