@@ -30,7 +30,7 @@ import { ServiceFAQ } from "@/components/seo/ServiceFAQ";
 
 const transportFaqs = [
   { question: "What does STA offer?", answer: "Goods transport for local industries, trucks on hire (daily, monthly or contract) and loaders & packers services in Coimbatore district." },
-  { question: "Do you offer truck and trailer transport in Coimbatore?", answer: "Yes. We run lorries and trailers of our own, supported by partnered vehicles, with 12/14-wheeler and 40 ft open trucks on daily, monthly or contract hire. Trailers suit company equipment shifting and construction material; suitability is confirmed per booking." },
+  { question: "Do you offer truck and trailer transport in Coimbatore?", answer: "Yes. We run 6 lorries and 2 trailers of our own, supported by partnered vehicles, with 12/14-wheeler and 40 ft open trucks on daily, monthly or contract hire. Trailers suit company equipment shifting and construction material; suitability is confirmed per booking." },
   { question: "What vehicle do you use?", answer: "An open-body lorry, suited to the cargo of construction, steel, textile, engineering and agri businesses. Suitability and load are confirmed per booking." },
   { question: "Which areas do you cover?", answer: "Local Coimbatore district routes, plus outbound routes from Coimbatore to Kerala and Karnataka. Destinations are not branches." },
   { question: "How do I get a quote?", answer: "WhatsApp or call +91 94430 33055 with pickup, destination, cargo type and weight. Mon–Sat, 9 AM–7 PM." },
@@ -98,7 +98,7 @@ const areas = [
 
 const whyChooseUs = [
   { text: "44+ years of trusted service", icon: Star },
-  { text: "On-time delivery", icon: Clock },
+  { text: "Planned, on-time delivery*", icon: Clock },
   { text: "Experienced drivers & loaders", icon: Shield },
   { text: "Vehicle suitability checked", icon: Truck },
   { text: "Freight quoted per booking", icon: Gauge },
@@ -322,6 +322,7 @@ const Transportation = () => {
                     </div>
                   ))}
                 </div>
+                <p className="mt-4 text-sm text-muted-foreground">*Delivery times depend on road, traffic and weather conditions, loading and unloading time, permits and site access. We confirm the expected time per booking; it is an estimate, not a guarantee.</p>
               </div>
             </div>
           </AnimatedSection>

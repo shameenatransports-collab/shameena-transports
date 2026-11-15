@@ -1,4 +1,4 @@
-// Coverage: Coimbatore district, Tamil Nadu only.
+// Local coverage: Coimbatore district, Tamil Nadu. Outbound Kerala/Karnataka lanes live in lanes.ts; return origins in return-origins.ts.
 // Tier: 1 = district hub, 3 = district town.
 
 export type StateCode = "TN";

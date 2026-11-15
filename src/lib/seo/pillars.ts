@@ -130,7 +130,7 @@ export const PILLARS: Pillar[] = [
         description: "Road logistics for Coimbatore manufacturers and traders: vehicle planning, loading coordination and dispatch of full-load lorries, trucks and trailers.",
         answer: "STA Corporate Solutions handles road logistics for Coimbatore businesses: choosing the right lorry, truck or trailer, coordinating loading times and dispatching full-load trips within the district and to Kerala and Karnataka. Contract and monthly arrangements are available for regular dispatches.",
         keywords: ["logistics company in coimbatore", "logistics coimbatore", "transport and logistics coimbatore", "road logistics coimbatore", "logistics services coimbatore", "industrial logistics coimbatore"],
-        benefits: ["Vehicle planned to the cargo", "Loading and dispatch coordinated by phone", "Daily, monthly or contract arrangements", "Own fleet of 12+ lorries and trailers plus partnered vehicles"],
+        benefits: ["Vehicle planned to the cargo", "Loading and dispatch coordinated by phone", "Daily, monthly or contract arrangements", "Own fleet of 6 lorries and 2 trailers plus partnered vehicles"],
         tell: ["What you dispatch and how often", "Typical weights and dimensions", "Pickup and delivery points", "Preferred hire basis: per trip, monthly or contract"],
         caution: "STA provides road transport only: no warehousing, part load or cargo insurance.",
         faqs: [

@@ -81,7 +81,7 @@ const howToSchema = {
 
 const features = [
   { icon: Gauge, title: "Well Maintained", description: "Regular servicing and safety checks" },
-  { icon: Clock, title: "On-Time Delivery", description: "Planned dispatch and clear coordination" },
+  { icon: Clock, title: "Planned Delivery", description: "Planned dispatch and clear coordination. Timings depend on road, traffic, weather and loading conditions and are not guaranteed." },
   { icon: Users, title: "Experienced Drivers", description: "Professional and trained drivers" },
   { icon: Shield, title: "Careful Handling", description: "Tarpaulin cover and secure tie-down" },
 ];

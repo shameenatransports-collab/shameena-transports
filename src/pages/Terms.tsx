@@ -78,6 +78,7 @@ const Terms = () => {
                   <ul className="list-disc list-inside text-muted-foreground space-y-3 ml-4">
                     <li>Bookings are confirmed upon receipt of agreed advance payment</li>
                     <li>Service availability is subject to current schedules and cannot be guaranteed</li>
+                    <li>Delivery times are estimates and depend on road, traffic and weather conditions, loading and unloading time, permits and site access; they are not guaranteed</li>
                     <li>Accurate details must be provided at booking</li>
                     <li>Changes to booking must be communicated at least 24 hours in advance</li>
                     <li>We reserve the right to refuse bookings at our discretion</li>

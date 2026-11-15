@@ -6,6 +6,7 @@ import { resolve } from "path";
 import { enumerateAllUrls, SITE_URL } from "../src/lib/seo/slugs";
 
 const entries = enumerateAllUrls();
+const lastmod = new Date().toISOString().slice(0, 10);
 
 function urlsXml() {
   return entries
@@ -13,6 +14,7 @@ function urlsXml() {
       const lines = [
         `  <url>`,
         `    <loc>${SITE_URL}${e.path}</loc>`,
+        `    <lastmod>${lastmod}</lastmod>`,
         e.changefreq && `    <changefreq>${e.changefreq}</changefreq>`,
         e.priority && `    <priority>${e.priority}</priority>`,
         `  </url>`,
