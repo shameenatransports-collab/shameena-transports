@@ -23,7 +23,7 @@ export default function LanePages() {
     { q: "What determines the quote?", a: "Pickup and delivery addresses, cargo type, permitted load, dimensions, loading and unloading effort, date and waiting time. No fixed rate or transit-time promise is made." },
     { q: "Does STA provide cargo insurance?", a: "No. STA does not provide cargo insurance or accident cover; customers should arrange their own cover for goods in transit." },
   ];
-  return <PillarPageShell title={title} metaTitle={`${title} | STA`} metaDescription={isLocalHub ? "Lorry, truck and trailer transport from our Podanur, Coimbatore office since 1982. Local industrial cargo and Kerala/Karnataka route enquiries." : intro} path={path}
+  return <PillarPageShell title={title} metaTitle={destination ? `${vehicle?.name ?? "Lorry, Truck & Trailer"} Coimbatore to ${destination.name} | STA` : `${title} | STA`} metaDescription={isLocalHub ? "Lorry, truck and trailer transport from our Podanur, Coimbatore office since 1982. Local industrial cargo and Kerala/Karnataka route enquiries." : intro} path={path}
     eyebrow={industry ? "Industry cargo · Origin: Coimbatore" : "Origin: Coimbatore, Tamil Nadu"}
     intro={intro} answer={answer} serviceName={title}
     serviceArea={destination ? `Coimbatore, Tamil Nadu to ${destination.name}, ${destination.state}` : "Coimbatore-origin local, Kerala and Karnataka routes"}

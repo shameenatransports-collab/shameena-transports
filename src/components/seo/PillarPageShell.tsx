@@ -58,9 +58,16 @@ export function PillarPageShell({
     name: serviceName,
     provider: { "@type": "LocalBusiness", "@id": canonical("/#localbusiness"), name: "STA Corporate Solutions", telephone: "+91-94430-33055", address: { "@type": "PostalAddress", streetAddress: "No 10/135-G, Gurusamy Pillai St Extn, Podanur", addressLocality: "Coimbatore", addressRegion: "Tamil Nadu", postalCode: "641023", addressCountry: "IN" } },
     areaServed: serviceArea ?? "Coimbatore district, Tamil Nadu",
-    speakable: { "@type": "SpeakableSpecification", cssSelector: ["[data-speakable]"] },
     description: metaDescription,
     url,
+  };
+
+  const webPageSchema = serviceName && {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    url,
+    name: serviceName,
+    speakable: { "@type": "SpeakableSpecification", cssSelector: ["[data-speakable]"] },
   };
 
   const faqSchema = faqs && faqs.length > 0 && {
@@ -88,6 +95,9 @@ export function PillarPageShell({
         <meta property="og:url" content={url} />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
+        {webPageSchema && (
+          <script type="application/ld+json">{JSON.stringify(webPageSchema)}</script>
+        )}
         {serviceSchema && (
           <script type="application/ld+json">{JSON.stringify(serviceSchema)}</script>
         )}
