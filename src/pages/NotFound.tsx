@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 import { Home, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Layout } from "@/components/layout/Layout";
@@ -13,6 +14,10 @@ const NotFound = () => {
 
   return (
     <Layout>
+      <Helmet>
+        <title>Page Not Found | STA</title>
+        <meta name="robots" content="noindex, follow" />
+      </Helmet>
       <div className="flex min-h-[60vh] items-center justify-center bg-background">
         <div className="text-center px-4">
           <h1 className="text-6xl md:text-8xl font-bold text-accent mb-4">404</h1>
