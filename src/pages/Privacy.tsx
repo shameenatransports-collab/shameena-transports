@@ -135,7 +135,7 @@ const Privacy = () => {
                     </div>
                     <div className="border-l-4 border-secondary pl-4">
                       <h3 className="font-semibold text-foreground mb-1">Analytics</h3>
-                      <p className="text-sm text-muted-foreground">Google Analytics 4 — aggregated, IP-truncated. Retention 26 months.</p>
+                      <p className="text-sm text-muted-foreground">Google Analytics 4 — aggregated, IP-truncated. Retention 26 months. We also use Ahrefs Web Analytics, a cookieless tool that counts page visits and traffic sources in aggregate.</p>
                     </div>
                     <div className="border-l-4 border-muted-foreground pl-4">
                       <h3 className="font-semibold text-foreground mb-1">Marketing</h3>
@@ -156,6 +156,7 @@ const Privacy = () => {
                   <p className="text-muted-foreground leading-relaxed mb-4">We never sell your data. We share only with:</p>
                   <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-2 text-sm">
                     <li><strong>Google LLC</strong> — GA4 analytics (processor; data anonymised, EU/US servers)</li>
+                    <li><strong>Ahrefs Pte. Ltd.</strong> — cookieless web analytics (aggregate page and traffic-source counts)</li>
                     <li><strong>Meta Platforms</strong> — only if marketing consent granted</li>
                     <li><strong>Service partners</strong> (banks, registrars, transport partners) — only what's needed to fulfil your specific request</li>
                     <li><strong>Authorities</strong> — when required by Indian law, court order or to protect rights</li>

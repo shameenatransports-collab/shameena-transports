@@ -3,6 +3,8 @@ import { bookingDirection, DESTINATIONS, VEHICLES, laneUrl } from "../src/lib/se
 import { RETURN_ORIGINS, returnOriginUrl } from "../src/lib/seo/return-origins";
 import { enumerateAllUrls, isIndexableCitySub } from "../src/lib/seo/slugs";
 import { CITIES } from "../src/lib/seo/cities";
+import { AREAS, areaUrl, AREAS_HUB_PATH } from "../src/lib/seo/coimbatore-coverage";
+import { INTENTS, INTENT_PATHS } from "../src/lib/seo/intents";
 
 test("outbound Bangalore bookings originate in Coimbatore", () => {
   expect(bookingDirection("Bangalore")).toEqual({ origin: "Coimbatore", destination: "Bangalore", availability: "confirmed per booking" });
@@ -30,4 +32,23 @@ test("all outbound lanes and inbound origin pages are in a unique sitemap", () =
 });
 test("return loads do not create misleading local city service combinations", () => {
   for (const city of CITIES) expect(isIndexableCitySub(city, "return-load")).toBe(false);
+});
+test("Coimbatore areas and customer types are in the sitemap and well-formed", () => {
+  const paths = enumerateAllUrls().map(e => e.path);
+  expect(paths).toContain(AREAS_HUB_PATH);
+  for (const a of AREAS) { expect(paths).toContain(areaUrl(a.slug)); for (const n of a.near) expect(AREAS.map(x => x.slug)).toContain(n); }
+  for (const i of INTENTS) { expect(paths).toContain(INTENT_PATHS(i.slug)); for (const r of i.related) expect(INTENTS.map(x => x.slug)).toContain(r); }
+  expect(new Set(AREAS.map(a => a.slug)).size).toBe(AREAS.length);
+});
+test("coverage content has no prices or insurance promises", () => {
+  const text = JSON.stringify([AREAS, INTENTS]).toLowerCase();
+  expect(text).not.toMatch(/₹|\brs\.? ?\d|cheap|affordable|insured|guarantee/);
+});
+
+test("intent pages are Coimbatore-only, unique and avoid unsupported vehicles", () => {
+  const slugs = INTENTS.map(i => i.slug);
+  expect(new Set(slugs).size).toBe(slugs.length);
+  for (const i of INTENTS) { expect(i.slug.endsWith("-coimbatore")).toBe(true); expect(i.answer.length).toBeGreaterThan(80); expect(i.faqs.length).toBeGreaterThan(1); }
+  const text = JSON.stringify(INTENTS).toLowerCase();
+  expect(text).not.toMatch(/live tracking|gps|bulk cement/);
 });

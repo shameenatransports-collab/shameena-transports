@@ -146,7 +146,7 @@ export const PILLARS: Pillar[] = [
         keywords: ["cement transport", "cement lorry", "cement bag transport", "building material lorry"],
         benefits: ["Flat, stable loading of bags", "Tarpaulin cover against rain", "Delivery to site or godown", "Loading and unloading help on request"],
         tell: ["Number of bags and total weight", "Loading point (dealer, godown or plant)", "Site access for a lorry", "Who will unload", "Delivery date"],
-        caution: "Not for loose bulk cement, which needs a bulker.",
+        caution: "Cement bags are suitable. Loose sand and gravel are not suited to our vehicles.",
         faqs: [{ q: "Is cement protected from rain on the lorry?", a: "Bags are sheeted with tarpaulin. Tell us if the trip is in wet weather so extra cover is arranged." }],
       },
       {

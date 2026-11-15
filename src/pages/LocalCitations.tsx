@@ -103,6 +103,7 @@ export default function LocalCitations() {
             ["/transportation/coimbatore", "Goods transport in Coimbatore"],
             ["/transportation/from-coimbatore", "Routes from Coimbatore to Kerala & Karnataka"],
             ["/open-body-lorry-coimbatore", "Open body lorry in Coimbatore"],
+            ["/transportation/coimbatore/areas", "Lorry, truck & trailer by Coimbatore area"],
             ["/service-areas", "All service areas"],
           ].map(([to, label]) => <li key={to}><Link to={to} className="inline-flex items-center gap-2 text-primary underline underline-offset-4">{label}<ArrowUpRight className="h-4 w-4 shrink-0" aria-hidden="true" /></Link></li>)}</ul>
         </section>

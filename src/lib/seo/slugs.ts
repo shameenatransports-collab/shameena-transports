@@ -3,6 +3,8 @@ import { CITIES, CORRIDORS, City } from "./cities";
 import { RETURN_ORIGINS, returnOriginUrl } from "./return-origins";
 import { Pillar, PILLARS } from "./pillars";
 import { LOCAL_CITATIONS_PATH } from "./local-citations";
+import { AREAS, AREAS_HUB_PATH, areaUrl } from "./coimbatore-coverage";
+import { INTENTS, INTENT_PATHS } from "./intents";
 
 export const SITE_URL = "https://sta-corporate.in";
 
@@ -90,6 +92,10 @@ export function enumerateAllUrls(): SitemapEntry[] {
   }
 
   out.push({ path: LANES_HUB_PATH, priority: "0.9", changefreq: "monthly" });
+  // Coimbatore local coverage: areas and customer types
+  out.push({ path: AREAS_HUB_PATH, priority: "0.85", changefreq: "monthly" });
+  for (const a of AREAS) out.push({ path: areaUrl(a.slug), priority: "0.7", changefreq: "monthly" });
+  for (const i of INTENTS) out.push({ path: INTENT_PATHS(i.slug), priority: "0.85", changefreq: "monthly" });
   for (const d of DESTINATIONS) {
     out.push({ path: laneUrl(d.slug), priority: "0.8", changefreq: "monthly" });
     for (const v of VEHICLES) out.push({ path: laneUrl(d.slug, v.slug), priority: "0.7", changefreq: "monthly" });
