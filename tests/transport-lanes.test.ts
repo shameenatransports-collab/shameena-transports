@@ -50,5 +50,5 @@ test("intent pages are Coimbatore-only, unique and avoid unsupported vehicles", 
   expect(new Set(slugs).size).toBe(slugs.length);
   for (const i of INTENTS) { expect(i.slug.endsWith("-coimbatore")).toBe(true); expect(i.answer.length).toBeGreaterThan(80); expect(i.faqs.length).toBeGreaterThan(1); }
   const text = JSON.stringify(INTENTS).toLowerCase();
-  expect(text).not.toMatch(/tata ace|tempo service|live tracking|gps/);
+  expect(text).not.toMatch(/live tracking|gps|bulk cement/);
 });

@@ -12,7 +12,7 @@ export const INTENT_HUB = "/transportation/coimbatore/areas";
 export function IntentPage({ slug }: { slug: string }) {
   const i = INTENT_BY_SLUG[slug];
   if (!i) return <Navigate to={INTENT_HUB} replace />;
-  const vehicles = VEHICLES.filter((v) => i.vehicles.includes(v.slug as Intent["vehicles"][number]));
+  const vehicles = [...VEHICLES.filter((v) => i.vehicles.includes(v.slug as Intent["vehicles"][number])).map((v) => ({ slug: v.slug, name: v.name })), ...(i.vehicles.includes("mini-truck") ? [{ slug: "mini-truck", name: "Mini truck (Tata Ace)" }] : [])];
   const faqs = [...i.faqs, { q: "Does STA provide cargo insurance?", a: "No. STA does not provide cargo insurance or accident cover." }];
   return (
     <PillarPageShell title={i.h1} metaTitle={`${i.h1} | STA Corporate Solutions`} metaDescription={`${i.h1}: lorry, truck and trailer from Podanur, Coimbatore since 1982. WhatsApp or call +91 94430 33055.`} path={INTENT_PATHS(i.slug)} eyebrow={`Coimbatore · ${BUYER_LABEL[i.buyer]}`} intro={i.answer} answer={`${i.answer} ${NOTE}`} breadcrumbs={[...crumbs, { name: i.h1, url: INTENT_PATHS(i.slug) }]} serviceName={i.h1} serviceArea="Coimbatore, Tamil Nadu" keywords={[i.primary, ...i.variants]} faqs={faqs}>
