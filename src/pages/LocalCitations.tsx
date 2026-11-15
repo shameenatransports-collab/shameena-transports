@@ -10,7 +10,7 @@ import { getPillar } from "@/lib/seo/pillars";
 
 export default function LocalCitations() {
   const title = "Transport Company in Coimbatore, Podanur Office | STA";
-  const description = "Lorry, truck & trailer transport in Coimbatore from our Podanur office. Serving Kurichi, Sulur, Pollachi, Mettupalayam & Chennai/Kochi ports.";
+  const description = "Lorry, truck & trailer transport in Coimbatore from our Podanur office. Serving Kurichi, Sulur, Pollachi, Mettupalayam; delivery to container yards near Chennai and Kochi ports.";
   const services = getPillar("transportation")?.sub.filter(s => CITATION_SERVICE_SLUGS.includes(s.slug)) ?? [];
   const schema = {
     "@context": "https://schema.org", "@type": "WebPage", name: title, url: canonical(LOCAL_CITATIONS_PATH),
@@ -30,7 +30,7 @@ export default function LocalCitations() {
   return <>
     <Helmet>
       <title>{title}</title><meta name="description" content={description} />
-      <meta name="keywords" content="transport company in Podanur Coimbatore, lorry transport service near Podanur, full load lorry from Coimbatore to Kochi port, truck transport from Coimbatore to Chennai port, trailer transport for machinery in Coimbatore, goods transport from Sulur to Kerala, lorry service in Kurichi industrial estate, Pollachi coconut lorry transport, Mettupalayam goods lorry service, open body lorry booking Coimbatore WhatsApp" />
+      <meta name="keywords" content="transport company in Podanur Coimbatore, lorry transport service near Podanur, goods transport from Coimbatore to container yards near Kochi port, goods transport from Coimbatore to container yards near Chennai port, trailer transport for machinery in Coimbatore, goods transport from Sulur to Kerala, lorry service in Kurichi industrial estate, Pollachi coconut lorry transport, Mettupalayam goods lorry service, open body lorry booking Coimbatore WhatsApp" />
       <link rel="canonical" href={canonical(LOCAL_CITATIONS_PATH)} />
       <meta property="og:title" content={title} /><meta property="og:description" content={description} />
       <meta property="og:type" content="website" /><meta property="og:url" content={canonical(LOCAL_CITATIONS_PATH)} />
@@ -70,7 +70,7 @@ export default function LocalCitations() {
         <section className="bg-muted/40 py-12" aria-labelledby="ports-heading">
           <div className="container mx-auto px-4 max-w-5xl">
             <h2 id="ports-heading" className="text-2xl font-semibold text-foreground mb-4">Port delivery destinations from Coimbatore</h2>
-            <p className="text-muted-foreground leading-relaxed mb-8">Chennai in Tamil Nadu and Kochi in Kerala are onward road-freight destinations, not local Coimbatore stops. Enquiries cover delivery to the agreed port-side address; STA does not offer international shipping or customs clearance. Confirm the terminal, entry requirements, cargo and unloading arrangements before booking.</p>
+            <p className="text-muted-foreground leading-relaxed mb-8">Chennai in Tamil Nadu and Kochi in Kerala are onward road-freight destinations, not local Coimbatore stops. STA can transport goods up to the container yards near the port. STA trailers do not carry container loads, and STA does not offer shipping or customs clearance. Confirm the delivery yard, cargo and unloading arrangements before booking.</p>
             <div className="grid md:grid-cols-2 gap-8">{PORT_DELIVERY_REFERENCES.map(port => <article key={port.name}>
               <h3 className="text-lg font-semibold text-foreground mb-2">{port.name} · {port.state}</h3>
               <a href={port.source} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-primary underline underline-offset-4">Official port reference<ArrowUpRight className="h-4 w-4" aria-hidden="true" /></a>
@@ -91,8 +91,8 @@ export default function LocalCitations() {
             "Coconut and coir lorry transport from Pollachi",
             "Goods lorry service from Mettupalayam",
             "Trailer transport for machinery and steel in Coimbatore",
-            "Full load truck from Coimbatore to Chennai port",
-            "Lorry transport from Coimbatore to Kochi (Cochin) port",
+            "Goods transport from Coimbatore to container yards near Chennai port",
+            "Lorry transport from Coimbatore to container yards near Kochi (Cochin) port",
           ].map(t => <li key={t}>{t}</li>)}</ul>
           <p className="text-sm text-muted-foreground mt-6">Freight is confirmed per booking after a call or WhatsApp. Return loads are strictly subject to route availability.</p>
         </section>
