@@ -104,6 +104,15 @@ export default function PillarCityPage() {
           </div>
         </div>
       </section>
+      {pillar.id === "transportation" && city.slug === "coimbatore" && (
+        <section className="py-12 bg-background">
+          <div className="container mx-auto px-4">
+            <h2 className="text-2xl font-semibold text-foreground mb-3">Lorry, truck and trailer across Coimbatore</h2>
+            <p className="text-muted-foreground mb-4">For companies and individuals in every part of the city.</p>
+            <Link to="/transportation/coimbatore/areas" className="text-primary underline underline-offset-4">Browse Coimbatore areas and customer types</Link>
+          </div>
+        </section>
+      )}
       {pillar.id === "transportation" && content.corridors.length > 0 && (
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4">

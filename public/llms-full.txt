@@ -81,3 +81,36 @@ Outbound origin: Coimbatore, Tamil Nadu. Destinations are not branches. Vehicle,
 - https://sta-corporate.in/transportation/return-load/kottayam
 - https://sta-corporate.in/transportation/from-coimbatore/thiruvananthapuram
 - https://sta-corporate.in/transportation/return-load/thiruvananthapuram
+
+## Coimbatore areas and customer types
+
+Lorry, truck and trailer enquiries from companies and individuals across Coimbatore, coordinated from the Podanur office. No prices published; no cargo insurance.
+
+- https://sta-corporate.in/transportation/coimbatore/areas
+- https://sta-corporate.in/transportation/coimbatore/areas/podanur
+- https://sta-corporate.in/transportation/coimbatore/areas/kurichi
+- https://sta-corporate.in/transportation/coimbatore/areas/ganapathy
+- https://sta-corporate.in/transportation/coimbatore/areas/singanallur
+- https://sta-corporate.in/transportation/coimbatore/areas/peelamedu
+- https://sta-corporate.in/transportation/coimbatore/areas/saravanampatti
+- https://sta-corporate.in/transportation/coimbatore/areas/thudiyalur
+- https://sta-corporate.in/transportation/coimbatore/areas/kalapatti
+- https://sta-corporate.in/transportation/coimbatore/areas/vilankurichi
+- https://sta-corporate.in/transportation/coimbatore/areas/neelambur
+- https://sta-corporate.in/transportation/coimbatore/areas/irugur
+- https://sta-corporate.in/transportation/coimbatore/areas/ukkadam
+- https://sta-corporate.in/transportation/coimbatore/areas/town-hall-oppanakara-street
+- https://sta-corporate.in/transportation/coimbatore/areas/rs-puram
+- https://sta-corporate.in/transportation/coimbatore/areas/vadavalli
+- https://sta-corporate.in/transportation/coimbatore/areas/kovaipudur
+- https://sta-corporate.in/transportation/coimbatore/areas/kuniyamuthur
+- https://sta-corporate.in/transportation/coimbatore/areas/eachanari
+- https://sta-corporate.in/transportation/coimbatore/areas/malumichampatti
+- https://sta-corporate.in/transportation/coimbatore/for/factories-manufacturers
+- https://sta-corporate.in/transportation/coimbatore/for/traders-wholesalers
+- https://sta-corporate.in/transportation/coimbatore/for/builders-contractors
+- https://sta-corporate.in/transportation/coimbatore/for/equipment-owners
+- https://sta-corporate.in/transportation/coimbatore/for/shops-showrooms
+- https://sta-corporate.in/transportation/coimbatore/for/exporters-traders-to-ports
+- https://sta-corporate.in/transportation/coimbatore/for/households-house-shifting
+- https://sta-corporate.in/transportation/coimbatore/for/individuals-goods-transport
