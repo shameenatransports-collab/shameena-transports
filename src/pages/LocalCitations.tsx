@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import { MapPin, ArrowUpRight, MessageCircle } from "lucide-react";
+import { MapPin, ArrowUpRight, MessageCircle, Phone } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { COIMBATORE_OFFICE_CONTENT as office } from "@/lib/seo/local-content";
@@ -30,7 +30,7 @@ export default function LocalCitations() {
   return <>
     <Helmet>
       <title>{title}</title><meta name="description" content={description} />
-      <meta name="keywords" content="transport company in Coimbatore, lorry transport Coimbatore, truck transport Podanur, trailer transport Coimbatore, goods transport Sulur, Pollachi lorry service, Mettupalayam transport" />
+      <meta name="keywords" content="transport company in Podanur Coimbatore, lorry transport service near Podanur, full load lorry from Coimbatore to Kochi port, truck transport from Coimbatore to Chennai port, trailer transport for machinery in Coimbatore, goods transport from Sulur to Kerala, lorry service in Kurichi industrial estate, Pollachi coconut lorry transport, Mettupalayam goods lorry service, open body lorry booking Coimbatore WhatsApp" />
       <link rel="canonical" href={canonical(LOCAL_CITATIONS_PATH)} />
       <meta property="og:title" content={title} /><meta property="og:description" content={description} />
       <meta property="og:type" content="website" /><meta property="og:url" content={canonical(LOCAL_CITATIONS_PATH)} />
@@ -56,6 +56,7 @@ export default function LocalCitations() {
             <div className="flex flex-wrap gap-4 mt-6">
               <Button asChild variant="outline"><a href={OFFICE_MAPS_URL} target="_blank" rel="noopener noreferrer"><MapPin className="h-4 w-4 mr-2" />Find the Podanur office</a></Button>
               <Button asChild><a href={`${office.whatsappUrl}?text=${encodeURIComponent("Hello STA, I’m enquiring about transport from your Podanur office. Please confirm availability.")}`} target="_blank" rel="noopener noreferrer"><MessageCircle className="h-4 w-4 mr-2" />WhatsApp enquiry</a></Button>
+              <Button asChild variant="outline"><a href="tel:+919443033055"><Phone className="h-4 w-4 mr-2" />Call +91 94430 33055</a></Button>
             </div>
           </div>
         </section>
@@ -80,6 +81,20 @@ export default function LocalCitations() {
         <section className="container mx-auto px-4 max-w-5xl pt-12">
           <h2 className="text-2xl font-semibold text-foreground mb-6">Coimbatore transport services</h2>
           <ul className="grid sm:grid-cols-2 gap-5">{services.map(service => <li key={service.slug}><Link to={`/transportation/services/${service.slug}`} className="inline-flex items-center gap-2 text-primary underline underline-offset-4">{service.shortName} in Coimbatore<ArrowUpRight className="h-4 w-4 shrink-0" aria-hidden="true" /></Link></li>)}</ul>
+        </section>
+        <section className="container mx-auto px-4 max-w-5xl pt-12" aria-labelledby="longtail-heading">
+          <h2 id="longtail-heading" className="text-2xl font-semibold text-foreground mb-4">Common Coimbatore transport searches we handle</h2>
+          <ul className="grid sm:grid-cols-2 gap-3 text-muted-foreground list-disc pl-5">{[
+            "Full load lorry transport from Podanur, Coimbatore",
+            "Lorry service near Kurichi SIDCO industrial estate",
+            "Truck transport from Sulur to Kerala and Karnataka",
+            "Coconut and coir lorry transport from Pollachi",
+            "Goods lorry service from Mettupalayam",
+            "Trailer transport for machinery and steel in Coimbatore",
+            "Full load truck from Coimbatore to Chennai port",
+            "Lorry transport from Coimbatore to Kochi (Cochin) port",
+          ].map(t => <li key={t}>{t}</li>)}</ul>
+          <p className="text-sm text-muted-foreground mt-6">Freight is confirmed per booking after a call or WhatsApp. Return loads are strictly subject to route availability.</p>
         </section>
         <section className="container mx-auto px-4 max-w-5xl pt-12" aria-labelledby="links-heading">
           <h2 id="links-heading" className="text-2xl font-semibold text-foreground mb-4">More Coimbatore transport pages</h2>
