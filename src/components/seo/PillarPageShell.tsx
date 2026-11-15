@@ -33,10 +33,13 @@ interface PillarPageShellProps {
 }
 
 export function PillarPageShell({
-  title, metaTitle, metaDescription, path, eyebrow, heroAccent,
+  title, metaTitle, metaDescription: metaDescriptionRaw, path, eyebrow, heroAccent,
   intro, stats, breadcrumbs, serviceName, serviceArea, faqs, keywords, answer, noindex, children,
 }: PillarPageShellProps) {
   const url = canonical(path);
+  // Keep snippets within what search results display (about 155 characters), cut at a word boundary.
+  const clamp = (t: string, n = 155) => (t.length <= n ? t : t.slice(0, n).replace(/\s+\S*$/, "").replace(/[,;:\-—\s]+$/, "") + "…");
+  const metaDescription = clamp(metaDescriptionRaw);
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",
