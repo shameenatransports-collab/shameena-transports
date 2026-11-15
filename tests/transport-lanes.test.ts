@@ -3,6 +3,7 @@ import { bookingDirection, DESTINATIONS, VEHICLES, laneUrl } from "../src/lib/se
 import { RETURN_ORIGINS, returnOriginUrl } from "../src/lib/seo/return-origins";
 import { enumerateAllUrls, isIndexableCitySub } from "../src/lib/seo/slugs";
 import { CITIES } from "../src/lib/seo/cities";
+import { AREAS, AUDIENCES, areaUrl, audienceUrl, AREAS_HUB_PATH } from "../src/lib/seo/coimbatore-coverage";
 
 test("outbound Bangalore bookings originate in Coimbatore", () => {
   expect(bookingDirection("Bangalore")).toEqual({ origin: "Coimbatore", destination: "Bangalore", availability: "confirmed per booking" });
@@ -30,4 +31,15 @@ test("all outbound lanes and inbound origin pages are in a unique sitemap", () =
 });
 test("return loads do not create misleading local city service combinations", () => {
   for (const city of CITIES) expect(isIndexableCitySub(city, "return-load")).toBe(false);
+});
+test("Coimbatore areas and customer types are in the sitemap and well-formed", () => {
+  const paths = enumerateAllUrls().map(e => e.path);
+  expect(paths).toContain(AREAS_HUB_PATH);
+  for (const a of AREAS) { expect(paths).toContain(areaUrl(a.slug)); for (const n of a.near) expect(AREAS.map(x => x.slug)).toContain(n); }
+  for (const a of AUDIENCES) expect(paths).toContain(audienceUrl(a.slug));
+  expect(new Set(AREAS.map(a => a.slug)).size).toBe(AREAS.length);
+});
+test("coverage content has no prices or insurance promises", () => {
+  const text = JSON.stringify([AREAS, AUDIENCES]).toLowerCase();
+  expect(text).not.toMatch(/₹|\brs\.? ?\d|per km|cheap|affordable|insured|guarantee/);
 });
