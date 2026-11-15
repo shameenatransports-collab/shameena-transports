@@ -140,16 +140,6 @@ export const PILLARS: Pillar[] = [
         ],
       },
       {
-        slug: "mini-truck-transport", name: "Mini Truck (Tata Ace) on Rent in Coimbatore", shortName: "Mini Truck Transport",
-        description: "Mini truck and Tata Ace transport within Coimbatore for small loads, shop and household goods and local deliveries.",
-        answer: "STA Corporate Solutions offers mini trucks (Tata Ace) on rent within Coimbatore for small loads, shop and household goods and local deliveries. Call or WhatsApp +91 94430 33055 with your goods, addresses and time and we confirm availability.",
-        keywords: ["mini truck on rent coimbatore", "tata ace on rent coimbatore", "tata ace for rent coimbatore", "mini truck booking coimbatore", "tempo service coimbatore", "chota hathi coimbatore", "small load transport coimbatore", "mini lorry coimbatore"],
-        benefits: ["Mini trucks (Tata Ace) within Coimbatore", "Small loads and local deliveries", "Shop, godown and household goods", "Loaders on request"],
-        tell: ["Pickup and delivery addresses within Coimbatore", "What you are moving and approximate weight", "Loaders needed or not", "Date and time"],
-        caution: "Mini trucks are for use within Coimbatore. Heavy, long or bulk loads need a lorry or truck. STA does not offer cargo insurance.",
-        faqs: [{ q: "Is a mini truck (Tata Ace) available in Coimbatore?", a: "Yes, within Coimbatore, subject to availability on your date." }, { q: "When should I choose a lorry instead of a mini truck?", a: "For heavy, long or bulk loads, or a full load, a lorry or truck is the better fit. Tell us the goods and we advise." }],
-      },
-      {
         slug: "cement-transport", name: "Cement & Bagged Building Material Transport", shortName: "Cement Transport",
         description: "Cement bags and bagged building material by open-body lorry for dealers, contractors and builders in Coimbatore district.",
         answer: "Cement bags travel well on an open-body lorry when loaded flat and covered with tarpaulin against rain. STA arranges cement and bagged building material transport in Coimbatore district for dealers, contractors and builders.",
