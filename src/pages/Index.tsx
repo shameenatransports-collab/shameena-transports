@@ -17,9 +17,12 @@ const Index = () => {
     <>
       <Helmet>
         <title>Lorry, Truck & Trailer Transport in Coimbatore | STA</title>
-        <meta name="description" content="STA Corporate Solutions, Podanur, Coimbatore: lorry, truck and trailer transport, trucks on hire and loaders & packers from Coimbatore since 1982; Kerala and Karnataka routes confirmed per booking. Call +91 94430 33055." />
+        <meta name="description" content="Lorry, truck and trailer transport and loaders & packers from Podanur, Coimbatore since 1982. Kerala and Karnataka routes. Call +91 94430 33055." />
         <meta name="keywords" content="lorry transport in coimbatore, truck transport in coimbatore, trailer transport in coimbatore, goods transport coimbatore, trucks on hire coimbatore, open body lorry coimbatore, loaders and packers coimbatore, lorry booking coimbatore, equipment shifting coimbatore, factory shifting coimbatore" />
         <link rel="canonical" href="https://sta-corporate.in" />
+        <link rel="alternate" hrefLang="en-IN" href="https://sta-corporate.in" />
+        <link rel="alternate" hrefLang="x-default" href="https://sta-corporate.in" />
+        <meta property="og:url" content="https://sta-corporate.in" />
         <meta property="og:title" content="STA Corporate Solutions | Lorry Transport Since 1982 · Coimbatore" />
         <meta property="og:description" content="Goods transport, trucks on hire and loaders & packers from Coimbatore since 1982; Kerala and Karnataka routes confirmed per booking." />
         <meta property="og:image" content="https://sta-corporate.in/og-image.jpg" />

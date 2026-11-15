@@ -98,7 +98,7 @@ const OpenBodyLorry = () => {
         <title>Open-Body Lorry Transport in Coimbatore | STA</title>
         <meta
           name="description"
-          content="Open-body lorry for building material, steel, pipes, packed goods, bales and crated cargo in Coimbatore district. See what it carries and what it does not. Call +91 94430 33055."
+          content="Open-body lorry for building material, steel, pipes, packed goods and bales in Coimbatore. See what it carries. Call +91 94430 33055."
         />
         <meta
           name="keywords"
