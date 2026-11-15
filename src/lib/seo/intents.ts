@@ -4,7 +4,7 @@
 // No prices, no insurance, no delivery-time guarantees, no container loads on trailers.
 
 export type Buyer = "all" | "companies" | "builders" | "traders" | "individuals";
-export type VehicleKey = "lorry" | "truck" | "trailer";
+export type VehicleKey = "lorry" | "truck" | "trailer" | "mini-truck";
 
 export interface Intent {
   slug: string; // URL is /{slug}
@@ -61,11 +61,11 @@ export const INTENTS: Intent[] = [
     faqs: [{ q: "Which trucks can I hire in Coimbatore?", a: "12-wheeler, 14-wheeler and 40 ft open trucks, subject to availability." }, { q: "Can I hire a truck on a contract basis?", a: "Yes. Daily, monthly and contract hire are available." }],
     related: ["truck-rental-coimbatore", "lorry-on-hire-coimbatore", "trailer-on-hire-coimbatore"] },
   { slug: "truck-rental-coimbatore", h1: "Truck Rental in Coimbatore", primary: "truck rental in coimbatore", variants: ["truck on rent coimbatore", "rent a truck coimbatore", "truck booking coimbatore", "truck service coimbatore", "heavy truck rental coimbatore"], buyer: "all",
-    answer: "Truck rental in Coimbatore from STA Corporate Solutions covers 12-wheeler, 14-wheeler and 40 ft open trucks, per trip or on daily, monthly or contract rental. Our vehicles are lorries, trucks and trailers for commercial and industrial loads. Call or WhatsApp +91 94430 33055.",
+    answer: "Truck rental in Coimbatore from STA Corporate Solutions covers 12-wheeler, 14-wheeler and 40 ft open trucks, per trip or on daily, monthly or contract rental. We also have mini trucks (Tata Ace) within Coimbatore for small loads. Call or WhatsApp +91 94430 33055.",
     vehicles: ["truck"], guideTitle: "Is this the right kind of truck rental",
-    guide: ["Our vehicles are lorries, 12 and 14-wheeler and 40 ft open trucks, and trailers, for commercial and industrial loads.", "If your load is bulky, long, heavy or a full load, a truck or lorry is the usual fit. For a small load, check with us before booking.", "Share weight and dimensions so we can confirm suitability before you commit.", "For equipment on a trailer, ask about trailer transport."],
+    guide: ["Large vehicles: lorries, 12 and 14-wheeler and 40 ft open trucks, and trailers. Small loads within Coimbatore: mini trucks (Tata Ace).", "If your load is bulky, long, heavy or a full load, a truck or lorry is the usual fit. For a small load within Coimbatore, a mini truck may do.", "Share weight and dimensions so we can confirm suitability before you commit.", "For equipment on a trailer, ask about trailer transport."],
     tell: ["Weight and dimensions", "Rental type", "Route and date", "Loading arrangements"],
-    faqs: [{ q: "Do you rent mini trucks or tempos?", a: "STA's vehicles are lorries, trucks (12 and 14-wheeler, 40 ft open) and trailers. For a small load, call us first and we will say if we can help." }, { q: "What is the difference between a truck and a lorry here?", a: "A lorry is the open-body goods vehicle for full loads. Trucks are the 12 and 14-wheeler and 40 ft open vehicles on hire." }],
+    faqs: [{ q: "Do you rent mini trucks or Tata Ace in Coimbatore?", a: "Yes, mini trucks (Tata Ace) are available within Coimbatore for small loads, subject to availability. See the mini truck page." }, { q: "What is the difference between a truck and a lorry here?", a: "A lorry is the open-body goods vehicle for full loads. Trucks are the 12 and 14-wheeler and 40 ft open vehicles on hire." }],
     related: ["truck-on-hire-coimbatore", "lorry-on-rent-coimbatore", "full-truck-load-coimbatore"] },
   { slug: "trailer-on-hire-coimbatore", h1: "Trailer on Hire in Coimbatore", primary: "trailer on hire in coimbatore", variants: ["trailer transport coimbatore", "trailer lorry coimbatore", "trailer for rent coimbatore", "trailer service coimbatore", "trailer booking coimbatore"], buyer: "all",
     answer: "STA Corporate Solutions has trailers in Coimbatore for company equipment shifting and construction material. STA trailers do not carry container loads. Share dimensions, weight and route on +91 94430 33055 and we confirm whether a trailer suits the load.",
@@ -130,9 +130,9 @@ export const INTENTS: Intent[] = [
   { slug: "construction-material-lorry-coimbatore", h1: "Lorry for Construction Material in Coimbatore", primary: "construction material transport in coimbatore", variants: ["building material lorry coimbatore", "cement transport coimbatore", "steel transport coimbatore", "lorry for builders coimbatore", "lorry for contractors coimbatore", "construction material lorry on hire"], buyer: "builders",
     answer: "STA Corporate Solutions moves construction material in Coimbatore: cement bags, steel and TMT bars, pipes, tiles, plywood and site equipment, by lorry, truck or trailer, to sites in Coimbatore district and beyond. Call or WhatsApp +91 94430 33055.",
     vehicles: ["lorry", "truck", "trailer"], guideTitle: "What builders should tell us",
-    guide: ["Material list with bag counts, bar lengths or pipe sizes and total weight.", "Site address, access road width and unloading arrangement.", "One delivery or several, and the dates.", "Not suited: loose sand, gravel or bulk cement."],
+    guide: ["Material list with bag counts, bar lengths or pipe sizes and total weight.", "Site address, access road width and unloading arrangement.", "One delivery or several, and the dates.", "Cement bags are suitable. Loose sand and gravel are not suited."],
     tell: ["Material list and weight", "Site address and access", "Unloading help on site", "Dates and number of deliveries"],
-    faqs: [{ q: "Do you carry cement and steel?", a: "Yes. Cement bags are sheeted with tarpaulin; steel and pipes go on the open body." }, { q: "Do you carry sand or gravel?", a: "No. Loose sand, gravel and bulk cement are not suited to our vehicles." }, { q: "Can I get a lorry for several site deliveries?", a: "Yes. Daily or monthly hire is available, subject to availability." }],
+    faqs: [{ q: "Do you carry cement and steel?", a: "Yes. Cement bags are sheeted with tarpaulin; steel and pipes go on the open body." }, { q: "Do you carry sand or gravel?", a: "No. Loose sand and gravel are not suited to our vehicles. Cement bags are fine." }, { q: "Can I get a lorry for several site deliveries?", a: "Yes. Daily or monthly hire is available, subject to availability." }],
     related: ["transport-contractor-coimbatore", "lorry-on-hire-coimbatore", "trailer-on-hire-coimbatore"] },
   { slug: "transport-contractor-coimbatore", h1: "Transport Contractor in Coimbatore for Building Sites", primary: "transport contractor in coimbatore", variants: ["transportation contractor coimbatore", "lorry contractor coimbatore", "material transport contractor coimbatore", "site material transport coimbatore", "lorry supply for construction coimbatore"], buyer: "builders",
     answer: "STA Corporate Solutions works as a transport contractor in Coimbatore for builders and contractors, supplying lorries, trucks and trailers for material and equipment on a trip, daily, monthly or contract basis. Call or WhatsApp +91 94430 33055.",
@@ -150,6 +150,29 @@ export const INTENTS: Intent[] = [
     tell: ["Bags or cartons and weight", "Godown and delivery addresses", "Loaders needed or not", "Dates"],
     faqs: [{ q: "Do you move bagged goods?", a: "Yes. Bags are loaded flat, tied down and sheeted against rain." }, { q: "Can you do regular deliveries to my customers?", a: "Yes, on daily, monthly or contract hire, subject to availability." }],
     related: ["goods-transport-service-coimbatore", "lorry-on-hire-coimbatore", "lorry-monthly-contract-coimbatore"] },
+
+  // ---------- Mini trucks (Tata Ace), within Coimbatore ----------
+  { slug: "mini-truck-on-rent-coimbatore", h1: "Mini Truck on Rent in Coimbatore", primary: "mini truck on rent in coimbatore", variants: ["mini truck rental coimbatore", "mini truck booking coimbatore", "mini lorry coimbatore", "small goods vehicle coimbatore", "mini truck for shifting coimbatore"], buyer: "all",
+    answer: "STA Corporate Solutions has mini trucks (Tata Ace) on rent within Coimbatore for small loads, shop and household goods and local deliveries. Call or WhatsApp +91 94430 33055 with your goods, both addresses and time, and we confirm availability.",
+    vehicles: ["mini-truck"], guideTitle: "When a mini truck is the right pick",
+    guide: ["Small loads that do not need a full lorry: a few cartons, furniture pieces or shop stock.", "Local deliveries within Coimbatore between shops, godowns and homes.", "Narrow lanes and gates where a larger vehicle cannot reach.", "For heavy, long or bulk loads, ask about a lorry or truck instead."],
+    tell: ["Pickup and delivery addresses in Coimbatore", "Goods and approximate weight", "Loaders needed or not", "Date and time"],
+    faqs: [{ q: "Is a mini truck available for local use only?", a: "Mini trucks are for use within Coimbatore. For other destinations, ask about a lorry or truck." }, { q: "Can loaders come with the mini truck?", a: "Loaders can be arranged on request." }, { q: "Is there a fixed rent?", a: "There is no public rate card. It is confirmed per booking." }],
+    related: ["tata-ace-on-rent-coimbatore", "tempo-service-coimbatore", "house-shifting-lorry-coimbatore"] },
+  { slug: "tata-ace-on-rent-coimbatore", h1: "Tata Ace on Rent in Coimbatore", primary: "tata ace on rent in coimbatore", variants: ["tata ace for rent coimbatore", "tata ace booking coimbatore", "tata ace hire coimbatore", "chota hathi coimbatore", "tata ace near me coimbatore"], buyer: "all",
+    answer: "Tata Ace on rent in Coimbatore: STA Corporate Solutions provides mini trucks (Tata Ace) within Coimbatore for small goods, shop stock and household items. Call or WhatsApp +91 94430 33055 with your goods and addresses.",
+    vehicles: ["mini-truck"], guideTitle: "Booking a Tata Ace",
+    guide: ["Send both addresses in Coimbatore and the time you need it.", "List the goods and how they are packed.", "Say if loading help is needed at either end.", "We confirm availability and freight for that booking."],
+    tell: ["Both addresses", "Goods and packing", "Loading help", "Date and time"],
+    faqs: [{ q: "Can I book a Tata Ace by WhatsApp?", a: "Yes. WhatsApp +91 94430 33055 with addresses, goods and time." }, { q: "Do you also have larger vehicles?", a: "Yes: lorries, 12 and 14-wheeler and 40 ft open trucks, and trailers." }],
+    related: ["mini-truck-on-rent-coimbatore", "tempo-service-coimbatore", "lorry-on-hire-coimbatore"] },
+  { slug: "tempo-service-coimbatore", h1: "Tempo Service in Coimbatore for Small Loads", primary: "tempo service in coimbatore", variants: ["tempo for shifting coimbatore", "tempo booking coimbatore", "small load transport coimbatore", "local goods delivery coimbatore", "shop goods transport coimbatore"], buyer: "traders",
+    answer: "STA Corporate Solutions offers a tempo-type service in Coimbatore with mini trucks (Tata Ace) for small loads, shop and godown deliveries and household goods. Larger loads move on lorries and trucks. Call or WhatsApp +91 94430 33055.",
+    vehicles: ["mini-truck", "lorry"], guideTitle: "Small loads and local deliveries",
+    guide: ["Shop and godown deliveries within Coimbatore.", "Household items and small shifting jobs.", "Mini trucks reach narrow lanes where a lorry cannot.", "When the load grows, we move you to a lorry or truck."],
+    tell: ["Goods and weight", "Addresses within Coimbatore", "Number of trips", "Date and time"],
+    faqs: [{ q: "Can I get regular small deliveries?", a: "Daily or regular arrangements can be discussed, subject to availability." }, { q: "Do you cover areas outside Coimbatore with mini trucks?", a: "Mini trucks are for use within Coimbatore." }],
+    related: ["mini-truck-on-rent-coimbatore", "lorry-for-traders-coimbatore", "house-shifting-lorry-coimbatore"] },
 
   // ---------- Individuals ----------
   { slug: "house-shifting-lorry-coimbatore", h1: "Lorry for House Shifting in Coimbatore", primary: "house shifting lorry in coimbatore", variants: ["home shifting coimbatore", "loaders and packers coimbatore", "office shifting coimbatore", "house shifting vehicle coimbatore", "packers and movers lorry coimbatore"], buyer: "individuals",
