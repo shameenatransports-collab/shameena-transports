@@ -13,6 +13,7 @@ import {
 import { COIMBATORE_OFFICE_CONTENT, localPageContent } from "@/lib/seo/local-content";
 import { CoimbatoreOfficeContent } from "@/components/seo/CoimbatoreOfficeContent";
 import { ArrowUpRight } from "lucide-react";
+import { TransportEnquirySection } from "@/components/lead/TransportEnquirySection";
 
 /**
  * Programmatic city page for any pillar.
@@ -62,6 +63,7 @@ export default function PillarCityPage() {
       faqs={faqs}
       keywords={keywords}
     >
+      {city.slug === "coimbatore" && <TransportEnquirySection path={path} route="Coimbatore to " service="Goods transport" />}
       {city.slug === "coimbatore" && <CoimbatoreOfficeContent />}
       {/* Sub-services grid */}
       <section className="py-20 md:py-24 bg-background">

@@ -1,4 +1,5 @@
 # Architecture rules
+- Share validated WhatsApp enquiry handoffs across transport pages, including their source URL and route/service context; one destination keeps enquiries together without claiming automatic delivery.
 - Do not persist student profiles or AI answers; only service availability state is stored to prevent repeated calls after access or credit failures.
 - Generate city-page enquiry context and practice heritage through the shared local-content module; locality describes the customer’s location, not a branch, so city templates remain accurate without duplicating business claims.
 - Share verified Coimbatore office copy and sourced approximate road references between the city page and outbound hub; this keeps local facts consistent without changing destination-page claims.

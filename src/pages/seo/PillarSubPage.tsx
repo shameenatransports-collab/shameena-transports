@@ -10,6 +10,7 @@ import { LocalCitationsLink } from "@/components/seo/LocalCitationsLink";
 import { COIMBATORE_OFFICE_CONTENT as office } from "@/lib/seo/local-content";
 import { CITATION_SERVICE_SLUGS, OFFICE_MAPS_URL } from "@/lib/seo/local-citations";
 import { ArrowUpRight, CheckCircle2 } from "lucide-react";
+import { TransportEnquirySection } from "@/components/lead/TransportEnquirySection";
 
 /**
  * Programmatic pillar sub-service page (no city).
@@ -70,6 +71,7 @@ export default function PillarSubPage() {
       keywords={keywords}
       answer={sub.answer}
     >
+      {sub.slug === "logistics" && <TransportEnquirySection path={path} route="Coimbatore to " service={sub.shortName} />}
       {/* Benefits */}
       <section className="py-20 md:py-24 bg-background">
         <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-12">

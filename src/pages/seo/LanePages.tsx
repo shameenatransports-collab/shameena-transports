@@ -4,6 +4,7 @@ import { DESTINATIONS, INDUSTRIES, VEHICLES, LANES_HUB_PATH, RETURN_AVAILABILITY
 import { RETURN_HUB_PATH, returnOriginUrl } from "@/lib/seo/return-origins";
 import { COIMBATORE_OFFICE_CONTENT } from "@/lib/seo/local-content";
 import { CoimbatoreOfficeContent } from "@/components/seo/CoimbatoreOfficeContent";
+import { TransportEnquirySection } from "@/components/lead/TransportEnquirySection";
 
 const linkClass = "text-primary underline underline-offset-4";
 export default function LanePages() {
@@ -29,6 +30,7 @@ export default function LanePages() {
     serviceArea={destination ? `Coimbatore, Tamil Nadu to ${destination.name}, ${destination.state}` : "Coimbatore-origin local, Kerala and Karnataka routes"}
     breadcrumbs={[{ name: "Home", url: "/" }, { name: "Transportation", url: "/transportation" }, { name: "From Coimbatore", url: LANES_HUB_PATH }, ...(path !== LANES_HUB_PATH ? [{ name: industry?.name ?? destination?.name ?? title, url: path }] : [])]}
     keywords={destination ? laneKeywords(destination, vehicle) : ["lorry transport from coimbatore", "truck transport in coimbatore", "trailer transport in coimbatore"]} faqs={faqs}>
+    {!industry && <TransportEnquirySection path={path} route={`Coimbatore to ${destination?.name ?? ""}`} service={vehicle?.name ?? "Lorry, truck or trailer transport"} />}
     {isLocalHub && <CoimbatoreOfficeContent />}
     <section className="py-16 bg-background"><div className="container mx-auto px-4 max-w-5xl grid md:grid-cols-2 gap-10">
       <div><h2 className="text-2xl font-semibold text-foreground mb-4">{industry ? "Cargo and loading requirements" : "Plan your cargo movement"}</h2>

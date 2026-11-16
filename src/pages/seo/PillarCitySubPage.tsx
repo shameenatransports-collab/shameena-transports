@@ -13,6 +13,7 @@ import {
 import { CheckCircle2, ArrowUpRight } from "lucide-react";
 import { LocalCitationsLink } from "@/components/seo/LocalCitationsLink";
 import { CITATION_SERVICE_SLUGS } from "@/lib/seo/local-citations";
+import { TransportEnquirySection } from "@/components/lead/TransportEnquirySection";
 
 /**
  * Programmatic city × sub-service combo page.
@@ -78,6 +79,7 @@ export default function PillarCitySubPage() {
       answer={sub.answer ? `${sub.answer} Available for pickups in ${city.name}.` : undefined}
       noindex={!isIndexableCitySub(city, sub.slug)}
     >
+      {city.slug === "coimbatore" && sub.slug === "logistics" && <TransportEnquirySection path={path} route="Coimbatore to " service={sub.shortName} />}
       <section className="py-20 md:py-24 bg-background">
         <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-12">
           <div>

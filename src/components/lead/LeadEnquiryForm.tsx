@@ -1,21 +1,15 @@
-import { Children, cloneElement, isValidElement, useId, useMemo, useRef, useState, type ReactElement, type ReactNode } from "react";
+import { Children, cloneElement, isValidElement, useId, useRef, useState, type ReactElement, type ReactNode } from "react";
 import { z } from "zod";
-import { Phone, MessageCircle, Send, Truck } from "lucide-react";
+import { Phone, MessageCircle, Truck } from "lucide-react";
+import { useLocation } from "react-router-dom";
+import { enquirySchema, transportEnquiryUrl } from "@/lib/transport-enquiry";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
-import { trackContactFormSubmit, trackPhoneClick, trackWhatsAppClick, isLikelyBot } from "@/lib/analytics";
-
-const enquirySchema = z.object({
-  name: z.string().trim().min(2, "Enter your name").max(100, "Name is too long"),
-  phone: z.string().trim().regex(/^(?:\+91[\s-]?)?[6-9]\d{9}$/, "Enter a valid Indian mobile number"),
-  route: z.string().trim().min(2, "Enter pickup and delivery city").max(140, "Route is too long"),
-  service: z.string().trim().min(2, "Enter the service needed").max(120, "Service is too long"),
-  details: z.string().trim().max(500, "Details must be under 500 characters").optional(),
-});
+import { trackContactFormSubmit, trackPhoneClick, trackWhatsAppClick } from "@/lib/analytics";
 
 type EnquiryForm = z.infer<typeof enquirySchema>;
 
@@ -25,21 +19,16 @@ const MIN_FILL_MS = 3000; // human users almost never fill faster than 3s
 const SUBMIT_THROTTLE_MS = 60_000; // 1 submission per minute per browser
 const LAST_SUBMIT_KEY = "sta_lead_last_submit";
 
-export function LeadEnquiryForm({ city }: { city?: string }) {
+export function LeadEnquiryForm({ city, route = "", service = "" }: { city?: string; route?: string; service?: string }) {
   const { toast } = useToast();
-  const [form, setForm] = useState<EnquiryForm>(initialForm);
+  const location = useLocation();
+  const [form, setForm] = useState<EnquiryForm>({ ...initialForm, route, service });
   const [errors, setErrors] = useState<Partial<Record<keyof EnquiryForm, string>>>({});
   // Honeypot — invisible to humans, bots auto-fill anything labelled "company"
   const [honeypot, setHoneypot] = useState("");
   const mountedAt = useRef<number>(Date.now());
 
   const context = city ? `${city} enquiry` : "Coimbatore enquiry";
-  const whatsappHref = useMemo(() => {
-    const parsed = enquirySchema.safeParse(form);
-    const data = parsed.success ? parsed.data : form;
-    const message = `STA Corporate Solutions enquiry\nName: ${data.name}\nPhone: ${data.phone}\nRoute/City: ${data.route}\nService: ${data.service}${data.details ? `\nDetails: ${data.details}` : ""}`;
-    return `https://wa.me/919443033055?text=${encodeURIComponent(message)}`;
-  }, [form]);
 
   const update = (field: keyof EnquiryForm, value: string) => {
     setForm((prev) => ({ ...prev, [field]: value }));
@@ -63,8 +52,6 @@ export function LeadEnquiryForm({ city }: { city?: string }) {
     if (honeypot.trim().length > 0) return false;
     // 2. Min fill-time gate
     if (Date.now() - mountedAt.current < MIN_FILL_MS) return false;
-    // 3. UA / webdriver guard
-    if (isLikelyBot()) return false;
     // 4. Per-browser throttle
     try {
       const last = Number(localStorage.getItem(LAST_SUBMIT_KEY) || 0);
@@ -73,7 +60,7 @@ export function LeadEnquiryForm({ city }: { city?: string }) {
     return true;
   };
 
-  const handleSubmit = (action: "whatsapp" | "form") => {
+  const handleSubmit = () => {
     const data = validate();
     if (!data) return;
 
@@ -91,12 +78,8 @@ export function LeadEnquiryForm({ city }: { city?: string }) {
       destination_city: data.route,
     });
 
-    if (action === "whatsapp") {
-      trackWhatsAppClick(`lead_form_${context}`);
-      window.open(whatsappHref, "_blank", "noopener,noreferrer");
-    } else {
-      toast({ title: "Enquiry ready", description: "Tap WhatsApp or Call Now for the fastest response." });
-    }
+    trackWhatsAppClick(`lead_form_${context}`);
+    window.open(transportEnquiryUrl(data, location.pathname), "_blank", "noopener,noreferrer");
   };
 
   return (
@@ -108,11 +91,10 @@ export function LeadEnquiryForm({ city }: { city?: string }) {
           </div>
           <div>
             <h2 className="text-xl font-semibold text-foreground">Quick Enquiry</h2>
-            <p className="text-sm text-muted-foreground">Fast callback for lorry transport enquiries.</p>
           </div>
         </div>
 
-        <form className="space-y-4" onSubmit={(e) => e.preventDefault()} noValidate>
+        <form className="space-y-4" onSubmit={(e) => { e.preventDefault(); handleSubmit(); }} noValidate>
           {/* Honeypot — visually & assistive-tech hidden, but visible to naive bots */}
           <div aria-hidden="true" className="absolute left-[-9999px] top-auto h-0 w-0 overflow-hidden" tabIndex={-1}>
             <label htmlFor="sta-company-website">Company website (leave blank)</label>
@@ -146,7 +128,7 @@ export function LeadEnquiryForm({ city }: { city?: string }) {
           </FieldError>
 
           <div className="grid gap-3 sm:grid-cols-3">
-            <Button type="button" className="h-12 rounded-full sm:col-span-2" onClick={() => handleSubmit("whatsapp")}>
+            <Button type="submit" className="h-12 rounded-full sm:col-span-2">
               <MessageCircle className="h-4 w-4" /> WhatsApp Enquiry
             </Button>
             <a href="tel:+919443033055" onClick={() => trackPhoneClick("+919443033055", `lead_form_${context}`)}>
@@ -155,9 +137,6 @@ export function LeadEnquiryForm({ city }: { city?: string }) {
               </Button>
             </a>
           </div>
-          <Button type="button" variant="ghost" className="h-11 w-full rounded-full" onClick={() => handleSubmit("form")}>
-            <Send className="h-4 w-4" /> Validate enquiry details
-          </Button>
           <p className="text-[11px] text-muted-foreground/70 text-center">
             By submitting you consent to STA Corporate Solutions contacting you about this enquiry, under the DPDP Act 2023. Withdraw anytime via{" "}
             <a href="/data-request" className="underline hover:text-foreground">Data Request</a>.
