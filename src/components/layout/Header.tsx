@@ -9,7 +9,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { cn } from "@/lib/utils";
-import logo from "@/assets/sta-logo.png";
+import logo from "@/assets/sta-logo.webp";
 
 const serviceLinks = [
   { name: "Transportation", href: "/transportation" },
@@ -69,6 +69,9 @@ export function Header() {
             <img
               src={logo}
               alt="STA Corporate Solutions"
+              width={60}
+              height={40}
+              decoding="async"
               className="h-9 md:h-10 w-auto transition-transform duration-500 ease-apple group-hover:scale-[1.04]"
             />
             <div className="hidden sm:block leading-tight tracking-tight">

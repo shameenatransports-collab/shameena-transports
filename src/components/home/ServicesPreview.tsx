@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Truck, Container, Factory, Wrench, Shirt, ArrowUpRight } from "lucide-react";
 import { ScrollReveal, ScrollRevealItem } from "@/components/ui/scroll-reveal";
-import serviceTransportation from "@/assets/service-transportation.jpg";
+import serviceTransportation from "@/assets/service-transportation.webp";
 
 const services = [
   { icon: Truck, title: "Full Load Transport", desc: "A dedicated truck for your cargo, door to door across Coimbatore district.", href: "/transportation/services/full-load" },
@@ -32,8 +32,8 @@ export function ServicesPreview() {
                 src={serviceTransportation}
                 alt="STA Corporate Solutions lorry transport fleet"
                 loading="lazy"
-                width={1024}
-                height={1024}
+                width={800}
+                height={800}
                 className="absolute inset-0 w-full h-full object-cover"
               />
               <div aria-hidden className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-primary/0" />

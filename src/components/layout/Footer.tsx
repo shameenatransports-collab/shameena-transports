@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Phone, MapPin, Clock, Truck, Factory } from "lucide-react";
-import logo from "@/assets/sta-logo.png";
+import logo from "@/assets/sta-logo.webp";
 
 const serviceLinks = [
   { name: "Transportation", href: "/transportation", icon: Truck },

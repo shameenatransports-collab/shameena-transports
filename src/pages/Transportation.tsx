@@ -22,7 +22,7 @@ import {
   Star,
   Route
 } from "lucide-react";
-import fleetBg from "@/assets/fleet-bg.jpg";
+import fleetBg from "@/assets/fleet-bg.webp";
 import { GetQuoteModal } from "@/components/transportation/GetQuoteModal";
 import { LeadEnquiryForm } from "@/components/lead/LeadEnquiryForm";
 import { localBusinessSchema, transportBusinessSchema, transportServiceSchema } from "@/lib/structured-data";
