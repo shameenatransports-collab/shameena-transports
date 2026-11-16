@@ -3,7 +3,7 @@ import { Layout } from "@/components/layout/Layout";
 import { Shield, Clock, Users, Award, Target, Heart } from "lucide-react";
 import { CTASection } from "@/components/home/CTASection";
 import { Picture } from "@/components/ui/picture";
-import fleetBg from "@/assets/fleet-bg.jpg";
+import fleetBg from "@/assets/fleet-bg.webp";
 
 import { organizationSchema, localBusinessSchema, createBreadcrumbSchema } from "@/lib/structured-data";
 

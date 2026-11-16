@@ -5,7 +5,7 @@ import { Truck, Shield, Gauge, Users, Clock, CheckCircle2, XCircle } from "lucid
 import { CTASection } from "@/components/home/CTASection";
 import { BackgroundPicture } from "@/components/ui/picture";
 import { ServiceFAQ } from "@/components/seo/ServiceFAQ";
-import fleetBg from "@/assets/fleet-bg.jpg";
+import fleetBg from "@/assets/fleet-bg.webp";
 import { localBusinessSchema, createBreadcrumbSchema, openBodyLorrySchema } from "@/lib/structured-data";
 import { CITIES } from "@/lib/seo/cities";
 

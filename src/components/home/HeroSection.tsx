@@ -3,7 +3,6 @@ import { motion, useReducedMotion } from "framer-motion";
 import { Phone, MessageCircle, ArrowUpRight, Truck, Factory } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Parallax } from "@/components/ui/parallax";
-import heroBg from "@/assets/hero-bg.jpg";
 
 const verticals = [
   { icon: Truck, title: "Full Load Transport", href: "/transportation/services/full-load", desc: "Dedicated lorry, door to door" },
@@ -23,10 +22,12 @@ export function HeroSection() {
     >
       <Parallax className="absolute inset-0 -z-10" distance={80} scaleTo={1.12}>
         <img
-          src={heroBg}
+          src="/hero-bg.webp"
+          srcSet="/hero-bg-800.webp 800w, /hero-bg.webp 1600w"
+          sizes="100vw"
           alt=""
-          width={1920}
-          height={1080}
+          width={1600}
+          height={900}
           className="w-full h-[120%] object-cover"
           loading="eager"
           {...({ fetchpriority: "high" } as React.ImgHTMLAttributes<HTMLImageElement>)}

@@ -54,8 +54,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     
-    <!-- Preload Critical Fonts -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" as="style" />
+    <!-- Work Sans: non-blocking stylesheet (replaces CSS @import chain) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" /></noscript>
+    <!-- Homepage hero image: start the download before the JS bundle runs -->
+    <script>
+      if (location.pathname === "/") {
+        var l = document.createElement("link");
+        l.rel = "preload"; l.as = "image"; l.href = "/hero-bg.webp";
+        l.setAttribute("imagesrcset", "/hero-bg-800.webp 800w, /hero-bg.webp 1600w");
+        l.setAttribute("imagesizes", "100vw");
+        l.setAttribute("fetchpriority", "high");
+        document.head.appendChild(l);
+      }
+    </script>
     
     <!-- DNS Prefetch -->
     <link rel="dns-prefetch" href="https://fonts.googleapis.com" />

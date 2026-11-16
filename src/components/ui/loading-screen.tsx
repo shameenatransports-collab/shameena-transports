@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import logo from "@/assets/sta-logo.png";
+import logo from "@/assets/sta-logo.webp";
 
 interface LoadingScreenProps {
   onLoadComplete?: () => void;
