@@ -35,6 +35,10 @@ const transportFaqs = [
   { question: "Which areas do you cover?", answer: "Local Coimbatore district routes, plus outbound routes from Coimbatore to Kerala and Karnataka. Destinations are not branches." },
   { question: "How do I get a quote?", answer: "WhatsApp or call +91 94430 33055 with pickup, destination, cargo type and weight. Mon–Sat, 9 AM–7 PM." },
   { question: "Are return loads available?", answer: "Yes, for goods coming into Coimbatore from Tamil Nadu, Kerala or Karnataka on vehicles returning towards Coimbatore, strictly subject to route availability. Enquire with your pickup town, cargo and date and we will confirm." },
+  { question: "How fast can I book a lorry?", answer: "Send pickup, drop, cargo and date on WhatsApp or call +91 94430 33055. We confirm vehicle availability during working hours, and same-week bookings are common when a vehicle is free." },
+  { question: "Why choose STA Corporate Solutions?", answer: "We have moved goods for Coimbatore businesses since 1982, from our Podanur office, with experienced drivers and loaders and one number for every booking." },
+  { question: "Can you deliver to Chennai or Kochi port?", answer: "Yes. We deliver goods from Coimbatore to Chennai port and Kochi port; vehicle and timing are confirmed per booking." },
+  { question: "Do you provide cargo insurance?", answer: "No. STA does not offer cargo insurance or accident cover, so arrange your own cover if your goods need it." },
 ];
 
 

@@ -72,6 +72,11 @@ export const PILLARS: Pillar[] = [
         faqs: [
           { q: "What is a return load to Coimbatore?", a: "Cargo carried on a vehicle that is returning to Coimbatore. It is booked on availability and confirmed per enquiry." },
           { q: "Which towns can a return load come from?", a: "Tamil Nadu origins and Kerala/Karnataka cities such as Kochi and Bangalore; Tamil Nadu examples include Tirupur, Erode, Salem, Karur, Dindigul, Trichy, Madurai, Hosur, Vellore and Chennai." },
+          { q: "How quickly will I know if a return vehicle is available?", a: "Send pickup town, cargo, weight and date on WhatsApp or call +91 94430 33055 (Mon–Sat, 9 AM–7 PM). We check vehicles heading back to Coimbatore and reply with a clear yes or no." },
+          { q: "Is a return load cheaper than a normal booking?", a: "It can work out economical because the vehicle is already travelling to Coimbatore, but freight is quoted per enquiry and depends on distance, weight and loading." },
+          { q: "What if no return vehicle is available on my date?", a: "We tell you plainly. If your date is flexible we can check the next days, or you can book a regular dedicated trip instead." },
+          { q: "What goods are suitable for a return load?", a: "Goods that travel well on an open-body lorry under tarpaulin, such as textile bales, steel, machinery parts, construction material and bagged goods. Cargo is confirmed per booking." },
+          { q: "Is cargo insurance included?", a: "No. STA does not offer cargo insurance or accident cover, so arrange your own cover if your goods need it." },
         ],
       },
       {

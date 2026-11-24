@@ -19,6 +19,8 @@ export default function ReturnLoadPage() {
     { q: `What cargo moves from ${o.name} to Coimbatore?`, a: `Share your cargo type, packing, weight and dimensions. Tell us what you have and we confirm if the returning vehicle suits it.` },
     { q: "Is a return load guaranteed?", a: "No. It depends on a vehicle coming back to Coimbatore on that day. If none is available we say so plainly." },
     { q: "Do you take return loads out of Coimbatore to other places?", a: "Return-load enquiries here are for goods coming into Coimbatore from Tamil Nadu, Kerala or Karnataka." },
+    { q: `How do I enquire for a ${o.name} to Coimbatore return load?`, a: `Use the WhatsApp form on this page or call +91 94430 33055 (Mon–Sat, 9 AM–7 PM) with pickup point in ${o.name}, delivery address in Coimbatore, cargo, weight and date. Flexible dates improve the chance of a match.` },
+    { q: "Is cargo insurance included?", a: "No. STA does not offer cargo insurance or accident cover, so arrange your own cover if your goods need it." },
   ];
   const keywords = [`return load ${n} to coimbatore`, `${n} to coimbatore lorry`, `${n} to coimbatore transport`, `${n} to coimbatore goods transport`, `back load ${n} coimbatore`, `lorry from ${n} to coimbatore`];
 
