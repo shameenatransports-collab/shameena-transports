@@ -345,8 +345,7 @@ const Contact = () => {
                         <p className="text-muted-foreground text-sm">
                           No 10/135-G, Gurusamy Pillai St Extn,<br />
                           Podanur, Coimbatore, Coimbatore South,<br />
-                          Tamil Nadu, India, 641023<br />
-                          GST: 33AHTPA8379E1Z3
+                          Tamil Nadu, India, 641023
                         </p>
                       </div>
                     </div>
